@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import copy
 import json
+import os
+import shutil
+import tempfile
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -143,6 +146,8 @@ class OfflinePublisher:
         # an approval's field boundary effective for both JSON and HTML.
         page = render_html(projection)
         if output_directory.exists():
+            if {p.name for p in output_directory.iterdir()} != {'manifest.json', 'index.html'}:
+                raise DuplicatePublicationError('Publication version contains unexpected files')
             if manifest_path.is_symlink() or html_path.is_symlink():
                 raise PublisherError("publication files may not be symlinks")
             if not manifest_path.is_file() or not html_path.is_file():
@@ -152,9 +157,21 @@ class OfflinePublisher:
             if existing_payload == payload and existing_page == page and idempotent_ok:
                 return PublicationResult(output_directory, manifest_path, html_path, source_manifest["source"]["content_digest"], True)
             raise DuplicatePublicationError("publication version already exists with different content")
-        output_directory.mkdir(parents=True)
-        manifest_path.write_bytes(payload)
-        html_path.write_text(page, encoding="utf-8", newline="\n")
+        output_directory.parent.mkdir(parents=True, exist_ok=True)
+        staging = Path(tempfile.mkdtemp(prefix='.publication-', dir=output_directory.parent))
+        try:
+            for name, content in [('manifest.json', payload), ('index.html', page.encode('utf-8'))]:
+                with (staging / name).open('xb') as handle:
+                    handle.write(content)
+                    handle.flush()
+                    os.fsync(handle.fileno())
+            reject_symlink_path(output_directory)
+            if output_directory.exists():
+                raise DuplicatePublicationError('Publication destination appeared during staging')
+            os.rename(staging, output_directory)
+        finally:
+            if staging.exists():
+                shutil.rmtree(staging)
         return PublicationResult(output_directory, manifest_path, html_path, source_manifest["source"]["content_digest"], False)
 
 

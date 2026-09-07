@@ -22,6 +22,15 @@ SCHEMA_ROOT = Path(__file__).resolve().parents[1] / "schemas"
 _FORMAT_CHECKER = FormatChecker()
 
 
+def unique_schema_object(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise SchemaValidationError('Schema contains duplicate object key: ' + key)
+        result[key] = value
+    return result
+
+
 @lru_cache(maxsize=None)
 def load_schema(filename: str) -> dict[str, Any]:
     raw_path = SCHEMA_ROOT / filename
@@ -31,7 +40,7 @@ def load_schema(filename: str) -> dict[str, Any]:
     if path.parent != SCHEMA_ROOT.resolve() or not path.is_file():
         raise SchemaValidationError(f"schema is outside the checked-in schema root: {filename}")
     try:
-        value = json.loads(path.read_text(encoding="utf-8"))
+        value = json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=unique_schema_object)
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise SchemaValidationError(f"cannot read schema {filename}: {exc}") from exc
     if not isinstance(value, dict):
