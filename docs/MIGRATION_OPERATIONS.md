@@ -23,12 +23,21 @@ python3 migration/tooling/github_migration.py plan \
 ```
 
 The command is dry-run by construction. It reads stable repository IDs,
-default-branch heads, visibility, branch protection, Pages configuration,
-workflow inventory, in-progress runs, open pull requests, hosted-Action
-consumers, and target-name availability. It does not call `PATCH`, change
-settings, push branches, or notify owners. Re-run it immediately before an
-authorized operation; the plan embeds the observed actor, timestamp,
+default-branch names and heads, visibility, branch protection, Pages
+configuration, workflow inventory, every blocking workflow-run status, all
+pages of open pull requests, hosted-Action consumers, and target-name
+availability. A failed optional endpoint is recorded as unavailable; a 404 is
+treated as absence only where the endpoint contract proves absence (repository
+name and Action-file probes). It does not call `PATCH`, change settings, push
+branches, or notify owners. Re-run it immediately before an authorized
+operation; the plan embeds the observed actor, timestamp, expected identity
 preconditions, and API limitation fields.
+
+When a source snapshot is supplied, the plan records its schema revision and
+the SHA-256 of the exact snapshot bytes. Snapshot repository rows must have
+unique case-folded owner/name identities and unique positive stable IDs. Each
+rename operation also embeds an immutable digest-bound compact metadata backup;
+the backup must still match the fresh source observation before a request.
 
 For offline review against the immutable W01 snapshot:
 
@@ -50,16 +59,24 @@ Each rename operation records these gates:
   current name.
 - `target_collision`: the target must be absent, or already be the expected
   repository ID. A different target repository is a hard conflict.
+- `default_branch`: the current default-branch name must match the recorded
+  precondition.
+- `visibility`: the current repository visibility must match the recorded
+  precondition.
 - `current_head`: the expected default-branch commit must still match.
 - `protected_configuration`: the branch-protection response is available and
   its digest still matches the plan.
+- `backup`: the immutable metadata backup is present, internally digest-valid,
+  and equal to the fresh source observation.
 - `hosted_actions`: the source cannot host an Action and the scoped `uses:`
   search must find no caller. Unknown search is blocked.
-- `active_work`: open pull requests, in-progress runs, and unavailable run
-  inventory block the operation.
+- `active_work`: open pull requests, queued/in-progress/waiting/requested/
+  pending runs, and unavailable or incomplete inventory block the operation.
 - `pages`: a Pages configuration requires a custom-domain/route review before
   cutover; historical Pages repositories remain `keep`.
-- `authority`: remote mutation needs a separate approval file.
+- `authority`: remote mutation needs a separate approval file whose actor is
+  the authenticated `GET /user` login, whose operation IDs cover every rename,
+  and whose repositories remain in the approved `AI-Ascension` scope.
 
 `ascension-map-visualizer -> sts2-map` is explicitly `deferred-rename`. Its
 active assignment requires the original name, so the plan keeps that identity
@@ -101,11 +118,14 @@ python3 migration/tooling/github_migration.py apply \
 ```
 
 The code re-reads every gate before each request. It records the sanitized
-request/response, attempt number, timestamp, and read-after-write target
-observation. A target with the expected ID is `already_satisfied`, so a retry
-cannot create a duplicate. A timeout is `unknown`; the receipt blocks a second
-request until a reviewer explicitly uses `--retry-unknown` after reconciling
-the target. No automatic rollback or owner notification is performed.
+request/response, attempt number, timestamp, and full read-after-write target
+observation with a digest. A target with the expected ID is
+`already_satisfied`, so a retry cannot create a duplicate. A timeout,
+connection reset, 5xx, or equivalent ambiguous transport result is `unknown`;
+the receipt blocks a second request until a reviewer explicitly uses
+`--retry-unknown` after reconciling the target. A verification failure also
+stops the operation set. No automatic rollback or owner notification is
+performed.
 
 ## Rollback decision
 
@@ -119,6 +139,6 @@ record and preconditions.
 
 ## Interrupted operations and receipt ownership
 
-The tool writes a pending unknown receipt before each remote rename request and persists its result before continuing. Unknown, waiting-for-reconciliation and verification-failed attempts remain gated on explicit reconciliation; repeated ordinary invocations cannot silently reopen them. A receipt must match the exact plan digest. The receipt lock serializes invocations using that receipt and is never aged out automatically. After a hard interruption, verify that the owning process is terminal and reconcile the pending operation before removing its specific lock. Use one root-owned receipt per operation set; distinct receipt paths do not provide a global cross-process lock.
+The tool writes a pending unknown receipt before each remote rename request and persists its result before continuing. Unknown, waiting-for-reconciliation and verification-failed attempts remain gated on explicit reconciliation; repeated ordinary invocations cannot silently reopen them. A receipt must match the exact plan digest and a terminal row is accepted only after a fresh full-state read matches its recorded post-state, request, response, and operation identity. An operation-set lock derived from the exact plan digest covers all receipt paths for that plan, while the receipt lock protects the selected receipt file. Neither lock is aged out automatically. After a hard interruption, verify that the owning process is terminal and reconcile the pending operation before removing its specific lock.
 
 `migration/input-map.json` binds the approved name map to W01 stable repository IDs and source heads. Reconcile changed heads before issuing a new plan; never replace the stable identity merely because a name resolves to a different repository. The checked-in plan recomputes preflights from captured live API observations at its recorded timestamp, with exact input digests; it is not authority for a future rename.

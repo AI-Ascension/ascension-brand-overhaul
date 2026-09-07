@@ -39,6 +39,9 @@ def repository(name="source", repo_id=10, head="a" * 40, **overrides):
         "workflow_read_available": True,
         "workflow_error": None,
         "open_pull_requests": [],
+        "pull_read_available": True,
+        "pull_error": None,
+        "active_run_statuses": list(migration.ACTIVE_RUN_STATUSES),
         "hosted_action": False,
         "action_consumers": [],
         "action_consumers_known": True,
@@ -49,13 +52,22 @@ def repository(name="source", repo_id=10, head="a" * 40, **overrides):
 
 
 def operation(source_name="source", target_name="target", repo_id=10, head="a" * 40, **overrides):
-    protection = repository(head=head)["protected_configuration"]
+    source = repository(name=source_name, head=head)
+    protection = source["protected_configuration"]
+    backup = migration.compact_repo(source)
     result = {
         "operation_id": f"rename:AI-Ascension/{source_name}->{target_name}",
         "owner": "AI-Ascension",
         "source_name": source_name,
         "target_name": target_name,
         "action": "rename",
+        "backup_reference": {
+            "kind": "test_embedded_repository_metadata",
+            "immutable": True,
+            "snapshot_sha256": migration.sha256_json(backup),
+            "snapshot": backup,
+            "captured_at": "2026-09-07T00:00:00Z",
+        },
         "preconditions": {
             "expected_stable_repository_id": repo_id,
             "expected_current_head": head,
@@ -80,6 +92,9 @@ class FakeClient:
         self.verification = verification
         self.rename_error = rename_error
         self.rename_calls = []
+
+    def current_user(self):
+        return {"login": "root-operator", "id": 1}
 
     def observe_repo(self, owner, name):
         if self.verification is not None and name == self.verification["name"] and name in self.states:
@@ -177,6 +192,7 @@ class MigrationApplyTests(unittest.TestCase):
             "mode": "dry_run",
             "generated_at": "2026-09-07T00:00:00Z",
             "operator": {"owner_notification_authorized": False},
+            "source_snapshot_provenance": {"provided": False, "schema_version": None, "sha256": None},
             "operations": [self.op],
         }
         migration.write_json(self.plan_path, self.plan)

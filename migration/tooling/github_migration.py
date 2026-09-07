@@ -19,6 +19,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import sys
 import tempfile
@@ -37,6 +38,18 @@ DEFAULT_OWNER = "AI-Ascension"
 RENAME_ACTIONS = {"rename"}
 KEEP_ACTIONS = {"keep", "create-or-reuse"}
 DEFERRED_ACTIONS = {"deferred-rename"}
+ACTIVE_RUN_STATUSES = ("queued", "in_progress", "waiting", "requested", "pending")
+
+
+def _valid_repo_name(value: Any) -> bool:
+    return (
+        isinstance(value, str)
+        and bool(value.strip())
+        and value not in {".", ".."}
+        and "/" not in value
+        and "\\" not in value
+        and len(value) <= 100
+    )
 
 
 class MigrationError(RuntimeError):
@@ -45,6 +58,34 @@ class MigrationError(RuntimeError):
 
 class ApiError(MigrationError):
     """A GitHub API request failed without exposing credentials."""
+
+    def __init__(
+        self,
+        message: str,
+        *,
+        status_code: int | None = None,
+        ambiguous: bool | None = None,
+    ) -> None:
+        super().__init__(message)
+        self.status_code = status_code if status_code is not None else _status_code(message)
+        if ambiguous is None:
+            text = message.lower()
+            ambiguous = (
+                self.status_code is not None
+                and (self.status_code >= 500 or self.status_code in {408, 425, 429})
+            ) or any(
+                marker in text
+                for marker in (
+                    "timeout",
+                    "timed out",
+                    "request failed",
+                    "connection reset",
+                    "connection aborted",
+                    "broken pipe",
+                    "network",
+                )
+            )
+        self.ambiguous = bool(ambiguous)
 
 
 def canonical_json(value: Any) -> bytes:
@@ -100,6 +141,17 @@ def _status_error(stderr: bytes | str) -> str:
     return (lines[-1] if lines else "GitHub API request failed")[:400]
 
 
+def _status_code(value: bytes | str) -> int | None:
+    text = value.decode(errors="replace") if isinstance(value, bytes) else str(value)
+    # gh has emitted both `HTTP 404` and `404 Not Found` forms over time.
+    match = re.search(r"\b(?:HTTP(?:\s+status)?\s*)?([45]\d{2})\b", text, re.IGNORECASE)
+    return int(match.group(1)) if match else None
+
+
+def _append_page(path: str, page: int) -> str:
+    return f"{path}{'&' if '?' in path else '?'}page={page}"
+
+
 class GhApi:
     """Read/write adapter over the installed GitHub CLI's REST API."""
 
@@ -123,18 +175,25 @@ class GhApi:
                 timeout=self.timeout,
             )
         except (OSError, subprocess.TimeoutExpired) as exc:
-            raise ApiError(f"GitHub API request failed: {type(exc).__name__}") from exc
+            raise ApiError(
+                f"GitHub API request failed: {type(exc).__name__}",
+                ambiguous=True,
+            ) from exc
         if result.returncode != 0:
             message = _status_error(result.stderr)
-            if "404" in message or "Not Found" in message:
-                return None
-            raise ApiError(message)
+            status_code = _status_code(result.stderr)
+            raise ApiError(
+                message,
+                status_code=status_code,
+                ambiguous=status_code is not None
+                and (status_code >= 500 or status_code in {408, 425, 429}),
+            )
         if not result.stdout.strip():
             return {}
         try:
             return json.loads(result.stdout)
         except json.JSONDecodeError as exc:
-            raise ApiError("GitHub API returned non-JSON data") from exc
+            raise ApiError("GitHub API returned non-JSON data", ambiguous=True) from exc
 
     def current_user(self) -> dict[str, Any] | None:
         value = self.request("GET", "user")
@@ -142,18 +201,48 @@ class GhApi:
             return None
         return {key: value.get(key) for key in ("login", "id", "html_url") if key in value}
 
+    def _list_paginated(self, path: str, key: str | None = None) -> list[dict[str, Any]]:
+        """Read every page, refusing to call an incomplete inventory complete."""
+        rows: list[dict[str, Any]] = []
+        page = 1
+        # GitHub search results are capped at 1,000 rows.  Reaching this limit
+        # with full pages is an incomplete inventory, so fail closed rather
+        # than silently treating the first thousand rows as exhaustive.
+        max_pages = 100
+        while page <= max_pages:
+            result = self.request("GET", path if page == 1 else _append_page(path, page))
+            if key is None:
+                batch = result if isinstance(result, list) else None
+            else:
+                batch = result.get(key) if isinstance(result, dict) else None
+            if not isinstance(batch, list):
+                label = key or "array"
+                raise ApiError(f"GitHub API response for {path} has no {label} list")
+            if isinstance(result, dict) and result.get("incomplete_results") is True:
+                raise ApiError(f"GitHub API pagination for {path} is incomplete")
+            rows.extend(item for item in batch if isinstance(item, dict))
+            if key == "items" and len(rows) >= 1000 and len(batch) == 100:
+                # GitHub code search exposes at most 1,000 rows.  A full
+                # tenth page cannot prove that no additional caller exists.
+                raise ApiError(f"GitHub API search inventory for {path} reached its result cap")
+            if len(batch) < 100:
+                total_count = result.get("total_count") if isinstance(result, dict) else None
+                if isinstance(total_count, int) and not isinstance(total_count, bool) and total_count != len(rows):
+                    raise ApiError(f"GitHub API pagination for {path} is incomplete")
+                return rows
+            page += 1
+        raise ApiError("GitHub API pagination did not complete")
+
     def _list(self, path: str, key: str) -> list[dict[str, Any]]:
-        result = self.request("GET", path)
-        if result is None:
-            return []
-        if not isinstance(result, dict) or not isinstance(result.get(key), list):
-            raise ApiError(f"GitHub API response for {path} has no {key} list")
-        return [item for item in result[key] if isinstance(item, dict)]
+        return self._list_paginated(path, key)
 
     def _contents_exists(self, owner: str, name: str, path: str) -> bool | None:
-        result = self.request("GET", f"repos/{quote(owner)}/{quote(name)}/contents/{quote(path)}")
-        if result is None:
-            return False
+        try:
+            result = self.request("GET", f"repos/{quote(owner)}/{quote(name)}/contents/{quote(path)}")
+        except ApiError as exc:
+            if exc.status_code == 404:
+                return False
+            return None
         return isinstance(result, dict)
 
     def _action_consumers(self, owner: str, name: str) -> tuple[list[dict[str, str]], bool, str | None]:
@@ -162,11 +251,10 @@ class GhApi:
         # the plan so a reviewer can see what the API check covered.
         query = urlencode({"q": f'"uses: {owner}/{name}" org:{owner}', "per_page": "100"})
         try:
-            result = self.request("GET", f"search/code?{query}")
-            items = result.get("items", []) if isinstance(result, dict) else []
+            items = self._list_paginated(f"search/code?{query}", "items")
             consumers = []
             for item in items:
-                repo = item.get("repository") if isinstance(item, dict) else None
+                repo = item.get("repository")
                 full_name = repo.get("full_name") if isinstance(repo, dict) else None
                 path = item.get("path") if isinstance(item, dict) else None
                 if (
@@ -188,28 +276,48 @@ class GhApi:
 
     def observe_repo(self, owner: str, name: str) -> dict[str, Any]:
         path = f"repos/{quote(owner)}/{quote(name)}"
-        raw = self.request("GET", path)
+        try:
+            raw = self.request("GET", path)
+        except ApiError as exc:
+            # A repository GET has a documented absence meaning.  Other
+            # endpoints below keep 404 as unknown because absence is not
+            # established by an unreadable optional endpoint.
+            if exc.status_code == 404:
+                return {"exists": False, "owner": owner, "name": name}
+            raise
         if raw is None:
+            # A test double or older gh wrapper may still use ``None`` for
+            # the repository GET's documented 404 absence contract.
             return {"exists": False, "owner": owner, "name": name}
         if not isinstance(raw, dict):
             raise ApiError(f"Repository response for {owner}/{name} is not an object")
         default_branch = raw.get("default_branch")
         branch: dict[str, Any] | None = None
+        branch_error: str | None = None
         protection: Any = None
         protection_error: str | None = None
         if isinstance(default_branch, str) and default_branch:
-            branch = self.request("GET", f"{path}/branches/{quote(default_branch, safe='')}" )
+            try:
+                branch = self.request("GET", f"{path}/branches/{quote(default_branch, safe='')}" )
+            except MigrationError as exc:
+                branch_error = str(exc)[:400]
+            if not isinstance(branch, dict) and branch_error is None:
+                branch_error = "default branch endpoint returned no object"
             if isinstance(branch, dict) and branch.get("protected"):
                 try:
                     protection = self.request("GET", f"{path}/branches/{quote(default_branch, safe='')}/protection")
                 except MigrationError as exc:
                     protection_error = str(exc)[:400]
+                if not isinstance(protection, dict) and protection_error is None:
+                    protection_error = "branch protection endpoint returned no object"
         pages: Any = None
         pages_error: str | None = None
         try:
             pages = self.request("GET", f"{path}/pages")
         except MigrationError as exc:
             pages_error = str(exc)[:400]
+        if pages_error is None and not isinstance(pages, dict):
+            pages_error = "Pages endpoint returned no object"
         workflow_error: str | None = None
         workflows: list[dict[str, Any]] = []
         active_runs: list[dict[str, Any]] = []
@@ -218,15 +326,21 @@ class GhApi:
             workflows = self._list(f"{path}/actions/workflows?per_page=100", "workflows")
         except MigrationError as exc:
             workflow_error = str(exc)[:400]
+        for run_status in ACTIVE_RUN_STATUSES:
+            try:
+                active_runs.extend(
+                    self._list(
+                        f"{path}/actions/runs?status={run_status}&per_page=100",
+                        "workflow_runs",
+                    )
+                )
+            except MigrationError as exc:
+                workflow_error = (workflow_error or "") + f" active-runs[{run_status}]: " + str(exc)[:260]
+        pull_error: str | None = None
         try:
-            active_runs = self._list(f"{path}/actions/runs?status=in_progress&per_page=100", "workflow_runs")
+            pulls = self._list_paginated(f"{path}/pulls?state=open&per_page=100", None)
         except MigrationError as exc:
-            workflow_error = (workflow_error or "") + " active-runs: " + str(exc)[:300]
-        raw_pulls = self.request("GET", f"{path}/pulls?state=open&per_page=100")
-        if isinstance(raw_pulls, list):
-            pulls = [item for item in raw_pulls if isinstance(item, dict)]
-        elif raw_pulls is None:
-            pulls = []
+            pull_error = str(exc)[:400]
 
         hosted_action: bool | None
         action_checks = [self._contents_exists(owner, name, "action.yml"), self._contents_exists(owner, name, "action.yaml")]
@@ -241,8 +355,13 @@ class GhApi:
         protection_descriptor = {
             "branch_protected": protected if isinstance(protected, bool) else None,
             "configuration": protection if isinstance(protection, (dict, list)) else None,
-            "available": protection_error is None and (not protected or protection is not None),
-            "error": protection_error,
+            "available": (
+                branch_error is None
+                and protection_error is None
+                and isinstance(protected, bool)
+                and (not protected or protection is not None)
+            ),
+            "error": branch_error or protection_error,
         }
         def pull_summary(item: Mapping[str, Any]) -> dict[str, Any]:
             summary = {key: item.get(key) for key in ("number", "title", "state", "html_url") if key in item}
@@ -266,6 +385,7 @@ class GhApi:
             "head_sha": head_sha,
             "visibility": raw.get("visibility"),
             "archived": raw.get("archived"),
+            "branch_error": branch_error,
             "branch_protected": protected,
             "protected_configuration": protection_descriptor,
             "pages": pages if isinstance(pages, dict) else None,
@@ -282,6 +402,9 @@ class GhApi:
             "workflow_read_available": workflow_error is None,
             "workflow_error": workflow_error,
             "open_pull_requests": [pull_summary(item) for item in pulls],
+            "pull_read_available": pull_error is None,
+            "pull_error": pull_error,
+            "active_run_statuses": list(ACTIVE_RUN_STATUSES),
             "hosted_action": hosted_action,
             "action_consumers": consumers,
             "action_consumers_known": consumers_known,
@@ -293,6 +416,7 @@ class SnapshotClient:
     """Offline adapter for the immutable W01 source snapshot."""
 
     def __init__(self, snapshot: Mapping[str, Any]):
+        validate_snapshot(snapshot)
         self.snapshot = snapshot
         self.entries = {
             item.get("full_name", "").lower(): item
@@ -322,6 +446,7 @@ class SnapshotClient:
             "head_sha": source.get("default_head"),
             "visibility": source.get("visibility"),
             "archived": None,
+            "branch_error": "not recorded in source snapshot",
             "branch_protected": None,
             "protected_configuration": {"branch_protected": None, "configuration": None, "available": False, "error": "not recorded in source snapshot"},
             "pages": None,
@@ -332,6 +457,9 @@ class SnapshotClient:
             "workflow_read_available": False,
             "workflow_error": "not recorded in source snapshot",
             "open_pull_requests": repo_pulls,
+            "pull_read_available": False,
+            "pull_error": "not recorded in source snapshot",
+            "active_run_statuses": list(ACTIVE_RUN_STATUSES),
             "hosted_action": None,
             "action_consumers": [],
             "action_consumers_known": False,
@@ -352,8 +480,16 @@ def protection_digest(observed: Mapping[str, Any]) -> str:
 
 def compact_repo(observed: Mapping[str, Any]) -> dict[str, Any]:
     """Keep only public, review-relevant fields in plans and receipts."""
-    if not observed.get("exists"):
-        return {"exists": False, "owner": observed.get("owner"), "name": observed.get("name")}
+    raw_owner = observed.get("owner")
+    owner = raw_owner.get("login") if isinstance(raw_owner, Mapping) else raw_owner
+    # GhApi.observe_repo returns an explicit ``exists`` marker.  A PATCH
+    # response is the raw GitHub repository object, so infer existence from
+    # its stable identity before sanitizing it into the receipt.
+    exists = observed.get("exists")
+    if exists is None:
+        exists = isinstance(observed.get("id"), int) and isinstance(observed.get("name"), str)
+    if not exists:
+        return {"exists": False, "owner": owner, "name": observed.get("name")}
     protection = observed.get("protected_configuration")
     protection_out = None
     if isinstance(protection, Mapping):
@@ -365,7 +501,7 @@ def compact_repo(observed: Mapping[str, Any]) -> dict[str, Any]:
         }
     return {
         "exists": True,
-        "owner": observed.get("owner"),
+        "owner": owner,
         "name": observed.get("name"),
         "full_name": observed.get("full_name"),
         "id": observed.get("id"),
@@ -373,6 +509,7 @@ def compact_repo(observed: Mapping[str, Any]) -> dict[str, Any]:
         "head_sha": observed.get("head_sha"),
         "visibility": observed.get("visibility"),
         "archived": observed.get("archived"),
+        "branch_error": observed.get("branch_error"),
         "branch_protected": observed.get("branch_protected"),
         "protected_configuration": protection_out,
         "pages": observed.get("pages"),
@@ -383,6 +520,9 @@ def compact_repo(observed: Mapping[str, Any]) -> dict[str, Any]:
         "workflow_read_available": observed.get("workflow_read_available"),
         "workflow_error": observed.get("workflow_error"),
         "open_pull_requests": observed.get("open_pull_requests", []),
+        "pull_read_available": observed.get("pull_read_available"),
+        "pull_error": observed.get("pull_error"),
+        "active_run_statuses": observed.get("active_run_statuses", list(ACTIVE_RUN_STATUSES)),
         "hosted_action": observed.get("hosted_action"),
         "action_consumers": observed.get("action_consumers", []),
         "action_consumers_known": observed.get("action_consumers_known"),
@@ -402,6 +542,23 @@ def _expected_protection(op: Mapping[str, Any]) -> Mapping[str, Any] | None:
     return value if isinstance(value, Mapping) else None
 
 
+def _backup_reference_matches(op: Mapping[str, Any], source: Mapping[str, Any]) -> tuple[bool, str, Any]:
+    reference = op.get("backup_reference")
+    if not isinstance(reference, Mapping):
+        return False, "backup_reference_missing", None
+    snapshot = reference.get("snapshot")
+    digest = reference.get("snapshot_sha256")
+    if reference.get("immutable") is not True or not isinstance(snapshot, Mapping) or not isinstance(digest, str):
+        return False, "backup_reference_invalid", None
+    actual_snapshot_digest = sha256_json(snapshot)
+    current_digest = sha256_json(compact_repo(source))
+    if digest != actual_snapshot_digest:
+        return False, "backup_reference_digest_invalid", {"expected": digest, "observed": actual_snapshot_digest}
+    if digest != current_digest:
+        return False, "stale_backup_reference", {"expected": digest, "observed": current_digest}
+    return True, "backup_reference_matches", {"sha256": digest}
+
+
 def evaluate_operation(
     op: Mapping[str, Any],
     source: Mapping[str, Any],
@@ -414,6 +571,8 @@ def evaluate_operation(
     expected_id = op.get("preconditions", {}).get("expected_stable_repository_id")
     expected_name = op.get("source_name")
     expected_head = op.get("preconditions", {}).get("expected_current_head")
+    expected_default_branch = op.get("preconditions", {}).get("expected_default_branch")
+    expected_visibility = op.get("preconditions", {}).get("expected_visibility")
     gates: dict[str, dict[str, Any]] = {}
     blockers: list[str] = []
 
@@ -452,6 +611,32 @@ def evaluate_operation(
     else:
         gates["stable_identity"] = gate("pass", "expected_stable_repository_id")
 
+    if not isinstance(expected_default_branch, str) or not expected_default_branch:
+        gates["default_branch"] = gate("blocked", "missing_expected_default_branch")
+        blockers.append("missing_expected_default_branch")
+    elif source.get("default_branch") != expected_default_branch:
+        gates["default_branch"] = gate(
+            "blocked",
+            "stale_default_branch",
+            {"expected": expected_default_branch, "observed": source.get("default_branch")},
+        )
+        blockers.append("stale_default_branch")
+    else:
+        gates["default_branch"] = gate("pass", "expected_default_branch")
+
+    if not isinstance(expected_visibility, str) or not expected_visibility:
+        gates["visibility"] = gate("blocked", "missing_expected_visibility")
+        blockers.append("missing_expected_visibility")
+    elif source.get("visibility") != expected_visibility:
+        gates["visibility"] = gate(
+            "blocked",
+            "stale_visibility",
+            {"expected": expected_visibility, "observed": source.get("visibility")},
+        )
+        blockers.append("stale_visibility")
+    else:
+        gates["visibility"] = gate("pass", "expected_visibility")
+
     if target_exists:
         if target.get("id") == expected_id and target.get("name") == op.get("target_name"):
             gates["target_collision"] = gate("pass", "target_is_expected_repository", expected_id)
@@ -487,6 +672,11 @@ def evaluate_operation(
         gates["protected_configuration"] = gate("blocked", "missing_expected_protected_configuration")
         blockers.append("missing_expected_protected_configuration")
 
+    backup_matches, backup_code, backup_detail = _backup_reference_matches(op, source)
+    gates["backup"] = gate("pass" if backup_matches else "blocked", backup_code, backup_detail)
+    if not backup_matches:
+        blockers.append(backup_code)
+
     hosted_action = source.get("hosted_action")
     consumers_known = source.get("action_consumers_known") is True
     consumers = source.get("action_consumers") or []
@@ -505,11 +695,17 @@ def evaluate_operation(
     open_prs = source.get("open_pull_requests") or []
     active_runs = source.get("active_runs") or []
     workflow_available = source.get("workflow_read_available") is True
+    pull_available = source.get("pull_read_available", True) is True
     if open_prs or active_runs:
         gates["active_work"] = gate("blocked", "active_work_present", {"pull_requests": open_prs, "runs": active_runs})
         blockers.append("active_work_present")
-    elif not workflow_available:
-        gates["active_work"] = gate("blocked", "active_work_inventory_unavailable", source.get("workflow_error"))
+    elif not workflow_available or not pull_available:
+        detail = {
+            "workflow_error": source.get("workflow_error"),
+            "pull_error": source.get("pull_error"),
+            "active_run_statuses": source.get("active_run_statuses", list(ACTIVE_RUN_STATUSES)),
+        }
+        gates["active_work"] = gate("blocked", "active_work_inventory_unavailable", detail)
         blockers.append("active_work_inventory_unavailable")
     else:
         gates["active_work"] = gate("pass", "no_open_pull_requests_or_runs")
@@ -538,15 +734,94 @@ def load_map(path: Path) -> list[dict[str, Any]]:
     value = read_json(path)
     if not isinstance(value, list) or not value:
         raise MigrationError("Repository map must be a non-empty JSON array")
-    return [item for item in value if isinstance(item, dict)]
+    rows = [item for item in value if isinstance(item, dict)]
+    if len(rows) != len(value):
+        raise MigrationError("Repository map contains a non-object row")
+    validate_repository_rows(rows)
+    return rows
+
+
+def validate_repository_rows(rows: Iterable[Mapping[str, Any]]) -> None:
+    """Reject ambiguous map identities before any observations are derived."""
+    names: set[tuple[str, str]] = set()
+    stable_ids: set[int] = set()
+    for index, item in enumerate(rows):
+        if not isinstance(item, Mapping):
+            raise MigrationError(f"Repository map row {index} is not an object")
+        source_name = item.get("source_name")
+        target_name = item.get("target_name")
+        if not _valid_repo_name(source_name):
+            raise MigrationError(f"Repository map row {index} has no source_name")
+        if not _valid_repo_name(target_name):
+            raise MigrationError(f"Repository map row {index} has no target_name")
+        owner = item.get("owner", DEFAULT_OWNER)
+        if not isinstance(owner, str) or not owner.strip():
+            raise MigrationError(f"Repository map row {index} has no owner")
+        identity = (owner.casefold(), source_name.casefold())
+        if identity in names:
+            raise MigrationError(f"Repository map repeats {owner}/{source_name}")
+        names.add(identity)
+        stable_id = item.get("stable_repository_id")
+        if stable_id is not None:
+            if isinstance(stable_id, bool) or not isinstance(stable_id, int) or stable_id < 1:
+                raise MigrationError(f"Repository map row {index} has an invalid stable_repository_id")
+            if stable_id in stable_ids:
+                raise MigrationError(f"Repository map repeats stable repository ID {stable_id}")
+            stable_ids.add(stable_id)
+
+
+def validate_snapshot(snapshot: Mapping[str, Any]) -> None:
+    """Validate immutable snapshot identity rows before building a plan."""
+    if not isinstance(snapshot, Mapping) or not isinstance(snapshot.get("repositories"), list):
+        raise MigrationError("Source snapshot must contain a repositories array")
+    schema_version = snapshot.get("schema_version")
+    if not isinstance(schema_version, str) or re.fullmatch(r"[a-zA-Z0-9._-]+", schema_version) is None:
+        raise MigrationError("Source snapshot has no valid schema_version")
+    names: set[str] = set()
+    stable_ids: set[int] = set()
+    for index, item in enumerate(snapshot["repositories"]):
+        if not isinstance(item, Mapping):
+            raise MigrationError(f"Source snapshot row {index} is not an object")
+        full_name = item.get("full_name")
+        if not isinstance(full_name, str) or full_name.count("/") != 1 or not all(full_name.split("/")):
+            raise MigrationError(f"Source snapshot row {index} has an invalid full_name")
+        snapshot_owner, snapshot_name = full_name.split("/")
+        if not snapshot_owner.strip() or not _valid_repo_name(snapshot_name):
+            raise MigrationError(f"Source snapshot row {index} has an invalid full_name")
+        normalized_name = full_name.casefold()
+        if normalized_name in names:
+            raise MigrationError(f"Source snapshot repeats {full_name}")
+        names.add(normalized_name)
+        stable_id = item.get("stable_id")
+        if isinstance(stable_id, bool) or not isinstance(stable_id, int) or stable_id < 1:
+            raise MigrationError(f"Source snapshot row {index} has an invalid stable_id")
+        if stable_id in stable_ids:
+            raise MigrationError(f"Source snapshot repeats stable_id {stable_id}")
+        stable_ids.add(stable_id)
+
+
+def snapshot_provenance(snapshot: Mapping[str, Any], digest: str | None = None) -> dict[str, Any]:
+    """Return a digest and schema marker suitable for a reviewable plan."""
+    validate_snapshot(snapshot)
+    snapshot_digest = digest or sha256_json(snapshot)
+    if not isinstance(snapshot_digest, str) or re.fullmatch(r"[0-9a-f]{64}", snapshot_digest) is None:
+        raise MigrationError("Source snapshot digest is not a SHA-256 value")
+    return {
+        "provided": True,
+        "schema_version": snapshot.get("schema_version"),
+        "sha256": snapshot_digest,
+        "collection_date": snapshot.get("collection_date"),
+        "repository_count": len(snapshot["repositories"]),
+    }
 
 
 def load_snapshot(path: Path | None) -> Mapping[str, Any] | None:
     if path is None:
         return None
     value = read_json(path)
-    if not isinstance(value, Mapping) or not isinstance(value.get("repositories"), list):
-        raise MigrationError("Source snapshot must contain a repositories array")
+    if not isinstance(value, Mapping):
+        raise MigrationError("Source snapshot must be a JSON object")
+    validate_snapshot(value)
     return value
 
 
@@ -567,21 +842,35 @@ def build_plan(
     owner: str = DEFAULT_OWNER,
     snapshot: Mapping[str, Any] | None = None,
     observed_at: str | None = None,
+    snapshot_sha256: str | None = None,
 ) -> dict[str, Any]:
+    repository_rows = list(repository_map)
+    validate_repository_rows(repository_rows)
+    if snapshot is not None:
+        validate_snapshot(snapshot)
     actor = client.current_user() if callable(getattr(client, "current_user", None)) else None
+    generated_at = observed_at or utc_now()
     operations: list[dict[str, Any]] = []
-    for item in repository_map:
+    for item in repository_rows:
         source_name = item.get("source_name")
         target_name = item.get("target_name")
         if not isinstance(source_name, str) or not isinstance(target_name, str):
             raise MigrationError("Every repository-map row needs source_name and target_name")
         repo_owner = item.get("owner") if isinstance(item.get("owner"), str) else owner
+        if repo_owner != DEFAULT_OWNER:
+            raise MigrationError(f"Repository owner {repo_owner!r} is outside the approved migration scope")
         source = client.observe_repo(repo_owner, source_name)
         target = source if target_name == source_name else client.observe_repo(repo_owner, target_name)
         expected = expected_by_name(snapshot, repo_owner, source_name)
-        expected_id = item.get("stable_repository_id") or (expected.get("stable_id") if expected else source.get("id"))
+        mapped_id = item.get("stable_repository_id")
+        if expected is not None and mapped_id is not None and mapped_id != expected.get("stable_id"):
+            raise MigrationError(
+                f"Repository map stable ID for {repo_owner}/{source_name} disagrees with the source snapshot"
+            )
+        expected_id = (expected.get("stable_id") if expected else mapped_id) or source.get("id")
         expected_head = item.get("source_head") or (expected.get("default_head") if expected else source.get("head_sha"))
         operation_id = f"rename:{repo_owner}/{source_name}->{target_name}"
+        source_backup = compact_repo(source)
         op = {
             "operation_id": operation_id,
             "owner": repo_owner,
@@ -591,6 +880,13 @@ def build_plan(
             "display_title": item.get("display_title"),
             "description": item.get("description"),
             "note": item.get("note"),
+            "backup_reference": {
+                "kind": "plan_embedded_repository_metadata",
+                "immutable": True,
+                "snapshot_sha256": sha256_json(source_backup),
+                "snapshot": source_backup,
+                "captured_at": generated_at,
+            },
             "preconditions": {
                 "expected_stable_repository_id": expected_id,
                 "expected_current_head": expected_head,
@@ -628,7 +924,7 @@ def build_plan(
         operations.append(op)
     return {
         "schema_version": SCHEMA_VERSION,
-        "generated_at": observed_at or utc_now(),
+        "generated_at": generated_at,
         "mode": "dry_run",
         "operator": {
             "github_host": "github.com",
@@ -646,11 +942,18 @@ def build_plan(
             ],
         },
         "source_snapshot": "provided W01 source snapshot" if snapshot else "live API observations",
+        "source_snapshot_provenance": (
+            snapshot_provenance(snapshot, snapshot_sha256)
+            if snapshot is not None
+            else {"provided": False, "schema_version": None, "sha256": None}
+        ),
         "operations": operations,
     }
 
 
 def validate_plan(plan: Mapping[str, Any]) -> None:
+    if not isinstance(plan, Mapping):
+        raise MigrationError("Migration plan must be a JSON object")
     if plan.get("schema_version") != SCHEMA_VERSION:
         raise MigrationError("Unsupported migration plan schema")
     if plan.get("mode") != "dry_run":
@@ -658,6 +961,14 @@ def validate_plan(plan: Mapping[str, Any]) -> None:
     operations = plan.get("operations")
     if not isinstance(operations, list) or not operations:
         raise MigrationError("Migration plan has no operations")
+    provenance = plan.get("source_snapshot_provenance")
+    if not isinstance(provenance, Mapping) or not isinstance(provenance.get("provided"), bool):
+        raise MigrationError("Migration plan has no source snapshot provenance")
+    if provenance.get("provided"):
+        if not isinstance(provenance.get("schema_version"), str) or not re.fullmatch(r"[a-zA-Z0-9._-]+", provenance["schema_version"]):
+            raise MigrationError("Migration plan has invalid source snapshot schema provenance")
+        if not isinstance(provenance.get("sha256"), str) or re.fullmatch(r"[0-9a-f]{64}", provenance["sha256"]) is None:
+            raise MigrationError("Migration plan has invalid source snapshot digest provenance")
     seen: set[str] = set()
     for op in operations:
         if not isinstance(op, Mapping):
@@ -667,9 +978,32 @@ def validate_plan(plan: Mapping[str, Any]) -> None:
             raise MigrationError("Migration operation IDs must be unique strings")
         seen.add(operation_id)
         if op.get("action") in RENAME_ACTIONS:
+            if op.get("owner") != DEFAULT_OWNER:
+                raise MigrationError(f"{operation_id} is outside the approved repository owner scope")
+            if not _valid_repo_name(op.get("source_name")):
+                raise MigrationError(f"{operation_id} has no source repository name")
+            if not _valid_repo_name(op.get("target_name")):
+                raise MigrationError(f"{operation_id} has no target repository name")
             preconditions = op.get("preconditions")
-            if not isinstance(preconditions, Mapping) or not preconditions.get("expected_stable_repository_id"):
+            if not isinstance(preconditions, Mapping):
+                raise MigrationError(f"{operation_id} has no preconditions")
+            stable_id = preconditions.get("expected_stable_repository_id")
+            if isinstance(stable_id, bool) or not isinstance(stable_id, int) or stable_id < 1:
                 raise MigrationError(f"{operation_id} has no stable-ID precondition")
+            for key in ("expected_current_head", "expected_default_branch", "expected_visibility"):
+                if not isinstance(preconditions.get(key), str) or not preconditions[key]:
+                    raise MigrationError(f"{operation_id} has no {key} precondition")
+            reference = op.get("backup_reference")
+            if not isinstance(reference, Mapping) or reference.get("immutable") is not True:
+                raise MigrationError(f"{operation_id} has no immutable backup reference")
+            snapshot = reference.get("snapshot")
+            digest = reference.get("snapshot_sha256")
+            if not isinstance(snapshot, Mapping) or not isinstance(digest, str) or re.fullmatch(r"[0-9a-f]{64}", digest) is None:
+                raise MigrationError(f"{operation_id} has an invalid backup reference")
+            if not isinstance(reference.get("kind"), str) or not reference["kind"].strip():
+                raise MigrationError(f"{operation_id} has an invalid backup reference kind")
+            if sha256_json(snapshot) != digest:
+                raise MigrationError(f"{operation_id} backup reference digest is invalid")
 
 
 def load_approval(path: Path, plan_path: Path, plan: Mapping[str, Any]) -> Mapping[str, Any]:
@@ -699,26 +1033,232 @@ def fresh_operation_state(client: Any, op: Mapping[str, Any]) -> tuple[dict[str,
     return source, target
 
 
+def operation_set_lock_path(plan_path: Path, plan_digest: str) -> Path:
+    """Return the lock shared by every receipt applying one exact plan."""
+    plan_path = Path(plan_path)
+    return plan_path.with_name(f".{plan_path.name}.{plan_digest}.operation-set.lock")
+
+
+def _receipt_repo_identity(value: Any, owner: str, name: str, *, expected_id: int | None = None) -> bool:
+    if not isinstance(value, Mapping):
+        return False
+    if not isinstance(value.get("exists"), bool):
+        return False
+    if value.get("owner") != owner or value.get("name") != name:
+        return False
+    if value.get("exists") and value.get("full_name") != f"{owner}/{name}":
+        return False
+    if expected_id is not None and value.get("id") != expected_id:
+        return False
+    return True
+
+
+def _validate_receipt_rows(stored_operations: Any, plan: Mapping[str, Any]) -> dict[str, Mapping[str, Any]]:
+    if not isinstance(stored_operations, list):
+        raise MigrationError("Existing migration receipt has no operation rows")
+    plan_operations = {
+        op.get("operation_id"): op
+        for op in plan.get("operations", [])
+        if isinstance(op, Mapping) and isinstance(op.get("operation_id"), str)
+    }
+    previous: dict[str, Mapping[str, Any]] = {}
+    valid_statuses = {
+        "applied",
+        "already_satisfied",
+        "unknown",
+        "unknown_waiting_for_reconciliation",
+        "verification_failed",
+        "dry_run_blocked",
+        "dry_run_ready",
+        "blocked",
+        "skipped",
+        "deferred",
+    }
+    for item in stored_operations:
+        if not isinstance(item, Mapping) or not isinstance(item.get("operation_id"), str):
+            raise MigrationError("Existing migration receipt has an invalid operation row")
+        operation_id = item["operation_id"]
+        if operation_id in previous or operation_id not in plan_operations:
+            raise MigrationError("Existing migration receipt has duplicate or unknown operation IDs")
+        op = plan_operations[operation_id]
+        if (
+            item.get("owner") != op.get("owner")
+            or item.get("source_name") != op.get("source_name")
+            or item.get("target_name") != op.get("target_name")
+        ):
+            raise MigrationError(f"Existing migration receipt identity does not match {operation_id}")
+        if item.get("status") not in valid_statuses:
+            raise MigrationError(f"Existing migration receipt has no status for {operation_id}")
+        if not isinstance(item.get("requested"), bool):
+            raise MigrationError(f"Existing migration receipt has no request state for {operation_id}")
+        expected_id = op.get("preconditions", {}).get("expected_stable_repository_id")
+        for key, expected_name in (("observed_source", op.get("source_name")), ("observed_target", op.get("target_name"))):
+            value = item.get(key)
+            if value is not None and not _receipt_repo_identity(value, op.get("owner"), expected_name):
+                raise MigrationError(f"Existing migration receipt has an invalid {key} for {operation_id}")
+            if expected_id is not None and isinstance(value, Mapping) and value.get("exists") and value.get("id") != expected_id:
+                raise MigrationError(f"Existing migration receipt has a stale {key} identity for {operation_id}")
+        for key in ("response", "verification"):
+            if key in item and not isinstance(item.get(key), Mapping):
+                raise MigrationError(f"Existing migration receipt has an invalid {key} for {operation_id}")
+        if item.get("status") == "applied":
+            response = item.get("response")
+            if not _receipt_repo_identity(response, op.get("owner"), op.get("target_name"), expected_id=expected_id):
+                raise MigrationError(f"Existing migration receipt has an invalid response for {operation_id}")
+        previous[operation_id] = item
+    return previous
+
+
+def _receipt_post_state_matches(
+    prior: Mapping[str, Any],
+    op: Mapping[str, Any],
+    source: Mapping[str, Any],
+    target: Mapping[str, Any],
+) -> bool:
+    """Accept a terminal receipt only after matching its fresh full state."""
+    operation_id = op.get("operation_id")
+    if prior.get("operation_id") != operation_id:
+        return False
+    status = prior.get("status")
+    if status not in {"applied", "already_satisfied"}:
+        return False
+    if not isinstance(prior.get("requested"), bool):
+        return False
+    if status == "applied" and prior.get("requested") is not True:
+        return False
+    if status == "already_satisfied" and prior.get("requested") is not False:
+        return False
+    owner = op.get("owner")
+    source_name = op.get("source_name")
+    target_name = op.get("target_name")
+    if not all(isinstance(value, str) and value for value in (owner, source_name, target_name)):
+        return False
+    expected_id = op.get("preconditions", {}).get("expected_stable_repository_id")
+    if isinstance(expected_id, bool) or not isinstance(expected_id, int):
+        return False
+    if prior.get("owner") != owner:
+        return False
+    if not _receipt_repo_identity(prior.get("observed_source"), owner, source_name):
+        return False
+    if not _receipt_repo_identity(prior.get("observed_target"), owner, target_name):
+        return False
+    request = prior.get("request")
+    if status == "applied":
+        if not isinstance(request, Mapping) or request != {
+            "method": "PATCH",
+            "path": f"repos/{owner}/{source_name}",
+            "body": {"name": target_name},
+        }:
+            return False
+        response = prior.get("response")
+        if not _receipt_repo_identity(response, owner, target_name, expected_id=expected_id):
+            return False
+    elif request is not None:
+        return False
+    verification = prior.get("verification")
+    if not isinstance(verification, Mapping):
+        return False
+    expected_name = target_name
+    expected_full_name = f"{owner}/{expected_name}"
+    if not (
+        target.get("exists")
+        and target.get("id") == expected_id
+        and target.get("name") == expected_name
+        and target.get("full_name") == expected_full_name
+    ):
+        return False
+    current = compact_repo(target)
+    if dict(verification) != current:
+        return False
+    if not isinstance(prior.get("post_state_sha256"), str) or prior.get("post_state_sha256") != sha256_json(current):
+        return False
+    # A successful rename leaves the old name absent.  If a later observation
+    # still resolves it, the receipt is not a safe success oracle.
+    if source.get("exists") is not False:
+        return False
+    return True
+
+
+def _merge_receipt_rows(
+    previous: Mapping[str, Mapping[str, Any]],
+    results: Iterable[Mapping[str, Any]],
+    plan: Mapping[str, Any],
+) -> list[dict[str, Any]]:
+    merged: dict[str, Mapping[str, Any]] = dict(previous)
+    for row in results:
+        if isinstance(row.get("operation_id"), str):
+            merged[row["operation_id"]] = row
+    ordered: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for op in plan.get("operations", []):
+        operation_id = op.get("operation_id") if isinstance(op, Mapping) else None
+        if isinstance(operation_id, str) and operation_id in merged:
+            ordered.append(dict(merged[operation_id]))
+            seen.add(operation_id)
+    ordered.extend(dict(row) for operation_id, row in merged.items() if operation_id not in seen)
+    return ordered
+
+
+def _approval_actor_login(client: Any) -> str:
+    current_user = getattr(client, "current_user", None)
+    actor = current_user() if callable(current_user) else None
+    login = actor.get("login") if isinstance(actor, Mapping) else None
+    if not isinstance(login, str) or not login.strip():
+        raise MigrationError("Remote apply requires an authenticated GitHub actor")
+    return login.strip()
+
+
+def _validate_approval_scope(approval: Mapping[str, Any], plan: Mapping[str, Any], client: Any) -> None:
+    actor_login = _approval_actor_login(client)
+    if approval.get("approved_by") != actor_login:
+        raise MigrationError("Approval actor does not match the authenticated GitHub actor")
+    rename_ids = {
+        str(op.get("operation_id"))
+        for op in plan.get("operations", [])
+        if isinstance(op, Mapping) and op.get("action") in RENAME_ACTIONS
+    }
+    approved_ids = approval.get("operation_ids")
+    if not isinstance(approved_ids, list) or not rename_ids.issubset(set(approved_ids)):
+        raise MigrationError("Approval does not cover every rename operation in the plan")
+    for op in plan.get("operations", []):
+        if isinstance(op, Mapping) and op.get("action") in RENAME_ACTIONS and op.get("owner") != DEFAULT_OWNER:
+            raise MigrationError("Approval includes a repository outside the approved owner scope")
+
+
 def apply_plan(
     plan, client, *, plan_path, receipt_path, approval=None, apply=False, retry_unknown=False,
 ):
-    """Serialize one receipt's read/check/request cycle; never age out a lock."""
+    """Serialize one operation-set read/check/request cycle."""
+    plan_path = Path(plan_path)
     receipt_path = Path(receipt_path)
     receipt_path.parent.mkdir(parents=True, exist_ok=True)
-    lock = receipt_path.with_name(receipt_path.name + '.lock')
+    plan_digest = sha256_bytes(plan_path.read_bytes())
+    operation_lock = operation_set_lock_path(plan_path, plan_digest)
+    receipt_lock = receipt_path.with_name(receipt_path.name + '.lock')
     try:
-        handle = lock.open('x', encoding='utf-8')
+        operation_handle = operation_lock.open('x', encoding='utf-8')
     except FileExistsError as exc:
-        raise MigrationError('Receipt is locked; reconcile the owning process before removing its lock') from exc
+        raise MigrationError('Operation set is locked; reconcile the owning process before removing its lock') from exc
     try:
-        with handle:
-            handle.write(str(os.getpid()) + '\n')
-            handle.flush()
-            os.fsync(handle.fileno())
-        return _apply_plan(plan, client, plan_path=plan_path, receipt_path=receipt_path,
-                           approval=approval, apply=apply, retry_unknown=retry_unknown)
+        with operation_handle:
+            operation_handle.write(str(os.getpid()) + '\n')
+            operation_handle.flush()
+            os.fsync(operation_handle.fileno())
+        try:
+            receipt_handle = receipt_lock.open('x', encoding='utf-8')
+        except FileExistsError as exc:
+            raise MigrationError('Receipt is locked; reconcile the owning process before removing its lock') from exc
+        try:
+            with receipt_handle:
+                receipt_handle.write(str(os.getpid()) + '\n')
+                receipt_handle.flush()
+                os.fsync(receipt_handle.fileno())
+            return _apply_plan(plan, client, plan_path=plan_path, receipt_path=receipt_path,
+                               approval=approval, apply=apply, retry_unknown=retry_unknown)
+        finally:
+            receipt_lock.unlink(missing_ok=True)
     finally:
-        lock.unlink()
+        operation_lock.unlink(missing_ok=True)
 
 
 def _apply_plan(
@@ -739,6 +1279,8 @@ def _apply_plan(
         raise MigrationError("In-memory plan differs from exact plan bytes")
     if apply and approval.get('plan_sha256') != plan_digest:
         raise MigrationError("Approval does not match the exact plan bytes")
+    if apply:
+        _validate_approval_scope(approval, plan, client)
     approved_ids = set(approval.get("operation_ids", [])) if approval else set()
     previous: dict[str, Any] = {}
     if receipt_path.exists():
@@ -747,14 +1289,12 @@ def _apply_plan(
             raise MigrationError("Existing migration receipt has an unsupported schema")
         if value.get('plan_sha256') != plan_digest:
             raise MigrationError('Existing receipt belongs to a different plan')
-        previous = {str(item.get("operation_id")): item for item in value.get("operations", []) if isinstance(item, Mapping)}
+        previous = _validate_receipt_rows(value.get("operations"), plan)
 
     results: list[dict[str, Any]] = []
 
     def persist_pending(rows):
         # Preserve prior later-operation receipts during an interrupted pass.
-        merged = dict(previous)
-        merged.update({row['operation_id']: row for row in rows})
         write_json(receipt_path, {
             'schema_version': RECEIPT_SCHEMA_VERSION,
             'plan_sha256': plan_digest,
@@ -762,7 +1302,7 @@ def _apply_plan(
             'recorded_at': utc_now(),
             'operator': {'approved_by': approval.get('approved_by') if approval else None,
                          'owner_notification_sent': False},
-            'operations': list(merged.values()),
+            'operations': _merge_receipt_rows(previous, rows, plan),
         })
     for op in plan["operations"]:
         if not isinstance(op, Mapping):
@@ -770,18 +1310,21 @@ def _apply_plan(
         operation_id = str(op["operation_id"])
         action = op.get("action")
         prior = previous.get(operation_id)
-        if prior and prior.get("status") in {"applied", "already_satisfied", "skipped"}:
-            results.append(dict(prior))
-            continue
         if prior and prior.get("status") in {"unknown", "unknown_waiting_for_reconciliation", "verification_failed"} and not retry_unknown:
             result = dict(prior)
             result["status"] = "unknown_waiting_for_reconciliation"
             results.append(result)
-            continue
+            persist_pending(results)
+            break
         source, target = fresh_operation_state(client, op)
+        if prior and prior.get("status") in {"applied", "already_satisfied"}:
+            if _receipt_post_state_matches(prior, op, source, target):
+                results.append(dict(prior))
+                continue
         evaluation = evaluate_operation(op, source, target, authorized=operation_id in approved_ids)
         result: dict[str, Any] = {
             "operation_id": operation_id,
+            "owner": op.get("owner"),
             "source_name": op.get("source_name"),
             "target_name": op.get("target_name"),
             "requested": False,
@@ -793,6 +1336,8 @@ def _apply_plan(
         }
         if evaluation.get("status") == "already_satisfied":
             result["status"] = "already_satisfied"
+            result["verification"] = compact_repo(target)
+            result["post_state_sha256"] = sha256_json(result["verification"])
             results.append(result)
             continue
         if action in KEEP_ACTIONS:
@@ -815,23 +1360,41 @@ def _apply_plan(
         if not callable(rename_method):
             raise MigrationError("The selected client cannot apply a rename")
         result["requested"] = True
+        result["request"] = {
+            "method": "PATCH",
+            "path": f"repos/{op['owner']}/{op['source_name']}",
+            "body": {"name": op["target_name"]},
+        }
         result['status'] = 'unknown'
         result['rollback_decision'] = 'do_not_rollback_automatically'
         persist_pending(results + [result])
         try:
             response = rename_method(str(op["owner"]), str(op["source_name"]), str(op["target_name"]))
             result["response"] = compact_repo(response if isinstance(response, Mapping) else {})
-        except ApiError as exc:
-            # A timeout or transport failure is unknown: do not call PATCH a
-            # second time without an explicit reconciliation retry.
-            result["status"] = "unknown" if "timeout" in str(exc).lower() or "request failed" in str(exc).lower() else "failed"
+        except (ApiError, TimeoutError, ConnectionError, OSError) as exc:
+            # Any ambiguous post-request transport result is unknown: do not
+            # call PATCH a second time without explicit reconciliation.
+            ambiguous = not isinstance(exc, ApiError) or exc.ambiguous
+            result["status"] = "unknown" if ambiguous else "failed"
             result["error"] = str(exc)[:400]
             result["rollback_decision"] = "do_not_rollback_automatically"
             results.append(result)
             persist_pending(results)
+            if result["status"] == "unknown":
+                break
             continue
-        verified = client.observe_repo(str(op["owner"]), str(op["target_name"]))
+        try:
+            verified = client.observe_repo(str(op["owner"]), str(op["target_name"]))
+        except MigrationError as exc:
+            result["status"] = "verification_failed"
+            result["verification_error"] = str(exc)[:400]
+            result["rollback_decision"] = "do_not_rollback_automatically"
+            result["rollback_preconditions"] = op.get("rollback", {}).get("preconditions", [])
+            results.append(result)
+            persist_pending(results)
+            break
         result["verification"] = compact_repo(verified)
+        result["post_state_sha256"] = sha256_json(result["verification"])
         if (
             verified.get("exists")
             and verified.get("id") == op["preconditions"].get("expected_stable_repository_id")
@@ -846,6 +1409,8 @@ def _apply_plan(
             result["rollback_preconditions"] = op.get("rollback", {}).get("preconditions", [])
         results.append(result)
         persist_pending(results)
+        if result["status"] == "verification_failed":
+            break
 
     receipt = {
         "schema_version": RECEIPT_SCHEMA_VERSION,
@@ -856,7 +1421,7 @@ def _apply_plan(
             "approved_by": approval.get("approved_by") if approval else None,
             "owner_notification_sent": False,
         },
-        "operations": results,
+        "operations": _merge_receipt_rows(previous, results, plan),
     }
     if apply or results:
         write_json(receipt_path, receipt)
@@ -879,7 +1444,14 @@ def command_plan(args: argparse.Namespace) -> dict[str, Any]:
     repository_map = load_map(args.map)
     snapshot = load_snapshot(args.snapshot)
     client = SnapshotClient(snapshot) if snapshot is not None else GhApi(executable=args.api_executable, host=args.host)
-    plan = build_plan(repository_map, client, owner=args.owner, snapshot=snapshot, observed_at=args.observed_at)
+    plan = build_plan(
+        repository_map,
+        client,
+        owner=args.owner,
+        snapshot=snapshot,
+        observed_at=args.observed_at,
+        snapshot_sha256=sha256_bytes(args.snapshot.read_bytes()) if args.snapshot else None,
+    )
     write_json(args.output, plan)
     return {"output": str(args.output), "plan_sha256": sha256_bytes(args.output.read_bytes()), "operations": len(plan["operations"]), "mode": "dry_run"}
 
