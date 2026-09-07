@@ -1,0 +1,372 @@
+{
+  "schema_version": "ai-ascension.marketing-experiments.v1",
+  "package_source_revision": "4d09cd40fb077cc3364197a1cb1056950b980361",
+  "owner": "W06-C2",
+  "operation_state": "design_only",
+  "collection_policy": {
+    "audience_funnel": "eligible impression/view -> engaged episode or run page -> decision interaction/inspection -> return visit",
+    "developer_funnel": "docs visit -> attempted setup -> completed useful workflow -> repeat use or contribution",
+    "required_event_fields": [
+      "schema_version",
+      "coarse_timestamp",
+      "public_content_id",
+      "event_name",
+      "surface"
+    ],
+    "optional_fields": "Only consented coarse session/cohort state; never email, private run ID, prompt, raw action, secret, save, full private referrer, or fingerprint.",
+    "retention": "Retain aggregate experiment rows only for the stated window; delete raw event payloads and contact notes according to the approved operator policy.",
+    "absent_data": "Display no observations; never display zero conversion when collection did not occur.",
+    "results_status": "unobserved"
+  },
+  "experiments": [
+    {
+      "experiment_id": "EXP-01",
+      "name": "Experience-first versus architecture-first introduction",
+      "hypothesis": "A plain outcome and evidence boundary before architecture will increase meaningful inspection among first-time spectators without reducing developer quickstart starts.",
+      "audience": "New visitors arriving at Watch/Home",
+      "variants": {
+        "A": "Outcome-first: What actually happened plus pinned reports.",
+        "B": "Architecture-first: boundary diagram and source taxonomy before the outcome."
+      },
+      "primary_metric": {
+        "event_name": "meaningful_watch_or_read",
+        "numerator": "Eligible visitors who reach the evidence boundary and open a source pointer or evidence panel within the session.",
+        "denominator": "Eligible visitors who receive the variant after bot, maintainer preview, duplicate reload, and missing-consent exclusions.",
+        "exclusion_rules": [
+          "known test and preview traffic",
+          "bots",
+          "sessions without consent where consent is required"
+        ]
+      },
+      "secondary_metrics": [
+        "run_page_view",
+        "evidence_open",
+        "build_start"
+      ],
+      "observation_window": "14 days after an approved variant is deployed",
+      "stop_rule": "Stop after the first privacy incident, unsupported claim, or five qualitative reviewers report that the opening hides the evidence class; otherwise stop at the window end.",
+      "minimum_sample_or_qualitative_protocol": "Prefer 100 eligible visitors per variant; if volume is lower, conduct five consented comprehension sessions and label inference as qualitative.",
+      "confounders": [
+        "traffic source mix",
+        "new versus returning visitors",
+        "asset availability",
+        "simultaneous site copy changes",
+        "route deployment differences"
+      ],
+      "privacy": "Use aggregate variant assignment; no cross-site identity or fingerprint. Store only public content ID and coarse timestamp.",
+      "attribution_limit": "Cannot establish that ordering caused inspection behavior; report traffic and variant changes.",
+      "destination": "https://aiascension.tech/watch",
+      "destination_state": "planned_local_destination_until_deployed",
+      "asset_ids": [
+        "WEB-01",
+        "WEB-02",
+        "DOC-01"
+      ],
+      "result": {
+        "status": "unobserved",
+        "eligible_numerator": null,
+        "eligible_denominator": null,
+        "notes": []
+      }
+    },
+    {
+      "experiment_id": "EXP-02",
+      "name": "Outcome title versus question title",
+      "hypothesis": "A concrete outcome-qualified title will earn more meaningful reading than a curiosity question while preserving accurate interpretation.",
+      "audience": "Episode viewers and report readers",
+      "variants": {
+        "A": "What actually happened: two documented defeats",
+        "B": "How far can an AI climb? Read the report"
+      },
+      "primary_metric": {
+        "event_name": "meaningful_watch_or_read",
+        "numerator": "Eligible title impressions followed by a source report open or evidence section completion.",
+        "denominator": "Eligible impressions of the approved title variant.",
+        "exclusion_rules": [
+          "known test and preview traffic",
+          "bots",
+          "duplicate reloads"
+        ]
+      },
+      "secondary_metrics": [
+        "run_page_view",
+        "evidence_open",
+        "return_visit_proxy"
+      ],
+      "observation_window": "14 days after the same report-only episode is approved",
+      "stop_rule": "Stop immediately if either title is read as a verified win; otherwise stop at 14 days or after 200 eligible impressions per variant.",
+      "minimum_sample_or_qualitative_protocol": "Target 200 eligible impressions per variant; with lower volume, conduct five comprehension checks per variant and record wording errors.",
+      "confounders": [
+        "thumbnail copy",
+        "platform placement",
+        "report versus video state",
+        "repeat viewers",
+        "source link position"
+      ],
+      "privacy": "Aggregate content ID and variant only; no identity, full referrer, or raw query string.",
+      "attribution_limit": "Title performance does not prove title caused completion or future return.",
+      "destination": "https://aiascension.tech/watch",
+      "destination_state": "planned_local_destination_until_deployed",
+      "asset_ids": [
+        "MKT-03",
+        "MKT-04",
+        "WEB-02"
+      ],
+      "result": {
+        "status": "unobserved",
+        "eligible_numerator": null,
+        "eligible_denominator": null,
+        "notes": []
+      }
+    },
+    {
+      "experiment_id": "EXP-03",
+      "name": "Report versus short-clip entry point",
+      "hypothesis": "A short clip that immediately links to a pinned report will produce more evidence inspection per eligible start than a report card shown without a clip.",
+      "audience": "Spectators discovering The Climb through approved channels",
+      "variants": {
+        "A": "Short clip with report link and evidence disclaimer",
+        "B": "Report-only card with same source link and disclaimer"
+      },
+      "primary_metric": {
+        "event_name": "evidence_open",
+        "numerator": "Eligible entries that open the pinned source report or evidence panel within the observation window.",
+        "denominator": "Eligible clip starts or report-card views, variant-specific, after bot/test exclusions.",
+        "exclusion_rules": [
+          "known test and preview traffic",
+          "bots",
+          "duplicate reloads"
+        ]
+      },
+      "secondary_metrics": [
+        "media_start",
+        "meaningful_watch_or_read",
+        "return_visit_proxy"
+      ],
+      "observation_window": "21 days after both variants have the same source and destination availability",
+      "stop_rule": "Stop if a clip implies an unapproved video or if the source destination changes; otherwise stop at the window end.",
+      "minimum_sample_or_qualitative_protocol": "Target 75 eligible entries per variant; below that, review five sessions per variant for source-label comprehension.",
+      "confounders": [
+        "platform autoplay",
+        "clip length",
+        "thumbnail assets",
+        "source link behavior",
+        "device type if consented aggregate only"
+      ],
+      "privacy": "Do not export player IDs or raw referrers; use coarse event counts and consented cohort only.",
+      "attribution_limit": "Entry source is directional; no person-level path or causal lift claim.",
+      "destination": "https://aiascension.tech/watch",
+      "destination_state": "planned_local_destination_until_deployed",
+      "asset_ids": [
+        "MKT-03",
+        "WEB-02",
+        "RUN-04"
+      ],
+      "result": {
+        "status": "unobserved",
+        "eligible_numerator": null,
+        "eligible_denominator": null,
+        "notes": []
+      }
+    },
+    {
+      "experiment_id": "EXP-04",
+      "name": "Decision card versus generic promotion image",
+      "hypothesis": "A source-linked decision card will produce more evidence inspection and accurate recall than a generic promotional image, when the card is backed by a reviewed public manifest.",
+      "audience": "Visitors with an approved public decision available",
+      "variants": {
+        "A": "Decision card showing observation, legal options, source, and outcome state",
+        "B": "Generic series promotion image with the same CTA"
+      },
+      "primary_metric": {
+        "event_name": "decision_presented",
+        "numerator": "Eligible presentations of a reviewed decision card that include all required fields.",
+        "denominator": "Eligible run-page entries where a reviewed public decision manifest is available.",
+        "exclusion_rules": [
+          "entries without a reviewed manifest",
+          "known test and preview traffic",
+          "bots"
+        ]
+      },
+      "secondary_metrics": [
+        "decision_guess",
+        "decision_reveal",
+        "evidence_open"
+      ],
+      "observation_window": "14 days after a reviewed decision card and control are approved",
+      "stop_rule": "Do not start without a reviewed manifest; stop on any missing field, private payload exposure, or claim that the local guess is a vote.",
+      "minimum_sample_or_qualitative_protocol": "Target 50 eligible presentations per variant; otherwise run five comprehension sessions and inspect every reveal path.",
+      "confounders": [
+        "decision difficulty",
+        "source quality",
+        "art availability",
+        "device layout",
+        "prior familiarity"
+      ],
+      "privacy": "Local guess is anonymous; collect aggregate event counts only. Never store selected option with a user identity or expose control endpoints.",
+      "attribution_limit": "A reveal interaction measures inspection behavior, not decision quality or game impact.",
+      "destination": "https://aiascension.tech/runs",
+      "destination_state": "planned_local_destination_until_manifest_and_deployment",
+      "asset_ids": [
+        "RUN-02",
+        "WEB-02",
+        "MKT-05"
+      ],
+      "result": {
+        "status": "unobserved",
+        "eligible_numerator": null,
+        "eligible_denominator": null,
+        "notes": []
+      }
+    },
+    {
+      "experiment_id": "EXP-05",
+      "name": "Developer quickstart variant",
+      "hypothesis": "A tested, narrow quickstart with prerequisites and evidence boundaries will increase completed useful workflows compared with a broad installation overview.",
+      "audience": "Developers arriving at Build/Docs",
+      "variants": {
+        "A": "Exact tested configuration, copy-paste command, expected output, and failure path",
+        "B": "Architecture overview followed by links to multiple repositories and optional paths"
+      },
+      "primary_metric": {
+        "event_name": "quickstart_success",
+        "numerator": "Server-side or otherwise verified completed useful workflow tied to the public content ID, not a button click.",
+        "denominator": "Eligible quickstart attempts that pass the documented prerequisite and start signal, after bot/test exclusions.",
+        "exclusion_rules": [
+          "client-only click without server-side success",
+          "known test and preview traffic",
+          "bots"
+        ]
+      },
+      "secondary_metrics": [
+        "build_start",
+        "docs_error",
+        "contributor_repeat_proxy"
+      ],
+      "observation_window": "28 days after the same source revision is deployed",
+      "stop_rule": "Stop if success is inferred solely from a client click, requires hidden credentials, or exposes private host paths; otherwise stop at 28 days.",
+      "minimum_sample_or_qualitative_protocol": "Target 30 eligible attempts per variant; below that, observe five consented setup sessions and record exact blockers.",
+      "confounders": [
+        "OS/toolchain",
+        "cache state",
+        "repository head",
+        "provider credentials",
+        "network access",
+        "native host availability"
+      ],
+      "privacy": "No tokens, absolute private paths, IPs, or command transcripts in events; keep aggregate error category only.",
+      "attribution_limit": "A completed workflow under one fixture does not establish broad compatibility or deployment readiness.",
+      "destination": "https://aiascension.tech/build",
+      "destination_state": "planned_local_destination_until_deployed",
+      "asset_ids": [
+        "WEB-07",
+        "DOC-01",
+        "GH-13-B"
+      ],
+      "result": {
+        "status": "unobserved",
+        "eligible_numerator": null,
+        "eligible_denominator": null,
+        "notes": []
+      }
+    },
+    {
+      "experiment_id": "EXP-06",
+      "name": "Creator-annotated versus unannotated analysis",
+      "hypothesis": "A consented creator annotation will increase evidence inspection and return proxies when commentary remains visibly separate from recorded facts.",
+      "audience": "Returning spectators and experienced players",
+      "variants": {
+        "A": "Source record plus approved creator commentary, uncertainty, and correction link",
+        "B": "Same source record without commentary"
+      },
+      "primary_metric": {
+        "event_name": "evidence_open",
+        "numerator": "Eligible analysis readers who open the source record and evidence panel.",
+        "denominator": "Eligible analysis entries assigned to the variant after consent and source availability checks.",
+        "exclusion_rules": [
+          "entries without creator consent",
+          "known test and preview traffic",
+          "bots"
+        ]
+      },
+      "secondary_metrics": [
+        "meaningful_watch_or_read",
+        "return_visit_proxy",
+        "correction_open"
+      ],
+      "observation_window": "21 days after creator consent, source review, and both variants are approved",
+      "stop_rule": "Stop if commentary is mistaken for recorded fact, creator consent changes, or a correction/withdrawal request arrives; otherwise stop at the window end.",
+      "minimum_sample_or_qualitative_protocol": "Target 50 entries per variant; otherwise conduct five comprehension sessions and one creator review before interpreting the result.",
+      "confounders": [
+        "creator familiarity",
+        "topic difficulty",
+        "source quality",
+        "thumbnail/placement",
+        "annotation length"
+      ],
+      "privacy": "Record only aggregate content/variant events; never store creator contact details in analytics.",
+      "attribution_limit": "Cannot claim annotation caused return or trust; report observations and qualitative limitations.",
+      "destination": "https://aiascension.tech/runs",
+      "destination_state": "planned_local_destination_until_consent_manifest_and_deployment",
+      "asset_ids": [
+        "RUN-02",
+        "RUN-03",
+        "CAST-05",
+        "MKT-06"
+      ],
+      "result": {
+        "status": "unobserved",
+        "eligible_numerator": null,
+        "eligible_denominator": null,
+        "notes": []
+      }
+    },
+    {
+      "experiment_id": "EXP-07",
+      "name": "Correction prompt placement",
+      "hypothesis": "A visible correction link beside evidence claims will yield more useful reports and fewer repeated misunderstandings than a footer-only link.",
+      "audience": "All report and episode readers",
+      "variants": {
+        "A": "Correction link beside the evidence state",
+        "B": "Correction link in the page footer only"
+      },
+      "primary_metric": {
+        "event_name": "correction_open",
+        "numerator": "Eligible evidence readers who open the correction guidance and submit a valid source/revision pointer.",
+        "denominator": "Eligible evidence readers exposed to the variant.",
+        "exclusion_rules": [
+          "spam or malformed submissions",
+          "known test and preview traffic",
+          "bots"
+        ]
+      },
+      "secondary_metrics": [
+        "evidence_open",
+        "meaningful_watch_or_read"
+      ],
+      "observation_window": "35 days after an approved correction route exists",
+      "stop_rule": "Stop and review moderation if a submission includes private data or harassment; otherwise stop at 35 days.",
+      "minimum_sample_or_qualitative_protocol": "Target 25 valid correction opens per variant; below that, inspect five sessions and verify the form's required fields.",
+      "confounders": [
+        "source changes",
+        "known campaign errors",
+        "traffic volume",
+        "moderation response time"
+      ],
+      "privacy": "Correction form should accept optional contact separately from the event; events contain content ID, coarse time and validity category only.",
+      "attribution_limit": "Submission volume reflects discoverability and source changes, not content quality alone.",
+      "destination": "https://aiascension.tech/corrections",
+      "destination_state": "planned_local_destination_until_deployed",
+      "asset_ids": [
+        "WEB-05",
+        "MKT-06"
+      ],
+      "result": {
+        "status": "unobserved",
+        "eligible_numerator": null,
+        "eligible_denominator": null,
+        "notes": []
+      }
+    }
+  ]
+}
