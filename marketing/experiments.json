@@ -91,7 +91,7 @@
       "secondary_metrics": [
         "run_page_view",
         "evidence_open",
-        "return_visit_proxy"
+        "repeat-engagement-proxy"
       ],
       "observation_window": "14 days after the same report-only episode is approved",
       "stop_rule": "Stop immediately if either title is read as a verified win; otherwise stop at 14 days or after 200 eligible impressions per variant.",
@@ -141,7 +141,7 @@
       "secondary_metrics": [
         "media_start",
         "meaningful_watch_or_read",
-        "return_visit_proxy"
+        "repeat-engagement-proxy"
       ],
       "observation_window": "21 days after both variants have the same source and destination availability",
       "stop_rule": "Stop if a clip implies an unapproved video or if the source destination changes; otherwise stop at the window end.",
@@ -241,7 +241,7 @@
       "secondary_metrics": [
         "build_start",
         "docs_error",
-        "contributor_repeat_proxy"
+        "repeat-engagement-proxy"
       ],
       "observation_window": "28 days after the same source revision is deployed",
       "stop_rule": "Stop if success is inferred solely from a client click, requires hidden credentials, or exposes private host paths; otherwise stop at 28 days.",
@@ -273,7 +273,7 @@
     {
       "experiment_id": "EXP-06",
       "name": "Creator-annotated versus unannotated analysis",
-      "hypothesis": "A consented creator annotation will increase evidence inspection and return proxies when commentary remains visibly separate from recorded facts.",
+      "hypothesis": "A consented creator annotation will increase evidence inspection when commentary remains visibly separate from recorded facts.",
       "audience": "Returning spectators and experienced players",
       "variants": {
         "A": "Source record plus approved creator commentary, uncertainty, and correction link",
@@ -291,8 +291,7 @@
       },
       "secondary_metrics": [
         "meaningful_watch_or_read",
-        "return_visit_proxy",
-        "correction_open"
+        "repeat-engagement-proxy"
       ],
       "observation_window": "21 days after creator consent, source review, and both variants are approved",
       "stop_rule": "Stop if commentary is mistaken for recorded fact, creator consent changes, or a correction/withdrawal request arrives; otherwise stop at the window end.",
@@ -305,7 +304,7 @@
         "annotation length"
       ],
       "privacy": "Record only aggregate content/variant events; never store creator contact details in analytics.",
-      "attribution_limit": "Cannot claim annotation caused return or trust; report observations and qualitative limitations.",
+      "attribution_limit": "Cannot claim annotation caused return or trust; the monthly coarse-cohort count is context only, not a return rate. Report observations and qualitative limitations.",
       "destination": "https://aiascension.tech/runs",
       "destination_state": "planned_local_destination_until_consent_manifest_and_deployment",
       "asset_ids": [
@@ -323,39 +322,40 @@
     },
     {
       "experiment_id": "EXP-07",
-      "name": "Correction prompt placement",
-      "hypothesis": "A visible correction link beside evidence claims will yield more useful reports and fewer repeated misunderstandings than a footer-only link.",
+      "name": "Evidence source-link placement",
+      "hypothesis": "A source link beside evidence claims will yield more source inspection than a footer-only link.",
       "audience": "All report and episode readers",
       "variants": {
-        "A": "Correction link beside the evidence state",
-        "B": "Correction link in the page footer only"
+        "A": "Source record link beside the evidence state",
+        "B": "The same source record link in the page footer only"
       },
       "primary_metric": {
-        "event_name": "correction_open",
-        "numerator": "Eligible evidence readers who open the correction guidance and submit a valid source/revision pointer.",
-        "denominator": "Eligible evidence readers exposed to the variant.",
+        "event_name": "evidence_open",
+        "numerator": "Eligible evidence_open events for the linked public source record in the assigned variant.",
+        "denominator": "Eligible run_page_view events exposed to that variant under the same enrolled scope.",
         "exclusion_rules": [
-          "spam or malformed submissions",
           "known test and preview traffic",
-          "bots"
+          "bots",
+          "duplicate event IDs",
+          "unapproved public content IDs"
         ]
       },
       "secondary_metrics": [
-        "evidence_open",
+        "run_page_view",
         "meaningful_watch_or_read"
       ],
-      "observation_window": "35 days after an approved correction route exists",
-      "stop_rule": "Stop and review moderation if a submission includes private data or harassment; otherwise stop at 35 days.",
-      "minimum_sample_or_qualitative_protocol": "Target 25 valid correction opens per variant; below that, inspect five sessions and verify the form's required fields.",
+      "observation_window": "35 days after both source-link variants are approved and deployed",
+      "stop_rule": "Stop if either placement hides a material evidence limitation or directs readers to private material; otherwise stop at 35 days.",
+      "minimum_sample_or_qualitative_protocol": "Target 25 eligible evidence_open events per variant; below that, conduct five consented comprehension sessions per variant and report the small sample.",
       "confounders": [
         "source changes",
         "known campaign errors",
         "traffic volume",
         "moderation response time"
       ],
-      "privacy": "Correction form should accept optional contact separately from the event; events contain content ID, coarse time and validity category only.",
-      "attribution_limit": "Submission volume reflects discoverability and source changes, not content quality alone.",
-      "destination": "https://aiascension.tech/corrections",
+      "privacy": "Use only public content IDs, coarse time and the approved evidence_open event. Do not put correction submissions, optional contact details, private links, or form text in analytics.",
+      "attribution_limit": "An evidence_open event records source inspection, not a correction submission, a valid source pointer, trust, or comprehension.",
+      "destination": "https://aiascension.tech/runs",
       "destination_state": "planned_local_destination_until_deployed",
       "asset_ids": [
         "WEB-05",
@@ -368,5 +368,38 @@
         "notes": []
       }
     }
-  ]
+  ],
+  "derived_metric_references": {
+    "repeat-engagement-proxy": {
+      "contract_path": "analytics/event-contract.json",
+      "metric_id": "repeat-engagement-proxy",
+      "source_events": [
+        "run_page_view",
+        "media_start",
+        "meaningful_watch_or_read",
+        "decision_presented",
+        "decision_guess",
+        "decision_reveal",
+        "evidence_open",
+        "replay_download",
+        "build_start",
+        "quickstart_success",
+        "docs_error",
+        "subscribe_confirmed",
+        "unsubscribe_completed"
+      ],
+      "numerator": "distinct consented coarse cohort values with an eligible event",
+      "denominator": "not defined as a person-level denominator",
+      "window": "calendar month",
+      "exclusions": [
+        "anonymous sessions without consent",
+        "synthetic events",
+        "fingerprinted identity"
+      ],
+      "absent_value": "no_observations",
+      "consent": "Only granted-consent events with kind=consented_cohort and an eligible public content ID in the enrolled upstream scope.",
+      "scope": "Use the separately labelled UTC calendar-month result and its completeness flag; do not relabel an experiment window as a complete month.",
+      "interpretation_limit": "A count of distinct coarse cohort values, not people, returning visitors, repeat contributors, retention, or causal uplift."
+    }
+  }
 }

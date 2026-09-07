@@ -37,14 +37,22 @@ class MarketingExperimentTests(unittest.TestCase):
             self.assertNotIn("@", json.dumps(item))
 
     def test_only_approved_event_vocabulary_is_used(self):
-        allowed = {
-            "run_page_view", "media_start", "meaningful_watch_or_read",
-            "decision_presented", "decision_guess", "decision_reveal",
-            "evidence_open", "replay_download", "build_start", "quickstart_success",
-            "docs_error", "subscribe_confirmed", "unsubscribe_completed",
-            "return_visit_proxy", "contributor_repeat_proxy", "correction_open"
-        }
+        contract = json.loads((ROOT / 'analytics/event-contract.json').read_text())
+        schema = json.loads((ROOT / 'schemas/event.schema.json').read_text())
+        events = {row['name'] for row in contract['events']}
+        self.assertEqual(events, set(schema['properties']['event_name']['enum']))
+        metrics = {row['id']: row for row in contract['metrics']}
+        mappings = self.data['derived_metric_references']
         for item in self.data["experiments"]:
-            names = {item["primary_metric"]["event_name"], *item["secondary_metrics"]}
-            self.assertTrue(names <= allowed, (item["experiment_id"], names - allowed))
-
+            self.assertIn(item['primary_metric']['event_name'], events)
+            for name in item['secondary_metrics']:
+                self.assertTrue(name in events or name in mappings, (item['experiment_id'], name))
+        for name, mapping in mappings.items():
+            self.assertIn(name, metrics)
+            self.assertEqual(mapping['metric_id'], name)
+            self.assertEqual(mapping['contract_path'], 'analytics/event-contract.json')
+            self.assertEqual(set(mapping['source_events']), events)
+            for key in ('numerator', 'denominator', 'window', 'exclusions', 'absent_value'):
+                self.assertEqual(mapping[key], metrics[name][key])
+            for key in ('consent', 'scope', 'interpretation_limit'):
+                self.assertTrue(mapping[key])
