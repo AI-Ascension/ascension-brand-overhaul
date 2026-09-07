@@ -10,6 +10,15 @@ from tests.test_migration_tooling import FakeClient, migration, operation, repos
 
 
 class MigrationResidualTests(unittest.TestCase):
+    def test_provider_errors_never_copy_caller_or_request_identifiers(self):
+        for raw in (b"gh: rate limit exceeded for private-account request secret-id (HTTP 403)",
+                    b"gh: private-account private-request (HTTP 404)",
+                    b"Authorization: Bearer private-token"):
+            diagnostic = migration._status_error(raw)
+            self.assertNotIn("private", diagnostic)
+        self.assertEqual(migration._status_error(b"rate limit exceeded (HTTP 403)"), "rate_limit_exceeded")
+        self.assertEqual(migration._status_code(b"denied (HTTP 404)"), 404)
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)

@@ -3,7 +3,7 @@
   "php": {
     "version": "8.3.6",
     "source": "Ubuntu24.04 apt signed package metadata, extracted locally without system install",
-    "wrapper": "/home/timot/.cache/ascension-brand-tools-20260907/bin/php",
+    "wrapper": "${ASCENSION_TOOL_BIN}/php",
     "packages": {
       "libonig5_6.9.9-1build1_amd64.deb": "605f42287d2bcb6c84f5a02377c7cd777090c5e857259a4030a571989f19dde2",
       "libzip4t64_1.7.3-1.1ubuntu2_amd64.deb": "d7484efd8d9968ecab9e488fde59980fc633e0eb2bbf7f1ea8e33bf71c9ff1fb",
@@ -25,7 +25,7 @@
   },
   "website_baseline_tests": {
     "source_revision": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
-    "command": "PATH=/home/timot/.cache/ascension-brand-tools-20260907/bin:$PATH php vendor/bin/phpunit",
+    "command": "PATH=${ASCENSION_TOOL_BIN}:$PATH php vendor/bin/phpunit",
     "phpunit": "11.5.55",
     "result": "pass",
     "tests": 16,

@@ -7,7 +7,7 @@
     "roleId": "W02-L",
     "workstream": "W02",
     "sourceSnapshot": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
-    "worktree": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-w02",
+    "worktree": "<isolated-worktrees>/brand-w02",
     "writeLease": [
       "brand/tokens.json",
       "brand/tokens.css",

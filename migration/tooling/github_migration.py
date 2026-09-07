@@ -146,11 +146,13 @@ def write_json(path: Path, value: Any) -> None:
 
 
 def _status_error(stderr: bytes | str) -> str:
-    # gh includes the HTTP status in its final line.  Keep only a short public
-    # diagnostic; never copy environment values or headers into a receipt.
+    # Provider stderr may contain account IDs, request IDs, or credentials.
+    # Preserve only a bounded status class, never caller-supplied diagnostics.
     text = stderr.decode(errors="replace") if isinstance(stderr, bytes) else str(stderr)
-    lines = [line.strip() for line in text.splitlines() if line.strip()]
-    return (lines[-1] if lines else "GitHub API request failed")[:400]
+    if "rate limit" in text.lower() or "rate_limit" in text.lower():
+        return "rate_limit_exceeded"
+    status = _status_code(text)
+    return f"GitHub API request failed (HTTP {status})" if status else "GitHub API request failed"
 
 
 def _status_code(value: bytes | str) -> int | None:
