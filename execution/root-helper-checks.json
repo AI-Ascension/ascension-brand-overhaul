@@ -1,10 +1,10 @@
 {
-  "observed_at": "2026-09-07T14:19:31.976991+00:00",
+  "observed_at": "2026-09-07T14:36:38.038598+00:00",
   "command": "python3 -m unittest discover -s tests",
   "exit_code": 0,
-  "tests_run": 97,
-  "scope": "Integrated package, helpers, functional tokens, campaign, publication and measurement tests; not website browser acceptance or native gameplay",
-  "log_sha256": "52ed34b9d5bde9c3fdff6474bb185c29489b82105c082bf9d89fc2b2a8eb031c",
+  "tests_run": 117,
+  "scope": "Integrated package/helpers, tokens, campaign, publication/measurement, and migration tests; separate publisher synthetic browser proof in publisher-ui-checks.json; not website acceptance or gameplay",
+  "log_sha256": "2f04e415880f1ac01d27b294d1cae276ec5d7b53e64cee72ba7b593627f0dbb8",
   "tested_files_sha256": {
     "scripts/agent_ledger.py": "54e9d378a39ba4f2b3375bf622059d1b37c45d63555b3a27ee393232b595f36d",
     "scripts/art_policy.py": "38a78a05bf01f859a38fe83b5871e286cef55194e3ea0c13b60f5398d72b13c3",
@@ -23,5 +23,5 @@
     "tests/test_runtime_snapshot.py": "0f817e7b2905c9a909b4dea1040ac15eca506e758c68bab619f05180a59a9b0b"
   },
   "independent_review": "pending",
-  "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747"
+  "source_revision": "d6cb72c619dfbbf3be8a160740b4db73fc34b5fc"
 }
