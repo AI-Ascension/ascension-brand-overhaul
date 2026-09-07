@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T21:55:28.284639+00:00",
+  "updated_at": "2026-09-07T21:58:33.047772+00:00",
   "scope": "Full MASTER_PROMPT.md and binding data/requirements.json; status is execution evidence, not package validation",
   "acceptance_boundary": "Per-row local/source/control status. The full overhaul is incomplete while any mandatory asset or native-depth requirement is blocked.",
   "requirements": [
@@ -539,7 +539,8 @@
         "execution/output-locations.json",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-013.json",
@@ -575,7 +576,8 @@
         "execution/output-locations.json",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-014.json",
@@ -611,7 +613,8 @@
         "execution/output-locations.json",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-015.json",
@@ -647,7 +650,8 @@
         "execution/output-locations.json",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-016.json",
@@ -683,7 +687,8 @@
         "execution/output-locations.json",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-017.json",
@@ -719,7 +724,8 @@
         "execution/output-locations.json",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-018.json",

@@ -67,6 +67,11 @@
       "path": "execution/reviews/W03-root-website-art-followup.json",
       "sha256": "bce7c7f5f7a15abd5e054396d7a525d2034db2513e3d64473ef558817d0b0833",
       "bytes": 37634
+    },
+    {
+      "path": "github/website-art-candidate.json",
+      "sha256": "899915176772943a8b190652207e7ccd5dedd95ad8b721ff51070350b09a67b7",
+      "bytes": 8145
     }
   ],
   "blocker": null,
@@ -77,5 +82,10 @@
     "repository": "AI-Ascension/aiascension.tech",
     "revision": "56e532b21922f39480cd15dcbb465676770408f5",
     "manifest": "github/website-pull-request.json"
+  },
+  "private_website_art_candidate": {
+    "revision": "7e63ff4a5317de5305602f5d407a93246e66d248",
+    "manifest": "github/website-art-candidate.json",
+    "publicly_uploaded": false
   }
 }

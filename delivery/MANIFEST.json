@@ -7,14 +7,16 @@
   "components": [
     {
       "repository": "AI-Ascension/ascension-brand-overhaul",
-      "last_tested_implementation_revision": "5d1c26ecee9ce753eae89c525c4a8764d29a18e5",
+      "last_tested_implementation_revision": "b938b75799aa0525f5a47ed2ec34802653cb02c3",
       "pull_request": "https://github.com/AI-Ascension/ascension-brand-overhaul/pull/1",
       "final_revision_locator": "External RECEIPT.json beside the ZIP; excluded here to avoid self-reference."
     },
     {
       "repository": "AI-Ascension/aiascension.tech",
       "revision": "56e532b21922f39480cd15dcbb465676770408f5",
-      "pull_request": "https://github.com/AI-Ascension/aiascension.tech/pull/1"
+      "pull_request": "https://github.com/AI-Ascension/aiascension.tech/pull/1",
+      "private_artwork_candidate_manifest": "../github/website-art-candidate.json",
+      "private_artwork_candidate_revision": "7e63ff4a5317de5305602f5d407a93246e66d248"
     },
     {
       "repository": "AI-Ascension/.github",
@@ -127,15 +129,16 @@
     "private_game_trajectories_and_captures": "not included",
     "font_binaries": "not included",
     "raw_provider_diagnostics": "not included",
-    "generated_art_masters_and_prompts": "32 actual source PNGs and exact prompt files included; partial reviewed exports; no public distribution approvals"
+    "generated_art_masters_and_prompts": "32 actual source PNGs and exact prompt files included; partial reviewed exports; no public distribution approvals",
+    "website_artwork_candidate": "Included as a private prerequisite Git bundle with exact revision, changed-file hashes and restoration instructions; not present in the public website PR."
   },
   "operation_ledger": "../execution/operations.json",
   "requirement_ledger": "../execution/requirements-status.json",
   "final_report": "FINAL_REPORT.md",
   "runbook": "RUNBOOK.md",
   "privacy_scope": "PRIVACY_SCOPE.md",
-  "remote_review_snapshot": "../execution/reviews/companion-remote-checks-001.json",
-  "remote_review_snapshot_sha256": "853a25815ed4758d622902f5f9c06c657aaac3d95355a2151052b672ee924cde",
+  "remote_review_snapshot": "../execution/reviews/root-art-remote-snapshot.json",
+  "remote_review_snapshot_sha256": "8e195f17c8129fbfe3d632c1e654d8a48ca558f6d9bee2f1e6c646a7bd7369fe",
   "source_tree_inventory": "../execution/source-tree-inventory.json",
   "archive_acceptance_locator": "External final-review.json binds the exact source manifest and candidate ZIP; external RECEIPT.json binds the final reviewed ZIP and remote heads."
 }

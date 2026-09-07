@@ -36,8 +36,8 @@
     },
     {
       "path": "execution/release-status.json",
-      "sha256": "1316ab1be8c9a1db6d720cc58f7eab389cd8b22bad70ac0ababde10006aceade",
-      "bytes": 7728
+      "sha256": "7a7095bb12f9c2e2792b38416ce8072d3afa43fbabcb5058649e57d86c4ea1a3",
+      "bytes": 8012
     },
     {
       "path": "execution/findings.json",
@@ -66,8 +66,8 @@
     },
     {
       "path": "delivery/MANIFEST.json",
-      "sha256": "d85c673560d39d28bbe89e72653ac000fd1ba994902e3a6ed9beb2fb382f0b40",
-      "bytes": 6499
+      "sha256": "44d19ff64d6c03644c139bac3fcbee6c828f286b7ec3b60790eee72276b974ff",
+      "bytes": 6859
     },
     {
       "path": "delivery/RUNBOOK.md",

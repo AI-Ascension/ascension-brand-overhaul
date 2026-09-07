@@ -21,7 +21,8 @@
     "Ten companion presentation PRs independently reviewed with exact changed-file hashes;13 repository settings proposals and six-pin checklist prepared.",
     "Twelve episode drafts, 24 clip drafts,six technical article outlines,launch/report-only alternatives,outreach/email templates, 72 content gates, and experiments with unobserved results.",
     "All configured remote checks on the ten companion PRs pass at their recorded heads; website and companions reported mergeable. No-check repositories are distinguished in execution/reviews/companion-remote-checks-001.json.",
-    "Root-authorized artwork: 21 complete families passed scoped provenance verification using independent visual, source-use and mechanical export reviews. Exact prompts and source PNGs are retained; model/backend identity stays unknown. Three additional RUN01/RUN02 source calls are reviewed for existing variants while their families remain blocked."
+    "Root-authorized artwork: 21 complete families passed scoped provenance verification using independent visual, source-use and mechanical export reviews. Exact prompts and source PNGs are retained; model/backend identity stays unknown. Three additional RUN01/RUN02 source calls are reviewed for existing variants while their families remain blocked.",
+    "The reviewed local website art revision 7e63ff4a5317de5305602f5d407a93246e66d248 is included as delivery/website-art-candidate.bundle, with an exact prerequisite and 41 changed-file hashes. The existing public website draft remains at 56e532b21922f39480cd15dcbb465676770408f5."
   ],
   "remaining_conditions": [
     "Restore actual native coordinator/leaf spawning and role-correct Luna/max and Astra/max observations; retain the 250-open-descendant ceiling.",
