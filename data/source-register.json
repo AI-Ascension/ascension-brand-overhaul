@@ -4,16 +4,16 @@
     "kind": "project-file",
     "url": "https://github.com/AI-Ascension/ascension-watchdog/blob/bootstrap/prompts/IMPLEMENTATION.md",
     "blob_sha": "28d0a14a36d28860b899020eb40d6edb8bccb51c",
-    "read_range": "1–145",
+    "read_range": "1\u2013145",
     "status": "read_during_package_preparation",
-    "supports": "Existing project convention for Luna/max, real three-level descendants, root model retention, twelve-open-descendant budget, source and permission discipline."
+    "supports": "Existing project convention for Luna/max, real three-level descendants, root model retention, twelve-open-descendant budget, source and permission discipline. The later user-approved 250-descendant amendment supersedes only that concurrency limit; see REVISION_NOTES.md."
   },
   {
     "id": "SRC-02",
     "kind": "project-file",
     "url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/main/assets/identity/MANIFEST.md",
     "blob_sha": "593699044a59719128c6face11b397ffb78325a9",
-    "read_range": "1–40",
+    "read_range": "1\u201340",
     "status": "read_during_package_preparation",
     "supports": "Existing identity paths, dimensions, authorship notes, generated art provenance limits, fonts referenced but not bundled here."
   },
@@ -22,7 +22,7 @@
     "kind": "project-file",
     "url": "https://github.com/AI-Ascension/.github/blob/main/STATUS.md",
     "blob_sha": "2c56cf532ff4da79a18807a2c0d2d42f893e8baa",
-    "read_range": "1–90 only",
+    "read_range": "1\u201390 only",
     "status": "read_during_package_preparation",
     "supports": "Historical snapshots must not be relabeled. This partial read is not a complete current capability inventory."
   },

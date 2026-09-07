@@ -1053,7 +1053,7 @@ astra_authorship_gpt_image_2_provenance_and_migration_state_review. Inspect actu
 
 ### Brief supplied to Astra
 
-Show root, leads, coordinators, and leaf implementer/reviewers with max 12 open descendants. Label architecture diagram as planned unless native IDs prove an executed trace. Astra must independently author the final generation prompt and every creative revision; only gpt-image-2 may create or edit the artwork. The brief is not a pre-attested final prompt.
+Show root, leads, coordinators, and leaf implementer/reviewers with max 250 open descendants. Label architecture diagram as planned unless native IDs prove an executed trace. Astra must independently author the final generation prompt and every creative revision; only gpt-image-2 may create or edit the artwork. The brief is not a pre-attested final prompt.
 
 ### Authoring and inputs
 

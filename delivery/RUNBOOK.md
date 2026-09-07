@@ -25,7 +25,7 @@ Before any merge, re-read each actual remote default and PR head, checks, mergea
 
 ## Artwork and native hierarchy
 
-`execution/art-model-attestation.json` names every blocked job; `brand/asset-manifest.json` records zero approved exports. All 72 artwork families and 115 exports require actual native depth-3 Astra/max authors and an attested gpt-image-2 route. Restore those capabilities, then follow `art/ASTRA_GPT_IMAGE_2_POLICY.md` and the native role contract. Do not substitute an image backend, fake ancestry, hand-drawn artwork, or old-brand assets. The current seven observed leads are depth 1 only; retained threads count against the twelve-descendant budget until native closure is established.
+`execution/art-model-attestation.json` names every blocked job; `brand/asset-manifest.json` records zero approved exports. All 72 artwork families and 115 exports require actual native depth-3 Astra/max authors and an attested gpt-image-2 route. Restore those capabilities, then follow `art/ASTRA_GPT_IMAGE_2_POLICY.md` and the native role contract. Do not substitute an image backend, fake ancestry, hand-drawn artwork, or old-brand assets. The current seven observed leads are depth 1 only; retained threads count against the 250-descendant budget until native closure is established.
 
 ## Publication and measurement
 

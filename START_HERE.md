@@ -14,4 +14,4 @@ Use `art/asset-board.html` in a browser for the art map, or read `art/ART_MAP.md
 
 After an interruption, use `prompts/CONTINUE.md`. After integration, use `prompts/AUDIT_AND_REPAIR.md`. Use `prompts/RELEASE.md` only within already authorized operational scope. The release prompt cannot grant permission on the user's behalf.
 
-The art policy replaces the older deterministic/vector/reuse lanes. Read `REVISION_NOTES.md` and `art/ASTRA_GPT_IMAGE_2_POLICY.md` before executing any art task. Keep the 49-role topology and twelve-open-descendant budget; do not change every implementation agent to Astra.
+The art policy replaces the older deterministic/vector/reuse lanes. Read `REVISION_NOTES.md` and `art/ASTRA_GPT_IMAGE_2_POLICY.md` before executing any art task. Keep the 49-role topology and 250-open-descendant budget; do not change every implementation agent to Astra.

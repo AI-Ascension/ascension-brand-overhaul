@@ -40,8 +40,8 @@
     },
     {
       "path": "art/asset-registry.json",
-      "sha256": "58b933b693e15ebc606cbc542eea84ec3b498c1ce7cac9f87131dd6c231ae223",
-      "bytes": 164744
+      "sha256": "6e3f26753d2660f3b62c9ed176038a7e0c15acc9ab846f6cbe1af596dbcf074f",
+      "bytes": 164745
     },
     {
       "path": "art/evidence-media-registry.json",
@@ -55,8 +55,8 @@
     },
     {
       "path": "art/generation-policy.json",
-      "sha256": "44b2c55363eac3d55d2a959646920f88c26d7d4485d27fdeac71cafbd1794245",
-      "bytes": 2037
+      "sha256": "67209256fc2f31e7b98b27a67006666e0f403fd675e958446b1ef904a66781c6",
+      "bytes": 2038
     },
     {
       "path": "execution/art-model-attestation.json",

@@ -18,7 +18,7 @@
   "default_descendant_model": "gpt-5.6-luna",
   "default_descendant_effort": "max",
   "max_descendant_depth": 3,
-  "max_open_descendants": 12,
+  "max_open_descendants": 250,
   "art_method": "generate",
   "required_origin": "astra_authored_gpt_image_2",
   "new_art_scope": [

@@ -49,4 +49,4 @@ Primary specification: `specs/QA_RELEASE.md`.
 - `W07-C1`: Cross-surface test suite and adversarial review
 - `W07-C2`: Release engineering and operator handoff
 
-The root schedules these over dependency-aware waves; all 49 roles are not open concurrently.
+The root schedules these over dependency-aware waves; concurrency follows dependencies and exclusive write scopes, within the global ceiling.

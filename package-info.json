@@ -9,7 +9,7 @@
   "max_descendant_depth": 3,
   "requested_descendant_model": "role_specific: Luna/max except designated Astra art authors",
   "requested_reasoning_effort": "max",
-  "global_open_descendant_budget": 12,
+  "global_open_descendant_budget": 250,
   "runtime_verified": false,
   "art_generated": false,
   "github_mutations_performed": true,

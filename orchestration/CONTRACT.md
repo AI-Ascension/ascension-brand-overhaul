@@ -10,7 +10,7 @@ First perform one useful bounded inspection task along root → W01 lead → W01
 
 ## Scheduling
 
-The 49 descendants in roles.json are a catalog to execute over multiple waves, not concurrent fan-out. Global budget is at most 12 open descendants, subject to stricter actual limits. Count paused/waiting lead and coordinator threads. Before each spawn reserve a slot in the root ledger; reconcile it with native thread state. A reservation cannot be released merely because an agent is waiting.
+The 49 descendants in roles.json are a catalog to execute over multiple waves, not concurrent fan-out. Global budget is at most 250 open descendants, subject to stricter actual limits. Count paused/waiting lead and coordinator threads. Before each spawn reserve a slot in the root ledger; reconcile it with native thread state. A reservation cannot be released merely because an agent is waiting.
 
 A safe active pattern is two leads + two coordinators + four leaf workers/reviewers = eight open descendants, leaving headroom for integration review. Another is one lead + two coordinators + four leaves = seven. Run reviews after implementers return when slots are scarce. Close completed threads before spawning replacements. Failed or expired threads retain history and consume a slot until native closure is established. Never use all slots for parents waiting for unspawned children.
 

@@ -35,8 +35,8 @@
     },
     {
       "path": "execution/release-status.json",
-      "sha256": "324bb8854d84414864617dff6cc1e4e513e5a8c425e954146ced1c63234cbdf6",
-      "bytes": 5962
+      "sha256": "932976e5fe85c1a37926ce5ccaf697768e1c7145b3828c637523d0ab975b750a",
+      "bytes": 5959
     },
     {
       "path": "execution/findings.json",
@@ -50,8 +50,8 @@
     },
     {
       "path": "execution/ROOT_STATUS.md",
-      "sha256": "5f2473fc69ce45d7651b43acfe096846374665e7073d2185e301032501178552",
-      "bytes": 3041
+      "sha256": "db0ac3b195e7853912ab70f287cf23589e83fdd42912dd921f04db9298890ab4",
+      "bytes": 3038
     },
     {
       "path": "execution/runtime-observation.json",
@@ -70,8 +70,8 @@
     },
     {
       "path": "delivery/RUNBOOK.md",
-      "sha256": "1aff4ec0e788bf506264aa44e8633a0267f05a6acd7ffad05943ff2c4d226b74",
-      "bytes": 5668
+      "sha256": "f0a23ebce6d0fac59afc75e7268ec289163e2bc7f00851ea3968815d4a53fecc",
+      "bytes": 5665
     },
     {
       "path": "delivery/PRIVACY_SCOPE.md",
@@ -114,7 +114,7 @@
       "bytes": 10141
     }
   ],
-  "blocker": "No depth2/depth3 nodes exist; the seven recorded retained leads fit the12-open ceiling but no substantive depth3 chain is evidenced.",
+  "blocker": "No depth2/depth3 nodes exist. The user raised the concurrent-descendant limit to250; capacity does not supply missing native child-spawn tools. Historical seven-lead observations remain scoped to their recorded time.",
   "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
   "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
   "source_binding": "Exact artifact bytes listed here; source and test revisions are those explicitly named by each review. Final root manifest binds this record. No uncommitted bytes are falsely assigned a Git revision."

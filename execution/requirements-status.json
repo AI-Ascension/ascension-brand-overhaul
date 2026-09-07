@@ -2042,7 +2042,7 @@
         "execution/reviews/companion-remote-checks-001.json"
       ],
       "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
-      "blocker": "No depth2/depth3 nodes exist; the seven recorded retained leads fit the12-open ceiling but no substantive depth3 chain is evidenced.",
+      "blocker": "No depth2/depth3 nodes exist. The user raised the concurrent-descendant limit to250; capacity does not supply missing native child-spawn tools. Historical seven-lead observations remain scoped to their recorded time.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },

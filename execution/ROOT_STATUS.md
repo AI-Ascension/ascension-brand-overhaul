@@ -8,7 +8,7 @@ The clean integrated source at `5d1c26ecee9ce753eae89c525c4a8764d29a18e5` passed
 
 Publication, measurement, migration, canonical-content synchronization, source provenance, campaign contracts, website behavior, and companion copy have independent review records. Historical review findings are retained with their repair/rereview chain. Both trusted authority registries remain empty, and all audience experiment results remain unobserved.
 
-Installed-client metadata records seven Luna/max depth 1 leads under the retained root, within the twelve-descendant ceiling. No depth 2/depth 3 coordinator/leaf identity or Astra art author exists. Client metadata is not provider-side attestation. The exposed image tool provides no required backend selection/attestation. No alternate hierarchy, image model, code-drawn art, or legacy-art substitution was used to satisfy the missing artwork.
+Installed-client metadata records seven Luna/max depth 1 leads under the retained root, within the 250-descendant ceiling. No depth 2/depth 3 coordinator/leaf identity or Astra art author exists. Client metadata is not provider-side attestation. The exposed image tool provides no required backend selection/attestation. No alternate hierarchy, image model, code-drawn art, or legacy-art substitution was used to satisfy the missing artwork.
 
 Use `delivery/RUNBOOK.md` for reproduction and continuation, `github/companion-commits.json` and `github/website-pull-request.json` for the proposed source changes, and `execution/reviews/final-local-checks.json` for exact local test scope. The external archive-review and final remote-head receipts bind the final delivery without self-referential hashes.
 

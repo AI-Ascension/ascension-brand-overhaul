@@ -25,6 +25,18 @@ class PackageTests(unittest.TestCase):
     def test_open_parents_count_toward_budget(self):
         c=chain(); c['budget']=2
         with self.assertRaises(ValueError): ledger.validate_ledger(c)
+    def test_project_capacity_and_stricter_budget(self):
+        c=chain(); c['budget']=250
+        c['agents']=[node(f'lead-{i}','root',1,1) for i in range(250)]
+        self.assertEqual(ledger.validate_ledger(c)['peak_open_descendants'],250)
+        c['agents'].append(node('overflow','root',1,1))
+        with self.assertRaises(ValueError): ledger.validate_ledger(c)
+        c['agents']=c['agents'][:13]; c['budget']=12
+        with self.assertRaises(ValueError): ledger.validate_ledger(c)
+    def test_invalid_project_capacity_rejected(self):
+        for budget in [0,251,True,250.0,'250']:
+            with self.subTest(budget=budget), self.assertRaises(ValueError):
+                c=chain(); c['budget']=budget; ledger.validate_ledger(c)
     def test_false_model_verification_rejected(self):
         c=chain(); c['agents'][2]['model_verified']=True
         with self.assertRaises(ValueError): ledger.validate_ledger(c)

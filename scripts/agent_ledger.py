@@ -15,8 +15,8 @@ def stamp(value):
 
 def validate_ledger(data):
     root=data['root_id']; budget=data['budget']; nodes=data['agents']
-    if not isinstance(budget,int) or isinstance(budget,bool) or not 1<=budget<=12:
-        raise ValueError('Project descendant budget must be 1–12.')
+    if not isinstance(budget,int) or isinstance(budget,bool) or not 1<=budget<=250:
+        raise ValueError('Project descendant budget must be 1–250.')
     catalog={r['id']:r for r in json.loads((Path(__file__).resolve().parents[1]/'orchestration/roles.json').read_text())}
     mapping={n['id']:n for n in nodes}
     if len(mapping)!=len(nodes) or root in mapping: raise ValueError('Duplicate or root-colliding native IDs.')

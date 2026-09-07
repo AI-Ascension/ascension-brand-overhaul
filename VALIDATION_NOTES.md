@@ -4,7 +4,7 @@ The authoring pass verifies that the meta-prompt package is coherent: its role t
 
 This is not validation of the downstream rebrand. No actual Astra or Luna descendant sessions, generated visual assets, actual game captures, target code changes, GitHub repository creation/rename, deployed forms, campaign operation, or audience results are claimed by this package. Actual implementation and independent evidence are the executor's assignment.
 
-The 49 role files form seven workstreams and three descendant layers. They are scheduled in waves with a global cap of twelve open descendants, not spawned simultaneously. The runtime config is an example to validate, not an active config installed on the user's machine.
+The 49 role files form seven workstreams and three descendant layers. They are scheduled in waves with a global cap of 250 open descendants, with concurrency determined by dependencies and exclusive write scopes. The runtime config is an example to validate, not an active config installed on the user's machine.
 
 The art board is a searchable offline specification. Its images are described and mapped, not produced. Current legacy source links are provided to help the executor retrieve actual inputs with rights and provenance; no font files or proprietary assets are included.
 

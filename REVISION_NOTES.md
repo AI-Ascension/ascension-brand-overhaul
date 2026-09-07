@@ -13,3 +13,7 @@ Raster exports replace former native-vector requirements. Prompts, edit history,
 The master prompt, role catalog, role prompts, runtime intent/config example, task schema, requirements, art registers, per-asset author briefs, surface map, offline board, source references, validation logic, tests, and integrity records have been revised together. The package now requires per-master native Astra authorship and exact prompt hashes, gpt-image-2 backend evidence, and per-export lineage.
 
 No artwork generation, live Astra/Luna delegation, GitHub changes, deployments, or campaign publication was performed while revising this package. Package/helper tests are not evidence that downstream implementation has occurred.
+
+## User amendment: 250 concurrent descendants
+
+On September 7, 2026 the user explicitly approved replacing the original twelve-open-descendant project limit with 250. The root is excluded: the runtime advertises 251 total slots. The 49-role catalog, native depth limit of 3, role-specific models, waiting-parent accounting, reservations, and stricter actual runtime limits remain applicable. Increased capacity does not establish child-spawn tool availability or image-backend attestation. Historical review receipts and the f77adb1 archive retain their original policy context.

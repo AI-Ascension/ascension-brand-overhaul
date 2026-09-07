@@ -10,7 +10,7 @@ The normative machine-readable counterpart is `generation-policy.json`. All spec
 
 The root retains its current model. Leads, coordinators, implementation agents outside the two art-author roles, and independent reviewers remain Luna/max. **W02-C1-BUILD and W02-C2-BUILD are Astra/max leaves at depth 3.** The complete catalog remains seven leads, fourteen coordinators, and twenty-eight leaves: forty-seven Luna roles and two Astra roles.
 
-Use a real lineage: root → W02 lead → W02 coordinator → Astra author. Astra invokes the image-generation tool with **`gpt-image-2`**. This image tool is not a fourth-level subagent. No leaf may spawn a child, launch a concealed client, or reset its ancestry. Ordinary implementation agents request artwork through the parent/root instead of launching ad hoc art agents. All waiting parents and Astra leaves count toward the twelve-open-descendant project ceiling.
+Use a real lineage: root → W02 lead → W02 coordinator → Astra author. Astra invokes the image-generation tool with **`gpt-image-2`**. This image tool is not a fourth-level subagent. No leaf may spawn a child, launch a concealed client, or reset its ancestry. Ordinary implementation agents request artwork through the parent/root instead of launching ad hoc art agents. All waiting parents and Astra leaves count toward the 250-open-descendant project ceiling.
 
 Luna agents may gather facts, specify exact wording, list target sizes, identify rights-reviewed references, and write acceptance criteria. These are **briefs**, not final image prompts. Astra must independently turn the brief into the actual image-generation prompt and author every creative revision. Merely adding an Astra approval label to another model's final prompt does not establish authorship.
 

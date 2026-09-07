@@ -45,7 +45,7 @@ Use exactly three descendant layers below the root:
 - Depth 2: bounded work-package coordinators.
 - Depth 3: implementation or independent-review specialists. These are leaves and may not spawn.
 
-The tree in orchestration/roles.json is a role catalog, not an instruction to run all roles concurrently. Use a global ceiling of **12 open descendants**, lowered to the actual account/runtime allowance. Count waiting leads, coordinators, and reviewers, not just active coders. Enforce a single root-owned registry; a per-session setting may not bound a multi-session tree. Use native depth restrictions when supported and record actual ancestry. Do not bypass stricter runtime limits by starting hidden clients or renaming a descendant as a new root.
+The tree in orchestration/roles.json is a role catalog, not an instruction to run all roles concurrently. Use a global ceiling of **250 open descendants**, lowered to the actual account/runtime allowance. Count waiting leads, coordinators, and reviewers, not just active coders. Enforce a single root-owned registry; a per-session setting may not bound a multi-session tree. Use native depth restrictions when supported and record actual ancestry. Do not bypass stricter runtime limits by starting hidden clients or renaming a descendant as a new root.
 
 Prove genuine useful D0→D1→D2→D3 delegation early. Record real thread IDs and parent IDs. If the native system does not permit the required role-specific Luna/max or Astra/max settings, gpt-image-2 generation, or this depth, preserve the exact error, finish all independent authorized work, and label the requested orchestration unverified/blocked. Do not pretend that headings in a document are subagents.
 
