@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T05:58:14.965898+00:00",
+  "updated_at": "2026-09-07T14:19:32.028235+00:00",
   "scope": "Full MASTER_PROMPT.md and binding data/requirements.json; status is execution evidence, not package validation",
   "requirements": [
     {
@@ -494,8 +494,18 @@
       "evidence_expected": "execution/evidence/REQ-025.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "schemas/",
+        "public/run-manifests/"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "65a8014",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -513,8 +523,18 @@
       "evidence_expected": "execution/evidence/REQ-026.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "schemas/",
+        "public/run-manifests/"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "65a8014",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -532,8 +552,18 @@
       "evidence_expected": "execution/evidence/REQ-027.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "schemas/",
+        "public/run-manifests/"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "65a8014",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -551,8 +581,18 @@
       "evidence_expected": "execution/evidence/REQ-028.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "analytics/event-contract.json",
+        "analytics/dashboard-spec.md"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "65a8014",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -570,8 +610,18 @@
       "evidence_expected": "execution/evidence/REQ-029.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "analytics/event-contract.json",
+        "analytics/dashboard-spec.md"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "65a8014",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -589,8 +639,18 @@
       "evidence_expected": "execution/evidence/REQ-030.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "analytics/event-contract.json",
+        "analytics/dashboard-spec.md"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "65a8014",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -609,8 +669,21 @@
       "evidence_expected": "execution/evidence/REQ-031.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "marketing/launch/",
+        "marketing/calendar.json",
+        "marketing/episodes/",
+        "marketing/clips/",
+        "marketing/articles/"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -629,8 +702,21 @@
       "evidence_expected": "execution/evidence/REQ-032.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "marketing/launch/",
+        "marketing/calendar.json",
+        "marketing/episodes/",
+        "marketing/clips/",
+        "marketing/articles/"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -649,8 +735,21 @@
       "evidence_expected": "execution/evidence/REQ-033.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "marketing/launch/",
+        "marketing/calendar.json",
+        "marketing/episodes/",
+        "marketing/clips/",
+        "marketing/articles/"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -668,8 +767,20 @@
       "evidence_expected": "execution/evidence/REQ-034.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "marketing/creator-kit/",
+        "marketing/community-playbook.md",
+        "marketing/experiments.json",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -687,8 +798,20 @@
       "evidence_expected": "execution/evidence/REQ-035.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "marketing/creator-kit/",
+        "marketing/community-playbook.md",
+        "marketing/experiments.json",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -706,8 +829,20 @@
       "evidence_expected": "execution/evidence/REQ-036.json",
       "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
+      "implementation_paths": [
+        "marketing/creator-kit/",
+        "marketing/community-playbook.md",
+        "marketing/experiments.json",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        {
+          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -1013,7 +1148,14 @@
       "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
-      "verification_records": [],
+      "verification_records": [
+        {
+          "source_revision": "65a8014",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -1029,7 +1171,14 @@
       "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
-      "verification_records": [],
+      "verification_records": [
+        {
+          "source_revision": "65a8014",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -1045,7 +1194,14 @@
       "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
-      "verification_records": [],
+      "verification_records": [
+        {
+          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
@@ -1061,7 +1217,14 @@
       "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
-      "verification_records": [],
+      "verification_records": [
+        {
+          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
+          "command": "python3 -m unittest discover -s tests",
+          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
+          "receipt": "execution/root-helper-checks.json"
+        }
+      ],
       "independent_reviewer": null
     },
     {
