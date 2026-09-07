@@ -1,12 +1,12 @@
 {
   "schema_version": "ai-ascension.release-status.v1",
-  "summary": "Private local engineering and text handoff with twelve draft PRs intended in total (website, ten companions, brand repository). The full overhaul is incomplete because mandatory artwork, native depth-three orchestration, and production evidence/authority remain absent. No merge, rename, deployment, public artifact publication, or campaign send was performed.",
+  "summary": "Private engineering and text handoff with twelve open draft PRs (website, ten companions, brand repository). The full overhaul is incomplete because mandatory artwork, native depth-three orchestration, and production evidence/authority remain absent. No merge, rename, deployment, public artifact publication, or campaign send was performed.",
   "dimensions": {
-    "locally_verified": "189 package/contract tests pass at 038123684946a4be4ea830af4c04c2ea7059ad88; website and companion scopes separately recorded",
-    "independently_reviewed": "Engineering, source provenance, privacy, campaign, and presentation reviews recorded; final requirement/archive review pending",
+    "locally_verified": "195 package/contract tests and validator pass at 5d1c26ecee9ce753eae89c525c4a8764d29a18e5; website and companion scopes separately recorded",
+    "independently_reviewed": "Engineering and final requirement coverage source reviews recorded; exact archive acceptance is bound by external final-review.json beside the ZIP",
     "mandatory_artwork": "blocked: zero of 72 families and 115 required exports",
     "native_orchestration": "blocked: seven depth 1 lead records; no required depth 2/depth 3 chain",
-    "draft_prs": "Website and ten companions open and exact-head verified; brand PR update pending",
+    "draft_prs": "Twelve open draft PRs verified; brand source-and-contracts checks pass at 5d1c26ecee9ce753eae89c525c4a8764d29a18e5. Final metadata revision and exact-head CI are bound by external RECEIPT.json beside the ZIP.",
     "merged": "none performed",
     "deployed": "none performed",
     "campaign_operated": "none performed",
@@ -14,7 +14,7 @@
   },
   "verified_work": [
     "Canonical Ascent Ledger functional tokens, copy hierarchy, and guarded immutable-revision content sync; consumer authority, locking, and rollback failure cases tested.",
-    "Website routes, report-only media, developer quickstart, subscription safety, keyboard/mobile/themes/reduced motion, and local HTTP journeys reviewed; 29 PHPUnit tests  / 111 assertions, 30 HTTP checks,110 route/theme states plus final homepage review.",
+    "Website routes, report-only media, developer quickstart, subscription safety, keyboard/mobile/themes/reduced motion, and local HTTP journeys reviewed. Receipts retain 29 PHPUnit tests / 111 assertions and30 HTTP checks, the earlier110-state route/theme matrix, and a separate current homepage10-state/two-render review. The110-state matrix is not a fresh result at final website head; see W07 final source review.",
     "Offline publisher with source/renderer/asset/URI authority binding, deterministic output, timeline and local guess/reveal; private/synthetic/forced/malformed/stale inputs rejected by production gate.",
     "Measurement contracts separate game, infrastructure, synthetic, and unknown results and reject personal data; real measurement authority remains empty.",
     "Migration tool checks identity/head/collision/Pages/Actions/authority and idempotency; 38 offline migration tests pass and a fresh 13-repository read-only plan is retained.",
@@ -44,7 +44,10 @@
     "execution/reviews/W01-W06-review.md",
     "execution/reviews/W07-L-source-archive-privacy-rereview.md",
     "execution/reviews/companion-remote-checks-001.json",
-    "execution/reviews/pages-use-size-001.json"
+    "execution/reviews/pages-use-size-001.json",
+    "execution/reviews/W07-final-acceptance-source-review.md",
+    "execution/reviews/W03-handoff-final-rereview.md",
+    "execution/reviews/brand-remote-checks-001.json"
   ],
   "unverified_assumptions": [
     "No provider-side execution attestation follows from installed-client thread metadata.",

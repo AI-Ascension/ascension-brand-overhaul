@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T18:05:46.360019+00:00",
+  "updated_at": "2026-09-07T18:31:43.671283+00:00",
   "scope": "Full MASTER_PROMPT.md and binding data/requirements.json; status is execution evidence, not package validation",
   "acceptance_boundary": "Per-row local/source/control status. The full overhaul is incomplete while any mandatory asset or native-depth requirement is blocked.",
   "requirements": [
@@ -452,11 +452,12 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-013.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
         "execution/reviews/website-home-review-001.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -484,11 +485,12 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-014.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
         "execution/reviews/website-home-review-001.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -516,11 +518,12 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-015.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
         "execution/reviews/website-home-review-001.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -548,11 +551,12 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-016.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
         "execution/reviews/website-home-review-001.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -580,11 +584,12 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-017.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
         "execution/reviews/website-home-review-001.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -612,11 +617,12 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-018.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
         "execution/reviews/website-home-review-001.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -1267,6 +1273,8 @@
       "status": "verified",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -1279,6 +1287,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-037.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -1305,6 +1316,8 @@
       "status": "verified",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -1317,6 +1330,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-038.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -1343,6 +1359,8 @@
       "status": "blocked",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -1355,6 +1373,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-039.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -1381,6 +1402,8 @@
       "status": "verified",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -1393,6 +1416,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-040.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -1416,9 +1442,11 @@
         "docs/ROLLBACK.md"
       ],
       "evidence_expected": "execution/evidence/REQ-041.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -1431,6 +1459,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-041.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -1438,7 +1469,7 @@
       ],
       "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "blocker": "All70 requirement records are assembled; independent final coverage/acceptance review is pending.",
+      "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
@@ -1457,6 +1488,8 @@
       "status": "verified",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -1469,6 +1502,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-042.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -1666,11 +1702,12 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-048.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
         "execution/reviews/website-home-review-001.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Actual report-only content and tested developer recipes are available. No approved video/replay/timeline is inferred."
@@ -1696,11 +1733,12 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-049.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
         "execution/reviews/website-home-review-001.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -1726,11 +1764,12 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-050.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
         "execution/reviews/website-home-review-001.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -1940,6 +1979,8 @@
       "status": "blocked",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -1952,6 +1993,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-057.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -1975,6 +2019,8 @@
       "status": "blocked",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -1987,6 +2033,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-058.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -2010,6 +2059,8 @@
       "status": "verified",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -2022,6 +2073,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-059.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -2045,6 +2099,8 @@
       "status": "verified",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -2057,6 +2113,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-060.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -2370,6 +2429,8 @@
       "status": "blocked",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -2382,6 +2443,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-069.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
@@ -2407,6 +2471,8 @@
       "status": "verified",
       "mandatory": true,
       "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
         "execution/release-status.json",
         "execution/findings.json",
         "execution/QUALITY_REPORT.md",
@@ -2419,6 +2485,9 @@
       ],
       "verification_records": [
         "execution/evidence/REQ-070.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",

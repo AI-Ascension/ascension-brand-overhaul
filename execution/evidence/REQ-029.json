@@ -4,7 +4,7 @@
   "binding_requirement": "Source report, independent reproduction, and release support are distinct.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:05:46.360019+00:00",
+  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
   "status": "verified",
   "reviewer": "W07-L",
   "actual_review_records": [
@@ -12,7 +12,7 @@
     "execution/reviews/publisher-repair-status.json"
   ],
   "procedures": [
-    "python3 -m unittest discover -s tests -v (189pass at038123684946a4be4ea830af4c04c2ea7059ad88; exact W05 source unchanged)",
+    "python3 -m unittest discover -s tests -v (195pass at5d1c26ecee9ce753eae89c525c4a8764d29a18e5; exact W05 source unchanged)",
     "Focused independent publisher/measurement negative probes in W07 review chain."
   ],
   "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",

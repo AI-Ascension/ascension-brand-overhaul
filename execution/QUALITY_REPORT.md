@@ -4,9 +4,9 @@ This report indexes actual checks and independent reviews for the private engine
 
 | Scope | Result and evidence | Limit |
 | --- | --- | --- |
-| Integrated package | Clean revision 038123684946a4be4ea830af4c04c2ea7059ad88: validator and 189 tests pass; `reviews/final-local-checks.json` | Local contracts and negative cases, not product/host/provider proof |
+| Integrated package | Clean revision 5d1c26ecee9ce753eae89c525c4a8764d29a18e5: validator and 195 tests pass; `reviews/final-local-checks.json` | Local contracts and negative cases, not product/host/provider proof |
 | Source provenance | W03 source rereview closes six metadata findings; 37 selected documents and 2045 tracked-tree metadata entries across 13 baseline repositories | Report document revisions are separate from runtime build bytes; no fresh host run |
-| Website | 29 PHPUnit tests,111 assertions; 30 local HTTP/TLS sink checks; 110 route/theme states; 11 normal-motion/actual 200% zoom routes; interaction/manual review | No screen-reader application test, production SMTP/Apache/deployment, or new-art acceptance |
+| Website | 29 PHPUnit tests,111 assertions; 30 local HTTP/TLS sink checks; earlier110 route/theme states; 11 normal-motion/actual200% zoom routes; final homepage10-state/two-render review | Earlier110-state matrix is not a fresh final-head result; no screen-reader application test, production SMTP/Apache/deployment, or new-art acceptance |
 | Companion presentation | Ten exact draft heads independently reviewed; all configured remote checks pass; website plus companions reported mergeable | No checks configured for profile/watchdog/website; live state is mutable |
 | Publisher/measurement | Authority, projection, privacy, lineage, resource, denominator and event negative cases pass; W07 final review | Synthetic local fixtures only; both authority registries empty |
 | Migration | 38 offline tests pass; fresh 13-repository read-only plan; W07 residual/privacy rereviews | No authorized apply, rename, rollback, Pages cutover, or deployment |
@@ -18,3 +18,5 @@ This report indexes actual checks and independent reviews for the private engine
 Earlier failed tests and review defects remain in their original dated receipts. Later passes bind repaired source bytes and do not erase those failures. Remote CI is distinct from local validation; neither is gameplay, a deployed version, private artifact publication authority, or campaign success. The original `.gitignore` input-integrity incident remains disclosed and cannot be relabeled as recovered.
 
 Reproduction and remaining operator conditions are in `../delivery/RUNBOOK.md`; rollback preparation is in `../docs/ROLLBACK.md`. The archive review and final remote-head receipts are outside the archive so their exact digests do not refer to themselves.
+
+The brand repository and eleven consumer repositories have twelve open draft PRs in total. Final requirement/source acceptance is recorded in `reviews/W07-final-acceptance-source-review.md`; handoff reader repairs are independently closed in `reviews/W03-handoff-final-rereview.md`. The final archive review and final exact remote revision/checks are bound by `final-review.json` and `RECEIPT.json` beside the ZIP.

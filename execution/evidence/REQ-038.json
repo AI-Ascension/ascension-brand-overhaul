@@ -4,41 +4,54 @@
   "binding_requirement": "No skipped host/browser/model checks become a pass.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:05:46.360019+00:00",
+  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
   "status": "verified",
   "reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
   "actual_review_records": [
+    "execution/reviews/W07-final-acceptance-source-review.md",
+    "execution/reviews/W03-handoff-final-rereview.md",
+    "execution/reviews/brand-remote-checks-001.json",
     "execution/reviews/final-local-checks.json",
     "execution/reviews/native-ledger-check-001.json",
     "execution/reviews/W07-private-delivery-scope-review.md",
     "execution/reviews/companion-remote-checks-001.json"
   ],
   "procedures": [
-    "python3 scripts/validate_package.py (pass at038123684946a4be4ea830af4c04c2ea7059ad88)",
-    "python3 -m unittest discover -s tests -v (189pass at same exact archive)",
+    "python3 scripts/validate_package.py (pass at5d1c26ecee9ce753eae89c525c4a8764d29a18e5)",
+    "python3 -m unittest discover -s tests -v (195pass at same exact archive)",
     "python3 scripts/agent_ledger.py PRIVATE_NATIVE_LEDGER.json (record consistency only; depth3false)"
   ],
   "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
   "artifacts": [
     {
+      "path": "scripts/render_handoff.py",
+      "sha256": "f4d77c03a5a31836489f42f9379e8e279555de34d238215bbc2a1bcb229c2386",
+      "bytes": 9870
+    },
+    {
+      "path": "tests/test_handoff.py",
+      "sha256": "402b95b2d8c20cd5a29e0858a9145a5d79adf3bc7588e78a13709c1e8d7771cf",
+      "bytes": 6944
+    },
+    {
       "path": "execution/release-status.json",
-      "sha256": "6dc0922cbbfeb2629a7a61ed713f741774e00530f78890b17469d008f14ca691",
-      "bytes": 5486
+      "sha256": "324bb8854d84414864617dff6cc1e4e513e5a8c425e954146ced1c63234cbdf6",
+      "bytes": 5962
     },
     {
       "path": "execution/findings.json",
-      "sha256": "4870c3ce28f478c42a7a3eedc6b63fa62bde526a564d9adf9565caec78d513d8",
-      "bytes": 27468
+      "sha256": "d05fe37febdbd7ffdae778e9178658c1156e6abef22ffe16780b6fc13b6c3fee",
+      "bytes": 28635
     },
     {
       "path": "execution/QUALITY_REPORT.md",
-      "sha256": "998ce118190385dd7723ba29c6608b6460a6619fd464dc7357b8b5c0395bd353",
-      "bytes": 3184
+      "sha256": "311da33b3ce91bb96bbc8dcd1ce72da258f261fb7f90b160d793689500bf4186",
+      "bytes": 3679
     },
     {
       "path": "execution/ROOT_STATUS.md",
-      "sha256": "2cee7144a4d852b7c16555eda9c778834cb45a8469090e8bda9b1148173f614d",
-      "bytes": 2494
+      "sha256": "5f2473fc69ce45d7651b43acfe096846374665e7073d2185e301032501178552",
+      "bytes": 3041
     },
     {
       "path": "execution/runtime-observation.json",
@@ -47,13 +60,13 @@
     },
     {
       "path": "execution/operations.json",
-      "sha256": "08a0dfe7bd66a6fc6c51a7531c4d2be5cc356bcfde7fc6659b7fbe181de13ff5",
-      "bytes": 8880
+      "sha256": "b208ef90eb7a2487c1c85925dcb7e60dbfd9031121b178ac60b4441cb8532c0c",
+      "bytes": 10484
     },
     {
       "path": "delivery/MANIFEST.json",
-      "sha256": "7b3110c9f17fdbbcb24107077192ea1dc351e6f2097fbe62f3931491b0fa0b11",
-      "bytes": 5649
+      "sha256": "ec43eb10d1ef96e34009964b0a8c1119dad7071d1224b80c2faa98b6cf3f7a78",
+      "bytes": 6194
     },
     {
       "path": "delivery/RUNBOOK.md",
@@ -66,9 +79,24 @@
       "bytes": 1524
     },
     {
+      "path": "execution/reviews/W07-final-acceptance-source-review.md",
+      "sha256": "31a6a4c9941f72fb69ed3d04ccb1f678bdb72f8511658e329cca295ab1391e9c",
+      "bytes": 8769
+    },
+    {
+      "path": "execution/reviews/W03-handoff-final-rereview.md",
+      "sha256": "5a74da40d62d7304adfef092b2d304b1cf82c7c25be1b684c56993257b9878a9",
+      "bytes": 2682
+    },
+    {
+      "path": "execution/reviews/brand-remote-checks-001.json",
+      "sha256": "ec39e8f1c0538defa4c3d8e67355c95927da334c515529ec357c6622b0a7cdaf",
+      "bytes": 1293
+    },
+    {
       "path": "execution/reviews/final-local-checks.json",
-      "sha256": "58f808dbba28e7a3fbbf04cf82b07394e70d93a04cf38d8b8b97055be7045933",
-      "bytes": 1073
+      "sha256": "7b3c5dd2dd1360f6da21131da8c22b836e443cf9c1b5571a19d60f486e2be6a6",
+      "bytes": 1279
     },
     {
       "path": "execution/reviews/native-ledger-check-001.json",

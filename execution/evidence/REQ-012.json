@@ -4,7 +4,7 @@
   "binding_requirement": "Missing access blocks exact asset IDs rather than being called delivered. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:05:46.360019+00:00",
+  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
   "status": "verified",
   "reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
   "actual_review_records": [

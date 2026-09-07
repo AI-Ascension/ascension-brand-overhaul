@@ -12,5 +12,7 @@
   "persist_credentials": false,
   "publishing_secrets": false,
   "fork_execution": "pull_request only; no pull_request_target or workflow_run trigger",
-  "remote_result": "not_run_yet"
+  "remote_result": "passed at5d1c26ecee9ce753eae89c525c4a8764d29a18e5",
+  "historical_remote_result": "not_run_yet",
+  "remote_review": "execution/reviews/brand-remote-checks-001.json"
 }

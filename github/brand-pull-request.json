@@ -1,0 +1,23 @@
+{
+  "repository": "AI-Ascension/ascension-brand-overhaul",
+  "stable_repository_id": 1359787764,
+  "private": true,
+  "verified_at": "2026-09-07T18:16:50.346225+00:00",
+  "pull_request": {
+    "assignees": [
+      {
+        "id": "MDQ6VXNlcjU4NjExNjY=",
+        "login": "CompleteDotTech",
+        "name": "Timothy Wayne Gregg",
+        "databaseId": 5861166
+      }
+    ],
+    "baseRefName": "main",
+    "headRefOid": "5d1c26ecee9ce753eae89c525c4a8764d29a18e5",
+    "isDraft": true,
+    "state": "OPEN",
+    "url": "https://github.com/AI-Ascension/ascension-brand-overhaul/pull/1"
+  },
+  "transport": "Existing SSH credential authenticated as CompleteDotTech; no account/security setting modified.",
+  "scope": "Existing other-session PR preserved, converted to draft, fast-forwarded to tested engineering source, rewritten and assigned; no merge."
+}

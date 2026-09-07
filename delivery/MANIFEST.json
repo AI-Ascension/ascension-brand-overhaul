@@ -6,6 +6,12 @@
   "integrity_note": "The root inventory binds every delivered source file except its own manifest/checksum indices. Final archive hashes and the external independent review receipt are stored beside the archive to avoid self-reference.",
   "components": [
     {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "last_tested_implementation_revision": "5d1c26ecee9ce753eae89c525c4a8764d29a18e5",
+      "pull_request": "https://github.com/AI-Ascension/ascension-brand-overhaul/pull/1",
+      "final_revision_locator": "External RECEIPT.json beside the ZIP; excluded here to avoid self-reference."
+    },
+    {
       "repository": "AI-Ascension/aiascension.tech",
       "revision": "56e532b21922f39480cd15dcbb465676770408f5",
       "pull_request": "https://github.com/AI-Ascension/aiascension.tech/pull/1"
@@ -126,5 +132,6 @@
   "privacy_scope": "PRIVACY_SCOPE.md",
   "remote_review_snapshot": "../execution/reviews/companion-remote-checks-001.json",
   "remote_review_snapshot_sha256": "853a25815ed4758d622902f5f9c06c657aaac3d95355a2151052b672ee924cde",
-  "source_tree_inventory": "../execution/source-tree-inventory.json"
+  "source_tree_inventory": "../execution/source-tree-inventory.json",
+  "archive_acceptance_locator": "External final-review.json binds the exact source manifest and candidate ZIP; external RECEIPT.json binds the final reviewed ZIP and remote heads."
 }

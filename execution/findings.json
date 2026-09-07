@@ -1,16 +1,17 @@
 {
   "schema_version": "ai-ascension.findings.v1",
-  "updated_at": "2026-09-07T17:46:38.232455+00:00",
+  "updated_at": "2026-09-07T18:31:42.969314+00:00",
   "scope": "Finding disposition index; read exact review revisions and evidence limits. An addressed local finding is not production acceptance.",
   "findings": [
     {
       "id": "W01-ACC-01",
       "state": "open",
       "review_records": [
-        "execution/reviews/W03-W01-review.md"
+        "execution/reviews/W03-W01-review.md",
+        "execution/reviews/W07-final-acceptance-source-review.md"
       ],
-      "disposition_record": null,
-      "blocker": "Per-requirement records are being completed; required native depth3 reviewer ancestry remains absent."
+      "disposition_record": "execution/reviews/W07-final-acceptance-source-review.md",
+      "blocker": "All70 requirement records now have independently reviewed local/source/control coverage. Required native depth3 reviewer ancestry remains absent; this residual acceptance condition stays open."
     },
     {
       "id": "W01-COMP-01",
@@ -337,23 +338,23 @@
     },
     {
       "id": "W07-REL-01",
-      "state": "open",
+      "state": "external_final_archive_acceptance",
       "review_records": [
         "execution/reviews/W07-L-source-archive-privacy-rereview.md",
         "execution/reviews/W07-private-delivery-scope-review.md"
       ],
       "disposition_record": null,
-      "blocker": "Final exact source manifest/archive freeze and independent byte review pending."
+      "blocker": "Final disposition is recorded outside the source archive in final-review.json and RECEIPT.json beside the ZIP, binding its exact manifest and archive digests without self-reference."
     },
     {
       "id": "W07-REL-02",
-      "state": "open",
+      "state": "external_final_archive_acceptance",
       "review_records": [
         "execution/reviews/W07-L-source-archive-privacy-rereview.md",
         "execution/reviews/W07-private-delivery-scope-review.md"
       ],
       "disposition_record": null,
-      "blocker": "Final content-level privacy review pending; filename exclusions are not a content guarantee."
+      "blocker": "Final disposition is recorded outside the source archive in final-review.json and RECEIPT.json beside the ZIP, binding its exact manifest and archive digests without self-reference."
     },
     {
       "id": "W07-W02-01",
@@ -738,6 +739,26 @@
       "state": "known_unrecoverable_original_input_gap",
       "blocker": "Original113-byte .gitignore overwritten before first commit without preserving original bytes; original supplied digest retained. No claim of exact original-input preservation.",
       "disposition_record": "execution/input-integrity/README.md"
+    },
+    {
+      "id": "W03-HANDOFF-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W03-handoff-inventory-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W03-handoff-final-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W03-HANDOFF-02",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W03-handoff-repair-rereview.md",
+        "execution/reviews/W03-handoff-final-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W03-handoff-final-rereview.md",
+      "blocker": null
     }
   ]
 }

@@ -1,0 +1,34 @@
+{
+  "observed_at": "2026-09-07T18:18:28.726452+00:00",
+  "scope": "Read-only exact draft-head check; no merge approval.",
+  "pull_request": {
+    "headRefOid": "5d1c26ecee9ce753eae89c525c4a8764d29a18e5",
+    "isDraft": true,
+    "mergeStateStatus": "CLEAN",
+    "mergeable": "MERGEABLE",
+    "state": "OPEN",
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-07T18:17:17Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/AI-Ascension/ascension-brand-overhaul/actions/runs/34150994623/job/101833068462",
+        "name": "source-and-contracts",
+        "startedAt": "2026-09-07T18:16:55Z",
+        "status": "COMPLETED",
+        "workflowName": "Validate brand sources and contracts"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-09-07T18:17:18Z",
+        "conclusion": "SUCCESS",
+        "detailsUrl": "https://github.com/AI-Ascension/ascension-brand-overhaul/actions/runs/34150994450/job/101833068084",
+        "name": "source-and-contracts",
+        "startedAt": "2026-09-07T18:16:55Z",
+        "status": "COMPLETED",
+        "workflowName": "Validate brand sources and contracts"
+      }
+    ],
+    "url": "https://github.com/AI-Ascension/ascension-brand-overhaul/pull/1"
+  }
+}

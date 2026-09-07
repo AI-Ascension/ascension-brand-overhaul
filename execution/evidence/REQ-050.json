@@ -4,10 +4,11 @@
   "binding_requirement": "Subscription confirmation, unsubscribe, failure behavior, and concurrent persistence are tested without unauthorized production messages.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:05:46.360019+00:00",
+  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
   "status": "verified",
-  "reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+  "reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
   "actual_review_records": [
+    "execution/reviews/W07-final-acceptance-source-review.md",
     "execution/reviews/W03-repair-review-002.json",
     "execution/reviews/subscription-http-review-002.json",
     "execution/reviews/website-home-review-001.json"
@@ -15,7 +16,7 @@
   "procedures": [
     "php vendor/bin/phpunit (website checkout;29tests/111assertions)",
     "python3 scripts/review_subscription_http.py (exact isolated options and30checks in receipt)",
-    "node scripts/browser_review.mjs (exact route/theme manifests and110states in receipt)"
+    "node scripts/browser_review.mjs (earlier source-bound110-state receipt; final homepage10states/two renders separately reviewed)"
   ],
   "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
   "artifacts": [
@@ -45,19 +46,9 @@
       "bytes": 1083
     },
     {
-      "path": "execution/reviews/W03-repair-review-002.json",
-      "sha256": "3824f715a4a89e1e80a4fdf6e155a2f2eb91bd1a544d9c513e7ff8011f306083",
-      "bytes": 3702
-    },
-    {
-      "path": "execution/reviews/subscription-http-review-002.json",
-      "sha256": "4d35a5f0d6d3bd8326271724462d2861fd63f0268b830e41c2d5d57815b95f2a",
-      "bytes": 3602
-    },
-    {
-      "path": "execution/reviews/website-home-review-001.json",
-      "sha256": "99b990749389058311192234176ca1fc68d731c217f9644be248bebfd6206dac",
-      "bytes": 1083
+      "path": "execution/reviews/W07-final-acceptance-source-review.md",
+      "sha256": "31a6a4c9941f72fb69ed3d04ccb1f678bdb72f8511658e329cca295ab1391e9c",
+      "bytes": 8769
     }
   ],
   "blocker": null,
