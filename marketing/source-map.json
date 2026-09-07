@@ -1,0 +1,86 @@
+{
+  "schema_version": "ai-ascension.marketing-source-map.v1",
+  "package_revision": "4d09cd40fb077cc3364197a1cb1056950b980361",
+  "refreshed_at": "2026-09-07",
+  "baseline": {
+    "source_snapshot": "../brand-w01/execution/source-snapshot.json",
+    "source_snapshot_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+    "capabilities": "../brand-w01/execution/capabilities.json",
+    "season_decision": "Keep Road to the First Verified Win: W01 found no model-played campaign Victory."
+  },
+  "claims": [
+    {
+      "claim_id": "CLAIM-WIN-STATUS",
+      "statement": "No model-played campaign Victory is established in the refreshed baseline.",
+      "state": "current_baseline",
+      "source_id": "W01-SNAPSHOT",
+      "evidence_kind": "source_snapshot",
+      "publish_as": "Season goal remains open; do not call forced terminal fixture a win."
+    },
+    {
+      "claim_id": "CLAIM-WINDOWS",
+      "statement": "A dated owner report records a visible Windows STS2 v0.107.1 practice campaign reaching Defeat on floor 17 with 333 settled operations and a fresh complete replay.",
+      "state": "reported_not_independently_reproduced_by_W01",
+      "source_id": "HIST-WINDOWS-CAMPAIGN",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "evidence_kind": "maintainer_reported_native_run",
+      "public_artifact": "report_only",
+      "private_material": "Trajectories and captures remain private/unapproved."
+    },
+    {
+      "claim_id": "CLAIM-LINUX",
+      "statement": "A dated owner report records a visible Linux STS2 v0.107.1 practice campaign reaching Defeat on floor 24 after one controller restart, with 431 settled operations and a fresh complete replay.",
+      "state": "reported_not_independently_reproduced_by_W01",
+      "source_id": "HIST-LINUX-CAMPAIGN",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "evidence_kind": "maintainer_reported_native_run",
+      "public_artifact": "report_only",
+      "private_material": "Trajectories and captures remain private/unapproved."
+    },
+    {
+      "claim_id": "CLAIM-FIXTURE",
+      "statement": "A forced native Victory fixture observes a terminal surface with disabled input.",
+      "state": "reported_forced_fixture",
+      "source_id": "HIST-TERMINAL-VICTORY",
+      "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+      "evidence_kind": "maintainer_reported_forced_fixture",
+      "publish_as": "Terminal observation only; never model-played success."
+    },
+    {
+      "claim_id": "CLAIM-GATEWAY",
+      "statement": "A public browser page replays a stale-epoch gateway contract test.",
+      "state": "public_report",
+      "source_id": "HIST-PUBLIC-PROOF",
+      "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+      "evidence_kind": "public_report",
+      "publish_as": "Bounded contract replay; not live game/provider evidence."
+    },
+    {
+      "claim_id": "CLAIM-SITE",
+      "statement": "The canonical host home returned HTTP 200, while GET /api/subscribe.php returned 405; no successful POST or mail was recorded in the audit.",
+      "state": "host_observed_2026_09_07",
+      "source_id": "CAP-CANONICAL-DOMAIN",
+      "source_revision": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+      "evidence_kind": "source_derived",
+      "publish_as": "Existing host/source fact; do not imply new route deployment or mailing success."
+    },
+    {
+      "claim_id": "CLAIM-MAP",
+      "statement": "The public map repository bootstrap is minimal and active local implementation is not deployed evidence.",
+      "state": "gated",
+      "source_id": "CAP-MAP-DEFERRED",
+      "source_revision": "18915e5571829e582f460bf14b674cc2db39d9c5",
+      "evidence_kind": "planned",
+      "publish_as": "Build note or gated route only."
+    }
+  ],
+  "prohibited_shortcuts": [
+    "Do not infer a matched Windows/Linux benchmark from different contexts.",
+    "Do not infer a provider call from a replay.",
+    "Do not infer a public video or replay package from a Markdown report.",
+    "Do not infer live aiascension.tech routes from planned local destinations.",
+    "Do not use old model rankings as current source facts.",
+    "Do not expose private trajectories, raw captures, saves, credentials, prompts, or hidden reasoning."
+  ]
+}
+
