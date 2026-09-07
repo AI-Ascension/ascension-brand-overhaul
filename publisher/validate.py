@@ -77,6 +77,15 @@ def validate_manifest_integrity(manifest: dict[str, Any]) -> None:
     if timeline["public_run_id"] != manifest["public_run_id"]:
         raise PublisherError("action timeline belongs to a different public run")
     decisions = timeline["decisions"]
+    references = manifest["source"]["references"]
+    labels = [reference["label"] for reference in references]
+    if len(labels) != len(set(labels)):
+        raise PublisherError("source reference labels must be unique")
+    for reference in references:
+        safe_public_url(reference["uri"])
+    context_reference = manifest["evidence_context"]["source_reference"]
+    if context_reference is not None and context_reference not in labels:
+        raise PublisherError("evidence context must point to an included source reference")
     seen_ids: set[str] = set()
     sequences: list[int] = []
     for decision in decisions:
@@ -87,6 +96,12 @@ def validate_manifest_integrity(manifest: dict[str, Any]) -> None:
             raise PublisherError("duplicate public decision ID")
         seen_ids.add(decision["decision_id"])
         sequences.append(decision["sequence"])
+        explanation_reference = decision["explanation"]["source_reference"]
+        if explanation_reference is not None and explanation_reference not in labels:
+            raise PublisherError("decision explanation must point to an included source reference")
+        timing = decision["timing"]
+        if timing["captured"] != (timing["media_offset_ms"] is not None):
+            raise PublisherError("captured timing requires a media offset and uncaptured timing forbids one")
         choices = decision["legal_choices"]
         selected = decision["chosen_action"]
         if decision["state_visibility"] == "approved" and selected is not None and choices and selected not in choices:
@@ -162,6 +177,11 @@ def validate_manifest_integrity(manifest: dict[str, Any]) -> None:
         raise PublisherError("available local guess/reveal needs a legal option")
     if guess["status"] == "available" and timeline["status"] != "available":
         raise PublisherError("local guess/reveal needs an available action timeline")
+
+    if guess["status"] == "unavailable" and guess["legal_option_count"] != 0:
+        raise PublisherError("unavailable local guess must have zero legal options")
+    if guess["status"] == "available" and guess["legal_option_count"] != len(decisions[0]["legal_choices"]):
+        raise PublisherError("local guess option count must match the first decision")
 
     if manifest["classification"] == "synthetic" and not manifest["test_fixture"]:
         raise PublisherError("synthetic records must be explicitly marked test_fixture")
@@ -242,6 +262,9 @@ def validate_production_publication(
         raise ProductionGateError("only approved_public records may enter production output")
     if manifest["test_fixture"] or manifest["evidence_kind"] == "forced_fixture":
         raise ProductionGateError("synthetic or forced-fixture content cannot enter production output")
+    if manifest["evidence_kind"] == "report_only" or manifest["evidence_context"]["capture_scope"] == "report_only":
+        if manifest["action_timeline"]["status"] != "unavailable" or manifest["local_guess_reveal"]["status"] != "unavailable":
+            raise ProductionGateError("report-only production records cannot expose action decisions or local guesses")
     if manifest["approval_reference"] != approval["approval_id"]:
         raise ApprovalError("manifest approval_reference does not identify the supplied approval")
     if approval["target"] != manifest["public_run_id"]:

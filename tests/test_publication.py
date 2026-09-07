@@ -38,6 +38,8 @@ def approved_fixture() -> tuple[dict, dict]:
         "revision": "example-revision",
         "calls_measured": 1,
     }
+    manifest["action_timeline"].update(status="unavailable", decisions=[])
+    manifest["local_guess_reveal"].update(status="unavailable", legal_option_count=0)
     manifest["evidence"]["rights_status"] = "approved"
     manifest["evidence"]["caption_support"] = "exact"
     manifest["resource_budget"]["provider_calls"] = 1
