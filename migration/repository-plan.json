@@ -1,0 +1,524 @@
+{
+  "$schema": "ai-ascension.repository-migration-plan.v1",
+  "schema_version": "ai-ascension.repository-migration-plan.v1",
+  "plan_id": "MIGRATION-W01-20260907",
+  "plan_state": "dry_run_prepared",
+  "dry_run_default": true,
+  "apply_performed": false,
+  "created_at": "2026-09-07",
+  "owner_role": "W01-C2",
+  "prepared_by": {
+    "lead_role": "W01-L",
+    "agent_thread_id": "01a07a4e-d58b-7953-9513-872ffdf45469",
+    "parent_thread_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+    "worktree": "sts2-project-worktrees/brand-w01"
+  },
+  "inputs": {
+    "baseline_package_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+    "source_snapshot": "execution/source-snapshot.json",
+    "repository_map": "data/repository-map.json",
+    "copy_registry": "brand/copy.json",
+    "migration_spec": "specs/REPO_MIGRATION.md",
+    "source_snapshot_collected_at": "2026-09-07",
+    "source_snapshot_scope": "Read-only GitHub API/source inspection plus dated owner reports; mutable metadata and remote names were not changed."
+  },
+  "authority": {
+    "github_host": "github.com",
+    "organization": "AI-Ascension",
+    "inspection_actor": "CompleteDotTech",
+    "inspection_actor_id": 5861166,
+    "inspection_mode": "read_only",
+    "rename_authorization": null,
+    "settings_authorization": null,
+    "apply_block_reason": "No approval covering the exact repository rename or settings operation is recorded in this baseline.",
+    "operator_must_reconfirm": [
+      "stable repository ID and current full name",
+      "default and deployment branch heads",
+      "protected configuration and rulesets",
+      "active work and external callers",
+      "target-name availability",
+      "backup destination and rollback owner"
+    ]
+  },
+  "naming_policy": {
+    "organization_identity": "AI Ascension",
+    "github_handle": "AI-Ascension",
+    "flagship_display_name": "Ascension",
+    "series_name": "The Climb — by AI Ascension",
+    "canonical_domain": "https://aiascension.tech/",
+    "historical_pages_site": "https://ai-ascension.github.io/",
+    "presentation_first": true,
+    "runtime_identity_change": false,
+    "preserve_initially": [
+      "Cargo package and crate names",
+      "binary names",
+      "JSON schema IDs",
+      "HTTP routes",
+      "MCP methods and x-mcp-session-id",
+      ".NET, ABI, loader, and managed manifest identifiers",
+      "environment variables",
+      "artifact and evidence IDs",
+      "historical URLs, anchors, and fixture names",
+      "PHP subscription paths"
+    ],
+    "unsupported_shortcuts": [
+      "local git remote edits are not repository renames",
+      "a local description change is not a GitHub settings update",
+      "a renamed slug is not proof that redirects, raw URLs, registries, Pages, or hosted Actions work",
+      "a source or CI result is not deployment or gameplay proof"
+    ]
+  },
+  "global_preconditions": [
+    {
+      "id": "PRE-01",
+      "check": "Read the current repository by stable numeric ID immediately before apply.",
+      "failure": "Block the operation on missing ID, changed identity, or stale head."
+    },
+    {
+      "id": "PRE-02",
+      "check": "Resolve the target slug and verify it is free or already owned by the same stable ID.",
+      "failure": "A different repository at the target is a hard name collision."
+    },
+    {
+      "id": "PRE-03",
+      "check": "Re-read default/deployment branch, rulesets, Pages settings, hosted Actions, package registries, submodules, and Git dependencies.",
+      "failure": "Block when protected configuration or deployment ownership changed from the recorded baseline."
+    },
+    {
+      "id": "PRE-04",
+      "check": "Inventory callers for workflow uses, raw assets, badges, install recipes, scripts, services, environment examples, deploy remotes, package metadata, docs anchors, OCI labels, downloads, and external integrations.",
+      "failure": "Do not apply until each caller is classified as presentation, runtime identity, immutable evidence, or third-party caller."
+    },
+    {
+      "id": "PRE-05",
+      "check": "Create an exact metadata backup and record the approved operation digest, operator, and timestamp.",
+      "failure": "No backup or approval means dry run only."
+    },
+    {
+      "id": "PRE-06",
+      "check": "Confirm active assignments and dirty checkouts are not relying on the old name during the cutover window.",
+      "failure": "Defer the map visualizer rename while its active implementation checkout remains in progress."
+    }
+  ],
+  "execution_order": [
+    {
+      "phase": "phase-0-fresh-preflight",
+      "operations": ["all"],
+      "mode": "read_only",
+      "gate": "All global preconditions pass and exact authority exists."
+    },
+    {
+      "phase": "phase-1-presentation-aliases",
+      "operations": ["REPO-001", "REPO-002", "REPO-003", "REPO-004", "REPO-009", "REPO-010"],
+      "mode": "source-and-display-copy",
+      "gate": "Scoped copy changes are reviewed; runtime identifiers remain unchanged."
+    },
+    {
+      "phase": "phase-2-authorized-slug-renames",
+      "operations": ["REPO-001", "REPO-002", "REPO-003", "REPO-004", "REPO-009", "REPO-010"],
+      "mode": "one-repository-at-a-time",
+      "gate": "Fresh stable-ID/head/target/caller/backup checks and exact approval per operation."
+    },
+    {
+      "phase": "phase-3-deferred-or-retained-identities",
+      "operations": ["REPO-005", "REPO-006", "REPO-007", "REPO-008", "REPO-011", "REPO-012", "REPO-013"],
+      "mode": "no-slug-change-unless-separately-authorized",
+      "gate": "Keep or defer current names; update display copy only through the owning source."
+    },
+    {
+      "phase": "phase-4-post-apply-verification",
+      "operations": ["all"],
+      "mode": "read_only",
+      "gate": "Stable ID, current name, redirects, Actions callers, Pages routes, deployment branch, and relevant forms/fixtures are rechecked."
+    }
+  ],
+  "operations": [
+    {
+      "operation_id": "REPO-001",
+      "source_full_name": "AI-Ascension/sts2-harness",
+      "source_name": "sts2-harness",
+      "target_name": "ascension",
+      "display_name": "Ascension",
+      "map_action": "rename",
+      "execution_status": "planned_not_authorized",
+      "stable_repository_id": 1354378100,
+      "visibility": "public",
+      "default_branch": "main",
+      "expected_default_head": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "source_url": "https://github.com/AI-Ascension/sts2-harness/tree/cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "desired_description": "Agent-run coordination, structured records, and replay; starting with Slay the Spire 2.",
+      "authorized_action": "Update presentation copy first; rename the repository only under separate exact approval.",
+      "known_callers": [
+        "harness package, binary, schema, and environment identifiers",
+        "reports and replay records that cite sts2-harness",
+        "Rust CI and policy workflows on main"
+      ],
+      "caller_inventory_status": "partial_source_baseline; complete search required before apply",
+      "active_work": "No active PR was listed for this repository; current source head is the precondition.",
+      "backup_reference": "migration/backups/AI-Ascension-sts2-harness-metadata.json (required; not created in dry run)",
+      "verification_probes": [
+        "GET repository by stable ID and verify full_name and default_branch",
+        "Check old-name redirect and canonical repository URL",
+        "Search workflow uses, raw links, install recipes, Cargo metadata, and evidence anchors",
+        "Run the repository's policy/CI checks after any source-reference change"
+      ],
+      "rollback_decision": "Block on stale head, collision, caller failure, or incompatible runtime identity; restore metadata only with a fresh availability check and exact approval."
+    },
+    {
+      "operation_id": "REPO-002",
+      "source_full_name": "AI-Ascension/sts2-mcp-server",
+      "source_name": "sts2-mcp-server",
+      "target_name": "sts2-mcp",
+      "display_name": "Slay the Spire 2 MCP",
+      "map_action": "rename",
+      "execution_status": "planned_not_authorized",
+      "stable_repository_id": 1354378057,
+      "visibility": "public",
+      "default_branch": "main",
+      "expected_default_head": "eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+      "source_url": "https://github.com/AI-Ascension/sts2-mcp-server/tree/eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+      "desired_description": "MCP tools for the controlled STS2 gateway interface.",
+      "authorized_action": "Update presentation copy first; rename the repository only under separate exact approval.",
+      "known_callers": [
+        "MCP methods and newline-delimited JSON-RPC framing",
+        "x-mcp-session-id and gateway route mappings",
+        "historical merged PR #16 and dated coordinator report"
+      ],
+      "caller_inventory_status": "partial_source_baseline; complete search required before apply",
+      "active_work": "No active PR was listed for this repository; merged PR #16 is historical and must remain traceable.",
+      "backup_reference": "migration/backups/AI-Ascension-sts2-mcp-server-metadata.json (required; not created in dry run)",
+      "verification_probes": [
+        "GET repository by stable ID and verify full_name and default_branch",
+        "Check redirect behavior and MCP documentation links",
+        "Exercise protocol framing and gateway mapping callers against the exact source revision",
+        "Confirm session header and package identity remain unchanged"
+      ],
+      "rollback_decision": "Do not roll back by changing local remotes or package names; stop and use a separately reviewed forward or metadata rollback operation."
+    },
+    {
+      "operation_id": "REPO-003",
+      "source_full_name": "AI-Ascension/sts2-game-mod",
+      "source_name": "sts2-game-mod",
+      "target_name": "sts2-mod",
+      "display_name": "Slay the Spire 2 Mod",
+      "map_action": "rename",
+      "execution_status": "blocked_active_pr",
+      "stable_repository_id": 1354377975,
+      "visibility": "public",
+      "default_branch": "main",
+      "expected_default_head": "8b71150895ea95c0625afc1389bb08e4034d9350",
+      "source_url": "https://github.com/AI-Ascension/sts2-game-mod/tree/8b71150895ea95c0625afc1389bb08e4034d9350",
+      "desired_description": "Native game integration for controlled observation and actions.",
+      "authorized_action": "Use the display name while the active gameplay-v4 PR is coordinated; defer slug rename until callers and PR state are reviewed.",
+      "known_callers": [
+        "managed package, ABI exports, loader and manifest IDs",
+        "host-version compatibility and source-release workflow",
+        "open PR #52 recovery/gameplay-v4-expert-20260907",
+        "merged PR #50 release-package history"
+      ],
+      "caller_inventory_status": "partial_source_baseline; active PR and release caller review required",
+      "active_work": "Open PR #52 is clean with successful checks and must be coordinated before a slug change.",
+      "backup_reference": "migration/backups/AI-Ascension-sts2-game-mod-metadata.json (required; not created in dry run)",
+      "verification_probes": [
+        "Re-read default head and PR #52 base/head immediately before any apply",
+        "Check source-release workflow, tags, loader/manifest references, and package metadata",
+        "Verify host-version fixture and stale-generation checks after staged source changes",
+        "Test redirect and release/documentation links"
+      ],
+      "rollback_decision": "Keep the current slug while PR #52 is active or if any native/package caller fails; rollback requires a fresh target-availability check."
+    },
+    {
+      "operation_id": "REPO-004",
+      "source_full_name": "AI-Ascension/sts2-game-core",
+      "source_name": "sts2-game-core",
+      "target_name": "sts2-core",
+      "display_name": "STS2 Domain Core",
+      "map_action": "rename",
+      "execution_status": "planned_not_authorized",
+      "stable_repository_id": 1354377929,
+      "visibility": "public",
+      "default_branch": "main",
+      "expected_default_head": "87e0f3d9355c0827e989d9fbc31804440852519b",
+      "source_url": "https://github.com/AI-Ascension/sts2-game-core/tree/87e0f3d9355c0827e989d9fbc31804440852519b",
+      "desired_description": "Typed STS2 state and validation primitives.",
+      "authorized_action": "Update presentation copy first; preserve crate and schema identities during any future slug rename.",
+      "known_callers": [
+        "Cargo crate/package names and domain type imports",
+        "Rust CI and policy workflows on main",
+        "downstream protocol and mod source references"
+      ],
+      "caller_inventory_status": "partial_source_baseline; complete search required before apply",
+      "active_work": "Shared checkout was reported behind and/or dirty; no shared checkout may be edited for this plan.",
+      "backup_reference": "migration/backups/AI-Ascension-sts2-game-core-metadata.json (required; not created in dry run)",
+      "verification_probes": [
+        "Check stable ID/head and target availability",
+        "Search Cargo manifests, Git dependencies, workflow badges, and documentation",
+        "Run locked Rust tests/policy checks from an isolated checkout",
+        "Verify crate/package/schema identities did not change"
+      ],
+      "rollback_decision": "Do not change runtime package identity to make the slug uniform; block and preserve the source head if a caller is not ready."
+    },
+    {
+      "operation_id": "REPO-005",
+      "source_full_name": "AI-Ascension/sts2-gateway",
+      "source_name": "sts2-gateway",
+      "target_name": "sts2-gateway",
+      "display_name": "STS2 Gateway",
+      "map_action": "keep",
+      "execution_status": "already_satisfied",
+      "stable_repository_id": 1354378018,
+      "visibility": "public",
+      "default_branch": "main",
+      "expected_default_head": "33ea48f3b549f08e19db80d8c68c1438fa12a60a",
+      "source_url": "https://github.com/AI-Ascension/sts2-gateway/tree/33ea48f3b549f08e19db80d8c68c1438fa12a60a",
+      "desired_description": "Game-instance routing, lifecycle boundaries, and request authority.",
+      "authorized_action": "Keep slug and routes; presentation may use the display description after review.",
+      "known_callers": ["fixed lifecycle/control routes", "lease and epoch fencing consumers", "MCP adapter mapping"],
+      "caller_inventory_status": "partial_source_baseline; verify before any settings update",
+      "active_work": "No active PR was listed; shared checkout warning still requires isolated validation.",
+      "backup_reference": "migration/backups/AI-Ascension-sts2-gateway-metadata.json (required for settings update; not created in dry run)",
+      "verification_probes": ["Confirm stable ID/name/head", "Run gateway contract tests", "Verify route and epoch behavior remain unchanged"],
+      "rollback_decision": "No rename rollback is needed; preserve the existing identity and stop any unsupported settings mutation."
+    },
+    {
+      "operation_id": "REPO-006",
+      "source_full_name": "AI-Ascension/sts2-protocol",
+      "source_name": "sts2-protocol",
+      "target_name": "sts2-protocol",
+      "display_name": "STS2 Protocol",
+      "map_action": "keep",
+      "execution_status": "already_satisfied",
+      "stable_repository_id": 1354378136,
+      "visibility": "public",
+      "default_branch": "main",
+      "expected_default_head": "8874b0951289fd943c7e14dea36557fa24c401d1",
+      "source_url": "https://github.com/AI-Ascension/sts2-protocol/tree/8874b0951289fd943c7e14dea36557fa24c401d1",
+      "desired_description": "Shared metadata contracts and conformance artifacts.",
+      "authorized_action": "Keep slug and protocol identity; improve display copy only with source-owner review.",
+      "known_callers": ["language-neutral identity/version/error metadata", "golden vectors", "merged PR #11 consumers"],
+      "caller_inventory_status": "partial_source_baseline; verify before any settings update",
+      "active_work": "No active PR was listed; merged PR #11 is historical and must remain traceable.",
+      "backup_reference": "migration/backups/AI-Ascension-sts2-protocol-metadata.json (required for settings update; not created in dry run)",
+      "verification_probes": ["Confirm stable ID/name/head", "Run contract vectors and policy checks", "Verify schema IDs and historical links"],
+      "rollback_decision": "Keep the protocol name; never relabel it as a universal agent protocol."
+    },
+    {
+      "operation_id": "REPO-007",
+      "source_full_name": "AI-Ascension/ascension-map-visualizer",
+      "source_name": "ascension-map-visualizer",
+      "target_name": "sts2-map",
+      "display_name": "STS2 Map Viewer",
+      "map_action": "deferred-rename",
+      "execution_status": "blocked_active_assignment",
+      "stable_repository_id": 1359701124,
+      "visibility": "public",
+      "default_branch": "bootstrap",
+      "expected_default_head": "18915e5571829e582f460bf14b674cc2db39d9c5",
+      "source_url": "https://github.com/AI-Ascension/ascension-map-visualizer/tree/18915e5571829e582f460bf14b674cc2db39d9c5",
+      "desired_description": "Player-visible map topology and route inspection.",
+      "authorized_action": "Display-name update may proceed through the active owner; mechanical slug rename is gated.",
+      "known_callers": ["active feat/complete-map-visibility assignment", "dirty local implementation checkout", "bootstrap default branch"],
+      "caller_inventory_status": "blocked until active owner confirms migration window",
+      "active_work": "The active checkout is dirty with untracked implementation files; preserve it and do not rename.",
+      "backup_reference": "migration/backups/AI-Ascension-ascension-map-visualizer-metadata.json (not created; defer until owner approval)",
+      "verification_probes": ["Confirm active checkout is clean or explicitly migrated", "Inventory old-name instructions and links", "Test map routes and anchors after a separately authorized cutover"],
+      "rollback_decision": "No mechanical rename while the assignment depends on the current name; resolve with the owner before scheduling a migration window."
+    },
+    {
+      "operation_id": "REPO-008",
+      "source_full_name": "AI-Ascension/ascension-watchdog",
+      "source_name": "ascension-watchdog",
+      "target_name": "ascension-watchdog",
+      "display_name": "Ascension Watchdog",
+      "map_action": "keep",
+      "execution_status": "blocked_active_pr",
+      "stable_repository_id": 1359537708,
+      "visibility": "public",
+      "default_branch": "bootstrap",
+      "expected_default_head": "dc2d20badb9e86c12067316b92d6c8289b2e6995",
+      "source_url": "https://github.com/AI-Ascension/ascension-watchdog/tree/dc2d20badb9e86c12067316b92d6c8289b2e6995",
+      "desired_description": "Deterministic deployment supervision and recovery for Ascension.",
+      "authorized_action": "Keep required slug; display copy must preserve the proposal and failed-check boundary.",
+      "known_callers": ["open draft PR #2", "bootstrap default branch", "synthetic process checks"],
+      "caller_inventory_status": "partial_source_baseline; active draft must be resolved before claims or settings changes",
+      "active_work": "PR #2 is draft/UNSTABLE with failed Ubuntu and Windows checks; no live watchdog is established.",
+      "backup_reference": "migration/backups/AI-Ascension-ascension-watchdog-metadata.json (required for settings update; not created in dry run)",
+      "verification_probes": ["Confirm stable ID/name/head and PR state", "Re-run platform checks after owner fixes", "Do not probe or claim a production service from the source repository"],
+      "rollback_decision": "Keep current identity and narrow all copy to the documented proposal until a reviewed runtime result exists."
+    },
+    {
+      "operation_id": "REPO-009",
+      "source_full_name": "AI-Ascension/ai-agent-observability",
+      "source_name": "ai-agent-observability",
+      "target_name": "ascension-observability",
+      "display_name": "Ascension Observability",
+      "map_action": "rename",
+      "execution_status": "blocked_active_pr",
+      "stable_repository_id": 1357224960,
+      "visibility": "public",
+      "default_branch": "main",
+      "expected_default_head": "b25880376d3a3334c77f58637267db93581c4c77",
+      "source_url": "https://github.com/AI-Ascension/ai-agent-observability/tree/b25880376d3a3334c77f58637267db93581c4c77",
+      "desired_description": "Self-hosted observability integrations for AI Ascension experiments.",
+      "authorized_action": "Use the display name while the durability draft and private deployment callers are reviewed; do not claim live telemetry.",
+      "known_callers": ["Compose service names and private deployment source", "OpenTelemetry, MLflow, and Laminar identifiers", "open draft PR #10"],
+      "caller_inventory_status": "partial_source_baseline; deployment and PR caller review required",
+      "active_work": "PR #10 is draft/clean against main; current source does not establish gameplay telemetry reaching a backend.",
+      "backup_reference": "migration/backups/AI-Ascension-ai-agent-observability-metadata.json (required; not created in dry run)",
+      "verification_probes": ["Confirm stable ID/head and PR state", "Inventory Compose/env/service/registry references", "Check private deployment control and rollback destination", "Verify renamed links without presenting telemetry as live"],
+      "rollback_decision": "Defer slug change if private deployment ownership or PR callers are unresolved; preserve upstream service identities."
+    },
+    {
+      "operation_id": "REPO-010",
+      "source_full_name": "AI-Ascension/aiascension.tech",
+      "source_name": "aiascension.tech",
+      "target_name": "website",
+      "display_name": "AI Ascension Website",
+      "map_action": "rename",
+      "execution_status": "blocked_deployment_branch",
+      "stable_repository_id": 1209899690,
+      "visibility": "public",
+      "default_branch": "codex/wire-mailing-list-email",
+      "expected_default_head": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+      "source_url": "https://github.com/AI-Ascension/aiascension.tech/tree/4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+      "desired_description": "The canonical Watch and Build experience for AI Ascension.",
+      "authorized_action": "Confirm hosting control and production branch first; preserve PHP subscription routes and use display copy before any slug rename.",
+      "known_callers": ["canonical https://aiascension.tech/ domain", "live checkout head 598ce386521f720f480c946486c4442b60610c9c", "source README declares master as production while default/live branch is codex/wire-mailing-list-email", "PHP subscribe endpoint", "hosting-injected tccl.js"],
+      "caller_inventory_status": "blocked until operator confirms production branch, host control, and route ownership",
+      "active_work": "Live host is separately observed; source/default/deployment branch relationship is unresolved. No subscription email was sent.",
+      "backup_reference": "migration/backups/AI-Ascension-aiascension.tech-metadata.json (required with site and PHP route backup; not created in dry run)",
+      "verification_probes": ["Confirm stable ID and exact production branch at apply time", "Fetch home and subscribe GET/POST behavior", "Check PHP version, hosting injection, forms, assets, and canonical URLs", "Verify old and new repository links without assuming domain redirects"],
+      "rollback_decision": "Do not rename or change deployment settings until hosting authority and branch ownership are confirmed; preserve a forward fix over a half-reverted source/hosting state."
+    },
+    {
+      "operation_id": "REPO-011",
+      "source_full_name": "AI-Ascension/AI-Ascension.github.io",
+      "source_name": "AI-Ascension.github.io",
+      "target_name": "AI-Ascension.github.io",
+      "display_name": "AI Ascension Historical Evidence",
+      "map_action": "keep",
+      "execution_status": "already_satisfied",
+      "stable_repository_id": 1354473981,
+      "visibility": "public",
+      "default_branch": "main",
+      "expected_default_head": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+      "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/tree/bbe475998b0cd279309666f5cec3dc433d90a4a4",
+      "desired_description": "Historical evidence, stable proof URLs, and the legacy entry point.",
+      "authorized_action": "Keep repository name, Pages routes, and historical anchors; only add clearly labeled current presentation copy.",
+      "known_callers": ["GitHub Pages deployment id 6298437311", "Pages workflow on main", "proof.html and historical anchors"],
+      "caller_inventory_status": "partial_source_baseline; route and anchor checks required for any content update",
+      "active_work": "Pages metadata says built; browser accessibility and host gameplay remain unverified.",
+      "backup_reference": "migration/backups/AI-Ascension-AI-Ascension.github.io-metadata.json (required for content update; not created in dry run)",
+      "verification_probes": ["Verify Pages source branch and deployment SHA", "Fetch historical proof routes and anchors", "Preserve route-level content; do not promise a configurable HTTP 301"],
+      "rollback_decision": "Preserve historical pages and anchors; roll back only a scoped content deployment with a verified prior Pages build."
+    },
+    {
+      "operation_id": "REPO-012",
+      "source_full_name": "AI-Ascension/.github",
+      "source_name": ".github",
+      "target_name": ".github",
+      "display_name": "AI Ascension Community",
+      "map_action": "keep",
+      "execution_status": "already_satisfied",
+      "stable_repository_id": 1354466045,
+      "visibility": "public",
+      "default_branch": "main",
+      "expected_default_head": "0cbdf744d515b16c042eb6e16b1537d8ccf11771",
+      "source_url": "https://github.com/AI-Ascension/.github/tree/0cbdf744d515b16c042eb6e16b1537d8ccf11771",
+      "desired_description": "Organization profile, contributor guidance, governance, and shared presentation.",
+      "authorized_action": "Keep repository name and policy paths; update presentation only after preserving evidence context.",
+      "known_callers": ["organization profile", "contributor guide, issue forms, security policy", "STATUS.md historical evidence ledger"],
+      "caller_inventory_status": "partial_source_baseline; policy links must be checked after any presentation update",
+      "active_work": "No active PR was listed; historical STATUS.md text contains stale merged-PR statements that must not be used as current verdicts.",
+      "backup_reference": "migration/backups/AI-Ascension-.github-metadata.json (required for settings/content update; not created in dry run)",
+      "verification_probes": ["Confirm stable ID/name/head", "Check profile, policy, security, and issue-form links", "Preserve dated historical sections while adding current links"],
+      "rollback_decision": "Keep the repository identity and restore only a reviewed presentation commit if a policy/evidence link is broken."
+    },
+    {
+      "operation_id": "REPO-013",
+      "source_full_name": "AI-Ascension/ascension-brand-overhaul",
+      "source_name": "ascension-brand-overhaul",
+      "target_name": "ascension-brand-overhaul",
+      "display_name": "AI Ascension Brand System",
+      "map_action": "create-or-reuse",
+      "execution_status": "reuse_existing_inspected",
+      "stable_repository_id": 1359787764,
+      "visibility": "private",
+      "default_branch": "main",
+      "expected_default_head": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+      "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+      "desired_description": "Canonical AI Ascension brand sources, publication tooling, campaign kit, and rollout evidence.",
+      "authorized_action": "Reuse the existing private repository after inspection; do not create a duplicate or overwrite unrelated content.",
+      "known_callers": ["this execution package and its isolated worktree", "private approvals and raw runtime artifacts", "brand/source/campaign outputs"],
+      "caller_inventory_status": "source baseline inspected; external callers still require normal preflight",
+      "active_work": "The pinned baseline is the current default head; this worktree contains scoped W01 outputs only.",
+      "backup_reference": "migration/backups/AI-Ascension-ascension-brand-overhaul-metadata.json (required for settings/content update; not created in dry run)",
+      "verification_probes": ["Confirm stable ID/name/head and private visibility", "Review scoped diff and manifest before integration", "Keep credentials, raw private trajectories, and hidden reasoning out of public exports"],
+      "rollback_decision": "Preserve the existing private repository and revert only scoped commits after exact diff review; never replace unrelated content."
+    }
+  ],
+  "caller_inventory": {
+    "status": "partial_source_baseline",
+    "known_cross_surface_callers": [
+      "Rust package, binary, schema, environment, ABI, loader, and manifest identities",
+      "MCP methods, gateway routes, and x-mcp-session-id",
+      "GitHub Actions workflow uses, tags, badges, raw links, and release names",
+      "GitHub Pages repository, deployment branch, proof routes, and historical anchors",
+      "aiascension.tech production branch, PHP subscription path, and host-injected monitoring",
+      "active dirty map visualizer checkout and open draft/active PRs listed in execution/source-snapshot.json"
+    ],
+    "required_classification": [
+      "mutable_presentation",
+      "runtime_identity",
+      "immutable_historical_evidence",
+      "third_party_caller"
+    ],
+    "unresolved_external_callers": "A complete repository-wide and external-caller search must run immediately before any authorized apply."
+  },
+  "backup_and_rollback": {
+    "status": "required_before_apply",
+    "backup_contents": [
+      "stable ID, owner, full name, visibility, description, topics, default branch, deployment branch, Pages settings, rulesets, Actions references, registries, and relevant caller inventory",
+      "exact source heads and operation digest",
+      "website source/deployment metadata and PHP route behavior where applicable"
+    ],
+    "backup_destination": "An operator-approved private path recorded in the operation receipt; no backup is claimed by this dry run.",
+    "rollback_order": [
+      "stop further mutations",
+      "capture the observed post-state and failing probe",
+      "prefer a forward caller fix when the old name is unavailable or a redirect is incomplete",
+      "otherwise check target-name availability and perform a separately approved metadata rollback",
+      "verify source, hosting, Pages, routes, and callers independently"
+    ],
+    "never_do": [
+      "rewrite source history or historical evidence",
+      "change runtime package/binary/schema/environment identities in this presentation pass",
+      "create a duplicate repository to preserve an ordinary rename redirect",
+      "call local remote edits or a successful upload a completed remote operation"
+    ]
+  },
+  "verification_receipt": {
+    "requested_operation": null,
+    "actual_response": null,
+    "operator": null,
+    "timestamp": null,
+    "post_state": null,
+    "status": "not_applicable_until_authorized_apply"
+  },
+  "manual_apply_checklist": [
+    "Obtain exact recorded authorization for each repository/settings operation.",
+    "Re-read stable ID, current name, target availability, default/deployment branches, exact heads, protected configuration, open PRs, and active work.",
+    "Create and hash the metadata/site backup; record its private rollback destination.",
+    "Run the caller inventory and classify every old-name reference.",
+    "Apply one authorized operation at a time using the supported GitHub API/CLI operation actually available.",
+    "Record the requested operation, actual response, timestamp, operator authority, and observed post-state.",
+    "Verify redirects, hosted Actions, raw links, package/registry callers, Pages routes/anchors, website forms, and source/runtime identities.",
+    "Stop on any mismatch; do not infer success from a local remote change, HTTP home-page success, or a green unrelated check."
+  ],
+  "open_questions": [
+    "Which exact repository rename windows and settings fields are authorized, and by whom?",
+    "Which branch is the production deployment branch for aiascension.tech, and who controls the host?",
+    "When has the active map visualizer assignment released the current slug for a migration window?",
+    "Which external Actions, package, registry, or deploy callers require a separately reviewed compatibility strategy?"
+  ]
+}
