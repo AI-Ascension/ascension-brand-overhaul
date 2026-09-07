@@ -88,7 +88,11 @@ def validate_event(event: dict[str, Any], *, contract: dict[str, Any] | None = N
         raise PublisherError(f"{event['event_name']} requires granted consent")
     if definition["server_confirmed"] and event["server_observation"] != "confirmed":
         raise PublisherError(f"{event['event_name']} requires a server-confirmed observation")
+    if event["event_name"] in {"quickstart_success", "subscribe_confirmed", "unsubscribe_completed"} and properties.get("status") != "completed":
+        raise PublisherError("completion events require status=completed")
     cohort = event["coarse_cohort"]
+    if cohort and cohort["value"] is not None and event["consent_state"] != "granted":
+        raise PublisherError("a valued coarse cohort requires granted consent")
     if cohort and cohort["kind"] == "consented_cohort":
         if event["consent_state"] != "granted":
             raise PublisherError("a consented coarse cohort requires granted consent")
@@ -114,18 +118,19 @@ def aggregate_events(
 
     contract = load_event_contract()
     validated = [validate_event(event, contract=contract) for event in events]
-    if not include_synthetic:
-        validated = [event for event in validated if event["environment"] == "production"]
     # De-duplicate by server-issued event ID before calculating any rate.  A
     # retry or replayed request must not inflate an audience denominator.
     unique: list[dict[str, Any]] = []
-    seen_ids: set[str] = set()
+    seen_ids: dict[str, str] = {}
     for event in validated:
+        canonical = json.dumps(event, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
         if event["event_id"] in seen_ids:
+            if seen_ids[event["event_id"]] != canonical:
+                raise PublisherError("conflicting duplicate event ID")
             continue
-        seen_ids.add(event["event_id"])
+        seen_ids[event["event_id"]] = canonical
         unique.append(event)
-    validated = unique
+    validated = unique if include_synthetic else [event for event in unique if event["environment"] == "production"]
     counts = Counter(event["event_name"] for event in validated)
 
     def ratio(numerator: int, denominator: int) -> float | None:
