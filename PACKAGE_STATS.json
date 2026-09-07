@@ -16,6 +16,8 @@
   "specified_evidence_exports": 10,
   "specified_exports_total": 125,
   "surfaces": 16,
-  "package_unit_tests": 41,
-  "total_delivery_files": 121
+  "package_unit_tests": 189,
+  "total_delivery_files": 121,
+  "test_count_status": "discovery count; final execution receipt recorded separately",
+  "delivery_status": "Private local implementation handoff with mandatory art and native-depth blockers"
 }

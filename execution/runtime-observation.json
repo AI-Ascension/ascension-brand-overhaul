@@ -1,0 +1,93 @@
+{
+  "observed_at": "2026-09-07T16:53:12.075292+00:00",
+  "root_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+  "evidence_kind": "installed_client_thread_metadata",
+  "limitations": [
+    "Client metadata does not independently attest a provider execution.",
+    "Thread existence does not establish current liveness or closure.",
+    "Requested settings and native spawn receipts must be recorded separately.",
+    "Agent filesystem paths are redacted; ancestry is checked from parent IDs."
+  ],
+  "threads": [
+    {
+      "id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "low",
+      "cli_version": "0.153.4",
+      "created_at_ms": 1788758145276,
+      "agent_path_redacted": true,
+      "parent_id": null,
+      "depth": 0
+    },
+    {
+      "id": "01a07a4e-d58b-7953-9513-872ffdf45469",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "max",
+      "cli_version": "0.153.4",
+      "created_at_ms": 1788758382023,
+      "agent_path_redacted": true,
+      "parent_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+      "depth": 1
+    },
+    {
+      "id": "01a07a53-0521-7673-b4fd-15921bfaa4b8",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "max",
+      "cli_version": "0.153.4",
+      "created_at_ms": 1788758656289,
+      "agent_path_redacted": true,
+      "parent_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+      "depth": 1
+    },
+    {
+      "id": "01a07a5f-43ad-7d93-b681-0716317e7d4a",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "max",
+      "cli_version": "0.153.4",
+      "created_at_ms": 1788759458733,
+      "agent_path_redacted": true,
+      "parent_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+      "depth": 1
+    },
+    {
+      "id": "01a07a68-aae7-7cf2-94b3-c74e56e99f74",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "max",
+      "cli_version": "0.153.4",
+      "created_at_ms": 1788760074994,
+      "agent_path_redacted": true,
+      "parent_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+      "depth": 1
+    },
+    {
+      "id": "01a07a69-bd54-7f72-9713-f2f3c76576c0",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "max",
+      "cli_version": "0.153.4",
+      "created_at_ms": 1788760145236,
+      "agent_path_redacted": true,
+      "parent_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+      "depth": 1
+    },
+    {
+      "id": "01a07a6a-cbed-7c81-9269-307b4c26163c",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "max",
+      "cli_version": "0.153.4",
+      "created_at_ms": 1788760214510,
+      "agent_path_redacted": true,
+      "parent_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+      "depth": 1
+    },
+    {
+      "id": "01a07a82-c9fa-7ac3-b8f8-1ac8da3cc0c5",
+      "model": "gpt-5.6-luna",
+      "reasoning_effort": "max",
+      "cli_version": "0.153.4",
+      "created_at_ms": 1788761786918,
+      "agent_path_redacted": true,
+      "parent_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+      "depth": 1
+    }
+  ]
+}

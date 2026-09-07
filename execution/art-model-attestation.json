@@ -872,5 +872,8 @@
     "execution/w02-access.json",
     "brand/ART_ACCESS.md"
   ],
-  "review_status": "pending independent W07 review"
+  "review_status": "pending independent W07 review",
+  "latest_runtime_observation": "execution/runtime-observation.json",
+  "latest_child_capability_review": "execution/reviews/W03-W01-review.md",
+  "latest_child_capability_result": "W03 actual callable-surface check again returned no collaboration or child-spawn tool; no depth2/depth3 identity exists."
 }

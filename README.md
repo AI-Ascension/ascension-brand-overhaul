@@ -1,16 +1,16 @@
 # AI Ascension — complete brand-overhaul execution package
 
-**Target repository:** `AI-Ascension/ascension-brand-overhaul`  
-**Agent configuration requested:** Luna/max for 47 ordinary roles; Astra/max for the two depth-3 art-author roles. Every artwork is generated exclusively by `gpt-image-2`.  
+**Target repository:** `AI-Ascension/ascension-brand-overhaul`
+**Agent configuration requested:** Luna/max for 47 ordinary roles; Astra/max for the two depth-3 art-author roles. Every required artwork must be generated exclusively by `gpt-image-2`; none is generated yet.
 **Hierarchy:** root → workstream leads → work-package coordinators → implementation/review specialists.
 
-This is the implementation prompt package, including the complete art production map. It is not a claim that the organization has already been rebranded. No target repositories were created or renamed while assembling this ZIP, and no artwork or gameplay footage was generated for it.
+This repository contains the executed engineering and text work for the overhaul, together with the original binding brief. The private repository and reviewed draft PRs were created. The website, offline publisher, measurement contracts, migration tooling, presentation copy, and twelve-week content kit have local verification records. Mandatory generated artwork and the requested native depth-3 hierarchy remain absent; this is not a completed rebrand or a live launch.
 
-## Start
+This is a **private audit source handoff**. Internal model ancestry and operation receipts are retained to satisfy the execution audit. Do not make the repository or local archive public without a separate content/privacy review and explicit publication authority. Raw private trajectories, captures, provider diagnostics, credentials, and font binaries are excluded.
 
-Extract the entire package into an authorized working directory. Open `START_HERE.md`, then give the execution agent `MASTER_PROMPT.md` together with access to the extracted files. The master prompt instructs it to create or safely reuse the new repository, inspect current organization sources, implement the deliverables, and prepare companion changes in the existing repositories.
+## Handoff
 
-Keep the whole package available. Do not paste every role file into every agent: the root distributes the relevant role prompt, bounded input packet, source pins, and acceptance criteria. This preserves useful context while avoiding redundant scans.
+Read `delivery/FINAL_REPORT.md` for generated requirement, asset, and external-operation states; `delivery/RUNBOOK.md` for reproducible checks and exact remaining dependencies. `MASTER_PROMPT.md` and `START_HERE.md` remain the original assignment. The proposed PRs are drafts, and merges, renames, deployments, and campaign sends remain separately gated.
 
 ## Main documents
 
@@ -35,14 +35,16 @@ Keep the whole package available. Do not paste every role file into every agent:
 
 ## Local package checks
 
-Requires Python 3.10 or newer; the included checks use only the standard library.
+Requires Python 3.10 or newer and the pinned development dependencies in `requirements-dev.txt`.
 
 ```sh
-python scripts/validate_package.py
-python -m unittest discover -s tests -v
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python scripts/validate_package.py
+.venv/bin/python -m unittest discover -s tests -v
 ```
 
-These commands validate this prompt package and its helper logic. They do not execute agents, produce brand art, mutate GitHub, deploy a site, or prove product readiness.
+These commands validate the package and local implemented contracts. They do not execute agents, produce brand art, mutate GitHub, deploy a site, or prove product readiness.
 
 ## Main decisions retained
 

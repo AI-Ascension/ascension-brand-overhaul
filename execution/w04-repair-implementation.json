@@ -13,7 +13,9 @@
       "id": "W07-W04-01",
       "status": "addressed",
       "implementation": "Evaluate recorded default-branch and visibility preconditions as separate gates.",
-      "tests": ["test_recorded_branch_and_visibility_preconditions_are_hard_gates"]
+      "tests": [
+        "test_recorded_branch_and_visibility_preconditions_are_hard_gates"
+      ]
     },
     {
       "id": "W07-W04-02",
@@ -28,7 +30,9 @@
       "id": "W07-W04-03",
       "status": "addressed",
       "implementation": "Preserve endpoint-specific 404 semantics and record unavailable optional inventories.",
-      "tests": ["test_404_is_endpoint_specific_unknown"]
+      "tests": [
+        "test_404_is_endpoint_specific_unknown"
+      ]
     },
     {
       "id": "W07-W04-04",
@@ -43,37 +47,50 @@
       "id": "W07-W04-05",
       "status": "addressed",
       "implementation": "Classify ambiguous transport results, including connection resets and 5xx responses, as unknown.",
-      "tests": ["test_ambiguous_transport_is_unknown_and_halts_the_operation_set"]
+      "tests": [
+        "test_ambiguous_transport_is_unknown_and_halts_the_operation_set"
+      ]
     },
     {
       "id": "W07-W04-06",
       "status": "addressed",
       "implementation": "Stop an operation set after unknown, unresolved, or verification-failed work.",
-      "tests": ["test_ambiguous_transport_is_unknown_and_halts_the_operation_set"]
+      "tests": [
+        "test_ambiguous_transport_is_unknown_and_halts_the_operation_set"
+      ]
     },
     {
       "id": "W07-W04-07",
       "status": "addressed",
       "implementation": "Re-read fresh state and bind terminal receipts to identity, request, response, full verification, and post-state digest.",
-      "tests": ["test_stale_applied_receipt_is_rechecked_before_any_retry"]
+      "tests": [
+        "test_stale_applied_receipt_is_rechecked_before_any_retry"
+      ]
     },
     {
       "id": "W07-W04-08",
       "status": "addressed",
       "implementation": "Bind approval to the authenticated actor, every rename operation, approved owner scope, and snapshot-consistent stable IDs.",
-      "tests": ["test_approval_is_bound_to_actor_scope_and_all_rename_ids", "test_snapshot_identity_and_exact_file_digest_are_required"]
+      "tests": [
+        "test_approval_is_bound_to_actor_scope_and_all_rename_ids",
+        "test_snapshot_identity_and_exact_file_digest_are_required"
+      ]
     },
     {
       "id": "W07-W04-09",
       "status": "addressed",
       "implementation": "Add an exact-plan operation-set lock shared by all receipt paths, in addition to the receipt lock.",
-      "tests": ["test_operation_set_lock_covers_any_receipt_path"]
+      "tests": [
+        "test_operation_set_lock_covers_any_receipt_path"
+      ]
     },
     {
       "id": "W07-W04-10",
       "status": "addressed",
       "implementation": "Validate snapshot schema and unique identities and record the exact snapshot-byte SHA-256 in plan provenance.",
-      "tests": ["test_snapshot_identity_and_exact_file_digest_are_required"]
+      "tests": [
+        "test_snapshot_identity_and_exact_file_digest_are_required"
+      ]
     }
   ],
   "validation": {
@@ -94,5 +111,11 @@
     "helper_findings_out_of_scope": true,
     "independent_review": "pending root and W07 review",
     "remote_apply_authority": false
+  },
+  "superseded_by": {
+    "implementation_revision": "eb32e7efcf362f395cf44c7c020f2e1ebfc58a3d",
+    "record": "execution/w04-implementation.json",
+    "independent_review": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+    "note": "This original builder receipt is historical; later independent findings and repairs are recorded separately."
   }
 }
