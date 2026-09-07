@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verified Astra-authored gpt-image-2 generation provenance",
+  "description": "Completed provenance record. The unfilled execution template is intentionally not a verified record. Runtime attestation must be independently inspected.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "asset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "author_role_id": {
+      "enum": [
+        "W02-C1-BUILD",
+        "W02-C2-BUILD"
+      ]
+    },
+    "author_agent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "author_parent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "author_runtime_evidence_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prompt_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tool_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tool_execution_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "image_model_evidence_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewer_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "in_progress",
+        "blocked",
+        "verified"
+      ]
+    },
+    "test_fixture": {
+      "type": "boolean"
+    },
+    "author_depth": {
+      "const": 3
+    },
+    "image_model_requested": {
+      "const": "gpt-image-2"
+    },
+    "image_model_observed": {
+      "enum": [
+        "gpt-image-2",
+        "gpt-image-2-2026-04-21"
+      ]
+    },
+    "snapshot_alias_evidence_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prompt_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "provider_revised_prompt_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provider_revised_prompt_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "revised_prompt_astra_review_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reference_inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "rights_reference": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "reference",
+          "sha256",
+          "rights_reference"
+        ]
+      }
+    },
+    "raw_outputs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "format": {
+            "enum": [
+              "png",
+              "webp",
+              "jpeg",
+              "jpg"
+            ]
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "format",
+          "width",
+          "height"
+        ]
+      }
+    },
+    "requested_author_model": {
+      "const": "gpt-6-astra"
+    },
+    "requested_author_effort": {
+      "const": "max"
+    },
+    "accepted_author_model": {
+      "const": "gpt-6-astra"
+    },
+    "accepted_author_effort": {
+      "const": "max"
+    },
+    "observed_author_model": {
+      "const": "gpt-6-astra"
+    },
+    "observed_author_effort": {
+      "const": "max"
+    }
+  },
+  "required": [
+    "record_id",
+    "asset_id",
+    "author_role_id",
+    "author_agent_id",
+    "author_parent_id",
+    "author_runtime_evidence_reference",
+    "prompt_path",
+    "tool_name",
+    "tool_execution_reference",
+    "image_model_evidence_reference",
+    "reviewer_reference",
+    "created_at",
+    "status",
+    "test_fixture",
+    "author_depth",
+    "image_model_requested",
+    "image_model_observed",
+    "prompt_sha256",
+    "reference_inputs",
+    "raw_outputs",
+    "requested_author_model",
+    "requested_author_effort",
+    "accepted_author_model",
+    "accepted_author_effort",
+    "observed_author_model",
+    "observed_author_effort"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "verified"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "test_fixture": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "image_model_observed": {
+            "const": "gpt-image-2-2026-04-21"
+          }
+        },
+        "required": [
+          "image_model_observed"
+        ]
+      },
+      "then": {
+        "properties": {
+          "snapshot_alias_evidence_reference": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "snapshot_alias_evidence_reference"
+        ]
+      }
+    }
+  ]
+}

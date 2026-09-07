@@ -1,0 +1,28 @@
+{
+  "schema_version": "public-run-v1",
+  "public_run_id": "synthetic-local-only",
+  "title": "Synthetic local test — not an actual game run",
+  "recorded_at": null,
+  "publication_version": 1,
+  "classification": "synthetic",
+  "evidence_kind": "report_only",
+  "outcome": "not_applicable",
+  "model_configuration": "No model called; local synthetic fixture",
+  "game_configuration": "No game contacted",
+  "observation_policy": "Synthetic visible values for renderer tests only",
+  "resource_budget_description": "No measured gameplay resources",
+  "intervention_summary": "Not applicable",
+  "source_references": [
+    "local-test-fixture"
+  ],
+  "source_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "provider_calls": null,
+  "video_url": null,
+  "replay_url": null,
+  "approval_reference": null,
+  "rights_status": "unknown",
+  "disclosures": [
+    "Synthetic fixture. Must fail production publication."
+  ],
+  "test_fixture": true
+}

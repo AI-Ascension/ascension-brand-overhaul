@@ -1,0 +1,27 @@
+{
+  "package": "AI Ascension — Complete Brand Overhaul Execution Package",
+  "version": "2.0.0",
+  "brief_date": "2026-09-06",
+  "brief_timezone": "America/New_York",
+  "target_repository": "AI-Ascension/ascension-brand-overhaul",
+  "delivery_kind": "implementation meta-prompts and specifications, not an implemented rebrand",
+  "root_depth": 0,
+  "max_descendant_depth": 3,
+  "requested_descendant_model": "role_specific: Luna/max except designated Astra art authors",
+  "requested_reasoning_effort": "max",
+  "global_open_descendant_budget": 12,
+  "runtime_verified": false,
+  "art_generated": false,
+  "github_mutations_performed": false,
+  "revision_date": "2026-09-07",
+  "default_descendant_model": "gpt-5.6-luna",
+  "art_prompt_author_model": "gpt-6-astra",
+  "art_prompt_author_effort": "max",
+  "art_prompt_author_role_ids": [
+    "W02-C1-BUILD",
+    "W02-C2-BUILD"
+  ],
+  "image_generation_model": "gpt-image-2",
+  "image_generation_model_verified": false,
+  "art_prompt_authorship_verified": false
+}

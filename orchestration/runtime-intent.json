@@ -1,0 +1,28 @@
+{
+  "root_model": "retain_current",
+  "descendant_model": "gpt-5.6-luna",
+  "descendant_reasoning_effort": "max",
+  "max_depth_below_root": 3,
+  "max_open_descendants": 12,
+  "allow_substitution": false,
+  "allow_hidden_client_bypass": false,
+  "requested_verified": false,
+  "accepted_verified": false,
+  "observed_verified": false,
+  "depth_enforcement": "discover_native_and_apply_root_ledger",
+  "image_generation_model": "gpt-image-2",
+  "role_model_overrides": {
+    "W02-C1-BUILD": {
+      "model": "gpt-6-astra",
+      "reasoning_effort": "max"
+    },
+    "W02-C2-BUILD": {
+      "model": "gpt-6-astra",
+      "reasoning_effort": "max"
+    }
+  },
+  "art_prompt_author_model": "gpt-6-astra",
+  "art_prompt_authorship_required": true,
+  "art_policy": "art/generation-policy.json",
+  "image_model_verified": false
+}

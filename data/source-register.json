@@ -1,0 +1,140 @@
+[
+  {
+    "id": "SRC-01",
+    "kind": "project-file",
+    "url": "https://github.com/AI-Ascension/ascension-watchdog/blob/bootstrap/prompts/IMPLEMENTATION.md",
+    "blob_sha": "28d0a14a36d28860b899020eb40d6edb8bccb51c",
+    "read_range": "1–145",
+    "status": "read_during_package_preparation",
+    "supports": "Existing project convention for Luna/max, real three-level descendants, root model retention, twelve-open-descendant budget, source and permission discipline."
+  },
+  {
+    "id": "SRC-02",
+    "kind": "project-file",
+    "url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/main/assets/identity/MANIFEST.md",
+    "blob_sha": "593699044a59719128c6face11b397ffb78325a9",
+    "read_range": "1–40",
+    "status": "read_during_package_preparation",
+    "supports": "Existing identity paths, dimensions, authorship notes, generated art provenance limits, fonts referenced but not bundled here."
+  },
+  {
+    "id": "SRC-03",
+    "kind": "project-file",
+    "url": "https://github.com/AI-Ascension/.github/blob/main/STATUS.md",
+    "blob_sha": "2c56cf532ff4da79a18807a2c0d2d42f893e8baa",
+    "read_range": "1–90 only",
+    "status": "read_during_package_preparation",
+    "supports": "Historical snapshots must not be relabeled. This partial read is not a complete current capability inventory."
+  },
+  {
+    "id": "SRC-04",
+    "kind": "official-documentation",
+    "url": "https://learn.chatgpt.com/docs/config-file/config-reference",
+    "status": "read_during_package_preparation",
+    "supports": "Current documented agent defaults, explicit spawn override precedence, and per-session open-thread setting. Does not prove this account accepts Luna/max."
+  },
+  {
+    "id": "SRC-05",
+    "kind": "official-documentation",
+    "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+    "status": "read_during_package_preparation",
+    "supports": "Native delegation and custom agent configurations; effective installed capability must be tested."
+  },
+  {
+    "id": "SRC-06",
+    "kind": "official-documentation",
+    "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository",
+    "status": "read_during_package_preparation",
+    "supports": "Repository rename redirect limits, hosted Action references, and old-name reuse hazard."
+  },
+  {
+    "id": "SRC-07",
+    "kind": "conversation-audit-source",
+    "url": "https://github.com/AI-Ascension/sts2-harness/blob/main/docs/evidence/seeded-astra-campaign-20260906.md",
+    "blob_sha": "f0aebd49c9fba58a2376e33d8c193ac3c0dc8ba4",
+    "status": "provided_in_prior_turn_tool_content",
+    "supports": "Maintainer record: floor-17 defeat and 333 settled actions replayed with zero provider calls; underlying private captures are not automatically publishable."
+  },
+  {
+    "id": "SRC-08",
+    "kind": "conversation-audit-source",
+    "url": "https://github.com/AI-Ascension/aiascension.tech/blob/codex/wire-mailing-list-email/README.md",
+    "blob_sha": "145149b20069577c85b108e5d4f1cb3cc6c24983",
+    "status": "provided_in_prior_turn_tool_content",
+    "supports": "Existing static frontend plus PHP subscription backend and branch/deployment caveats; deployment must be rechecked."
+  },
+  {
+    "id": "SRC-09",
+    "kind": "conversation-audit-source",
+    "url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/main/assets/identity/tokens.css",
+    "blob_sha": "9a993f97c06257cd0a2b3d5a023a4715d0250c31",
+    "status": "provided_in_prior_turn_tool_content",
+    "supports": "Ascent Ledger warm paper/ink/amber tokens, typography, dark mode, and reduced motion."
+  },
+  {
+    "id": "SRC-10",
+    "kind": "conversation-audit-source",
+    "url": "https://github.com/AI-Ascension/ascension-map-visualizer",
+    "status": "provided_in_prior_turn_tool_content",
+    "supports": "Previously assigned visualizer repository; inspect current implementation and orchestration constraints before migrating."
+  },
+  {
+    "id": "SRC-11",
+    "kind": "execution-verification-pointer",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "status": "to_verify_during_execution",
+    "supports": "Authoritative accessibility reference to recheck during implementation; no claim of an audit performed in this package."
+  },
+  {
+    "id": "SRC-12",
+    "kind": "execution-verification-pointer",
+    "url": "https://support.google.com/youtube/answer/16559650",
+    "status": "to_verify_during_execution",
+    "supports": "Recheck official guidance before platform-specific content packaging and performance claims."
+  },
+  {
+    "id": "SRC-13",
+    "kind": "official-documentation",
+    "title": "GPT-6 Astra model",
+    "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "status": "read_during_revision",
+    "accessed_date": "2026-09-07",
+    "supports": "Official model identifier and supported reasoning efforts. Does not attest actual native-agent/account availability."
+  },
+  {
+    "id": "SRC-14",
+    "kind": "official-documentation",
+    "title": "GPT Image 2 model",
+    "url": "https://developers.openai.com/api/docs/models/gpt-image-2",
+    "status": "read_during_revision",
+    "accessed_date": "2026-09-07",
+    "supports": "Image generation/editing model capabilities; no assumption of native SVG or video outputs."
+  },
+  {
+    "id": "SRC-15",
+    "kind": "official-documentation",
+    "title": "Image generation guide",
+    "url": "https://developers.openai.com/api/docs/guides/image-generation",
+    "status": "read_during_revision",
+    "accessed_date": "2026-09-07",
+    "supports": "Generation/edit workflows. Execution must check tool/account capabilities."
+  },
+  {
+    "id": "SRC-16",
+    "kind": "official-documentation",
+    "title": "Create image reference",
+    "url": "https://developers.openai.com/api/reference/resources/images/methods/generate",
+    "status": "read_during_revision",
+    "accessed_date": "2026-09-07",
+    "supports": "Exact gpt-image-2 and dated-snapshot model names; output parameter constraints and transparency preview. Recheck supported sizes at execution."
+  },
+  {
+    "id": "SRC-17",
+    "kind": "official-documentation",
+    "title": "Image-generation tool guide",
+    "url": "https://developers.openai.com/api/docs/guides/tools-image-generation",
+    "status": "read_during_revision",
+    "accessed_date": "2026-09-07",
+    "supports": "Tool prompt optimization and supported model routes; retain submitted/revised prompt provenance when exposed."
+  }
+]

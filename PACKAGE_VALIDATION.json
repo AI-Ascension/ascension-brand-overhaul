@@ -1,0 +1,47 @@
+{
+  "package_version": "2.0.0",
+  "validation_date": "2026-09-07",
+  "scope": "Revised prompt package, local helper tests, schemas and offline art-map UI; not downstream execution.",
+  "package_structure": "passed",
+  "unit_tests": {
+    "passed": 41,
+    "failed": 0,
+    "note": "Includes synthetic provenance tests, not actual model/provider execution."
+  },
+  "json_schema_meta_validation": {
+    "schemas": 6,
+    "status": "passed"
+  },
+  "synthetic_public_run_schema": "passed; fixture remains non-public",
+  "art_board": {
+    "renderer": "Chromium via Playwright set_content",
+    "desktop": [
+      1440,
+      1050
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "cards": 80,
+    "artwork_filter": 72,
+    "evidence_filter": 3,
+    "reference_filter": 5,
+    "search": "passed",
+    "empty_search": "passed",
+    "mobile_horizontal_overflow": false,
+    "dark_mode_overflow": false,
+    "javascript_errors": [],
+    "external_requests": [],
+    "visual_inspection": "Desktop and mobile screenshots inspected; dark-mode overflow checked."
+  },
+  "not_performed": [
+    "Native Astra/Luna agent execution",
+    "gpt-image-2 generation or editing",
+    "Target GitHub repository changes",
+    "Website deployment",
+    "Game capture or gameplay runs",
+    "Subscriber sends",
+    "Campaign publication"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "descendant_roles": 49,
+  "workstreams": 7,
+  "coordinators": 14,
+  "leaf_specialists": 28,
+  "luna_max_roles": 47,
+  "astra_max_art_author_roles": 2,
+  "required_image_model": "gpt-image-2",
+  "requirements": 70,
+  "mapped_resource_families": 80,
+  "generated_artwork_families": 72,
+  "authentic_evidence_media_families": 3,
+  "historical_reference_records": 5,
+  "specified_artwork_family_exports": 115,
+  "specified_evidence_exports": 10,
+  "specified_exports_total": 125,
+  "surfaces": 16,
+  "package_unit_tests": 41,
+  "total_delivery_files": 121
+}

@@ -1,0 +1,14 @@
+# Candidate defaults only. Verify actual installed schema; do not alter the root model.
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 12
+default_subagent_model = "gpt-5.6-luna"
+default_subagent_reasoning_effort = "max"
+
+# REQUIRED EXCEPTIONS through the installed supported role/spawn mechanism:
+# W02-C1-BUILD: model = "gpt-6-astra", reasoning effort = "max"
+# W02-C2-BUILD: model = "gpt-6-astra", reasoning effort = "max"
+# Do not invent a role section or assume these comments configure a live session.
+# Other 47 roles remain Luna/max. Every artwork call explicitly selects gpt-image-2.
+# Native depth stays <=3; image generation is a tool call, not a fourth-level agent.
+# Use orchestration/roles.json and art/generation-policy.json as execution intent.

@@ -1,0 +1,129 @@
+[
+  {
+    "id": "RUN-06",
+    "title": "Real case-study screenshot set",
+    "group": "Run sharing",
+    "placements": [
+      "RUN",
+      "PRESS",
+      "DOCS"
+    ],
+    "exports": [
+      {
+        "path": "brand/assets/run/case-start.png",
+        "size": "1920×1080 target capture",
+        "format": "png"
+      },
+      {
+        "path": "brand/assets/run/case-decision.png",
+        "size": "1920×1080 target capture",
+        "format": "png"
+      },
+      {
+        "path": "brand/assets/run/case-outcome.png",
+        "size": "1920×1080 target capture",
+        "format": "png"
+      }
+    ],
+    "brief": "Capture or select three real approved frames from the chosen case: start/context, meaningful decision, actual outcome. Preserve original dimensions in source; scale only for exports with disclosure. This is evidence media, not generated artwork. Any surrounding promotional graphics must come from the Astra → gpt-image-2 art pipeline and remain separately identified.",
+    "parent_asset_ids": [],
+    "source_reference": null,
+    "content_class": "real_run_evidence",
+    "publication_gate": "exact_capture_rights_and_publication_approval",
+    "mandatory": true,
+    "status": "planned",
+    "rights_status": "unreviewed",
+    "review_status": "not_started",
+    "owner": "W02-C2",
+    "alt_guidance": "Describe the actual approved state/result; include source link and equivalent accessible text.",
+    "resource_type": "evidence_media",
+    "method": "authentic_capture",
+    "generation_prohibited": true
+  },
+  {
+    "id": "RUN-07",
+    "title": "Real first-episode video",
+    "group": "Run sharing",
+    "placements": [
+      "WATCH",
+      "RUN"
+    ],
+    "exports": [
+      {
+        "path": "brand/assets/video/episode-01.mp4",
+        "size": "1920×1080 target; actual frame rate",
+        "format": "mp4"
+      },
+      {
+        "path": "brand/assets/video/episode-01.vtt",
+        "size": "time-aligned captions",
+        "format": "vtt"
+      },
+      {
+        "path": "brand/assets/video/episode-01-transcript.md",
+        "size": "accessible text",
+        "format": "md"
+      }
+    ],
+    "brief": "Edit only actual approved footage/analysis; keep interventions and outcome truthful. Record cut list and source timestamps. Missing footage blocks this asset, not the report-only alternative. This is evidence media, not generated artwork. Any surrounding promotional graphics must come from the Astra → gpt-image-2 art pipeline and remain separately identified.",
+    "parent_asset_ids": [],
+    "source_reference": null,
+    "content_class": "real_run_evidence",
+    "publication_gate": "media_rights_fact_check_and_publish_approval",
+    "mandatory": true,
+    "status": "planned",
+    "rights_status": "unreviewed",
+    "review_status": "not_started",
+    "owner": "W02-C2",
+    "alt_guidance": "Describe the actual approved state/result; include source link and equivalent accessible text.",
+    "resource_type": "evidence_media",
+    "method": "authentic_capture",
+    "generation_prohibited": true
+  },
+  {
+    "id": "RUN-08",
+    "title": "First-episode short clips",
+    "group": "Run sharing",
+    "placements": [
+      "CAMPAIGN"
+    ],
+    "exports": [
+      {
+        "path": "brand/assets/video/episode-01-clip-01.mp4",
+        "size": "1080×1920",
+        "format": "mp4"
+      },
+      {
+        "path": "brand/assets/video/episode-01-clip-02.mp4",
+        "size": "1080×1920",
+        "format": "mp4"
+      },
+      {
+        "path": "brand/assets/video/episode-01-clip-01.vtt",
+        "size": "time-aligned clip 01 captions",
+        "format": "vtt"
+      },
+      {
+        "path": "brand/assets/video/episode-01-clip-02.vtt",
+        "size": "time-aligned clip 02 captions",
+        "format": "vtt"
+      }
+    ],
+    "brief": "Two truthful actual-footage clips with readable game context and a source run link. Generate separate exact per-clip caption outputs during implementation; no false causal editing. This is evidence media, not generated artwork. Any surrounding promotional graphics must come from the Astra → gpt-image-2 art pipeline and remain separately identified.",
+    "parent_asset_ids": [
+      "RUN-07"
+    ],
+    "source_reference": null,
+    "content_class": "real_run_evidence",
+    "publication_gate": "media_rights_fact_check_and_publish_approval",
+    "mandatory": true,
+    "status": "planned",
+    "rights_status": "unreviewed",
+    "review_status": "not_started",
+    "owner": "W02-C2",
+    "alt_guidance": "Describe the actual approved state/result; include source link and equivalent accessible text.",
+    "resource_type": "evidence_media",
+    "method": "authentic_capture",
+    "generation_prohibited": true
+  }
+]

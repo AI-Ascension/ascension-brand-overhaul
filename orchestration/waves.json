@@ -1,0 +1,62 @@
+[
+  {
+    "workstream": "W01",
+    "title": "Truth, positioning, and naming",
+    "depends_on": [],
+    "early_activity": null
+  },
+  {
+    "workstream": "W02",
+    "title": "Identity and complete art production",
+    "depends_on": [
+      "W01"
+    ],
+    "early_activity": null
+  },
+  {
+    "workstream": "W03",
+    "title": "Canonical website and subscriber journey",
+    "depends_on": [
+      "W01",
+      "W02",
+      "W05"
+    ],
+    "early_activity": null
+  },
+  {
+    "workstream": "W04",
+    "title": "GitHub presentation and migration",
+    "depends_on": [
+      "W01"
+    ],
+    "early_activity": null
+  },
+  {
+    "workstream": "W05",
+    "title": "Public run publishing and measurement plumbing",
+    "depends_on": [
+      "W01"
+    ],
+    "early_activity": null
+  },
+  {
+    "workstream": "W06",
+    "title": "Launch series, creators, and community",
+    "depends_on": [
+      "W01"
+    ],
+    "early_activity": null
+  },
+  {
+    "workstream": "W07",
+    "title": "Independent quality, security, and release",
+    "depends_on": [
+      "W02",
+      "W03",
+      "W04",
+      "W05",
+      "W06"
+    ],
+    "early_activity": "test design may start after W01"
+  }
+]

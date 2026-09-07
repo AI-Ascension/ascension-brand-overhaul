@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "REQ-001",
+    "workstream": "W01",
+    "coordinator": "W01-C1",
+    "title": "Source baseline and capability truth — functional",
+    "requirement": "Every capability has a dated source and an evidence type.",
+    "outputs": [
+      "execution/source-snapshot.json",
+      "execution/capabilities.json",
+      "docs/BASELINE_AUDIT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-001.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-002",
+    "workstream": "W01",
+    "coordinator": "W01-C1",
+    "title": "Source baseline and capability truth — truth",
+    "requirement": "Partial/historical source reads do not become current verdicts.",
+    "outputs": [
+      "execution/source-snapshot.json",
+      "execution/capabilities.json",
+      "docs/BASELINE_AUDIT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-002.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-003",
+    "workstream": "W01",
+    "coordinator": "W01-C1",
+    "title": "Source baseline and capability truth — integration",
+    "requirement": "Private evidence remains private; report-only and public artifact states differ.",
+    "outputs": [
+      "execution/source-snapshot.json",
+      "execution/capabilities.json",
+      "docs/BASELINE_AUDIT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-003.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-004",
+    "workstream": "W01",
+    "coordinator": "W01-C2",
+    "title": "Brand language and naming system — functional",
+    "requirement": "Naming matches the approved map except documented execution-time conflicts.",
+    "outputs": [
+      "brand/BRAND_GUIDE.md",
+      "brand/copy.json",
+      "migration/repository-plan.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-004.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-005",
+    "workstream": "W01",
+    "coordinator": "W01-C2",
+    "title": "Brand language and naming system — truth",
+    "requirement": "No unsupported win, 24/7 autonomy, universal integration, or legal-clearance claims.",
+    "outputs": [
+      "brand/BRAND_GUIDE.md",
+      "brand/copy.json",
+      "migration/repository-plan.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-005.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-006",
+    "workstream": "W01",
+    "coordinator": "W01-C2",
+    "title": "Brand language and naming system — integration",
+    "requirement": "Audience and developer copy each identify what is actually available.",
+    "outputs": [
+      "brand/BRAND_GUIDE.md",
+      "brand/copy.json",
+      "migration/repository-plan.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-006.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-007",
+    "workstream": "W02",
+    "coordinator": "W02-C1",
+    "title": "Design tokens and Astra-generated identity — functional",
+    "requirement": "Mark reads at 16, 24, and 48 px and in monochrome. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+    "outputs": [
+      "brand/tokens.json",
+      "brand/tokens.css",
+      "brand/sources/identity/",
+      "brand/identity-review.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-007.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-008",
+    "workstream": "W02",
+    "coordinator": "W02-C1",
+    "title": "Design tokens and Astra-generated identity — truth",
+    "requirement": "Text is deterministic, accurate, and accessible. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+    "outputs": [
+      "brand/tokens.json",
+      "brand/tokens.css",
+      "brand/sources/identity/",
+      "brand/identity-review.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-008.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-009",
+    "workstream": "W02",
+    "coordinator": "W02-C1",
+    "title": "Design tokens and Astra-generated identity — integration",
+    "requirement": "No bundled font binaries or ambiguous copied marks. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+    "outputs": [
+      "brand/tokens.json",
+      "brand/tokens.css",
+      "brand/sources/identity/",
+      "brand/identity-review.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-009.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-010",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "Artwork masters, exports, and provenance — functional",
+    "requirement": "Every required export has source, digest, placement, alt/decorative treatment, and review. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+    "outputs": [
+      "brand/sources/",
+      "brand/assets/",
+      "brand/asset-manifest.json",
+      "brand/ART_REVIEW.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-010.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-011",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "Artwork masters, exports, and provenance — truth",
+    "requirement": "Captured evidence is not replaced by generated fake screenshots. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+    "outputs": [
+      "brand/sources/",
+      "brand/assets/",
+      "brand/asset-manifest.json",
+      "brand/ART_REVIEW.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-011.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-012",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "Artwork masters, exports, and provenance — integration",
+    "requirement": "Missing access blocks exact asset IDs rather than being called delivered. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+    "outputs": [
+      "brand/sources/",
+      "brand/assets/",
+      "brand/asset-manifest.json",
+      "brand/ART_REVIEW.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-012.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-013",
+    "workstream": "W03",
+    "coordinator": "W03-C1",
+    "title": "Watch, Runs, Build, and Docs experience — functional",
+    "requirement": "No placeholder or unavailable primary destinations.",
+    "outputs": [
+      "website implementation changes",
+      "site/route-manifest.json",
+      "site/visual-regression-baselines/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-013.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-014",
+    "workstream": "W03",
+    "coordinator": "W03-C1",
+    "title": "Watch, Runs, Build, and Docs experience — truth",
+    "requirement": "Keyboard/mobile/light/dark/reduced-motion states are inspected.",
+    "outputs": [
+      "website implementation changes",
+      "site/route-manifest.json",
+      "site/visual-regression-baselines/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-014.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-015",
+    "workstream": "W03",
+    "coordinator": "W03-C1",
+    "title": "Watch, Runs, Build, and Docs experience — integration",
+    "requirement": "Synthetic fixtures cannot enter the production export.",
+    "outputs": [
+      "website implementation changes",
+      "site/route-manifest.json",
+      "site/visual-regression-baselines/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-015.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-016",
+    "workstream": "W03",
+    "coordinator": "W03-C2",
+    "title": "Subscription, deployment compatibility, and privacy — functional",
+    "requirement": "Tests cover successful, duplicate, throttled, malformed, failed-mail, and concurrent requests.",
+    "outputs": [
+      "website API and test changes",
+      "docs/SUBSCRIPTION_OPERATIONS.md",
+      "execution/subscription-review.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-016.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-017",
+    "workstream": "W03",
+    "coordinator": "W03-C2",
+    "title": "Subscription, deployment compatibility, and privacy — truth",
+    "requirement": "No emails, tokens, paths, or raw IPs leak into public logs or client responses.",
+    "outputs": [
+      "website API and test changes",
+      "docs/SUBSCRIPTION_OPERATIONS.md",
+      "execution/subscription-review.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-017.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-018",
+    "workstream": "W03",
+    "coordinator": "W03-C2",
+    "title": "Subscription, deployment compatibility, and privacy — integration",
+    "requirement": "No production mail is sent without scoped permission.",
+    "outputs": [
+      "website API and test changes",
+      "docs/SUBSCRIPTION_OPERATIONS.md",
+      "execution/subscription-review.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-018.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-019",
+    "workstream": "W04",
+    "coordinator": "W04-C1",
+    "title": "Organization and component presentation — functional",
+    "requirement": "Flagship is obvious and commands actually work in the stated test environment.",
+    "outputs": [
+      "companion README/profile changes",
+      "github/presentation-manifest.json",
+      "tools/brand-sync/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-019.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-020",
+    "workstream": "W04",
+    "coordinator": "W04-C1",
+    "title": "Organization and component presentation — truth",
+    "requirement": "Old historical evidence and upstream attribution are preserved.",
+    "outputs": [
+      "companion README/profile changes",
+      "github/presentation-manifest.json",
+      "tools/brand-sync/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-020.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-021",
+    "workstream": "W04",
+    "coordinator": "W04-C1",
+    "title": "Organization and component presentation — integration",
+    "requirement": "Settings actions are separated from source edits and performed only with authority.",
+    "outputs": [
+      "companion README/profile changes",
+      "github/presentation-manifest.json",
+      "tools/brand-sync/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-021.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-022",
+    "workstream": "W04",
+    "coordinator": "W04-C2",
+    "title": "Idempotent rename and legacy-route operations — functional",
+    "requirement": "Dry run detects collision, stale ID/head, hosted Actions consumers, and unauthorized operation.",
+    "outputs": [
+      "migration/plan.json",
+      "migration/tooling/",
+      "migration/ROLLBACK.md",
+      "execution/migration-results.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-022.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-023",
+    "workstream": "W04",
+    "coordinator": "W04-C2",
+    "title": "Idempotent rename and legacy-route operations — truth",
+    "requirement": "Old names are not recreated; Pages history survives.",
+    "outputs": [
+      "migration/plan.json",
+      "migration/tooling/",
+      "migration/ROLLBACK.md",
+      "execution/migration-results.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-023.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-024",
+    "workstream": "W04",
+    "coordinator": "W04-C2",
+    "title": "Idempotent rename and legacy-route operations — integration",
+    "requirement": "Repeated apply does not duplicate or undo completed operations.",
+    "outputs": [
+      "migration/plan.json",
+      "migration/tooling/",
+      "migration/ROLLBACK.md",
+      "execution/migration-results.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-024.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-025",
+    "workstream": "W05",
+    "coordinator": "W05-C1",
+    "title": "Sanitized run publication and deterministic exports — functional",
+    "requirement": "Unapproved/private/synthetic/forced-fixture inputs fail production publication.",
+    "outputs": [
+      "tools/publisher/",
+      "schemas/",
+      "tests/publication/",
+      "public/run-manifests/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-025.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-026",
+    "workstream": "W05",
+    "coordinator": "W05-C1",
+    "title": "Sanitized run publication and deterministic exports — truth",
+    "requirement": "Mutation authority never crosses into the public publisher.",
+    "outputs": [
+      "tools/publisher/",
+      "schemas/",
+      "tests/publication/",
+      "public/run-manifests/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-026.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-027",
+    "workstream": "W05",
+    "coordinator": "W05-C1",
+    "title": "Sanitized run publication and deterministic exports — integration",
+    "requirement": "Changed source digest invalidates prior approval.",
+    "outputs": [
+      "tools/publisher/",
+      "schemas/",
+      "tests/publication/",
+      "public/run-manifests/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-027.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-028",
+    "workstream": "W05",
+    "coordinator": "W05-C2",
+    "title": "Capabilities, event contracts, and comparison context — functional",
+    "requirement": "No raw email, private prompts, game secrets, or fingerprinting in events.",
+    "outputs": [
+      "tools/capability-renderer/",
+      "analytics/event-contract.json",
+      "analytics/dashboard-spec.md",
+      "tests/analytics/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-028.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-029",
+    "workstream": "W05",
+    "coordinator": "W05-C2",
+    "title": "Capabilities, event contracts, and comparison context — truth",
+    "requirement": "Source report, independent reproduction, and release support are distinct.",
+    "outputs": [
+      "tools/capability-renderer/",
+      "analytics/event-contract.json",
+      "analytics/dashboard-spec.md",
+      "tests/analytics/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-029.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-030",
+    "workstream": "W05",
+    "coordinator": "W05-C2",
+    "title": "Capabilities, event contracts, and comparison context — integration",
+    "requirement": "Game failure and infrastructure failure never silently share a denominator.",
+    "outputs": [
+      "tools/capability-renderer/",
+      "analytics/event-contract.json",
+      "analytics/dashboard-spec.md",
+      "tests/analytics/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-030.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-031",
+    "workstream": "W06",
+    "coordinator": "W06-C1",
+    "title": "Launch kit and twelve-week production calendar — functional",
+    "requirement": "Every factual claim maps to approved sources; unavailable material is explicitly gated.",
+    "outputs": [
+      "marketing/launch/",
+      "marketing/calendar.json",
+      "marketing/episodes/",
+      "marketing/clips/",
+      "marketing/articles/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-031.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-032",
+    "workstream": "W06",
+    "coordinator": "W06-C1",
+    "title": "Launch kit and twelve-week production calendar — truth",
+    "requirement": "Series depicts actual attempts, interventions, and outcomes without invented evidence.",
+    "outputs": [
+      "marketing/launch/",
+      "marketing/calendar.json",
+      "marketing/episodes/",
+      "marketing/clips/",
+      "marketing/articles/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-032.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-033",
+    "workstream": "W06",
+    "coordinator": "W06-C1",
+    "title": "Launch kit and twelve-week production calendar — integration",
+    "requirement": "A content calendar is not reported as an operated campaign.",
+    "outputs": [
+      "marketing/launch/",
+      "marketing/calendar.json",
+      "marketing/episodes/",
+      "marketing/clips/",
+      "marketing/articles/"
+    ],
+    "evidence_expected": "execution/evidence/REQ-033.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-034",
+    "workstream": "W06",
+    "coordinator": "W06-C2",
+    "title": "Creator partnerships, distribution experiments, and contributions — functional",
+    "requirement": "No fabricated partners, testimonials, followers, paid votes, or undisclosed influence.",
+    "outputs": [
+      "marketing/creator-kit/",
+      "marketing/community-playbook.md",
+      "marketing/experiments.json",
+      "marketing/sponsorship.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-034.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-035",
+    "workstream": "W06",
+    "coordinator": "W06-C2",
+    "title": "Creator partnerships, distribution experiments, and contributions — truth",
+    "requirement": "Each experiment has hypothesis, denominator, stop criteria, and result placeholders labeled unobserved.",
+    "outputs": [
+      "marketing/creator-kit/",
+      "marketing/community-playbook.md",
+      "marketing/experiments.json",
+      "marketing/sponsorship.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-035.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-036",
+    "workstream": "W06",
+    "coordinator": "W06-C2",
+    "title": "Creator partnerships, distribution experiments, and contributions — integration",
+    "requirement": "Messages remain drafts unless publication/sending is actually authorized.",
+    "outputs": [
+      "marketing/creator-kit/",
+      "marketing/community-playbook.md",
+      "marketing/experiments.json",
+      "marketing/sponsorship.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-036.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-037",
+    "workstream": "W07",
+    "coordinator": "W07-C1",
+    "title": "Cross-surface test suite and adversarial review — functional",
+    "requirement": "Actual commands, versions, revisions, rendered outputs, and failures are recorded.",
+    "outputs": [
+      "tests/integration/",
+      "tests/visual/",
+      "execution/QUALITY_REPORT.md",
+      "execution/findings.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-037.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-038",
+    "workstream": "W07",
+    "coordinator": "W07-C1",
+    "title": "Cross-surface test suite and adversarial review — truth",
+    "requirement": "No skipped host/browser/model checks become a pass.",
+    "outputs": [
+      "tests/integration/",
+      "tests/visual/",
+      "execution/QUALITY_REPORT.md",
+      "execution/findings.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-038.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-039",
+    "workstream": "W07",
+    "coordinator": "W07-C1",
+    "title": "Cross-surface test suite and adversarial review — integration",
+    "requirement": "Reviewer independence and a genuine depth-three chain are evidenced.",
+    "outputs": [
+      "tests/integration/",
+      "tests/visual/",
+      "execution/QUALITY_REPORT.md",
+      "execution/findings.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-039.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-040",
+    "workstream": "W07",
+    "coordinator": "W07-C2",
+    "title": "Release engineering and operator handoff — functional",
+    "requirement": "Local, merged, deployed, and campaign-operated states are separate.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md",
+      "delivery/MANIFEST.json",
+      "docs/OPERATIONS.md",
+      "docs/ROLLBACK.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-040.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-041",
+    "workstream": "W07",
+    "coordinator": "W07-C2",
+    "title": "Release engineering and operator handoff — truth",
+    "requirement": "Every mandatory requirement and asset is verified or specifically blocked.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md",
+      "delivery/MANIFEST.json",
+      "docs/OPERATIONS.md",
+      "docs/ROLLBACK.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-041.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-042",
+    "workstream": "W07",
+    "coordinator": "W07-C2",
+    "title": "Release engineering and operator handoff — integration",
+    "requirement": "No remote action or success is claimed without returned evidence.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md",
+      "delivery/MANIFEST.json",
+      "docs/OPERATIONS.md",
+      "docs/ROLLBACK.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-042.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-043",
+    "workstream": "W01",
+    "coordinator": null,
+    "title": "Preserve fixed identity",
+    "requirement": "Organization remains AI Ascension, flagship Ascension, series The Climb; refresh first-win season only with new evidence.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-043.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-044",
+    "workstream": "W01",
+    "coordinator": null,
+    "title": "Read current heads",
+    "requirement": "Capture complete current source inventory, stable repository IDs, default branches, open PRs, and deployment branches before edits.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-044.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-045",
+    "workstream": "W02",
+    "coordinator": null,
+    "title": "All assets",
+    "requirement": "Every mandatory registry asset and export is actually produced or specifically blocked, with source, review, and license information. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-045.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-046",
+    "workstream": "W02",
+    "coordinator": null,
+    "title": "No font binaries",
+    "requirement": "The prompt handoff and final asset delivery archives contain no font binaries; use existing licensed website assets or reference-only notices.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-046.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-047",
+    "workstream": "W02",
+    "coordinator": null,
+    "title": "Genuine capture",
+    "requirement": "No synthetic screenshots, generated gameplay results, or fabricated endorsement marks are used as real evidence.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-047.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-048",
+    "workstream": "W03",
+    "coordinator": null,
+    "title": "Working primary journey",
+    "requirement": "A visitor can reach actual available run content and a tested developer starting point without dead primary CTAs.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-048.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-049",
+    "workstream": "W03",
+    "coordinator": null,
+    "title": "Legacy proof preservation",
+    "requirement": "Old GitHub Pages proof paths, named fixtures, hashes, and historical anchors remain available or explicitly preserved.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-049.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-050",
+    "workstream": "W03",
+    "coordinator": null,
+    "title": "Mail safety",
+    "requirement": "Subscription confirmation, unsubscribe, failure behavior, and concurrent persistence are tested without unauthorized production messages.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-050.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-051",
+    "workstream": "W04",
+    "coordinator": null,
+    "title": "Compatibility preservation",
+    "requirement": "Initial presentation rename does not change runtime binary/package/environment/schema identities.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-051.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-052",
+    "workstream": "W04",
+    "coordinator": null,
+    "title": "Active work compatibility",
+    "requirement": "The map visualizer rename does not break active instructions requiring its current name; coordinate before authorized cutover.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-052.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-053",
+    "workstream": "W05",
+    "coordinator": null,
+    "title": "Private record boundary",
+    "requirement": "Publication reads approved sanitized copies; no game mutation interface or private observability UI is exposed.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-053.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-054",
+    "workstream": "W05",
+    "coordinator": null,
+    "title": "Approval invalidation",
+    "requirement": "Source content changes invalidate approval by digest; synthetic or forced-fixture results fail normal production publication.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-054.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-055",
+    "workstream": "W06",
+    "coordinator": null,
+    "title": "Complete calendar",
+    "requirement": "Deliver 12 episode briefs, 24 short-clip briefs, 6 technical article outlines, first launch copy, report-only alternatives, and outreach/email templates.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-055.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-056",
+    "workstream": "W06",
+    "coordinator": null,
+    "title": "Honest measurement",
+    "requirement": "Audience and developer metrics have denominators and distinct real/synthetic/infrastructure-failure accounting; no fabricated results.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-056.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-057",
+    "workstream": "W07",
+    "coordinator": null,
+    "title": "Role-specific Luna/Astra runtime evidence",
+    "requirement": "All descendants have role-correct requested/accepted/observed model and effort records: 47 Luna/max roles and two Astra/max art-author roles; no substitutions or self-report verification.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-057.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-058",
+    "workstream": "W07",
+    "coordinator": null,
+    "title": "Native depth evidence",
+    "requirement": "At least one substantive real root→lead→coordinator→leaf chain is evidenced, no leaf children exist, and the global open ceiling holds.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-058.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-059",
+    "workstream": "W07",
+    "coordinator": null,
+    "title": "Release authorization",
+    "requirement": "Every external rename, merge, deployment, publication, and send is performed only within actual scope and has a verifiable receipt.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-059.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-060",
+    "workstream": "W07",
+    "coordinator": null,
+    "title": "Final states",
+    "requirement": "Implemented, verified, merged, deployed, and campaign-operated states remain distinct in the final report.",
+    "outputs": [
+      "delivery/FINAL_REPORT.md"
+    ],
+    "evidence_expected": "execution/evidence/REQ-060.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-061",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "Astra authorship",
+    "requirement": "Every initial generation prompt and creative edit prompt has an actual gpt-6-astra/max native-agent record, exact prompt bytes, SHA-256, and independent review.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-061.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-062",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "Exact image model",
+    "requirement": "Every artwork generation requests gpt-image-2; actual model evidence resolves to gpt-image-2 or a documented verified snapshot, never an unknown or alternate backend.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-062.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-063",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "No creative fallback",
+    "requirement": "SVG/Canvas/CSS/Python drawing, stock art, tracing, unmodified legacy artwork, alternate image models, and silent substitution fail artwork acceptance.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-063.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-064",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "Complete art inventory",
+    "requirement": "All 72 new-artwork families use the generation-only registry; the three evidence-media families and five historical/reference records remain separately classified.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-064.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-065",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "Per-export lineage",
+    "requirement": "Every artwork export links to a reviewed original gpt-image-2 output and its Astra prompt; only enumerated noncreative transformations are allowed.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-065.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-066",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "Text and data verification",
+    "requirement": "Logos, typography, diagrams and charts are generated with gpt-image-2, checked against exact copy/source facts, and corrected only by an Astra-authored generation/edit.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-066.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-067",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "Evidence isolation",
+    "requirement": "No generated or generatively retouched image/video is accepted as genuine gameplay evidence. Generated posters and diagrams remain labeled presentation art.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-067.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-068",
+    "workstream": "W02",
+    "coordinator": "W02-C2",
+    "title": "No render-time image calls",
+    "requirement": "Approved art is precomputed and content-addressed; page load, rebuild, and serving make no implicit Astra/image calls. New creative variants are explicit jobs.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-068.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-069",
+    "workstream": "W07",
+    "coordinator": "W07-C1",
+    "title": "No fourth agent layer",
+    "requirement": "The two Astra art authors are depth-3 leaves under W02; image generation is a tool invocation, and no leaf spawns another agent.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-069.json",
+    "status": "not_started",
+    "mandatory": true
+  },
+  {
+    "id": "REQ-070",
+    "workstream": "W07",
+    "coordinator": "W07-C1",
+    "title": "Block missing models precisely",
+    "requirement": "Unavailable Astra/gpt-image-2 or missing native attestation blocks exact asset IDs; unrelated engineering continues and no fallback receives a verified flag.",
+    "outputs": [
+      "brand/asset-manifest.json",
+      "brand/provenance/generations/",
+      "execution/art-model-attestation.json"
+    ],
+    "evidence_expected": "execution/evidence/REQ-070.json",
+    "status": "not_started",
+    "mandatory": true
+  }
+]

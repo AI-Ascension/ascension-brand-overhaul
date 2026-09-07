@@ -1,0 +1,653 @@
+[
+  {
+    "id": "W01-L",
+    "parent": "ROOT",
+    "depth": 1,
+    "workstream": "W01",
+    "title": "Truth, positioning, and naming lead",
+    "prompt": "orchestration/roles/W01-L.md",
+    "children": [
+      "W01-C1",
+      "W01-C2"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W01-C1",
+    "parent": "W01-L",
+    "depth": 2,
+    "workstream": "W01",
+    "title": "Source baseline and capability truth",
+    "prompt": "orchestration/roles/W01-C1.md",
+    "children": [
+      "W01-C1-BUILD",
+      "W01-C1-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W01-C1-BUILD",
+    "parent": "W01-C1",
+    "depth": 3,
+    "workstream": "W01",
+    "title": "Source baseline and capability truth implementer",
+    "prompt": "orchestration/roles/W01-C1-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W01-C1-REVIEW",
+    "parent": "W01-C1",
+    "depth": 3,
+    "workstream": "W01",
+    "title": "Source baseline and capability truth independent reviewer",
+    "prompt": "orchestration/roles/W01-C1-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W01-C2",
+    "parent": "W01-L",
+    "depth": 2,
+    "workstream": "W01",
+    "title": "Brand language and naming system",
+    "prompt": "orchestration/roles/W01-C2.md",
+    "children": [
+      "W01-C2-BUILD",
+      "W01-C2-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W01-C2-BUILD",
+    "parent": "W01-C2",
+    "depth": 3,
+    "workstream": "W01",
+    "title": "Brand language and naming system implementer",
+    "prompt": "orchestration/roles/W01-C2-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W01-C2-REVIEW",
+    "parent": "W01-C2",
+    "depth": 3,
+    "workstream": "W01",
+    "title": "Brand language and naming system independent reviewer",
+    "prompt": "orchestration/roles/W01-C2-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W02-L",
+    "parent": "ROOT",
+    "depth": 1,
+    "workstream": "W02",
+    "title": "Identity and complete art production lead",
+    "prompt": "orchestration/roles/W02-L.md",
+    "children": [
+      "W02-C1",
+      "W02-C2"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W02-C1",
+    "parent": "W02-L",
+    "depth": 2,
+    "workstream": "W02",
+    "title": "Design tokens and Astra-generated identity",
+    "prompt": "orchestration/roles/W02-C1.md",
+    "children": [
+      "W02-C1-BUILD",
+      "W02-C1-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W02-C1-BUILD",
+    "parent": "W02-C1",
+    "depth": 3,
+    "workstream": "W02",
+    "title": "Astra identity art prompt author",
+    "prompt": "orchestration/roles/W02-C1-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "max",
+    "may_author_art_prompts": true
+  },
+  {
+    "id": "W02-C1-REVIEW",
+    "parent": "W02-C1",
+    "depth": 3,
+    "workstream": "W02",
+    "title": "Design tokens and Astra-generated identity independent reviewer",
+    "prompt": "orchestration/roles/W02-C1-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W02-C2",
+    "parent": "W02-L",
+    "depth": 2,
+    "workstream": "W02",
+    "title": "Artwork masters, exports, and provenance",
+    "prompt": "orchestration/roles/W02-C2.md",
+    "children": [
+      "W02-C2-BUILD",
+      "W02-C2-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W02-C2-BUILD",
+    "parent": "W02-C2",
+    "depth": 3,
+    "workstream": "W02",
+    "title": "Astra campaign and production art prompt author",
+    "prompt": "orchestration/roles/W02-C2-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "max",
+    "may_author_art_prompts": true
+  },
+  {
+    "id": "W02-C2-REVIEW",
+    "parent": "W02-C2",
+    "depth": 3,
+    "workstream": "W02",
+    "title": "Artwork masters, exports, and provenance independent reviewer",
+    "prompt": "orchestration/roles/W02-C2-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W03-L",
+    "parent": "ROOT",
+    "depth": 1,
+    "workstream": "W03",
+    "title": "Canonical website and subscriber journey lead",
+    "prompt": "orchestration/roles/W03-L.md",
+    "children": [
+      "W03-C1",
+      "W03-C2"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W03-C1",
+    "parent": "W03-L",
+    "depth": 2,
+    "workstream": "W03",
+    "title": "Watch, Runs, Build, and Docs experience",
+    "prompt": "orchestration/roles/W03-C1.md",
+    "children": [
+      "W03-C1-BUILD",
+      "W03-C1-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W03-C1-BUILD",
+    "parent": "W03-C1",
+    "depth": 3,
+    "workstream": "W03",
+    "title": "Watch, Runs, Build, and Docs experience implementer",
+    "prompt": "orchestration/roles/W03-C1-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W03-C1-REVIEW",
+    "parent": "W03-C1",
+    "depth": 3,
+    "workstream": "W03",
+    "title": "Watch, Runs, Build, and Docs experience independent reviewer",
+    "prompt": "orchestration/roles/W03-C1-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W03-C2",
+    "parent": "W03-L",
+    "depth": 2,
+    "workstream": "W03",
+    "title": "Subscription, deployment compatibility, and privacy",
+    "prompt": "orchestration/roles/W03-C2.md",
+    "children": [
+      "W03-C2-BUILD",
+      "W03-C2-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W03-C2-BUILD",
+    "parent": "W03-C2",
+    "depth": 3,
+    "workstream": "W03",
+    "title": "Subscription, deployment compatibility, and privacy implementer",
+    "prompt": "orchestration/roles/W03-C2-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W03-C2-REVIEW",
+    "parent": "W03-C2",
+    "depth": 3,
+    "workstream": "W03",
+    "title": "Subscription, deployment compatibility, and privacy independent reviewer",
+    "prompt": "orchestration/roles/W03-C2-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W04-L",
+    "parent": "ROOT",
+    "depth": 1,
+    "workstream": "W04",
+    "title": "GitHub presentation and migration lead",
+    "prompt": "orchestration/roles/W04-L.md",
+    "children": [
+      "W04-C1",
+      "W04-C2"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W04-C1",
+    "parent": "W04-L",
+    "depth": 2,
+    "workstream": "W04",
+    "title": "Organization and component presentation",
+    "prompt": "orchestration/roles/W04-C1.md",
+    "children": [
+      "W04-C1-BUILD",
+      "W04-C1-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W04-C1-BUILD",
+    "parent": "W04-C1",
+    "depth": 3,
+    "workstream": "W04",
+    "title": "Organization and component presentation implementer",
+    "prompt": "orchestration/roles/W04-C1-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W04-C1-REVIEW",
+    "parent": "W04-C1",
+    "depth": 3,
+    "workstream": "W04",
+    "title": "Organization and component presentation independent reviewer",
+    "prompt": "orchestration/roles/W04-C1-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W04-C2",
+    "parent": "W04-L",
+    "depth": 2,
+    "workstream": "W04",
+    "title": "Idempotent rename and legacy-route operations",
+    "prompt": "orchestration/roles/W04-C2.md",
+    "children": [
+      "W04-C2-BUILD",
+      "W04-C2-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W04-C2-BUILD",
+    "parent": "W04-C2",
+    "depth": 3,
+    "workstream": "W04",
+    "title": "Idempotent rename and legacy-route operations implementer",
+    "prompt": "orchestration/roles/W04-C2-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W04-C2-REVIEW",
+    "parent": "W04-C2",
+    "depth": 3,
+    "workstream": "W04",
+    "title": "Idempotent rename and legacy-route operations independent reviewer",
+    "prompt": "orchestration/roles/W04-C2-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W05-L",
+    "parent": "ROOT",
+    "depth": 1,
+    "workstream": "W05",
+    "title": "Public run publishing and measurement plumbing lead",
+    "prompt": "orchestration/roles/W05-L.md",
+    "children": [
+      "W05-C1",
+      "W05-C2"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W05-C1",
+    "parent": "W05-L",
+    "depth": 2,
+    "workstream": "W05",
+    "title": "Sanitized run publication and deterministic exports",
+    "prompt": "orchestration/roles/W05-C1.md",
+    "children": [
+      "W05-C1-BUILD",
+      "W05-C1-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W05-C1-BUILD",
+    "parent": "W05-C1",
+    "depth": 3,
+    "workstream": "W05",
+    "title": "Sanitized run publication and deterministic exports implementer",
+    "prompt": "orchestration/roles/W05-C1-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W05-C1-REVIEW",
+    "parent": "W05-C1",
+    "depth": 3,
+    "workstream": "W05",
+    "title": "Sanitized run publication and deterministic exports independent reviewer",
+    "prompt": "orchestration/roles/W05-C1-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W05-C2",
+    "parent": "W05-L",
+    "depth": 2,
+    "workstream": "W05",
+    "title": "Capabilities, event contracts, and comparison context",
+    "prompt": "orchestration/roles/W05-C2.md",
+    "children": [
+      "W05-C2-BUILD",
+      "W05-C2-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W05-C2-BUILD",
+    "parent": "W05-C2",
+    "depth": 3,
+    "workstream": "W05",
+    "title": "Capabilities, event contracts, and comparison context implementer",
+    "prompt": "orchestration/roles/W05-C2-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W05-C2-REVIEW",
+    "parent": "W05-C2",
+    "depth": 3,
+    "workstream": "W05",
+    "title": "Capabilities, event contracts, and comparison context independent reviewer",
+    "prompt": "orchestration/roles/W05-C2-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W06-L",
+    "parent": "ROOT",
+    "depth": 1,
+    "workstream": "W06",
+    "title": "Launch series, creators, and community lead",
+    "prompt": "orchestration/roles/W06-L.md",
+    "children": [
+      "W06-C1",
+      "W06-C2"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W06-C1",
+    "parent": "W06-L",
+    "depth": 2,
+    "workstream": "W06",
+    "title": "Launch kit and twelve-week production calendar",
+    "prompt": "orchestration/roles/W06-C1.md",
+    "children": [
+      "W06-C1-BUILD",
+      "W06-C1-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W06-C1-BUILD",
+    "parent": "W06-C1",
+    "depth": 3,
+    "workstream": "W06",
+    "title": "Launch kit and twelve-week production calendar implementer",
+    "prompt": "orchestration/roles/W06-C1-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W06-C1-REVIEW",
+    "parent": "W06-C1",
+    "depth": 3,
+    "workstream": "W06",
+    "title": "Launch kit and twelve-week production calendar independent reviewer",
+    "prompt": "orchestration/roles/W06-C1-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W06-C2",
+    "parent": "W06-L",
+    "depth": 2,
+    "workstream": "W06",
+    "title": "Creator partnerships, distribution experiments, and contributions",
+    "prompt": "orchestration/roles/W06-C2.md",
+    "children": [
+      "W06-C2-BUILD",
+      "W06-C2-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W06-C2-BUILD",
+    "parent": "W06-C2",
+    "depth": 3,
+    "workstream": "W06",
+    "title": "Creator partnerships, distribution experiments, and contributions implementer",
+    "prompt": "orchestration/roles/W06-C2-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W06-C2-REVIEW",
+    "parent": "W06-C2",
+    "depth": 3,
+    "workstream": "W06",
+    "title": "Creator partnerships, distribution experiments, and contributions independent reviewer",
+    "prompt": "orchestration/roles/W06-C2-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W07-L",
+    "parent": "ROOT",
+    "depth": 1,
+    "workstream": "W07",
+    "title": "Independent quality, security, and release lead",
+    "prompt": "orchestration/roles/W07-L.md",
+    "children": [
+      "W07-C1",
+      "W07-C2"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W07-C1",
+    "parent": "W07-L",
+    "depth": 2,
+    "workstream": "W07",
+    "title": "Cross-surface test suite and adversarial review",
+    "prompt": "orchestration/roles/W07-C1.md",
+    "children": [
+      "W07-C1-BUILD",
+      "W07-C1-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W07-C1-BUILD",
+    "parent": "W07-C1",
+    "depth": 3,
+    "workstream": "W07",
+    "title": "Cross-surface test suite and adversarial review implementer",
+    "prompt": "orchestration/roles/W07-C1-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W07-C1-REVIEW",
+    "parent": "W07-C1",
+    "depth": 3,
+    "workstream": "W07",
+    "title": "Cross-surface test suite and adversarial review independent reviewer",
+    "prompt": "orchestration/roles/W07-C1-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W07-C2",
+    "parent": "W07-L",
+    "depth": 2,
+    "workstream": "W07",
+    "title": "Release engineering and operator handoff",
+    "prompt": "orchestration/roles/W07-C2.md",
+    "children": [
+      "W07-C2-BUILD",
+      "W07-C2-REVIEW"
+    ],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W07-C2-BUILD",
+    "parent": "W07-C2",
+    "depth": 3,
+    "workstream": "W07",
+    "title": "Release engineering and operator handoff implementer",
+    "prompt": "orchestration/roles/W07-C2-BUILD.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  },
+  {
+    "id": "W07-C2-REVIEW",
+    "parent": "W07-C2",
+    "depth": 3,
+    "workstream": "W07",
+    "title": "Release engineering and operator handoff independent reviewer",
+    "prompt": "orchestration/roles/W07-C2-REVIEW.md",
+    "children": [],
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "may_author_art_prompts": false
+  }
+]

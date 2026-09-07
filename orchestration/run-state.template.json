@@ -1,0 +1,18 @@
+{
+  "run_id": null,
+  "package_version": "1.0.0",
+  "status": "not_started",
+  "target_repository": "AI-Ascension/ascension-brand-overhaul",
+  "source_snapshot": null,
+  "runtime_attestation": null,
+  "implementation": "not_started",
+  "independent_review": "not_started",
+  "merge": "not_started",
+  "deployment": "not_started",
+  "campaign_operation": "not_started",
+  "art_status": "not_started",
+  "completed_tasks": [],
+  "blocked_tasks": [],
+  "approval_references": [],
+  "native_threads": []
+}

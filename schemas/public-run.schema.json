@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public run input contract — approval policy enforced separately",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "public-run-v1"
+    },
+    "public_run_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{2,79}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "recorded_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publication_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "classification": {
+      "enum": [
+        "synthetic",
+        "private",
+        "approved_public"
+      ]
+    },
+    "evidence_kind": {
+      "enum": [
+        "report_only",
+        "native_run",
+        "replay",
+        "forced_fixture"
+      ]
+    },
+    "outcome": {
+      "enum": [
+        "victory",
+        "defeat",
+        "interrupted",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "model_configuration": {
+      "type": "string",
+      "minLength": 1
+    },
+    "game_configuration": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observation_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_budget_description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "intervention_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "provider_calls": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "video_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "replay_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approval_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rights_status": {
+      "enum": [
+        "unknown",
+        "blocked",
+        "approved"
+      ]
+    },
+    "disclosures": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "test_fixture": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "public_run_id",
+    "title",
+    "recorded_at",
+    "publication_version",
+    "classification",
+    "evidence_kind",
+    "outcome",
+    "model_configuration",
+    "game_configuration",
+    "observation_policy",
+    "resource_budget_description",
+    "intervention_summary",
+    "source_references",
+    "source_digest",
+    "provider_calls",
+    "video_url",
+    "replay_url",
+    "approval_reference",
+    "rights_status",
+    "disclosures",
+    "test_fixture"
+  ],
+  "description": "Schema conformance is not publication authority. Production publisher must independently validate digest-bound approval, rights, evidence, safe URLs, and disallow synthetic/private/forced-fixture contamination of ordinary model-played results."
+}

@@ -1,0 +1,11 @@
+{
+  "note": "A template is not operator approval. Fill from actual authority at execution time.",
+  "ordinary_scoped_implementation": "covered_when_operator_invokes_master_prompt",
+  "live_operations": [],
+  "publish_private_material": false,
+  "bulk_outreach": false,
+  "paid_spend": false,
+  "force_push": false,
+  "disable_protection": false,
+  "change_existing_visibility": false
+}

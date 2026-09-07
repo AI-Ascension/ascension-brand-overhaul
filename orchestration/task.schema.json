@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bounded execution task",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "role_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "actual_agent_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parent_agent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "depth": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_pins": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "allowed_read_paths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "exclusive_write_paths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "forbidden_paths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "test_commands_or_procedures": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "evidence_destination": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requested_model": {
+      "enum": [
+        "gpt-5.6-luna",
+        "gpt-6-astra"
+      ]
+    },
+    "requested_effort": {
+      "const": "max"
+    },
+    "resource_budget": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "not_started",
+        "in_progress",
+        "implemented",
+        "verified",
+        "blocked",
+        "not_applicable_with_reason"
+      ]
+    }
+  },
+  "required": [
+    "task_id",
+    "role_id",
+    "parent_agent_id",
+    "depth",
+    "objective",
+    "source_pins",
+    "exclusive_write_paths",
+    "outputs",
+    "acceptance_criteria",
+    "evidence_destination",
+    "requested_model",
+    "requested_effort",
+    "status"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "role_id": {
+            "enum": [
+              "W02-C1-BUILD",
+              "W02-C2-BUILD"
+            ]
+          }
+        },
+        "required": [
+          "role_id"
+        ]
+      },
+      "then": {
+        "properties": {
+          "requested_model": {
+            "const": "gpt-6-astra"
+          },
+          "depth": {
+            "const": 3
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "requested_model": {
+            "const": "gpt-5.6-luna"
+          }
+        }
+      }
+    }
+  ]
+}

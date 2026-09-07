@@ -1,0 +1,265 @@
+[
+  {
+    "id": "GLOBAL",
+    "title": "Global chrome, footer, avatar and shared components",
+    "asset_ids": [
+      "ID-01",
+      "ID-02",
+      "ID-05",
+      "ID-06",
+      "ID-07",
+      "BG-04"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "HOME",
+    "title": "Canonical homepage",
+    "asset_ids": [
+      "BG-01",
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "WATCH",
+    "title": "Watch and episode experience",
+    "asset_ids": [
+      "ID-04",
+      "BG-02",
+      "WEB-02",
+      "RUN-05",
+      "MKT-03"
+    ],
+    "evidence_media_ids": [
+      "RUN-07"
+    ],
+    "reference_ids": []
+  },
+  {
+    "id": "BUILD",
+    "title": "Developer entry point",
+    "asset_ids": [
+      "ID-03",
+      "WEB-03",
+      "WEB-07"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "DOCS",
+    "title": "Documentation and operator guides",
+    "asset_ids": [
+      "ID-07",
+      "ID-08",
+      "WEB-07",
+      "RUN-03",
+      "CAST-07",
+      "DOC-01",
+      "DOC-02",
+      "DOC-03",
+      "DOC-04",
+      "DOC-05"
+    ],
+    "evidence_media_ids": [
+      "RUN-06"
+    ],
+    "reference_ids": []
+  },
+  {
+    "id": "RUN",
+    "title": "Public run detail/index",
+    "asset_ids": [
+      "ID-07",
+      "WEB-02",
+      "WEB-08",
+      "RUN-01",
+      "RUN-03",
+      "RUN-04",
+      "RUN-05",
+      "DOC-02"
+    ],
+    "evidence_media_ids": [
+      "RUN-06",
+      "RUN-07"
+    ],
+    "reference_ids": []
+  },
+  {
+    "id": "DECISION",
+    "title": "Your-move decision/reveal",
+    "asset_ids": [
+      "RUN-02",
+      "MKT-05"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "MAP",
+    "title": "Map integration and experimental preview",
+    "asset_ids": [
+      "WEB-08"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "GITHUB",
+    "title": "Organization and all repository surfaces",
+    "asset_ids": [
+      "ID-03",
+      "ID-05",
+      "MKT-06",
+      "DOC-01",
+      "DOC-03",
+      "DOC-05",
+      "GH-01-B",
+      "GH-01-S",
+      "GH-02-B",
+      "GH-02-S",
+      "GH-03-B",
+      "GH-03-S",
+      "GH-04-B",
+      "GH-04-S",
+      "GH-05-B",
+      "GH-05-S",
+      "GH-06-B",
+      "GH-06-S",
+      "GH-07-B",
+      "GH-07-S",
+      "GH-08-B",
+      "GH-08-S",
+      "GH-09-B",
+      "GH-09-S",
+      "GH-10-B",
+      "GH-10-S",
+      "GH-11-B",
+      "GH-11-S",
+      "GH-12-B",
+      "GH-12-S",
+      "GH-13-B",
+      "GH-13-S"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "SOCIAL_PREVIEW",
+    "title": "Open Graph and repository link previews",
+    "asset_ids": [
+      "WEB-04",
+      "RUN-01",
+      "GH-01-S",
+      "GH-02-S",
+      "GH-03-S",
+      "GH-04-S",
+      "GH-05-S",
+      "GH-06-S",
+      "GH-07-S",
+      "GH-08-S",
+      "GH-09-S",
+      "GH-10-S",
+      "GH-11-S",
+      "GH-12-S",
+      "GH-13-S"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "CAMPAIGN",
+    "title": "YouTube/social/creator launch materials",
+    "asset_ids": [
+      "ID-04",
+      "ID-05",
+      "BG-03",
+      "BG-04",
+      "RUN-02",
+      "RUN-04",
+      "CAST-03",
+      "CAST-06",
+      "MKT-01",
+      "MKT-02",
+      "MKT-03",
+      "MKT-04",
+      "MKT-05",
+      "MKT-06",
+      "MKT-08"
+    ],
+    "evidence_media_ids": [
+      "RUN-08"
+    ],
+    "reference_ids": []
+  },
+  {
+    "id": "BROADCAST",
+    "title": "Live/recorded scene system",
+    "asset_ids": [
+      "ID-04",
+      "BG-02",
+      "BG-03",
+      "CAST-01",
+      "CAST-02",
+      "CAST-03",
+      "CAST-04",
+      "CAST-05",
+      "CAST-06"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "PRESS",
+    "title": "Press kit and asset downloads",
+    "asset_ids": [
+      "ID-08",
+      "BG-01",
+      "MKT-04",
+      "MKT-08",
+      "MKT-09"
+    ],
+    "evidence_media_ids": [
+      "RUN-06"
+    ],
+    "reference_ids": []
+  },
+  {
+    "id": "SUBSCRIBE",
+    "title": "Subscription and digest journey",
+    "asset_ids": [
+      "WEB-06",
+      "MKT-07"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "EMPTY",
+    "title": "404, no data, unavailable and error states",
+    "asset_ids": [
+      "WEB-05"
+    ],
+    "evidence_media_ids": [],
+    "reference_ids": []
+  },
+  {
+    "id": "LEGACY",
+    "title": "Historical evidence and reference assets",
+    "asset_ids": [],
+    "evidence_media_ids": [],
+    "reference_ids": [
+      "OLD-01",
+      "OLD-02",
+      "OLD-03",
+      "OLD-04",
+      "OLD-05"
+    ]
+  }
+]

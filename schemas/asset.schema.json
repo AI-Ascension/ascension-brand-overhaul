@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Completed generated-art manifest entry",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "asset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "in_progress",
+        "blocked",
+        "verified"
+      ]
+    },
+    "method": {
+      "const": "generate"
+    },
+    "source_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_digest": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "production_tool": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "actual_model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parent_asset_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "content_class": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rights_status": {
+      "enum": [
+        "unreviewed",
+        "first_party_authored",
+        "generated_original_reviewed",
+        "licensed_use_verified",
+        "publication_permission_recorded",
+        "unknown",
+        "blocked"
+      ]
+    },
+    "reviewer_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approval_references": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "alt_text": {
+      "type": "string"
+    },
+    "decorative": {
+      "type": "boolean"
+    },
+    "exports": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "Export",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "format": {
+            "type": "string",
+            "minLength": 1
+          },
+          "width": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "height": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "generation_record_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "raw_source_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "derivation_operations": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "identity",
+                "resize",
+                "crop",
+                "encode",
+                "lossless_optimize",
+                "metadata_strip",
+                "sprite_slice",
+                "assemble_unchanged_frames",
+                "alpha_preserving_export"
+              ]
+            }
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "format",
+          "width",
+          "height",
+          "generation_record_id",
+          "raw_source_path",
+          "derivation_operations"
+        ]
+      }
+    },
+    "blocker": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "origin": {
+      "const": "astra_authored_gpt_image_2"
+    },
+    "generation_records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "art-generation.schema.json"
+      }
+    }
+  },
+  "required": [
+    "asset_id",
+    "status",
+    "method",
+    "source_references",
+    "parent_asset_ids",
+    "content_class",
+    "rights_status",
+    "reviewer_reference",
+    "approval_references",
+    "alt_text",
+    "decorative",
+    "exports",
+    "blocker",
+    "origin",
+    "generation_records"
+  ]
+}

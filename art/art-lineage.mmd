@@ -1,0 +1,13 @@
+flowchart LR
+  ROOT["Root integration authority"] --> LEAD["D1 W02 lead: Luna/max"]
+  LEAD --> COORD["D2 W02 coordinator: Luna/max"]
+  COORD --> ASTRA["D3 designated Astra/max art author"]
+  BRIEF["Bounded facts, exact copy, rights-reviewed references"] --> ASTRA
+  ASTRA --> PROMPT["Saved Astra-authored prompt + hash + native identity"]
+  PROMPT --> TOOL["gpt-image-2 tool call; not an agent level"]
+  TOOL --> RAW["Unmodified generated master + model/output provenance"]
+  RAW --> REVIEW["Independent review"]
+  REVIEW --> EXPORT["Noncreative exports only"]
+  EXPORT --> SURFACE["Approved new-brand surfaces"]
+  EVIDENCE["Authentic gameplay media; never synthesized"] --> EVIDENCEPAGE["Separately labeled evidence surfaces"]
+  OLD["Historical art and notices"] --> ARCHIVE["Unchanged archive / reference only"]

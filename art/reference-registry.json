@@ -1,0 +1,117 @@
+[
+  {
+    "id": "OLD-01",
+    "title": "Historical gateway proof card",
+    "group": "Existing art/source map",
+    "placements": [
+      "LEGACY"
+    ],
+    "exports": [],
+    "brief": "Preserve the historical proof card and the exact claim-to-fixture context. Do not relabel it as native gameplay. Do not ship this as new-brand artwork. Keep the historical archive unchanged for evidence and rollback.",
+    "parent_asset_ids": [],
+    "source_reference": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/main/assets/identity/proof-card.png",
+    "content_class": "not_product_evidence",
+    "publication_gate": "source_and_rights_verification",
+    "mandatory": true,
+    "status": "planned",
+    "rights_status": "unreviewed",
+    "review_status": "not_started",
+    "owner": "W02-C2",
+    "alt_guidance": "Decorative when adjacent text duplicates its meaning; otherwise a concise functional description.",
+    "resource_type": "reference",
+    "method": "preserve_reference",
+    "allowed_on_new_brand_surfaces": false
+  },
+  {
+    "id": "OLD-02",
+    "title": "Existing ledger-spire illustration",
+    "group": "Existing art/source map",
+    "placements": [
+      "LEGACY"
+    ],
+    "exports": [],
+    "brief": "Inspect existing original/generated art provenance. Retain as historical/archive source; use only as a rights-reviewed reference for a new Astra-authored gpt-image-2 generation. Do not call it a screenshot. Do not ship this as new-brand artwork. Keep the historical archive unchanged for evidence and rollback.",
+    "parent_asset_ids": [],
+    "source_reference": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/main/assets/identity/art/ledger-spire-source.png",
+    "content_class": "not_product_evidence",
+    "publication_gate": "source_and_rights_verification",
+    "mandatory": true,
+    "status": "planned",
+    "rights_status": "unreviewed",
+    "review_status": "not_started",
+    "owner": "W02-C2",
+    "alt_guidance": "Decorative when adjacent text duplicates its meaning; otherwise a concise functional description.",
+    "resource_type": "reference",
+    "method": "preserve_reference",
+    "allowed_on_new_brand_surfaces": false
+  },
+  {
+    "id": "OLD-03",
+    "title": "Existing wordmark and glyph sources",
+    "group": "Existing art/source map",
+    "placements": [
+      "LEGACY"
+    ],
+    "exports": [],
+    "brief": "Preserve reference to the current identity for rollback/comparison. The final new mark remains original and explicitly reviewed. Do not ship this as new-brand artwork. Keep the historical archive unchanged for evidence and rollback.",
+    "parent_asset_ids": [],
+    "source_reference": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/main/assets/identity/wordmark.svg",
+    "content_class": "not_product_evidence",
+    "publication_gate": "source_and_rights_verification",
+    "mandatory": true,
+    "status": "planned",
+    "rights_status": "unreviewed",
+    "review_status": "not_started",
+    "owner": "W02-C2",
+    "alt_guidance": "Decorative when adjacent text duplicates its meaning; otherwise a concise functional description.",
+    "resource_type": "reference",
+    "method": "preserve_reference",
+    "allowed_on_new_brand_surfaces": false
+  },
+  {
+    "id": "OLD-04",
+    "title": "Existing identity tokens",
+    "group": "Existing art/source map",
+    "placements": [
+      "LEGACY"
+    ],
+    "exports": [],
+    "brief": "Reconcile and preserve the existing token source while building the new canonical version. Do not silently delete dark mode or reduced-motion behavior. Do not ship this as new-brand artwork. Keep the historical archive unchanged for evidence and rollback.",
+    "parent_asset_ids": [],
+    "source_reference": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/main/assets/identity/tokens.css",
+    "content_class": "not_product_evidence",
+    "publication_gate": "source_and_rights_verification",
+    "mandatory": true,
+    "status": "planned",
+    "rights_status": "unreviewed",
+    "review_status": "not_started",
+    "owner": "W02-C2",
+    "alt_guidance": "Decorative when adjacent text duplicates its meaning; otherwise a concise functional description.",
+    "resource_type": "reference",
+    "method": "preserve_reference",
+    "allowed_on_new_brand_surfaces": false
+  },
+  {
+    "id": "OLD-05",
+    "title": "Existing font notices (reference only)",
+    "group": "Existing art/source map",
+    "placements": [
+      "LEGACY"
+    ],
+    "exports": [],
+    "brief": "Reference licenses and existing self-hosted deployment assets. Bundle no font binaries in the handoff ZIP or press kit. Do not ship this as new-brand artwork. Keep the historical archive unchanged for evidence and rollback.",
+    "parent_asset_ids": [],
+    "source_reference": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/main/assets/fonts/NOTICES.md",
+    "content_class": "not_product_evidence",
+    "publication_gate": "source_and_rights_verification",
+    "mandatory": true,
+    "status": "planned",
+    "rights_status": "unreviewed",
+    "review_status": "not_started",
+    "owner": "W02-C2",
+    "alt_guidance": "Decorative when adjacent text duplicates its meaning; otherwise a concise functional description.",
+    "resource_type": "reference",
+    "method": "preserve_reference",
+    "allowed_on_new_brand_surfaces": false
+  }
+]
