@@ -22,4 +22,3 @@ pins, and visibility belong to the separate migration approval path.
 
 The manifest's companion branch list is descriptive evidence for the isolated
 branches prepared by W04. It never authorizes a push or a remote rename.
-

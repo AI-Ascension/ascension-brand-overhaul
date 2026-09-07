@@ -54,4 +54,3 @@ routes, and evidence links remain untouched. Identity artwork remains blocked
 until a genuine depth-three Astra author and verified `gpt-image-2` generation
 record are available. Existing visual assets are never relabeled as new
 generated art or gameplay proof.
-

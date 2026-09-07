@@ -69,4 +69,3 @@ rejection of an omitted envelope field.
 For the complete target gate, use the commands in the repository's
 `docs/TESTING.md`. Those gates remain source/build/test evidence and do not
 promote this quickstart to host or release compatibility.
-
