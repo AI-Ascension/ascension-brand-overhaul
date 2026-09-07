@@ -1,0 +1,98 @@
+{
+  "schema_version": "ai-ascension.w04-repair-implementation.v1",
+  "task_id": "ROOT-W04-REPAIR-001",
+  "source_revision": "f4e982fa828f57a680c6e38a5d404a98cca13216",
+  "implementation_revision": "5ba8c65c361a7a0738557313289c4717e0ff5e52",
+  "worktree": "sts2-project-worktrees/brand-migration-repairs",
+  "review_source": {
+    "path": "ascension-brand-overhaul/execution/reviews/W07-L-W04-helper-review.md",
+    "sha256": "ca80cf6de997b615d57e7772429de9e148dfd404e9eb461c38ccfecc7c6a0471"
+  },
+  "finding_dispositions": [
+    {
+      "id": "W07-W04-01",
+      "status": "addressed",
+      "implementation": "Evaluate recorded default-branch and visibility preconditions as separate gates.",
+      "tests": ["test_recorded_branch_and_visibility_preconditions_are_hard_gates"]
+    },
+    {
+      "id": "W07-W04-02",
+      "status": "addressed",
+      "implementation": "Embed an immutable digest-bound compact repository metadata backup and require its fresh-source match.",
+      "tests": [
+        "test_generated_plan_embeds_and_checks_immutable_backup",
+        "test_missing_backup_reference_blocks_authorized_rename"
+      ]
+    },
+    {
+      "id": "W07-W04-03",
+      "status": "addressed",
+      "implementation": "Preserve endpoint-specific 404 semantics and record unavailable optional inventories.",
+      "tests": ["test_404_is_endpoint_specific_unknown"]
+    },
+    {
+      "id": "W07-W04-04",
+      "status": "addressed",
+      "implementation": "Inventory every blocking workflow-run status and paginate pulls and code search with completeness checks.",
+      "tests": [
+        "test_all_active_statuses_and_full_pages_are_inventory_inputs",
+        "test_search_total_count_gap_is_unknown"
+      ]
+    },
+    {
+      "id": "W07-W04-05",
+      "status": "addressed",
+      "implementation": "Classify ambiguous transport results, including connection resets and 5xx responses, as unknown.",
+      "tests": ["test_ambiguous_transport_is_unknown_and_halts_the_operation_set"]
+    },
+    {
+      "id": "W07-W04-06",
+      "status": "addressed",
+      "implementation": "Stop an operation set after unknown, unresolved, or verification-failed work.",
+      "tests": ["test_ambiguous_transport_is_unknown_and_halts_the_operation_set"]
+    },
+    {
+      "id": "W07-W04-07",
+      "status": "addressed",
+      "implementation": "Re-read fresh state and bind terminal receipts to identity, request, response, full verification, and post-state digest.",
+      "tests": ["test_stale_applied_receipt_is_rechecked_before_any_retry"]
+    },
+    {
+      "id": "W07-W04-08",
+      "status": "addressed",
+      "implementation": "Bind approval to the authenticated actor, every rename operation, approved owner scope, and snapshot-consistent stable IDs.",
+      "tests": ["test_approval_is_bound_to_actor_scope_and_all_rename_ids", "test_snapshot_identity_and_exact_file_digest_are_required"]
+    },
+    {
+      "id": "W07-W04-09",
+      "status": "addressed",
+      "implementation": "Add an exact-plan operation-set lock shared by all receipt paths, in addition to the receipt lock.",
+      "tests": ["test_operation_set_lock_covers_any_receipt_path"]
+    },
+    {
+      "id": "W07-W04-10",
+      "status": "addressed",
+      "implementation": "Validate snapshot schema and unique identities and record the exact snapshot-byte SHA-256 in plan provenance.",
+      "tests": ["test_snapshot_identity_and_exact_file_digest_are_required"]
+    }
+  ],
+  "validation": {
+    "focused_command": "python3 -m unittest tests/test_migration_tooling.py tests/test_migration_review_repairs.py -v",
+    "focused_tests": 30,
+    "focused_result": "passed",
+    "compile_command": "python3 -m py_compile migration/tooling/github_migration.py tests/test_migration_tooling.py tests/test_migration_review_repairs.py",
+    "compile_result": "passed",
+    "diff_check": "git diff --check",
+    "diff_check_result": "passed",
+    "clients": "fake clients and fake gh subprocess responses only",
+    "network_writes": false,
+    "github_mutations": false,
+    "owner_notifications": false
+  },
+  "scope": {
+    "unaddressed_w04_findings": [],
+    "helper_findings_out_of_scope": true,
+    "independent_review": "pending root and W07 review",
+    "remote_apply_authority": false
+  }
+}
