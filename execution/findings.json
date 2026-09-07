@@ -1,0 +1,743 @@
+{
+  "schema_version": "ai-ascension.findings.v1",
+  "updated_at": "2026-09-07T17:46:38.232455+00:00",
+  "scope": "Finding disposition index; read exact review revisions and evidence limits. An addressed local finding is not production acceptance.",
+  "findings": [
+    {
+      "id": "W01-ACC-01",
+      "state": "open",
+      "review_records": [
+        "execution/reviews/W03-W01-review.md"
+      ],
+      "disposition_record": null,
+      "blocker": "Per-requirement records are being completed; required native depth3 reviewer ancestry remains absent."
+    },
+    {
+      "id": "W01-COMP-01",
+      "state": "open",
+      "review_records": [
+        "execution/reviews/W01-companion-presentation-review.md"
+      ],
+      "disposition_record": null,
+      "blocker": "Watchdog bootstrap has no Cargo.toml; runtime implementation not validated."
+    },
+    {
+      "id": "W01-COMP-02",
+      "state": "open",
+      "review_records": [
+        "execution/reviews/W01-companion-presentation-review.md"
+      ],
+      "disposition_record": null,
+      "blocker": "Docker unavailable for local observability deployment validation; remote deployment-contract CI passes, not live service proof."
+    },
+    {
+      "id": "W01-COPY-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-W01-review.md"
+      ],
+      "disposition_record": "execution/reviews/W03-W01-provenance-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W01-PKG-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-W01-review.md"
+      ],
+      "disposition_record": "execution/reviews/W03-W01-provenance-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W01-SRC-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-W01-review.md"
+      ],
+      "disposition_record": "execution/reviews/W03-W01-provenance-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W01-SRC-02",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-W01-review.md"
+      ],
+      "disposition_record": "execution/reviews/W03-W01-provenance-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W01-SRC-03",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-W01-review.md"
+      ],
+      "disposition_record": "execution/reviews/W03-W01-provenance-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W01-SRC-04",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-W01-review.md"
+      ],
+      "disposition_record": "execution/reviews/W03-W01-provenance-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W01-W06-MKT-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W01-W06-MKT-02",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W01-W06-MKT-03",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-CAP-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-5b-publication-measurement-rereview.md",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-CAP-02",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-5b-publication-measurement-rereview.md",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-MEA-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-MEA-02",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-MEA-03",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-MEA-04",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-MEA-05",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-MEA-06",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-MEA-07",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-5b-publication-measurement-rereview.md",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-MEA-08",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-5b-publication-measurement-rereview.md",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PRIV-01",
+      "state": "addressed_for_private_audit_scope",
+      "review_records": [
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-private-delivery-scope-review.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PRIV-02",
+      "state": "addressed_for_private_audit_scope",
+      "review_records": [
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-private-delivery-scope-review.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PRIV-03",
+      "state": "addressed_for_private_audit_scope",
+      "review_records": [
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-private-delivery-scope-review.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-02",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-03",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-04",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-05",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-06",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publisher-measurement-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-07",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publication-freeze-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-08",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publication-freeze-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-09",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-publication-freeze-review.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-PUB-10",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-5b-publication-measurement-rereview.md",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-REL-01",
+      "state": "open",
+      "review_records": [
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "disposition_record": null,
+      "blocker": "Final exact source manifest/archive freeze and independent byte review pending."
+    },
+    {
+      "id": "W07-REL-02",
+      "state": "open",
+      "review_records": [
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "disposition_record": null,
+      "blocker": "Final content-level privacy review pending; filename exclusions are not a content guarantee."
+    },
+    {
+      "id": "W07-W02-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-L-W04-helper-review.md"
+      ],
+      "disposition_record": "docs/W07-L-W02-helper-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W02-02",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-L-W04-helper-review.md"
+      ],
+      "disposition_record": "docs/W07-L-W02-helper-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W02-03",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-L-W04-helper-review.md"
+      ],
+      "disposition_record": "docs/W07-L-W02-helper-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W02-04",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-L-W04-helper-review.md"
+      ],
+      "disposition_record": "docs/W07-L-W02-helper-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W02-05",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-L-W04-helper-review.md"
+      ],
+      "disposition_record": "docs/W07-L-W02-helper-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W02-06",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-L-W04-helper-review.md"
+      ],
+      "disposition_record": "docs/W07-L-W02-helper-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W02-07",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-L-W04-helper-review.md"
+      ],
+      "disposition_record": "docs/W07-L-W02-helper-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W02-08",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-L-W04-helper-review.md"
+      ],
+      "disposition_record": "docs/W07-L-W02-helper-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W02-09",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-L-W04-helper-review.md"
+      ],
+      "disposition_record": "docs/W07-L-W02-helper-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-01",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-02",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-03",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-04",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-05",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-06",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-07",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-08",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-09",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-10",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-helper-review.md",
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-11",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-12",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-13",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-14",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-15",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "W07-W04-16",
+      "state": "addressed_in_independent_local_review",
+      "review_records": [
+        "execution/reviews/W07-L-W04-migration-repair-rereview.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md"
+      ],
+      "disposition_record": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "blocker": null
+    },
+    {
+      "id": "ROOT-WEB-01",
+      "title": "Inverse-surface contrast",
+      "state": "addressed_in_local_rereview",
+      "review_records": [
+        "execution/reviews/W03-precommit-review-001.md"
+      ],
+      "disposition_record": "execution/reviews/W03-repair-review-002.json",
+      "followup_records": [
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "scope": "Local website review; production hosting and mandatory new art remain unverified."
+    },
+    {
+      "id": "ROOT-WEB-02",
+      "title": "Keyboard-accessible scrolling",
+      "state": "addressed_in_local_rereview",
+      "review_records": [
+        "execution/reviews/W03-precommit-review-001.md"
+      ],
+      "disposition_record": "execution/reviews/W03-repair-review-002.json",
+      "followup_records": [
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "scope": "Local website review; production hosting and mandatory new art remain unverified."
+    },
+    {
+      "id": "ROOT-WEB-03",
+      "title": "Filter empty-state visibility",
+      "state": "addressed_in_local_rereview",
+      "review_records": [
+        "execution/reviews/W03-precommit-review-001.md"
+      ],
+      "disposition_record": "execution/reviews/W03-repair-review-002.json",
+      "followup_records": [
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "scope": "Local website review; production hosting and mandatory new art remain unverified."
+    },
+    {
+      "id": "ROOT-WEB-04",
+      "title": "Effective system-theme toggle",
+      "state": "addressed_in_local_rereview",
+      "review_records": [
+        "execution/reviews/W03-precommit-review-001.md"
+      ],
+      "disposition_record": "execution/reviews/W03-repair-review-002.json",
+      "followup_records": [
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "scope": "Local website review; production hosting and mandatory new art remain unverified."
+    },
+    {
+      "id": "ROOT-WEB-05",
+      "title": "Mobile menu Escape/focus",
+      "state": "addressed_in_local_rereview",
+      "review_records": [
+        "execution/reviews/W03-precommit-review-001.md"
+      ],
+      "disposition_record": "execution/reviews/W03-repair-review-002.json",
+      "followup_records": [
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "scope": "Local website review; production hosting and mandatory new art remain unverified."
+    },
+    {
+      "id": "ROOT-WEB-06",
+      "title": "Visitor implementation placeholders",
+      "state": "addressed_in_local_rereview",
+      "review_records": [
+        "execution/reviews/W03-precommit-review-001.md"
+      ],
+      "disposition_record": "execution/reviews/W03-repair-review-002.json",
+      "followup_records": [
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "scope": "Local website review; production hosting and mandatory new art remain unverified."
+    },
+    {
+      "id": "ROOT-WEB-07",
+      "title": "Subscription privacy accuracy",
+      "state": "addressed_in_local_rereview",
+      "review_records": [
+        "execution/reviews/W03-precommit-review-001.md"
+      ],
+      "disposition_record": "execution/reviews/W03-repair-review-002.json",
+      "followup_records": [
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "scope": "Local website review; production hosting and mandatory new art remain unverified."
+    },
+    {
+      "id": "ROOT-WEB-08",
+      "title": "Concurrent persistence and failed-mail recovery",
+      "state": "addressed_in_local_rereview",
+      "review_records": [
+        "execution/reviews/W03-precommit-review-001.md"
+      ],
+      "disposition_record": "execution/reviews/W03-repair-review-002.json",
+      "followup_records": [
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "scope": "Local website review; production hosting and mandatory new art remain unverified."
+    },
+    {
+      "id": "ROOT-WEB-09",
+      "title": "Website documentation consistency",
+      "state": "addressed_in_local_rereview",
+      "review_records": [
+        "execution/reviews/W03-precommit-review-001.md"
+      ],
+      "disposition_record": "execution/reviews/W03-repair-review-002.json",
+      "followup_records": [
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "scope": "Local website review; production hosting and mandatory new art remain unverified."
+    },
+    {
+      "id": "ROOT-INPUT-01",
+      "state": "known_unrecoverable_original_input_gap",
+      "blocker": "Original113-byte .gitignore overwritten before first commit without preserving original bytes; original supplied digest retained. No claim of exact original-input preservation.",
+      "disposition_record": "execution/input-integrity/README.md"
+    }
+  ]
+}

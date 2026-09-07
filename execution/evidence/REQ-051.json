@@ -1,0 +1,88 @@
+{
+  "schema_version": "ai-ascension.requirement-evidence.v1",
+  "requirement_id": "REQ-051",
+  "binding_requirement": "Initial presentation rename does not change runtime binary/package/environment/schema identities.",
+  "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+  "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+  "recorded_at": "2026-09-07T18:05:46.360019+00:00",
+  "status": "verified",
+  "reviewer": "W01-L and W07-L",
+  "actual_review_records": [
+    "execution/reviews/W01-companion-presentation-review.md",
+    "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+    "execution/reviews/W07-private-delivery-scope-review.md",
+    "execution/reviews/companion-remote-checks-001.json"
+  ],
+  "procedures": [
+    "python3 -m unittest tests.test_migration_residual_repairs tests.test_migration_tooling tests.test_migration_review_repairs -q (38pass)",
+    "Read-only plan command and source-specific checks recorded in linked receipts."
+  ],
+  "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+  "artifacts": [
+    {
+      "path": "github/companion-commits.json",
+      "sha256": "7dbed618aee2f9addd5bbefd2ae45ec0339893574d1ff26fb6e73e17391156bf",
+      "bytes": 11110
+    },
+    {
+      "path": "github/presentation-manifest.json",
+      "sha256": "e4dd7ec08533b616d2c511fe5eafa9eb8531ad0bc7a2e686d25c63098a51a472",
+      "bytes": 5221
+    },
+    {
+      "path": "github/settings-manifest.json",
+      "sha256": "8aa71b21997b9030f8ceb485f730c57755d38ea4c5158e414070bd77b1b84661",
+      "bytes": 14027
+    },
+    {
+      "path": "migration/tooling/github_migration.py",
+      "sha256": "55611e9205f77fbab3272b006f379a4cf65ef683fb048933d068d42dc76f3411",
+      "bytes": 75350
+    },
+    {
+      "path": "migration/plan.json",
+      "sha256": "676b32ebbd9a9fcde6e19926f2d83b2c265785c0e38b7a1a32a95e21626fcea5",
+      "bytes": 139954
+    },
+    {
+      "path": "migration/ROLLBACK.md",
+      "sha256": "c69b447f05c97ef07b80e0bfbc53504643450cb98da949ed372bc0b4ff3e4b30",
+      "bytes": 643
+    },
+    {
+      "path": "execution/migration-results.json",
+      "sha256": "ef9e48fc3eaf65f674c218d63a1bba98c1b7e690207a3373405e0861441acfd4",
+      "bytes": 500
+    },
+    {
+      "path": "docs/TESTED_QUICKSTART.md",
+      "sha256": "6d10c672a8edb286df025fe90828dcbddd922084a8e7f1fbe31aabd38650d470",
+      "bytes": 2757
+    },
+    {
+      "path": "execution/reviews/W01-companion-presentation-review.md",
+      "sha256": "49507067f0d7188c63df1422d405bf2e6b78d4cdcefa3d81aba017a1c13174dc",
+      "bytes": 11363
+    },
+    {
+      "path": "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+      "sha256": "13387af0ed5a2311f4402ad15d8cd1488782e36f9387fadd58f4ee56038fc913",
+      "bytes": 8172
+    },
+    {
+      "path": "execution/reviews/W07-private-delivery-scope-review.md",
+      "sha256": "e74c5c794f8bc8a7a05ff689da982cc5c0504c56b2aedba09dc7b4f1585a498c",
+      "bytes": 6223
+    },
+    {
+      "path": "execution/reviews/companion-remote-checks-001.json",
+      "sha256": "853a25815ed4758d622902f5f9c06c657aaac3d95355a2151052b672ee924cde",
+      "bytes": 10141
+    }
+  ],
+  "blocker": null,
+  "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
+  "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
+  "source_binding": "Exact artifact bytes listed here; source and test revisions are those explicitly named by each review. Final root manifest binds this record. No uncommitted bytes are falsely assigned a Git revision.",
+  "companion_sources": "Exact10repository revisions and changed-file hashes in github/companion-commits.json."
+}

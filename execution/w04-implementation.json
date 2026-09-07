@@ -48,11 +48,11 @@
   },
   "initial_source_revision": "4d09cd40fb077cc3364197a1cb1056950b980361",
   "latest_privacy_repair": {
-    "revision": "b276375",
+    "revision": "b276375035ae3ff400efe5dfe3f7921f9978a9f4",
     "test_count": 38,
     "result": "pass",
     "command": "python3 -m unittest tests.test_migration_residual_repairs tests.test_migration_tooling tests.test_migration_review_repairs -q",
     "scope": "Offline regression contracts only; fresh read-only plan separate.",
-    "review": "execution/reviews/W07-private-delivery-scope-review.md (pending)"
+    "review": "execution/reviews/W07-private-delivery-scope-review.md"
   }
 }

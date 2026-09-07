@@ -1,0 +1,13 @@
+{
+  "command": "python3 scripts/agent_ledger.py PRIVATE_NATIVE_LEDGER.json",
+  "exit_code": 0,
+  "recorded_descendants": 7,
+  "peak_open_descendants": 7,
+  "currently_open_descendants_conservative": 7,
+  "global_ceiling": 12,
+  "has_depth_three_chain": false,
+  "astra_author_nodes": 0,
+  "input_sha256": "49e1153c2b19ddc3a6a3081f4823cbf03f03c64a56c2cd2a15a99fe4d6bc2a17",
+  "evidence_reference": "execution/runtime-observation.json",
+  "scope": "Consistency of seven recorded native lead entries with installed-client metadata. Not provider-side attestation or evidence of the requested49-descendant hierarchy; no native closure is inferred from an idle/completed handle."
+}

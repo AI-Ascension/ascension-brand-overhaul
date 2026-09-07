@@ -1,20 +1,13 @@
-# Implementation status
+# Execution status
 
-The full overhaul remains in progress. Canonical private repository exists and the brief is pushed at `5a2acfd6690d2533af046a7afcf3a7782b29042b`. Integrated local implementation is on `work/brand-overhaul`; source, copy, functional tokens, guarded content sync and browser tooling are present at `19eb81f38e41370d92d7a9983c23443c8ef6da6a`. Companion implementations are in isolated checkouts and remain under construction. No generated artwork, production deployment, rename, merge or campaign send has occurred.
+The engineering/text implementation is locally verified and companion source changes are open as drafts. The full overhaul remains incomplete: mandatory generated artwork and the requested native depth-three hierarchy are absent. `delivery/FINAL_REPORT.md` is generated from the final requirement, asset, release, and operation ledgers; it is the complete per-item handoff.
 
-Root retains integration and private orchestration ledgers. Seven native lead threads have observed Luna/max settings in installed Codex 0.153.4 metadata. Completed retained threads still count against the twelve-descendant ceiling until native closure is established. Earlier depth-1 agents report no callable child-spawn interface; the required deeper hierarchy remains blocked pending authoritative capability evidence. Client metadata does not independently attest provider execution. No ancestry is being simulated.
+The canonical repository is private. The source archive is private audit material, with internal ancestry and operation records retained under `delivery/PRIVACY_SCOPE.md`. No merge, live rename, deployment, public artifact publication, analytics activation, campaign send, or generated artwork operation has been performed in this assignment.
 
-W01 source/copy and W02 functional tokens are integrated. W04 migration/GitHub tooling and tested quickstart, W05 publication/measurement and W06 campaign sources are integrated locally. The current integrated suite passes 149 tests at `5b752cd49c16a5bec32816a09dd93920bb419437`. W07 independently confirmed the earlier publication authority/projection repairs, then identified additional output-root, free-text URI, and artifact-resource gaps. Those additional repairs and the measurement/capability/comparison changes are implemented and awaiting independent re-review. Both trusted registries ship empty; no real publication or analytics receipt is enrolled.
+The clean integrated source at `038123684946a4be4ea830af4c04c2ea7059ad88` passed package validation and 189 tests. Final metadata and handoff changes receive a later exact inventory check. The website at `56e532b21922f39480cd15dcbb465676770408f5` passed 29 PHPUnit tests  / 111 assertions, 30 actual local HTTP checks, 110 route/theme browser states, and separately recorded zoom/motion/interaction and homepage review. Ten companion presentation PRs are independently reviewed and exact-head verified; all configured remote checks passed. No-check repositories remain explicitly identified.
 
-The repaired website passes 110 viewport/theme states against unchanged file hashes, all 11 normal-motion and actual 200% tab-zoom checks, and eight interaction probes. The local PHP suite passes 29 tests / 111 assertions. Root is completing visitor-copy and actual HTTP subscription-journey review; these results do not approve deployment. Companion presentation diffs remain uncommitted pending review and their required repository checks. No package, browser, or quickstart result establishes actual gameplay or a live deployment.
+Publication, measurement, migration, canonical-content synchronization, source provenance, campaign contracts, website behavior, and companion copy have independent review records. Historical review findings are retained with their repair/rereview chain. Both trusted authority registries remain empty, and all audience experiment results remain unobserved.
 
-The available imagegen schema has no model selector or documented resolved backend. All actual artwork remains ungenerated until the mandatory Astra depth-3 authorship and gpt-image-2 route can be verified. Engineering and text work continue.
+Installed-client metadata records seven Luna/max depth 1 leads under the retained root, within the twelve-descendant ceiling. No depth 2/depth 3 coordinator/leaf identity or Astra art author exists. Client metadata is not provider-side attestation. The exposed image tool provides no required backend selection/attestation. No alternate hierarchy, image model, code-drawn art, or legacy-art substitution was used to satisfy the missing artwork.
 
-## Reproduce current local checks
-
-```sh
-python3 scripts/validate_package.py
-python3 -m unittest discover -s tests -v
-```
-
-These check the brief and local helpers, not the target website, native game behavior or full overhaul readiness. Runtime metadata extraction is `scripts/runtime_snapshot.py`; pass an explicit installed database and root ID, writing output to ignored private storage. Native liveness must be checked separately.
+Use `delivery/RUNBOOK.md` for reproduction and continuation, `github/companion-commits.json` and `github/website-pull-request.json` for the proposed source changes, and `execution/reviews/final-local-checks.json` for exact local test scope. The external archive-review and final remote-head receipts bind the final delivery without self-referential hashes.

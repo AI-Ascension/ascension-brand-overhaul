@@ -1,6 +1,6 @@
 # Operator runbook
 
-This is a local implementation handoff under construction, not a production release receipt. Start with `execution/ROOT_STATUS.md`, `execution/requirements-status.json`, and the exact reviewed revisions in the eventual companion commit map. The immutable input brief is preserved separately from execution status.
+This is a private local implementation handoff with mandatory art and native-depth blockers, not a production release receipt. Start with `execution/ROOT_STATUS.md`, `execution/requirements-status.json`, and the exact reviewed revisions in `github/companion-commits.json`. The immutable input brief is preserved separately from execution status.
 
 ## Resume safely
 

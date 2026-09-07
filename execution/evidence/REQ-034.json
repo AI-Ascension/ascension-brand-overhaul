@@ -1,0 +1,69 @@
+{
+  "schema_version": "ai-ascension.requirement-evidence.v1",
+  "requirement_id": "REQ-034",
+  "binding_requirement": "No fabricated partners, testimonials, followers, paid votes, or undisclosed influence.",
+  "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+  "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+  "recorded_at": "2026-09-07T18:05:46.360019+00:00",
+  "status": "verified",
+  "reviewer": "W01-L and W07-L",
+  "actual_review_records": [
+    "execution/reviews/W01-W06-review.md",
+    "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+  ],
+  "procedures": [
+    "python3 -m unittest tests.test_marketing_package tests.test_marketing_experiments tests.test_marketing_files -v (9pass)"
+  ],
+  "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+  "artifacts": [
+    {
+      "path": "marketing/README.md",
+      "sha256": "12c2b987573b4c470b3cb4d1ace33243972f8058312adea305f781134bd6de49",
+      "bytes": 1634
+    },
+    {
+      "path": "marketing/calendar.json",
+      "sha256": "7e35a12fd1333c0756aa98bd7ce60f9deeaceea3285b88b978f35385832236df",
+      "bytes": 186007
+    },
+    {
+      "path": "marketing/source-map.json",
+      "sha256": "b5cabfabd4343791d32c780be300efa2c6399716118b6457d49a578bbd6311d2",
+      "bytes": 4297
+    },
+    {
+      "path": "marketing/experiments.json",
+      "sha256": "886335672e211a7355a22e40fc6bcc17e246622ffa7e9a445556636f7d136289",
+      "bytes": 18998
+    },
+    {
+      "path": "marketing/asset-dependency.json",
+      "sha256": "e75b24e9b6490f9049d70a13e2014f53bafb9d9897eb9ee29e2b4855164904f1",
+      "bytes": 45573
+    },
+    {
+      "path": "marketing/community-playbook.md",
+      "sha256": "4e376b92a0506b15984a83d513357aec3536636ad44c123d382dff08c924c4af",
+      "bytes": 7112
+    },
+    {
+      "path": "marketing/sponsorship.md",
+      "sha256": "8a7b51045675903035c9a8890d9e5b158bce2bde47b2e0f3b5c5f2562083eed5",
+      "bytes": 4420
+    },
+    {
+      "path": "execution/reviews/W01-W06-review.md",
+      "sha256": "f4dfd458db8e59f8c4456bbd3473625cc39acaf9020496bb4825a78a006c0486",
+      "bytes": 9361
+    },
+    {
+      "path": "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+      "sha256": "57317e30524ec09cd93026e3d4363a6c8d6e9d8851083c4b96d9d874947b4df2",
+      "bytes": 10219
+    }
+  ],
+  "blocker": null,
+  "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
+  "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
+  "source_binding": "Exact artifact bytes listed here; source and test revisions are those explicitly named by each review. Final root manifest binds this record. No uncommitted bytes are falsely assigned a Git revision."
+}

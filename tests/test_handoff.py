@@ -53,6 +53,60 @@ class HandoffTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'lacks a blocker or reason'):
                 handoff.render(root)
 
+    def release(self):
+        return {'schema_version':'ai-ascension.release-status.v1', 'summary':'<script>unsafe</script>',
+                'dimensions':{'local':'verified'}, 'verified_work':['source reviewed'],
+                'remaining_conditions':['art blocked'], 'review_records':['review.json'],
+                'unverified_assumptions':['no provider attestation']}
+
+    def test_release_sections_escape_text_and_bind_digest(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp); self.fixture(root)
+            (root/'execution/release-status.json').write_text(json.dumps(self.release()))
+            report=handoff.render(root, require_release=True)
+            self.assertIn('## Delivery scope', report)
+            self.assertIn('&lt;script&gt;unsafe&lt;/script&gt;', report)
+            self.assertNotIn('<script>', report)
+            self.assertIn('execution/release-status.json |', report)
+            self.assertIn('no provider attestation', report)
+
+    def test_release_missing_wrong_empty_and_extra_shapes_fail(self):
+        for mutation in ['missing','marker','summary','dimensions_list','dimensions_empty','array_string','array_empty','array_item','extra']:
+            with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp); self.fixture(root); data=self.release()
+                if mutation=='missing': data.pop('summary')
+                elif mutation=='marker': data['schema_version']='other'
+                elif mutation=='summary': data['summary']=' '
+                elif mutation=='dimensions_list': data['dimensions']=[]
+                elif mutation=='dimensions_empty': data['dimensions']={}
+                elif mutation=='array_string': data['verified_work']='oops'
+                elif mutation=='array_empty': data['verified_work']=[]
+                elif mutation=='array_item': data['verified_work']=[{}]
+                else: data['unexpected']=True
+                (root/'execution/release-status.json').write_text(json.dumps(data))
+                with self.assertRaises(ValueError): handoff.render(root)
+
+    def test_release_duplicate_keys_fail(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp); self.fixture(root)
+            raw=json.dumps(self.release()).replace('{','{"summary":"duplicate",',1)
+            (root/'execution/release-status.json').write_text(raw)
+            with self.assertRaisesRegex(ValueError,'Duplicate ledger key'): handoff.render(root)
+
+    def test_release_is_required_for_final_but_optional_for_legacy(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp); self.fixture(root)
+            self.assertIn('Implementation handoff', handoff.render(root))
+            with self.assertRaisesRegex(ValueError,'requires execution/release-status'): handoff.render(root,require_release=True)
+
+    def test_release_directory_and_dangling_symlink_fail(self):
+        for kind in ['directory','dangling']:
+            with self.subTest(kind=kind), tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp); self.fixture(root); path=root/'execution/release-status.json'
+                if kind=='directory': path.mkdir()
+                else: path.symlink_to(root/'missing.json')
+                with self.assertRaises(ValueError): handoff.render(root)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,6 +1,7 @@
 {
-  "updated_at": "2026-09-07T14:19:32.028235+00:00",
+  "updated_at": "2026-09-07T18:05:46.360019+00:00",
   "scope": "Full MASTER_PROMPT.md and binding data/requirements.json; status is execution evidence, not package validation",
+  "acceptance_boundary": "Per-row local/source/control status. The full overhaul is incomplete while any mandatory asset or native-depth requirement is blocked.",
   "requirements": [
     {
       "id": "REQ-001",
@@ -14,11 +15,27 @@
         "docs/BASELINE_AUDIT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-001.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-001.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-002",
@@ -32,11 +49,27 @@
         "docs/BASELINE_AUDIT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-002.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-002.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-003",
@@ -50,11 +83,27 @@
         "docs/BASELINE_AUDIT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-003.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-003.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-004",
@@ -68,11 +117,27 @@
         "migration/repository-plan.json"
       ],
       "evidence_expected": "execution/evidence/REQ-004.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-004.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-005",
@@ -86,11 +151,27 @@
         "migration/repository-plan.json"
       ],
       "evidence_expected": "execution/evidence/REQ-005.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-005.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-006",
@@ -104,11 +185,27 @@
         "migration/repository-plan.json"
       ],
       "evidence_expected": "execution/evidence/REQ-006.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-006.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-007",
@@ -128,12 +225,24 @@
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-007.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-008",
@@ -153,12 +262,24 @@
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-008.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-009",
@@ -178,12 +299,24 @@
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-009.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-010",
@@ -203,12 +336,24 @@
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-010.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-011",
@@ -228,12 +373,24 @@
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-011.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-012",
@@ -248,17 +405,29 @@
         "brand/ART_REVIEW.md"
       ],
       "evidence_expected": "execution/evidence/REQ-012.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-012.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": null,
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Verified blocking behavior only: all72IDs are individually blocked with zero exports; no artwork is accepted."
     },
     {
       "id": "REQ-013",
@@ -272,11 +441,25 @@
         "site/visual-regression-baselines/"
       ],
       "evidence_expected": "execution/evidence/REQ-013.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-013.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-014",
@@ -290,11 +473,25 @@
         "site/visual-regression-baselines/"
       ],
       "evidence_expected": "execution/evidence/REQ-014.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-014.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-015",
@@ -308,11 +505,25 @@
         "site/visual-regression-baselines/"
       ],
       "evidence_expected": "execution/evidence/REQ-015.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-015.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-016",
@@ -326,11 +537,25 @@
         "execution/subscription-review.json"
       ],
       "evidence_expected": "execution/evidence/REQ-016.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-016.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-017",
@@ -344,11 +569,25 @@
         "execution/subscription-review.json"
       ],
       "evidence_expected": "execution/evidence/REQ-017.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-017.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-018",
@@ -362,11 +601,25 @@
         "execution/subscription-review.json"
       ],
       "evidence_expected": "execution/evidence/REQ-018.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-018.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-019",
@@ -380,11 +633,29 @@
         "tools/brand-sync/"
       ],
       "evidence_expected": "execution/evidence/REQ-019.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-019.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-020",
@@ -398,11 +669,29 @@
         "tools/brand-sync/"
       ],
       "evidence_expected": "execution/evidence/REQ-020.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-020.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-021",
@@ -416,11 +705,29 @@
         "tools/brand-sync/"
       ],
       "evidence_expected": "execution/evidence/REQ-021.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-021.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-022",
@@ -435,11 +742,29 @@
         "execution/migration-results.json"
       ],
       "evidence_expected": "execution/evidence/REQ-022.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-022.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-023",
@@ -454,11 +779,29 @@
         "execution/migration-results.json"
       ],
       "evidence_expected": "execution/evidence/REQ-023.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-023.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-024",
@@ -473,11 +816,29 @@
         "execution/migration-results.json"
       ],
       "evidence_expected": "execution/evidence/REQ-024.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-024.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-025",
@@ -492,21 +853,26 @@
         "public/run-manifests/"
       ],
       "evidence_expected": "execution/evidence/REQ-025.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "schemas/",
-        "public/run-manifests/"
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
       ],
       "verification_records": [
-        {
-          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-025.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-026",
@@ -521,21 +887,26 @@
         "public/run-manifests/"
       ],
       "evidence_expected": "execution/evidence/REQ-026.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "schemas/",
-        "public/run-manifests/"
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
       ],
       "verification_records": [
-        {
-          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-026.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-027",
@@ -550,21 +921,26 @@
         "public/run-manifests/"
       ],
       "evidence_expected": "execution/evidence/REQ-027.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "schemas/",
-        "public/run-manifests/"
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
       ],
       "verification_records": [
-        {
-          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-027.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-028",
@@ -579,21 +955,26 @@
         "tests/analytics/"
       ],
       "evidence_expected": "execution/evidence/REQ-028.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "analytics/event-contract.json",
-        "analytics/dashboard-spec.md"
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
       ],
       "verification_records": [
-        {
-          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-028.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-029",
@@ -608,21 +989,26 @@
         "tests/analytics/"
       ],
       "evidence_expected": "execution/evidence/REQ-029.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "analytics/event-contract.json",
-        "analytics/dashboard-spec.md"
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
       ],
       "verification_records": [
-        {
-          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-029.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-030",
@@ -637,21 +1023,26 @@
         "tests/analytics/"
       ],
       "evidence_expected": "execution/evidence/REQ-030.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "analytics/event-contract.json",
-        "analytics/dashboard-spec.md"
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
       ],
       "verification_records": [
-        {
-          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-030.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-031",
@@ -667,24 +1058,26 @@
         "marketing/articles/"
       ],
       "evidence_expected": "execution/evidence/REQ-031.json",
-      "status": "in_progress",
+      "status": "blocked",
       "mandatory": true,
       "implementation_paths": [
-        "marketing/launch/",
+        "marketing/README.md",
         "marketing/calendar.json",
-        "marketing/episodes/",
-        "marketing/clips/",
-        "marketing/articles/"
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
       ],
       "verification_records": [
-        {
-          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-031.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": "Draft factual copy is source-linked and independently reviewed, but the actual publication/source approvals and rights required for campaign release are not enrolled.",
+      "note": "All content remains draft; no publication/send is authorized."
     },
     {
       "id": "REQ-032",
@@ -700,24 +1093,26 @@
         "marketing/articles/"
       ],
       "evidence_expected": "execution/evidence/REQ-032.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "marketing/launch/",
+        "marketing/README.md",
         "marketing/calendar.json",
-        "marketing/episodes/",
-        "marketing/clips/",
-        "marketing/articles/"
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
       ],
       "verification_records": [
-        {
-          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-032.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-033",
@@ -733,24 +1128,26 @@
         "marketing/articles/"
       ],
       "evidence_expected": "execution/evidence/REQ-033.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "marketing/launch/",
+        "marketing/README.md",
         "marketing/calendar.json",
-        "marketing/episodes/",
-        "marketing/clips/",
-        "marketing/articles/"
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
       ],
       "verification_records": [
-        {
-          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-033.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-034",
@@ -765,23 +1162,26 @@
         "marketing/sponsorship.md"
       ],
       "evidence_expected": "execution/evidence/REQ-034.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "marketing/creator-kit/",
-        "marketing/community-playbook.md",
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
         "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
         "marketing/sponsorship.md"
       ],
       "verification_records": [
-        {
-          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-034.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-035",
@@ -796,23 +1196,26 @@
         "marketing/sponsorship.md"
       ],
       "evidence_expected": "execution/evidence/REQ-035.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "marketing/creator-kit/",
-        "marketing/community-playbook.md",
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
         "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
         "marketing/sponsorship.md"
       ],
       "verification_records": [
-        {
-          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-035.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-036",
@@ -827,23 +1230,26 @@
         "marketing/sponsorship.md"
       ],
       "evidence_expected": "execution/evidence/REQ-036.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "marketing/creator-kit/",
-        "marketing/community-playbook.md",
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
         "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
         "marketing/sponsorship.md"
       ],
       "verification_records": [
-        {
-          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+        "execution/evidence/REQ-036.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
       ],
-      "independent_reviewer": null
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-037",
@@ -858,11 +1264,30 @@
         "execution/findings.json"
       ],
       "evidence_expected": "execution/evidence/REQ-037.json",
-      "status": "not_started",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-037.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-038",
@@ -877,11 +1302,30 @@
         "execution/findings.json"
       ],
       "evidence_expected": "execution/evidence/REQ-038.json",
-      "status": "not_started",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-038.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-039",
@@ -896,11 +1340,30 @@
         "execution/findings.json"
       ],
       "evidence_expected": "execution/evidence/REQ-039.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-039.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": "No genuine root-to-lead-to-coordinator-to-leaf chain exists; independent source reviews do not replace requested native ancestry.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-040",
@@ -915,11 +1378,30 @@
         "docs/ROLLBACK.md"
       ],
       "evidence_expected": "execution/evidence/REQ-040.json",
-      "status": "not_started",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-040.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-041",
@@ -934,11 +1416,30 @@
         "docs/ROLLBACK.md"
       ],
       "evidence_expected": "execution/evidence/REQ-041.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-041.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": "All70 requirement records are assembled; independent final coverage/acceptance review is pending.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-042",
@@ -953,11 +1454,30 @@
         "docs/ROLLBACK.md"
       ],
       "evidence_expected": "execution/evidence/REQ-042.json",
-      "status": "not_started",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-042.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-043",
@@ -969,11 +1489,27 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-043.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-043.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-044",
@@ -985,11 +1521,27 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-044.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-044.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Initial immutable baseline pins, stable IDs, default branches, PR/deployment observations are retained. Complete2045-entry tracked-tree metadata was reconstructed later from those same13pins, not falsely claimed as a new full-content inspection."
     },
     {
       "id": "REQ-045",
@@ -1001,17 +1553,29 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-045.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-045.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": null,
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Verified inventory/control only: produced-or-specifically-blocked accounting covers72families/115exports. It does not mean art is produced."
     },
     {
       "id": "REQ-046",
@@ -1023,16 +1587,29 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-046.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-046.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "No font binaries in the source candidate; existing licensed website assets remain in the website. Final archive content is separately reviewed."
     },
     {
       "id": "REQ-047",
@@ -1044,16 +1621,29 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-047.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-047.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-048",
@@ -1065,11 +1655,25 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-048.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-048.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Actual report-only content and tested developer recipes are available. No approved video/replay/timeline is inferred."
     },
     {
       "id": "REQ-049",
@@ -1081,11 +1685,25 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-049.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-049.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-050",
@@ -1097,11 +1715,25 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-050.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-050.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation; later homepage delta separately identified)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-051",
@@ -1113,11 +1745,29 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-051.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-051.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-052",
@@ -1129,11 +1779,29 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-052.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-052.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Map rename is deferred and active instructions/current repository identity remain untouched."
     },
     {
       "id": "REQ-053",
@@ -1145,18 +1813,26 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-053.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [
-        {
-          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
       ],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-053.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-054",
@@ -1168,18 +1844,26 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-054.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [
-        {
-          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
       ],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-054.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-055",
@@ -1191,18 +1875,26 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-055.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [
-        {
-          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
       ],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-055.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-056",
@@ -1214,18 +1906,26 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-056.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [
-        {
-          "source_revision": "395a50ab316fce4d5cfceea7bc937a69315dbf38",
-          "command": "python3 -m unittest discover -s tests",
-          "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
-          "receipt": "execution/root-helper-checks.json"
-        }
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
       ],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-056.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-057",
@@ -1239,10 +1939,28 @@
       "evidence_expected": "execution/evidence/REQ-057.json",
       "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Native child collaboration tools absent from depth-1 agent interface; no genuine depth-3 author/worker chain yet."
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-057.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "blocker": "Seven depth1 Luna/max leads are observed in client metadata. The47ordinary/twoAstra role catalog is not executed or fully attested.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Client metadata is not provider-side attestation; uncreated roles have no accepted/observed execution record."
     },
     {
       "id": "REQ-058",
@@ -1256,10 +1974,28 @@
       "evidence_expected": "execution/evidence/REQ-058.json",
       "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Native child collaboration tools absent from depth-1 agent interface; no genuine depth-3 author/worker chain yet."
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-058.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "blocker": "No depth2/depth3 nodes exist; the seven recorded retained leads fit the12-open ceiling but no substantive depth3 chain is evidenced.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-059",
@@ -1271,11 +2007,30 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-059.json",
-      "status": "not_started",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-059.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-060",
@@ -1287,11 +2042,30 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-060.json",
-      "status": "not_started",
+      "status": "verified",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-060.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-061",
@@ -1310,12 +2084,24 @@
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-061.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-062",
@@ -1334,12 +2120,24 @@
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-062.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-063",
@@ -1353,16 +2151,29 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-063.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-063.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Rejection/policy behavior verified; no code-drawn, stock, traced, alternate-backend, or legacy-art substitute was accepted."
     },
     {
       "id": "REQ-064",
@@ -1376,17 +2187,29 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-064.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-064.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": null,
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "72new-art families,3authentic evidence-media families,5historical records remain separately classified."
     },
     {
       "id": "REQ-065",
@@ -1405,12 +2228,24 @@
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-065.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-066",
@@ -1429,12 +2264,24 @@
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
+      "verification_records": [
+        "execution/evidence/REQ-066.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-067",
@@ -1448,16 +2295,29 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-067.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-067.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Synthetic local fixtures remain unmistakably synthetic and fail normal production publication."
     },
     {
       "id": "REQ-068",
@@ -1471,16 +2331,29 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-068.json",
-      "status": "in_progress",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
         "brand/tokens.css",
+        "brand/asset-manifest.json",
         "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
         "execution/art-model-attestation.json"
       ],
-      "verification_records": [],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-068.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Offline publisher and served sources have no implicit model/image calls. Artifact acceptance binds precomputed digests; no approved new art currently exists."
     },
     {
       "id": "REQ-069",
@@ -1496,10 +2369,28 @@
       "evidence_expected": "execution/evidence/REQ-069.json",
       "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
-      "verification_records": [],
-      "independent_reviewer": null,
-      "blocker": "Native child collaboration tools absent from depth-1 agent interface; no genuine depth-3 author/worker chain yet."
+      "implementation_paths": [
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-069.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "blocker": "The two required native Astra/max depth3 art-author leaves do not exist.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
     },
     {
       "id": "REQ-070",
@@ -1513,14 +2404,30 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-070.json",
-      "status": "implemented",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
-        "execution/art-model-attestation.json",
-        "brand/asset-manifest.json"
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
       ],
-      "verification_records": [],
-      "independent_reviewer": null
+      "verification_records": [
+        "execution/evidence/REQ-070.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Exact missing art jobs are blocked while engineering/text work continues. No unavailable model or source evidence is simulated."
     }
   ]
 }

@@ -6,9 +6,10 @@
   "review_boundary": {
     "collector_role": "W01-L",
     "collector_thread_id": "01a07a4e-d58b-7953-9513-872ffdf45469",
-    "independent_reviewer": "W03-L (source review only; findings repaired pending rereview)",
-    "independent_review_status": "source_provenance_repairs_pending_rereview",
-    "interpretation": "W03 independently reviewed the exact source records. That review is not a host rerun or the required depth-3 native reviewer ancestry. Original collector could not delegate; client metadata and runtime limits remain separate."
+    "independent_reviewer": "W03-L (source/provenance review only)",
+    "independent_review_status": "source_provenance_repairs_independently_reviewed",
+    "interpretation": "W03 independently reviewed the exact source records. That review is not a host rerun or the required depth-3 native reviewer ancestry. Original collector could not delegate; client metadata and runtime limits remain separate.",
+    "review_record": "execution/reviews/W03-W01-provenance-rereview.md"
   },
   "capabilities": [
     {

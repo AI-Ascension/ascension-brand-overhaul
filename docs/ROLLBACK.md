@@ -18,7 +18,7 @@ Verify the restored served HTML, expected route status, assets, headers and priv
 
 ## Repository presentation and names
 
-Revert presentation changes through ordinary reviewed commits without changing runtime identifiers or historical evidence. Follow `docs/MIGRATION_OPERATIONS.md` when the migration workstream is integrated. Before any reverse rename, re-query the stable repository ID, current name, default head, destination availability and current approval. A reverse rename is a new live operation, not a harmless local undo. Recheck redirects, Pages routes and Actions callers independently; a successful API response does not prove those consumers work. Never create placeholders at retired names.
+Revert presentation changes through ordinary reviewed commits without changing runtime identifiers or historical evidence. Follow `docs/MIGRATION_OPERATIONS.md` for the integrated migration tooling. Before any reverse rename, re-query the stable repository ID, current name, default head, destination availability and current approval. A reverse rename is a new live operation, not a harmless local undo. Recheck redirects, Pages routes and Actions callers independently; a successful API response does not prove those consumers work. Never create placeholders at retired names.
 
 ## Public reports and campaign material
 

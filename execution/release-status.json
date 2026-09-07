@@ -1,0 +1,56 @@
+{
+  "schema_version": "ai-ascension.release-status.v1",
+  "summary": "Private local engineering and text handoff with twelve draft PRs intended in total (website, ten companions, brand repository). The full overhaul is incomplete because mandatory artwork, native depth-three orchestration, and production evidence/authority remain absent. No merge, rename, deployment, public artifact publication, or campaign send was performed.",
+  "dimensions": {
+    "locally_verified": "189 package/contract tests pass at 038123684946a4be4ea830af4c04c2ea7059ad88; website and companion scopes separately recorded",
+    "independently_reviewed": "Engineering, source provenance, privacy, campaign, and presentation reviews recorded; final requirement/archive review pending",
+    "mandatory_artwork": "blocked: zero of 72 families and 115 required exports",
+    "native_orchestration": "blocked: seven depth 1 lead records; no required depth 2/depth 3 chain",
+    "draft_prs": "Website and ten companions open and exact-head verified; brand PR update pending",
+    "merged": "none performed",
+    "deployed": "none performed",
+    "campaign_operated": "none performed",
+    "public_export": "not authorized; local private audit only"
+  },
+  "verified_work": [
+    "Canonical Ascent Ledger functional tokens, copy hierarchy, and guarded immutable-revision content sync; consumer authority, locking, and rollback failure cases tested.",
+    "Website routes, report-only media, developer quickstart, subscription safety, keyboard/mobile/themes/reduced motion, and local HTTP journeys reviewed; 29 PHPUnit tests  / 111 assertions, 30 HTTP checks,110 route/theme states plus final homepage review.",
+    "Offline publisher with source/renderer/asset/URI authority binding, deterministic output, timeline and local guess/reveal; private/synthetic/forced/malformed/stale inputs rejected by production gate.",
+    "Measurement contracts separate game, infrastructure, synthetic, and unknown results and reject personal data; real measurement authority remains empty.",
+    "Migration tool checks identity/head/collision/Pages/Actions/authority and idempotency; 38 offline migration tests pass and a fresh 13-repository read-only plan is retained.",
+    "Ten companion presentation PRs independently reviewed with exact changed-file hashes;13 repository settings proposals and six-pin checklist prepared.",
+    "Twelve episode drafts, 24 clip drafts,six technical article outlines,launch/report-only alternatives,outreach/email templates, 72 content gates, and experiments with unobserved results.",
+    "All configured remote checks on the ten companion PRs pass at their recorded heads; website and companions reported mergeable. No-check repositories are distinguished in execution/reviews/companion-remote-checks-001.json."
+  ],
+  "remaining_conditions": [
+    "Restore actual native coordinator/leaf spawning and role-correct Luna/max and Astra/max observations; retain the twelve-open-descendant ceiling.",
+    "Provide attested gpt-image-2 access to the two native depth 3 Astra authors, then generate and independently inspect every required export under the original policy.",
+    "Supply approved sanitized run evidence, rights, captions, exact digest-bound publication approval, and enrolled authorities before a real public timeline/video/replay/card publication.",
+    "Reconcile active map/runtime work and unavailable Pages configuration before any authorized repository rename; refresh all mutable gates.",
+    "Authorize the exact reviewed PR merges and 13 proposed metadata changes when ready; generated-art and deployment acceptance remains separate.",
+    "Establish exact production branch/document root, protected changed-file backup, rollback destination, and scoped deployment authority before served-version/form checks.",
+    "Enroll consent/measurement authority before analytics activation; authorize each campaign publication or send and observe actual outcomes over time.",
+    "Keep the archive private; a future public projection needs independent content/privacy review and exact publication authority."
+  ],
+  "review_records": [
+    "execution/reviews/final-local-checks.json",
+    "execution/reviews/W03-W01-review.md",
+    "execution/reviews/W03-W01-provenance-rereview.md",
+    "execution/reviews/W01-companion-presentation-review.md",
+    "execution/reviews/W07-private-delivery-scope-review.md",
+    "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+    "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+    "docs/W07-L-W02-helper-rereview.md",
+    "execution/reviews/W01-W06-review.md",
+    "execution/reviews/W07-L-source-archive-privacy-rereview.md",
+    "execution/reviews/companion-remote-checks-001.json",
+    "execution/reviews/pages-use-size-001.json"
+  ],
+  "unverified_assumptions": [
+    "No provider-side execution attestation follows from installed-client thread metadata.",
+    "Local PHP 8.3.6 checks do not establish served PHP 8.3.33 or hosting-injected markup behavior.",
+    "Current static/source records may become stale while other sessions advance repositories.",
+    "No trademark clearance, game-host success, public video rights, or complete runtime compatibility is established by this work.",
+    "Input .gitignore was overwritten before first commit without preserving its original bytes; original digest and honest integrity incident record remain in execution/input-integrity/README.md."
+  ]
+}

@@ -709,6 +709,9 @@
     "runtime_v1_report_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
     "runtime_v1_reported_build_base": "97f3a2068452d2c1616c531a7dfad51fbd484cac",
     "runtime_v1_uncommitted_patch_collected": false,
-    "runtime_v1_package_bytes_collected": false
+    "runtime_v1_package_bytes_collected": false,
+    "complete_tree_metadata": "execution/source-tree-inventory.json",
+    "fresh_mutable_preflight": "execution/reviews/migration-preflight-002.json",
+    "mutable_state_limit": "This source snapshot remains the original pinned baseline. Later default-head/PR observations do not retroactively alter its dated source claims."
   }
 }

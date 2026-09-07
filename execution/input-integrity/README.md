@@ -1,6 +1,6 @@
 # Input integrity
 
-These are the supplied package integrity records, retained unchanged. Repository initialization replaced the 113-byte package `.gitignore` with a 60-byte implementation ignore file before the first commit. Its original content was not retained; its original digest is recorded here. The active integrity records explicitly reflect this change. Supplied entries remain checked against their original digests except the explicit implementation changes described below. New implementation files are tracked by Git and their own delivery evidence; the package integrity check alone does not cover them.
+These are the supplied package integrity records, retained unchanged. Repository initialization replaced the 113-byte package `.gitignore` with a 60-byte implementation ignore file before the first commit. Its original content was not retained; its original digest is recorded here. The active integrity records explicitly reflect this change. These retained records describe the supplied input, not the later implementation. Git history and the active root manifest record intentional implementation changes. The final package validator checks the complete current source candidate against that active manifest; it cannot reconstruct the lost original `.gitignore` bytes.
 
 The archive helper was then hardened to exclude private execution/client directories (case-insensitively) and refuse overwriting an existing delivery. Active integrity records track that reviewed implementation change separately from these original records.
 

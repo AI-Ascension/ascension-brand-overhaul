@@ -1,0 +1,38 @@
+{
+  "schema_version": "ai-ascension.local-checks.v1",
+  "source_revision": "038123684946a4be4ea830af4c04c2ea7059ad88",
+  "scope": "Clean git archive of exact revision; local contracts only",
+  "observed_at": "2026-09-07T17:31:21.349800+00:00",
+  "python_version": "3.12.3",
+  "tests": 189,
+  "result": "pass",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/validate_package.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.317
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 29.062
+    }
+  ],
+  "raw_receipt_sha256": "f85cb5a0b2b704e0350e9236796783b00c06cb0d89718a2b782ed594a9a7b4b1",
+  "raw_receipt_location": "ignored private evidence",
+  "limitations": [
+    "Not host, provider, deployment, production publication, art, or campaign validation.",
+    "Subsequent report-only commits need refreshed inventory validation; code changes require renewed relevant tests."
+  ]
+}
