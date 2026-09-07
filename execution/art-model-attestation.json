@@ -1,879 +1,1399 @@
 {
-  "observed_at": "2026-09-07T05:58:14.965898+00:00",
-  "status": "blocked",
-  "artwork_generated": false,
-  "generation_calls": 0,
-  "astra_authorship": {
-    "required_model": "gpt-6-astra",
-    "required_effort": "max",
-    "required_depth": 3,
-    "required_roles": [
-      "W02-C1-BUILD",
-      "W02-C2-BUILD"
-    ],
-    "actual_author_nodes": [],
-    "finding": "Depth-1 W01/W02 callable tool declarations lack native child spawning. Required author ancestry has not been created; no alternative ancestry used.",
-    "model_entitlement": "not tested in the required role; no claim that Astra itself is unavailable"
-  },
-  "image_route": {
-    "available_tool": "image_gen.imagegen",
-    "exposed_fields": [
-      "prompt",
-      "referenced_image_paths",
-      "num_last_images_to_include"
-    ],
-    "required_backend": "gpt-image-2",
-    "model_selection_field_exposed": false,
-    "backend_attestation": "unavailable in exposed schema/documentation",
-    "actual_backend": null,
-    "finding": "No generation was attempted with an unknown backend."
-  },
+  "observed_at": "2026-09-07T21:35:36.002811+00:00",
+  "status": "partial_artwork_verified_remaining_creative_work_blocked",
+  "artwork_generated": true,
+  "all_artwork_complete": false,
+  "successful_generation_calls_recorded": 32,
+  "failed_generation_calls_recorded": 3,
+  "generation_route": "user_authorized_root_image_tool",
+  "authorization_reference": "art/root-generation-authorization.json",
+  "actual_backend": null,
+  "backend_attested": false,
+  "author_model_attested": false,
+  "source_index": "brand/provenance/root-generation-index.json",
+  "export_receipts": "brand/provenance/root-export-receipts.json",
+  "service_limit_receipt": "execution/reviews/root-image-service-limit.json",
   "affected_artwork": [
     {
       "asset_id": "ID-01",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/identity/mark.png",
         "brand/assets/identity/mark-mono.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "ID-02",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/identity/ai-ascension-light.png",
         "brand/assets/identity/ai-ascension-dark.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "ID-03",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/identity/ascension-light.png",
         "brand/assets/identity/ascension-dark.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "ID-04",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/identity/the-climb-master.png",
         "brand/assets/identity/the-climb.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "ID-05",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/identity/avatar-1024.png",
         "brand/assets/identity/avatar-256.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "ID-06",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/identity/favicon.png",
         "brand/assets/identity/favicon-32.png",
         "brand/assets/identity/favicon-16.png",
         "brand/assets/identity/apple-touch-icon.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "ID-07",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/identity/icons.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "ID-08",
-      "status": "blocked",
-      "exports": [
-        "brand/assets/identity/specimen.html",
-        "brand/assets/identity/specimen.png"
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/identity/specimen.png",
+        "brand/assets/identity/specimen.html"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "BG-01",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/illustration/ascent-master.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "BG-02",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/illustration/broadcast-master.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "BG-03",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/illustration/series-master.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "BG-04",
       "status": "blocked",
-      "exports": [
+      "existing_exports": [
         "brand/assets/illustration/route-pattern-light.png",
         "brand/assets/illustration/route-pattern-dark.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": "Both tile exports exist, but the independent review found visible repeat seams. The mandatory seamless requirement needs a new generated master; image service capacity is unavailable."
     },
     {
       "asset_id": "WEB-01",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/web/home-desktop.webp",
         "brand/assets/web/home-mobile.webp"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "WEB-02",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/web/latest-run-poster.webp",
         "brand/assets/web/latest-run-poster-mobile.webp"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "WEB-03",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/web/path-watch.png",
         "brand/assets/web/path-build.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "WEB-04",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/web/site-og.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "WEB-05",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/web/404.png",
         "brand/assets/web/unavailable.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "WEB-06",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/web/subscribe-confirm.png",
         "brand/assets/web/subscribe-success.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "WEB-07",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/web/capabilities.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "WEB-08",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/web/map-preview.png",
         "brand/assets/web/map-preview-mobile.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "RUN-01",
       "status": "blocked",
-      "exports": [
-        "brand/assets/run/summary-template.png",
-        "brand/assets/run/summary-template-square.png"
+      "existing_exports": [
+        "brand/assets/run/summary-template.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": "The landscape export was independently reviewed. The required square export is missing and needs authored reflow after image service capacity returns."
     },
     {
       "asset_id": "RUN-02",
       "status": "blocked",
-      "exports": [
+      "existing_exports": [
         "brand/assets/run/decision-landscape.png",
-        "brand/assets/run/decision-square.png",
         "brand/assets/run/decision-vertical.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": "Landscape and vertical exports were independently reviewed. The required square export is missing and needs authored reflow after image service capacity returns."
     },
     {
       "asset_id": "RUN-03",
       "status": "blocked",
-      "exports": [
-        "brand/assets/run/timeline-template.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "A source master exists, but no required 1600\u00d7500 export exists. Independent review requires a new wide creative reflow; image service capacity is unavailable."
     },
     {
       "asset_id": "RUN-04",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/run/replay-receipt.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "RUN-05",
-      "status": "blocked",
-      "exports": [
+      "status": "verified",
+      "existing_exports": [
         "brand/assets/run/comparison-template.png"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": null
     },
     {
       "asset_id": "CAST-01",
       "status": "blocked",
-      "exports": [
-        "brand/assets/broadcast/single-agent-master.png",
-        "brand/assets/broadcast/single-agent.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "CAST-02",
       "status": "blocked",
-      "exports": [
-        "brand/assets/broadcast/comparison.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "CAST-03",
       "status": "blocked",
-      "exports": [
-        "brand/assets/broadcast/vertical.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "CAST-04",
       "status": "blocked",
-      "exports": [
-        "brand/assets/broadcast/starting.png",
-        "brand/assets/broadcast/intermission.png",
-        "brand/assets/broadcast/ended.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "CAST-05",
       "status": "blocked",
-      "exports": [
-        "brand/assets/broadcast/lower-third.png",
-        "brand/assets/broadcast/disclosure.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "CAST-06",
       "status": "blocked",
-      "exports": [
-        "brand/assets/broadcast/title-transition.webm",
-        "brand/assets/broadcast/title-transition-still.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "CAST-07",
       "status": "blocked",
-      "exports": [
-        "brand/assets/broadcast/scene-map.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "MKT-01",
       "status": "blocked",
-      "exports": [
-        "brand/assets/marketing/channel-cover.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "MKT-02",
       "status": "blocked",
-      "exports": [
-        "brand/assets/marketing/social-header.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "MKT-03",
       "status": "blocked",
-      "exports": [
-        "brand/assets/marketing/thumbnail-outcome.png",
-        "brand/assets/marketing/thumbnail-question.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "MKT-04",
       "status": "blocked",
-      "exports": [
-        "brand/assets/marketing/season-key-visual.png",
-        "brand/assets/marketing/season-key-visual-vertical.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "MKT-05",
       "status": "blocked",
-      "exports": [
-        "brand/assets/marketing/challenge-template.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "MKT-06",
       "status": "blocked",
-      "exports": [
-        "brand/assets/marketing/release-template.png",
-        "brand/assets/marketing/contributor-template.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "MKT-07",
       "status": "blocked",
-      "exports": [
-        "brand/assets/marketing/email-header.png",
-        "brand/assets/marketing/email-run-card.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "MKT-08",
       "status": "blocked",
-      "exports": [
-        "brand/assets/marketing/sponsor-disclosure.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "MKT-09",
       "status": "blocked",
-      "exports": [
-        "brand/assets/press/cover.png",
+      "existing_exports": [
         "brand/assets/press/index.html"
       ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "remaining_gate": "The functional press catalog exists and currently exposes zero downloads. The required generated cover is missing; image service capacity is unavailable. Public distribution approvals remain empty."
     },
     {
       "asset_id": "DOC-01",
       "status": "blocked",
-      "exports": [
-        "brand/assets/docs/runtime-architecture-master.png",
-        "brand/assets/docs/runtime-architecture.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "DOC-02",
       "status": "blocked",
-      "exports": [
-        "brand/assets/docs/publication-flow.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "DOC-03",
       "status": "blocked",
-      "exports": [
-        "brand/assets/docs/repository-map.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "DOC-04",
       "status": "blocked",
-      "exports": [
-        "brand/assets/docs/agent-tree.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "DOC-05",
       "status": "blocked",
-      "exports": [
-        "brand/assets/docs/contributor-path.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-01-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ascension-banner-light.png",
-        "brand/assets/github/ascension-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-01-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ascension-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-02-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-mcp-banner-light.png",
-        "brand/assets/github/sts2-mcp-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-02-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-mcp-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-03-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-mod-banner-light.png",
-        "brand/assets/github/sts2-mod-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-03-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-mod-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-04-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-core-banner-light.png",
-        "brand/assets/github/sts2-core-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-04-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-core-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-05-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-gateway-banner-light.png",
-        "brand/assets/github/sts2-gateway-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-05-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-gateway-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-06-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-protocol-banner-light.png",
-        "brand/assets/github/sts2-protocol-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-06-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-protocol-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-07-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-map-banner-light.png",
-        "brand/assets/github/sts2-map-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-07-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/sts2-map-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-08-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ascension-watchdog-banner-light.png",
-        "brand/assets/github/ascension-watchdog-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-08-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ascension-watchdog-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-09-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ascension-observability-banner-light.png",
-        "brand/assets/github/ascension-observability-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-09-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ascension-observability-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-10-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/website-banner-light.png",
-        "brand/assets/github/website-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-10-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/website-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-11-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
-        "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-11-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ai-ascensiondot-githubdot-io-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-12-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/dot-github-banner-light.png",
-        "brand/assets/github/dot-github-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-12-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/dot-github-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-13-B",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ascension-brand-overhaul-banner-light.png",
-        "brand/assets/github/ascension-brand-overhaul-banner-dark.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     },
     {
       "asset_id": "GH-13-S",
       "status": "blocked",
-      "exports": [
-        "brand/assets/github/ascension-brand-overhaul-social.png"
-      ],
-      "blockers": [
-        "required native Astra author chain unavailable",
-        "exact image backend selection/attestation unavailable"
-      ]
+      "existing_exports": [],
+      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
     }
   ],
-  "evidence_media": "Separate three-family registry remains unchanged; none newly captured or approved.",
-  "historical_references": "Separate five-family registry remains reference-only.",
-  "independent_engineering": "Functional tokens, publishing, website, migration and campaign text continue.",
-  "observed_records": [
-    "execution/w02-access.json",
-    "brand/ART_ACCESS.md"
-  ],
-  "review_status": "pending independent W07 review",
-  "latest_runtime_observation": "execution/runtime-observation.json",
-  "latest_child_capability_review": "execution/reviews/W03-W01-review.md",
-  "latest_child_capability_result": "W03 actual callable-surface check again returned no collaboration or child-spawn tool; no depth2/depth3 identity exists."
+  "historical_pre_amendment_snapshot": {
+    "observed_at": "2026-09-07T05:58:14.965898+00:00",
+    "status": "blocked",
+    "artwork_generated": false,
+    "generation_calls": 0,
+    "astra_authorship": {
+      "required_model": "gpt-6-astra",
+      "required_effort": "max",
+      "required_depth": 3,
+      "required_roles": [
+        "W02-C1-BUILD",
+        "W02-C2-BUILD"
+      ],
+      "actual_author_nodes": [],
+      "finding": "Depth-1 W01/W02 callable tool declarations lack native child spawning. Required author ancestry has not been created; no alternative ancestry used.",
+      "model_entitlement": "not tested in the required role; no claim that Astra itself is unavailable"
+    },
+    "image_route": {
+      "available_tool": "image_gen.imagegen",
+      "exposed_fields": [
+        "prompt",
+        "referenced_image_paths",
+        "num_last_images_to_include"
+      ],
+      "required_backend": "gpt-image-2",
+      "model_selection_field_exposed": false,
+      "backend_attestation": "unavailable in exposed schema/documentation",
+      "actual_backend": null,
+      "finding": "No generation was attempted with an unknown backend."
+    },
+    "affected_artwork": [
+      {
+        "asset_id": "ID-01",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/identity/mark.png",
+          "brand/assets/identity/mark-mono.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "ID-02",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/identity/ai-ascension-light.png",
+          "brand/assets/identity/ai-ascension-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "ID-03",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/identity/ascension-light.png",
+          "brand/assets/identity/ascension-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "ID-04",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/identity/the-climb-master.png",
+          "brand/assets/identity/the-climb.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "ID-05",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/identity/avatar-1024.png",
+          "brand/assets/identity/avatar-256.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "ID-06",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/identity/favicon.png",
+          "brand/assets/identity/favicon-32.png",
+          "brand/assets/identity/favicon-16.png",
+          "brand/assets/identity/apple-touch-icon.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "ID-07",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/identity/icons.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "ID-08",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/identity/specimen.html",
+          "brand/assets/identity/specimen.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "BG-01",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/illustration/ascent-master.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "BG-02",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/illustration/broadcast-master.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "BG-03",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/illustration/series-master.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "BG-04",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/illustration/route-pattern-light.png",
+          "brand/assets/illustration/route-pattern-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "WEB-01",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/web/home-desktop.webp",
+          "brand/assets/web/home-mobile.webp"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "WEB-02",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/web/latest-run-poster.webp",
+          "brand/assets/web/latest-run-poster-mobile.webp"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "WEB-03",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/web/path-watch.png",
+          "brand/assets/web/path-build.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "WEB-04",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/web/site-og.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "WEB-05",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/web/404.png",
+          "brand/assets/web/unavailable.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "WEB-06",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/web/subscribe-confirm.png",
+          "brand/assets/web/subscribe-success.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "WEB-07",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/web/capabilities.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "WEB-08",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/web/map-preview.png",
+          "brand/assets/web/map-preview-mobile.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "RUN-01",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/run/summary-template.png",
+          "brand/assets/run/summary-template-square.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "RUN-02",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/run/decision-landscape.png",
+          "brand/assets/run/decision-square.png",
+          "brand/assets/run/decision-vertical.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "RUN-03",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/run/timeline-template.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "RUN-04",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/run/replay-receipt.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "RUN-05",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/run/comparison-template.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "CAST-01",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/broadcast/single-agent-master.png",
+          "brand/assets/broadcast/single-agent.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "CAST-02",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/broadcast/comparison.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "CAST-03",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/broadcast/vertical.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "CAST-04",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/broadcast/starting.png",
+          "brand/assets/broadcast/intermission.png",
+          "brand/assets/broadcast/ended.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "CAST-05",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/broadcast/lower-third.png",
+          "brand/assets/broadcast/disclosure.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "CAST-06",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/broadcast/title-transition.webm",
+          "brand/assets/broadcast/title-transition-still.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "CAST-07",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/broadcast/scene-map.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "MKT-01",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/marketing/channel-cover.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "MKT-02",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/marketing/social-header.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "MKT-03",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/marketing/thumbnail-outcome.png",
+          "brand/assets/marketing/thumbnail-question.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "MKT-04",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/marketing/season-key-visual.png",
+          "brand/assets/marketing/season-key-visual-vertical.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "MKT-05",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/marketing/challenge-template.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "MKT-06",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/marketing/release-template.png",
+          "brand/assets/marketing/contributor-template.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "MKT-07",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/marketing/email-header.png",
+          "brand/assets/marketing/email-run-card.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "MKT-08",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/marketing/sponsor-disclosure.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "MKT-09",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/press/cover.png",
+          "brand/assets/press/index.html"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "DOC-01",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/docs/runtime-architecture-master.png",
+          "brand/assets/docs/runtime-architecture.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "DOC-02",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/docs/publication-flow.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "DOC-03",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/docs/repository-map.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "DOC-04",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/docs/agent-tree.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "DOC-05",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/docs/contributor-path.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-01-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ascension-banner-light.png",
+          "brand/assets/github/ascension-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-01-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ascension-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-02-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-mcp-banner-light.png",
+          "brand/assets/github/sts2-mcp-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-02-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-mcp-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-03-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-mod-banner-light.png",
+          "brand/assets/github/sts2-mod-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-03-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-mod-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-04-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-core-banner-light.png",
+          "brand/assets/github/sts2-core-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-04-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-core-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-05-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-gateway-banner-light.png",
+          "brand/assets/github/sts2-gateway-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-05-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-gateway-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-06-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-protocol-banner-light.png",
+          "brand/assets/github/sts2-protocol-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-06-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-protocol-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-07-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-map-banner-light.png",
+          "brand/assets/github/sts2-map-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-07-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/sts2-map-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-08-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ascension-watchdog-banner-light.png",
+          "brand/assets/github/ascension-watchdog-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-08-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ascension-watchdog-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-09-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ascension-observability-banner-light.png",
+          "brand/assets/github/ascension-observability-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-09-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ascension-observability-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-10-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/website-banner-light.png",
+          "brand/assets/github/website-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-10-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/website-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-11-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+          "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-11-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ai-ascensiondot-githubdot-io-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-12-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/dot-github-banner-light.png",
+          "brand/assets/github/dot-github-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-12-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/dot-github-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-13-B",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ascension-brand-overhaul-banner-light.png",
+          "brand/assets/github/ascension-brand-overhaul-banner-dark.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      },
+      {
+        "asset_id": "GH-13-S",
+        "status": "blocked",
+        "exports": [
+          "brand/assets/github/ascension-brand-overhaul-social.png"
+        ],
+        "blockers": [
+          "required native Astra author chain unavailable",
+          "exact image backend selection/attestation unavailable"
+        ]
+      }
+    ],
+    "evidence_media": "Separate three-family registry remains unchanged; none newly captured or approved.",
+    "historical_references": "Separate five-family registry remains reference-only.",
+    "independent_engineering": "Functional tokens, publishing, website, migration and campaign text continue.",
+    "observed_records": [
+      "execution/w02-access.json",
+      "brand/ART_ACCESS.md"
+    ],
+    "review_status": "pending independent W07 review",
+    "latest_runtime_observation": "execution/runtime-observation.json",
+    "latest_child_capability_review": "execution/reviews/W03-W01-review.md",
+    "latest_child_capability_result": "W03 actual callable-surface check again returned no collaboration or child-spawn tool; no depth2/depth3 identity exists."
+  },
+  "verified_families": 21,
+  "existing_exports": 42,
+  "acceptance_reference": "execution/root-art-acceptance.json"
 }

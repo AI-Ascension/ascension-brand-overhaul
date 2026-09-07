@@ -167,13 +167,22 @@
       ]
     },
     "origin": {
-      "const": "astra_authored_gpt_image_2"
+      "enum": [
+        "astra_authored_gpt_image_2",
+        "root_user_authorized_image_tool"
+      ]
     },
     "generation_records": {
       "type": "array",
       "items": {
         "$ref": "art-generation.schema.json"
       }
+    },
+    "generation_route": {
+      "enum": [
+        "astra_gpt_image_2",
+        "user_authorized_root_image_tool"
+      ]
     }
   },
   "required": [
@@ -215,6 +224,32 @@
           },
           "blocker": {
             "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "generation_route": {
+            "const": "user_authorized_root_image_tool"
+          }
+        },
+        "required": [
+          "generation_route"
+        ]
+      },
+      "then": {
+        "properties": {
+          "origin": {
+            "const": "root_user_authorized_image_tool"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "origin": {
+            "const": "astra_authored_gpt_image_2"
           }
         }
       }

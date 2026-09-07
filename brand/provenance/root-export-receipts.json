@@ -1,0 +1,1055 @@
+{
+  "schema_version": "root-mechanical-export-receipts-v1",
+  "exports": [
+    {
+      "asset_id": "ID-01",
+      "source_path": "brand/sources/generated/ID-01/generation-004.png",
+      "crop_box": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "output_path": "brand/assets/identity/mark.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "f2179261ad9b0b17a679838fd6ba4cb521966bf61816be4d9ca8c4e53be036f9",
+      "output_sha256": "df78cf0b82c61e56e519785e399b1412bb3fb228cf5006febabee8471bf3656c",
+      "output_bytes": 4437,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-01",
+      "source_path": "brand/sources/generated/ID-01/generation-004.png",
+      "crop_box": [
+        887,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "output_path": "brand/assets/identity/mark-mono.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "f2179261ad9b0b17a679838fd6ba4cb521966bf61816be4d9ca8c4e53be036f9",
+      "output_sha256": "4f3a2e91d0bc420a658de9b41d4c33898fef5ae898c80facb5db151c6b0e7ec1",
+      "output_bytes": 4487,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-02",
+      "source_path": "brand/sources/generated/ID-02/generation-001.png",
+      "crop_box": [
+        0,
+        59,
+        1774,
+        384
+      ],
+      "size": [
+        1200,
+        220
+      ],
+      "output_path": "brand/assets/identity/ai-ascension-light.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "3a71c24c0dd6d26e5bcb35fdc00edbd76e16f9d9827754a6f7f099852bb76a5b",
+      "output_sha256": "a712a91d522f7e89c612e813f8fd6b84125ddcd2e31bc4c18f655b6c89a55c76",
+      "output_bytes": 201607,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-02",
+      "source_path": "brand/sources/generated/ID-02/generation-001.png",
+      "crop_box": [
+        0,
+        502,
+        1774,
+        827
+      ],
+      "size": [
+        1200,
+        220
+      ],
+      "output_path": "brand/assets/identity/ai-ascension-dark.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "3a71c24c0dd6d26e5bcb35fdc00edbd76e16f9d9827754a6f7f099852bb76a5b",
+      "output_sha256": "3ec535ff647ece972c6bd9590f6b61f3e9859ac361e002240c79f53874d2b35d",
+      "output_bytes": 198982,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-03",
+      "source_path": "brand/sources/generated/ID-03/generation-001.png",
+      "crop_box": [
+        263,
+        0,
+        1908,
+        362
+      ],
+      "size": [
+        1000,
+        220
+      ],
+      "output_path": "brand/assets/identity/ascension-light.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "44277b3a0ec36dc112720aae4c1b8195378deb4aee4951c3e9acc2bb6d3b3500",
+      "output_sha256": "688d3ef3d73d9bc62a14ea77e9f9b845c0d7e85a974d42e46935dee3e3d2a9b5",
+      "output_bytes": 183974,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-03",
+      "source_path": "brand/sources/generated/ID-03/generation-001.png",
+      "crop_box": [
+        263,
+        362,
+        1908,
+        724
+      ],
+      "size": [
+        1000,
+        220
+      ],
+      "output_path": "brand/assets/identity/ascension-dark.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "44277b3a0ec36dc112720aae4c1b8195378deb4aee4951c3e9acc2bb6d3b3500",
+      "output_sha256": "7623c76492838ff2f947ea23b3bf4c599ecd67b9800f3617592246f56603bd8a",
+      "output_bytes": 180603,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-04",
+      "source_path": "brand/sources/generated/ID-04/generation-001.png",
+      "crop_box": [
+        0,
+        127,
+        1942,
+        682
+      ],
+      "size": [
+        1400,
+        400
+      ],
+      "output_path": "brand/assets/identity/the-climb-master.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "a09ba42d43372ad1c0461e4feb9b75bf604f76cadda2e5dbcb2ee4670028d80c",
+      "output_sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156",
+      "output_bytes": 387844,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-04",
+      "source_path": "brand/sources/generated/ID-04/generation-001.png",
+      "crop_box": [
+        0,
+        127,
+        1942,
+        682
+      ],
+      "size": [
+        1400,
+        400
+      ],
+      "output_path": "brand/assets/identity/the-climb.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "a09ba42d43372ad1c0461e4feb9b75bf604f76cadda2e5dbcb2ee4670028d80c",
+      "output_sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156",
+      "output_bytes": 387844,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-05",
+      "source_path": "brand/sources/generated/ID-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "output_path": "brand/assets/identity/avatar-1024.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "355c6f50d4263e7a6b04ad2e6ddaf6b5d33ec346e2e4b8e98c69548053632445",
+      "output_sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+      "output_bytes": 614142,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-05",
+      "source_path": "brand/sources/generated/ID-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "output_path": "brand/assets/identity/avatar-256.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "355c6f50d4263e7a6b04ad2e6ddaf6b5d33ec346e2e4b8e98c69548053632445",
+      "output_sha256": "585eeb86eab23f06b6b4d7e606b56b6b00cb0037496d991ec2624da8c52b7d4e",
+      "output_bytes": 45423,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "output_path": "brand/assets/identity/favicon.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
+      "output_sha256": "b94d0ea4f03cc73d0459426e61b3977ab7bb609d9902a4ecbb59a640244a95ea",
+      "output_bytes": 4301,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "output_path": "brand/assets/identity/favicon-32.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
+      "output_sha256": "dbb3bef4fed5398a7fa1b53981f5b9473e4bcdfa3f5ea52b26d9c3261279cccb",
+      "output_bytes": 1646,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "output_path": "brand/assets/identity/favicon-16.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
+      "output_sha256": "256b18b8a6c79286b824e06fd8095019da7bb1df39ef282ee2471f7c202421f9",
+      "output_bytes": 648,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        180,
+        180
+      ],
+      "output_path": "brand/assets/identity/apple-touch-icon.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
+      "output_sha256": "902a544011f7314bce6e0f46027409f0895aff07ab964a85a82c62a002bbe019",
+      "output_bytes": 26272,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-07",
+      "source_path": "brand/sources/generated/ID-07/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "output_path": "brand/assets/identity/icons.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "0fcc0b9f244470de56c70d04be1fc6dcb3e976b5aaf19a695026d952aa3524ab",
+      "output_sha256": "6ae239eb3b509b77ce00cafaad5cc9b5edce93b4c09e68b417e25cb44780bc09",
+      "output_bytes": 712577,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "ID-08",
+      "source_path": "brand/sources/generated/ID-08/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1122,
+        1402
+      ],
+      "size": [
+        1600,
+        2000
+      ],
+      "output_path": "brand/assets/identity/specimen.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "28f9343f13307ea672db605c2021cf362d9c054ad93b3412f470638009103766",
+      "output_sha256": "97272f6704cda951761eb97c9027b001dd41d072f7242e4ccd9b572733aee49e",
+      "output_bytes": 2258107,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "BG-01",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "size": [
+        2400,
+        1600
+      ],
+      "output_path": "brand/assets/illustration/ascent-master.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+      "output_sha256": "4545652f3e1026e9d14e052ddb02720119e899bcc80c14ec6d46adb6134bba5d",
+      "output_bytes": 4362145,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "BG-02",
+      "source_path": "brand/sources/generated/BG-02/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "size": [
+        2560,
+        1440
+      ],
+      "output_path": "brand/assets/illustration/broadcast-master.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "5be7e3b68f65d6ec31860984521390091d7cc0496d1f2280ed04cc524add5ead",
+      "output_sha256": "b9ef900991511a3edb9f8356ca491215110b6149ba1412ff8930fdc094f3c9ec",
+      "output_bytes": 2774396,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "BG-03",
+      "source_path": "brand/sources/generated/BG-03/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        2160,
+        2160
+      ],
+      "output_path": "brand/assets/illustration/series-master.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "0ff4f0492163d0e95ac0a0055aef38991ec1096a3a2f9cd58b26634b77395c66",
+      "output_sha256": "e41579d621bea4eb6e1c1abbd47cd7ebbaa72544481eb6b69f33f64cb90aefbb",
+      "output_bytes": 4653353,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "BG-04",
+      "source_path": "brand/sources/generated/BG-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "size": [
+        800,
+        800
+      ],
+      "output_path": "brand/assets/illustration/route-pattern-light.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "8f9fd2025a5897559a89ce83cc16ab6ea1a3779fdee0e54c4fcde82efcec072e",
+      "output_sha256": "028451e0b6b44c874b6ac670a03b37c743ed376e7f072966a087b0e0954d4b49",
+      "output_bytes": 392768,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "BG-04",
+      "source_path": "brand/sources/generated/BG-04/generation-001.png",
+      "crop_box": [
+        887,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        800,
+        800
+      ],
+      "output_path": "brand/assets/illustration/route-pattern-dark.png",
+      "review_state": "ready_for_mechanical_export",
+      "source_sha256": "8f9fd2025a5897559a89ce83cc16ab6ea1a3779fdee0e54c4fcde82efcec072e",
+      "output_sha256": "f8703b4c727ee298087b150d170985d9580f0f4704483a12777da2192e086ff1",
+      "output_bytes": 395315,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-01",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "crop_box": [
+        0,
+        32,
+        1536,
+        992
+      ],
+      "size": [
+        1600,
+        1000
+      ],
+      "output_path": "brand/assets/web/home-desktop.webp",
+      "review_state": "pending_independent_review",
+      "source_sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+      "output_sha256": "58b2dde67a37aa71292acc306ad43f9aeea80cd9ff557b275a631990fd3cad19",
+      "output_bytes": 111128,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false,
+      "encoding": {
+        "lossless": false,
+        "quality": 86,
+        "method": 6
+      }
+    },
+    {
+      "asset_id": "WEB-01",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "crop_box": [
+        358,
+        0,
+        1177,
+        1024
+      ],
+      "size": [
+        800,
+        1000
+      ],
+      "output_path": "brand/assets/web/home-mobile.webp",
+      "review_state": "pending_independent_review",
+      "source_sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+      "output_sha256": "9f5c58f090c29eb235acc66fce55ae5888eaff99b16e5636e8e261e97c65efb9",
+      "output_bytes": 47376,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false,
+      "encoding": {
+        "lossless": false,
+        "quality": 86,
+        "method": 6
+      }
+    },
+    {
+      "asset_id": "WEB-02",
+      "source_path": "brand/sources/generated/WEB-02/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/web/latest-run-poster.webp",
+      "review_state": "pending_independent_review",
+      "source_sha256": "3bff30fbf01cbd531a9a58a42b77beda1d04b4fb07ef88a34815c7295e57373b",
+      "output_sha256": "95ed105e415a6aa7a3c076a4dfc414ce9e93a61a349e3504cde3680b4b614c28",
+      "output_bytes": 1412322,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-02",
+      "source_path": "brand/sources/generated/WEB-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "size": [
+        900,
+        1200
+      ],
+      "output_path": "brand/assets/web/latest-run-poster-mobile.webp",
+      "review_state": "pending_independent_review",
+      "source_sha256": "09b8448d5b0d921390ea310e2ad1323f3e8b6ecb9e0ece3a6edaba74239e03e5",
+      "output_sha256": "b4dc73d00d308e4365a984a9aa74f20aa6308e5db8f97db171bdb542c3877204",
+      "output_bytes": 1098978,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-03",
+      "source_path": "brand/sources/generated/WEB-03/generation-001.png",
+      "crop_box": [
+        0,
+        235,
+        887,
+        789
+      ],
+      "size": [
+        800,
+        500
+      ],
+      "output_path": "brand/assets/web/path-watch.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "efd8646759aeb0c176bcde3eb6b449e0e9f4defd3ec5154a576d6d261b715e86",
+      "output_sha256": "cbfdd6b79a0cfca7f43c741d5fb962a95476389cd9fa9deae388667d00b125fa",
+      "output_bytes": 266136,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-03",
+      "source_path": "brand/sources/generated/WEB-03/generation-001.png",
+      "crop_box": [
+        887,
+        235,
+        1774,
+        789
+      ],
+      "size": [
+        800,
+        500
+      ],
+      "output_path": "brand/assets/web/path-build.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "efd8646759aeb0c176bcde3eb6b449e0e9f4defd3ec5154a576d6d261b715e86",
+      "output_sha256": "082a5514431c9c4f89c04517ee3f12c8050e61e3a82e8a58ec8c8934b87fab24",
+      "output_bytes": 256831,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-04",
+      "source_path": "brand/sources/generated/WEB-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        908
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/web/site-og.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "a296dd381e0fabe451b533d60b24357908970f1e61be4c1befff56e4c5ad2e5b",
+      "output_sha256": "684ca219c6f4bfbdbc976a7a6fabd07571ef05f801942a635ff1e4b5c940c937",
+      "output_bytes": 991951,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-05",
+      "source_path": "brand/sources/generated/WEB-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1024,
+        768
+      ],
+      "size": [
+        800,
+        600
+      ],
+      "output_path": "brand/assets/web/404.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "0598f68e066ac15767d24d3e1d547d2ec19a17576d3e9fc97431575434dbe3f0",
+      "output_sha256": "20708d150db81489c53e4153b1c8273175b4265324c8d2ca293d6aeafd1190bd",
+      "output_bytes": 316246,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-05",
+      "source_path": "brand/sources/generated/WEB-05/generation-001.png",
+      "crop_box": [
+        1024,
+        0,
+        2048,
+        768
+      ],
+      "size": [
+        800,
+        600
+      ],
+      "output_path": "brand/assets/web/unavailable.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "0598f68e066ac15767d24d3e1d547d2ec19a17576d3e9fc97431575434dbe3f0",
+      "output_sha256": "1b2388061f132853235dfe54a65d56a306d1100ac61f8f684dac419bd94dc7d2",
+      "output_bytes": 282605,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-06",
+      "source_path": "brand/sources/generated/WEB-06/generation-001.png",
+      "crop_box": [
+        0,
+        157,
+        836,
+        784
+      ],
+      "size": [
+        400,
+        300
+      ],
+      "output_path": "brand/assets/web/subscribe-confirm.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "a3dded6f46a32d0fcdb2f45224a3565748bbea1a6a2b19b9dd6bf622aadd0173",
+      "output_sha256": "9b29588a0746cc43ff563d4eb60074e5b18afc271f43c3162a7eeb3941ecfb72",
+      "output_bytes": 91526,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-06",
+      "source_path": "brand/sources/generated/WEB-06/generation-001.png",
+      "crop_box": [
+        836,
+        157,
+        1672,
+        784
+      ],
+      "size": [
+        400,
+        300
+      ],
+      "output_path": "brand/assets/web/subscribe-success.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "a3dded6f46a32d0fcdb2f45224a3565748bbea1a6a2b19b9dd6bf622aadd0173",
+      "output_sha256": "1859fff07e055ac8291de414d445045164f2bd71af85bcc58e078a416707c0a8",
+      "output_bytes": 96924,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-07",
+      "source_path": "brand/sources/generated/WEB-07/generation-002.png",
+      "crop_box": [
+        2,
+        0,
+        1564,
+        1004
+      ],
+      "size": [
+        1400,
+        900
+      ],
+      "output_path": "brand/assets/web/capabilities.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "4a091df54539ac8b95c6e7edabd7f4d502e8bc12836f4767bff6c5bb4d786f45",
+      "output_sha256": "5f58ef856ab6eaeb5ee0f784b79893ea947861aa855f004e909735c5a6e88661",
+      "output_bytes": 1165512,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-08",
+      "source_path": "brand/sources/generated/WEB-08/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "size": [
+        1440,
+        960
+      ],
+      "output_path": "brand/assets/web/map-preview.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "2c2c9f3d0c2d57c8de90ac340ba849b84f437d13fb1440d72a3cb0a79fea2b50",
+      "output_sha256": "0e9723738c99e12fcb90d820c7fa580debccc495c6a8e5dbf836216a3c3ac010",
+      "output_bytes": 1253360,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "WEB-08",
+      "source_path": "brand/sources/generated/WEB-08/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "size": [
+        900,
+        1200
+      ],
+      "output_path": "brand/assets/web/map-preview-mobile.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "1ae5c9bfd6d6b7bdcd68069bc558ebc90483a728e0ac402f3dab1ed8d820ba60",
+      "output_sha256": "e8120038a768a50ff208dbb93027afcb38288136c24400d18231a64cd228bf96",
+      "output_bytes": 1009070,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "RUN-01",
+      "source_path": "brand/sources/generated/RUN-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        908
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/run/summary-template.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "258c5237705b0384531552c5ea8bd9b2ab27a6ce20c9041766ba654a952b9579",
+      "output_sha256": "bfce85dd8894e2a5f030b02f3b1eb2c3b91b63e90235e58f52a9d879d2fd6215",
+      "output_bytes": 634425,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "RUN-02",
+      "source_path": "brand/sources/generated/RUN-02/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1731,
+        909
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/run/decision-landscape.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "72bb09ff9e071529e50665bef37a8fa55dbd27c5750ffb35330f9c987e6dddc6",
+      "output_sha256": "0d71b2965863d98a6d089a866484fd239df052839b25486f6ae374588423446c",
+      "output_bytes": 739767,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "RUN-02",
+      "source_path": "brand/sources/generated/RUN-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        940,
+        1672
+      ],
+      "size": [
+        1080,
+        1920
+      ],
+      "output_path": "brand/assets/run/decision-vertical.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "f0d07c6648cbd75be128e265be9bbd17b3de4aa39f6f1dd34721832b6ac2c946",
+      "output_sha256": "3b9eaa4c73bb5d67c8e19a4e138ad7aebc95364f012b7a352efdac478e41d534",
+      "output_bytes": 1819945,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "RUN-04",
+      "source_path": "brand/sources/generated/RUN-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        908
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/run/replay-receipt.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "21cb55f1fe882a1185129b25e90c79c68ea6ea5b1c39e333d85745e382374ca6",
+      "output_sha256": "5c08997cdf34f5e86b13e58a9a17fa279583a42c209d8218c6e5b3e1ba3e69b0",
+      "output_bytes": 523673,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "RUN-05",
+      "source_path": "brand/sources/generated/RUN-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/run/comparison-template.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "b014c353cde347d51d52486473ae2d32f9e60bdaee932d0186d14db75aef0c6d",
+      "output_sha256": "b66fe8206d3dd85cca32229df6a2b81b61467b1df63c485f329ccd991c27b224",
+      "output_bytes": 999250,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    }
+  ]
+}

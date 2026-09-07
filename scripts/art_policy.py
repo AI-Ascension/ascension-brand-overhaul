@@ -189,6 +189,11 @@ def validate_generation_record(record: dict, planned: dict, root: Path, ledger: 
         if record.get('provider_revised_prompt_path'):
             verify_hash(root, record['provider_revised_prompt_path'], record['provider_revised_prompt_sha256'])
             check(bool(record.get('revised_prompt_astra_review_reference')), 'Tool-revised prompt needs Astra review evidence.')
+        for reference in record.get('reference_inputs', []):
+            verify_hash(root, reference['reference'], reference['sha256'])
+            rights = reference.get('rights_reference')
+            check(isinstance(rights, str) and bool(rights.strip()) and not rights.startswith('pending:'),
+                  'Reference input needs a completed source-use review.')
         outputs = record.get('raw_outputs', [])
         check(bool(outputs), 'No original generated output.')
         check(len({o['path'] for o in outputs}) == len(outputs), 'Duplicate raw output path.')

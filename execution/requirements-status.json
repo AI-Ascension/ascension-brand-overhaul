@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T18:31:43.671283+00:00",
+  "updated_at": "2026-09-07T21:55:28.284639+00:00",
   "scope": "Full MASTER_PROMPT.md and binding data/requirements.json; status is execution evidence, not package validation",
   "acceptance_boundary": "Per-row local/source/control status. The full overhaul is incomplete while any mandatory asset or native-depth requirement is blocked.",
   "requirements": [
@@ -231,18 +231,36 @@
         "art/evidence-media-registry.json",
         "art/reference-registry.json",
         "art/generation-policy.json",
-        "execution/art-model-attestation.json"
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-007.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
-      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
-      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
       "id": "REQ-008",
@@ -268,18 +286,36 @@
         "art/evidence-media-registry.json",
         "art/reference-registry.json",
         "art/generation-policy.json",
-        "execution/art-model-attestation.json"
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-008.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
-      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
-      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
       "id": "REQ-009",
@@ -305,18 +341,36 @@
         "art/evidence-media-registry.json",
         "art/reference-registry.json",
         "art/generation-policy.json",
-        "execution/art-model-attestation.json"
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-009.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
-      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
-      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
       "id": "REQ-010",
@@ -342,18 +396,36 @@
         "art/evidence-media-registry.json",
         "art/reference-registry.json",
         "art/generation-policy.json",
-        "execution/art-model-attestation.json"
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-010.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
-      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
-      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
       "id": "REQ-011",
@@ -379,18 +451,36 @@
         "art/evidence-media-registry.json",
         "art/reference-registry.json",
         "art/generation-policy.json",
-        "execution/art-model-attestation.json"
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-011.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
-      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
-      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
       "id": "REQ-012",
@@ -422,7 +512,8 @@
         "execution/evidence/REQ-012.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
       "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
       "blocker": null,
@@ -455,9 +546,12 @@
         "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -488,9 +582,12 @@
         "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -521,9 +618,12 @@
         "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -554,9 +654,12 @@
         "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -587,9 +690,12 @@
         "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -620,9 +726,12 @@
         "execution/reviews/W07-final-acceptance-source-review.md",
         "execution/reviews/W03-repair-review-002.json",
         "execution/reviews/subscription-http-review-002.json",
-        "execution/reviews/website-home-review-001.json"
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
       ],
-      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
       "blocker": null,
       "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
@@ -1379,7 +1488,8 @@
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
-        "execution/reviews/companion-remote-checks-001.json"
+        "execution/reviews/companion-remote-checks-001.json",
+        "execution/reviews/root-native-capability-recheck.json"
       ],
       "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
@@ -1606,7 +1716,8 @@
         "execution/evidence/REQ-045.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
       "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
       "blocker": null,
@@ -1640,7 +1751,8 @@
         "execution/evidence/REQ-046.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
       "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
@@ -1674,7 +1786,8 @@
         "execution/evidence/REQ-047.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
       "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
@@ -1999,7 +2112,8 @@
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
-        "execution/reviews/companion-remote-checks-001.json"
+        "execution/reviews/companion-remote-checks-001.json",
+        "execution/reviews/root-native-capability-recheck.json"
       ],
       "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
       "blocker": "Seven depth1 Luna/max leads are observed in client metadata. The47ordinary/twoAstra role catalog is not executed or fully attested.",
@@ -2039,7 +2153,8 @@
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
-        "execution/reviews/companion-remote-checks-001.json"
+        "execution/reviews/companion-remote-checks-001.json",
+        "execution/reviews/root-native-capability-recheck.json"
       ],
       "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
       "blocker": "No depth2/depth3 nodes exist. The user raised the concurrent-descendant limit to250; capacity does not supply missing native child-spawn tools. Historical seven-lead observations remain scoped to their recorded time.",
@@ -2149,18 +2264,36 @@
         "art/evidence-media-registry.json",
         "art/reference-registry.json",
         "art/generation-policy.json",
-        "execution/art-model-attestation.json"
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-061.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
-      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
-      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
       "id": "REQ-062",
@@ -2185,18 +2318,36 @@
         "art/evidence-media-registry.json",
         "art/reference-registry.json",
         "art/generation-policy.json",
-        "execution/art-model-attestation.json"
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-062.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
-      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
-      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
       "id": "REQ-063",
@@ -2227,7 +2378,8 @@
         "execution/evidence/REQ-063.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
       "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
@@ -2263,7 +2415,8 @@
         "execution/evidence/REQ-064.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
       "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
       "blocker": null,
@@ -2293,18 +2446,36 @@
         "art/evidence-media-registry.json",
         "art/reference-registry.json",
         "art/generation-policy.json",
-        "execution/art-model-attestation.json"
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-065.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
-      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
-      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
       "id": "REQ-066",
@@ -2329,18 +2500,36 @@
         "art/evidence-media-registry.json",
         "art/reference-registry.json",
         "art/generation-policy.json",
-        "execution/art-model-attestation.json"
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
       ],
       "verification_records": [
         "execution/evidence/REQ-066.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
-      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
-      "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
+      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
-      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
       "id": "REQ-067",
@@ -2371,7 +2560,8 @@
         "execution/evidence/REQ-067.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
       "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
@@ -2407,7 +2597,8 @@
         "execution/evidence/REQ-068.json",
         "execution/reviews/asset-gate-001.json",
         "docs/W07-L-W02-helper-rereview.md",
-        "execution/reviews/W07-private-delivery-scope-review.md"
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
       ],
       "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
       "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
@@ -2449,7 +2640,8 @@
         "execution/reviews/final-local-checks.json",
         "execution/reviews/native-ledger-check-001.json",
         "execution/reviews/W07-private-delivery-scope-review.md",
-        "execution/reviews/companion-remote-checks-001.json"
+        "execution/reviews/companion-remote-checks-001.json",
+        "execution/reviews/root-native-capability-recheck.json"
       ],
       "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
       "blocker": "The two required native Astra/max depth3 art-author leaves do not exist.",

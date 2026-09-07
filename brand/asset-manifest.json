@@ -1,481 +1,2229 @@
 [
   {
     "asset_id": "ID-01",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#ID-01"
+      "art/asset-registry.json#ID-01",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "f2179261ad9b0b17a679838fd6ba4cb521966bf61816be4d9ca8c4e53be036f9",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Branching-A mark; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/identity/mark.png",
+        "sha256": "df78cf0b82c61e56e519785e399b1412bb3fb228cf5006febabee8471bf3656c",
+        "format": "png",
+        "width": 64,
+        "height": 64,
+        "generation_record_id": "ID-01-generation-004",
+        "raw_source_path": "brand/sources/generated/ID-01/generation-004.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/identity/mark-mono.png",
+        "sha256": "4f3a2e91d0bc420a658de9b41d4c33898fef5ae898c80facb5db151c6b0e7ec1",
+        "format": "png",
+        "width": 64,
+        "height": 64,
+        "generation_record_id": "ID-01-generation-004",
+        "raw_source_path": "brand/sources/generated/ID-01/generation-004.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "ID-01-generation-004",
+        "asset_id": "ID-01",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/ID-01/generation-004.txt",
+        "prompt_sha256": "1aef117e97e2e1766ee1e3be7f0df82de9d32ad26db5bc7120b7bf736b8bc557",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#ID-01-generation-004",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209886+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/ID-01/generation-001.png",
+            "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/ID-01/generation-004.png",
+            "sha256": "f2179261ad9b0b17a679838fd6ba4cb521966bf61816be4d9ca8c4e53be036f9",
+            "format": "png",
+            "width": 1774,
+            "height": 887
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "ID-02",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#ID-02"
+      "art/asset-registry.json#ID-02",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "3a71c24c0dd6d26e5bcb35fdc00edbd76e16f9d9827754a6f7f099852bb76a5b",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-01"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Organization wordmark; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/identity/ai-ascension-light.png",
+        "sha256": "a712a91d522f7e89c612e813f8fd6b84125ddcd2e31bc4c18f655b6c89a55c76",
+        "format": "png",
+        "width": 1200,
+        "height": 220,
+        "generation_record_id": "ID-02-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-02/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/identity/ai-ascension-dark.png",
+        "sha256": "3ec535ff647ece972c6bd9590f6b61f3e9859ac361e002240c79f53874d2b35d",
+        "format": "png",
+        "width": 1200,
+        "height": 220,
+        "generation_record_id": "ID-02-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-02/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "ID-02-generation-001",
+        "asset_id": "ID-02",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/ID-02/generation-001.txt",
+        "prompt_sha256": "76defecd50be0921c3c1ad1125b0ab7262d8c508fd41fcddc890b61723c2847d",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#ID-02-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209842+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/ID-01/generation-001.png",
+            "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/ID-02/generation-001.png",
+            "sha256": "3a71c24c0dd6d26e5bcb35fdc00edbd76e16f9d9827754a6f7f099852bb76a5b",
+            "format": "png",
+            "width": 1774,
+            "height": 887
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "ID-03",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#ID-03"
+      "art/asset-registry.json#ID-03",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "44277b3a0ec36dc112720aae4c1b8195378deb4aee4951c3e9acc2bb6d3b3500",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-01"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Flagship product lockup; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/identity/ascension-light.png",
+        "sha256": "688d3ef3d73d9bc62a14ea77e9f9b845c0d7e85a974d42e46935dee3e3d2a9b5",
+        "format": "png",
+        "width": 1000,
+        "height": 220,
+        "generation_record_id": "ID-03-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-03/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/identity/ascension-dark.png",
+        "sha256": "7623c76492838ff2f947ea23b3bf4c599ecd67b9800f3617592246f56603bd8a",
+        "format": "png",
+        "width": 1000,
+        "height": 220,
+        "generation_record_id": "ID-03-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-03/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "ID-03-generation-001",
+        "asset_id": "ID-03",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/ID-03/generation-001.txt",
+        "prompt_sha256": "08280a80ea21e2aaddc0cb29e1df06af8641dce0e2990a74542a33ca7dd3b418",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#ID-03-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209851+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/ID-01/generation-001.png",
+            "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/ID-03/generation-001.png",
+            "sha256": "44277b3a0ec36dc112720aae4c1b8195378deb4aee4951c3e9acc2bb6d3b3500",
+            "format": "png",
+            "width": 2172,
+            "height": 724
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "ID-04",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#ID-04"
+      "art/asset-registry.json#ID-04",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "a09ba42d43372ad1c0461e4feb9b75bf604f76cadda2e5dbcb2ee4670028d80c",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-01"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "The Climb title lockup; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/identity/the-climb-master.png",
+        "sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156",
+        "format": "png",
+        "width": 1400,
+        "height": 400,
+        "generation_record_id": "ID-04-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-04/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/identity/the-climb.png",
+        "sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156",
+        "format": "png",
+        "width": 1400,
+        "height": 400,
+        "generation_record_id": "ID-04-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-04/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "ID-04-generation-001",
+        "asset_id": "ID-04",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/ID-04/generation-001.txt",
+        "prompt_sha256": "e2ca97247bcdd2595d7cb80db81c61f20d247cb47182abe8f765411797bb05a9",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#ID-04-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209855+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/ID-01/generation-001.png",
+            "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/ID-04/generation-001.png",
+            "sha256": "a09ba42d43372ad1c0461e4feb9b75bf604f76cadda2e5dbcb2ee4670028d80c",
+            "format": "png",
+            "width": 1942,
+            "height": 809
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "ID-05",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#ID-05"
+      "art/asset-registry.json#ID-05",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "355c6f50d4263e7a6b04ad2e6ddaf6b5d33ec346e2e4b8e98c69548053632445",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-01"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Organization avatar set; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/identity/avatar-1024.png",
+        "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+        "format": "png",
+        "width": 1024,
+        "height": 1024,
+        "generation_record_id": "ID-05-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-05/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/identity/avatar-256.png",
+        "sha256": "585eeb86eab23f06b6b4d7e606b56b6b00cb0037496d991ec2624da8c52b7d4e",
+        "format": "png",
+        "width": 256,
+        "height": 256,
+        "generation_record_id": "ID-05-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-05/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "ID-05-generation-001",
+        "asset_id": "ID-05",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/ID-05/generation-001.txt",
+        "prompt_sha256": "3fa3a46068c9f0b5e1c64e24492d60625a4d986a6b91e44befb03da5dd152610",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#ID-05-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209865+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/ID-01/generation-001.png",
+            "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/ID-05/generation-001.png",
+            "sha256": "355c6f50d4263e7a6b04ad2e6ddaf6b5d33ec346e2e4b8e98c69548053632445",
+            "format": "png",
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "ID-06",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#ID-06"
+      "art/asset-registry.json#ID-06",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-01"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Browser and app icon set; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/identity/favicon.png",
+        "sha256": "b94d0ea4f03cc73d0459426e61b3977ab7bb609d9902a4ecbb59a640244a95ea",
+        "format": "png",
+        "width": 64,
+        "height": 64,
+        "generation_record_id": "ID-06-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-06/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/identity/favicon-32.png",
+        "sha256": "dbb3bef4fed5398a7fa1b53981f5b9473e4bcdfa3f5ea52b26d9c3261279cccb",
+        "format": "png",
+        "width": 32,
+        "height": 32,
+        "generation_record_id": "ID-06-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-06/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/identity/favicon-16.png",
+        "sha256": "256b18b8a6c79286b824e06fd8095019da7bb1df39ef282ee2471f7c202421f9",
+        "format": "png",
+        "width": 16,
+        "height": 16,
+        "generation_record_id": "ID-06-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-06/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/identity/apple-touch-icon.png",
+        "sha256": "902a544011f7314bce6e0f46027409f0895aff07ab964a85a82c62a002bbe019",
+        "format": "png",
+        "width": 180,
+        "height": 180,
+        "generation_record_id": "ID-06-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-06/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "ID-06-generation-001",
+        "asset_id": "ID-06",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/ID-06/generation-001.txt",
+        "prompt_sha256": "9c54d30f3fe125b988480d25218c9b962b5d1c77719c71a992b9d8ddd14bd0dd",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#ID-06-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209868+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/ID-01/generation-001.png",
+            "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/ID-06/generation-001.png",
+            "sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
+            "format": "png",
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "ID-07",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#ID-07"
+      "art/asset-registry.json#ID-07",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "0fcc0b9f244470de56c70d04be1fc6dcb3e976b5aaf19a695026d952aa3524ab",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Product and evidence icon sprite; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/identity/icons.png",
+        "sha256": "6ae239eb3b509b77ce00cafaad5cc9b5edce93b4c09e68b417e25cb44780bc09",
+        "format": "png",
+        "width": 1024,
+        "height": 1024,
+        "generation_record_id": "ID-07-generation-001",
+        "raw_source_path": "brand/sources/generated/ID-07/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "ID-07-generation-001",
+        "asset_id": "ID-07",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/ID-07/generation-001.txt",
+        "prompt_sha256": "4f45ff1ae68c406c97dd71f4676476104fc6cd36ccd3c2bbbb1f8f2eb688163c",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#ID-07-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209890+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/ID-07/generation-001.png",
+            "sha256": "0fcc0b9f244470de56c70d04be1fc6dcb3e976b5aaf19a695026d952aa3524ab",
+            "format": "png",
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "ID-08",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#ID-08"
+      "art/asset-registry.json#ID-08",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "28f9343f13307ea672db605c2021cf362d9c054ad93b3412f470638009103766",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-01",
       "ID-02",
       "ID-07"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Design token and typography specimen; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/identity/specimen.png",
+        "sha256": "97272f6704cda951761eb97c9027b001dd41d072f7242e4ccd9b572733aee49e",
+        "format": "png",
+        "width": 1600,
+        "height": 2000,
+        "generation_record_id": "ID-08-generation-002",
+        "raw_source_path": "brand/sources/generated/ID-08/generation-002.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/identity/specimen.html",
+        "sha256": "ecfc85f47bc871cbfcd75c3f2359579befef776d4d2e4c701040ee7343cfe852",
+        "format": "html",
+        "width": null,
+        "height": null,
+        "generation_record_id": null,
+        "raw_source_path": null,
+        "derivation_operations": []
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "ID-08-generation-002",
+        "asset_id": "ID-08",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/ID-08/generation-002.txt",
+        "prompt_sha256": "6f8b427731bbb6ce5e9a9a9d6c31e6afa12da390459563aeef70810b3c994667",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#ID-08-generation-002",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209965+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/ID-08/generation-001.png",
+            "sha256": "f08518246553d5f235031b4b6bfcb53a191af091810ce49795ab2c8f4241c952",
+            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/ID-08/generation-002.png",
+            "sha256": "28f9343f13307ea672db605c2021cf362d9c054ad93b3412f470638009103766",
+            "format": "png",
+            "width": 1122,
+            "height": 1402
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "BG-01",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#BG-01"
+      "art/asset-registry.json#BG-01",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Editorial ascent environment master; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/illustration/ascent-master.png",
+        "sha256": "4545652f3e1026e9d14e052ddb02720119e899bcc80c14ec6d46adb6134bba5d",
+        "format": "png",
+        "width": 2400,
+        "height": 1600,
+        "generation_record_id": "BG-01-generation-001",
+        "raw_source_path": "brand/sources/generated/BG-01/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "BG-01-generation-001",
+        "asset_id": "BG-01",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/BG-01/generation-001.txt",
+        "prompt_sha256": "673b45c942f8969d39649fe95ce10c763169caa913edfb82cd4475e8f895583e",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#BG-01-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209825+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/BG-01/generation-001.png",
+            "sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+            "format": "png",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "BG-02",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#BG-02"
+      "art/asset-registry.json#BG-02",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "5be7e3b68f65d6ec31860984521390091d7cc0496d1f2280ed04cc524add5ead",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Dark broadcast atmosphere master; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/illustration/broadcast-master.png",
+        "sha256": "b9ef900991511a3edb9f8356ca491215110b6149ba1412ff8930fdc094f3c9ec",
+        "format": "png",
+        "width": 2560,
+        "height": 1440,
+        "generation_record_id": "BG-02-generation-001",
+        "raw_source_path": "brand/sources/generated/BG-02/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "BG-02-generation-001",
+        "asset_id": "BG-02",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/BG-02/generation-001.txt",
+        "prompt_sha256": "db28cc9fb262969731d48339072e99431a7056cfe9e8d200ac91a3e66b0fb538",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#BG-02-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209833+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/BG-02/generation-001.png",
+            "sha256": "5be7e3b68f65d6ec31860984521390091d7cc0496d1f2280ed04cc524add5ead",
+            "format": "png",
+            "width": 1672,
+            "height": 941
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "BG-03",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#BG-03"
+      "art/asset-registry.json#BG-03",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "0ff4f0492163d0e95ac0a0055aef38991ec1096a3a2f9cd58b26634b77395c66",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Series interstitial texture; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/illustration/series-master.png",
+        "sha256": "e41579d621bea4eb6e1c1abbd47cd7ebbaa72544481eb6b69f33f64cb90aefbb",
+        "format": "png",
+        "width": 2160,
+        "height": 2160,
+        "generation_record_id": "BG-03-generation-001",
+        "raw_source_path": "brand/sources/generated/BG-03/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "BG-03-generation-001",
+        "asset_id": "BG-03",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/BG-03/generation-001.txt",
+        "prompt_sha256": "159ce4d59064484fa8d907861debc591ceea5bfe01bc69b32316a140515536f0",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#BG-03-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209838+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/BG-03/generation-001.png",
+            "sha256": "0ff4f0492163d0e95ac0a0055aef38991ec1096a3a2f9cd58b26634b77395c66",
+            "format": "png",
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "BG-04",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#BG-04"
+      "art/asset-registry.json#BG-04",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "8f9fd2025a5897559a89ce83cc16ab6ea1a3779fdee0e54c4fcde82efcec072e",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-01"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Light/dark route pattern; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/illustration/route-pattern-light.png",
+        "sha256": "028451e0b6b44c874b6ac670a03b37c743ed376e7f072966a087b0e0954d4b49",
+        "format": "png",
+        "width": 800,
+        "height": 800,
+        "generation_record_id": "BG-04-generation-001",
+        "raw_source_path": "brand/sources/generated/BG-04/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/illustration/route-pattern-dark.png",
+        "sha256": "f8703b4c727ee298087b150d170985d9580f0f4704483a12777da2192e086ff1",
+        "format": "png",
+        "width": 800,
+        "height": 800,
+        "generation_record_id": "BG-04-generation-001",
+        "raw_source_path": "brand/sources/generated/BG-04/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": "Both tile exports exist, but the independent review found visible repeat seams. The mandatory seamless requirement needs a new generated master; image service capacity is unavailable.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "BG-04-generation-001",
+        "asset_id": "BG-04",
+        "status": "blocked",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/BG-04/generation-001.txt",
+        "prompt_sha256": "417501547c5c9ac652eaf1ebcbdbc86b1dd2ca8edd1b134ac172c27269c52761",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#BG-04-generation-001",
+        "reviewer_reference": "pending:independent-source-and-export-review",
+        "created_at": "2026-09-07T20:46:54.209897+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/BG-04/generation-001.png",
+            "sha256": "8f9fd2025a5897559a89ce83cc16ab6ea1a3779fdee0e54c4fcde82efcec072e",
+            "format": "png",
+            "width": 1774,
+            "height": 887
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "WEB-01",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#WEB-01"
+      "art/asset-registry.json#WEB-01",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-identity-source-use-review.json",
+      "execution/reviews/W02-root-art-identity-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "BG-01"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Homepage illustration crop set; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/web/home-desktop.webp",
+        "sha256": "58b2dde67a37aa71292acc306ad43f9aeea80cd9ff557b275a631990fd3cad19",
+        "format": "webp",
+        "width": 1600,
+        "height": 1000,
+        "generation_record_id": "BG-01-generation-001",
+        "raw_source_path": "brand/sources/generated/BG-01/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/web/home-mobile.webp",
+        "sha256": "9f5c58f090c29eb235acc66fce55ae5888eaff99b16e5636e8e261e97c65efb9",
+        "format": "webp",
+        "width": 800,
+        "height": 1000,
+        "generation_record_id": "BG-01-generation-001",
+        "raw_source_path": "brand/sources/generated/BG-01/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "BG-01-generation-001",
+        "asset_id": "BG-01",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/BG-01/generation-001.txt",
+        "prompt_sha256": "673b45c942f8969d39649fe95ce10c763169caa913edfb82cd4475e8f895583e",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#BG-01-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json",
+        "created_at": "2026-09-07T20:46:54.209825+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/BG-01/generation-001.png",
+            "sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+            "format": "png",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "WEB-02",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#WEB-02"
+      "art/asset-registry.json#WEB-02",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "09b8448d5b0d921390ea310e2ad1323f3e8b6ecb9e0ece3a6edaba74239e03e5",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Latest-run generated editorial poster; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/web/latest-run-poster.webp",
+        "sha256": "95ed105e415a6aa7a3c076a4dfc414ce9e93a61a349e3504cde3680b4b614c28",
+        "format": "webp",
+        "width": 1600,
+        "height": 900,
+        "generation_record_id": "WEB-02-generation-001",
+        "raw_source_path": "brand/sources/generated/WEB-02/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/web/latest-run-poster-mobile.webp",
+        "sha256": "b4dc73d00d308e4365a984a9aa74f20aa6308e5db8f97db171bdb542c3877204",
+        "format": "webp",
+        "width": 900,
+        "height": 1200,
+        "generation_record_id": "WEB-02-generation-002",
+        "raw_source_path": "brand/sources/generated/WEB-02/generation-002.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "WEB-02-generation-001",
+        "asset_id": "WEB-02",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/WEB-02/generation-001.txt",
+        "prompt_sha256": "52a6957d43261a9560b625dbb00d23ad9852b4153d7d97e479e8075a74113128",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#WEB-02-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209901+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/BG-01/generation-001.png",
+            "sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/WEB-02/generation-001.png",
+            "sha256": "3bff30fbf01cbd531a9a58a42b77beda1d04b4fb07ef88a34815c7295e57373b",
+            "format": "png",
+            "width": 1672,
+            "height": 941
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      },
+      {
+        "record_id": "WEB-02-generation-002",
+        "asset_id": "WEB-02",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/WEB-02/generation-002.txt",
+        "prompt_sha256": "61c0f555e7b96a45e2eaab328a9c321110473b1efd46a68f5a56bf7663273b87",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#WEB-02-generation-002",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209926+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/WEB-02/generation-001.png",
+            "sha256": "3bff30fbf01cbd531a9a58a42b77beda1d04b4fb07ef88a34815c7295e57373b",
+            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/WEB-02/generation-002.png",
+            "sha256": "09b8448d5b0d921390ea310e2ad1323f3e8b6ecb9e0ece3a6edaba74239e03e5",
+            "format": "png",
+            "width": 1086,
+            "height": 1448
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "WEB-03",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#WEB-03"
+      "art/asset-registry.json#WEB-03",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "efd8646759aeb0c176bcde3eb6b449e0e9f4defd3ec5154a576d6d261b715e86",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-07"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Watch and Build pathway graphics; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/web/path-watch.png",
+        "sha256": "cbfdd6b79a0cfca7f43c741d5fb962a95476389cd9fa9deae388667d00b125fa",
+        "format": "png",
+        "width": 800,
+        "height": 500,
+        "generation_record_id": "WEB-03-generation-001",
+        "raw_source_path": "brand/sources/generated/WEB-03/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/web/path-build.png",
+        "sha256": "082a5514431c9c4f89c04517ee3f12c8050e61e3a82e8a58ec8c8934b87fab24",
+        "format": "png",
+        "width": 800,
+        "height": 500,
+        "generation_record_id": "WEB-03-generation-001",
+        "raw_source_path": "brand/sources/generated/WEB-03/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "WEB-03-generation-001",
+        "asset_id": "WEB-03",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/WEB-03/generation-001.txt",
+        "prompt_sha256": "42097e8de4b6c2b239e50df8dd4885862b236e4972d53401f9c51e008d3bbdff",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#WEB-03-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209904+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/WEB-03/generation-001.png",
+            "sha256": "efd8646759aeb0c176bcde3eb6b449e0e9f4defd3ec5154a576d6d261b715e86",
+            "format": "png",
+            "width": 1774,
+            "height": 887
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "WEB-04",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#WEB-04"
+      "art/asset-registry.json#WEB-04",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "a296dd381e0fabe451b533d60b24357908970f1e61be4c1befff56e4c5ad2e5b",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-01"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Hero and primary-page social preview; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/web/site-og.png",
+        "sha256": "684ca219c6f4bfbdbc976a7a6fabd07571ef05f801942a635ff1e4b5c940c937",
+        "format": "png",
+        "width": 1200,
+        "height": 630,
+        "generation_record_id": "WEB-04-generation-001",
+        "raw_source_path": "brand/sources/generated/WEB-04/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "WEB-04-generation-001",
+        "asset_id": "WEB-04",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/WEB-04/generation-001.txt",
+        "prompt_sha256": "fd9311d1f6091d964436d163b7a67e940b4c054917f69bb2a543c01b7f9ab845",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#WEB-04-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209907+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/BG-01/generation-001.png",
+            "sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+          },
+          {
+            "reference": "brand/sources/generated/ID-01/generation-001.png",
+            "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/WEB-04/generation-001.png",
+            "sha256": "a296dd381e0fabe451b533d60b24357908970f1e61be4c1befff56e4c5ad2e5b",
+            "format": "png",
+            "width": 1730,
+            "height": 909
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "WEB-05",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#WEB-05"
+      "art/asset-registry.json#WEB-05",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "0598f68e066ac15767d24d3e1d547d2ec19a17576d3e9fc97431575434dbe3f0",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "404 and unavailable artwork; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/web/404.png",
+        "sha256": "20708d150db81489c53e4153b1c8273175b4265324c8d2ca293d6aeafd1190bd",
+        "format": "png",
+        "width": 800,
+        "height": 600,
+        "generation_record_id": "WEB-05-generation-001",
+        "raw_source_path": "brand/sources/generated/WEB-05/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/web/unavailable.png",
+        "sha256": "1b2388061f132853235dfe54a65d56a306d1100ac61f8f684dac419bd94dc7d2",
+        "format": "png",
+        "width": 800,
+        "height": 600,
+        "generation_record_id": "WEB-05-generation-001",
+        "raw_source_path": "brand/sources/generated/WEB-05/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "WEB-05-generation-001",
+        "asset_id": "WEB-05",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/WEB-05/generation-001.txt",
+        "prompt_sha256": "10720e12799c3ebeb5bf6e6fe5c288fe91880b1cabf2c9d1e2c2a7848f51389f",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#WEB-05-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209911+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/WEB-05/generation-001.png",
+            "sha256": "0598f68e066ac15767d24d3e1d547d2ec19a17576d3e9fc97431575434dbe3f0",
+            "format": "png",
+            "width": 2048,
+            "height": 768
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "WEB-06",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#WEB-06"
+      "art/asset-registry.json#WEB-06",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "a3dded6f46a32d0fcdb2f45224a3565748bbea1a6a2b19b9dd6bf622aadd0173",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-07"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Subscription success and confirmation art; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/web/subscribe-confirm.png",
+        "sha256": "9b29588a0746cc43ff563d4eb60074e5b18afc271f43c3162a7eeb3941ecfb72",
+        "format": "png",
+        "width": 400,
+        "height": 300,
+        "generation_record_id": "WEB-06-generation-001",
+        "raw_source_path": "brand/sources/generated/WEB-06/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/web/subscribe-success.png",
+        "sha256": "1859fff07e055ac8291de414d445045164f2bd71af85bcc58e078a416707c0a8",
+        "format": "png",
+        "width": 400,
+        "height": 300,
+        "generation_record_id": "WEB-06-generation-001",
+        "raw_source_path": "brand/sources/generated/WEB-06/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "WEB-06-generation-001",
+        "asset_id": "WEB-06",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/WEB-06/generation-001.txt",
+        "prompt_sha256": "56ff5591154ce492969cb4945a4fe09f7ec35bb51943899a83d75eb634fe7764",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#WEB-06-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209914+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/WEB-06/generation-001.png",
+            "sha256": "a3dded6f46a32d0fcdb2f45224a3565748bbea1a6a2b19b9dd6bf622aadd0173",
+            "format": "png",
+            "width": 1672,
+            "height": 941
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "WEB-07",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#WEB-07"
+      "art/asset-registry.json#WEB-07",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "4a091df54539ac8b95c6e7edabd7f4d502e8bc12836f4767bff6c5bb4d786f45",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-07"
     ],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Current capability diagram; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/web/capabilities.png",
+        "sha256": "5f58ef856ab6eaeb5ee0f784b79893ea947861aa855f004e909735c5a6e88661",
+        "format": "png",
+        "width": 1400,
+        "height": 900,
+        "generation_record_id": "WEB-07-generation-002",
+        "raw_source_path": "brand/sources/generated/WEB-07/generation-002.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "WEB-07-generation-002",
+        "asset_id": "WEB-07",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/WEB-07/generation-002.txt",
+        "prompt_sha256": "01d14958919a7f4f8c6643f13f8c8bba1f1d222fd9197873f4088a369163aaec",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#WEB-07-generation-002",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209929+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/WEB-07/generation-001.png",
+            "sha256": "4aa7c679695cd3f81eb9443312c35fddecf95570b0fcbc7e3e49da271adf4b28",
+            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/WEB-07/generation-002.png",
+            "sha256": "4a091df54539ac8b95c6e7edabd7f4d502e8bc12836f4767bff6c5bb4d786f45",
+            "format": "png",
+            "width": 1567,
+            "height": 1004
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "WEB-08",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#WEB-08"
+      "art/asset-registry.json#WEB-08",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "1ae5c9bfd6d6b7bdcd68069bc558ebc90483a728e0ac402f3dab1ed8d820ba60",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Map viewer integration preview; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/web/map-preview.png",
+        "sha256": "0e9723738c99e12fcb90d820c7fa580debccc495c6a8e5dbf836216a3c3ac010",
+        "format": "png",
+        "width": 1440,
+        "height": 960,
+        "generation_record_id": "WEB-08-generation-001",
+        "raw_source_path": "brand/sources/generated/WEB-08/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/web/map-preview-mobile.png",
+        "sha256": "e8120038a768a50ff208dbb93027afcb38288136c24400d18231a64cd228bf96",
+        "format": "png",
+        "width": 900,
+        "height": 1200,
+        "generation_record_id": "WEB-08-generation-002",
+        "raw_source_path": "brand/sources/generated/WEB-08/generation-002.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "WEB-08-generation-001",
+        "asset_id": "WEB-08",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/WEB-08/generation-001.txt",
+        "prompt_sha256": "7c68c441d1421aea96fb9db2a61abe35774cf6f01f70d956c7d435b8e0fc053b",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#WEB-08-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209924+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/WEB-08/generation-001.png",
+            "sha256": "2c2c9f3d0c2d57c8de90ac340ba849b84f437d13fb1440d72a3cb0a79fea2b50",
+            "format": "png",
+            "width": 1536,
+            "height": 1024
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      },
+      {
+        "record_id": "WEB-08-generation-002",
+        "asset_id": "WEB-08",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/WEB-08/generation-002.txt",
+        "prompt_sha256": "77515fbeb2e86c0cdd1014305e372d00c5879cf580f67e5fa5bffabffa197c83",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#WEB-08-generation-002",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209933+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/WEB-08/generation-001.png",
+            "sha256": "2c2c9f3d0c2d57c8de90ac340ba849b84f437d13fb1440d72a3cb0a79fea2b50",
+            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/WEB-08/generation-002.png",
+            "sha256": "1ae5c9bfd6d6b7bdcd68069bc558ebc90483a728e0ac402f3dab1ed8d820ba60",
+            "format": "png",
+            "width": 1086,
+            "height": 1448
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "RUN-01",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#RUN-01"
+      "art/asset-registry.json#RUN-01",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "258c5237705b0384531552c5ea8bd9b2ab27a6ce20c9041766ba654a952b9579",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "ID-07"
@@ -484,23 +2232,87 @@
     "rights_status": "unreviewed",
     "reviewer_reference": null,
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Run summary card template; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/run/summary-template.png",
+        "sha256": "bfce85dd8894e2a5f030b02f3b1eb2c3b91b63e90235e58f52a9d879d2fd6215",
+        "format": "png",
+        "width": 1200,
+        "height": 630,
+        "generation_record_id": "RUN-01-generation-001",
+        "raw_source_path": "brand/sources/generated/RUN-01/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": "The landscape export was independently reviewed. The required square export is missing and needs authored reflow after image service capacity returns.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "RUN-01-generation-001",
+        "asset_id": "RUN-01",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/RUN-01/generation-001.txt",
+        "prompt_sha256": "485a8dd5bd453e356c7cc420f178f2d5c53572fe62c0c275f69178844ab45129",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#RUN-01-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209938+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/RUN-01/generation-001.png",
+            "sha256": "258c5237705b0384531552c5ea8bd9b2ab27a6ce20c9041766ba654a952b9579",
+            "format": "png",
+            "width": 1730,
+            "height": 909
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "RUN-02",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#RUN-02"
+      "art/asset-registry.json#RUN-02",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "f0d07c6648cbd75be128e265be9bbd17b3de4aa39f6f1dd34721832b6ac2c946",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-07"
     ],
@@ -508,89 +2320,393 @@
     "rights_status": "unreviewed",
     "reviewer_reference": null,
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Decision reveal card templates; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/run/decision-landscape.png",
+        "sha256": "0d71b2965863d98a6d089a866484fd239df052839b25486f6ae374588423446c",
+        "format": "png",
+        "width": 1200,
+        "height": 630,
+        "generation_record_id": "RUN-02-generation-001",
+        "raw_source_path": "brand/sources/generated/RUN-02/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      },
+      {
+        "path": "brand/assets/run/decision-vertical.png",
+        "sha256": "3b9eaa4c73bb5d67c8e19a4e138ad7aebc95364f012b7a352efdac478e41d534",
+        "format": "png",
+        "width": 1080,
+        "height": 1920,
+        "generation_record_id": "RUN-02-generation-002",
+        "raw_source_path": "brand/sources/generated/RUN-02/generation-002.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": "Landscape and vertical exports were independently reviewed. The required square export is missing and needs authored reflow after image service capacity returns.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "RUN-02-generation-001",
+        "asset_id": "RUN-02",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/RUN-02/generation-001.txt",
+        "prompt_sha256": "49a64b19da80194e1688df38b5561e4e2327eb275327795b9e8c7dc857b4c07c",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#RUN-02-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209941+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/RUN-02/generation-001.png",
+            "sha256": "72bb09ff9e071529e50665bef37a8fa55dbd27c5750ffb35330f9c987e6dddc6",
+            "format": "png",
+            "width": 1731,
+            "height": 909
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      },
+      {
+        "record_id": "RUN-02-generation-002",
+        "asset_id": "RUN-02",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/RUN-02/generation-002.txt",
+        "prompt_sha256": "958475e2f357cd1eaecb6cdd74761567192e7cc0976367abdd2631f6adf482ed",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#RUN-02-generation-002",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209945+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/RUN-02/generation-001.png",
+            "sha256": "72bb09ff9e071529e50665bef37a8fa55dbd27c5750ffb35330f9c987e6dddc6",
+            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+          }
+        ],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/RUN-02/generation-002.png",
+            "sha256": "f0d07c6648cbd75be128e265be9bbd17b3de4aa39f6f1dd34721832b6ac2c946",
+            "format": "png",
+            "width": 941,
+            "height": 1672
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "RUN-03",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#RUN-03"
+      "art/asset-registry.json#RUN-03",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "9767ec17fe8fca60baa9bf7a5e8092d1fc77b2824e375c03f6551145446b85d2",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "unreviewed",
     "reviewer_reference": null,
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Timeline graphic template; generated illustration, not gameplay evidence.",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "A source master exists, but no required 1600\u00d7500 export exists. Independent review requires a new wide creative reflow; image service capacity is unavailable.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "RUN-03-generation-001",
+        "asset_id": "RUN-03",
+        "status": "blocked",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/RUN-03/generation-001.txt",
+        "prompt_sha256": "03413e352fc1b300c3f2a6d869db5c999b8e80fe7d3f3b0d31299572c5634e26",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#RUN-03-generation-001",
+        "reviewer_reference": "pending:independent-source-and-export-review",
+        "created_at": "2026-09-07T20:46:54.209951+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/RUN-03/generation-001.png",
+            "sha256": "9767ec17fe8fca60baa9bf7a5e8092d1fc77b2824e375c03f6551145446b85d2",
+            "format": "png",
+            "width": 1774,
+            "height": 887
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "RUN-04",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#RUN-04"
+      "art/asset-registry.json#RUN-04",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "21cb55f1fe882a1185129b25e90c79c68ea6ea5b1c39e333d85745e382374ca6",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Replay receipt graphic template; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/run/replay-receipt.png",
+        "sha256": "5c08997cdf34f5e86b13e58a9a17fa279583a42c209d8218c6e5b3e1ba3e69b0",
+        "format": "png",
+        "width": 1200,
+        "height": 630,
+        "generation_record_id": "RUN-04-generation-001",
+        "raw_source_path": "brand/sources/generated/RUN-04/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "RUN-04-generation-001",
+        "asset_id": "RUN-04",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/RUN-04/generation-001.txt",
+        "prompt_sha256": "46047935e9cd415c3ce97f90d9a64b43bf942d05d31436c995987ce59fb1a45c",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#RUN-04-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209956+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/RUN-04/generation-001.png",
+            "sha256": "21cb55f1fe882a1185129b25e90c79c68ea6ea5b1c39e333d85745e382374ca6",
+            "format": "png",
+            "width": 1730,
+            "height": 909
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "RUN-05",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#RUN-05"
+      "art/asset-registry.json#RUN-05",
+      "art/root-generation-authorization.json",
+      "brand/provenance/root-generation-index.json",
+      "brand/provenance/root-export-receipts.json",
+      "brand/provenance/root-tool-observations.json",
+      "brand/provenance/root-generation-records.json",
+      "execution/reviews/W02-root-art-second-batch-review.json",
+      "execution/reviews/W03-root-export-review.json",
+      "execution/reviews/W03-root-export-followup.json"
     ],
-    "source_digest": null,
-    "production_tool": null,
-    "actual_model": null,
+    "source_digest": "b014c353cde347d51d52486473ae2d32f9e60bdaee932d0186d14db75aef0c6d",
+    "production_tool": "image_gen__imagegen",
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
-    "rights_status": "unreviewed",
-    "reviewer_reference": null,
+    "rights_status": "generated_original_reviewed",
+    "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
     "approval_references": [],
-    "alt_text": "",
+    "alt_text": "Comparison and rules panel template; generated illustration, not gameplay evidence.",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/run/comparison-template.png",
+        "sha256": "b66fe8206d3dd85cca32229df6a2b81b61467b1df63c485f329ccd991c27b224",
+        "format": "png",
+        "width": 1600,
+        "height": 900,
+        "generation_record_id": "RUN-05-generation-001",
+        "raw_source_path": "brand/sources/generated/RUN-05/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ]
+      }
+    ],
+    "blocker": null,
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [
+      {
+        "record_id": "RUN-05-generation-001",
+        "asset_id": "RUN-05",
+        "status": "verified",
+        "test_fixture": false,
+        "generation_route": "user_authorized_root_image_tool",
+        "author_role_id": "ROOT",
+        "author_agent_id": "root",
+        "author_parent_id": null,
+        "author_depth": 0,
+        "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
+        "prompt_path": "brand/prompts/root/RUN-05/generation-001.txt",
+        "prompt_sha256": "939857ca25bdef399a205a73dc3595a7ccee0a127e3e520d3582ee126810244b",
+        "image_model_requested": "unknown",
+        "image_model_observed": "unknown",
+        "image_backend": "unspecified",
+        "image_model_evidence_reference": "not-observed:available-image-tool",
+        "snapshot_alias_evidence_reference": null,
+        "tool_name": "image_gen__imagegen",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#RUN-05-generation-001",
+        "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json",
+        "created_at": "2026-09-07T20:46:54.209962+00:00",
+        "reference_inputs": [],
+        "raw_outputs": [
+          {
+            "path": "brand/sources/generated/RUN-05/generation-001.png",
+            "sha256": "b014c353cde347d51d52486473ae2d32f9e60bdaee932d0186d14db75aef0c6d",
+            "format": "png",
+            "width": 1672,
+            "height": 941
+          }
+        ],
+        "user_authorization_reference": "art/root-generation-authorization.json",
+        "user_authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+        "requested_author_model": "unknown",
+        "requested_author_effort": "unknown",
+        "accepted_author_model": "unknown",
+        "accepted_author_effort": "unknown",
+        "observed_author_model": "unknown",
+        "observed_author_effort": "unknown"
+      }
+    ],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "CAST-01",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#CAST-01"
+      "art/asset-registry.json#CAST-01",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-04",
       "ID-07"
@@ -602,20 +2718,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "CAST-02",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#CAST-02"
+      "art/asset-registry.json#CAST-02",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "CAST-01"
     ],
@@ -626,20 +2744,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "CAST-03",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#CAST-03"
+      "art/asset-registry.json#CAST-03",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "CAST-01"
     ],
@@ -650,20 +2770,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "CAST-04",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#CAST-04"
+      "art/asset-registry.json#CAST-04",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "BG-02",
       "ID-04"
@@ -675,20 +2797,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "CAST-05",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#CAST-05"
+      "art/asset-registry.json#CAST-05",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-07"
     ],
@@ -699,20 +2823,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "CAST-06",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#CAST-06"
+      "art/asset-registry.json#CAST-06",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-04",
       "BG-03"
@@ -724,20 +2850,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "CAST-07",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#CAST-07"
+      "art/asset-registry.json#CAST-07",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "unreviewed",
@@ -746,20 +2874,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "MKT-01",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#MKT-01"
+      "art/asset-registry.json#MKT-01",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-04",
       "BG-02"
@@ -771,20 +2901,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "MKT-02",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#MKT-02"
+      "art/asset-registry.json#MKT-02",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -796,20 +2928,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "MKT-03",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#MKT-03"
+      "art/asset-registry.json#MKT-03",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-04"
     ],
@@ -820,20 +2954,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "MKT-04",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#MKT-04"
+      "art/asset-registry.json#MKT-04",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-04",
       "BG-03"
@@ -845,20 +2981,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "MKT-05",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#MKT-05"
+      "art/asset-registry.json#MKT-05",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "RUN-02"
     ],
@@ -869,20 +3007,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "MKT-06",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#MKT-06"
+      "art/asset-registry.json#MKT-06",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-03"
     ],
@@ -893,20 +3033,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "MKT-07",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#MKT-07"
+      "art/asset-registry.json#MKT-07",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "RUN-01"
@@ -918,20 +3060,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "MKT-08",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#MKT-08"
+      "art/asset-registry.json#MKT-08",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "unreviewed",
@@ -940,20 +3084,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "MKT-09",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#MKT-09"
+      "art/asset-registry.json#MKT-09",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-01"
@@ -964,21 +3110,34 @@
     "approval_references": [],
     "alt_text": "",
     "decorative": false,
-    "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "exports": [
+      {
+        "path": "brand/assets/press/index.html",
+        "sha256": "40f8f65e29b2d2b0f1318222f46327e68174571c5821ddcd6551451c7ca786bf",
+        "format": "html",
+        "width": null,
+        "height": null,
+        "generation_record_id": null,
+        "raw_source_path": null,
+        "derivation_operations": []
+      }
+    ],
+    "blocker": "The functional press catalog exists and currently exposes zero downloads. The required generated cover is missing; image service capacity is unavailable. Public distribution approvals remain empty.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "DOC-01",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#DOC-01"
+      "art/asset-registry.json#DOC-01",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "unreviewed",
@@ -987,20 +3146,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "DOC-02",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#DOC-02"
+      "art/asset-registry.json#DOC-02",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "unreviewed",
@@ -1009,20 +3170,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "DOC-03",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#DOC-03"
+      "art/asset-registry.json#DOC-03",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "unreviewed",
@@ -1031,20 +3194,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "DOC-04",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#DOC-04"
+      "art/asset-registry.json#DOC-04",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "unreviewed",
@@ -1053,20 +3218,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "DOC-05",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#DOC-05"
+      "art/asset-registry.json#DOC-05",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "unreviewed",
@@ -1075,20 +3242,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-01-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-01-B"
+      "art/asset-registry.json#GH-01-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1100,20 +3269,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-01-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-01-S"
+      "art/asset-registry.json#GH-01-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1125,20 +3296,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-02-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-02-B"
+      "art/asset-registry.json#GH-02-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1150,20 +3323,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-02-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-02-S"
+      "art/asset-registry.json#GH-02-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1175,20 +3350,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-03-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-03-B"
+      "art/asset-registry.json#GH-03-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1200,20 +3377,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-03-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-03-S"
+      "art/asset-registry.json#GH-03-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1225,20 +3404,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-04-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-04-B"
+      "art/asset-registry.json#GH-04-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1250,20 +3431,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-04-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-04-S"
+      "art/asset-registry.json#GH-04-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1275,20 +3458,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-05-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-05-B"
+      "art/asset-registry.json#GH-05-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1300,20 +3485,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-05-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-05-S"
+      "art/asset-registry.json#GH-05-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1325,20 +3512,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-06-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-06-B"
+      "art/asset-registry.json#GH-06-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1350,20 +3539,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-06-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-06-S"
+      "art/asset-registry.json#GH-06-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1375,20 +3566,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-07-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-07-B"
+      "art/asset-registry.json#GH-07-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1400,20 +3593,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-07-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-07-S"
+      "art/asset-registry.json#GH-07-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1425,20 +3620,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-08-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-08-B"
+      "art/asset-registry.json#GH-08-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1450,20 +3647,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-08-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-08-S"
+      "art/asset-registry.json#GH-08-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1475,20 +3674,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-09-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-09-B"
+      "art/asset-registry.json#GH-09-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1500,20 +3701,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-09-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-09-S"
+      "art/asset-registry.json#GH-09-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1525,20 +3728,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-10-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-10-B"
+      "art/asset-registry.json#GH-10-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1550,20 +3755,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-10-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-10-S"
+      "art/asset-registry.json#GH-10-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1575,20 +3782,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-11-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-11-B"
+      "art/asset-registry.json#GH-11-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1600,20 +3809,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-11-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-11-S"
+      "art/asset-registry.json#GH-11-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1625,20 +3836,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-12-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-12-B"
+      "art/asset-registry.json#GH-12-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1650,20 +3863,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-12-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-12-S"
+      "art/asset-registry.json#GH-12-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1675,20 +3890,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-13-B",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-13-B"
+      "art/asset-registry.json#GH-13-B",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1700,20 +3917,22 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   },
   {
     "asset_id": "GH-13-S",
     "status": "blocked",
     "method": "generate",
     "source_references": [
-      "art/asset-registry.json#GH-13-S"
+      "art/asset-registry.json#GH-13-S",
+      "art/root-generation-authorization.json"
     ],
     "source_digest": null,
     "production_tool": null,
-    "actual_model": null,
+    "actual_model": "unknown",
     "parent_asset_ids": [
       "ID-02",
       "BG-04"
@@ -1725,8 +3944,9 @@
     "alt_text": "",
     "decorative": false,
     "exports": [],
-    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
-    "origin": "astra_authored_gpt_image_2",
-    "generation_records": []
+    "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json.",
+    "origin": "root_user_authorized_image_tool",
+    "generation_records": [],
+    "generation_route": "user_authorized_root_image_tool"
   }
 ]

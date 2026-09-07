@@ -1,0 +1,194 @@
+{
+  "schema_version": "ai-ascension.root-website-art-review.v1",
+  "status": "verified_with_scoped_finding",
+  "reviewer": "independent_browser_review",
+  "reviewed_at": "2026-09-07T17:45:00-04:00",
+  "source_worktree": "brand-website-art",
+  "source_path": "/mnt/c/users/timot/documents/projects/sts2-project/sts2-project-worktrees/brand-website-art",
+  "website_base_commit": "56e532b21922f39480cd15dcbb465676770408f5",
+  "working_tree_state": {
+    "shared_integration_checkout": true,
+    "source_changes_written_by_reviewer": false,
+    "working_tree_diff_sha256": "8e0cb84fd5d98c0bffa81c461bec05bfe95b2c3c000eee304cf69fe464be9404"
+  },
+  "integration_manifest": {
+    "path": "brand-website-art/execution/root-art-integration.json",
+    "sha256": "e627321e87876b35ecf4d44059a37478c1afaf60fdacac841c416f085aa2455a",
+    "copy_records": 23,
+    "source_and_target_hashes_match": true,
+    "hash_receipt": ".execution-private/root-art-browser/asset-hash-check.json",
+    "hash_receipt_sha256": "94816635df26d17d9e967bc932e7f2793b5078134eee6db1e52359eb8b2a3880"
+  },
+  "scope": [
+    "Canonical artwork-bearing homepage, docs, watch, and 404 routes",
+    "All 12 static HTML routes in the local route surface",
+    "390 and 1440 viewport widths in light and dark themes",
+    "Lazy/reveal loading, keyboard focus, mobile menu, theme toggle, normal/reduced motion",
+    "Rendered screenshots, selected image loads, horizontal overflow, and console/request errors",
+    "Synthetic intercepted signup success/error, malformed JSON, and string-ok responses"
+  ],
+  "server": {
+    "origin": "http://127.0.0.1:8944/",
+    "kind": "temporary_python_static_server",
+    "root": "/mnt/c/users/timot/documents/projects/sts2-project/sts2-project-worktrees/brand-website-art",
+    "initial_probe": "connection refused",
+    "start_command": "python3 -m http.server 8944",
+    "started_for_review": true,
+    "production_requests": false
+  },
+  "automated_matrix": {
+    "status": "pass",
+    "receipt": ".execution-private/root-art-browser/automated-current.json",
+    "receipt_sha256": "7902e519e3b6c8a8b317a97fe2e2cb699626a98c22b8053c2ef4a59c8108cdb4",
+    "runner": "Playwright Chromium via /mnt/c/Users/timot/Documents/projects/sts2-project/ascension-brand-overhaul/node_modules/playwright",
+    "browser_version": "153.0.8010.12",
+    "states": 48,
+    "expected_states": 48,
+    "routes": [
+      "/",
+      "/watch.html",
+      "/runs.html",
+      "/run.html",
+      "/decision.html",
+      "/build.html",
+      "/docs.html",
+      "/press.html",
+      "/privacy.html",
+      "/contributors.html",
+      "/404.html",
+      "/home.html"
+    ],
+    "viewport_widths": [390, 1440],
+    "themes": ["light", "dark"],
+    "reduced_motion": true,
+    "checks": {
+      "http_200": "48/48",
+      "document_horizontal_overflow": "0/48",
+      "selected_images_loaded": "48/48",
+      "reveal_items_visible": "48/48",
+      "brand_mark_loaded": "48/48",
+      "favicon_present": "48/48",
+      "keyboard_focus": "48/48",
+      "mobile_menu_open_close_and_escape_focus": "24/24",
+      "theme_toggle": "48/48",
+      "axe_violations": 0,
+      "same_origin_4xx": 0,
+      "unexpected_request_failures": 0,
+      "console_errors": 0,
+      "page_errors": 0,
+      "screenshots": 16
+    },
+    "expected_picture_candidate_abort": {
+      "count": 1,
+      "detail": "One non-selected desktop map picture candidate reported net::ERR_ABORTED; selected currentSrc loaded and document width remained bounded."
+    },
+    "overflow_normalization": "Descendants of .table-scroll and .code-block are intentionally wider than a narrow viewport for keyboard/touch horizontal scrolling; document scrollWidth remained equal to the viewport."
+  },
+  "normal_motion": {
+    "status": "pass",
+    "receipt": ".execution-private/root-art-browser/normal-motion.json",
+    "receipt_sha256": "4724c85b76c5d6f9b8e972371c65462e7119bb8d0dc95e0ce9d34089dd369ace9",
+    "states": 6,
+    "routes": ["/", "/docs.html", "/watch.html"],
+    "viewport_widths": [390, 1440],
+    "checks": {
+      "reduced_motion_false": "6/6",
+      "reveal_items_visible_after_scroll": "6/6",
+      "transition_duration_observed": "6/6",
+      "lazy_images_loaded": "6/6",
+      "document_horizontal_overflow": "0/6",
+      "unexpected_request_failures": 0,
+      "console_or_page_errors": 0
+    }
+  },
+  "signup_mocks": {
+    "status": "pass",
+    "receipt": ".execution-private/root-art-browser/signup-mock.json",
+    "receipt_sha256": "8b78875d3ed96b4a563baec3e948f41483de9c4a8c0a8dd928b5b74608e8a8e4",
+    "production_post": false,
+    "success_case": "390 light: one intercepted same-origin POST returned JSON ok=true; form reset, status became success, subscribe-confirm.png loaded at 400x300, and document width stayed bounded.",
+    "error_case": "1440 dark: one intercepted same-origin POST returned ok=false; generic error state remained, no confirmation artwork was appended, and document width stayed bounded."
+  },
+  "signup_negative_mocks": {
+    "status": "pass",
+    "receipt": ".execution-private/root-art-browser/signup-negative-mocks.json",
+    "receipt_sha256": "b7a73ec3f9bd4c2516a27f5379e24b2d2e58cc7ecb321da909b6b58d44dc1ac9",
+    "production_post": false,
+    "checks": [
+      "JSON ok='true' string stayed in error state, did not append art, and did not reset the form.",
+      "Malformed JSON stayed in generic error state, did not append art, and did not reset the form."
+    ]
+  },
+  "manual_visual_review": {
+    "status": "pass_for_canonical_art_routes",
+    "screenshot_directory": ".execution-private/root-art-browser/screens",
+    "screenshots": [
+      {"route":"/","viewport":390,"theme":"light","file":"home-390-light.png","sha256":"63af80da78fb999defb59ef83c1a4353b2906e77114db6553c4a2e4882e45f9c"},
+      {"route":"/","viewport":390,"theme":"dark","file":"home-390-dark.png","sha256":"7c1b8bebf52855df57cce859274678386283c1d82250886b1c5c85a75e6403a5"},
+      {"route":"/","viewport":1440,"theme":"light","file":"home-1440-light.png","sha256":"44a38a39eeb395d327662926753084a3d0eb134481a73392da59e579f06ba454"},
+      {"route":"/","viewport":1440,"theme":"dark","file":"home-1440-dark.png","sha256":"64816701bfeefcbb5ed6fa65193653ce51a2fa8e4baea661c348add8bea3d811"},
+      {"route":"/docs.html","viewport":390,"theme":"light","file":"docs-390-light.png","sha256":"945baaeaf6456e24c19c582faca0362500d82f4025c18f587dabf31fb0b73a6c"},
+      {"route":"/docs.html","viewport":390,"theme":"dark","file":"docs-390-dark.png","sha256":"15d46108d9d0de7acaea8ba9c6e0c4a468bf35a6722b008dbb8f6c671c241a91"},
+      {"route":"/docs.html","viewport":1440,"theme":"light","file":"docs-1440-light.png","sha256":"a08bdf901f0cea0282c8410ae0425da0219ade70385590c104f06ace5480a0c3"},
+      {"route":"/docs.html","viewport":1440,"theme":"dark","file":"docs-1440-dark.png","sha256":"90256b54e7e62d9b41d6bb5141a70d7d1a3f2c83b0291416466fc0a1c0cbebbb"},
+      {"route":"/watch.html","viewport":390,"theme":"light","file":"watch-390-light.png","sha256":"64369da180fa3abf21b8a67a4734951e31e1c25794782437101d96708b39cdf3"},
+      {"route":"/watch.html","viewport":390,"theme":"dark","file":"watch-390-dark.png","sha256":"971a12ca271e6651705ad52ff17eb9257ad9a26d2a32465ca1e317e85ea2b912"},
+      {"route":"/watch.html","viewport":1440,"theme":"light","file":"watch-1440-light.png","sha256":"61d4083aef646b87b1c25b6b032ba06bb179c044cd14e89107b2e324e18c3871"},
+      {"route":"/watch.html","viewport":1440,"theme":"dark","file":"watch-1440-dark.png","sha256":"8a6a7d26d688931a42cf6aa88f8ec389c79282261a273914f69e56d04f1c7664"},
+      {"route":"/404.html","viewport":390,"theme":"light","file":"not-found-390-light.png","sha256":"730c6fcca73573bee84ee97a1cd4a8c58e7f48fa082668d2df951ef1f9fb5680"},
+      {"route":"/404.html","viewport":390,"theme":"dark","file":"not-found-390-dark.png","sha256":"4a0fa7ad03970962cbad51c20f2625a6268dd18f597f27beed87882e17e6d182"},
+      {"route":"/404.html","viewport":1440,"theme":"light","file":"not-found-1440-light.png","sha256":"7129f829a1a359ac7acdf6169ed61c54bf46105e226132b8eb9df7e23f5f1e39"},
+      {"route":"/404.html","viewport":1440,"theme":"dark","file":"not-found-1440-dark.png","sha256":"76d34903c0e388850d84e77905472e34e0830cb27772a890976f10d79968df82"},
+      {"route":"/ signup success","viewport":390,"theme":"light","file":"home-signup-390-light.png","sha256":"d2d843534ec4748317bba2e9b44912221adf241a8ada81dc702ba9ecf82da4f1"}
+    ],
+    "observations": [
+      "Homepage hero is edge-to-edge at desktop and uses the portrait crop at 390; report poster and Watch/Build diagrams stay legible and stack without clipping.",
+      "Docs capabilities illustration and conceptual route map remain legible in both themes; the narrow capability table is contained in its horizontal scroll region.",
+      "Watch presents the unavailable artwork and report-only status without a player or live indicator; 404.html presents its artwork, clear status, branded header, and footer.",
+      "Dark theme surfaces, text, status labels, borders, focus rings, controls, and artwork placements remained readable in inspected renders.",
+      "The synthetic signup success artwork fits the mobile form and leaves the viewport width bounded."
+    ]
+  },
+  "header_scan": {
+    "receipt": ".execution-private/root-art-browser/header-scan.json",
+    "receipt_sha256": "74cf652ab8ccc549add3223619644190dfefc9a2d6166ccb8f38c8bbf6410b87",
+    "html_files": 12,
+    "mark_favicon_apple_touch_complete": "11/12",
+    "missing_mark_favicon": ["home.html"],
+    "fallback_shtml": {
+      "file": "404.shtml",
+      "mark": false,
+      "favicon": true,
+      "apple_touch": true,
+      "header": false,
+      "menu": false,
+      "theme_toggle": false,
+      "footer": false,
+      "direct_390_1440_light_dark_image_and_width_check": "pass"
+    }
+  },
+  "findings": [
+    {
+      "id": "W03-F01",
+      "severity": "medium",
+      "status": "open",
+      "title": "Legacy shells omit the branded header and theme controls",
+      "evidence": [
+        "brand-website-art/home.html:2-4",
+        "brand-website-art/404.shtml:1-2",
+        ".execution-private/root-art-browser/header-scan.json",
+        ".execution-private/root-art-browser/screens/not-found-shtml-390-light.png",
+        ".execution-private/root-art-browser/screens/not-found-shtml-390-dark.png"
+      ],
+      "details": "home.html contains the favicon but no mark or site header and immediately meta-refreshes to index.html. The directly served 404.shtml contains the 404 artwork and favicon but no mark, header, menu, theme control, or footer; its dark-context render remains light. Canonical /404.html is fully branded and passed the matrix.",
+      "recommendation": "Add the shared compact header/mark and dark/theme treatment to the legacy and server fallback shells, or remove those shells from the served route contract, then rerun the header scan and direct fallback screenshots."
+    }
+  ],
+  "limitations": [
+    "This is a loopback static preview; it does not establish deployment, hosting injection behavior, public availability, or publication authority.",
+    "External origins were blocked. No PHP/API request was allowed through and no real email or production form submission occurred.",
+    "Automated axe and rendered screenshots supplement assistive-technology review and 200% zoom review; neither was claimed here.",
+    "The receipt covers the canonical artwork routes and records legacy shell exceptions explicitly; it is not a release approval while W03-F01 remains open."
+  ],
+  "disposition": "Canonical artwork integration is visually and interactively verified locally at the requested target widths and themes. Asset source/target hashes match all 23 manifest records. Hold final website-art acceptance until the legacy home/fallback header requirement is resolved or explicitly removed from scope; public publication remains separately gated."
+}

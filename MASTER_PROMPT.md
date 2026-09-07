@@ -1,5 +1,8 @@
 # AI Ascension — complete brand, product-presentation, and marketing implementation
 
+> **Recorded user amendment (2026-09-07):** The user authorized root image generation: "you can of course generate them images instead." For current artwork, use `user_authorized_root_image_tool` as recorded in [art/root-generation-authorization.json](art/root-generation-authorization.json). The available tool does not attest its backend or the root model, so these remain unknown. This amends the artwork author/backend route only; independent review, original sources, mechanical-export limits, evidence boundaries, all 72 asset families and the remaining project requirements still apply. Historical Astra-specific wording below describes the original route.
+
+
 ## 1. Mission
 
 You are the root implementation orchestrator. Create or safely reuse **AI-Ascension/ascension-brand-overhaul** and complete the user-selected overhaul across the organization. This is an execution assignment: deliver production-quality sources, art generated exclusively by gpt-image-2 from Astra-authored prompts, working website changes, publication tooling, GitHub presentation, validated migration tooling, campaign materials, tests, and a traceable release handoff. Do not end with a second strategy document, empty scaffolding, disconnected subagent reports, placeholder buttons, or claims that planned work already exists.

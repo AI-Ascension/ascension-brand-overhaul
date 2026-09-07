@@ -4,7 +4,7 @@
   "binding_requirement": "Every mandatory requirement and asset is verified or specifically blocked.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
   "status": "verified",
   "reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
   "actual_review_records": [
@@ -35,8 +35,8 @@
     },
     {
       "path": "execution/release-status.json",
-      "sha256": "932976e5fe85c1a37926ce5ccaf697768e1c7145b3828c637523d0ab975b750a",
-      "bytes": 5959
+      "sha256": "1316ab1be8c9a1db6d720cc58f7eab389cd8b22bad70ac0ababde10006aceade",
+      "bytes": 7728
     },
     {
       "path": "execution/findings.json",
@@ -45,8 +45,8 @@
     },
     {
       "path": "execution/QUALITY_REPORT.md",
-      "sha256": "311da33b3ce91bb96bbc8dcd1ce72da258f261fb7f90b160d793689500bf4186",
-      "bytes": 3679
+      "sha256": "fde38adfb3f9ad2da155f68a81b392eb655e0edc6609edf601f9e8d13a1d5368",
+      "bytes": 3976
     },
     {
       "path": "execution/ROOT_STATUS.md",
@@ -65,13 +65,13 @@
     },
     {
       "path": "delivery/MANIFEST.json",
-      "sha256": "ec43eb10d1ef96e34009964b0a8c1119dad7071d1224b80c2faa98b6cf3f7a78",
-      "bytes": 6194
+      "sha256": "d85c673560d39d28bbe89e72653ac000fd1ba994902e3a6ed9beb2fb382f0b40",
+      "bytes": 6499
     },
     {
       "path": "delivery/RUNBOOK.md",
-      "sha256": "f0a23ebce6d0fac59afc75e7268ec289163e2bc7f00851ea3968815d4a53fecc",
-      "bytes": 5665
+      "sha256": "6498f840f0f14c0effb22604c7b2196550f8f53775fceb781653e095b76f43c4",
+      "bytes": 7143
     },
     {
       "path": "delivery/PRIVACY_SCOPE.md",
@@ -117,5 +117,5 @@
   "blocker": null,
   "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
   "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
-  "source_binding": "Exact artifact bytes listed here; source and test revisions are those explicitly named by each review. Final root manifest binds this record. No uncommitted bytes are falsely assigned a Git revision."
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations."
 }

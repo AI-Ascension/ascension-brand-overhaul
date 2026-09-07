@@ -1,0 +1,1001 @@
+{
+  "schema_version": "ai-ascension.root-art-second-batch-review.v1",
+  "observed_at": "2026-09-07T20:53:29Z",
+  "reviewer": "w02-root-art-independent-review-second-batch",
+  "task": "W02 root art second batch",
+  "scope": "Independent visual and mechanical-export-readiness review of corrected ID-08 generation-002 and the current WEB-02 through WEB-08 and RUN-01 through RUN-05 masters and available exports. No source or master artwork was edited by this reviewer.",
+  "route_authorization": {
+    "basis": "User-authorized root image-tool route recorded for this artwork batch.",
+    "authorization_path": "art/root-generation-authorization.json",
+    "authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+    "route": "user_authorized_root_image_tool",
+    "tool_recorded": "image_gen__imagegen",
+    "author_model_attestation": "unknown",
+    "image_model_attestation": "unknown",
+    "generation_backend_attestation": "unknown",
+    "native_agent_attestation": false,
+    "allowed_follow_on_operations": [
+      "crop",
+      "resize",
+      "encode",
+      "metadata_strip",
+      "lossless_optimize",
+      "sprite_slice"
+    ],
+    "publication_approved": false,
+    "review_boundary": "This receipt records bounded visual, source-use, and export-readiness observations. It does not attest the root model, image backend, native agent chain, legal rights, trademark clearance, product evidence, gameplay evidence, deployment, or public release."
+  },
+  "source_pins": {
+    "generation_index": {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "91200a1334a849ef3f54eb7471bb3a05d060c18fac84e198d1519bdfd4cb2fd3",
+      "selected_records": "ID-08 generation-002; WEB-02 generations-001 and -002; WEB-03 through WEB-06 generation-001; WEB-07 generations-001 and -002; WEB-08 generations-001 and -002; RUN-01 generation-001; RUN-02 generations-001 and -002; RUN-03 through RUN-05 generation-001."
+    },
+    "export_recipe": {
+      "path": "brand/provenance/root-export-recipe.json",
+      "sha256": "eedf0b919cc3022094c68ca6fcdc46961fbe61d5943bc30544018c3e99981063",
+      "entry_count": 40
+    },
+    "export_receipts": {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "57c529e19dd16e44347612f6da4f9190f3402a0b7e2d0f406d89cfbdeb05d7d0",
+      "entry_count": 40
+    },
+    "canonical_typography_reference": {
+      "path": "brand/BRAND_GUIDE.md",
+      "sha256": "40143cec615a7ab092b2febf4b788af314dd42c37edcb80a5d6eabb3d88cee0a",
+      "relevant_rule": "JetBrains Mono is the canonical identifier and evidence-label reference; generated lettering does not establish a bundled font."
+    }
+  },
+  "method": {
+    "actual_source_files_viewed_with_view_image": [
+      "brand/sources/generated/ID-08/generation-002.png",
+      "brand/sources/generated/WEB-02/generation-001.png",
+      "brand/sources/generated/WEB-02/generation-002.png",
+      "brand/sources/generated/WEB-03/generation-001.png",
+      "brand/sources/generated/WEB-04/generation-001.png",
+      "brand/sources/generated/WEB-05/generation-001.png",
+      "brand/sources/generated/WEB-06/generation-001.png",
+      "brand/sources/generated/WEB-07/generation-001.png",
+      "brand/sources/generated/WEB-07/generation-002.png",
+      "brand/sources/generated/WEB-08/generation-001.png",
+      "brand/sources/generated/WEB-08/generation-002.png",
+      "brand/sources/generated/RUN-01/generation-001.png",
+      "brand/sources/generated/RUN-02/generation-001.png",
+      "brand/sources/generated/RUN-02/generation-002.png",
+      "brand/sources/generated/RUN-03/generation-001.png",
+      "brand/sources/generated/RUN-04/generation-001.png",
+      "brand/sources/generated/RUN-05/generation-001.png"
+    ],
+    "actual_export_files_viewed_with_view_image": [
+      "brand/assets/identity/specimen.png",
+      "brand/assets/web/latest-run-poster.webp",
+      "brand/assets/web/latest-run-poster-mobile.webp",
+      "brand/assets/web/path-watch.png",
+      "brand/assets/web/path-build.png",
+      "brand/assets/web/site-og.png",
+      "brand/assets/web/404.png",
+      "brand/assets/web/unavailable.png",
+      "brand/assets/web/subscribe-confirm.png",
+      "brand/assets/web/subscribe-success.png",
+      "brand/assets/web/capabilities.png",
+      "brand/assets/web/map-preview.png",
+      "brand/assets/web/map-preview-mobile.png",
+      "brand/assets/run/summary-template.png",
+      "brand/assets/run/decision-landscape.png",
+      "brand/assets/run/decision-vertical.png",
+      "brand/assets/run/replay-receipt.png",
+      "brand/assets/run/comparison-template.png"
+    ],
+    "checks": [
+      "Viewed the actual native masters and actual available exports; file existence was not treated as visual approval.",
+      "Compared visible copy, data, evidence boundaries, and template labels with the exact root prompts and canonical brand guide.",
+      "Verified 17/17 selected source hashes and declared dimensions/modes against root-generation-index.json.",
+      "Verified 18/18 selected export hashes and declared dimensions against root-export-receipts.json.",
+      "Verified all 40 receipt source hashes and output hashes against files.",
+      "Verified all 40 recipe/receipt identity bindings and all 40 crop boxes are within the declared source bounds.",
+      "Checked the revised WEB-03 crops at 800x500, both WEB-02 and WEB-08 aspect variants, both RUN-02 aspect variants, and the corrected ID-08 export at 1600x2000.",
+      "Inspected the mechanical export helper and current receipts; the recorded operations are crop, resize, encode, and metadata stripping, with no drawing, relabeling, recoloring, or other creative repair in the checked export path."
+    ],
+    "negative_cases": [
+      "WEB-07 generation-001 visibly carried the superseded Support badge text v1.2.3; generation-002 was checked as the current corrected master and visibly says Scoped.",
+      "The earlier WEB-03 y166..720 crop clipped the Watch and Build headings. The current y235..789 crops were reviewed after that mechanical crop was changed; headings are intentionally outside these exports and must be supplied by the consuming surface.",
+      "RUN-01 and RUN-02 square exports are absent; no unsafe center crop was accepted as a substitute.",
+      "RUN-03 has no export; its approximately 2:1 source cannot be mechanically cropped to the required 1600x500 approximately 3.2:1 layout while retaining all required content."
+    ]
+  },
+  "coverage": {
+    "families_reviewed": 13,
+    "family_ids": [
+      "ID-08",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "RUN-01",
+      "RUN-02",
+      "RUN-03",
+      "RUN-04",
+      "RUN-05"
+    ],
+    "native_source_records_viewed": 17,
+    "available_exports_viewed": 18,
+    "declared_recipe_entries": 40,
+    "declared_receipt_entries": 40,
+    "source_hash_and_dimension_result": "17/17 pass",
+    "selected_export_hash_and_dimension_result": "18/18 pass",
+    "all_recipe_receipt_hash_result": "40/40 source and output hashes pass",
+    "all_recipe_receipt_crop_bound_result": "40/40 pass",
+    "all_recipe_receipt_binding_result": "40/40 pass"
+  },
+  "summary": {
+    "ready_for_bounded_visual_export_review": 10,
+    "partial_families_with_some_exports_ready": 2,
+    "blocked_families_requiring_creative_reflow": 1,
+    "ready_family_ids": [
+      "ID-08",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "RUN-04",
+      "RUN-05"
+    ],
+    "partial_family_ids": [
+      "RUN-01",
+      "RUN-02"
+    ],
+    "blocked_family_ids": [
+      "RUN-03"
+    ],
+    "candidate_generated_original_reviewed_family_ids": [
+      "ID-08",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "RUN-04",
+      "RUN-05"
+    ],
+    "candidate_generated_original_reviewed_export_paths": [
+      "brand/assets/identity/specimen.png",
+      "brand/assets/web/latest-run-poster.webp",
+      "brand/assets/web/latest-run-poster-mobile.webp",
+      "brand/assets/web/path-watch.png",
+      "brand/assets/web/path-build.png",
+      "brand/assets/web/site-og.png",
+      "brand/assets/web/404.png",
+      "brand/assets/web/unavailable.png",
+      "brand/assets/web/subscribe-confirm.png",
+      "brand/assets/web/subscribe-success.png",
+      "brand/assets/web/capabilities.png",
+      "brand/assets/web/map-preview.png",
+      "brand/assets/web/map-preview-mobile.png",
+      "brand/assets/run/summary-template.png",
+      "brand/assets/run/decision-landscape.png",
+      "brand/assets/run/decision-vertical.png",
+      "brand/assets/run/replay-receipt.png",
+      "brand/assets/run/comparison-template.png"
+    ],
+    "missing_required_exports": [
+      {
+        "asset_id": "RUN-01",
+        "path": "brand/assets/run/summary-template-square.png",
+        "reason": "The existing landscape layout does not preserve all left-side labels and field structure in a square center crop; an authored square reflow is required."
+      },
+      {
+        "asset_id": "RUN-02",
+        "path": "brand/assets/run/decision-square.png",
+        "reason": "The existing landscape layout cannot preserve the state/options and three separate analysis areas in a square center crop; an authored square reflow is required."
+      },
+      {
+        "asset_id": "RUN-03",
+        "path": "brand/assets/run/timeline-template.png",
+        "reason": "The viewed source is approximately 2:1 while the required export is 1600x500, approximately 3.2:1; a mechanical crop would remove required title, status, labels, or footer content."
+      }
+    ],
+    "creative_reflow_blocker": {
+      "assets": [
+        "RUN-01",
+        "RUN-02",
+        "RUN-03"
+      ],
+      "state": "The current image service is usage-limited with HTTP 429 per the active batch context; no substitute backend, account, code-drawn artwork, or unsafe crop was used.",
+      "required_follow_up": "Obtain the missing authored root-route reflows when the authorized image route is available, preserve the exact template boundaries, then repeat independent visual and export review."
+    },
+    "decision": "The ten listed ready families pass this bounded visual and mechanical-export review, subject to the WEB-03 adjacent-heading condition and the separate provenance, rights, and publication gates. RUN-01 and RUN-02 remain partial until their square variants receive authored reflows. RUN-03 remains blocked until its wide timeline export receives authored reflow. This decision is not a public deployment or publication approval."
+  },
+  "source_use_and_rights_observation": {
+    "result": "bounded_generated_original_input_observation",
+    "observed_inputs": "The reviewed source records are local root-route generated PNGs. Where references are declared, they point to earlier local generated masters in this repository, including BG-01, ID-01, ID-07, ID-08, WEB-02 generation-001, WEB-07 generation-001, and WEB-08 generation-001.",
+    "visual_observation": "No external gameplay capture, recognizable third-party mark, provider logo, proprietary game screenshot, or font binary was observed in the inspected masters or exports. WEB-08 and the run templates visibly disclose their conceptual or blank-template status, and WEB-02 visibly says Illustration · Report only.",
+    "candidate_basis": "The candidate family list is based on the inspected source inputs and rendered content being bounded generated-original artwork with no external input or mark observed, plus complete reviewed exports where applicable.",
+    "limits": [
+      "This is not a copyright, trademark, license, or permission determination.",
+      "Generated artwork is not gameplay or product evidence.",
+      "The root route's author model and image backend remain unknown in the recorded provenance.",
+      "The manifest rights_status and publication approval must remain separate until their required authority and provenance records are complete."
+    ]
+  },
+  "assets": [
+    {
+      "asset_id": "ID-08",
+      "title": "Design token and typography specimen",
+      "selected_generation": 2,
+      "source_records": [
+        {
+          "generation": 2,
+          "prompt_path": "brand/prompts/root/ID-08/generation-002.txt",
+          "prompt_sha256": "6f8b427731bbb6ce5e9a9a9d6c31e6afa12da390459563aeef70810b3c994667",
+          "source_path": "brand/sources/generated/ID-08/generation-002.png",
+          "source_sha256": "28f9343f13307ea672db605c2021cf362d9c054ad93b3412f470638009103766",
+          "source_dimensions": "1122x1402",
+          "source_mode": "RGB",
+          "declared_references": [
+            "brand/sources/generated/ID-08/generation-001.png"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/identity/specimen.png",
+          "sha256": "97272f6704cda951761eb97c9027b001dd41d072f7242e4ccd9b572733aee49e",
+          "dimensions": "1600x2000",
+          "crop_box": [
+            0,
+            0,
+            1122,
+            1402
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "The corrected master and specimen.png visibly read JetBrains Mono in the mono typeface caption. AI Ascension, Ascent Ledger, palette labels, Watch. Inspect. Build., spacing samples, button states, and the evidence reminder are readable with no visible clipped text.",
+      "crop_safety": "The source and target are effectively the same 4:5 composition; the full-frame resize retains the mark, wordmark, type labels, controls, and footer inside clear margins.",
+      "functional_specimen_observation": "The adjacent specimen.html also names JetBrains Mono, says that generated lettering is not proof of a particular typeface, and makes no font-binary promise. That HTML observation does not attest runtime font availability.",
+      "source_use_observation": "The only declared input is the earlier local generated ID-08 master; no external capture, third-party mark, provider logo, or font binary is visible.",
+      "issues": [],
+      "limits": [
+        "The image caption identifies an intended font reference; it does not prove that a bundled or installed JetBrains Mono font is present."
+      ]
+    },
+    {
+      "asset_id": "WEB-02",
+      "title": "Latest-run generated editorial poster",
+      "selected_generations": [
+        1,
+        2
+      ],
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/WEB-02/generation-001.txt",
+          "prompt_sha256": "52a6957d43261a9560b625dbb00d23ad9852b4153d7d97e479e8075a74113128",
+          "source_path": "brand/sources/generated/WEB-02/generation-001.png",
+          "source_sha256": "3bff30fbf01cbd531a9a58a42b77beda1d04b4fb07ef88a34815c7295e57373b",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "declared_references": [
+            "brand/sources/generated/BG-01/generation-001.png"
+          ]
+        },
+        {
+          "generation": 2,
+          "prompt_path": "brand/prompts/root/WEB-02/generation-002.txt",
+          "prompt_sha256": "61c0f555e7b96a45e2eaab328a9c321110473b1efd46a68f5a56bf7663273b87",
+          "source_path": "brand/sources/generated/WEB-02/generation-002.png",
+          "source_sha256": "09b8448d5b0d921390ea310e2ad1323f3e8b6ecb9e0ece3a6edaba74239e03e5",
+          "source_dimensions": "1086x1448",
+          "source_mode": "RGB",
+          "declared_references": [
+            "brand/sources/generated/WEB-02/generation-001.png"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/web/latest-run-poster.webp",
+          "sha256": "95ed105e415a6aa7a3c076a4dfc414ce9e93a61a349e3504cde3680b4b614c28",
+          "dimensions": "1600x900",
+          "crop_box": [
+            0,
+            0,
+            1672,
+            940
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        },
+        {
+          "path": "brand/assets/web/latest-run-poster-mobile.webp",
+          "sha256": "b4dc73d00d308e4365a984a9aa74f20aa6308e5db8f97db171bdb542c3877204",
+          "dimensions": "900x1200",
+          "crop_box": [
+            0,
+            0,
+            1086,
+            1448
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "Both aspect variants visibly retain the exact title The climb continues, Linux seeded run, Defeat · Floor 24, and 431 settled operations · 1 restart. The mobile layout also retains Illustration · Report only and AI Ascension with readable margins.",
+      "evidence_observation": "The footer says Illustration · Report only, and the visual contains no gameplay screenshot, victory imagery, live indicator, provider logo, or extra metric. It is a generated illustration of a dated report, not run evidence.",
+      "crop_safety": "The landscape and portrait masters are intentional aspect variants. All factual lines and both disclosure/footer lines remain inside the reviewed crops; the abstract path art may bleed to the right or bottom edge without touching the text.",
+      "source_use_observation": "The wide master references local generated BG-01 and the portrait revision references the local wide master; no external gameplay capture or third-party mark is visible.",
+      "issues": [],
+      "limits": [
+        "The factual lines are rendered in artwork and must be kept synchronized with the source report before any future reuse."
+      ]
+    },
+    {
+      "asset_id": "WEB-03",
+      "title": "Watch and Build pathway graphics",
+      "selected_generation": 1,
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/WEB-03/generation-001.txt",
+          "prompt_sha256": "42097e8de4b6c2b239e50df8dd4885862b236e4972d53401f9c51e008d3bbdff",
+          "source_path": "brand/sources/generated/WEB-03/generation-001.png",
+          "source_sha256": "efd8646759aeb0c176bcde3eb6b449e0e9f4defd3ec5154a576d6d261b715e86",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "declared_references": []
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/web/path-watch.png",
+          "sha256": "cbfdd6b79a0cfca7f43c741d5fb962a95476389cd9fa9deae388667d00b125fa",
+          "dimensions": "800x500",
+          "crop_box": [
+            0,
+            235,
+            887,
+            789
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        },
+        {
+          "path": "brand/assets/web/path-build.png",
+          "sha256": "082a5514431c9c4f89c04517ee3f12c8050e61e3a82e8a58ec8c8934b87fab24",
+          "dimensions": "800x500",
+          "crop_box": [
+            887,
+            235,
+            1774,
+            789
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "The native pair visibly contains exact headings Watch and Build and exact labels Run report, Source record, Code, and Local tests. The revised 800x500 exports intentionally omit the source headings while retaining each complete icon, arrow, and lower label; no lettering or linework is clipped in the current crops.",
+      "crop_safety": "The current y235..789 panel crops remove the prior top-heading clipping and preserve the complete diagrams and labels. The export itself does not carry Watch or Build, so it must be placed with an adjacent visible heading and equivalent accessible text in the consuming HTML.",
+      "evidence_observation": "The pair explains a run-report/source-record path and a code/local-tests path. It contains no result, deployment state, video promise, game UI, or fabricated metric.",
+      "source_use_observation": "The source has no declared external input and no third-party or gameplay content is visible.",
+      "issues": [
+        {
+          "severity": "integration_condition",
+          "finding": "The revised mechanical crops intentionally exclude Watch and Build. A consuming surface must supply those headings adjacent to the corresponding image so the exported image is not semantically anonymous.",
+          "required_follow_up": "Keep the current crop receipts and provide the visible headings plus accessible equivalent text in the consumer."
+        }
+      ],
+      "limits": []
+    },
+    {
+      "asset_id": "WEB-04",
+      "title": "Hero and primary-page social preview",
+      "selected_generation": 1,
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/WEB-04/generation-001.txt",
+          "prompt_sha256": "fd9311d1f6091d964436d163b7a67e940b4c054917f69bb2a543c01b7f9ab845",
+          "source_path": "brand/sources/generated/WEB-04/generation-001.png",
+          "source_sha256": "a296dd381e0fabe451b533d60b24357908970f1e61be4c1befff56e4c5ad2e5b",
+          "source_dimensions": "1730x909",
+          "source_mode": "RGB",
+          "declared_references": [
+            "brand/sources/generated/BG-01/generation-001.png",
+            "brand/sources/generated/ID-01/generation-001.png"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/web/site-og.png",
+          "sha256": "684ca219c6f4bfbdbc976a7a6fabd07571ef05f801942a635ff1e4b5c940c937",
+          "dimensions": "1200x630",
+          "crop_box": [
+            0,
+            0,
+            1730,
+            908
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "The master and export visibly retain AI Ascension, Watch AI play., Inspect the run., Help it climb., Open tooling for game-playing agents, and aiascension.tech with ample clearspace and no clipped characters.",
+      "evidence_observation": "The social preview contains no live label, result, metric, victory claim, game scene, sponsor, or mockup.",
+      "crop_safety": "The near-1.9:1 source-to-export crop retains the complete left text hierarchy and keeps the branching artwork on the right; the one-pixel bottom exclusion contains no visible content.",
+      "source_use_observation": "The declared inputs are local generated BG-01 and ID-01 masters. No external gameplay capture, provider logo, or third-party mark is visible.",
+      "issues": [],
+      "limits": []
+    },
+    {
+      "asset_id": "WEB-05",
+      "title": "404 and unavailable artwork",
+      "selected_generation": 1,
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/WEB-05/generation-001.txt",
+          "prompt_sha256": "10720e12799c3ebeb5bf6e6fe5c288fe91880b1cabf2c9d1e2c2a7848f51389f",
+          "source_path": "brand/sources/generated/WEB-05/generation-001.png",
+          "source_sha256": "0598f68e066ac15767d24d3e1d547d2ec19a17576d3e9fc97431575434dbe3f0",
+          "source_dimensions": "2048x768",
+          "source_mode": "RGB",
+          "declared_references": []
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/web/404.png",
+          "sha256": "20708d150db81489c53e4153b1c8273175b4265324c8d2ca293d6aeafd1190bd",
+          "dimensions": "800x600",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            768
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        },
+        {
+          "path": "brand/assets/web/unavailable.png",
+          "sha256": "1b2388061f132853235dfe54a65d56a306d1100ac61f8f684dac419bd94dc7d2",
+          "dimensions": "800x600",
+          "crop_box": [
+            1024,
+            0,
+            2048,
+            768
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "These artwork-only panels intentionally contain no embedded text. Their linework and restrained amber details are legible at 800x600 and leave the user-facing state copy to HTML.",
+      "evidence_observation": "The left panel depicts a path that ends before a destination and the right panel depicts separated path segments with a pause motif. No error code, warning claim, number, logo, game imagery, or fabricated state is embedded.",
+      "crop_safety": "The exact half-panel crops preserve each centered illustration and broad clearspace without cutting the focal paths or motifs.",
+      "source_use_observation": "No declared external input; no external capture, third-party mark, provider logo, or font binary is visible.",
+      "issues": [],
+      "limits": [
+        "The application must provide the actual 404 or unavailable wording and action separately."
+      ]
+    },
+    {
+      "asset_id": "WEB-06",
+      "title": "Subscription success and confirmation art",
+      "selected_generation": 1,
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/WEB-06/generation-001.txt",
+          "prompt_sha256": "56ff5591154ce492969cb4945a4fe09f7ec35bb51943899a83d75eb634fe7764",
+          "source_path": "brand/sources/generated/WEB-06/generation-001.png",
+          "source_sha256": "a3dded6f46a32d0fcdb2f45224a3565748bbea1a6a2b19b9dd6bf622aadd0173",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "declared_references": []
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/web/subscribe-confirm.png",
+          "sha256": "9b29588a0746cc43ff563d4eb60074e5b18afc271f43c3162a7eeb3941ecfb72",
+          "dimensions": "400x300",
+          "crop_box": [
+            0,
+            157,
+            836,
+            784
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        },
+        {
+          "path": "brand/assets/web/subscribe-success.png",
+          "sha256": "1859fff07e055ac8291de414d445045164f2bd71af85bcc58e078a416707c0a8",
+          "dimensions": "400x300",
+          "crop_box": [
+            836,
+            157,
+            1672,
+            784
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "These artwork-only panels intentionally contain no embedded text. The closed envelope and open checked envelope remain clearly distinguishable at 400x300.",
+      "evidence_observation": "The two panels communicate confirmation requested versus confirmation completed visually, while the application must provide and label the actual subscription state. No account data, badge, statistic, or claim is embedded.",
+      "crop_safety": "The envelope and check remain fully inside both crops. The decorative amber path exits the bottom edge in each export; this is edge bleed outside the focal object rather than an accidental cut through the envelope or check.",
+      "source_use_observation": "No declared external input; no external capture, third-party mark, provider logo, or font binary is visible.",
+      "issues": [],
+      "limits": [
+        "The artwork cannot establish that an email was sent or confirmed; the functional application state must remain separate."
+      ]
+    },
+    {
+      "asset_id": "WEB-07",
+      "title": "Current capability diagram",
+      "selected_generation": 2,
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/WEB-07/generation-001.txt",
+          "prompt_sha256": "03f8705b0d2fa9018278e3ed467adafa6a2464973df1668d84011a531d3c16b4",
+          "source_path": "brand/sources/generated/WEB-07/generation-001.png",
+          "source_sha256": "4aa7c679695cd3f81eb9443312c35fddecf95570b0fcbc7e3e49da271adf4b28",
+          "source_dimensions": "1567x1004",
+          "source_mode": "RGB",
+          "declared_references": []
+        },
+        {
+          "generation": 2,
+          "prompt_path": "brand/prompts/root/WEB-07/generation-002.txt",
+          "prompt_sha256": "01d14958919a7f4f8c6643f13f8c8bba1f1d222fd9197873f4088a369163aaec",
+          "source_path": "brand/sources/generated/WEB-07/generation-002.png",
+          "source_sha256": "4a091df54539ac8b95c6e7edabd7f4d502e8bc12836f4767bff6c5bb4d786f45",
+          "source_dimensions": "1567x1004",
+          "source_mode": "RGB",
+          "declared_references": [
+            "brand/sources/generated/WEB-07/generation-001.png"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/web/capabilities.png",
+          "sha256": "5f58ef856ab6eaeb5ee0f784b79893ea947861aa855f004e909735c5a6e88661",
+          "dimensions": "1400x900",
+          "crop_box": [
+            2,
+            0,
+            1564,
+            1004
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "The current generation-002 master and capabilities.png visibly contain the exact title Evidence has dimensions, the four headings Source, Reported run, Public media, Support, their subtitles Pinned code, Dated reports, Approval required, Version scoped, the footer A source record is not a deployment claim., and AI Ascension.",
+      "evidence_observation": "The four dimensions remain visually separate, with no overarching verified badge. The corrected far-right badge says Scoped. The earlier generation-001 badge visibly said v1.2.3 and is superseded; it must not be used.",
+      "crop_safety": "The narrow x2..1564 crop retains the title, all four columns, the corrected Scoped badge, footer, and attribution inside broad margins.",
+      "source_use_observation": "Generation-002 declares the earlier local WEB-07 generated master as its only input; no external capture, third-party mark, provider logo, or font binary is visible.",
+      "issues": [],
+      "limits": [
+        "This conceptual diagram is not a live capability or deployment attestation; current capability copy must remain source-linked in adjacent functional content."
+      ]
+    },
+    {
+      "asset_id": "WEB-08",
+      "title": "Map viewer integration preview",
+      "selected_generations": [
+        1,
+        2
+      ],
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/WEB-08/generation-001.txt",
+          "prompt_sha256": "7c68c441d1421aea96fb9db2a61abe35774cf6f01f70d956c7d435b8e0fc053b",
+          "source_path": "brand/sources/generated/WEB-08/generation-001.png",
+          "source_sha256": "2c2c9f3d0c2d57c8de90ac340ba849b84f437d13fb1440d72a3cb0a79fea2b50",
+          "source_dimensions": "1536x1024",
+          "source_mode": "RGB",
+          "declared_references": []
+        },
+        {
+          "generation": 2,
+          "prompt_path": "brand/prompts/root/WEB-08/generation-002.txt",
+          "prompt_sha256": "77515fbeb2e86c0cdd1014305e372d00c5879cf580f67e5fa5bffabffa197c83",
+          "source_path": "brand/sources/generated/WEB-08/generation-002.png",
+          "source_sha256": "1ae5c9bfd6d6b7bdcd68069bc558ebc90483a728e0ac402f3dab1ed8d820ba60",
+          "source_dimensions": "1086x1448",
+          "source_mode": "RGB",
+          "declared_references": [
+            "brand/sources/generated/WEB-08/generation-001.png"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/web/map-preview.png",
+          "sha256": "0e9723738c99e12fcb90d820c7fa580debccc495c6a8e5dbf836216a3c3ac010",
+          "dimensions": "1440x960",
+          "crop_box": [
+            0,
+            0,
+            1536,
+            1024
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        },
+        {
+          "path": "brand/assets/web/map-preview-mobile.png",
+          "sha256": "e8120038a768a50ff208dbb93027afcb38288136c24400d18231a64cd228bf96",
+          "dimensions": "900x1200",
+          "crop_box": [
+            0,
+            0,
+            1086,
+            1448
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "Both aspect variants visibly retain CONCEPTUAL ROUTE MAP, Synthetic illustration — not gameplay, five layer labels with synthetic node labels, START, and Experimental preview. The portrait reflow keeps every label and node inside the canvas.",
+      "evidence_observation": "The title and subtitle make the conceptual status unmistakable. The graph is sparse and synthetic, with no actual seed, score, room state, game symbol, screenshot, or accuracy claim.",
+      "crop_safety": "The landscape and portrait exports use full-frame aspect-specific masters; the title, subtitle, layer labels, graph, START node, and bottom Experimental preview all have visible clearspace.",
+      "source_use_observation": "No declared external input; no gameplay capture, third-party mark, provider logo, proprietary game content, or font binary is visible.",
+      "issues": [],
+      "limits": [
+        "The graphic must stay labeled as an experimental conceptual preview wherever it is consumed."
+      ]
+    },
+    {
+      "asset_id": "RUN-01",
+      "title": "Run summary card template",
+      "selected_generation": 1,
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/RUN-01/generation-001.txt",
+          "prompt_sha256": "485a8dd5bd453e356c7cc420f178f2d5c53572fe62c0c275f69178844ab45129",
+          "source_path": "brand/sources/generated/RUN-01/generation-001.png",
+          "source_sha256": "258c5237705b0384531552c5ea8bd9b2ab27a6ce20c9041766ba654a952b9579",
+          "source_dimensions": "1730x909",
+          "source_mode": "RGB",
+          "declared_references": []
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/run/summary-template.png",
+          "sha256": "bfce85dd8894e2a5f030b02f3b1eb2c3b91b63e90235e58f52a9d879d2fd6215",
+          "dimensions": "1200x630",
+          "crop_box": [
+            0,
+            0,
+            1730,
+            908
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "status": "visually_ready_landscape_only"
+        }
+      ],
+      "missing_exports": [
+        "brand/assets/run/summary-template-square.png"
+      ],
+      "verdict": "partial_ready_landscape_only",
+      "typography_observation": "The source and landscape export visibly retain Run summary, TEMPLATE — NO RUN DATA, and the exact blank field labels Run ID, Outcome, Model configuration, Game / build, Interventions, Evidence, and Source URL. Every value area is blank.",
+      "template_boundary": "This is visibly a blank template and contains no run ID, outcome, model, game/build, intervention, evidence value, URL, number, result, or universal verification badge.",
+      "crop_safety": "The 1200x630 landscape crop retains the complete title, template notice, field labels, blank fields, attribution, and right-side branching ornament. A center square crop would cut one or more left-side labels and the horizontal field structure.",
+      "source_use_observation": "No declared external input; no gameplay capture, third-party mark, provider logo, or font binary is visible.",
+      "issues": [
+        {
+          "severity": "blocking_required_variant",
+          "finding": "The registry requires summary-template-square.png, but no square export is present.",
+          "required_follow_up": "Use a new authored creative reflow for the square layout when the authorized image route is available; do not repair it by drawing or force-cropping the landscape master."
+        }
+      ],
+      "limits": [
+        "The current landscape export may be used only as a blank landscape template until the required square variant exists."
+      ]
+    },
+    {
+      "asset_id": "RUN-02",
+      "title": "Decision reveal card templates",
+      "selected_generations": [
+        1,
+        2
+      ],
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/RUN-02/generation-001.txt",
+          "prompt_sha256": "49a64b19da80194e1688df38b5561e4e2327eb2750ffb35330f9c987e6dddc6",
+          "source_path": "brand/sources/generated/RUN-02/generation-001.png",
+          "source_sha256": "72bb09ff9e071529e50665bef37a8fa55dbd27c5750ffb35330f9c987e6dddc6",
+          "source_dimensions": "1731x909",
+          "source_mode": "RGB",
+          "declared_references": []
+        },
+        {
+          "generation": 2,
+          "prompt_path": "brand/prompts/root/RUN-02/generation-002.txt",
+          "prompt_sha256": "958475e2f357cd1eaecb6cdd74761567192e7cc0976367abdd2631f6adf482ed",
+          "source_path": "brand/sources/generated/RUN-02/generation-002.png",
+          "source_sha256": "f0d07c6648cbd75be128e265be9bbd17b3de4aa39f6f1dd34721832b6ac2c946",
+          "source_dimensions": "941x1672",
+          "source_mode": "RGB",
+          "declared_references": [
+            "brand/sources/generated/RUN-02/generation-001.png"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/run/decision-landscape.png",
+          "sha256": "0d71b2965863d98a6d089a866484fd239df052839b25486f6ae374588423446c",
+          "dimensions": "1200x630",
+          "crop_box": [
+            0,
+            0,
+            1731,
+            909
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "status": "visually_ready_landscape"
+        },
+        {
+          "path": "brand/assets/run/decision-vertical.png",
+          "sha256": "3b9eaa4c73bb5d67c8e19a4e138ad7aebc95364f012b7a352efdac478e41d534",
+          "dimensions": "1080x1920",
+          "crop_box": [
+            0,
+            0,
+            940,
+            1672
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "status": "visually_ready_vertical"
+        }
+      ],
+      "missing_exports": [
+        "brand/assets/run/decision-square.png"
+      ],
+      "verdict": "partial_ready_landscape_and_vertical",
+      "typography_observation": "The landscape and portrait variants visibly retain Decision reveal, TEMPLATE — NO DECISION DATA, and the exact labels State, Options, Agent action, Public explanation, Human analysis, and Consequence. All areas are blank.",
+      "template_boundary": "No choice, rationale, game state, card name, timestamp, consequence value, result, success badge, or other decision data is embedded.",
+      "crop_safety": "The landscape and portrait masters are intentional aspect variants and preserve all required labels and empty areas. A center square crop would compress or cut the horizontal state/options and three separate analysis areas.",
+      "source_use_observation": "Generation-002 declares the local landscape generated master as its input; no gameplay capture, third-party mark, provider logo, or font binary is visible.",
+      "issues": [
+        {
+          "severity": "blocking_required_variant",
+          "finding": "The registry requires decision-square.png, but no square export is present.",
+          "required_follow_up": "Use a new authored creative reflow for the square layout when the authorized image route is available; do not repair it by drawing or force-cropping an existing aspect variant."
+        }
+      ],
+      "limits": [
+        "The current landscape and vertical exports remain blank templates and must not be populated by treating their empty boxes as evidence."
+      ]
+    },
+    {
+      "asset_id": "RUN-03",
+      "title": "Timeline graphic template",
+      "selected_generation": 1,
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/RUN-03/generation-001.txt",
+          "prompt_sha256": "03413e352fc1b300c3f2a6d869db5c999b8e80fe7d3f3b0d31299572c5634e26",
+          "source_path": "brand/sources/generated/RUN-03/generation-001.png",
+          "source_sha256": "9767ec17fe8fca60baa9bf7a5e8092d1fc77b2824e375c03f6551145446b85d2",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "declared_references": []
+        }
+      ],
+      "exports": [],
+      "verdict": "blocked_requires_creative_reflow",
+      "typography_observation": "The viewed source visibly retains Run timeline, TEMPLATE — NO EVENTS, Public event, Intervention, Source reference, and Populate only from an approved public record. The baseline has no points, timestamps, ticks, gaps, outcome markers, or event data.",
+      "template_boundary": "This is a blank timeline template with no public event, intervention, source reference value, real graph data, live state, or badge.",
+      "crop_safety": "The source is approximately 2:1 while the required export is 1600x500, approximately 3.2:1. The title and template notice are high in the source, the three labels are lower, and the footer sits at the bottom; no single mechanical wide crop retains all of them.",
+      "source_use_observation": "No declared external input; no gameplay capture, third-party mark, provider logo, or font binary is visible.",
+      "issues": [
+        {
+          "severity": "blocking_missing_export",
+          "finding": "timeline-template.png is absent from both the available export receipts and the filesystem.",
+          "required_follow_up": "Obtain an authored wide reflow through the authorized image route, then inspect title, notice, labels, baseline, and footer again before mechanical export."
+        }
+      ],
+      "limits": [
+        "The source master is visually suitable as a blank composition reference but is not a delivered 1600x500 export."
+      ]
+    },
+    {
+      "asset_id": "RUN-04",
+      "title": "Replay receipt graphic template",
+      "selected_generation": 1,
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/RUN-04/generation-001.txt",
+          "prompt_sha256": "46047935e9cd415c3ce97f90d9a64b43bf942d05d31436c995987ce59fb1a45c",
+          "source_path": "brand/sources/generated/RUN-04/generation-001.png",
+          "source_sha256": "21cb55f1fe882a1185129b25e90c79c68ea6ea5b1c39e333d85745e382374ca6",
+          "source_dimensions": "1730x909",
+          "source_mode": "RGB",
+          "declared_references": []
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/run/replay-receipt.png",
+          "sha256": "5c08997cdf34f5e86b13e58a9a17fa279583a42c209d8218c6e5b3e1ba3e69b0",
+          "dimensions": "1200x630",
+          "crop_box": [
+            0,
+            0,
+            1730,
+            908
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "The source and export visibly retain Replay receipt, TEMPLATE — NO REPLAY RESULT, and the exact labels Replay outcome, Matching policy, Original provider calls, New provider calls, Compute cost, Evidence availability, and Source.",
+      "template_boundary": "All value fields are blank. Original calls, new calls, and compute cost remain distinct, and the artwork contains no zero, success check, replay guarantee, run ID, model, URL, or statistic.",
+      "crop_safety": "The landscape crop retains the complete title, notice, seven labels, blank fields, rule, and attribution with no visible clipping.",
+      "source_use_observation": "No declared external input; no gameplay capture, third-party mark, provider logo, or font binary is visible.",
+      "issues": [],
+      "limits": [
+        "The blank receipt cannot establish a replay result or provider-call count; those values require an approved record in the consuming data."
+      ]
+    },
+    {
+      "asset_id": "RUN-05",
+      "title": "Comparison and rules panel template",
+      "selected_generation": 1,
+      "source_records": [
+        {
+          "generation": 1,
+          "prompt_path": "brand/prompts/root/RUN-05/generation-001.txt",
+          "prompt_sha256": "939857ca25bdef399a205a73dc3595a7ccee0a127e3e520d3582ee126810244b",
+          "source_path": "brand/sources/generated/RUN-05/generation-001.png",
+          "source_sha256": "b014c353cde347d51d52486473ae2d32f9e60bdaee932d0186d14db75aef0c6d",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "declared_references": []
+        }
+      ],
+      "exports": [
+        {
+          "path": "brand/assets/run/comparison-template.png",
+          "sha256": "b66fe8206d3dd85cca32229df6a2b81b61467b1df63c485f329ccd991c27b224",
+          "dimensions": "1600x900",
+          "crop_box": [
+            0,
+            0,
+            1672,
+            940
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ]
+        }
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "typography_observation": "The source and export visibly retain Comparison rules, TEMPLATE — NO COMPARISON DATA, the columns Condition, Run A, Run B, all seven row labels Versions, Seed visibility, Observation / action, Resource budget, Interventions, Attempts, Evidence, and the footer Matching conditions first. No intelligence ranking.",
+      "template_boundary": "Every Run A and Run B cell is blank. No metric, model, seed value, winner, attempt count, verified badge, or real result is embedded. The small mountain-and-star ornament reads as generic decoration and is not a recognizable game symbol.",
+      "crop_safety": "The near-16:9 crop retains the complete title, notice, table, seven rows, footer line, and attribution without visible clipping.",
+      "source_use_observation": "No declared external input; no gameplay capture, third-party mark, provider logo, or font binary is visible.",
+      "issues": [],
+      "limits": [
+        "The template's blank cells must be populated only from a reviewed comparison record with matching conditions."
+      ]
+    }
+  ],
+  "unverified_or_deferred": [
+    "Root author role, native ancestry, author model, image model, and backend identity remain unknown or unattested in the root route records.",
+    "Visual source-use observations do not replace legal rights, trademark, license, or publication review.",
+    "No reviewed generated artwork is product evidence, gameplay evidence, deployment proof, or provider proof.",
+    "RUN-01 summary-template-square.png, RUN-02 decision-square.png, and RUN-03 timeline-template.png remain unavailable pending authored creative reflow.",
+    "WEB-03 exports require adjacent visible Watch and Build headings and equivalent accessible text in their consuming surface.",
+    "Final deployment, responsive browser placement, application-state labeling, current factual synchronization, and public-release approval remain downstream checks."
+  ]
+}

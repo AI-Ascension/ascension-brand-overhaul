@@ -1,0 +1,660 @@
+{
+  "schema_version": "root-mechanical-export-recipe-v1",
+  "exports": [
+    {
+      "asset_id": "ID-01",
+      "source_path": "brand/sources/generated/ID-01/generation-004.png",
+      "crop_box": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "output_path": "brand/assets/identity/mark.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-01",
+      "source_path": "brand/sources/generated/ID-01/generation-004.png",
+      "crop_box": [
+        887,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "output_path": "brand/assets/identity/mark-mono.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-02",
+      "source_path": "brand/sources/generated/ID-02/generation-001.png",
+      "crop_box": [
+        0,
+        59,
+        1774,
+        384
+      ],
+      "size": [
+        1200,
+        220
+      ],
+      "output_path": "brand/assets/identity/ai-ascension-light.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-02",
+      "source_path": "brand/sources/generated/ID-02/generation-001.png",
+      "crop_box": [
+        0,
+        502,
+        1774,
+        827
+      ],
+      "size": [
+        1200,
+        220
+      ],
+      "output_path": "brand/assets/identity/ai-ascension-dark.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-03",
+      "source_path": "brand/sources/generated/ID-03/generation-001.png",
+      "crop_box": [
+        263,
+        0,
+        1908,
+        362
+      ],
+      "size": [
+        1000,
+        220
+      ],
+      "output_path": "brand/assets/identity/ascension-light.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-03",
+      "source_path": "brand/sources/generated/ID-03/generation-001.png",
+      "crop_box": [
+        263,
+        362,
+        1908,
+        724
+      ],
+      "size": [
+        1000,
+        220
+      ],
+      "output_path": "brand/assets/identity/ascension-dark.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-04",
+      "source_path": "brand/sources/generated/ID-04/generation-001.png",
+      "crop_box": [
+        0,
+        127,
+        1942,
+        682
+      ],
+      "size": [
+        1400,
+        400
+      ],
+      "output_path": "brand/assets/identity/the-climb-master.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-04",
+      "source_path": "brand/sources/generated/ID-04/generation-001.png",
+      "crop_box": [
+        0,
+        127,
+        1942,
+        682
+      ],
+      "size": [
+        1400,
+        400
+      ],
+      "output_path": "brand/assets/identity/the-climb.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-05",
+      "source_path": "brand/sources/generated/ID-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "output_path": "brand/assets/identity/avatar-1024.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-05",
+      "source_path": "brand/sources/generated/ID-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "output_path": "brand/assets/identity/avatar-256.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "output_path": "brand/assets/identity/favicon.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "output_path": "brand/assets/identity/favicon-32.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "output_path": "brand/assets/identity/favicon-16.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        180,
+        180
+      ],
+      "output_path": "brand/assets/identity/apple-touch-icon.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-07",
+      "source_path": "brand/sources/generated/ID-07/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "output_path": "brand/assets/identity/icons.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "ID-08",
+      "source_path": "brand/sources/generated/ID-08/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1122,
+        1402
+      ],
+      "size": [
+        1600,
+        2000
+      ],
+      "output_path": "brand/assets/identity/specimen.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "BG-01",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "size": [
+        2400,
+        1600
+      ],
+      "output_path": "brand/assets/illustration/ascent-master.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "BG-02",
+      "source_path": "brand/sources/generated/BG-02/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "size": [
+        2560,
+        1440
+      ],
+      "output_path": "brand/assets/illustration/broadcast-master.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "BG-03",
+      "source_path": "brand/sources/generated/BG-03/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        2160,
+        2160
+      ],
+      "output_path": "brand/assets/illustration/series-master.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "BG-04",
+      "source_path": "brand/sources/generated/BG-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "size": [
+        800,
+        800
+      ],
+      "output_path": "brand/assets/illustration/route-pattern-light.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "BG-04",
+      "source_path": "brand/sources/generated/BG-04/generation-001.png",
+      "crop_box": [
+        887,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        800,
+        800
+      ],
+      "output_path": "brand/assets/illustration/route-pattern-dark.png",
+      "review_state": "ready_for_mechanical_export"
+    },
+    {
+      "asset_id": "WEB-01",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "crop_box": [
+        0,
+        32,
+        1536,
+        992
+      ],
+      "size": [
+        1600,
+        1000
+      ],
+      "output_path": "brand/assets/web/home-desktop.webp",
+      "review_state": "pending_independent_review",
+      "encoding": {
+        "lossless": false,
+        "quality": 86,
+        "method": 6
+      }
+    },
+    {
+      "asset_id": "WEB-01",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "crop_box": [
+        358,
+        0,
+        1177,
+        1024
+      ],
+      "size": [
+        800,
+        1000
+      ],
+      "output_path": "brand/assets/web/home-mobile.webp",
+      "review_state": "pending_independent_review",
+      "encoding": {
+        "lossless": false,
+        "quality": 86,
+        "method": 6
+      }
+    },
+    {
+      "asset_id": "WEB-02",
+      "source_path": "brand/sources/generated/WEB-02/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/web/latest-run-poster.webp",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-02",
+      "source_path": "brand/sources/generated/WEB-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "size": [
+        900,
+        1200
+      ],
+      "output_path": "brand/assets/web/latest-run-poster-mobile.webp",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-03",
+      "source_path": "brand/sources/generated/WEB-03/generation-001.png",
+      "crop_box": [
+        0,
+        235,
+        887,
+        789
+      ],
+      "size": [
+        800,
+        500
+      ],
+      "output_path": "brand/assets/web/path-watch.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-03",
+      "source_path": "brand/sources/generated/WEB-03/generation-001.png",
+      "crop_box": [
+        887,
+        235,
+        1774,
+        789
+      ],
+      "size": [
+        800,
+        500
+      ],
+      "output_path": "brand/assets/web/path-build.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-04",
+      "source_path": "brand/sources/generated/WEB-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        908
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/web/site-og.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-05",
+      "source_path": "brand/sources/generated/WEB-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1024,
+        768
+      ],
+      "size": [
+        800,
+        600
+      ],
+      "output_path": "brand/assets/web/404.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-05",
+      "source_path": "brand/sources/generated/WEB-05/generation-001.png",
+      "crop_box": [
+        1024,
+        0,
+        2048,
+        768
+      ],
+      "size": [
+        800,
+        600
+      ],
+      "output_path": "brand/assets/web/unavailable.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-06",
+      "source_path": "brand/sources/generated/WEB-06/generation-001.png",
+      "crop_box": [
+        0,
+        157,
+        836,
+        784
+      ],
+      "size": [
+        400,
+        300
+      ],
+      "output_path": "brand/assets/web/subscribe-confirm.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-06",
+      "source_path": "brand/sources/generated/WEB-06/generation-001.png",
+      "crop_box": [
+        836,
+        157,
+        1672,
+        784
+      ],
+      "size": [
+        400,
+        300
+      ],
+      "output_path": "brand/assets/web/subscribe-success.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-07",
+      "source_path": "brand/sources/generated/WEB-07/generation-002.png",
+      "crop_box": [
+        2,
+        0,
+        1564,
+        1004
+      ],
+      "size": [
+        1400,
+        900
+      ],
+      "output_path": "brand/assets/web/capabilities.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-08",
+      "source_path": "brand/sources/generated/WEB-08/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "size": [
+        1440,
+        960
+      ],
+      "output_path": "brand/assets/web/map-preview.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "WEB-08",
+      "source_path": "brand/sources/generated/WEB-08/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "size": [
+        900,
+        1200
+      ],
+      "output_path": "brand/assets/web/map-preview-mobile.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "RUN-01",
+      "source_path": "brand/sources/generated/RUN-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        908
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/run/summary-template.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "RUN-02",
+      "source_path": "brand/sources/generated/RUN-02/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1731,
+        909
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/run/decision-landscape.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "RUN-02",
+      "source_path": "brand/sources/generated/RUN-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        940,
+        1672
+      ],
+      "size": [
+        1080,
+        1920
+      ],
+      "output_path": "brand/assets/run/decision-vertical.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "RUN-04",
+      "source_path": "brand/sources/generated/RUN-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        908
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/run/replay-receipt.png",
+      "review_state": "pending_independent_review"
+    },
+    {
+      "asset_id": "RUN-05",
+      "source_path": "brand/sources/generated/RUN-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/run/comparison-template.png",
+      "review_state": "pending_independent_review"
+    }
+  ],
+  "deferred": [
+    "RUN-01 square requires authored reflow",
+    "RUN-02 square requires authored reflow",
+    "RUN-03 wide crop requires review before recipe"
+  ]
+}

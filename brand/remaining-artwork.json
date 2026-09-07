@@ -1,0 +1,1068 @@
+{
+  "recorded_at": "2026-09-07T21:32:40.207740+00:00",
+  "scope": "Remaining creative work only. This queue is not an image invocation or completion receipt. Other pending reviews are tracked in the asset manifest.",
+  "authorized_route": "user_authorized_root_image_tool",
+  "image_service_reset_utc": "2026-09-14T02:55:51Z",
+  "required_families": 72,
+  "required_exports": 115,
+  "existing_exports": 42,
+  "missing_exports": 73,
+  "families": [
+    {
+      "asset_id": "BG-04",
+      "title": "Light/dark route pattern",
+      "brief_reference": "art/asset-registry.json#BG-04",
+      "missing_exports": [],
+      "existing_exports": [
+        "brand/assets/illustration/route-pattern-light.png",
+        "brand/assets/illustration/route-pattern-dark.png"
+      ],
+      "blocker": "Both tile exports exist, but the independent review found visible repeat seams. The mandatory seamless requirement needs a new generated master; image service capacity is unavailable.",
+      "replacement_required": [
+        "brand/assets/illustration/route-pattern-light.png",
+        "brand/assets/illustration/route-pattern-dark.png"
+      ]
+    },
+    {
+      "asset_id": "RUN-01",
+      "title": "Run summary card template",
+      "brief_reference": "art/asset-registry.json#RUN-01",
+      "missing_exports": [
+        {
+          "path": "brand/assets/run/summary-template-square.png",
+          "size": "1080\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [
+        "brand/assets/run/summary-template.png"
+      ],
+      "blocker": "The landscape export was independently reviewed. The required square export is missing and needs authored reflow after image service capacity returns."
+    },
+    {
+      "asset_id": "RUN-02",
+      "title": "Decision reveal card templates",
+      "brief_reference": "art/asset-registry.json#RUN-02",
+      "missing_exports": [
+        {
+          "path": "brand/assets/run/decision-square.png",
+          "size": "1080\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [
+        "brand/assets/run/decision-landscape.png",
+        "brand/assets/run/decision-vertical.png"
+      ],
+      "blocker": "Landscape and vertical exports were independently reviewed. The required square export is missing and needs authored reflow after image service capacity returns."
+    },
+    {
+      "asset_id": "RUN-03",
+      "title": "Timeline graphic template",
+      "brief_reference": "art/asset-registry.json#RUN-03",
+      "missing_exports": [
+        {
+          "path": "brand/assets/run/timeline-template.png",
+          "size": "1600\u00d7500",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "A source master exists, but no required 1600\u00d7500 export exists. Independent review requires a new wide creative reflow; image service capacity is unavailable."
+    },
+    {
+      "asset_id": "CAST-01",
+      "title": "Single-agent broadcast overlay",
+      "brief_reference": "art/asset-registry.json#CAST-01",
+      "missing_exports": [
+        {
+          "path": "brand/assets/broadcast/single-agent-master.png",
+          "size": "1920\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/broadcast/single-agent.png",
+          "size": "1920\u00d71080 transparent",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "CAST-02",
+      "title": "Comparison broadcast overlay",
+      "brief_reference": "art/asset-registry.json#CAST-02",
+      "missing_exports": [
+        {
+          "path": "brand/assets/broadcast/comparison.png",
+          "size": "1920\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "CAST-03",
+      "title": "Mobile broadcast layout",
+      "brief_reference": "art/asset-registry.json#CAST-03",
+      "missing_exports": [
+        {
+          "path": "brand/assets/broadcast/vertical.png",
+          "size": "1080\u00d71920",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "CAST-04",
+      "title": "Starting, intermission, and ended scenes",
+      "brief_reference": "art/asset-registry.json#CAST-04",
+      "missing_exports": [
+        {
+          "path": "brand/assets/broadcast/starting.png",
+          "size": "1920\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/broadcast/intermission.png",
+          "size": "1920\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/broadcast/ended.png",
+          "size": "1920\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "CAST-05",
+      "title": "Lower thirds and disclosure bars",
+      "brief_reference": "art/asset-registry.json#CAST-05",
+      "missing_exports": [
+        {
+          "path": "brand/assets/broadcast/lower-third.png",
+          "size": "1920\u00d7240",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/broadcast/disclosure.png",
+          "size": "1920\u00d7160",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "CAST-06",
+      "title": "Short title transition",
+      "brief_reference": "art/asset-registry.json#CAST-06",
+      "missing_exports": [
+        {
+          "path": "brand/assets/broadcast/title-transition.webm",
+          "size": "1920\u00d71080; 1\u20132 s",
+          "format": "webm",
+          "deliverable_kind": "mechanical_motion_from_generated_art",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/broadcast/title-transition-still.png",
+          "size": "1920\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "CAST-07",
+      "title": "Operator scene map",
+      "brief_reference": "art/asset-registry.json#CAST-07",
+      "missing_exports": [
+        {
+          "path": "brand/assets/broadcast/scene-map.png",
+          "size": "1600\u00d71000",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "MKT-01",
+      "title": "Channel cover",
+      "brief_reference": "art/asset-registry.json#MKT-01",
+      "missing_exports": [
+        {
+          "path": "brand/assets/marketing/channel-cover.png",
+          "size": "2560\u00d71440",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "MKT-02",
+      "title": "Social header",
+      "brief_reference": "art/asset-registry.json#MKT-02",
+      "missing_exports": [
+        {
+          "path": "brand/assets/marketing/social-header.png",
+          "size": "1500\u00d7500",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "MKT-03",
+      "title": "Thumbnail system",
+      "brief_reference": "art/asset-registry.json#MKT-03",
+      "missing_exports": [
+        {
+          "path": "brand/assets/marketing/thumbnail-outcome.png",
+          "size": "1280\u00d7720",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/marketing/thumbnail-question.png",
+          "size": "1280\u00d7720",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "MKT-04",
+      "title": "Season key visual",
+      "brief_reference": "art/asset-registry.json#MKT-04",
+      "missing_exports": [
+        {
+          "path": "brand/assets/marketing/season-key-visual.png",
+          "size": "1920\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/marketing/season-key-visual-vertical.png",
+          "size": "1080\u00d71920",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "MKT-05",
+      "title": "Community challenge card",
+      "brief_reference": "art/asset-registry.json#MKT-05",
+      "missing_exports": [
+        {
+          "path": "brand/assets/marketing/challenge-template.png",
+          "size": "1080\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "MKT-06",
+      "title": "Release and contributor card",
+      "brief_reference": "art/asset-registry.json#MKT-06",
+      "missing_exports": [
+        {
+          "path": "brand/assets/marketing/release-template.png",
+          "size": "1200\u00d7630",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/marketing/contributor-template.png",
+          "size": "1080\u00d71080",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "MKT-07",
+      "title": "Email digest artwork",
+      "brief_reference": "art/asset-registry.json#MKT-07",
+      "missing_exports": [
+        {
+          "path": "brand/assets/marketing/email-header.png",
+          "size": "1200\u00d7320",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/marketing/email-run-card.png",
+          "size": "1200\u00d7630",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "MKT-08",
+      "title": "Sponsorship disclosure tile",
+      "brief_reference": "art/asset-registry.json#MKT-08",
+      "missing_exports": [
+        {
+          "path": "brand/assets/marketing/sponsor-disclosure.png",
+          "size": "1200\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "MKT-09",
+      "title": "Press-kit cover and index",
+      "brief_reference": "art/asset-registry.json#MKT-09",
+      "missing_exports": [
+        {
+          "path": "brand/assets/press/cover.png",
+          "size": "1600\u00d7900",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [
+        "brand/assets/press/index.html"
+      ],
+      "blocker": "The functional press catalog exists and currently exposes zero downloads. The required generated cover is missing; image service capacity is unavailable. Public distribution approvals remain empty."
+    },
+    {
+      "asset_id": "DOC-01",
+      "title": "Runtime architecture diagram",
+      "brief_reference": "art/asset-registry.json#DOC-01",
+      "missing_exports": [
+        {
+          "path": "brand/assets/docs/runtime-architecture-master.png",
+          "size": "1600\u00d7900",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/docs/runtime-architecture.png",
+          "size": "2400\u00d71350",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "DOC-02",
+      "title": "Publication and evidence-flow diagram",
+      "brief_reference": "art/asset-registry.json#DOC-02",
+      "missing_exports": [
+        {
+          "path": "brand/assets/docs/publication-flow.png",
+          "size": "1600\u00d71000",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "DOC-03",
+      "title": "Repository and rename map",
+      "brief_reference": "art/asset-registry.json#DOC-03",
+      "missing_exports": [
+        {
+          "path": "brand/assets/docs/repository-map.png",
+          "size": "1600\u00d71200",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "DOC-04",
+      "title": "Three-level orchestration diagram",
+      "brief_reference": "art/asset-registry.json#DOC-04",
+      "missing_exports": [
+        {
+          "path": "brand/assets/docs/agent-tree.png",
+          "size": "1800\u00d71400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "DOC-05",
+      "title": "Maintainer and contributor onboarding graphic",
+      "brief_reference": "art/asset-registry.json#DOC-05",
+      "missing_exports": [
+        {
+          "path": "brand/assets/docs/contributor-path.png",
+          "size": "1200\u00d7900",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-01-B",
+      "title": "Ascension repository banner",
+      "brief_reference": "art/asset-registry.json#GH-01-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ascension-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/ascension-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-01-S",
+      "title": "Ascension social preview",
+      "brief_reference": "art/asset-registry.json#GH-01-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ascension-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-02-B",
+      "title": "Slay the Spire 2 MCP repository banner",
+      "brief_reference": "art/asset-registry.json#GH-02-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-mcp-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/sts2-mcp-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-02-S",
+      "title": "Slay the Spire 2 MCP social preview",
+      "brief_reference": "art/asset-registry.json#GH-02-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-mcp-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-03-B",
+      "title": "Slay the Spire 2 Mod repository banner",
+      "brief_reference": "art/asset-registry.json#GH-03-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-mod-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/sts2-mod-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-03-S",
+      "title": "Slay the Spire 2 Mod social preview",
+      "brief_reference": "art/asset-registry.json#GH-03-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-mod-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-04-B",
+      "title": "STS2 Domain Core repository banner",
+      "brief_reference": "art/asset-registry.json#GH-04-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-core-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/sts2-core-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-04-S",
+      "title": "STS2 Domain Core social preview",
+      "brief_reference": "art/asset-registry.json#GH-04-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-core-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-05-B",
+      "title": "STS2 Gateway repository banner",
+      "brief_reference": "art/asset-registry.json#GH-05-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-gateway-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/sts2-gateway-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-05-S",
+      "title": "STS2 Gateway social preview",
+      "brief_reference": "art/asset-registry.json#GH-05-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-gateway-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-06-B",
+      "title": "STS2 Protocol repository banner",
+      "brief_reference": "art/asset-registry.json#GH-06-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-protocol-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/sts2-protocol-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-06-S",
+      "title": "STS2 Protocol social preview",
+      "brief_reference": "art/asset-registry.json#GH-06-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-protocol-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-07-B",
+      "title": "STS2 Map Viewer repository banner",
+      "brief_reference": "art/asset-registry.json#GH-07-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-map-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/sts2-map-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-07-S",
+      "title": "STS2 Map Viewer social preview",
+      "brief_reference": "art/asset-registry.json#GH-07-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/sts2-map-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-08-B",
+      "title": "Ascension Watchdog repository banner",
+      "brief_reference": "art/asset-registry.json#GH-08-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ascension-watchdog-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/ascension-watchdog-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-08-S",
+      "title": "Ascension Watchdog social preview",
+      "brief_reference": "art/asset-registry.json#GH-08-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ascension-watchdog-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-09-B",
+      "title": "Ascension Observability repository banner",
+      "brief_reference": "art/asset-registry.json#GH-09-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ascension-observability-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/ascension-observability-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-09-S",
+      "title": "Ascension Observability social preview",
+      "brief_reference": "art/asset-registry.json#GH-09-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ascension-observability-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-10-B",
+      "title": "AI Ascension Website repository banner",
+      "brief_reference": "art/asset-registry.json#GH-10-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/website-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/website-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-10-S",
+      "title": "AI Ascension Website social preview",
+      "brief_reference": "art/asset-registry.json#GH-10-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/website-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-11-B",
+      "title": "AI Ascension Historical Evidence repository banner",
+      "brief_reference": "art/asset-registry.json#GH-11-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-11-S",
+      "title": "AI Ascension Historical Evidence social preview",
+      "brief_reference": "art/asset-registry.json#GH-11-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ai-ascensiondot-githubdot-io-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-12-B",
+      "title": "AI Ascension Community repository banner",
+      "brief_reference": "art/asset-registry.json#GH-12-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/dot-github-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/dot-github-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-12-S",
+      "title": "AI Ascension Community social preview",
+      "brief_reference": "art/asset-registry.json#GH-12-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/dot-github-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-13-B",
+      "title": "AI Ascension Brand System repository banner",
+      "brief_reference": "art/asset-registry.json#GH-13-B",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ascension-brand-overhaul-banner-light.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        },
+        {
+          "path": "brand/assets/github/ascension-brand-overhaul-banner-dark.png",
+          "size": "1600\u00d7400",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    },
+    {
+      "asset_id": "GH-13-S",
+      "title": "AI Ascension Brand System social preview",
+      "brief_reference": "art/asset-registry.json#GH-13-S",
+      "missing_exports": [
+        {
+          "path": "brand/assets/github/ascension-brand-overhaul-social.png",
+          "size": "1280\u00d7640",
+          "format": "png",
+          "deliverable_kind": "generated_art_export",
+          "requires_generation_lineage": true,
+          "api_size_is_not_export_size": true
+        }
+      ],
+      "existing_exports": [],
+      "blocker": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+    }
+  ]
+}

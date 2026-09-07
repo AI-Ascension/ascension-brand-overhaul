@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-09-07 21:31:29 UTC",
+  "scope": "Descendant callable-tool report after proactive-delegation mode was enabled. This is not model identity or provider attestation.",
+  "task": "/root/art_gate_final",
+  "requested_model": "gpt-5.6-luna",
+  "requested_effort": "max",
+  "accepted_model": "unknown",
+  "observed_model": "unknown",
+  "reported_missing_tools": [
+    "collaboration.spawn_agent",
+    "collaboration.send_message",
+    "collaboration.list_agents",
+    "followup_task",
+    "wait_agent"
+  ],
+  "native_child_spawn_attempted": false,
+  "required_depth_three_chain_established": false,
+  "conclusion": "The descendant reports that no collaboration tool is callable. The required native coordinator/leaf chain remains unavailable; no alternate client or fabricated ancestry was used."
+}

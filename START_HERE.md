@@ -1,5 +1,8 @@
 # Start the implementation
 
+> **Recorded user amendment (2026-09-07):** The user authorized root image generation: "you can of course generate them images instead." For current artwork, use `user_authorized_root_image_tool` as recorded in [art/root-generation-authorization.json](art/root-generation-authorization.json). The available tool does not attest its backend or the root model, so these remain unknown. This amends the artwork author/backend route only; independent review, original sources, mechanical-export limits, evidence boundaries, all 72 asset families and the remaining project requirements still apply. Historical Astra-specific wording below describes the original route.
+
+
 The repository name omitted from the request is resolved to **AI-Ascension/ascension-brand-overhaul**. This is the new canonical home for brand sources, publishing tools, campaign materials, integration manifests, and rollout evidence; it does not absorb runtime implementation code from other repositories.
 
 Give an execution-capable agent the extracted directory and this instruction:

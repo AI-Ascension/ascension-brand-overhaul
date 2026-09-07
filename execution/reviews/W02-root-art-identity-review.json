@@ -1,0 +1,398 @@
+{
+  "schema_version": "ai-ascension.root-art-identity-review.v1",
+  "observed_at": "2026-09-07T19:58:51+00:00",
+  "reviewer": "w02-root-art-independent-review",
+  "task": "W02 root art review batch12",
+  "scope": "Independent visual and mechanical-export-readiness review of the 12 current root-generated identity and background masters. No source or master artwork was edited.",
+  "source_index": {
+    "path": "brand/provenance/root-generation-index.json",
+    "sha256": "199a8b7ce7f2286498b7540c4f6bd455fb6443564c0a2e4e159a98ab48dc72e5",
+    "selected_generations": {
+      "ID-01": 4,
+      "ID-02": 1,
+      "ID-03": 1,
+      "ID-04": 1,
+      "ID-05": 1,
+      "ID-06": 1,
+      "ID-07": 1,
+      "ID-08": 1,
+      "BG-01": 1,
+      "BG-02": 1,
+      "BG-03": 1,
+      "BG-04": 1
+    }
+  },
+  "route_authorization": {
+    "basis": "W02 root-authorized route supplied with the current masters for batch12 review.",
+    "review_boundary": "This receipt records visual and export-readiness findings. It does not replace the source-generation records, assert a separate Astra or image-backend attestation, grant rights clearance, or approve publication.",
+    "allowed_follow_on_operations": [
+      "crop",
+      "resize",
+      "sprite_slice",
+      "encode",
+      "metadata_strip",
+      "lossless_optimize"
+    ]
+  },
+  "method": {
+    "source_hash_check": {
+      "result": "12/12 selected source hashes match root-generation-index.json",
+      "dimensions_and_modes": "12/12 selected dimensions and modes match root-generation-index.json"
+    },
+    "visual_checks": [
+      "Viewed all 12 native masters with view_image.",
+      "Viewed intended-size crops or resizes for identity exports and background exports under /tmp/w02-root-art-review.",
+      "Checked ID-05 at 96, 48, and 24 px; ID-06 at 64, 32, and 16 px; and ID-07 at 48 and 24 px.",
+      "Checked BG-04 as 800 px tiles and as 2x2 visual repeats."
+    ],
+    "negative_case": "The BG-04 repeat check looked for edge-crossing motifs and tonal seams; the ID-08 typography check compared visible font captions with the canonical brand guide."
+  },
+  "summary": {
+    "assets_reviewed": 12,
+    "ready_for_mechanical_export": 11,
+    "requires_revision": 1,
+    "ready_ids": [
+      "ID-01",
+      "ID-02",
+      "ID-03",
+      "ID-04",
+      "ID-05",
+      "ID-06",
+      "ID-07",
+      "BG-01",
+      "BG-02",
+      "BG-03",
+      "BG-04"
+    ],
+    "requires_revision_ids": [
+      "ID-08"
+    ],
+    "conditional_use_ids": [
+      "BG-04"
+    ],
+    "decision": "Proceed with mechanical exports for the 11 ready assets, retaining the BG-04 repeat caveat. Hold ID-08 until its font caption is corrected in a new authored master or the intended specimen content is otherwise explicitly revised and re-reviewed."
+  },
+  "assets": [
+    {
+      "asset_id": "ID-01",
+      "title": "Branching-A mark",
+      "generation": 4,
+      "prompt_path": "brand/prompts/root/ID-01/generation-004.txt",
+      "prompt_sha256": "1aef117e97e2e1766ee1e3be7f0df82de9d32ad26db5bc7120b7bf736b8bc557",
+      "source_path": "brand/sources/generated/ID-01/generation-004.png",
+      "source_sha256": "f2179261ad9b0b17a679838fd6ba4cb521966bf61816be4d9ca8c4e53be036f9",
+      "source_bytes": 947068,
+      "source_dimensions": "1774x887",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/identity/mark.png (64x64)",
+        "brand/assets/identity/mark-mono.png (64x64)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The wide source is a clean two-panel pair of equal square marks. The left variant retains the amber ascending branch and the right variant is a dark monochrome mark.",
+        "Both variants remain clear in the 64 px review previews and are safe to split at the midpoint."
+      ],
+      "mechanical_notes": [
+        "Slice the 887x887 left and right panels, then resize each to 64x64.",
+        "The source is an opaque paper-backed RGB pair by design; preserve the paper background and do not require alpha for this export."
+      ],
+      "limits": [
+        "The source pair is not a transparent overlay."
+      ],
+      "rejected_prior_attempts": "Root index records ID-01 generations 2 and 3 as rejected_painted_checkerboard; they are excluded from this review."
+    },
+    {
+      "asset_id": "ID-02",
+      "title": "Organization wordmark",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/ID-02/generation-001.txt",
+      "prompt_sha256": "76defecd50be0921c3c1ad1125b0ab7262d8c508fd41fcddc890b61723c2847d",
+      "source_path": "brand/sources/generated/ID-02/generation-001.png",
+      "source_sha256": "3a71c24c0dd6d26e5bcb35fdc00edbd76e16f9d9827754a6f7f099852bb76a5b",
+      "source_bytes": 989638,
+      "source_dimensions": "1774x887",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/identity/ai-ascension-light.png (1200x220)",
+        "brand/assets/identity/ai-ascension-dark.png (1200x220)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The light and dark horizontal bands slice cleanly, with consistent centered lockups and broad safe margins.",
+        "The visible organization name is spelled AI Ascension and remains high contrast in the reviewed central crop."
+      ],
+      "mechanical_notes": [
+        "Split the top and bottom bands, then use the reviewed central 1200x220 crop for each variant."
+      ],
+      "limits": []
+    },
+    {
+      "asset_id": "ID-03",
+      "title": "Flagship product lockup",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/ID-03/generation-001.txt",
+      "prompt_sha256": "08280a80ea21e2aaddc0cb29e1df06af8641dce0e2990a74542a33ca7dd3b418",
+      "source_path": "brand/sources/generated/ID-03/generation-001.png",
+      "source_sha256": "44277b3a0ec36dc112720aae4c1b8195378deb4aee4951c3e9acc2bb6d3b3500",
+      "source_bytes": 1026273,
+      "source_dimensions": "2172x724",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/identity/ascension-light.png (1000x220)",
+        "brand/assets/identity/ascension-dark.png (1000x220)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The light and dark bands slice cleanly with a consistent mark, product word, and attribution layout.",
+        "Ascension and by AI Ascension are visibly spelled correctly in the reviewed central crop."
+      ],
+      "mechanical_notes": [
+        "Split the two 362 px bands and use the reviewed central 1000x220 crop for each variant."
+      ],
+      "limits": []
+    },
+    {
+      "asset_id": "ID-04",
+      "title": "The Climb title lockup",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/ID-04/generation-001.txt",
+      "prompt_sha256": "e2ca97247bcdd2595d7cb80db81c61f20d247cb47182abe8f765411797bb05a9",
+      "source_path": "brand/sources/generated/ID-04/generation-001.png",
+      "source_sha256": "a09ba42d43372ad1c0461e4feb9b75bf604f76cadda2e5dbcb2ee4670028d80c",
+      "source_bytes": 925623,
+      "source_dimensions": "1942x809",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/identity/the-climb-master.png (1400x400)",
+        "brand/assets/identity/the-climb.png (1400x400)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The Climb and by AI Ascension are correct and readable, with the amber path accent subordinate to the title.",
+        "The centered vertical crop retains the title, attribution, mark, and paper clearspace."
+      ],
+      "mechanical_notes": [
+        "Use the reviewed 1400x400 central vertical crop, then resize or encode the two required exports as directed by the asset registry."
+      ],
+      "limits": []
+    },
+    {
+      "asset_id": "ID-05",
+      "title": "Organization avatar set",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/ID-05/generation-001.txt",
+      "prompt_sha256": "3fa3a46068c9f0b5e1c64e24492d60625a4d986a6b91e44befb03da5dd152610",
+      "source_path": "brand/sources/generated/ID-05/generation-001.png",
+      "source_sha256": "355c6f50d4263e7a6b04ad2e6ddaf6b5d33ec346e2e4b8e98c69548053632445",
+      "source_bytes": 901906,
+      "source_dimensions": "1254x1254",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/identity/avatar-1024.png (1024x1024)",
+        "brand/assets/identity/avatar-256.png (256x256)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The dark square avatar has a strong ivory branching A with a restrained amber branch and generous square and circular crop safety.",
+        "The mark remains recognizable at 96, 48, and 24 px; fine branch detail compresses at 24 px without losing the primary silhouette."
+      ],
+      "mechanical_notes": [
+        "Resize the centered square source to 1024 and 256 px without recoloring."
+      ],
+      "limits": [
+        "Use adjacent labels when the 24 px placement needs more semantic detail than the silhouette provides."
+      ]
+    },
+    {
+      "asset_id": "ID-06",
+      "title": "Browser and app icon set",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/ID-06/generation-001.txt",
+      "prompt_sha256": "9c54d30f3fe125b988480d25218c9b962b5d1c77719c71a992b9d8ddd14bd0dd",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "source_sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
+      "source_bytes": 894099,
+      "source_dimensions": "1254x1254",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/identity/favicon.png (64x64)",
+        "brand/assets/identity/favicon-32.png (32x32)",
+        "brand/assets/identity/favicon-16.png (16x16)",
+        "brand/assets/identity/apple-touch-icon.png (180x180)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The simplified dark and amber mark has a decisive open upward A silhouette with no hairline details that disappear in the reviewed sizes.",
+        "The 64, 32, and 16 px previews remain category-recognizable on the light ground."
+      ],
+      "mechanical_notes": [
+        "Resize the centered source to the four registry dimensions and preserve the opaque paper ground."
+      ],
+      "limits": []
+    },
+    {
+      "asset_id": "ID-07",
+      "title": "Product and evidence icon sprite",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/ID-07/generation-001.txt",
+      "prompt_sha256": "4f45ff1ae68c406c97dd71f4676476104fc6cd36ccd3c2bbbb1f8f2eb688163c",
+      "source_path": "brand/sources/generated/ID-07/generation-001.png",
+      "source_sha256": "0fcc0b9f244470de56c70d04be1fc6dcb3e976b5aaf19a695026d952aa3524ab",
+      "source_bytes": 1030138,
+      "source_dimensions": "1254x1254",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/identity/icons.png (1024x1024 sheet; 24x24 and 48x48 reviewed slices)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The source is a regular 2x5 sheet with the requested ten labels: Play, Record, Replay, Code, Evidence, Warning, Unavailable, External link, Privacy, and Intervention.",
+        "The 48 px slices are readable. At 24 px the symbols remain category-distinguishable, although Replay, Code, Unavailable, External link, Privacy, and Intervention are soft and should sit beside visible text labels."
+      ],
+      "mechanical_notes": [
+        "Resize the sheet to the registry size and slice only along the reviewed 2x5 cell boundaries; do not redraw, relabel, or recolor symbols."
+      ],
+      "limits": [
+        "The 24 px slices should not carry the full meaning without an adjacent text label."
+      ]
+    },
+    {
+      "asset_id": "ID-08",
+      "title": "Design token and typography specimen",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/ID-08/generation-001.txt",
+      "prompt_sha256": "6f3c9ea1f6cd15525a473408b49495b39353502771f64b6823240afde6cfe155",
+      "source_path": "brand/sources/generated/ID-08/generation-001.png",
+      "source_sha256": "f08518246553d5f235031b4b6bfcb53a191af091810ce49795ab2c8f4241c952",
+      "source_bytes": 1074030,
+      "source_dimensions": "1122x1402",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/identity/specimen.html (responsive document)",
+        "brand/assets/identity/specimen.png (1600x2000)"
+      ],
+      "verdict": "requires_revision",
+      "observations": [
+        "The specimen is visually polished and the requested AI Ascension, Ascent Ledger, palette, spacing, button-state, footer, and evidence language are readable.",
+        "The mono font caption visibly reads Geist Mono. The canonical brand guide and token contract require JetBrains Mono for identifiers and evidence labels."
+      ],
+      "issues": [
+        {
+          "severity": "blocking_content_mismatch",
+          "finding": "Visible specimen copy says Geist Mono while the canonical type reference is JetBrains Mono.",
+          "required_follow_up": "Obtain a corrected authored master or an explicitly revised specimen source, then re-review the visible copy before exporting specimen.png or treating specimen.html as complete."
+        }
+      ],
+      "mechanical_notes": [
+        "The 1122x1402 source ratio is close to the 1600x2000 target and can be resized mechanically after the copy defect is resolved."
+      ],
+      "limits": []
+    },
+    {
+      "asset_id": "BG-01",
+      "title": "Editorial ascent environment master",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/BG-01/generation-001.txt",
+      "prompt_sha256": "673b45c942f8969d39649fe95ce10c763169caa913edfb82cd4475e8f895583e",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "source_sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+      "source_bytes": 2445789,
+      "source_dimensions": "1536x1024",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/illustration/ascent-master.png (2400x1600)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The warm paper environment keeps the left side broad and quiet while concentrating branching ink and amber geometry on the right.",
+        "No text, game scene, result, evidence graphic, or publisher mark is visible; the target ratio matches the source ratio."
+      ],
+      "mechanical_notes": [
+        "Resize to 2400x1600 while preserving the left title-safe area and right-side composition."
+      ],
+      "limits": []
+    },
+    {
+      "asset_id": "BG-02",
+      "title": "Dark broadcast atmosphere master",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/BG-02/generation-001.txt",
+      "prompt_sha256": "db28cc9fb262969731d48339072e99431a7056cfe9e8d200ac91a3e66b0fb538",
+      "source_path": "brand/sources/generated/BG-02/generation-001.png",
+      "source_sha256": "5be7e3b68f65d6ec31860984521390091d7cc0496d1f2280ed04cc524add5ead",
+      "source_bytes": 1614454,
+      "source_dimensions": "1672x941",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/illustration/broadcast-master.png (2560x1440)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The near-black atmosphere is quiet through the left and center, with the amber branching form kept at the far right.",
+        "No text, scoreboard, game art, provider logo, or fabricated result is visible; the slight source-to-target ratio difference is safe for a mechanical crop or resize."
+      ],
+      "mechanical_notes": [
+        "Resize or make the minimal aspect-ratio crop needed for 2560x1440 while retaining the quiet left and center."
+      ],
+      "limits": []
+    },
+    {
+      "asset_id": "BG-03",
+      "title": "Series interstitial texture",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/BG-03/generation-001.txt",
+      "prompt_sha256": "159ce4d59064484fa8d907861debc591ceea5bfe01bc69b32316a140515536f0",
+      "source_path": "brand/sources/generated/BG-03/generation-001.png",
+      "source_sha256": "0ff4f0492163d0e95ac0a0055aef38991ec1096a3a2f9cd58b26634b77395c66",
+      "source_bytes": 2061320,
+      "source_dimensions": "1254x1254",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/illustration/series-master.png (2160x2160)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The upper area is a broad quiet warm-paper field, with restrained ink and amber branching contours confined to the lower portion.",
+        "No text, logo, game map, or evidence claim is visible; the square source is crop-safe for the square target."
+      ],
+      "mechanical_notes": [
+        "Resize the square source to 2160x2160 without changing the composition."
+      ],
+      "limits": []
+    },
+    {
+      "asset_id": "BG-04",
+      "title": "Light/dark route pattern",
+      "generation": 1,
+      "prompt_path": "brand/prompts/root/BG-04/generation-001.txt",
+      "prompt_sha256": "417501547c5c9ac652eaf1ebcbdbc86b1dd2ca8edd1b134ac172c27269c52761",
+      "source_path": "brand/sources/generated/BG-04/generation-001.png",
+      "source_sha256": "8f9fd2025a5897559a89ce83cc16ab6ea1a3779fdee0e54c4fcde82efcec072e",
+      "source_bytes": 989750,
+      "source_dimensions": "1774x887",
+      "source_mode": "RGB",
+      "target_exports": [
+        "brand/assets/illustration/route-pattern-light.png (800x800 tile)",
+        "brand/assets/illustration/route-pattern-dark.png (800x800 tile)"
+      ],
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The source contains two sparse square decorative panels with matching branching motifs, and the 800 px crops show no hard motif cut or edge-crossing branch.",
+        "The 2x2 repeat inspection is visually usable, but the generated paper and near-black fields are not mathematically uniform at every edge."
+      ],
+      "mechanical_notes": [
+        "Split the two 887x887 panels and resize each to 800x800 without recoloring or redrawing the motifs."
+      ],
+      "limits": [
+        "A faint broad tonal seam remains visible in 2x2 repeats, especially at the dark tile's central vertical join. Edge-wrap RGB absolute differences were approximately 3.7 at the immediate light-tile join and 24.1 at the immediate dark-tile join, decaying across wider strips.",
+        "Use this export where a visually subtle repeat is acceptable. A strict mathematically seamless tile still needs a new authored source and a fresh review."
+      ]
+    }
+  ],
+  "unverified_or_deferred": [
+    "Generation backend identity, Astra runtime attestation, and rights clearance remain governed by the source and approval records.",
+    "No generated artwork is product evidence, gameplay evidence, or proof of a model result.",
+    "Publication approval, responsive browser placement, accessibility contrast in every consuming surface, and final export hashes remain downstream checks after mechanical export."
+  ]
+}

@@ -131,7 +131,7 @@ The phrase “first verified win” is a goal or season title until a source-lin
 
 The visual language is a warm Ascent Ledger: paper, ink, amber, clear charts, branching paths, and restrained editorial typography. Use generous margins, short measures, ruled sections, and evidence stamps. Show real approved gameplay or legible run diagrams when they exist. A generated editorial poster is a visual companion, not proof of a run.
 
-The canonical functional token files are [brand/tokens.json](tokens.json) and [brand/tokens.css](tokens.css), delivered by W02 at commit `c09a9da28ff4ee2264139353ba2313804ab55104`. They define the current light/dark colors, hover and focus states, status treatments, typography, spacing, controls, and reduced-motion behavior. They are functional styling tokens; generated identity artwork remains a separate W02 deliverable governed by the Astra and `gpt-image-2` provenance gate.
+The canonical functional token files are [brand/tokens.json](tokens.json) and [brand/tokens.css](tokens.css), delivered by W02 at commit `c09a9da28ff4ee2264139353ba2313804ab55104`. They define the current light/dark colors, hover and focus states, status treatments, typography, spacing, controls, and reduced-motion behavior. They are functional styling tokens; generated identity artwork remains a separate W02 deliverable governed by the recorded root image-tool amendment, generation provenance, and independent review. See [the authorization](../art/root-generation-authorization.json).
 
 For historical context only, the earlier Ascent Ledger reference is [`assets/identity/tokens.css`](https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/assets/identity/tokens.css), blob `9a993f97c06257cd0a2b3d5a023a4715d0250c31`. The table below is not authoritative for current hover, status, or control values; use the canonical token files for implementation:
 
@@ -187,3 +187,7 @@ When a model is named, identify the exact tested configuration and date. Say “
 ## Review gate
 
 Before a copy change reaches a public surface, check the matching source record, source revision, artifact availability, and current date. A reviewer must be able to answer: What happened? Where is the evidence? What remains unknown? What can the reader do next? If any answer is missing, use a narrower claim and a report link.
+
+### Artwork review and distribution states
+
+The asset manifest separates source/export verification from distribution approval. `generated_original_reviewed` means the independent review inspected the declared generated sources and input references and found no identified third-party artwork in that scope. It does not certify legal or trademark clearance. Public downloads still need a current, exact-digest approval enrolled by the operator. See [artwork access](ART_ACCESS.md) for actual family states and remaining exports.

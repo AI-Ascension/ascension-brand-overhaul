@@ -4,17 +4,29 @@
   "binding_requirement": "Every artwork export links to a reviewed original gpt-image-2 output and its Astra prompt; only enumerated noncreative transformations are allowed.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
   "status": "blocked",
-  "reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+  "reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
   "actual_review_records": [
     "execution/reviews/asset-gate-001.json",
     "docs/W07-L-W02-helper-rereview.md",
-    "execution/reviews/W07-private-delivery-scope-review.md"
+    "execution/reviews/W07-private-delivery-scope-review.md",
+    "execution/reviews/W02-root-art-identity-review.json",
+    "execution/reviews/root-art-browser-smoke.json",
+    "execution/reviews/root-image-service-limit.json",
+    "execution/reviews/W02-root-art-second-batch-review.json",
+    "execution/reviews/W02-root-identity-source-use-review.json",
+    "execution/reviews/W03-root-export-review.json",
+    "execution/reviews/W03-root-export-followup.json",
+    "execution/root-art-acceptance.json",
+    "execution/reviews/W03-root-art-final-acceptance.json"
   ],
   "procedures": [
-    "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root . --ledger PRIVATE_NATIVE_LEDGER.json (expected blocked result)",
-    "python3 -m unittest tests.test_content_sync -v"
+    "Independent source/use and visual reviews at the actual_review_records listed below",
+    "Scoped validate_assets.verify of the 21 verified plans and deliveries, including the declared BG01 parent for WEB01",
+    "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root . (full gate expected to report 51 blocked families)",
+    "python3 -m unittest discover -s tests -p test_art_policy.py",
+    "python3 -m unittest discover -s tests -p test_press_index.py"
   ],
   "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
   "artifacts": [
@@ -25,23 +37,23 @@
     },
     {
       "path": "brand/tokens.css",
-      "sha256": "68922303e31051e522704061d3bd72d4735e3eea1f072ec2a10a104557e31ba2",
-      "bytes": 15563
+      "sha256": "e180a8c3c816d3c225632ae5cf1fe71540322eef024ffa2933f44849b4d7eb9f",
+      "bytes": 15597
     },
     {
       "path": "brand/asset-manifest.json",
-      "sha256": "c6c68ffbad76860e85b4b1762a023fcf7b0177c5ddcf8fefd8c9a1b25dc8a4d7",
-      "bytes": 57879
+      "sha256": "8bf2a863735706a8fdd10ece04ef70549ecd1221f29ee0b6de266dc154409af0",
+      "bytes": 158052
     },
     {
       "path": "brand/ART_ACCESS.md",
-      "sha256": "51a9e62fad0bdfcd9ee7d8e1bd47f13206ee7217966b4555285e03d4f99ee298",
-      "bytes": 7521
+      "sha256": "f90711e73b531d7dd33f51a93e8decc83067027bd786862fdd366542fe2e1f3d",
+      "bytes": 16492
     },
     {
       "path": "art/asset-registry.json",
-      "sha256": "6e3f26753d2660f3b62c9ed176038a7e0c15acc9ab846f6cbe1af596dbcf074f",
-      "bytes": 164745
+      "sha256": "0e71cf13afba70da828b384da8ea3b36021796b044f1c5e53c3d1c6cd6656032",
+      "bytes": 183853
     },
     {
       "path": "art/evidence-media-registry.json",
@@ -55,13 +67,58 @@
     },
     {
       "path": "art/generation-policy.json",
-      "sha256": "67209256fc2f31e7b98b27a67006666e0f403fd675e958446b1ef904a66781c6",
-      "bytes": 2038
+      "sha256": "c5f32a13e79bdf96e6def1d76123a9f5ad0dfa8382a391347a943ae089c0ae95",
+      "bytes": 3105
     },
     {
       "path": "execution/art-model-attestation.json",
-      "sha256": "4bd38887c955462e3911c2bdf6dc0a8e9cef37e19ec0454e80895172971fa263",
-      "bytes": 25692
+      "sha256": "f7285859ec8870d2ed3bf736029a72f835ba50dadd6766dee38eba27db922e91",
+      "bytes": 51047
+    },
+    {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+      "bytes": 637
+    },
+    {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "91200a1334a849ef3f54eb7471bb3a05d060c18fac84e198d1519bdfd4cb2fd3",
+      "bytes": 32029
+    },
+    {
+      "path": "brand/provenance/root-tool-observations.json",
+      "sha256": "8cd540218de79cf701bc251f7c9dd99da9fbadad00059b8696bb01d2180114fe",
+      "bytes": 30746
+    },
+    {
+      "path": "brand/provenance/root-generation-records.json",
+      "sha256": "d810ea1f590c969ddefd982ddb7692d2a867187ca3594bdd4516df00f3007e5e",
+      "bytes": 61443
+    },
+    {
+      "path": "brand/provenance/root-export-recipe.json",
+      "sha256": "9729af2c899c9438ab3816b8e5e9f6ab628fd93878469920f0f022fe6188d168",
+      "bytes": 14698
+    },
+    {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "f1e1ba935da37c2a1a7b7cda8a769d4a81d774d6ae4664ff5f656028a9cd564f",
+      "bytes": 28808
+    },
+    {
+      "path": "brand/identity-review.md",
+      "sha256": "e5d88941de7edde7d95f2a1ed440f0d8231fc8f0d57ac397ca41649a2a205142",
+      "bytes": 2897
+    },
+    {
+      "path": "execution/root-art-acceptance.json",
+      "sha256": "cc59aea2df370b4d313c9344c3a26fc4c3190592ee6adcb4e385fce2d9b025e5",
+      "bytes": 3530
+    },
+    {
+      "path": "brand/remaining-artwork.json",
+      "sha256": "aae9d70a0229e97e06fd66ba535131945bbad58e972d12c7395a0f7b5784d55a",
+      "bytes": 46111
     },
     {
       "path": "execution/reviews/asset-gate-001.json",
@@ -77,10 +134,50 @@
       "path": "execution/reviews/W07-private-delivery-scope-review.md",
       "sha256": "e74c5c794f8bc8a7a05ff689da982cc5c0504c56b2aedba09dc7b4f1585a498c",
       "bytes": 6223
+    },
+    {
+      "path": "execution/reviews/W02-root-art-identity-review.json",
+      "sha256": "90eb2ba6e624f0c12791f188507f77ae673b3dcbbc403f56508f6778dce0730a",
+      "bytes": 19177
+    },
+    {
+      "path": "execution/reviews/root-art-browser-smoke.json",
+      "sha256": "44afd831e72a9dfc76126c0e8b7a06bf7c82fe295ae926b5d57a73f70cb1f543",
+      "bytes": 1004
+    },
+    {
+      "path": "execution/reviews/root-image-service-limit.json",
+      "sha256": "92727d8df105f53a4acd58bf8778fb8386977999a32f5a936a73c300127e4d86",
+      "bytes": 399
+    },
+    {
+      "path": "execution/reviews/W02-root-art-second-batch-review.json",
+      "sha256": "e301020b4fed32221930ffd344d07c90b23703a251088cc5b1ed579854e48e35",
+      "bytes": 48475
+    },
+    {
+      "path": "execution/reviews/W02-root-identity-source-use-review.json",
+      "sha256": "1a0a5f749de6f244be4bded45e541e55b0a60c305674624d1bbe97742ebc180e",
+      "bytes": 25824
+    },
+    {
+      "path": "execution/reviews/W03-root-export-review.json",
+      "sha256": "59b02d5ccef77c47ea69b5f3109248bdc477c96654262644eebbbadb7fe3ea3c",
+      "bytes": 26992
+    },
+    {
+      "path": "execution/reviews/W03-root-export-followup.json",
+      "sha256": "033708c5ca2bc7cbf5ec54d350a1b64f23b5672506e283b6154bbef779f65c41",
+      "bytes": 13121
+    },
+    {
+      "path": "execution/reviews/W03-root-art-final-acceptance.json",
+      "sha256": "857ec9bb30e7fffba97fe5c6ce5caf8061abb9b0b85eac52bcecdf5bf04c0ed2",
+      "bytes": 16783
     }
   ],
-  "blocker": "Mandatory generated identity/art exports are absent. Native depth3 Astra/max author ancestry and attested gpt-image-2 access are unavailable; no fallback is accepted.",
-  "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
+  "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
+  "notes": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review.",
   "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
-  "source_binding": "Exact artifact bytes listed here; source and test revisions are those explicitly named by each review. Final root manifest binds this record. No uncommitted bytes are falsely assigned a Git revision."
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations."
 }

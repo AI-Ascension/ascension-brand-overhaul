@@ -4,7 +4,7 @@
   "binding_requirement": "Old GitHub Pages proof paths, named fixtures, hashes, and historical anchors remain available or explicitly preserved.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
   "status": "verified",
   "reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
   "actual_review_records": [
@@ -54,7 +54,7 @@
   "blocker": null,
   "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
   "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
-  "source_binding": "Exact artifact bytes listed here; source and test revisions are those explicitly named by each review. Final root manifest binds this record. No uncommitted bytes are falsely assigned a Git revision.",
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations.",
   "companion_source": {
     "repository": "AI-Ascension/aiascension.tech",
     "revision": "56e532b21922f39480cd15dcbb465676770408f5",

@@ -1,0 +1,47 @@
+{
+  "scope": "Local specimen controls and filtered catalog; 390 and 1440 px. Not full surface or artwork approval.",
+  "results": [
+    {
+      "route": "brand/assets/identity/specimen.html",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "route": "art/asset-board.html",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "route": "brand/assets/press/index.html",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "route": "brand/assets/identity/specimen.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "route": "art/asset-board.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    },
+    {
+      "route": "brand/assets/press/index.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "errors": []
+    }
+  ]
+}

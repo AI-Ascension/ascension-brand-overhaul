@@ -179,7 +179,24 @@ def verify(registry, manifest, root, ledger=None):
                 continue
             if route is not None and record.get('generation_route', LEGACY_ROUTE) != route:
                 errors.append(aid + ': Generation record route does not match the asset route.')
-            errors.extend(aid + ': ' + message for message in validate_generation_record(record, planned, root, ledger))
+            generation_plan = planned
+            source_asset = record.get('asset_id')
+            if source_asset != aid:
+                # A crop of a declared parent reuses that actual generation call.
+                # Never invent a second image invocation for a mechanical derivative.
+                parent_plan = expected.get(source_asset) if isinstance(source_asset, str) else None
+                parent_delivery = entries.get(source_asset, {}) if isinstance(source_asset, str) else {}
+                parent_records = parent_delivery.get('generation_records', [])
+                if (route != ROOT_ROUTE
+                        or source_asset not in planned.get('parent_asset_ids', [])
+                        or parent_plan is None
+                        or parent_delivery.get('status') != 'verified'
+                        or not isinstance(parent_records, list)
+                        or record not in parent_records):
+                    errors.append(aid + ': Shared generation requires an exact record from a verified declared parent.')
+                    continue
+                generation_plan = parent_plan
+            errors.extend(aid + ': ' + message for message in validate_generation_record(record, generation_plan, root, ledger))
         export_map = {e['path']: e for e in got.get('exports', [])}
         if len(export_map) != len(got.get('exports', [])):
             errors.append('Duplicate export path: ' + aid)

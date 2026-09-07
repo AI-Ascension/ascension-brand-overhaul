@@ -4,7 +4,7 @@
   "binding_requirement": "Organization remains AI Ascension, flagship Ascension, series The Climb; refresh first-win season only with new evidence.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
   "status": "verified",
   "reviewer": "W03-L",
   "actual_review_records": [
@@ -43,8 +43,8 @@
     },
     {
       "path": "brand/BRAND_GUIDE.md",
-      "sha256": "88b13295f2aa04640a85b5988db74bbb6ede0507cc6830b8c14f440ccd905b2d",
-      "bytes": 16055
+      "sha256": "b1551f9c49572b0f1a8034fbdd7de89446bf119e2ad84bd5bea714575c4a8a23",
+      "bytes": 16695
     },
     {
       "path": "docs/NAME_COLLISION_REVIEW.md",
@@ -70,5 +70,5 @@
   "blocker": null,
   "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
   "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
-  "source_binding": "Exact artifact bytes listed here; source and test revisions are those explicitly named by each review. Final root manifest binds this record. No uncommitted bytes are falsely assigned a Git revision."
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations."
 }

@@ -185,6 +185,51 @@ class ArtPolicyTests(unittest.TestCase):
                     self.assertIn(asset['prompt_author_role_id'],art_policy.ART_ROLES)
                     self.assertEqual(asset['prompt_author_model'],'gpt-6-astra')
                     self.assertEqual(asset['generation_model'],'gpt-image-2')
+    def root_parent_fixture(self):
+        parent, record, delivered = self.root_fixture()
+        child = copy.deepcopy(parent)
+        child.update(id='CHILD', parent_asset_ids=[parent['id']])
+        child['exports'][0]['path'] = 'child.png'
+        child_delivery = copy.deepcopy(delivered)
+        child_delivery['asset_id'] = 'CHILD'
+        child_delivery['exports'][0]['path'] = 'child.png'
+        (self.root/'child.png').write_bytes(self.png)
+        return [parent, child], [delivered, child_delivery]
+
+    def test_root_derivative_reuses_actual_parent_generation(self):
+        registry, manifest = self.root_parent_fixture()
+        self.assertEqual(validate_assets.verify(registry, manifest, self.root), [])
+        self.assertEqual(manifest[1]['generation_records'], manifest[0]['generation_records'])
+
+    def test_shared_generation_requires_declared_parent(self):
+        registry, manifest = self.root_parent_fixture()
+        registry[1]['parent_asset_ids'] = []
+        self.assertTrue(validate_assets.verify(registry, manifest, self.root))
+
+    def test_shared_generation_requires_verified_parent(self):
+        registry, manifest = self.root_parent_fixture()
+        manifest[0]['status'] = 'in_progress'
+        self.assertTrue(validate_assets.verify(registry, manifest, self.root))
+
+    def test_shared_generation_cannot_rewrite_parent_call(self):
+        registry, manifest = self.root_parent_fixture()
+        manifest[1]['generation_records'][0]['tool_execution_reference'] = 'invented-second-call'
+        self.assertTrue(validate_assets.verify(registry, manifest, self.root))
+
+    def test_reference_input_hash_is_checked(self):
+        self.record['reference_inputs'] = [{'reference': 'master.png',
+            'sha256': hashlib.sha256(self.png).hexdigest(),
+            'rights_reference': 'synthetic-test-only-independent-source-review'}]
+        self.assertEqual(self.errors(), [])
+        self.record['reference_inputs'][0]['sha256'] = '0' * 64
+        self.assertTrue(self.errors())
+
+    def test_pending_reference_use_review_is_rejected(self):
+        self.record['reference_inputs'] = [{'reference': 'master.png',
+            'sha256': hashlib.sha256(self.png).hexdigest(),
+            'rights_reference': 'pending:source-review'}]
+        self.assertTrue(self.errors())
+
     def test_evidence_is_not_regenerated(self):
         rows=json.loads((ROOT/'art/evidence-media-registry.json').read_text());self.assertEqual(len(rows),3);self.assertTrue(all(a['generation_prohibited'] for a in rows))
     def test_legacy_is_not_new_brand_art(self):

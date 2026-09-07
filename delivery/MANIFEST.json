@@ -102,11 +102,15 @@
   "artwork": {
     "families": 72,
     "required_exports": 115,
-    "delivered_exports": 0,
-    "status": "blocked",
+    "delivered_exports": 42,
+    "status": "partial_verified_remaining_creative_work_blocked",
     "registry": "../art/asset-registry.json",
     "execution_manifest": "../brand/asset-manifest.json",
-    "attestation": "../execution/art-model-attestation.json"
+    "attestation": "../execution/art-model-attestation.json",
+    "verified_families": 21,
+    "source_masters": 32,
+    "remaining_work": "../brand/remaining-artwork.json",
+    "acceptance": "../execution/root-art-acceptance.json"
   },
   "content_kit": {
     "episodes": 12,
@@ -123,7 +127,7 @@
     "private_game_trajectories_and_captures": "not included",
     "font_binaries": "not included",
     "raw_provider_diagnostics": "not included",
-    "generated_art_masters_and_prompts": "absent, not delivered"
+    "generated_art_masters_and_prompts": "32 actual source PNGs and exact prompt files included; partial reviewed exports; no public distribution approvals"
   },
   "operation_ledger": "../execution/operations.json",
   "requirement_ledger": "../execution/requirements-status.json",

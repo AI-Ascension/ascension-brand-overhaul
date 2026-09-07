@@ -4,14 +4,17 @@
   "binding_requirement": "Tests cover successful, duplicate, throttled, malformed, failed-mail, and concurrent requests.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
   "status": "verified",
-  "reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+  "reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
   "actual_review_records": [
     "execution/reviews/W07-final-acceptance-source-review.md",
     "execution/reviews/W03-repair-review-002.json",
     "execution/reviews/subscription-http-review-002.json",
-    "execution/reviews/website-home-review-001.json"
+    "execution/reviews/website-home-review-001.json",
+    "execution/reviews/W03-root-website-art-review.json",
+    "execution/reviews/root-art-subscription-http.json",
+    "execution/reviews/W03-root-website-art-followup.json"
   ],
   "procedures": [
     "php vendor/bin/phpunit (website checkout;29tests/111assertions)",
@@ -49,12 +52,27 @@
       "path": "execution/reviews/W07-final-acceptance-source-review.md",
       "sha256": "31a6a4c9941f72fb69ed3d04ccb1f678bdb72f8511658e329cca295ab1391e9c",
       "bytes": 8769
+    },
+    {
+      "path": "execution/reviews/W03-root-website-art-review.json",
+      "sha256": "fb766513c829f081ba8260ff7989324edcd90487ee9ce33bfb3828bb2ec380a5",
+      "bytes": 11916
+    },
+    {
+      "path": "execution/reviews/root-art-subscription-http.json",
+      "sha256": "8fd056fd257f15a551eb59eaa8153ddf00e5ae881a0fc8b258d56e7788f3859d",
+      "bytes": 3229
+    },
+    {
+      "path": "execution/reviews/W03-root-website-art-followup.json",
+      "sha256": "bce7c7f5f7a15abd5e054396d7a525d2034db2513e3d64473ef558817d0b0833",
+      "bytes": 37634
     }
   ],
   "blocker": null,
   "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
   "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
-  "source_binding": "Exact artifact bytes listed here; source and test revisions are those explicitly named by each review. Final root manifest binds this record. No uncommitted bytes are falsely assigned a Git revision.",
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations.",
   "companion_source": {
     "repository": "AI-Ascension/aiascension.tech",
     "revision": "56e532b21922f39480cd15dcbb465676770408f5",

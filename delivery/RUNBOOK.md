@@ -1,6 +1,6 @@
 # Review and continuation runbook
 
-This is a local private engineering/text handoff. Read `FINAL_REPORT.md` and the requirement evidence before operating any release gate. GitHub draft PRs are the reviewable source changes; none is merged or deployed by this assignment.
+This is a local private engineering and partial-artwork handoff. Read `FINAL_REPORT.md` and the requirement evidence before operating any release gate. GitHub draft PRs are the reviewable source changes; none is merged or deployed by this assignment.
 
 ## Canonical package
 
@@ -13,11 +13,11 @@ python3 -m venv .venv
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-Read `execution/reviews/final-local-checks.json` for the tested source revision and results. The suite checks local contracts, negative cases, package integrity, migration fake clients, publication boundaries, and marketing definitions. It does not establish gameplay, a provider execution, deployment, or real campaign measurements.
+Read the external `RECEIPT.json` beside the current ZIP for final source and test results; `execution/reviews/final-local-checks.json` retains the earlier engineering-only test scope. The suite checks local contracts, negative cases, package integrity, migration fake clients, publication boundaries, and marketing definitions. It does not establish gameplay, a provider execution, deployment, or real campaign measurements.
 
 ## Website and companion sources
 
-`github/website-pull-request.json` identifies the website branch and exact head. The website uses its committed Composer lockfile and PHP 8.3; run `php vendor/bin/phpunit` in that checkout. The completed local suite has 29 tests and 111 assertions. Real local HTTP journeys use a private temporary store and mail sink: `scripts/review_subscription_http.py --help` documents the harness. Do not target production subscribers or SMTP. The 30 HTTP checks, 110-state route/theme matrix, zoom/motion/interaction review, and final homepage recheck are separately scoped in `execution/reviews/`.
+`github/website-pull-request.json` identifies the website branch and exact head. The website uses its committed Composer lockfile and PHP 8.3; run `php vendor/bin/phpunit` in that checkout. The existing public draft PR has 29 tests and 111 assertions. The private artwork candidate extends this to 30 tests and 114 assertions; its exact local revision and Git bundle are recorded in `github/website-art-candidate.json`. Real local HTTP journeys use a private temporary store and mail sink: `scripts/review_subscription_http.py --help` documents the harness. Do not target production subscribers or SMTP. The 30 HTTP checks, 110-state route/theme matrix, zoom/motion/interaction review, and final homepage recheck are separately scoped in `execution/reviews/`.
 
 `github/companion-commits.json` enumerates ten reviewed draft PRs, exact source revisions, changed paths, and SHA-256 values. `execution/reviews/companion-validation-001.json` records commands and qualifications. Six Rust README policy checks and two byte-exact quickstart recipes passed; Pages passed five Node tests and its local viewport/theme review. Watchdog has no Cargo manifest at the reviewed bootstrap source. Observability deployment was not checked because Docker is unavailable. Neither limitation is hidden by the presentation review.
 
@@ -25,7 +25,21 @@ Before any merge, re-read each actual remote default and PR head, checks, mergea
 
 ## Artwork and native hierarchy
 
-`execution/art-model-attestation.json` names every blocked job; `brand/asset-manifest.json` records zero approved exports. All 72 artwork families and 115 exports require actual native depth-3 Astra/max authors and an attested gpt-image-2 route. Restore those capabilities, then follow `art/ASTRA_GPT_IMAGE_2_POLICY.md` and the native role contract. Do not substitute an image backend, fake ancestry, hand-drawn artwork, or old-brand assets. The current seven observed leads are depth 1 only; retained threads count against the 250-descendant budget until native closure is established.
+The current user-authorized route is recorded in `art/root-generation-authorization.json`: root may generate with the available image tool, while the author model and image backend stay unknown. `brand/ART_ACCESS.md` and `brand/asset-manifest.json` give actual per-family review states. The package retains 32 source masters, exact prompts, generation observations and 40 raster exports plus two functional HTML exports. Generated artwork is never gameplay evidence.
+
+The full inventory remains 72 families and 115 exports. Read every missing-export and creative-reflow gate before resuming. The last image call returned `usage_limit_reached`; the recorded reset is 2026-09-14T02:55:51Z. Preserve source bytes and generation IDs, use a new prompt/attempt for creative revisions, then run mechanical exports and obtain independent source-use, visual and export review. `generated_original_reviewed` records that bounded source-use review; it is not legal/trademark clearance or public distribution authority.
+
+The original native depth-three hierarchy is still a separate unmet requirement. Current descendants report no callable child-spawn tools even after the proactive delegation setting changed. Do not invent ancestry or replace the required chain with role names.
+
+To refresh local artwork views after an accepted change:
+
+```sh
+python3 scripts/export_root_art.py
+python3 scripts/build_press_index.py
+python3 scripts/build_art_catalog.py
+```
+
+The press builder requires complete reviewed source lineage and a digest-bound approval independently enrolled in the protected `config/press-authorities.json`. That registry is empty. Neither an image-generation request nor a verified asset status issues publication authority.
 
 ## Publication and measurement
 
@@ -41,4 +55,4 @@ The latest `migration/plan.json` is a dated read-only observation, not authority
 
 ## Local archive
 
-The final archive is created outside this source tree from the validated manifest with `scripts/build_delivery.py`, then independently inspected and rebuilt for byte equality. Its external SHA-256 receipt binds the source manifest; it cannot be embedded into itself. The archive is private audit material under `PRIVACY_SCOPE.md`. It contains no approved generated art and is not a complete visual release bundle. Public export requires a separate sanitized projection and exact publication approval.
+The final archive is created outside this source tree from the validated manifest with `scripts/build_delivery.py`, then independently inspected and rebuilt for byte equality. Its external SHA-256 receipt binds the source manifest; it cannot be embedded into itself. The archive is private audit material under `PRIVACY_SCOPE.md`. It contains generated sources and reviewed partial exports, with no public distribution approvals; it is not a complete visual release bundle. Public export requires a separate sanitized projection and exact publication approval.

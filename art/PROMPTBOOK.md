@@ -1,5 +1,8 @@
 # Asset briefs for the Astra prompt author — gpt-image-2 only
 
+> **Recorded user amendment (2026-09-07):** The user authorized root image generation: "you can of course generate them images instead." For current artwork, use `user_authorized_root_image_tool` as recorded in [art/root-generation-authorization.json](root-generation-authorization.json). The available tool does not attest its backend or the root model, so these remain unknown. This amends the artwork author/backend route only; independent review, original sources, mechanical-export limits, evidence boundaries, all 72 asset families and the remaining project requirements still apply. Historical Astra-specific wording below describes the original route.
+
+
 These are bounded creative briefs, not final image-tool prompts and not evidence of an actual Astra session. The designated Astra author must independently write and save each final prompt and each edit prompt using ASTRA_ART_PROMPT_AUTHOR.md. Every new artwork uses gpt-image-2. No drawing/render/reuse alternatives remain.
 
 Read ART_BRIEF.md and ASTRA_GPT_IMAGE_2_POLICY.md. Retain exact source-copy contracts, actual supplied references, generated-versus-evidence classification, native author/model metadata, raw outputs, hashes, and independent review. Export sizes below are final targets, not guaranteed valid native API sizes. Only noncreative transformations are allowed.

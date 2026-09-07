@@ -1,12 +1,12 @@
 {
   "schema_version": "ai-ascension.release-status.v1",
-  "summary": "Private engineering and text handoff with twelve open draft PRs (website, ten companions, brand repository). The full overhaul is incomplete because mandatory artwork, native depth-three orchestration, and production evidence/authority remain absent. No merge, rename, deployment, public artifact publication, or campaign send was performed.",
+  "summary": "Private engineering handoff with partially verified root-authorized artwork and a local website art candidate. The full overhaul is incomplete: required artwork, native depth-three orchestration and operational evidence/authority remain unresolved. Twelve existing draft PRs remain open and mergeable at the recorded remote snapshot; the website artwork candidate has not been publicly uploaded or deployed.",
   "dimensions": {
-    "locally_verified": "195 package/contract tests and validator pass at 5d1c26ecee9ce753eae89c525c4a8764d29a18e5; website and companion scopes separately recorded",
+    "locally_verified": "218 local package/contract tests pass at the implementation hashes recorded in execution/reviews/root-art-local-checks.json. Final package integrity and exact-head CI are recorded in the external archive receipt; website and companion scopes remain separate.",
     "independently_reviewed": "Engineering and final requirement coverage source reviews recorded; exact archive acceptance is bound by external final-review.json beside the ZIP",
-    "mandatory_artwork": "blocked: zero of 72 families and 115 required exports",
-    "native_orchestration": "blocked: seven depth 1 lead records; no required depth 2/depth 3 chain",
-    "draft_prs": "Twelve open draft PRs verified; brand source-and-contracts checks pass at 5d1c26ecee9ce753eae89c525c4a8764d29a18e5. Final metadata revision and exact-head CI are bound by external RECEIPT.json beside the ZIP.",
+    "mandatory_artwork": "Partial: 32 generated source masters, 40 raster exports and two functional HTML exports; 21 of 72 families verified for scoped source/export acceptance. 73 of 115 required exports are missing; BG-04 also requires a seamless replacement. Zero public distribution approvals.",
+    "native_orchestration": "Blocked: the requested 49-role depth-three chain is not established; current descendant tool recheck still reports no callable child-spawn tool.",
+    "draft_prs": "Twelve open, draft, mergeable PRs observed at execution/reviews/root-art-remote-snapshot.json. Configured checks pass at those recorded heads; empty check sets remain explicit. Final brand artwork push and exact-head CI are recorded in the external delivery receipt.",
     "merged": "none performed",
     "deployed": "none performed",
     "campaign_operated": "none performed",
@@ -14,17 +14,18 @@
   },
   "verified_work": [
     "Canonical Ascent Ledger functional tokens, copy hierarchy, and guarded immutable-revision content sync; consumer authority, locking, and rollback failure cases tested.",
-    "Website routes, report-only media, developer quickstart, subscription safety, keyboard/mobile/themes/reduced motion, and local HTTP journeys reviewed. Receipts retain 29 PHPUnit tests / 111 assertions and30 HTTP checks, the earlier110-state route/theme matrix, and a separate current homepage10-state/two-render review. The110-state matrix is not a fresh result at final website head; see W07 final source review.",
+    "Current website artwork candidate: 30 PHPUnit tests / 114 assertions and 30 local HTTP/TLS mail-sink checks pass. Independent browser review covers 48 route/theme/width states, six normal-motion states and synthetic signup success/failure cases. Nine focused fallback-shell browser states pass and close the two final HTML repairs. Production deployment and real mail remain untested.",
     "Offline publisher with source/renderer/asset/URI authority binding, deterministic output, timeline and local guess/reveal; private/synthetic/forced/malformed/stale inputs rejected by production gate.",
     "Measurement contracts separate game, infrastructure, synthetic, and unknown results and reject personal data; real measurement authority remains empty.",
     "Migration tool checks identity/head/collision/Pages/Actions/authority and idempotency; 38 offline migration tests pass and a fresh 13-repository read-only plan is retained.",
     "Ten companion presentation PRs independently reviewed with exact changed-file hashes;13 repository settings proposals and six-pin checklist prepared.",
     "Twelve episode drafts, 24 clip drafts,six technical article outlines,launch/report-only alternatives,outreach/email templates, 72 content gates, and experiments with unobserved results.",
-    "All configured remote checks on the ten companion PRs pass at their recorded heads; website and companions reported mergeable. No-check repositories are distinguished in execution/reviews/companion-remote-checks-001.json."
+    "All configured remote checks on the ten companion PRs pass at their recorded heads; website and companions reported mergeable. No-check repositories are distinguished in execution/reviews/companion-remote-checks-001.json.",
+    "Root-authorized artwork: 21 complete families passed scoped provenance verification using independent visual, source-use and mechanical export reviews. Exact prompts and source PNGs are retained; model/backend identity stays unknown. Three additional RUN01/RUN02 source calls are reviewed for existing variants while their families remain blocked."
   ],
   "remaining_conditions": [
     "Restore actual native coordinator/leaf spawning and role-correct Luna/max and Astra/max observations; retain the 250-open-descendant ceiling.",
-    "Provide attested gpt-image-2 access to the two native depth 3 Astra authors, then generate and independently inspect every required export under the original policy.",
+    "Resume the user-authorized root image-tool route after the recorded usage limit resets; finish missing artwork and aspect variants, independent source/export review and generation provenance for all 72 families/115 exports.",
     "Supply approved sanitized run evidence, rights, captions, exact digest-bound publication approval, and enrolled authorities before a real public timeline/video/replay/card publication.",
     "Reconcile active map/runtime work and unavailable Pages configuration before any authorized repository rename; refresh all mutable gates.",
     "Authorize the exact reviewed PR merges and 13 proposed metadata changes when ready; generated-art and deployment acceptance remains separate.",
@@ -47,7 +48,22 @@
     "execution/reviews/pages-use-size-001.json",
     "execution/reviews/W07-final-acceptance-source-review.md",
     "execution/reviews/W03-handoff-final-rereview.md",
-    "execution/reviews/brand-remote-checks-001.json"
+    "execution/reviews/brand-remote-checks-001.json",
+    "execution/reviews/W02-root-art-identity-review.json",
+    "execution/reviews/root-art-browser-smoke.json",
+    "execution/reviews/root-image-service-limit.json",
+    "execution/reviews/W02-root-art-second-batch-review.json",
+    "execution/reviews/W02-root-identity-source-use-review.json",
+    "execution/reviews/W03-root-export-review.json",
+    "execution/reviews/W03-root-export-followup.json",
+    "execution/root-art-acceptance.json",
+    "execution/reviews/root-native-capability-recheck.json",
+    "execution/reviews/root-art-remote-snapshot.json",
+    "execution/reviews/root-art-subscription-http.json",
+    "execution/reviews/W03-root-art-final-acceptance.json",
+    "execution/reviews/W03-root-website-art-review.json",
+    "execution/reviews/root-art-local-checks.json",
+    "execution/reviews/W03-root-website-art-followup.json"
   ],
   "unverified_assumptions": [
     "No provider-side execution attestation follows from installed-client thread metadata.",

@@ -4,13 +4,14 @@
   "binding_requirement": "Missing access blocks exact asset IDs rather than being called delivered. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T18:31:43.671283+00:00",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
   "status": "verified",
   "reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
   "actual_review_records": [
     "execution/reviews/asset-gate-001.json",
     "docs/W07-L-W02-helper-rereview.md",
-    "execution/reviews/W07-private-delivery-scope-review.md"
+    "execution/reviews/W07-private-delivery-scope-review.md",
+    "execution/reviews/W03-root-art-final-acceptance.json"
   ],
   "procedures": [
     "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root . --ledger PRIVATE_NATIVE_LEDGER.json (expected blocked result)",
@@ -25,23 +26,23 @@
     },
     {
       "path": "brand/tokens.css",
-      "sha256": "68922303e31051e522704061d3bd72d4735e3eea1f072ec2a10a104557e31ba2",
-      "bytes": 15563
+      "sha256": "e180a8c3c816d3c225632ae5cf1fe71540322eef024ffa2933f44849b4d7eb9f",
+      "bytes": 15597
     },
     {
       "path": "brand/asset-manifest.json",
-      "sha256": "c6c68ffbad76860e85b4b1762a023fcf7b0177c5ddcf8fefd8c9a1b25dc8a4d7",
-      "bytes": 57879
+      "sha256": "8bf2a863735706a8fdd10ece04ef70549ecd1221f29ee0b6de266dc154409af0",
+      "bytes": 158052
     },
     {
       "path": "brand/ART_ACCESS.md",
-      "sha256": "51a9e62fad0bdfcd9ee7d8e1bd47f13206ee7217966b4555285e03d4f99ee298",
-      "bytes": 7521
+      "sha256": "f90711e73b531d7dd33f51a93e8decc83067027bd786862fdd366542fe2e1f3d",
+      "bytes": 16492
     },
     {
       "path": "art/asset-registry.json",
-      "sha256": "6e3f26753d2660f3b62c9ed176038a7e0c15acc9ab846f6cbe1af596dbcf074f",
-      "bytes": 164745
+      "sha256": "0e71cf13afba70da828b384da8ea3b36021796b044f1c5e53c3d1c6cd6656032",
+      "bytes": 183853
     },
     {
       "path": "art/evidence-media-registry.json",
@@ -55,13 +56,13 @@
     },
     {
       "path": "art/generation-policy.json",
-      "sha256": "67209256fc2f31e7b98b27a67006666e0f403fd675e958446b1ef904a66781c6",
-      "bytes": 2038
+      "sha256": "c5f32a13e79bdf96e6def1d76123a9f5ad0dfa8382a391347a943ae089c0ae95",
+      "bytes": 3105
     },
     {
       "path": "execution/art-model-attestation.json",
-      "sha256": "4bd38887c955462e3911c2bdf6dc0a8e9cef37e19ec0454e80895172971fa263",
-      "bytes": 25692
+      "sha256": "f7285859ec8870d2ed3bf736029a72f835ba50dadd6766dee38eba27db922e91",
+      "bytes": 51047
     },
     {
       "path": "execution/reviews/asset-gate-001.json",
@@ -77,10 +78,15 @@
       "path": "execution/reviews/W07-private-delivery-scope-review.md",
       "sha256": "e74c5c794f8bc8a7a05ff689da982cc5c0504c56b2aedba09dc7b4f1585a498c",
       "bytes": 6223
+    },
+    {
+      "path": "execution/reviews/W03-root-art-final-acceptance.json",
+      "sha256": "857ec9bb30e7fffba97fe5c6ce5caf8061abb9b0b85eac52bcecdf5bf04c0ed2",
+      "bytes": 16783
     }
   ],
   "blocker": null,
   "notes": "Verified blocking behavior only: all72IDs are individually blocked with zero exports; no artwork is accepted.",
   "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
-  "source_binding": "Exact artifact bytes listed here; source and test revisions are those explicitly named by each review. Final root manifest binds this record. No uncommitted bytes are falsely assigned a Git revision."
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations."
 }
