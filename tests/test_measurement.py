@@ -10,6 +10,7 @@ from publisher.capabilities import load_capability_registry, render_capabilities
 from publisher.comparison import validate_comparison
 from publisher.errors import PublisherError, SchemaValidationError, SecurityError
 from publisher.events import aggregate_events, load_event_contract, validate_event
+from tests.measurement_scope_helper import scope_fixture, trusted_scope
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -96,7 +97,9 @@ class MeasurementTests(unittest.TestCase):
             }
         )
         events[0]["environment"] = "production"
-        result = aggregate_events(events)
+        receipt = scope_fixture(events)
+        with trusted_scope(receipt):
+            result = aggregate_events(events, scope_receipt=receipt)
         self.assertEqual(result["metrics"]["audience-engagement-rate"]["value"], 1.0)
 
     def test_w01_capability_envelope_preserves_exact_source_ids(self):

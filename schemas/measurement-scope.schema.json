@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Trusted upstream measurement scope receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "measurement-scope-v1"
+    },
+    "receipt_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{2,119}$"
+    },
+    "authority_reference": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "event_stream_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "week_start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "month_start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "observed_through": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "public_content_registry_reference": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "public_content_registry_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "eligible_public_content_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 100000,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]{2,119}$"
+      }
+    },
+    "server_rules_reference": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "excluded_events": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{2,119}$"
+          },
+          "reason": {
+            "enum": [
+              "bot",
+              "test_traffic",
+              "infrastructure_failure"
+            ]
+          }
+        },
+        "required": [
+          "event_id",
+          "reason"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "authority_reference",
+    "event_stream_digest",
+    "week_start",
+    "month_start",
+    "observed_through",
+    "public_content_registry_reference",
+    "public_content_registry_digest",
+    "eligible_public_content_ids",
+    "server_rules_reference",
+    "excluded_events"
+  ]
+}

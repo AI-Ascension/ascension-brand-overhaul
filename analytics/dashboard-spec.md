@@ -40,3 +40,6 @@ The offline implementation in `publisher.events` validates events and returns
 metric values as `None` with state `no_observations` when the denominator is
 absent. Its fixture lane is synthetic and must never be treated as audience
 data.
+
+
+Production panels require the operator-enrolled upstream receipt described in `docs/MEASUREMENT.md`. The offline aggregator enforces that receipt's weekly/monthly UTC windows, observation cutoff, public-content eligibility, and explicit bot/test/infrastructure exclusions before calculating values. Panels must display the returned scope and mark incomplete windows as partial. Synthetic output has scope `local_unscoped_test` and is excluded from production panels. No deployed collector, enrolled production receipt, or observed traffic is asserted by this specification.

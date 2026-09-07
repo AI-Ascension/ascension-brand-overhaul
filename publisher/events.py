@@ -11,6 +11,7 @@ from typing import Any, Iterable
 from .errors import PublisherError
 from .schema import validate_event_contract_schema, validate_event_schema
 from .security import reject_forbidden_fields
+from .measurement_scope import require_scope
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -113,8 +114,13 @@ def aggregate_events(
     events: Iterable[dict[str, Any]],
     *,
     include_synthetic: bool = False,
+    scope_receipt: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    """Compute documented metrics, using ``None`` for absent observations."""
+    """Compute scoped production metrics or explicitly unscoped local tests.
+
+    Production observations require an operator-enrolled receipt from the
+    upstream server. Empty inputs remain absent, never invented zero traffic.
+    """
 
     contract = load_event_contract()
     validated = [validate_event(event, contract=contract) for event in events]
@@ -131,6 +137,23 @@ def aggregate_events(
         seen_ids[event["event_id"]] = canonical
         unique.append(event)
     validated = unique if include_synthetic else [event for event in unique if event["environment"] == "production"]
+    monthly = validated
+    scope = {"state": "local_unscoped_test" if include_synthetic else "no_observations"}
+    if not include_synthetic and (validated or scope_receipt is not None):
+        bounds = require_scope(unique, scope_receipt)
+        eligible = set(scope_receipt["eligible_public_content_ids"])
+        excluded = {entry["event_id"] for entry in scope_receipt["excluded_events"]}
+        qualified = [event for event in validated if event["content_id"] in eligible and event["event_id"] not in excluded and _parse_event_time(event) <= bounds["observed_through"]]
+        validated = [event for event in qualified if bounds["week_start"] <= _parse_event_time(event) < bounds["week_end"]]
+        monthly = [event for event in qualified if bounds["month_start"] <= _parse_event_time(event) < bounds["month_end"]]
+        scope = {
+            "state": "operator_enrolled_upstream_receipt",
+            "receipt_id": scope_receipt["receipt_id"],
+            **{key: value.isoformat() for key, value in bounds.items()},
+            "week_complete": bounds["observed_through"] >= bounds["week_end"],
+            "month_complete": bounds["observed_through"] >= bounds["month_end"],
+            "excluded_event_count": len(excluded),
+        }
     counts = Counter(event["event_name"] for event in validated)
 
     def ratio(numerator: int, denominator: int) -> float | None:
@@ -147,7 +170,7 @@ def aggregate_events(
             len(cohort_values)
             if (cohort_values := {
                 event["coarse_cohort"]["value"]
-                for event in validated
+                for event in monthly
                 if event["coarse_cohort"] and event["coarse_cohort"]["kind"] == "consented_cohort"
             })
             else None
@@ -166,6 +189,7 @@ def aggregate_events(
         "schema_version": "measurement-result-v1",
         "environment": "synthetic" if include_synthetic else "production",
         "event_count": len(validated) if validated else None,
+        "scope": scope,
         "metrics": {
             metric_id: {"value": value, "state": "no_observations" if value is None else "observed"}
             for metric_id, value in values.items()
