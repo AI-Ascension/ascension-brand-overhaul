@@ -1,0 +1,82 @@
+{
+  "schema_version": "ai-ascension.review-repair-status.v1",
+  "review": "execution/reviews/W07-L-publisher-measurement-review.md",
+  "independent_recheck": "pending",
+  "production_acceptance": "not_approved",
+  "repairs": [
+    {
+      "finding": "W07-PUB-01",
+      "commit": "0cc75a71398e53b62952ecb4d5d2718ad046eb01",
+      "status": "implemented_pending_independent_recheck",
+      "tests": "tests/test_publication_review_repairs.py"
+    },
+    {
+      "finding": "W07-PUB-02",
+      "commit": "ec1fc2e9f41653cadc0ae22d12f3a31c998a49ac",
+      "status": "implemented_pending_independent_recheck",
+      "tests": "tests/test_publication_artifacts.py"
+    },
+    {
+      "finding": "W07-PUB-03",
+      "commit": "3246830efcf17b4dd2ccd321940ef7a1b51b713a",
+      "status": "implemented_pending_independent_recheck",
+      "tests": "tests/test_publication_lineage.py"
+    },
+    {
+      "finding": "W07-PUB-04",
+      "commit": "3246830efcf17b4dd2ccd321940ef7a1b51b713a",
+      "status": "partial",
+      "remaining": "Approval must explicitly bind the public URI register; syntax and label identity checks do not establish publication rights."
+    },
+    {
+      "finding": "W07-PUB-05",
+      "status": "open",
+      "remaining": "Trusted approval source, optional field projection, renderer and token approval pins."
+    },
+    {
+      "finding": "W07-PUB-06",
+      "commit": "0cc75a71398e53b62952ecb4d5d2718ad046eb01",
+      "status": "implemented_pending_independent_recheck",
+      "tests": "tests/test_publication_review_repairs.py"
+    },
+    {
+      "finding": "W07-MEA-01",
+      "commit": "09d79db1d2ad295dde6c877a4bc0a293e9aed40b",
+      "status": "implemented_pending_independent_recheck",
+      "tests": "tests/test_measurement_review_repairs.py"
+    },
+    {
+      "finding": "W07-MEA-02",
+      "commit": "09d79db1d2ad295dde6c877a4bc0a293e9aed40b",
+      "status": "implemented_pending_independent_recheck",
+      "tests": "tests/test_measurement_review_repairs.py"
+    },
+    {
+      "finding": "W07-MEA-03",
+      "status": "open",
+      "remaining": "Date windows, eligible content registry, bot/test and infrastructure exclusions."
+    },
+    {
+      "finding": "W07-MEA-04",
+      "commit": "09d79db1d2ad295dde6c877a4bc0a293e9aed40b",
+      "status": "implemented_pending_independent_recheck",
+      "tests": "tests/test_measurement_review_repairs.py"
+    },
+    {
+      "finding": "W07-MEA-05",
+      "status": "open",
+      "remaining": "Trusted event input and verifiable same-start evidence."
+    },
+    {
+      "finding": "W07-MEA-06",
+      "status": "open",
+      "remaining": "Capability output path, atomicity, and publication classification gates."
+    }
+  ],
+  "residual_metadata_repairs": {
+    "commit": "3246830efcf17b4dd2ccd321940ef7a1b51b713a",
+    "tests": "tests/test_publication_lineage.py",
+    "status": "implemented_pending_independent_recheck"
+  },
+  "evidence_limits": "Local regression tests use synthetic records and artificial approval shapes. They do not constitute authority, real artwork, deployment, or public publication approval."
+}
