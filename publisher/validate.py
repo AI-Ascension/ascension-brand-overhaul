@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 from copy import deepcopy
+import hashlib
+from pathlib import Path
 from datetime import datetime, timezone
 from typing import Any, Iterable
 
@@ -14,7 +16,7 @@ from .schema import (
     validate_manifest_schema,
     validate_timeline_schema,
 )
-from .security import reject_forbidden_fields, safe_public_url
+from .security import checked_path, inspect_artifact_root, reject_forbidden_fields, safe_public_url
 
 
 REQUIRED_APPROVAL_FIELDS = {
@@ -251,6 +253,7 @@ def validate_production_publication(
     approval: dict[str, Any] | None,
     *,
     now: datetime | None = None,
+    artifact_root: Path | str | None = None,
 ) -> dict[str, Any]:
     """Apply the fail-closed production gate and return its projection."""
 
@@ -300,15 +303,27 @@ def validate_production_publication(
         raise ApprovalError("available action timeline is outside the approval surfaces")
     if manifest["evidence"]["availability"] != "none" and "evidence_panel" not in approval["allowed_surfaces"]:
         raise ApprovalError("available evidence is outside the approval surfaces")
-    if manifest["decision_card"]["status"] == "available":
-        matching = [
-            asset
-            for asset in approval["approved_assets"]
-            if asset["asset_id"] == manifest["decision_card"]["asset_id"]
-            and asset["artifact_digest"] == manifest["decision_card"]["artifact_digest"]
-        ]
-        if not matching:
-            raise ApprovalError("decision card artifact is not included in the approval")
+    cards = [manifest["decision_card"]] + [
+        decision["decision_card"] for decision in manifest["action_timeline"]["decisions"]
+        if decision["decision_card"] is not None
+    ]
+    available_cards = [card for card in cards if card["status"] == "available"]
+    if available_cards and artifact_root is None:
+        raise ApprovalError("decision cards require an approved artifact root")
+    if artifact_root is not None:
+        inspect_artifact_root(Path(artifact_root))
+    assets = {asset["asset_id"]: asset for asset in approval["approved_assets"]}
+    for card in available_cards:
+        asset = assets.get(card["asset_id"])
+        if asset is None or asset["artifact_digest"] != card["artifact_digest"] or asset["provenance_reference"] != card["provenance_reference"]:
+            raise ApprovalError("decision card artifact and provenance are not included in the approval")
+        path = checked_path(Path(artifact_root), asset["artifact_path"], must_exist=True)
+        digest = hashlib.sha256()
+        with path.open("rb") as handle:
+            for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                digest.update(chunk)
+        if digest.hexdigest() != asset["artifact_digest"]:
+            raise ApprovalError("decision card file digest does not match the approval")
     return project_approved_fields(manifest, approval["allowed_fields"])
 
 

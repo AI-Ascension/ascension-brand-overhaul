@@ -121,7 +121,7 @@ class OfflinePublisher:
             self.verify_artifact_root(artifact_root)
         manifest = self.ingest(input_path)
         approval = self.read_approval(approval_path)
-        projection = validate_production_publication(manifest, approval, now=now)
+        projection = validate_production_publication(manifest, approval, now=now, artifact_root=artifact_root)
         return self._write(projection, manifest, output_root, idempotent_ok=True)
 
     def _write(

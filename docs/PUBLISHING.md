@@ -92,7 +92,7 @@ controls and a disclosure element. It is not a poll, does not expose an
 aggregate count, and does not call a backend.
 
 The output directory is deliberately separate from the input tree. Before
-ingest, an optional artifact root can be checked for symlinks and hidden files.
+ingest, an artifact root can be checked for symlinks and hidden files. Production records with any available decision card require `--artifact-root`. Every top-level or nested card must match an `approved_assets` entry containing `asset_id`, `artifact_digest`, `artifact_path` relative to that root, and `provenance_reference`. The publisher rejects missing files, unsafe paths, and file bytes that do not match the approved SHA-256. This verifies referenced input identity; it does not generate or deploy the artwork.
 Raw source records are never copied to hide them with CSS, robots metadata, or
 navigation.
 
