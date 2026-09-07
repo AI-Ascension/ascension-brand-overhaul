@@ -92,15 +92,30 @@
             "type": "string",
             "minLength": 1,
             "maxLength": 2000
+          },
+          "mime_type": {
+            "enum": [
+              "image/png",
+              "image/jpeg",
+              "image/webp"
+            ]
+          },
+          "byte_size": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 16777216
           }
         },
         "required": [
           "asset_id",
           "artifact_digest",
           "artifact_path",
-          "provenance_reference"
+          "provenance_reference",
+          "mime_type",
+          "byte_size"
         ]
-      }
+      },
+      "maxItems": 256
     },
     "scope_notes": {
       "type": "string",

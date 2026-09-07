@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import os
 import shutil
@@ -15,6 +16,7 @@ from typing import Any
 from .canonical import canonical_json
 from .errors import DuplicatePublicationError, PublisherError
 from .render import render_html
+from .output_state import managed_write
 from .security import ensure_separate_output, inspect_artifact_root, reject_symlink_path
 from .validate import (
     validate_approval,
@@ -66,6 +68,8 @@ class PublicationResult:
     html_path: Path
     source_digest: str
     idempotent: bool
+    manifest_digest: str
+    html_digest: str
 
 
 class OfflinePublisher:
@@ -98,9 +102,10 @@ class OfflinePublisher:
         output_root = Path(output_root).resolve()
         ensure_separate_output(input_path.parent, output_root)
         if artifact_root is not None:
+            ensure_separate_output(Path(artifact_root), output_root)
             self.verify_artifact_root(artifact_root)
         manifest = self.ingest(input_path)
-        return self._write(manifest, manifest, output_root, idempotent_ok=True)
+        return managed_write(output_root, "local_preview", lambda: self._write(manifest, manifest, output_root, idempotent_ok=True, local_preview=True))
 
     def publish(
         self,
@@ -117,12 +122,14 @@ class OfflinePublisher:
         reject_symlink_path(Path(output_root))
         output_root = Path(output_root).resolve()
         ensure_separate_output(input_path.parent, output_root)
+        ensure_separate_output(Path(approval_path).parent, output_root)
         if artifact_root is not None:
+            ensure_separate_output(Path(artifact_root), output_root)
             self.verify_artifact_root(artifact_root)
         manifest = self.ingest(input_path)
         approval = self.read_approval(approval_path)
         projection = validate_production_publication(manifest, approval, now=now, artifact_root=artifact_root)
-        return self._write(projection, manifest, output_root, idempotent_ok=True)
+        return managed_write(output_root, "approved_public", lambda: self._write(projection, manifest, output_root, idempotent_ok=True))
 
     def _write(
         self,
@@ -131,6 +138,7 @@ class OfflinePublisher:
         output_root: Path,
         *,
         idempotent_ok: bool,
+        local_preview: bool = False,
     ) -> PublicationResult:
         run_id = source_manifest["public_run_id"]
         version = source_manifest["publication_version"]
@@ -145,6 +153,8 @@ class OfflinePublisher:
         # Render the same allowlisted projection written to disk.  This keeps
         # an approval's field boundary effective for both JSON and HTML.
         page = render_html(projection)
+        if local_preview:
+            page = page.replace("<main>", '<main><p role="note">Local preview only. Not approved for publication.</p>', 1)
         if output_directory.exists():
             if {p.name for p in output_directory.iterdir()} != {'manifest.json', 'index.html'}:
                 raise DuplicatePublicationError('Publication version contains unexpected files')
@@ -155,7 +165,7 @@ class OfflinePublisher:
             existing_payload = manifest_path.read_bytes()
             existing_page = html_path.read_text(encoding="utf-8")
             if existing_payload == payload and existing_page == page and idempotent_ok:
-                return PublicationResult(output_directory, manifest_path, html_path, source_manifest["source"]["content_digest"], True)
+                return PublicationResult(output_directory, manifest_path, html_path, source_manifest["source"]["content_digest"], True, hashlib.sha256(payload).hexdigest(), hashlib.sha256(page.encode("utf-8")).hexdigest())
             raise DuplicatePublicationError("publication version already exists with different content")
         output_directory.parent.mkdir(parents=True, exist_ok=True)
         staging = Path(tempfile.mkdtemp(prefix='.publication-', dir=output_directory.parent))
@@ -172,7 +182,7 @@ class OfflinePublisher:
         finally:
             if staging.exists():
                 shutil.rmtree(staging)
-        return PublicationResult(output_directory, manifest_path, html_path, source_manifest["source"]["content_digest"], False)
+        return PublicationResult(output_directory, manifest_path, html_path, source_manifest["source"]["content_digest"], False, hashlib.sha256(payload).hexdigest(), hashlib.sha256(page.encode("utf-8")).hexdigest())
 
 
 def verify(manifest_path: Path | str) -> dict[str, Any]:

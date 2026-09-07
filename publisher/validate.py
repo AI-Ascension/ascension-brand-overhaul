@@ -4,12 +4,14 @@ from __future__ import annotations
 
 from copy import deepcopy
 import hashlib
+import re
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import Any, Iterable
 
 from .canonical import source_digest
 from .authority import require_registered_approval
+from .artifacts import verify_raster_asset
 from .errors import ApprovalError, ProductionGateError, PublisherError
 from .schema import (
     validate_action_schema,
@@ -315,17 +317,15 @@ def validate_production_publication(
     if artifact_root is not None:
         inspect_artifact_root(Path(artifact_root))
     assets = {asset["asset_id"]: asset for asset in approval["approved_assets"]}
+    verified_assets = set()
     for card in available_cards:
         asset = assets.get(card["asset_id"])
         if asset is None or asset["artifact_digest"] != card["artifact_digest"] or asset["provenance_reference"] != card["provenance_reference"]:
             raise ApprovalError("decision card artifact and provenance are not included in the approval")
         path = checked_path(Path(artifact_root), asset["artifact_path"], must_exist=True)
-        digest = hashlib.sha256()
-        with path.open("rb") as handle:
-            for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-                digest.update(chunk)
-        if digest.hexdigest() != asset["artifact_digest"]:
-            raise ApprovalError("decision card file digest does not match the approval")
+        if asset["asset_id"] not in verified_assets:
+            verify_raster_asset(path, asset)
+            verified_assets.add(asset["asset_id"])
     public_uris = {reference["uri"] for reference in manifest["source"]["references"]}
     public_uris.update(value for key, value in manifest["evidence"].items() if key in {"video_url", "replay_url", "evidence_reference"} and value)
     public_uris.update(card["provenance_reference"] for card in available_cards)
@@ -334,8 +334,25 @@ def validate_production_publication(
         raise ApprovalError("public URI is outside the approved source register")
     for uri in approval["approved_public_uris"]:
         safe_public_url(uri)
-    require_registered_approval(approval)
     projection = project_approved_fields(manifest, approval["allowed_fields"])
+    # Escaping does not remove a private URL from visible text. Apply the
+    # same register to URL-bearing text in the actual public projection.
+    uri_token = re.compile(r"(?:[A-Za-z][A-Za-z0-9+.-]*://|//|(?<![\w:])/[A-Za-z0-9._~-])[^\s<>\"']*")
+    approved_uris = set(approval["approved_public_uris"])
+    def check_text(value):
+        if isinstance(value, dict):
+            for child in value.values():
+                check_text(child)
+        elif isinstance(value, list):
+            for child in value:
+                check_text(child)
+        elif isinstance(value, str):
+            for match in uri_token.finditer(value):
+                candidate = match.group(0)
+                if candidate not in approved_uris and candidate.rstrip(".,;!?)]}") not in approved_uris:
+                    raise ApprovalError("URL-like text is outside the approved public URI register")
+    check_text(projection)
+    require_registered_approval(approval)
     return validate_public_projection(projection)
 
 

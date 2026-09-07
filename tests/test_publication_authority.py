@@ -50,3 +50,26 @@ class PublicationAuthorityTests(unittest.TestCase):
                 self.assertNotIn(manifest['source']['content_digest'], payload)
                 self.assertNotIn(manifest['source']['record_id'], payload)
                 self.assertNotIn('Source content digest', payload)
+
+    def test_url_in_free_text_requires_exact_uri_approval(self):
+        from publisher.canonical import source_digest
+        manifest, approval = approved_fixture()
+        manifest['disclosures'].append('Private evidence: https://private.example/secret')
+        manifest['source']['content_digest'] = source_digest(manifest)
+        approval['source_digest'] = manifest['source']['content_digest']
+        with trusted_registry(approval), self.assertRaisesRegex(ApprovalError, 'URL-like text'):
+            validate_production_publication(manifest, approval)
+        approval['approved_public_uris'].append('https://private.example/secret')
+        with trusted_registry(approval):
+            validate_production_publication(manifest, approval)
+
+    def test_withheld_free_text_url_is_not_exposed(self):
+        from publisher.canonical import source_digest
+        manifest, approval = approved_fixture()
+        manifest['source']['revision'] = 'https://private.example/revision'
+        manifest['source']['content_digest'] = source_digest(manifest)
+        approval['source_digest'] = manifest['source']['content_digest']
+        approval['allowed_fields'] = sorted(REQUIRED_APPROVAL_FIELDS) + ['source.references.label', 'source.references.uri']
+        with trusted_registry(approval):
+            projection = validate_production_publication(manifest, approval)
+        self.assertNotIn('revision', projection['source'])

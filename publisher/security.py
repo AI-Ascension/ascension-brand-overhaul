@@ -142,12 +142,28 @@ def inspect_artifact_root(root: Path) -> list[str]:
     findings: list[str] = []
     if root.name.startswith("."):
         findings.append(f"hidden:{root.name}")
-    for path in sorted(root.rglob("*")):
-        relative = path.relative_to(root).as_posix()
-        if path.is_symlink():
-            findings.append(f"symlink:{relative}")
-        if any(part.startswith(".") for part in path.relative_to(root).parts):
-            findings.append(f"hidden:{relative}")
+    count = 0
+    total = 0
+    for parent, dirs, files in os.walk(root, followlinks=False):
+        for name in sorted(dirs + files):
+            count += 1
+            if count > 1024:
+                raise SecurityError("artifact root exceeds the 1024-entry limit")
+            path = Path(parent) / name
+            relative = path.relative_to(root).as_posix()
+            if path.is_symlink():
+                raise SecurityError("artifact root contains a symlink")
+            if any(part.startswith(".") for part in path.relative_to(root).parts):
+                raise SecurityError("artifact root contains a hidden entry")
+            if path.is_file():
+                size = path.stat().st_size
+                if size > 16 * 1024 * 1024:
+                    raise SecurityError("artifact file exceeds the 16 MiB limit")
+                total += size
+                if total > 64 * 1024 * 1024:
+                    raise SecurityError("artifact root exceeds the 64 MiB limit")
+            elif not path.is_dir():
+                raise SecurityError("artifact root contains a special file")
     if findings:
         raise SecurityError("unsafe artifact root: " + ", ".join(findings))
     return findings
@@ -162,8 +178,5 @@ def ensure_separate_output(input_path: Path, output_root: Path) -> None:
     output_root = output_root.resolve()
     if output_root == input_path:
         raise SecurityError("publication output must be separate from its input")
-    try:
-        output_root.relative_to(input_path)
-    except ValueError:
-        return
-    raise SecurityError("publication output may not be inside its input tree")
+    if output_root.is_relative_to(input_path) or input_path.is_relative_to(output_root):
+        raise SecurityError("publication output and input trees must be disjoint")
