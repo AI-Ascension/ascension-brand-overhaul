@@ -307,6 +307,8 @@ class MigrationReviewIntegrityTests(unittest.TestCase):
         plan, plan_path, receipt_path, approval = apply_plan_fixture(self.root / "locks", [operation()])
         digest = migration.sha256_bytes(plan_path.read_bytes())
         operation_lock = migration.operation_set_lock_path(plan_path, digest)
+        operation_lock.parent.mkdir(parents=True, exist_ok=True)
+        self.addCleanup(operation_lock.unlink, missing_ok=True)
         operation_lock.write_text("another active operator\n", encoding="utf-8")
         alternate_receipt = self.root / "locks" / "receipt-two.json"
         client = FakeClient(repository())
@@ -353,6 +355,7 @@ class MigrationReviewIntegrityTests(unittest.TestCase):
             FakeClient(repository()),
             snapshot=valid,
             snapshot_sha256=digest,
+            snapshot_bytes=snapshot_path.read_bytes(),
             observed_at="2026-09-07T00:00:00Z",
         )
         self.assertEqual(plan["source_snapshot_provenance"]["sha256"], digest)

@@ -107,10 +107,22 @@ def utc_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
+def unique_json_object(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise MigrationError('Duplicate JSON field')
+        result[key] = value
+    return result
+
+
 def read_json(path: Path) -> Any:
     try:
-        with path.open("r", encoding="utf-8") as handle:
-            return json.load(handle)
+        with path.open('rb') as handle:
+            raw = handle.read(4 * 1024 * 1024 + 1)
+        if len(raw) > 4 * 1024 * 1024:
+            raise MigrationError('Migration JSON exceeds 4 MiB')
+        return json.loads(raw, object_pairs_hook=unique_json_object)
     except (OSError, json.JSONDecodeError) as exc:
         raise MigrationError(f"Could not read JSON {path}: {exc}") from exc
 
@@ -220,7 +232,9 @@ class GhApi:
                 raise ApiError(f"GitHub API response for {path} has no {label} list")
             if isinstance(result, dict) and result.get("incomplete_results") is True:
                 raise ApiError(f"GitHub API pagination for {path} is incomplete")
-            rows.extend(item for item in batch if isinstance(item, dict))
+            if any(not isinstance(item, dict) for item in batch):
+                raise ApiError(f'GitHub API response for {path} contains a non-object row')
+            rows.extend(batch)
             if key == "items" and len(rows) >= 1000 and len(batch) == 100:
                 # GitHub code search exposes at most 1,000 rows.  A full
                 # tenth page cannot prove that no additional caller exists.
@@ -745,6 +759,7 @@ def validate_repository_rows(rows: Iterable[Mapping[str, Any]]) -> None:
     """Reject ambiguous map identities before any observations are derived."""
     names: set[tuple[str, str]] = set()
     stable_ids: set[int] = set()
+    targets = {}
     for index, item in enumerate(rows):
         if not isinstance(item, Mapping):
             raise MigrationError(f"Repository map row {index} is not an object")
@@ -761,6 +776,10 @@ def validate_repository_rows(rows: Iterable[Mapping[str, Any]]) -> None:
         if identity in names:
             raise MigrationError(f"Repository map repeats {owner}/{source_name}")
         names.add(identity)
+        target_identity = (owner.casefold(), target_name.casefold())
+        if target_identity in targets:
+            raise MigrationError('Repository map repeats a target name')
+        targets[target_identity] = identity
         stable_id = item.get("stable_repository_id")
         if stable_id is not None:
             if isinstance(stable_id, bool) or not isinstance(stable_id, int) or stable_id < 1:
@@ -768,6 +787,8 @@ def validate_repository_rows(rows: Iterable[Mapping[str, Any]]) -> None:
             if stable_id in stable_ids:
                 raise MigrationError(f"Repository map repeats stable repository ID {stable_id}")
             stable_ids.add(stable_id)
+    if any(target in names and source != target for target, source in targets.items()):
+        raise MigrationError('Repository map has source/target overlap; review dependent renames separately')
 
 
 def validate_snapshot(snapshot: Mapping[str, Any]) -> None:
@@ -800,10 +821,17 @@ def validate_snapshot(snapshot: Mapping[str, Any]) -> None:
         stable_ids.add(stable_id)
 
 
-def snapshot_provenance(snapshot: Mapping[str, Any], digest: str | None = None) -> dict[str, Any]:
+def snapshot_provenance(snapshot: Mapping[str, Any], digest: str | None = None, raw: bytes | None = None) -> dict[str, Any]:
     """Return a digest and schema marker suitable for a reviewable plan."""
     validate_snapshot(snapshot)
-    snapshot_digest = digest or sha256_json(snapshot)
+    if raw is not None:
+        if not isinstance(raw, bytes) or len(raw) > 4 * 1024 * 1024:
+            raise MigrationError('Invalid bounded snapshot bytes')
+        if json.loads(raw, object_pairs_hook=unique_json_object) != snapshot:
+            raise MigrationError('Snapshot bytes disagree with supplied snapshot')
+    snapshot_digest = sha256_bytes(raw) if raw is not None else sha256_json(snapshot)
+    if digest is not None and digest != snapshot_digest:
+        raise MigrationError('Source snapshot digest disagrees with supplied bytes')
     if not isinstance(snapshot_digest, str) or re.fullmatch(r"[0-9a-f]{64}", snapshot_digest) is None:
         raise MigrationError("Source snapshot digest is not a SHA-256 value")
     return {
@@ -843,11 +871,15 @@ def build_plan(
     snapshot: Mapping[str, Any] | None = None,
     observed_at: str | None = None,
     snapshot_sha256: str | None = None,
+    snapshot_bytes: bytes | None = None,
 ) -> dict[str, Any]:
     repository_rows = list(repository_map)
     validate_repository_rows(repository_rows)
     if snapshot is not None:
         validate_snapshot(snapshot)
+        provenance = snapshot_provenance(snapshot, snapshot_sha256, snapshot_bytes)
+    elif snapshot_sha256 is not None or snapshot_bytes is not None:
+        raise MigrationError('Snapshot provenance requires a snapshot')
     actor = client.current_user() if callable(getattr(client, "current_user", None)) else None
     generated_at = observed_at or utc_now()
     operations: list[dict[str, Any]] = []
@@ -862,11 +894,17 @@ def build_plan(
         source = client.observe_repo(repo_owner, source_name)
         target = source if target_name == source_name else client.observe_repo(repo_owner, target_name)
         expected = expected_by_name(snapshot, repo_owner, source_name)
+        if snapshot is not None and expected is None:
+            raise MigrationError('Source repository is absent from the supplied snapshot')
         mapped_id = item.get("stable_repository_id")
         if expected is not None and mapped_id is not None and mapped_id != expected.get("stable_id"):
             raise MigrationError(
                 f"Repository map stable ID for {repo_owner}/{source_name} disagrees with the source snapshot"
             )
+        if expected is not None:
+            for mapped_key, snapshot_key in (('source_head', 'default_head'), ('default_branch', 'default_branch'), ('visibility', 'visibility')):
+                if item.get(mapped_key) is not None and item[mapped_key] != expected.get(snapshot_key):
+                    raise MigrationError(f'Repository map {mapped_key} disagrees with the source snapshot')
         expected_id = (expected.get("stable_id") if expected else mapped_id) or source.get("id")
         expected_head = item.get("source_head") or (expected.get("default_head") if expected else source.get("head_sha"))
         operation_id = f"rename:{repo_owner}/{source_name}->{target_name}"
@@ -943,7 +981,7 @@ def build_plan(
         },
         "source_snapshot": "provided W01 source snapshot" if snapshot else "live API observations",
         "source_snapshot_provenance": (
-            snapshot_provenance(snapshot, snapshot_sha256)
+            provenance
             if snapshot is not None
             else {"provided": False, "schema_version": None, "sha256": None}
         ),
@@ -961,6 +999,7 @@ def validate_plan(plan: Mapping[str, Any]) -> None:
     operations = plan.get("operations")
     if not isinstance(operations, list) or not operations:
         raise MigrationError("Migration plan has no operations")
+    validate_repository_rows(operations)
     provenance = plan.get("source_snapshot_provenance")
     if not isinstance(provenance, Mapping) or not isinstance(provenance.get("provided"), bool):
         raise MigrationError("Migration plan has no source snapshot provenance")
@@ -1035,8 +1074,9 @@ def fresh_operation_state(client: Any, op: Mapping[str, Any]) -> tuple[dict[str,
 
 def operation_set_lock_path(plan_path: Path, plan_digest: str) -> Path:
     """Return the lock shared by every receipt applying one exact plan."""
-    plan_path = Path(plan_path)
-    return plan_path.with_name(f".{plan_path.name}.{plan_digest}.operation-set.lock")
+    if not re.fullmatch('[a-f0-9]{64}', plan_digest):
+        raise MigrationError('Invalid plan lock digest')
+    return Path.home() / '.local/state/ai-ascension-migration/locks' / (plan_digest + '.operation-set.lock')
 
 
 def _receipt_repo_identity(value: Any, owner: str, name: str, *, expected_id: int | None = None) -> bool:
@@ -1068,6 +1108,7 @@ def _validate_receipt_rows(stored_operations: Any, plan: Mapping[str, Any]) -> d
         "unknown",
         "unknown_waiting_for_reconciliation",
         "verification_failed",
+        "failed",
         "dry_run_blocked",
         "dry_run_ready",
         "blocked",
@@ -1234,6 +1275,9 @@ def apply_plan(
     receipt_path.parent.mkdir(parents=True, exist_ok=True)
     plan_digest = sha256_bytes(plan_path.read_bytes())
     operation_lock = operation_set_lock_path(plan_path, plan_digest)
+    if any(path.is_symlink() for path in (operation_lock, *operation_lock.parents)):
+        raise MigrationError('Symlink in trusted migration lock path')
+    operation_lock.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
     receipt_lock = receipt_path.with_name(receipt_path.name + '.lock')
     try:
         operation_handle = operation_lock.open('x', encoding='utf-8')
@@ -1442,7 +1486,15 @@ def make_client(args: argparse.Namespace) -> Any:
 
 def command_plan(args: argparse.Namespace) -> dict[str, Any]:
     repository_map = load_map(args.map)
-    snapshot = load_snapshot(args.snapshot)
+    snapshot_bytes = None
+    snapshot = None
+    if args.snapshot:
+        with args.snapshot.open('rb') as handle:
+            snapshot_bytes = handle.read(4 * 1024 * 1024 + 1)
+        if len(snapshot_bytes) > 4 * 1024 * 1024:
+            raise MigrationError('Source snapshot exceeds 4 MiB')
+        snapshot = json.loads(snapshot_bytes, object_pairs_hook=unique_json_object)
+        validate_snapshot(snapshot)
     client = SnapshotClient(snapshot) if snapshot is not None else GhApi(executable=args.api_executable, host=args.host)
     plan = build_plan(
         repository_map,
@@ -1450,7 +1502,7 @@ def command_plan(args: argparse.Namespace) -> dict[str, Any]:
         owner=args.owner,
         snapshot=snapshot,
         observed_at=args.observed_at,
-        snapshot_sha256=sha256_bytes(args.snapshot.read_bytes()) if args.snapshot else None,
+        snapshot_bytes=snapshot_bytes,
     )
     write_json(args.output, plan)
     return {"output": str(args.output), "plan_sha256": sha256_bytes(args.output.read_bytes()), "operations": len(plan["operations"]), "mode": "dry_run"}
