@@ -6,9 +6,9 @@
   "review_boundary": {
     "collector_role": "W01-L",
     "collector_thread_id": "01a07a4e-d58b-7953-9513-872ffdf45469",
-    "independent_reviewer": null,
-    "independent_review_status": "blocked_native_delegation_unavailable",
-    "interpretation": "These records describe exact source or dated owner evidence. W01 did not rerun a game host, provider, deployment, or campaign, and no child reviewer was available. A source claim is not promoted to a fresh independent runtime result."
+    "independent_reviewer": "W03-L (source review only; findings repaired pending rereview)",
+    "independent_review_status": "source_provenance_repairs_pending_rereview",
+    "interpretation": "W03 independently reviewed the exact source records. That review is not a host rerun or the required depth-3 native reviewer ancestry. Original collector could not delegate; client metadata and runtime limits remain separate."
   },
   "capabilities": [
     {
@@ -69,11 +69,11 @@
       "verification_actor": "maintainer_reported",
       "public_artifact_availability": "report_only",
       "release_support": "experimental_exact_fixture",
-      "tested_configuration": "STS2 v0.107.1 Windows x86-64; visible bounded status probe; harness -> MCP -> gateway -> mod -> host",
+      "tested_configuration": "Dated maintainer report: STS2 v0.107.1 Windows x86-64, source HEAD 97f3a2068452d2c1616c531a7dfad51fbd484cac plus uncommitted runtime-v1 changes. Source revision here identifies the report document, not the runtime build.",
       "observed_at": "2026-09-02",
       "last_reviewed_at": "2026-09-07",
       "review_status": "unreviewed",
-      "public_notes": "The owner report was inspected from the current default source but not rerun by W01. It is not a model-played campaign, a win, or general release compatibility."
+      "public_notes": "Report-only historical observation, not rerun in this assignment. The report lists staged package hashes, but the uncommitted runtime patch and package bytes were not collected or verified here. It is not reproducible from the linked report revision alone, a model-played campaign, a win, or general release compatibility."
     },
     {
       "capability_id": "CAP-MOD-FORCED-VICTORY",
@@ -206,7 +206,7 @@
     {
       "capability_id": "CAP-WATCHDOG-SOURCE",
       "display_label": "Watchdog implementation proposal",
-      "claim": "The watchdog default branch documents the intended deterministic supervision boundary; the integrated runtime remains an open draft proposal with failing platform checks.",
+      "claim": "Watchdog PR #2 proposes the deterministic supervision runtime against bootstrap; its recorded platform checks failed and the draft is not part of the default source.",
       "source_url": "https://github.com/AI-Ascension/ascension-watchdog/pull/2",
       "source_revision": "55480e05e983cade3f018da37634942cdbe6eac7",
       "evidence_kind": "planned",
@@ -217,7 +217,7 @@
       "observed_at": "2026-09-07",
       "last_reviewed_at": "2026-09-07",
       "review_status": "blocked",
-      "public_notes": "Do not claim 24/7 supervision, crash recovery, reboot recovery, or a live service. The draft is not part of the bootstrap default source."
+      "public_notes": "The separate bootstrap default revision dc2d20badb9e86c12067316b92d6c8289b2e6995 contains boundary documentation only. This record identifies the draft proposal revision. No 24/7 supervision, crash recovery, reboot recovery, or live service is established."
     },
     {
       "capability_id": "CAP-MAP-DEFERRED",
@@ -253,19 +253,19 @@
     },
     {
       "capability_id": "CAP-CANONICAL-DOMAIN",
-      "display_label": "Canonical-domain source and host response",
-      "claim": "The canonical domain serves the checked source files and responds to the home page, while the subscription endpoint requires POST and has not had a successful mail submission recorded in this audit.",
+      "display_label": "Canonical-domain website source",
+      "claim": "The canonical-domain repository documents a PHP website and subscription backend intended for shared hosting.",
       "source_url": "https://github.com/AI-Ascension/aiascension.tech/blob/4e2d99c95d89ce3d18981d331faad10c9f1f7376/README.md",
       "source_revision": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
       "evidence_kind": "source_derived",
       "verification_actor": "maintainer_reported",
       "public_artifact_availability": "none",
-      "release_support": "experimental_exact_fixture",
-      "tested_configuration": "Live https://aiascension.tech/; PHP 8.3.33; source branch codex/wire-mailing-list-email; root HTTP evidence in execution/site-baseline.json",
+      "release_support": "none",
+      "tested_configuration": "Source documentation at codex/wire-mailing-list-email revision 4e2d99c95d89ce3d18981d331faad10c9f1f7376; no host behavior is established by this source-derived record.",
       "observed_at": "2026-09-07",
       "last_reviewed_at": "2026-09-07",
       "review_status": "unreviewed",
-      "public_notes": "Root observed HTTP 200 home and HTTP 405 on GET /api/subscribe.php; no POST or mail was sent. Hosting injects monitoring markup and https://img1.wsimg.com/traffic-assets/js/tccl.min.js, so source-level no-external-request claims do not describe the served document exactly."
+      "public_notes": "Separate dated host observations are retained in execution/site-baseline.json and execution/source-snapshot.json deployment_surfaces. They are not evidence of a successful mail submission or deployment of the brand branch. Production branch, hosting injection, POST, and mail behavior require their own evidence."
     },
     {
       "capability_id": "CAP-BRAND-PRIVATE-SOURCE",
@@ -291,6 +291,13 @@
     "live_autonomous_service": false,
     "native_multiplayer": false,
     "trademark_clearance": false,
-    "unsupported_claims_to_avoid": ["first verified win already achieved", "24/7 autonomy", "universal provider integration", "Mega Crit or Valve endorsement", "legal trademark clearance", "all component repositories are deployed"]
+    "unsupported_claims_to_avoid": [
+      "first verified win already achieved",
+      "24/7 autonomy",
+      "universal provider integration",
+      "Mega Crit or Valve endorsement",
+      "legal trademark clearance",
+      "all component repositories are deployed"
+    ]
   }
 }

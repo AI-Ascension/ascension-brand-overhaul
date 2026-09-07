@@ -99,7 +99,7 @@
       "visibility": "public",
       "default_branch": "codex/wire-mailing-list-email",
       "default_head": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
-      "description": "AI Ascension – aiascension.tech | Unofficial Slay the Spire 2 AI race streaming site",
+      "description": "AI Ascension \u2013 aiascension.tech | Unofficial Slay the Spire 2 AI race streaming site",
       "source_url": "https://github.com/AI-Ascension/aiascension.tech/tree/4e2d99c95d89ce3d18981d331faad10c9f1f7376",
       "source_kind": "current_remote_default_branch",
       "updated_at": "2026-09-07T03:39:30Z",
@@ -225,62 +225,272 @@
     }
   ],
   "source_documents": [
-    {"repository":"AI-Ascension/.github","ref":"main","path":"README.md","blob_sha":"dd1a017fdd1653f8b8f86a4bfbbe81019730b2dd"},
-    {"repository":"AI-Ascension/.github","ref":"main","path":"STATUS.md","blob_sha":"2c56cf532ff4da79a18807a2c0d2d42f893e8baa"},
-    {"repository":"AI-Ascension/.github","ref":"main","path":"CONTRIBUTING.md","blob_sha":"a2ab474d382d7d0705dd0ce18f722706b8fd95b6"},
-    {"repository":"AI-Ascension/AI-Ascension.github.io","ref":"main","path":"README.md","blob_sha":"7016a30118f1b715b8917f0c12aea3dcee9c8a3d"},
-    {"repository":"AI-Ascension/AI-Ascension.github.io","ref":"main","path":"proof.html","blob_sha":"5a09af68ab9033fe451ffb9077e1ba2cf6e6d128"},
-    {"repository":"AI-Ascension/AI-Ascension.github.io","ref":"main","path":"evidence.html","blob_sha":"1dd65a059a32582a40a8a41f9a92910b1354a985"},
-    {"repository":"AI-Ascension/AI-Ascension.github.io","ref":"main","path":"repositories.html","blob_sha":"16cd668e62affb03e4bdf70b27b921515554dbaf"},
-    {"repository":"AI-Ascension/AI-Ascension.github.io","ref":"main","path":".github/workflows/pages.yml","blob_sha":"0cf4ec0c01c969c58ec2359cdb7b5758497c379e"},
-    {"repository":"AI-Ascension/AI-Ascension.github.io","ref":"main","path":".github/workflows/validate.yml","blob_sha":"f6f57aec2c0213c1b989fad867f19ff550564f4d"},
-    {"repository":"AI-Ascension/ai-agent-observability","ref":"main","path":"README.md","blob_sha":"89f70d593c58946393ee57202caad30696e27221"},
-    {"repository":"AI-Ascension/ai-agent-observability","ref":"main","path":"docs/ARCHITECTURE.md","blob_sha":"4ab9afaf15e21d399196d8383b1cc67dc8a37e13"},
-    {"repository":"AI-Ascension/ai-agent-observability","ref":"main","path":"docs/EVIDENCE.md","blob_sha":"281febf7d276702181ab18e2235aad478e3c20ff"},
-    {"repository":"AI-Ascension/aiascension.tech","ref":"codex/wire-mailing-list-email","path":"README.md","blob_sha":"145149b20069577c85b108e5d4f1cb3cc6c24983"},
-    {"repository":"AI-Ascension/ascension-brand-overhaul","ref":"main","path":"README.md","blob_sha":"b7a9ec30bec33365151ad071ff0eae33fe324a7c"},
-    {"repository":"AI-Ascension/ascension-map-visualizer","ref":"bootstrap","path":"LICENSE","blob_sha":"531b36cc22a59be81d0c0de2c8967b8d6ba86b04"},
-    {"repository":"AI-Ascension/ascension-watchdog","ref":"bootstrap","path":"README.md","blob_sha":"f24f13fcb6292d24ddc7b93eaba525aa25ecac6a"},
-    {"repository":"AI-Ascension/ascension-watchdog","ref":"bootstrap","path":"docs/architecture.md","blob_sha":"60a5850458f1e3f01fd3ad741f1b43e72303669e"},
-    {"repository":"AI-Ascension/sts2-game-core","ref":"main","path":"README.md","blob_sha":"caf160c3e30cd34c5194f6a0a093038e5f5f1d68"},
-    {"repository":"AI-Ascension/sts2-game-core","ref":"main","path":"docs/PRODUCT.md","blob_sha":"f15e224db6d82d6292c10fb39b510714c02b522f"},
-    {"repository":"AI-Ascension/sts2-game-core","ref":"main","path":"docs/POLICY_AS_CODE.md","blob_sha":"5bd278897c56461d32becadb19ea2ca0750183bc"},
-    {"repository":"AI-Ascension/sts2-game-mod","ref":"main","path":"README.md","blob_sha":"1d2b09e010e36da7ec860b0cf4ddc11932d19dd9"},
-    {"repository":"AI-Ascension/sts2-game-mod","ref":"main","path":"docs/PRODUCT.md","blob_sha":"a659c1e8d1623ac0ac398ee3a1946c7d92d82d30"},
-    {"repository":"AI-Ascension/sts2-game-mod","ref":"main","path":"docs/COMPATIBILITY.md","blob_sha":"62ed8491cdba6a500043aa6b18076ad3a98b8964"},
-    {"repository":"AI-Ascension/sts2-game-mod","ref":"main","path":"docs/evidence/native-victory-observation-20260906.md","blob_sha":"c951cbc4ac77bde663bcfad50baed14438bea1ae"},
-    {"repository":"AI-Ascension/sts2-gateway","ref":"main","path":"README.md","blob_sha":"2c2099a0688f92849ec96096ed87baef3cfbdaf0"},
-    {"repository":"AI-Ascension/sts2-gateway","ref":"main","path":"docs/PRODUCT.md","blob_sha":"27b1f6a99cfbe2fda24f4958ad67c03014178593"},
-    {"repository":"AI-Ascension/sts2-harness","ref":"main","path":"README.md","blob_sha":"8d1b008da81c0f0e8a9d55e5ed918982232bb626"},
-    {"repository":"AI-Ascension/sts2-harness","ref":"main","path":"docs/PRODUCT.md","blob_sha":"464f5a5d4570d8d19631ebec65dd2c26a310e787"},
-    {"repository":"AI-Ascension/sts2-harness","ref":"main","path":"docs/evidence/seeded-astra-campaign-20260906.md","blob_sha":"f0aebd49c9fba58a2376e33d8c193ac3c0dc8ba4"},
-    {"repository":"AI-Ascension/sts2-harness","ref":"main","path":"docs/evidence/linux-seeded-campaign-20260906.md","blob_sha":"215e04d16141cbc41a8e4afa5c2cfe2bca0937ab"},
-    {"repository":"AI-Ascension/sts2-harness","ref":"main","path":"docs/evidence/live-episode-stability-20260906.md","blob_sha":"d7f7bfcd07f9bde4b3ddfec1f147adf4a1d43876"},
-    {"repository":"AI-Ascension/sts2-mcp-server","ref":"main","path":"README.md","blob_sha":"11a1fe1e99202381be5ac742e04b219769c9c547"},
-    {"repository":"AI-Ascension/sts2-mcp-server","ref":"main","path":"docs/PRODUCT.md","blob_sha":"0f46a5a5678fea8f9ba86a049a1c8fcff0505621"},
-    {"repository":"AI-Ascension/sts2-mcp-server","ref":"main","path":"docs/evidence/coop-synchronization-20260906.md","blob_sha":"f5e778e8cb9ddc919f6ab4b127a3a266598d92ba"},
-    {"repository":"AI-Ascension/sts2-protocol","ref":"main","path":"README.md","blob_sha":"f7657da19b4ceb3444077ab06dfc63285f16db5d"},
-    {"repository":"AI-Ascension/sts2-protocol","ref":"main","path":"docs/PRODUCT.md","blob_sha":"05b77d0487c16ab3f172a302751c6e5838ac4eda"}
+    {
+      "repository": "AI-Ascension/.github",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "dd1a017fdd1653f8b8f86a4bfbbe81019730b2dd"
+    },
+    {
+      "repository": "AI-Ascension/.github",
+      "ref": "main",
+      "path": "STATUS.md",
+      "blob_sha": "2c56cf532ff4da79a18807a2c0d2d42f893e8baa"
+    },
+    {
+      "repository": "AI-Ascension/.github",
+      "ref": "main",
+      "path": "CONTRIBUTING.md",
+      "blob_sha": "a2ab474d382d7d0705dd0ce18f722706b8fd95b6"
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "7016a30118f1b715b8917f0c12aea3dcee9c8a3d"
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "ref": "main",
+      "path": "proof.html",
+      "blob_sha": "5a09af68ab9033fe451ffb9077e1ba2cf6e6d128"
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "ref": "main",
+      "path": "evidence.html",
+      "blob_sha": "1dd65a059a32582a40a8a41f9a92910b1354a985"
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "ref": "main",
+      "path": "repositories.html",
+      "blob_sha": "16cd668e62affb03e4bdf70b27b921515554dbaf"
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "ref": "main",
+      "path": ".github/workflows/pages.yml",
+      "blob_sha": "0cf4ec0c01c969c58ec2359cdb7b5758497c379e"
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "ref": "main",
+      "path": ".github/workflows/validate.yml",
+      "blob_sha": "f6f57aec2c0213c1b989fad867f19ff550564f4d"
+    },
+    {
+      "repository": "AI-Ascension/ai-agent-observability",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "89f70d593c58946393ee57202caad30696e27221"
+    },
+    {
+      "repository": "AI-Ascension/ai-agent-observability",
+      "ref": "main",
+      "path": "docs/ARCHITECTURE.md",
+      "blob_sha": "4ab9afaf15e21d399196d8383b1cc67dc8a37e13"
+    },
+    {
+      "repository": "AI-Ascension/ai-agent-observability",
+      "ref": "main",
+      "path": "docs/EVIDENCE.md",
+      "blob_sha": "281febf7d276702181ab18e2235aad478e3c20ff"
+    },
+    {
+      "repository": "AI-Ascension/aiascension.tech",
+      "ref": "codex/wire-mailing-list-email",
+      "path": "README.md",
+      "blob_sha": "145149b20069577c85b108e5d4f1cb3cc6c24983"
+    },
+    {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "b7a9ec30bec33365151ad071ff0eae33fe324a7c"
+    },
+    {
+      "repository": "AI-Ascension/ascension-map-visualizer",
+      "ref": "bootstrap",
+      "path": "LICENSE",
+      "blob_sha": "531b36cc22a59be81d0c0de2c8967b8d6ba86b04"
+    },
+    {
+      "repository": "AI-Ascension/ascension-watchdog",
+      "ref": "bootstrap",
+      "path": "README.md",
+      "blob_sha": "f24f13fcb6292d24ddc7b93eaba525aa25ecac6a"
+    },
+    {
+      "repository": "AI-Ascension/ascension-watchdog",
+      "ref": "bootstrap",
+      "path": "docs/architecture.md",
+      "blob_sha": "60a5850458f1e3f01fd3ad741f1b43e72303669e"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-core",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "caf160c3e30cd34c5194f6a0a093038e5f5f1d68"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-core",
+      "ref": "main",
+      "path": "docs/PRODUCT.md",
+      "blob_sha": "f15e224db6d82d6292c10fb39b510714c02b522f"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-core",
+      "ref": "main",
+      "path": "docs/POLICY_AS_CODE.md",
+      "blob_sha": "5bd278897c56461d32becadb19ea2ca0750183bc"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "1d2b09e010e36da7ec860b0cf4ddc11932d19dd9"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "ref": "main",
+      "path": "docs/PRODUCT.md",
+      "blob_sha": "a659c1e8d1623ac0ac398ee3a1946c7d92d82d30"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "ref": "main",
+      "path": "docs/COMPATIBILITY.md",
+      "blob_sha": "62ed8491cdba6a500043aa6b18076ad3a98b8964"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "ref": "main",
+      "path": "docs/evidence/native-victory-observation-20260906.md",
+      "blob_sha": "c951cbc4ac77bde663bcfad50baed14438bea1ae"
+    },
+    {
+      "repository": "AI-Ascension/sts2-gateway",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "2c2099a0688f92849ec96096ed87baef3cfbdaf0"
+    },
+    {
+      "repository": "AI-Ascension/sts2-gateway",
+      "ref": "main",
+      "path": "docs/PRODUCT.md",
+      "blob_sha": "27b1f6a99cfbe2fda24f4958ad67c03014178593"
+    },
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "8d1b008da81c0f0e8a9d55e5ed918982232bb626"
+    },
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "ref": "main",
+      "path": "docs/PRODUCT.md",
+      "blob_sha": "464f5a5d4570d8d19631ebec65dd2c26a310e787"
+    },
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "ref": "main",
+      "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+      "blob_sha": "f0aebd49c9fba58a2376e33d8c193ac3c0dc8ba4"
+    },
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "ref": "main",
+      "path": "docs/evidence/linux-seeded-campaign-20260906.md",
+      "blob_sha": "215e04d16141cbc41a8e4afa5c2cfe2bca0937ab"
+    },
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "ref": "main",
+      "path": "docs/evidence/live-episode-stability-20260906.md",
+      "blob_sha": "d7f7bfcd07f9bde4b3ddfec1f147adf4a1d43876"
+    },
+    {
+      "repository": "AI-Ascension/sts2-mcp-server",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "11a1fe1e99202381be5ac742e04b219769c9c547"
+    },
+    {
+      "repository": "AI-Ascension/sts2-mcp-server",
+      "ref": "main",
+      "path": "docs/PRODUCT.md",
+      "blob_sha": "0f46a5a5678fea8f9ba86a049a1c8fcff0505621"
+    },
+    {
+      "repository": "AI-Ascension/sts2-mcp-server",
+      "ref": "main",
+      "path": "docs/evidence/coop-synchronization-20260906.md",
+      "blob_sha": "f5e778e8cb9ddc919f6ab4b127a3a266598d92ba"
+    },
+    {
+      "repository": "AI-Ascension/sts2-protocol",
+      "ref": "main",
+      "path": "README.md",
+      "blob_sha": "f7657da19b4ceb3444077ab06dfc63285f16db5d"
+    },
+    {
+      "repository": "AI-Ascension/sts2-protocol",
+      "ref": "main",
+      "path": "docs/PRODUCT.md",
+      "blob_sha": "05b77d0487c16ab3f172a302751c6e5838ac4eda"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "ref": "8b71150895ea95c0625afc1389bb08e4034d9350",
+      "path": "docs/evidence/runtime-v1-host-live-20260902.md",
+      "blob_sha": "718e9fa55c29d151d8108ce68a71ab49791d5e24",
+      "sha256": "7ea6e14804926c17a92980d205ebde1f001c611de0d91cbae04eeb9bf7144b4b",
+      "scope": "Dated report bytes only; runtime uncommitted patch and package bytes absent."
+    }
   ],
   "workflows_and_policy": {
     "github_pages": {
       "repository": "AI-Ascension/AI-Ascension.github.io",
-      "workflow_files": [".github/workflows/pages.yml", ".github/workflows/validate.yml"],
+      "workflow_files": [
+        ".github/workflows/pages.yml",
+        ".github/workflows/validate.yml"
+      ],
       "push_branch": "main",
       "pages_source_branch": "main"
     },
     "rust_targets": {
       "push_branch": "main",
-      "workflow_files": [".github/workflows/ci.yml", ".github/workflows/policy.yml"],
-      "repositories": ["sts2-game-core", "sts2-game-mod", "sts2-gateway", "sts2-harness", "sts2-mcp-server", "sts2-protocol"]
+      "workflow_files": [
+        ".github/workflows/ci.yml",
+        ".github/workflows/policy.yml"
+      ],
+      "repositories": [
+        "sts2-game-core",
+        "sts2-game-mod",
+        "sts2-gateway",
+        "sts2-harness",
+        "sts2-mcp-server",
+        "sts2-protocol"
+      ]
     },
     "game_mod_source_release": {
       "repository": "AI-Ascension/sts2-game-mod",
       "workflow": ".github/workflows/source-release.yml",
-      "triggers": ["workflow_dispatch", "sts2-game-mod-v* tags"],
+      "triggers": [
+        "workflow_dispatch",
+        "sts2-game-mod-v* tags"
+      ],
       "deployment": false
     },
-    "no_deployment_workflow_found": ["ai-agent-observability", "ascension-watchdog", "ascension-map-visualizer", "ascension-brand-overhaul", "aiascension.tech"]
+    "no_deployment_workflow_found": [
+      "ai-agent-observability",
+      "ascension-watchdog",
+      "ascension-map-visualizer",
+      "ascension-brand-overhaul",
+      "aiascension.tech"
+    ]
   },
   "active_pull_requests": [
     {
@@ -295,7 +505,13 @@
       "base_sha": "b25880376d3a3334c77f58637267db93581c4c77",
       "mergeable": true,
       "merge_state": "CLEAN",
-      "checks": [{"name":"Validate deployment contract","status":"COMPLETED","conclusion":"SUCCESS"}],
+      "checks": [
+        {
+          "name": "Validate deployment contract",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS"
+        }
+      ],
       "url": "https://github.com/AI-Ascension/ai-agent-observability/pull/10"
     },
     {
@@ -311,9 +527,21 @@
       "mergeable": true,
       "merge_state": "UNSTABLE",
       "checks": [
-        {"name":"Rust and synthetic processes (ubuntu-latest)","status":"COMPLETED","conclusion":"FAILURE"},
-        {"name":"Rust and synthetic processes (windows-latest)","status":"COMPLETED","conclusion":"FAILURE"},
-        {"name":"Dependency security and licenses","status":"COMPLETED","conclusion":"SUCCESS"}
+        {
+          "name": "Rust and synthetic processes (ubuntu-latest)",
+          "status": "COMPLETED",
+          "conclusion": "FAILURE"
+        },
+        {
+          "name": "Rust and synthetic processes (windows-latest)",
+          "status": "COMPLETED",
+          "conclusion": "FAILURE"
+        },
+        {
+          "name": "Dependency security and licenses",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS"
+        }
       ],
       "url": "https://github.com/AI-Ascension/ascension-watchdog/pull/2"
     },
@@ -330,17 +558,47 @@
       "mergeable": true,
       "merge_state": "CLEAN",
       "checks": [
-        {"name":"Rust foundation gates","status":"COMPLETED","conclusion":"SUCCESS"},
-        {"name":"policy","status":"COMPLETED","conclusion":"SUCCESS"},
-        {"name":"Managed source-only boundary","status":"COMPLETED","conclusion":"SUCCESS"}
+        {
+          "name": "Rust foundation gates",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS"
+        },
+        {
+          "name": "policy",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS"
+        },
+        {
+          "name": "Managed source-only boundary",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS"
+        }
       ],
       "url": "https://github.com/AI-Ascension/sts2-game-mod/pull/52"
     }
   ],
   "historical_pr_reconciliation": [
-    {"repository":"AI-Ascension/sts2-protocol","number":11,"current_state":"merged","merged_at":"2026-09-06T19:56:30Z","note":"The older .github STATUS.md statement that it remained open is historical."},
-    {"repository":"AI-Ascension/sts2-mcp-server","number":16,"current_state":"merged","merged_at":"2026-09-06T19:56:40Z","note":"The older .github STATUS.md statement that it remained open is historical."},
-    {"repository":"AI-Ascension/sts2-game-mod","number":50,"current_state":"merged","merged_at":"2026-09-07T04:04:50Z","note":"Current main includes the release-package merge; do not use the old open/branch snapshot."}
+    {
+      "repository": "AI-Ascension/sts2-protocol",
+      "number": 11,
+      "current_state": "merged",
+      "merged_at": "2026-09-06T19:56:30Z",
+      "note": "The older .github STATUS.md statement that it remained open is historical."
+    },
+    {
+      "repository": "AI-Ascension/sts2-mcp-server",
+      "number": 16,
+      "current_state": "merged",
+      "merged_at": "2026-09-06T19:56:40Z",
+      "note": "The older .github STATUS.md statement that it remained open is historical."
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "number": 50,
+      "current_state": "merged",
+      "merged_at": "2026-09-07T04:04:50Z",
+      "note": "Current main includes the release-package merge; do not use the old open/branch snapshot."
+    }
   ],
   "deployment_surfaces": [
     {
@@ -364,8 +622,17 @@
       "live_checkout_branch": "codex/wire-mailing-list-email",
       "live_checkout_head": "598ce386521f720f480c946486c4442b60610c9c",
       "root_evidence_path": "execution/site-baseline.json",
-      "http": {"home_get": 200,"home_bytes": 23458,"subscribe_get": 405,"successful_post": false},
-      "host": {"php_version":"8.3.33","injected_monitoring":true,"injected_script":"https://img1.wsimg.com/traffic-assets/js/tccl.min.js"},
+      "http": {
+        "home_get": 200,
+        "home_bytes": 23458,
+        "subscribe_get": 405,
+        "successful_post": false
+      },
+      "host": {
+        "php_version": "8.3.33",
+        "injected_monitoring": true,
+        "injected_script": "https://img1.wsimg.com/traffic-assets/js/tccl.min.js"
+      },
       "evidence_kind": "operator_observed_live",
       "limitations": "Live tracked file hashes match the current GitHub source for the checked files, but hosting injects monitoring markup/script; source README's production master branch differs from the live/default branch. No subscription email was sent."
     }
@@ -435,5 +702,13 @@
     "Canonical-domain production branch/hosting control needs operator confirmation before a website migration; live source and hosting injection are separately recorded.",
     "No current public video or replay package is established by this baseline; campaign documents and private captures remain report-only.",
     "Model-played Victory, all characters/seeds/branches, broader host compatibility, native multiplayer, clean-install/update/rollback, Workshop publication lifecycle, and live observability telemetry remain unverified."
-  ]
+  ],
+  "review_addendum": {
+    "review": "execution/reviews/W03-W01-review.md",
+    "source_inventory_scope": "Selected documents only. Workflow path summaries are not full document-byte inventories.",
+    "runtime_v1_report_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+    "runtime_v1_reported_build_base": "97f3a2068452d2c1616c531a7dfad51fbd484cac",
+    "runtime_v1_uncommitted_patch_collected": false,
+    "runtime_v1_package_bytes_collected": false
+  }
 }

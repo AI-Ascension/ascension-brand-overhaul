@@ -48,9 +48,9 @@ The current organization API description remains: “Independent Rust project bu
 
 ## Source and policy inspection
 
-The Rust targets expose `ci.yml` and `policy.yml` workflows that run on pull requests and pushes to `main`. The game-mod also exposes `source-release.yml`, triggered by manual dispatch or `sts2-game-mod-v*` tags. These workflows establish source checks and release-bundle mechanics, not a deployed game service. The inspected target policy documents are `AGENTS.md`, `docs/ARCHITECTURE.md`, `docs/CODING_STANDARDS.md`, `docs/POLICY_AS_CODE.md`, `docs/PRODUCT.md`, `docs/REPOSITORY_LAYOUT.md`, `policy.toml`, and each repository's evidence records where present.
+The Rust targets expose `ci.yml` and `policy.yml` workflows that run on pull requests and pushes to `main`. The game-mod also exposes `source-release.yml`, triggered by manual dispatch or `sts2-game-mod-v*` tags. These workflows establish source checks and release-bundle mechanics, not a deployed game service. The replayable document scope is exactly the selected README, product, policy, workflow, and evidence paths enumerated in `source_documents`. Broader policy filenames are not a claim that their complete bytes are inventoried here.
 
-The historical site has `pages.yml` and `validate.yml`; both push paths use `main`. The canonical-domain repository has no GitHub workflow and its README describes cPanel shared hosting, PHP 8.3+, Composer, PHPMailer, and an external production checkout. The observability, watchdog, map, and brand repositories have no deployment workflow in their current default trees. Full document blob hashes and workflow paths are in the source snapshot.
+The historical site has `pages.yml` and `validate.yml`; both push paths use `main`. The canonical-domain repository has no GitHub workflow and its README describes cPanel shared hosting, PHP 8.3+, Composer, PHPMailer, and an external production checkout. The observability, watchdog, map, and brand repositories have no deployment workflow in their current default trees. Blob identities for the selected documents and separate workflow-path summaries are in the source snapshot; the latter are not a complete workflow-byte inventory.
 
 The source boundaries are explicit:
 
@@ -122,8 +122,8 @@ The exact remaining boundaries are:
 2. Reconcile the active dirty map implementation before changing its identity.
 3. Confirm the canonical-domain production branch and hosting control before a site migration; preserve the PHP subscription backend and account for injected monitoring.
 4. Keep private campaign trajectories, captures, saves, host files, provider credentials, and hidden reasoning outside the brand repository and public exports.
-5. Run an independent review on the exact W01 outputs if a native reviewer becomes available. Until then, the direct lead work is implementation evidence with the delegation blocker retained.
+5. W03 source review is recorded in `execution/reviews/W03-W01-review.md`; its provenance repairs require rereview. This does not establish the required depth-3 native reviewer ancestry.
 
 ## Reproduction and integrity checks
 
-The source snapshot can be reviewed without a checkout using the URLs and blob hashes in [execution/source-snapshot.json](../execution/source-snapshot.json). The package's own deterministic checks are separate from target validation. Before handoff, W01 ran JSON parsing and the package's Python helper tests; the suite reported one pre-existing `MANIFEST.json` checksum failure for `.gitignore`, and neither result establishes target gameplay, deployment, or image generation.
+The selected source documents can be reviewed using the URLs and Git blob identities in [execution/source-snapshot.json](../execution/source-snapshot.json). W03 independently reproduced the exact `0e03d97bc6af6b7622d33d830bdde1eef1c2b1d8` archive: package validation and all 170 tests passed. The later `c9b3369cb182fce81c7b6c9d550ad6b95455a64d` archive had eight W04/W07 inventory/hash errors, yielding two package-related failures among 188 tests. The earlier claim of a `.gitignore` failure at this frozen revision was incorrect. The final integrated result is recorded separately at its exact source revision; none of these checks establishes gameplay, deployment, or image generation.
