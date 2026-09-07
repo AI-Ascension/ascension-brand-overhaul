@@ -468,8 +468,8 @@
     },
     {
       "path": "schemas/asset.schema.json",
-      "bytes": 3997,
-      "sha256": "5a1d206b948c5637062cc39c50bccb83d56ba329ab35b27e1e99d833b9f2e242"
+      "bytes": 4477,
+      "sha256": "a9fb44cb6e71bb6162aa756265c02d978c2f8a05ccf4ed4802a31673b0fd69d5"
     },
     {
       "path": "schemas/capability.schema.json",
@@ -508,8 +508,8 @@
     },
     {
       "path": "scripts/validate_package.py",
-      "bytes": 8371,
-      "sha256": "6693557eb62909406ce4f0a4f4735c734ceced57f551ba366323f133129c4836"
+      "bytes": 8878,
+      "sha256": "d72e2003c26dcc9b29f2b47a125f045ea957290c54faf9076557653f217784a0"
     },
     {
       "path": "specs/MARKETING.md",

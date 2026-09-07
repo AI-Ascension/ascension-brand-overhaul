@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Validate this prompt package. No network, agents, GitHub writes, or deployment."""
 from pathlib import Path, PurePosixPath
-import hashlib, json, re, sys
+import hashlib, json, re, sys, os
+
+LOCAL_ONLY_DIRECTORIES={'.git','.execution','.execution-private','.codex','.agents','private','node_modules','.venv','venv','vendor','target','__pycache__','.pytest_cache'}
 
 FONT_EXTENSIONS={'.ttf','.otf','.woff','.woff2','.ttc','.eot'}
 def load(path):
@@ -26,12 +28,16 @@ def validate(root):
               'specs/PUBLICATION.md','specs/MARKETING.md','specs/MEASUREMENT.md','specs/QA_RELEASE.md']
     for f in required: check((root/f).is_file(),f'Missing required file: {f}')
     if errors: return errors
-    for p in root.rglob('*'):
-        check(not p.is_symlink(),f'Symlink is not permitted: {p.relative_to(root)}')
-        check(p.suffix.lower() not in FONT_EXTENSIONS,f'Font binary found: {p.relative_to(root)}')
-        if p.is_file() and p.suffix=='.json':
-            try: load(p)
-            except (ValueError,UnicodeError) as exc: errors.append(f'Invalid JSON {p}: {exc}')
+    for directory, subdirectories, filenames in os.walk(root, followlinks=False):
+        subdirectories[:]=[name for name in subdirectories if name.casefold() not in LOCAL_ONLY_DIRECTORIES]
+        for name in subdirectories+filenames:
+            if name.casefold() in LOCAL_ONLY_DIRECTORIES: continue
+            p=Path(directory)/name
+            check(not p.is_symlink(),f'Symlink is not permitted: {p.relative_to(root)}')
+            check(p.suffix.lower() not in FONT_EXTENSIONS,f'Font binary found: {p.relative_to(root)}')
+            if p.is_file() and p.suffix=='.json':
+                try: load(p)
+                except (ValueError,UnicodeError) as exc: errors.append(f'Invalid JSON {p}: {exc}')
     if errors: return errors
     info=load(root/'package-info.json')
     check(info['runtime_verified'] is False,'Prompt package must not claim runtime verification.')

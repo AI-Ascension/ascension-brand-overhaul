@@ -1,0 +1,1732 @@
+[
+  {
+    "asset_id": "ID-01",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#ID-01"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "ID-02",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#ID-02"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "ID-03",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#ID-03"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "ID-04",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#ID-04"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "ID-05",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#ID-05"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "ID-06",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#ID-06"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "ID-07",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#ID-07"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "ID-08",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#ID-08"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-01",
+      "ID-02",
+      "ID-07"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "BG-01",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#BG-01"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "BG-02",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#BG-02"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "BG-03",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#BG-03"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "BG-04",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#BG-04"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "WEB-01",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#WEB-01"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "BG-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "WEB-02",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#WEB-02"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "WEB-03",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#WEB-03"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-07"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "WEB-04",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#WEB-04"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "WEB-05",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#WEB-05"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "WEB-06",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#WEB-06"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-07"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "WEB-07",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#WEB-07"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-07"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "WEB-08",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#WEB-08"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "RUN-01",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#RUN-01"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "ID-07"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "RUN-02",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#RUN-02"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-07"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "RUN-03",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#RUN-03"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "RUN-04",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#RUN-04"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "RUN-05",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#RUN-05"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "CAST-01",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#CAST-01"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-04",
+      "ID-07"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "CAST-02",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#CAST-02"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "CAST-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "CAST-03",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#CAST-03"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "CAST-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "CAST-04",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#CAST-04"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "BG-02",
+      "ID-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "CAST-05",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#CAST-05"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-07"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "CAST-06",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#CAST-06"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-04",
+      "BG-03"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "CAST-07",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#CAST-07"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "MKT-01",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#MKT-01"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-04",
+      "BG-02"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "MKT-02",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#MKT-02"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "MKT-03",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#MKT-03"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "MKT-04",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#MKT-04"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-04",
+      "BG-03"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "MKT-05",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#MKT-05"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "RUN-02"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "MKT-06",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#MKT-06"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-03"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "MKT-07",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#MKT-07"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "RUN-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "MKT-08",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#MKT-08"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "MKT-09",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#MKT-09"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-01"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "DOC-01",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#DOC-01"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "DOC-02",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#DOC-02"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "DOC-03",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#DOC-03"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "DOC-04",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#DOC-04"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "DOC-05",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#DOC-05"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-01-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-01-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-01-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-01-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-02-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-02-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-02-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-02-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-03-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-03-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-03-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-03-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-04-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-04-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-04-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-04-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-05-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-05-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-05-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-05-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-06-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-06-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-06-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-06-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-07-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-07-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-07-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-07-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-08-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-08-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-08-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-08-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-09-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-09-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-09-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-09-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-10-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-10-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-10-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-10-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-11-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-11-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-11-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-11-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-12-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-12-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-12-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-12-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-13-B",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-13-B"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  },
+  {
+    "asset_id": "GH-13-S",
+    "status": "blocked",
+    "method": "generate",
+    "source_references": [
+      "art/asset-registry.json#GH-13-S"
+    ],
+    "source_digest": null,
+    "production_tool": null,
+    "actual_model": null,
+    "parent_asset_ids": [
+      "ID-02",
+      "BG-04"
+    ],
+    "content_class": "generated_art_not_product_evidence",
+    "rights_status": "unreviewed",
+    "reviewer_reference": null,
+    "approval_references": [],
+    "alt_text": "",
+    "decorative": false,
+    "exports": [],
+    "blocker": "No required native depth-3 Astra author chain; image_gen.imagegen exposes no exact gpt-image-2 selector or backend attestation. See execution/art-model-attestation.json for exact export dependencies.",
+    "origin": "astra_authored_gpt_image_2",
+    "generation_records": []
+  }
+]

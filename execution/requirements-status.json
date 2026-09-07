@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T05:26:44.775912+00:00",
+  "updated_at": "2026-09-07T05:58:14.965898+00:00",
   "scope": "Full MASTER_PROMPT.md and binding data/requirements.json; status is execution evidence, not package validation",
   "requirements": [
     {
@@ -123,11 +123,17 @@
         "brand/identity-review.md"
       ],
       "evidence_expected": "execution/evidence/REQ-007.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-008",
@@ -142,11 +148,17 @@
         "brand/identity-review.md"
       ],
       "evidence_expected": "execution/evidence/REQ-008.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-009",
@@ -161,11 +173,17 @@
         "brand/identity-review.md"
       ],
       "evidence_expected": "execution/evidence/REQ-009.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-010",
@@ -180,11 +198,17 @@
         "brand/ART_REVIEW.md"
       ],
       "evidence_expected": "execution/evidence/REQ-010.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-011",
@@ -199,11 +223,17 @@
         "brand/ART_REVIEW.md"
       ],
       "evidence_expected": "execution/evidence/REQ-011.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-012",
@@ -218,11 +248,17 @@
         "brand/ART_REVIEW.md"
       ],
       "evidence_expected": "execution/evidence/REQ-012.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-013",
@@ -236,7 +272,7 @@
         "site/visual-regression-baselines/"
       ],
       "evidence_expected": "execution/evidence/REQ-013.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -254,7 +290,7 @@
         "site/visual-regression-baselines/"
       ],
       "evidence_expected": "execution/evidence/REQ-014.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -272,7 +308,7 @@
         "site/visual-regression-baselines/"
       ],
       "evidence_expected": "execution/evidence/REQ-015.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -290,7 +326,7 @@
         "execution/subscription-review.json"
       ],
       "evidence_expected": "execution/evidence/REQ-016.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -308,7 +344,7 @@
         "execution/subscription-review.json"
       ],
       "evidence_expected": "execution/evidence/REQ-017.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -326,7 +362,7 @@
         "execution/subscription-review.json"
       ],
       "evidence_expected": "execution/evidence/REQ-018.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -344,7 +380,7 @@
         "tools/brand-sync/"
       ],
       "evidence_expected": "execution/evidence/REQ-019.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -362,7 +398,7 @@
         "tools/brand-sync/"
       ],
       "evidence_expected": "execution/evidence/REQ-020.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -380,7 +416,7 @@
         "tools/brand-sync/"
       ],
       "evidence_expected": "execution/evidence/REQ-021.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -399,7 +435,7 @@
         "execution/migration-results.json"
       ],
       "evidence_expected": "execution/evidence/REQ-022.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -418,7 +454,7 @@
         "execution/migration-results.json"
       ],
       "evidence_expected": "execution/evidence/REQ-023.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -437,7 +473,7 @@
         "execution/migration-results.json"
       ],
       "evidence_expected": "execution/evidence/REQ-024.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -456,7 +492,7 @@
         "public/run-manifests/"
       ],
       "evidence_expected": "execution/evidence/REQ-025.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -475,7 +511,7 @@
         "public/run-manifests/"
       ],
       "evidence_expected": "execution/evidence/REQ-026.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -494,7 +530,7 @@
         "public/run-manifests/"
       ],
       "evidence_expected": "execution/evidence/REQ-027.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -513,7 +549,7 @@
         "tests/analytics/"
       ],
       "evidence_expected": "execution/evidence/REQ-028.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -532,7 +568,7 @@
         "tests/analytics/"
       ],
       "evidence_expected": "execution/evidence/REQ-029.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -551,7 +587,7 @@
         "tests/analytics/"
       ],
       "evidence_expected": "execution/evidence/REQ-030.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -571,7 +607,7 @@
         "marketing/articles/"
       ],
       "evidence_expected": "execution/evidence/REQ-031.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -591,7 +627,7 @@
         "marketing/articles/"
       ],
       "evidence_expected": "execution/evidence/REQ-032.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -611,7 +647,7 @@
         "marketing/articles/"
       ],
       "evidence_expected": "execution/evidence/REQ-033.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -630,7 +666,7 @@
         "marketing/sponsorship.md"
       ],
       "evidence_expected": "execution/evidence/REQ-034.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -649,7 +685,7 @@
         "marketing/sponsorship.md"
       ],
       "evidence_expected": "execution/evidence/REQ-035.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -668,7 +704,7 @@
         "marketing/sponsorship.md"
       ],
       "evidence_expected": "execution/evidence/REQ-036.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -830,11 +866,17 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-045.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-046",
@@ -846,9 +888,14 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-046.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
       "independent_reviewer": null
     },
@@ -862,9 +909,14 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-047.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
       "independent_reviewer": null
     },
@@ -878,7 +930,7 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-048.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -894,7 +946,7 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-049.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -910,7 +962,7 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-050.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -926,7 +978,7 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-051.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -942,7 +994,7 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-052.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -958,7 +1010,7 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-053.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -974,7 +1026,7 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-054.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -990,7 +1042,7 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-055.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -1006,7 +1058,7 @@
         "delivery/FINAL_REPORT.md"
       ],
       "evidence_expected": "execution/evidence/REQ-056.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "implementation_paths": [],
       "verification_records": [],
@@ -1092,10 +1144,15 @@
       "evidence_expected": "execution/evidence/REQ-061.json",
       "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
       "independent_reviewer": null,
-      "blocker": "Native child collaboration tools absent from depth-1 agent interface; no genuine depth-3 author/worker chain yet."
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-062",
@@ -1109,11 +1166,17 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-062.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-063",
@@ -1127,9 +1190,14 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-063.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
       "independent_reviewer": null
     },
@@ -1145,11 +1213,17 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-064.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-065",
@@ -1163,11 +1237,17 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-065.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-066",
@@ -1181,11 +1261,17 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-066.json",
-      "status": "not_started",
+      "status": "blocked",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
-      "independent_reviewer": null
+      "independent_reviewer": null,
+      "blocker": "Missing mandatory generated artwork: required native depth-3 Astra author chain and exact gpt-image-2 backend attestation unavailable; exact IDs in execution/art-model-attestation.json."
     },
     {
       "id": "REQ-067",
@@ -1199,9 +1285,14 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-067.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
       "independent_reviewer": null
     },
@@ -1217,9 +1308,14 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-068.json",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/ART_ACCESS.md",
+        "execution/art-model-attestation.json"
+      ],
       "verification_records": [],
       "independent_reviewer": null
     },
@@ -1254,9 +1350,12 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-070.json",
-      "status": "not_started",
+      "status": "implemented",
       "mandatory": true,
-      "implementation_paths": [],
+      "implementation_paths": [
+        "execution/art-model-attestation.json",
+        "brand/asset-manifest.json"
+      ],
       "verification_records": [],
       "independent_reviewer": null
     }

@@ -1,0 +1,16 @@
+{
+  "schema_version": "brand-content-sync-v1",
+  "source_revision": "c09a9da28ff4ee2264139353ba2313804ab55104",
+  "files": [
+    {
+      "source": "brand/tokens.css",
+      "destination": "assets/brand/tokens.css",
+      "sha256": "68922303e31051e522704061d3bd72d4735e3eea1f072ec2a10a104557e31ba2"
+    },
+    {
+      "source": "brand/tokens.json",
+      "destination": "assets/brand/tokens.json",
+      "sha256": "222bf6fd2806532ebedb2f748a9ab89b870b4da6d3aa4bbf4e614dd72194e2d8"
+    }
+  ]
+}

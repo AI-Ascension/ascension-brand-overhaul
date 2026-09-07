@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Completed generated-art manifest entry",
+  "title": "Generated-art status manifest entry; verified assets require generation records",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -171,7 +171,6 @@
     },
     "generation_records": {
       "type": "array",
-      "minItems": 1,
       "items": {
         "$ref": "art-generation.schema.json"
       }
@@ -193,5 +192,32 @@
     "blocker",
     "origin",
     "generation_records"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "verified"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "generation_records": {
+            "minItems": 1
+          },
+          "exports": {
+            "minItems": 1
+          },
+          "blocker": {
+            "type": "null"
+          }
+        }
+      }
+    }
   ]
 }
