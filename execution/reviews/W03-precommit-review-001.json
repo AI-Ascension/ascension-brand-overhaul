@@ -1,0 +1,48 @@
+{
+  "states_loaded": 110,
+  "automated_passes": 10,
+  "status_counts": {
+    "200": 110
+  },
+  "accessibility_rule_state_counts": {
+    "color-contrast": 100,
+    "scrollable-region-focusable": 8
+  },
+  "source_files_changed_after_snapshot": [],
+  "review_status": "changes_required",
+  "reviewer": "root",
+  "source_base_revision": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+  "source_file_sha256": {
+    "index.html": "a0f8df7d9dca9d40010dbb4749a194a18f584b120330e96e9259fb32b61ee5dd",
+    "watch.html": "53a4c477ef54df74e5aaa5bc0cfd8427d0e72db4d39750526de9660e09031154",
+    "runs.html": "a682476672fa03c54f6b45132058ef76f720e7153716204c1b5ae20ae479b9cc",
+    "run.html": "5c4e022774b8c913659c0dea5c18d6843f55efbfa4eea932a0702d8eb3573f3f",
+    "decision.html": "026c4761a1288ffe73bad390f620178eb6cb122261072df2e3492f44650ed34d",
+    "build.html": "874adbc79caba6e3ba0b7af6067f6e3dcc5e1cd460318b104a83f8cb47f31823",
+    "docs.html": "a34e1ed991e4c05a14cd96a917a24ef35ca8fb592705bf5d57bcbf9b1baa50ff",
+    "press.html": "c1ea9527e8ec739f4291c43f254bafa588d096db32c37bd9ede3021022a9ce0a",
+    "privacy.html": "109744cf5512dbeb3e952a16559c0ad8df4ac746bcbeb6cf973d6d1ae85b99cb",
+    "contributors.html": "8c5d83d888c9484eacedd07f0a07d6e6a64105f70dc966b28630fe290b9aad6d",
+    "404.html": "3f23abcaed91dea2ac6694f731884056a8ace91459ac0dd908aa278fc685bf07",
+    "styles.css": "25dae573df818228da21abfc776babb7b21a72fb8632514c825e3e9c6afc7f39",
+    "script.js": "61e320c06cd580497f7c94dcd9bf90b65dddd041e5503112201442811cc52ca2",
+    "api/subscribe.php": "2277a6b70fba315cede497b45ab4157090e7c523fc4496aa288f6ba76d0cbd37",
+    "api/_functions.php": "fa1c4c5441ee0a4a3ee61493ec8aa2f84cf2a3523716787b58fc295aa0c68fe8",
+    "api/confirm.php": "b698f06935d3260641b7357cda8f18236a03947fbdc3064cc497213bbb6e338e",
+    "api/unsubscribe.php": "66da22cbea8f6c76c61599478b7fcb8fff547b5bb9499bf18f431e6078511435",
+    "tests/SubscriptionFlowTest.php": "fd7dded80916297d656bfc412e59eefbde4e414f6f01165fb90e37ec3280b003",
+    "site/route-manifest.json": "1cb523159217a0c9e647dbcae30dc30142f7e18833788ef291b5a2be73f3498b"
+  },
+  "evidence_sha256": {
+    "website-review-aggregate-001.json": "e0dd2ec6a8d13610545e4c8bb19b812912977ff00371cef34e79a59b0a5b008c",
+    "website-interactions-001.json": "eb70d315c7238cc06939eade471a9f6319d4120d1d38ec22dd8a5e73701e3508",
+    "website-static-links-001.json": "8a7f6e61622aa652fa3ab4cd8cb5e3ea341915d2f119788b89f3911403f92df2"
+  },
+  "phpunit": {
+    "tests": 24,
+    "assertions": 55,
+    "result": "pass",
+    "php": "8.3.6"
+  },
+  "production_operations": []
+}
