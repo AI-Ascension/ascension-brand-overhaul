@@ -1,6 +1,6 @@
 # W01 independent review of the frozen W06 marketing package
 
-This review checks the W06 marketing deliverables and their tests at frozen revision `0e03d97bc6af6b7622d33d830bdde1eef1c2b1d`. The scope is `marketing/**`, `tests/test_marketing*.py`, and `execution/w06-implementation.json`. The canonical checkout had later descendants and unrelated dirty files, so the frozen revision was materialized into a temporary clean tree for testing. This review made no change to that checkout, generated no artwork, sent no outreach, operated no campaign, and performed no deployment or remote write.
+This review checks the W06 marketing deliverables and their tests at frozen revision `0e03d97bc6af6b7622d33d830bdde1eef1c2b1d8`. The scope is `marketing/**`, `tests/test_marketing*.py`, and `execution/w06-implementation.json`. The canonical checkout had later descendants and unrelated dirty files, so the frozen revision was materialized into a temporary clean tree for testing. This review made no change to that checkout, generated no artwork, sent no outreach, operated no campaign, and performed no deployment or remote write.
 
 ## Verification and scope
 
