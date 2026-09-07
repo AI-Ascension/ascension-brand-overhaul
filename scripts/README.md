@@ -1,6 +1,6 @@
 # Included local helpers
 
-All helpers use Python 3.10+ standard library only. They do not call models, generate images, connect to accounts, or mutate remote systems.
+Python helpers use Python 3.10+ standard library; schema tests additionally use the pinned development requirement. The JavaScript browser runner uses the pinned Playwright and axe development dependencies. These helpers do not call models, generate artwork, or mutate remote systems. Runtime observation reads local client metadata; browser review connects only to the supplied loopback site and blocks external requests.
 
 `validate_package.py` verifies this kit's required files, role ancestry, dependency graph, art/surface references, planned state, path safety, and existing manifest hashes. It parses JSON but is not a general-purpose JSON Schema implementation.
 
@@ -13,3 +13,11 @@ All helpers use Python 3.10+ standard library only. They do not call models, gen
 Run `python -m unittest discover -s tests -v` for positive and negative tests of these helpers. The synthetic runtime and publication examples are only helper-test data; they do not prove the requested agents actually ran or a product was deployed.
 
 `art_policy.py` supplies the role-specific model resolver and generation-record consistency checks. JSON declarations do not prove native execution; inspect trustworthy runtime/image-call records and decoded images separately. Missing required generation evidence fails acceptance.
+
+`runtime_snapshot.py --database PATH --root-id ID` reads only the installed client metadata needed to observe native ancestry and model settings. Store its output privately. Thread existence is not current liveness, native closure or independent provider attestation.
+
+`sync_content.py --source-repo PATH --consumer-root PATH --plan PATH` previews canonical functional content exports from a full Git commit. `--apply` changes local managed copies and their receipt only after digest checks. It rejects unrelated edits, path collisions, symlinks and plans omitting previously managed files. Artwork has a separate approval gate.
+
+`node scripts/browser_review.mjs --base-url URL --routes FILE --output NEW_DIRECTORY` captures actual local website states at five widths and two themes, with reduced motion and automated accessibility checks. The route manifest supplies `id`, `path`, and expected `status` (200 or 404). Open the captured images and separately test keyboard interaction, forms, ordinary motion and zoom. Captures are test evidence, not new brand art or proof of a production deployment.
+
+`render_handoff.py --output NEW_FILE` renders the curated requirement, art and operation ledgers. It refuses missing inventory entries, changed binding requirements and unsupported verified states. It is deterministic for unchanged inputs and refuses overwriting its output. A rendered ledger remains a report, not independent acceptance; final evidence and companion revisions must be reconciled before delivery.

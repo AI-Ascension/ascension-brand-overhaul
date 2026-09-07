@@ -483,8 +483,8 @@
     },
     {
       "path": "scripts/README.md",
-      "bytes": 2258,
-      "sha256": "c24d36d8d34a635675bef64ef17b5eb69f09daf2524124ecd65e69c0cc6a837f"
+      "bytes": 4057,
+      "sha256": "75350d5ec16e402a48114d30c93afdb43b5c20e15f8e632ace52927e774d7faa"
     },
     {
       "path": "scripts/agent_ledger.py",
