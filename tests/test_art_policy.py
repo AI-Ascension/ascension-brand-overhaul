@@ -74,7 +74,21 @@ class ArtPolicyTests(unittest.TestCase):
         self.record['image_model_observed']=None;self.assertTrue(self.errors())
     def test_documented_snapshot_needs_alias_evidence(self):
         self.record['image_model_observed']='gpt-image-2-2026-04-21';self.assertTrue(self.errors())
-        self.record['snapshot_alias_evidence_reference']='synthetic-test-only-alias-proof';self.assertEqual(self.errors(),[])
+        self.record['snapshot_alias_evidence_reference']='synthetic-test-only-alias-proof';self.assertTrue(self.errors())
+        alias={'schema_version':'image-model-alias-v1','requested_model':'gpt-image-2','resolved_model':'gpt-image-2-2026-04-21','source_reference':'https://developers.openai.com/synthetic-test-only','captured_at':'2026-09-07T00:00:00Z','reviewer_reference':'synthetic-test-only-review'}
+        raw=json.dumps(alias).encode();(self.root/'alias.json').write_bytes(raw)
+        self.record.update(snapshot_alias_evidence_reference='alias.json',snapshot_alias_evidence_sha256=hashlib.sha256(raw).hexdigest())
+        self.assertEqual(self.errors(),[])
+        (self.root/'alias.json').write_text('{}');self.assertTrue(self.errors())
+    def test_model_verification_string_is_not_a_boolean(self):
+        for value in ['false', 'true', 1, None]:
+            self.ledger['agents'][0]['model_verified']=value
+            with self.subTest(value=value), self.assertRaises(ValueError):agent_ledger.validate_ledger(self.ledger)
+    def test_unplanned_and_case_colliding_exports_are_rejected(self):
+        for name in ['extra.png', 'MASTER.png']:
+            manifest=copy.deepcopy(self.manifest)
+            manifest['exports'].append({**manifest['exports'][0],'path':name})
+            self.assertTrue(validate_assets.verify([self.planned],[manifest],self.root,self.ledger))
     def test_unverified_native_astra_rejected(self):
         self.ledger['agents'][2]['model_verified']=False;self.assertTrue(self.errors())
     def test_missing_native_ledger_rejected(self):

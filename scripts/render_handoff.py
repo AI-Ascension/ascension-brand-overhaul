@@ -46,6 +46,13 @@ def render(root):
             raise ValueError('Verified requirement lacks evidence or reviewer: ' + key)
         if row['status'] == 'not_applicable_with_reason' and not row.get('reason'):
             raise ValueError('Inapplicability lacks a reason: ' + key)
+        if row['status'] == 'blocked' and not any(isinstance(row.get(field), str) and row[field].strip() for field in ('blocker', 'reason')):
+            raise ValueError('Blocked requirement lacks a blocker or reason: ' + key)
+    for key, row in produced.items():
+        if row['status'] == 'blocked' and not isinstance(row.get('blocker'), str):
+            raise ValueError('Blocked asset lacks a blocker: ' + key)
+        if row['status'] == 'blocked' and not row['blocker'].strip():
+            raise ValueError('Blocked asset has an empty blocker: ' + key)
     lines = ['# Implementation handoff', '',
              'This generated report records ledger states, not an independent completion verdict. Missing evidence remains incomplete. See the linked implementation, review and operational records before taking action.', '',
              'Requirement ledger updated: ' + cell(status['updated_at']), '',

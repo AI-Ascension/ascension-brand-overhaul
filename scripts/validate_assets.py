@@ -93,6 +93,11 @@ def verify(registry, manifest, root, ledger=None):
         export_map = {e['path']: e for e in got.get('exports', [])}
         if len(export_map) != len(got.get('exports', [])):
             errors.append('Duplicate export path: ' + aid)
+        expected_paths = {e['path'] for e in planned['exports']}
+        if set(export_map) != expected_paths:
+            errors.append('Delivered exports must exactly match the planned export set: ' + aid)
+        if len({path.casefold() for path in export_map}) != len(export_map):
+            errors.append('Export paths collide on a case-insensitive filesystem: ' + aid)
         for e in planned['exports']:
             actual = export_map.get(e['path'])
             if not actual:

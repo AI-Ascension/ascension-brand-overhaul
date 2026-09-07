@@ -43,6 +43,16 @@ class HandoffTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     handoff.render(root)
 
+    def test_blocked_requirement_needs_an_explicit_nonempty_reason(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp); self.fixture(root)
+            path=root/'execution/requirements-status.json'
+            data=json.loads(path.read_text())
+            data['requirements'][0].update(status='blocked',blocker=' ',reason=None)
+            path.write_text(json.dumps(data))
+            with self.assertRaisesRegex(ValueError,'lacks a blocker or reason'):
+                handoff.render(root)
+
 
 if __name__ == '__main__':
     unittest.main()

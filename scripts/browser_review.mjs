@@ -67,6 +67,7 @@ try {
             viewportWidth: window.innerWidth,
             scrollWidth: document.documentElement.scrollWidth,
             reducedMotion: matchMedia('(prefers-reduced-motion: reduce)').matches,
+            tabTargets: Array.from(document.querySelectorAll('a[href],button,input:not([type="hidden"]),select,textarea,summary,[tabindex]')).filter(element => !element.disabled && element.tabIndex >= 0 && element.getClientRects().length > 0).length,
             brokenImages: Array.from(document.images).filter(image => !image.complete || image.naturalWidth === 0).map(image => image.getAttribute('src')),
             placeholderLinks: Array.from(document.querySelectorAll('a[href]')).filter(link => ['#', ''].includes(link.getAttribute('href'))).map(link => link.textContent.trim()),
           }));
@@ -78,8 +79,8 @@ try {
               const rect = element.getBoundingClientRect();
               const style = getComputedStyle(element);
               return { tag: element.tagName, text: (element.getAttribute('aria-label') || element.textContent || '').trim().slice(0, 100),
-                visible: rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden',
-                focusVisible: element.matches(':focus-visible'), outlineStyle: style.outlineStyle, outlineWidth: style.outlineWidth };
+                visible: rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none' && Number(style.opacity) > 0,
+                focusVisible: element.matches(':focus-visible'), outlineStyle: style.outlineStyle, outlineWidth: style.outlineWidth, boxShadow: style.boxShadow };
             }));
           }
           await page.evaluate(() => { document.activeElement.blur(); scrollTo(0, 0); });
@@ -92,7 +93,10 @@ try {
             accessibilityIncomplete: accessibility.incomplete.map(check => ({ id: check.id, targets: check.nodes.map(node => node.target) })),
             manualReview: 'not_yet_inspected',
           };
-          result.automatedPass = result.status === route.status && layout.scrollWidth <= layout.viewportWidth + 1 && layout.brokenImages.length === 0 && layout.placeholderLinks.length === 0 && result.accessibilityViolations.length === 0 && failures.length === 0 && consoleErrors.length === 0 && externalRequests.length === 0;
+          result.semanticPass = layout.title.trim().length > 0 && /^[a-z]{2,3}(?:-[a-z0-9]{2,8})*$/i.test(layout.htmlLanguage) && layout.mainCount === 1 && layout.h1Count === 1 && layout.reducedMotion === true;
+          const focusedControls = keyboard.filter(sample => !['BODY', 'HTML'].includes(sample.tag));
+          result.sampledKeyboardPass = (layout.tabTargets === 0 || focusedControls.length > 0) && focusedControls.every(sample => sample.visible && sample.focusVisible && ((sample.outlineStyle !== 'none' && Number.parseFloat(sample.outlineWidth) > 0) || sample.boxShadow !== 'none'));
+          result.automatedPass = result.semanticPass && result.sampledKeyboardPass && result.status === route.status && layout.scrollWidth <= layout.viewportWidth + 1 && layout.brokenImages.length === 0 && layout.placeholderLinks.length === 0 && result.accessibilityViolations.length === 0 && failures.length === 0 && consoleErrors.length === 0 && externalRequests.length === 0;
         } catch (error) {
           result = { id, path: route.path, width, colorScheme, automatedPass: false, error: error.message, externalRequests, requestFailures: failures, consoleErrors };
         } finally {

@@ -24,6 +24,10 @@ def snapshot(database, root_id):
     records = {}
     for row in rows:
         record = dict(row)
+        if not isinstance(record['id'], str) or not record['id'] or record['id'] in records:
+            raise ValueError('Invalid or duplicate native thread ID.')
+        record.pop('agent_path')
+        record['agent_path_redacted'] = True
         try:
             source = json.loads(record.pop('source'))
         except (ValueError, TypeError):
@@ -37,6 +41,9 @@ def snapshot(database, root_id):
         records[record['id']] = record
     if root_id not in records:
         raise ValueError('Requested root thread is absent from installed metadata.')
+    if records[root_id]['parent_id'] is not None or records[root_id]['depth'] not in (None, 0):
+        raise ValueError('Requested root is not an observed native root.')
+    records[root_id]['depth'] = 0
     selected = {root_id}
     while True:
         children = {key for key, row in records.items() if row['parent_id'] in selected}
@@ -44,6 +51,19 @@ def snapshot(database, root_id):
         if expanded == selected:
             break
         selected = expanded
+    pending = selected - {root_id}
+    depths = {root_id: 0}
+    while pending:
+        ready = {key for key in pending if records[key]['parent_id'] in depths}
+        if not ready:
+            raise ValueError('Native ancestry contains a cycle or missing parent.')
+        for key in ready:
+            expected = depths[records[key]['parent_id']] + 1
+            declared = records[key]['depth']
+            if not isinstance(declared, int) or isinstance(declared, bool) or declared != expected:
+                raise ValueError('Declared native depth disagrees with observed ancestry.')
+            depths[key] = expected
+        pending -= ready
     return {
         'observed_at': datetime.now(timezone.utc).isoformat(),
         'root_id': root_id,
@@ -52,6 +72,7 @@ def snapshot(database, root_id):
             'Client metadata does not independently attest a provider execution.',
             'Thread existence does not establish current liveness or closure.',
             'Requested settings and native spawn receipts must be recorded separately.',
+            'Agent filesystem paths are redacted; ancestry is checked from parent IDs.',
         ],
         'threads': sorted((records[key] for key in selected), key=lambda row: (row['created_at_ms'] or 0, row['id'])),
     }

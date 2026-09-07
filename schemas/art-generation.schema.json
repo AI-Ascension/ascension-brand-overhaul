@@ -191,6 +191,13 @@
     },
     "observed_author_effort": {
       "const": "max"
+    },
+    "snapshot_alias_evidence_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
     }
   },
   "required": [
@@ -254,10 +261,15 @@
           "snapshot_alias_evidence_reference": {
             "type": "string",
             "minLength": 1
+          },
+          "snapshot_alias_evidence_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
           }
         },
         "required": [
-          "snapshot_alias_evidence_reference"
+          "snapshot_alias_evidence_reference",
+          "snapshot_alias_evidence_sha256"
         ]
       }
     }

@@ -2,12 +2,14 @@
 """Validate this prompt package. No network, agents, GitHub writes, or deployment."""
 from pathlib import Path, PurePosixPath
 import hashlib, json, re, sys, os
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from package_inventory import load_json, manifest_errors
 
 LOCAL_ONLY_DIRECTORIES={'.git','.execution','.execution-private','.codex','.agents','private','node_modules','.venv','venv','vendor','target','__pycache__','.pytest_cache'}
 
 FONT_EXTENSIONS={'.ttf','.otf','.woff','.woff2','.ttc','.eot'}
 def load(path):
-    return json.loads(path.read_text(encoding='utf-8'))
+    return load_json(path)
 def safe_relative(value):
     if not isinstance(value,str) or '\\' in value or '\x00' in value:
         return False
@@ -111,13 +113,7 @@ def validate(root):
     check(sum(r['requested_model']=='gpt-5.6-luna' for r in roles)==47,'Expected forty-seven Luna roles.')
     config=(root/'orchestration/runtime-config.example.toml').read_text()
     check(not re.search(r'^\s*max_depth\s*=',config,re.M),'An unsupported depth config was assumed.')
-    manifest=root/'MANIFEST.json'
-    if manifest.exists():
-        for entry in load(manifest)['files']:
-            check(safe_relative(entry['path']),f'Unsafe manifest path: {entry["path"]}')
-            p=root/entry['path']
-            check(p.is_file(),f'Manifest file missing: {entry["path"]}')
-            if p.is_file(): check(hashlib.sha256(p.read_bytes()).hexdigest()==entry['sha256'],f'Checksum mismatch: {entry["path"]}')
+    errors.extend(manifest_errors(root))
     return errors
 
 def main():

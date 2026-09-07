@@ -26,6 +26,8 @@ class RuntimeSnapshotTests(unittest.TestCase):
             result = module.snapshot(database, 'root')
             self.assertEqual({row['id'] for row in result['threads']}, {'root', 'lead', 'coordinator', 'leaf'})
             self.assertNotIn('PRIVATE TEST TEXT', json.dumps(result))
+            self.assertNotIn('"agent_path":', json.dumps(result))
+            self.assertTrue(all(row['agent_path_redacted'] for row in result['threads']))
             self.assertEqual(next(row for row in result['threads'] if row['id'] == 'leaf')['parent_id'], 'coordinator')
             with self.assertRaisesRegex(ValueError, 'absent'):
                 module.snapshot(database, 'missing')
@@ -36,3 +38,18 @@ class RuntimeSnapshotTests(unittest.TestCase):
             with self.assertRaises(sqlite3.OperationalError):
                 module.snapshot(database, 'root')
             self.assertFalse(database.exists())
+
+    def test_duplicate_identity_and_inconsistent_depth_fail(self):
+        for duplicate in (False, True):
+            with self.subTest(duplicate=duplicate), tempfile.TemporaryDirectory() as directory:
+                database = Path(directory) / 'metadata.sqlite'
+                connection = sqlite3.connect(database)
+                connection.execute('CREATE TABLE threads (id TEXT, source TEXT, model TEXT, reasoning_effort TEXT, agent_path TEXT, cli_version TEXT, created_at_ms INTEGER)')
+                connection.execute('INSERT INTO threads VALUES (?,?,?,?,?,?,?)', ('root','cli','gpt-6','max','/private/root','test',0))
+                source=json.dumps({'subagent':{'thread_spawn':{'parent_thread_id':'root','depth':99}}})
+                connection.execute('INSERT INTO threads VALUES (?,?,?,?,?,?,?)', ('child',source,'gpt-5.6-luna','max','/private/child','test',1))
+                if duplicate:
+                    connection.execute('INSERT INTO threads SELECT * FROM threads WHERE id = ?', ('child',))
+                connection.commit(); connection.close()
+                with self.assertRaisesRegex(ValueError, 'duplicate native thread ID' if duplicate else 'disagrees with observed ancestry'):
+                    module.snapshot(database, 'root')

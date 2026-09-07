@@ -46,3 +46,15 @@ Use `scripts/build_delivery.py SOURCE NEW_DESTINATION.zip` only after reviewing 
 ## Routine maintenance
 
 For each release, refresh capability evidence, tested quickstart configuration, links, subscriber failure handling and reviewed publication records. Before each episode, verify its source-qualified claims and media availability. Record campaign observations only after the declared window has elapsed, with denominators and confounders. Correct inaccurate public material with a dated correction; retain historical source evidence. The ninety-day schedule is an operating plan, not a record of audience results.
+
+## Local helper evidence boundaries
+
+Native ledgers require boolean model-verification flags. Runtime metadata extraction rejects duplicate identities and inconsistent ancestry depths, and removes agent filesystem paths. Neither helper attests provider execution. Blocked handoff entries must name a reason. Artwork export inventories must exactly match their planned paths, including case-insensitive uniqueness.
+
+A dated image backend alias requires `snapshot_alias_evidence_reference` plus `snapshot_alias_evidence_sha256`. The referenced local JSON is limited to 64 KiB and must contain exactly `schema_version: image-model-alias-v1`, `requested_model`, `resolved_model`, `source_reference`, `captured_at`, and `reviewer_reference`. The models must match the requested canonical model and observed dated model; the source must be official OpenAI HTTPS documentation and the capture timestamp must include a timezone. File and declared-record validation does not authenticate a provider response or replace independent source review.
+
+Browser automation now requires a nonempty title, a language tag, one main landmark, one h1, the requested reduced-motion mode, and visible focus indicators for sampled keyboard stops. A passing automated subset still requires manual screenshot, complete navigation, normal-motion, zoom, and interaction review.
+
+The active `MANIFEST.json` is an exact safe source-tree inventory, excluding only its own digest and `CHECKSUMS.sha256`. `python3 scripts/update_manifest.py` previews the current inventory; after reviewing the source diff, `--write` refreshes the two active integrity records. Original input integrity records under `execution/input-integrity/` are preserved. Strict duplicate-key parsing and manifest field/size/digest checks reject unlisted files and ambiguous control data.
+
+Archive creation prunes local execution/dependency directories and excludes common credential names case-insensitively, including `.ENV`, `.npmrc`, and `credentials.json`, plus key and font files. A local archive without a reviewed digest is labelled `unreviewed_local_archive`. After manual content and exact manifest review, pass `--reviewed-manifest-sha256 SHA256` to bind the source archive to that reviewed manifest. This is a local review receipt, not a secret scanner, rights clearance, deployment approval, or proof that the full overhaul is complete. The tool validates the manifest and rechecks content bytes before an exclusive atomic archive install.

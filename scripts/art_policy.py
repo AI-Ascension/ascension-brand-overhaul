@@ -3,6 +3,9 @@
 from pathlib import Path, PurePosixPath
 import hashlib
 import json
+import re
+from datetime import datetime
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 POLICY = json.loads((ROOT / 'art/generation-policy.json').read_text(encoding='utf-8'))
@@ -36,11 +39,42 @@ def safe_file(root: Path, value: str) -> Path:
     return target
 
 
-def verify_hash(root: Path, path: str, digest: str) -> bytes:
-    raw = safe_file(root, path).read_bytes()
+def verify_hash(root: Path, path: str, digest: str, max_bytes: int = 64 * 1024 * 1024) -> bytes:
+    if not isinstance(digest, str) or not re.fullmatch(r'[a-f0-9]{64}', digest):
+        raise ValueError('Invalid provenance SHA-256.')
+    target = safe_file(root, path)
+    if not target.is_file():
+        raise ValueError('Provenance must reference a regular file.')
+    with target.open('rb') as handle:
+        raw = handle.read(max_bytes + 1)
+    if len(raw) > max_bytes:
+        raise ValueError('Provenance file exceeds its size limit.')
     if hashlib.sha256(raw).hexdigest() != digest:
         raise ValueError('Provenance hash mismatch: ' + path)
     return raw
+
+
+def validate_alias_evidence(record: dict, root: Path) -> None:
+    """Verify bounded declared alias documentation, not provider attestation."""
+    raw = verify_hash(root, record['snapshot_alias_evidence_reference'], record['snapshot_alias_evidence_sha256'], 64 * 1024)
+    def unique(pairs):
+        value = {}
+        for key, item in pairs:
+            if key in value:
+                raise ValueError('Duplicate alias-evidence key.')
+            value[key] = item
+        return value
+    value = json.loads(raw, object_pairs_hook=unique)
+    required = {'schema_version', 'requested_model', 'resolved_model', 'source_reference', 'captured_at', 'reviewer_reference'}
+    if not isinstance(value, dict) or set(value) != required or not all(isinstance(item, str) and item.strip() for item in value.values()):
+        raise ValueError('Invalid image-model alias evidence envelope.')
+    if value['schema_version'] != 'image-model-alias-v1' or value['requested_model'] != 'gpt-image-2' or value['resolved_model'] != record['image_model_observed']:
+        raise ValueError('Alias documentation does not identify the requested and resolved model.')
+    source = urlsplit(value['source_reference'])
+    if source.scheme != 'https' or source.hostname not in {'openai.com', 'platform.openai.com', 'developers.openai.com', 'help.openai.com'} or source.username or source.password:
+        raise ValueError('Alias documentation needs an official HTTPS source reference.')
+    if datetime.fromisoformat(value['captured_at'].replace('Z', '+00:00')).tzinfo is None:
+        raise ValueError('Alias capture timestamp needs a timezone.')
 
 
 def validate_generation_record(record: dict, planned: dict, root: Path, ledger: dict | None) -> list[str]:
@@ -62,13 +96,16 @@ def validate_generation_record(record: dict, planned: dict, root: Path, ledger: 
     observed = record.get('image_model_observed')
     check(observed in POLICY['accepted_resolved_image_model_ids'], 'Unverified or prohibited image backend.')
     if observed != 'gpt-image-2':
-        check(bool(record.get('snapshot_alias_evidence_reference')), 'Dated image model needs verified alias evidence.')
+        try:
+            validate_alias_evidence(record, root)
+        except (OSError, KeyError, ValueError, TypeError, UnicodeError) as exc:
+            errors.append('Dated image model alias evidence: ' + str(exc))
     for field in ('record_id', 'author_agent_id', 'author_parent_id', 'author_runtime_evidence_reference',
                   'image_model_evidence_reference', 'tool_name', 'tool_execution_reference', 'reviewer_reference', 'created_at'):
         check(bool(record.get(field)), 'Missing generation provenance: ' + field)
     check(record.get('reviewer_reference') != record.get('author_agent_id'), 'Author cannot independently review their own art.')
     try:
-        raw = verify_hash(root, record['prompt_path'], record['prompt_sha256'])
+        raw = verify_hash(root, record['prompt_path'], record['prompt_sha256'], 1024 * 1024)
         check(bool(raw.decode('utf-8').strip()), 'Astra prompt is empty.')
         if record.get('provider_revised_prompt_path'):
             verify_hash(root, record['provider_revised_prompt_path'], record['provider_revised_prompt_sha256'])
