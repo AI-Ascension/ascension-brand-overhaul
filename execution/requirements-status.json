@@ -500,7 +500,7 @@
       ],
       "verification_records": [
         {
-          "source_revision": "65a8014",
+          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
           "command": "python3 -m unittest discover -s tests",
           "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
           "receipt": "execution/root-helper-checks.json"
@@ -529,7 +529,7 @@
       ],
       "verification_records": [
         {
-          "source_revision": "65a8014",
+          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
           "command": "python3 -m unittest discover -s tests",
           "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
           "receipt": "execution/root-helper-checks.json"
@@ -558,7 +558,7 @@
       ],
       "verification_records": [
         {
-          "source_revision": "65a8014",
+          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
           "command": "python3 -m unittest discover -s tests",
           "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
           "receipt": "execution/root-helper-checks.json"
@@ -587,7 +587,7 @@
       ],
       "verification_records": [
         {
-          "source_revision": "65a8014",
+          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
           "command": "python3 -m unittest discover -s tests",
           "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
           "receipt": "execution/root-helper-checks.json"
@@ -616,7 +616,7 @@
       ],
       "verification_records": [
         {
-          "source_revision": "65a8014",
+          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
           "command": "python3 -m unittest discover -s tests",
           "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
           "receipt": "execution/root-helper-checks.json"
@@ -645,7 +645,7 @@
       ],
       "verification_records": [
         {
-          "source_revision": "65a8014",
+          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
           "command": "python3 -m unittest discover -s tests",
           "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
           "receipt": "execution/root-helper-checks.json"
@@ -1150,7 +1150,7 @@
       "implementation_paths": [],
       "verification_records": [
         {
-          "source_revision": "65a8014",
+          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
           "command": "python3 -m unittest discover -s tests",
           "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
           "receipt": "execution/root-helper-checks.json"
@@ -1173,7 +1173,7 @@
       "implementation_paths": [],
       "verification_records": [
         {
-          "source_revision": "65a8014",
+          "source_revision": "65a80142ac3f73525b13a978ae0234ba07bb3747",
           "command": "python3 -m unittest discover -s tests",
           "result": "97 integrated tests passed; requirement-specific independent acceptance pending",
           "receipt": "execution/root-helper-checks.json"
