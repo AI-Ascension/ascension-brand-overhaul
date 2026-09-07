@@ -1,17 +1,27 @@
 {
-  "observed_at": "2026-09-07T05:43:10.017866+00:00",
-  "command": "python3 -m unittest discover -s tests -v",
+  "observed_at": "2026-09-07T06:18:07.500744+00:00",
+  "command": "python3 -m unittest discover -s tests",
   "exit_code": 0,
-  "tests_run": 51,
+  "tests_run": 60,
   "scope": "Package policy helpers, native metadata extraction, content sync, archive privacy; not product/runtime/website validation",
-  "log_sha256": "d071c94b7b46d84478002c2f09d354e53a7cfc87b9edf9148573e5d7471f4893",
+  "log_sha256": "d60f0d83d6213ab68c92b4012fe25ec78f6f4e1f911d5e082e29f50374a8a30b",
   "tested_files_sha256": {
+    "scripts/agent_ledger.py": "54e9d378a39ba4f2b3375bf622059d1b37c45d63555b3a27ee393232b595f36d",
+    "scripts/art_policy.py": "38a78a05bf01f859a38fe83b5871e286cef55194e3ea0c13b60f5398d72b13c3",
     "scripts/build_delivery.py": "d03eba066a3062513b3c58c51b13cb3edd40b127a9232ee333d3e363a595a1f4",
     "scripts/runtime_snapshot.py": "82dad74a3d5770d5267a3829f358089750fae8ccfdd5934153cedd8a3040cffb",
     "scripts/sync_content.py": "3d1ea108d6e2e926ba549de13c6775686f6a51d2b2e4286f30089018fb05700e",
+    "scripts/validate_assets.py": "82e98bdc63c222e7d9f34b709019f2367fb6a60b8226300ccc088c6ed7ab00aa",
+    "scripts/validate_package.py": "d72e2003c26dcc9b29f2b47a125f045ea957290c54faf9076557653f217784a0",
+    "tests/test_art_policy.py": "6421a474478e9a15e0e6776f27e5a95f6d4d62d07840dc0cb4dc2940555acd96",
+    "tests/test_asset_status_schema.py": "2b3e384cb060f9235f451b1921bade4bd15e11dc11efd333049bc1cb646374e5",
+    "tests/test_brand_tokens.py": "ed38af3126a805c739fc582c50a14980ebdf52adc4fb2650619631e9d2a99454",
     "tests/test_content_sync.py": "0b3a3da83839a59711c25ef47c3919db84de063293e9e7208217258b6ca216ac",
     "tests/test_delivery_privacy.py": "909e430810dea738eebd1881e92caf453510519cfe459a195badb4a0cb312286",
+    "tests/test_package.py": "bff584251dd314016fa351aa16e6089b168bb5f91dec4a9a646d34dc9367fd41",
+    "tests/test_package_local_boundaries.py": "858bb80f246df725cb758ac9dcda4aad38384a817552bea13ed0506b09a82e2b",
     "tests/test_runtime_snapshot.py": "0f817e7b2905c9a909b4dea1040ac15eca506e758c68bab619f05180a59a9b0b"
   },
-  "independent_review": "pending"
+  "independent_review": "pending",
+  "source_revision": "19eb81f38e41370d92d7a9983c23443c8ef6da6a"
 }
