@@ -2,7 +2,7 @@
 """Create a deterministic local ZIP. Does not upload or publish anything."""
 from pathlib import Path
 import argparse, hashlib, json, zipfile
-EXCLUDE={'.git','.execution','private','node_modules','.venv','venv','vendor','target','__pycache__','.pytest_cache'}
+EXCLUDE={'.git','.execution','.execution-private','.codex','.agents','private','node_modules','.venv','venv','vendor','target','__pycache__','.pytest_cache'}
 FONT={'.ttf','.otf','.woff','.woff2','.ttc','.eot'}
 def build(source,destination):
     source=source.resolve(); destination=destination.resolve()
@@ -10,7 +10,7 @@ def build(source,destination):
     entries=[]
     for p in sorted(source.rglob('*')):
         rel=p.relative_to(source)
-        if any(part in EXCLUDE for part in rel.parts): continue
+        if any(part.casefold() in EXCLUDE for part in rel.parts): continue
         if p.is_symlink(): raise ValueError('Review symlink before packaging: '+str(rel))
         if not p.is_file(): continue
         if p.suffix.lower() in FONT: continue
@@ -18,7 +18,7 @@ def build(source,destination):
         if p.suffix in {'.pyc','.pyo'}: continue
         entries.append((rel.as_posix(),p.read_bytes()))
     destination.parent.mkdir(parents=True,exist_ok=True)
-    with zipfile.ZipFile(destination,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+    with zipfile.ZipFile(destination,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for name,data in entries:
             info=zipfile.ZipInfo(source.name+'/'+name,date_time=(2026,9,7,0,0,0))
             info.compress_type=zipfile.ZIP_DEFLATED; info.external_attr=0o644<<16

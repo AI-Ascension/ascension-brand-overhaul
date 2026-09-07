@@ -8,8 +8,8 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 122,
-      "sha256": "18dd949865ffb2cb254f4d21ad268c61f713053884ae6f7200935ef5c0857f6d"
+      "bytes": 113,
+      "sha256": "15438955bafa00031fd2faa3dad87ab9233f677424f9f24a2cfa8a348196e9aa"
     },
     {
       "path": "AGENTS.md",
@@ -498,8 +498,8 @@
     },
     {
       "path": "scripts/build_delivery.py",
-      "bytes": 2075,
-      "sha256": "d03eba066a3062513b3c58c51b13cb3edd40b127a9232ee333d3e363a595a1f4"
+      "bytes": 2024,
+      "sha256": "f6fac1fbdd940fec48ee1fcdea99fc8d00a58f9eb626b3111a68d6b63b156e8c"
     },
     {
       "path": "scripts/validate_assets.py",

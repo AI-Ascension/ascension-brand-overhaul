@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-09-07T05:43:10.017866+00:00",
+  "command": "python3 -m unittest discover -s tests -v",
+  "exit_code": 0,
+  "tests_run": 51,
+  "scope": "Package policy helpers, native metadata extraction, content sync, archive privacy; not product/runtime/website validation",
+  "log_sha256": "d071c94b7b46d84478002c2f09d354e53a7cfc87b9edf9148573e5d7471f4893",
+  "tested_files_sha256": {
+    "scripts/build_delivery.py": "d03eba066a3062513b3c58c51b13cb3edd40b127a9232ee333d3e363a595a1f4",
+    "scripts/runtime_snapshot.py": "82dad74a3d5770d5267a3829f358089750fae8ccfdd5934153cedd8a3040cffb",
+    "scripts/sync_content.py": "3d1ea108d6e2e926ba549de13c6775686f6a51d2b2e4286f30089018fb05700e",
+    "tests/test_content_sync.py": "0b3a3da83839a59711c25ef47c3919db84de063293e9e7208217258b6ca216ac",
+    "tests/test_delivery_privacy.py": "909e430810dea738eebd1881e92caf453510519cfe459a195badb4a0cb312286",
+    "tests/test_runtime_snapshot.py": "0f817e7b2905c9a909b4dea1040ac15eca506e758c68bab619f05180a59a9b0b"
+  },
+  "independent_review": "pending"
+}
