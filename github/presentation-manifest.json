@@ -130,8 +130,8 @@
   ],
   "github_settings": {
     "apply": false,
-    "description_and_topics": "Record proposed values for an authorized settings operation; source edits do not change them.",
-    "pins": "Manual checklist only; no pin mutation is performed by this manifest.",
+    "description_and_topics": "github/settings-manifest.json records observed current values and proposed descriptions/topics; none applied.",
+    "pins": "See github/settings-manifest.json for the exact manual pin checklist; none applied.",
     "owner_notifications": false
   },
   "art_policy": "No new artwork is introduced by this presentation pass. Existing assets and proof routes remain unchanged until Astra and gpt-image-2 provenance is verified."
