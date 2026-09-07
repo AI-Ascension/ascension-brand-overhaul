@@ -1,0 +1,138 @@
+{
+  "schema_version": "ai-ascension.presentation-manifest.v1",
+  "public_identity": {
+    "organization": "AI Ascension",
+    "flagship": "Ascension",
+    "series": "The Climb",
+    "series_attribution": "by AI Ascension",
+    "handle": "AI-Ascension",
+    "canonical_site": "https://aiascension.tech/"
+  },
+  "canonical_source": {
+    "repository": "AI-Ascension/ascension-brand-overhaul",
+    "revision": "c09a9da28ff4ee2264139353ba2313804ab55104",
+    "files": [
+      {
+        "source": "brand/tokens.css",
+        "sha256": "68922303e31051e522704061d3bd72d4735e3eea1f072ec2a10a104557e31ba2",
+        "destination": "assets/brand/tokens.css"
+      },
+      {
+        "source": "brand/tokens.json",
+        "sha256": "222bf6fd2806532ebedb2f748a9ab89b870b4da6d3aa4bbf4e614dd72194e2d8",
+        "destination": "assets/brand/tokens.json"
+      }
+    ]
+  },
+  "companion_branches": [
+    {
+      "repository": "AI-Ascension/.github",
+      "base_revision": "0cbdf744d515b16c042eb6e16b1537d8ccf11771",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md",
+        "profile/README.md"
+      ],
+      "settings": "manual_review_required"
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "base_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md",
+        "index.html"
+      ],
+      "settings": "manual_review_required",
+      "preserve": [
+        "proof.html",
+        "evidence.html",
+        "recipes.html",
+        "architecture.html",
+        "repositories.html",
+        "contributing.html",
+        "assets/"
+      ]
+    },
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "base_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md"
+      ],
+      "display_title": "Ascension",
+      "settings": "manual_review_required"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-core",
+      "base_revision": "87e0f3d9355c0827e989d9fbc31804440852519b",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md"
+      ],
+      "settings": "manual_review_required"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "base_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md"
+      ],
+      "settings": "manual_review_required"
+    },
+    {
+      "repository": "AI-Ascension/sts2-gateway",
+      "base_revision": "33ea48f3b549f08e19db80d8c68c1438fa12a60a",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md"
+      ],
+      "settings": "manual_review_required"
+    },
+    {
+      "repository": "AI-Ascension/sts2-mcp-server",
+      "base_revision": "eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md"
+      ],
+      "settings": "manual_review_required"
+    },
+    {
+      "repository": "AI-Ascension/sts2-protocol",
+      "base_revision": "8874b0951289fd943c7e14dea36557fa24c401d1",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md"
+      ],
+      "settings": "manual_review_required"
+    },
+    {
+      "repository": "AI-Ascension/ascension-watchdog",
+      "base_revision": "dc2d20badb9e86c12067316b92d6c8289b2e6995",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md"
+      ],
+      "settings": "manual_review_required"
+    },
+    {
+      "repository": "AI-Ascension/ai-agent-observability",
+      "base_revision": "b25880376d3a3334c77f58637267db93581c4c77",
+      "branch": "work/w04-presentation",
+      "paths": [
+        "README.md"
+      ],
+      "settings": "manual_review_required"
+    }
+  ],
+  "github_settings": {
+    "apply": false,
+    "description_and_topics": "Record proposed values for an authorized settings operation; source edits do not change them.",
+    "pins": "Manual checklist only; no pin mutation is performed by this manifest.",
+    "owner_notifications": false
+  },
+  "art_policy": "No new artwork is introduced by this presentation pass. Existing assets and proof routes remain unchanged until Astra and gpt-image-2 provenance is verified."
+}

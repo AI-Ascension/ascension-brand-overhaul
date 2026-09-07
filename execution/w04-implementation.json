@@ -1,0 +1,45 @@
+{
+  "status": "implemented_pending_independent_review",
+  "builder_role": "W04-L",
+  "builder_native_id": "01a07a69-bd54-7f72-9713-f2f3c76576c0",
+  "root_completion": "Preserved orphaned implementation; repaired receipt retry/interrupt safety, sync manifest, quickstart dependency preparation, and Markdown fences.",
+  "source_revision": "4d09cd40fb077cc3364197a1cb1056950b980361",
+  "checks": {
+    "migration_negative_tests": {
+      "count": 19,
+      "result": "pass",
+      "network": "fake client only"
+    },
+    "presentation_sync": "dry run passed against canonical c09a9da28ff4ee2264139353ba2313804ab55104 in a temporary consumer",
+    "quickstart": {
+      "repository": "AI-Ascension/sts2-harness",
+      "revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "fetch": "cargo fetch --locked succeeded",
+      "fake_run": "cargo run --locked --offline --package sts2-harness --bin sts2-harness-runtime-v2-fake succeeded",
+      "focused_tests": "3 runtime_v2 tests passed",
+      "policy": "350 sized files, 0 warnings, 0 errors",
+      "target_directory": "/tmp/ai-ascension-brand-w04-harness-target",
+      "limit": "Fake offline component workflow; no game or model provider"
+    }
+  },
+  "live_observation": {
+    "at": "2026-09-07T14:31:15Z",
+    "actor": "CompleteDotTech",
+    "operation": "read-only plan",
+    "repositories": 13,
+    "input": "migration/input-map.json",
+    "receipt": "migration/plan.json"
+  },
+  "remote_mutations": [],
+  "companion_changes": "Local uncommitted presentation diffs; separate review and policy checks required before commit/PR",
+  "orchestration": "No actual depth-2/3 descendants; requested hierarchy not delivered",
+  "independent_reviewer": null,
+  "file_sha256": {
+    "migration/tooling/github_migration.py": "ec70db9056cb9ec5a920fc8d43f868bd47d395d6f6d374fda4f9065a939abe63",
+    "migration/input-map.json": "868e6c719b7a3947ebe0f39f209eed08699631897140498d6608175f27ad666b",
+    "migration/plan.json": "afef3fa110743ff13fe262d6f448af2820b0bffa4f80fa95ac3a891d7b839656",
+    "github/presentation-manifest.json": "2af558e8bc2d3cb987842c0674c9ef59f54de0a4dc94e0b739898f08414d2a50",
+    "docs/TESTED_QUICKSTART.md": "959e17b0dcb43da0e1ab5cfc67fd169f863749cbbd4acf3dae3ce8d695f84026",
+    "tests/test_migration_tooling.py": "f4d48275ed650332c0b3a037678fe31c0a432911702cf968311959439365d5b3"
+  }
+}
