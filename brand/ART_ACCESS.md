@@ -10,9 +10,11 @@ the art jobs ran, that a prompt was authored, or that an image exists.
 The source snapshot for this worktree is `5a2acfd6690d2533af046a7afcf3a7782b29042b`.
 The package requests the lineage `ROOT → W02-L → W02-C1 → W02-C1-BUILD` and
 requires `gpt-5.6-luna/max` for W02-L and W02-C1, followed by
-`gpt-6-astra/max` for W02-C1-BUILD. No trustworthy native agent ID,
-parent-agent ID, accepted model/effort record, or observed model/effort record
-was exposed to this worktree. The callable tool surface did not expose a
+`gpt-6-astra/max` for W02-C1-BUILD. Root supplied a native W02-L thread
+`01a07a53-0521-7673-b4fd-15921bfaa4b8` with parent
+`01a07a4b-38ad-7673-b653-dad49eed9dbd`, observed as Luna/max. No trustworthy
+native IDs or accepted/observed model records are available for the deeper
+W02-C1 and W02-C1-BUILD nodes. The callable tool surface did not expose a
 native `collaboration.spawn_agent`, `collaboration.send_message`, or
 `collaboration.wait_agent` control, so no W02-C1 slot reservation or spawn
 receipt can be recorded here. A root-spawned Astra would not satisfy the
