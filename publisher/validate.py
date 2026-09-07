@@ -9,11 +9,13 @@ from datetime import datetime, timezone
 from typing import Any, Iterable
 
 from .canonical import source_digest
+from .authority import require_registered_approval
 from .errors import ApprovalError, ProductionGateError, PublisherError
 from .schema import (
     validate_action_schema,
     validate_approval_schema,
     validate_manifest_schema,
+    validate_public_projection,
     validate_timeline_schema,
 )
 from .security import checked_path, inspect_artifact_root, reject_forbidden_fields, safe_public_url
@@ -34,7 +36,6 @@ REQUIRED_APPROVAL_FIELDS = {
     "seed_policy",
     "resource_budget",
     "intervention",
-    "source",
     "evidence",
     "action_timeline",
     "evidence_context",
@@ -98,11 +99,11 @@ def validate_manifest_integrity(manifest: dict[str, Any]) -> None:
             raise PublisherError("duplicate public decision ID")
         seen_ids.add(decision["decision_id"])
         sequences.append(decision["sequence"])
-        explanation_reference = decision["explanation"]["source_reference"]
+        explanation_reference = (decision["explanation"] or {}).get("source_reference")
         if explanation_reference is not None and explanation_reference not in labels:
             raise PublisherError("decision explanation must point to an included source reference")
         timing = decision["timing"]
-        if timing["captured"] != (timing["media_offset_ms"] is not None):
+        if timing is not None and timing["captured"] != (timing["media_offset_ms"] is not None):
             raise PublisherError("captured timing requires a media offset and uncaptured timing forbids one")
         choices = decision["legal_choices"]
         selected = decision["chosen_action"]
@@ -287,6 +288,7 @@ def validate_production_publication(
     missing = sorted(
         field for field in REQUIRED_APPROVAL_FIELDS if not _field_scope_allowed(field, approval["allowed_fields"])
     )
+    missing.extend(field for field in ("source.references.label", "source.references.uri") if not _field_allowed(field, approval["allowed_fields"]))
     if missing:
         raise ApprovalError("approval does not allow required public fields: " + ", ".join(missing))
     if manifest["recorded_at"] is None:
@@ -324,7 +326,17 @@ def validate_production_publication(
                 digest.update(chunk)
         if digest.hexdigest() != asset["artifact_digest"]:
             raise ApprovalError("decision card file digest does not match the approval")
-    return project_approved_fields(manifest, approval["allowed_fields"])
+    public_uris = {reference["uri"] for reference in manifest["source"]["references"]}
+    public_uris.update(value for key, value in manifest["evidence"].items() if key in {"video_url", "replay_url", "evidence_reference"} and value)
+    public_uris.update(card["provenance_reference"] for card in available_cards)
+    public_uris.update(decision["evidence_ref"] for decision in manifest["action_timeline"]["decisions"] if decision["evidence_ref"])
+    if not public_uris.issubset(set(approval["approved_public_uris"])):
+        raise ApprovalError("public URI is outside the approved source register")
+    for uri in approval["approved_public_uris"]:
+        safe_public_url(uri)
+    require_registered_approval(approval)
+    projection = project_approved_fields(manifest, approval["allowed_fields"])
+    return validate_public_projection(projection)
 
 
 __all__ = [

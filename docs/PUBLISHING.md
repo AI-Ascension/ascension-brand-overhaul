@@ -23,7 +23,8 @@ source owners issue the digest for real records.
 
 An approval is a separate `publication-approval-v1` record. It binds the
 approval ID, authority reference, operation, target public run ID, exact
-source digest, allowed surfaces, allowed fields, approved asset digests,
+source digest, allowed surfaces, allowed fields, approved asset paths/digests,
+public URI register, renderer digest,
 scope notes, and validity period. The schema intentionally has no
 `is_approved` (or equivalent) boolean. A changed source digest fails before
 anything can be written.
@@ -35,6 +36,9 @@ Production publication requires all of the following:
 - a recorded timestamp, approved evidence rights, and a supported caption;
 - a current approval whose target, ID, digest, fields, and surfaces match the
   manifest;
+- the exact approval enrolled in the deployment-controlled `config/publication-authorities.json`;
+- the current `publisher.authority.renderer_digest()` matching the approved renderer digest;
+- every exposed source, evidence, and provenance URL listed in `approved_public_uris`;
 - approved artifact lineage for any decision card; and
 - a separate output root.
 
@@ -55,7 +59,7 @@ same object. Preserve only measured provider calls and resource values. Use
 null with an explanatory description when a historical report did not measure
 them.
 
-Report-only summaries do not receive invented action records. Set
+Set `evidence_context.capture_scope` to `report_only`. Report-only summaries do not receive invented action records. Set
 `action_timeline.status` to `unavailable` with an empty `decisions` array and
 set `local_guess_reveal.status` to `unavailable` with `legal_option_count` set
 to `0`. Put any known aggregate result, such as outcome, floor, or a controller
@@ -107,3 +111,12 @@ publication rejects the fixture classification entirely.
 Input JSON is bounded to 4 MiB and rejects duplicate keys. Both input and output paths reject symlink ancestors before resolution. This check does not replace source-owner review of the sanitized values.
 
 Generated pages embed the canonical `brand/tokens.css` and record its SHA-256 in a meta field. Both timeline results and the local guess consequence remain behind explicit reveal controls. The scrollable timeline is keyboard-focusable; its wider table preserves mobile readability. This is a functional HTML interface, not generated decision-card artwork.
+
+
+## Deployment trust and private lineage
+
+The installed `config/publication-authorities.json` is the trust root. It ships with **zero approvals**. Only the deployment owner may enroll an independently reviewed record by its approval ID, authority reference, and SHA-256 of `publisher.canonical.canonical_json(approval)`. The CLI has no registry override and does not enroll records. Keep this file and installed publisher code outside content-author write access; a person who can replace the publisher can replace its checks. This is an explicit operator-controlled registry, not a digital-signature or remote identity service. Unit tests use isolated temporary registries and never enroll their artificial approvals in the shipped registry.
+
+Approval `renderer_digest` pins all installed publisher Python files, schema JSON files, and canonical token CSS by their relative paths and SHA-256 values. Compute it with `python3 -c 'from publisher.authority import renderer_digest; print(renderer_digest())'` after freezing the reviewed implementation. Changes require a new approval and enrollment. `approved_public_uris` binds exact approved URLs; the tool never fetches them or infers rights from their syntax.
+
+Source record IDs, source content digests, source revisions, and reference digests can be withheld. Authorize required context fields plus `source.references.label` and `source.references.uri`, adding other source fields only when reviewed for public use. The renderer and JSON writer consume the same projection; an omitted source hash is absent from both. The private input digest still binds approval internally. These output manifests are public projections, not fresh sanitized inputs for the `verify` command, which requires the complete private-side identity fields.

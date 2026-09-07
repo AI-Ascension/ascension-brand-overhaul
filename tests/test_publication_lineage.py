@@ -44,3 +44,9 @@ class PublicationLineageTests(unittest.TestCase):
         manifest, _ = approved_fixture()
         manifest['local_guess_reveal']['legal_option_count'] = 2
         self.check_invalid(manifest)
+
+    def test_absent_optional_explanation_and_timing_remain_valid(self):
+        manifest = load_fixture()
+        manifest['action_timeline']['decisions'][0].update(explanation=None, timing=None)
+        manifest['source']['content_digest'] = source_digest(manifest)
+        validate_manifest(manifest)

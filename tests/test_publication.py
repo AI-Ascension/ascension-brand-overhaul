@@ -11,6 +11,8 @@ from publisher import OfflinePublisher, DuplicatePublicationError, source_digest
 from publisher.errors import ApprovalError, ProductionGateError, PublisherError, SchemaValidationError, SecurityError
 from publisher.security import safe_public_url, safe_relative_path
 from publisher.validate import validate_manifest, validate_production_publication
+from publisher.authority import renderer_digest
+from tests.publication_authority_helper import trusted_registry
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -49,6 +51,8 @@ def approved_fixture() -> tuple[dict, dict]:
         "schema_version": "publication-approval-v1",
         "approval_id": "approval-1",
         "authority_reference": "local-review-record-1",
+        "renderer_digest": renderer_digest(),
+        "approved_public_uris": [reference["uri"] for reference in manifest["source"]["references"]] + [manifest["evidence"]["evidence_reference"]],
         "approved_at": "2026-09-07T05:00:00Z",
         "expires_at": None,
         "operation": "publish_run",
@@ -177,7 +181,7 @@ class PublicationTests(unittest.TestCase):
     def test_production_publish_is_local_and_duplicate_version_is_rejected(self):
         manifest, approval = approved_fixture()
         publisher = OfflinePublisher()
-        with tempfile.TemporaryDirectory() as temp, tempfile.TemporaryDirectory() as output_temp:
+        with trusted_registry(approval) as enroll, tempfile.TemporaryDirectory() as temp, tempfile.TemporaryDirectory() as output_temp:
             temp_path = Path(temp)
             manifest_path = temp_path / "manifest.json"
             approval_path = temp_path / "approval.json"
@@ -197,6 +201,7 @@ class PublicationTests(unittest.TestCase):
             changed_path.write_text(json.dumps(changed), encoding="utf-8")
             approval["source_digest"] = changed["source"]["content_digest"]
             approval_path.write_text(json.dumps(approval), encoding="utf-8")
+            enroll(approval)
             with self.assertRaises(DuplicatePublicationError):
                 publisher.publish(changed_path, approval_path, out)
 
@@ -230,7 +235,7 @@ class PublicationTests(unittest.TestCase):
 
     def test_symlink_inside_output_tree_is_rejected(self):
         manifest, approval = approved_fixture()
-        with tempfile.TemporaryDirectory() as source_temp, tempfile.TemporaryDirectory() as output_temp:
+        with trusted_registry(approval), tempfile.TemporaryDirectory() as source_temp, tempfile.TemporaryDirectory() as output_temp:
             source_root = Path(source_temp)
             output_root = Path(output_temp)
             manifest_path = source_root / "manifest.json"

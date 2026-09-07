@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from copy import deepcopy
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
@@ -101,3 +102,19 @@ def validate_capability_schema(capability: dict[str, Any]) -> dict[str, Any]:
     # capability.schema.json is an existing public interface and is kept
     # unchanged; this wrapper makes its strict validation reusable.
     return validate_instance(capability, "capability.schema.json")
+
+
+def validate_public_projection(projection: dict[str, Any]) -> dict[str, Any]:
+    """Strict manifest shape with optional private-side source identities.
+
+    Derive from the input contract so field types and unknown-field rejection
+    cannot drift. Only the documented private source identities are optional.
+    """
+    schema = deepcopy(load_schema("publication-manifest.schema.json"))
+    schema["$defs"]["source"]["required"] = ["references"]
+    schema["$defs"]["source_reference"]["required"] = ["label", "uri"]
+    validator = Draft202012Validator(schema, format_checker=_FORMAT_CHECKER)
+    errors = sorted(validator.iter_errors(projection), key=lambda error: str(list(error.path)))
+    if errors:
+        raise SchemaValidationError("invalid public projection: " + errors[0].message)
+    return projection

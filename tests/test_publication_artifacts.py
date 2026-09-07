@@ -7,6 +7,7 @@ from publisher.canonical import source_digest
 from publisher.errors import PublisherError
 from publisher.validate import validate_production_publication
 from tests.test_publication import approved_fixture, load_fixture
+from tests.publication_authority_helper import trusted_registry
 
 
 class PublicationArtifactTests(unittest.TestCase):
@@ -24,12 +25,13 @@ class PublicationArtifactTests(unittest.TestCase):
         manifest['source']['content_digest'] = source_digest(manifest)
         approval['source_digest'] = manifest['source']['content_digest']
         approval['approved_assets'] = [{'asset_id': card['asset_id'], 'artifact_digest': card['artifact_digest'], 'artifact_path': 'card.png', 'provenance_reference': card['provenance_reference']}]
+        approval["approved_public_uris"].append(card["provenance_reference"])
         return manifest, approval
 
     def test_top_level_and_nested_cards_require_real_matching_approved_files(self):
         for nested in (False, True):
             manifest, approval = self.fixture(nested)
-            with self.subTest(nested=nested), tempfile.TemporaryDirectory() as temp:
+            with self.subTest(nested=nested), trusted_registry(approval), tempfile.TemporaryDirectory() as temp:
                 root = Path(temp)
                 with self.assertRaises(PublisherError):
                     validate_production_publication(manifest, approval)

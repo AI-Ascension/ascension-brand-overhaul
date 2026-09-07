@@ -44,7 +44,7 @@ def render_html(manifest: dict[str, Any]) -> str:
     evidence = manifest["evidence"]
     source = manifest["source"]
     source_refs = "".join(
-        f"<li>{_text(reference['label'])} · {_text(reference['revision'])} · "
+        f"<li>{_text(reference['label'])} · {_text(reference.get('revision', 'Revision not published'))} · "
         f"{_link('source', reference['uri'])}</li>"
         for reference in source["references"]
     )
@@ -154,8 +154,9 @@ def render_html(manifest: dict[str, Any]) -> str:
         f"<p>Observed fields: {_text(', '.join(manifest['evidence_context']['observed_fields']) or 'None')}</p>"
         f"<p>Redacted fields: {_text(', '.join(manifest['evidence_context']['redacted_fields']) or 'None')}</p></section>"
         "<section><h2>Lineage</h2>"
-        f"<p>Source record: {_text(source['record_id'])} · revision {_text(source['revision'])}</p>"
-        f"<p>Source content digest: <code>{_text(source['content_digest'])}</code></p>"
+        f"<p>Source record: {_text(source.get('record_id', 'Not published'))} · revision {_text(source.get('revision', 'Not published'))}</p>"
+        + (f"<p>Source content digest: <code>{_text(source['content_digest'])}</code></p>" if "content_digest" in source else "")
+        +
         f"<ul>{source_refs}</ul>"
         f"<p>Decision card: {_text(manifest['decision_card']['status'])}"
         f"{(' · ' + _text(manifest['decision_card']['asset_id']) + ' · ' + _text(manifest['decision_card']['artifact_digest'])) if manifest['decision_card']['status'] == 'available' else ''}</p></section>"
