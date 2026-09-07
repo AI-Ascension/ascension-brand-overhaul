@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-ascension.example/schemas/action-record-v1.json",
+  "title": "Public action decision record",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "action-v1" },
+    "public_run_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,79}$" },
+    "decision_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,119}$" },
+    "sequence": { "type": "integer", "minimum": 0 },
+    "turn": { "anyOf": [{ "type": "integer", "minimum": 0 }, { "type": "null" }] },
+    "floor": { "anyOf": [{ "type": "integer", "minimum": 0 }, { "type": "null" }] },
+    "state_visibility": { "enum": ["approved", "redacted"] },
+    "state_summary": { "anyOf": [{ "type": "string", "maxLength": 4000 }, { "type": "null" }] },
+    "legal_choices": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 200 },
+      "maxItems": 100
+    },
+    "chosen_action": { "anyOf": [{ "type": "string", "minLength": 1, "maxLength": 200 }, { "type": "null" }] },
+    "observed_consequence": { "anyOf": [{ "type": "string", "minLength": 1, "maxLength": 2000 }, { "type": "null" }] },
+    "evidence_ref": {
+      "anyOf": [
+        { "type": "string", "pattern": "^(https://[A-Za-z0-9.-]+(?::[0-9]{1,5})?(?:/[A-Za-z0-9._~!$&'()*+,;=:@%/-]*)?|/[A-Za-z0-9._~!$&'()*+,;=:@%/-]+)$" },
+        { "type": "null" }
+      ]
+    },
+    "explanation": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": { "enum": ["model_published", "human_analysis", "retrospective_summary"] },
+            "text": { "type": "string", "minLength": 1, "maxLength": 2000 },
+            "source_reference": { "anyOf": [{ "type": "string", "minLength": 1, "maxLength": 120 }, { "type": "null" }] }
+          },
+          "required": ["kind", "text", "source_reference"]
+        },
+        { "type": "null" }
+      ]
+    },
+    "timing": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "media_offset_ms": { "anyOf": [{ "type": "integer", "minimum": 0 }, { "type": "null" }] },
+            "captured": { "type": "boolean" }
+          },
+          "required": ["media_offset_ms", "captured"]
+        },
+        { "type": "null" }
+      ]
+    },
+    "decision_card": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "status": { "enum": ["unavailable", "available"] },
+            "asset_id": { "anyOf": [{ "type": "string", "minLength": 1, "maxLength": 160 }, { "type": "null" }] },
+            "artifact_digest": { "anyOf": [{ "type": "string", "pattern": "^[a-f0-9]{64}$" }, { "type": "null" }] },
+            "provenance_reference": {
+              "anyOf": [
+                { "type": "string", "pattern": "^(https://[A-Za-z0-9.-]+(?::[0-9]{1,5})?(?:/[A-Za-z0-9._~!$&'()*+,;=:@%/-]*)?|/[A-Za-z0-9._~!$&'()*+,;=:@%/-]+)$" },
+                { "type": "null" }
+              ]
+            }
+          },
+          "required": ["status", "asset_id", "artifact_digest", "provenance_reference"]
+        },
+        { "type": "null" }
+      ]
+    }
+  },
+  "required": [
+    "schema_version", "public_run_id", "decision_id", "sequence", "turn", "floor", "state_visibility",
+    "state_summary", "legal_choices", "chosen_action", "observed_consequence", "evidence_ref",
+    "explanation", "timing", "decision_card"
+  ]
+}

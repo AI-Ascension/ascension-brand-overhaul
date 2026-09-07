@@ -1,0 +1,32 @@
+[
+  {
+    "schema_version": "event-v1",
+    "event_id": "synthetic-event-1",
+    "event_name": "run_page_view",
+    "surface": "run",
+    "occurred_at": "2026-09-07T12:00:00Z",
+    "timestamp_precision": "minute",
+    "content_id": "synthetic-local-run",
+    "campaign_tag": null,
+    "consent_state": "not_collected",
+    "coarse_cohort": null,
+    "server_observation": "none",
+    "environment": "synthetic",
+    "properties": {}
+  },
+  {
+    "schema_version": "event-v1",
+    "event_id": "synthetic-event-2",
+    "event_name": "decision_presented",
+    "surface": "run",
+    "occurred_at": "2026-09-07T12:01:00Z",
+    "timestamp_precision": "minute",
+    "content_id": "synthetic-local-run",
+    "campaign_tag": null,
+    "consent_state": "not_collected",
+    "coarse_cohort": null,
+    "server_observation": "none",
+    "environment": "synthetic",
+    "properties": {"decision_id": "synthetic-decision-1"}
+  }
+]

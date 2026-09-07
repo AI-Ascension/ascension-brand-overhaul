@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-ascension.example/schemas/event-contract-v1.json",
+  "title": "Public measurement event contract",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "event-contract-v1" },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "identifiers": { "const": "public_content_id_only" },
+        "timestamp_precision": { "const": "day_or_minute" },
+        "session_state": { "const": "optional_consented_coarse_cohort" },
+        "retention_days": { "type": "integer", "minimum": 1, "maximum": 730 }
+      },
+      "required": ["identifiers", "timestamp_precision", "session_state", "retention_days"]
+    },
+    "events": {
+      "type": "array",
+      "minItems": 13,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+          "surface": { "enum": ["watch", "run", "evidence", "build", "docs", "subscription"] },
+          "description": { "type": "string", "minLength": 1, "maxLength": 1000 },
+          "required_properties": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+          "consent_required": { "type": "boolean" },
+          "server_confirmed": { "type": "boolean" },
+          "allowed_properties": { "type": "array", "uniqueItems": true, "items": { "type": "string" } }
+        },
+        "required": ["name", "surface", "description", "required_properties", "consent_required", "server_confirmed", "allowed_properties"]
+      }
+    },
+    "prohibited_fields": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1, "maxLength": 120 }
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,79}$" },
+          "name": { "type": "string", "minLength": 1, "maxLength": 160 },
+          "numerator": { "type": "string", "minLength": 1, "maxLength": 1000 },
+          "denominator": { "type": "string", "minLength": 1, "maxLength": 1000 },
+          "window": { "type": "string", "minLength": 1, "maxLength": 160 },
+          "exclusions": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 500 } },
+          "absent_value": { "const": "no_observations" }
+        },
+        "required": ["id", "name", "numerator", "denominator", "window", "exclusions", "absent_value"]
+      }
+    }
+  },
+  "required": ["schema_version", "privacy", "events", "prohibited_fields", "metrics"]
+}

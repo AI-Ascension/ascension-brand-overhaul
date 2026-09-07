@@ -1,0 +1,188 @@
+{
+  "schema_version": "event-contract-v1",
+  "privacy": {
+    "identifiers": "public_content_id_only",
+    "timestamp_precision": "day_or_minute",
+    "session_state": "optional_consented_coarse_cohort",
+    "retention_days": 90
+  },
+  "events": [
+    {
+      "name": "run_page_view",
+      "surface": "run",
+      "description": "Eligible view of a public run page.",
+      "required_properties": [],
+      "consent_required": false,
+      "server_confirmed": false,
+      "allowed_properties": []
+    },
+    {
+      "name": "media_start",
+      "surface": "watch",
+      "description": "Playback started for media that the manifest declares available.",
+      "required_properties": ["media_kind"],
+      "consent_required": false,
+      "server_confirmed": false,
+      "allowed_properties": ["media_kind"]
+    },
+    {
+      "name": "meaningful_watch_or_read",
+      "surface": "watch",
+      "description": "A documented meaningful watch or read threshold was reached.",
+      "required_properties": ["media_kind"],
+      "consent_required": false,
+      "server_confirmed": false,
+      "allowed_properties": ["media_kind"]
+    },
+    {
+      "name": "decision_presented",
+      "surface": "run",
+      "description": "A reviewed public decision was presented to a visitor.",
+      "required_properties": ["decision_id"],
+      "consent_required": false,
+      "server_confirmed": false,
+      "allowed_properties": ["decision_id"]
+    },
+    {
+      "name": "decision_guess",
+      "surface": "run",
+      "description": "A locally selected option was recorded after consent.",
+      "required_properties": ["decision_id", "option_position"],
+      "consent_required": true,
+      "server_confirmed": false,
+      "allowed_properties": ["decision_id", "option_position"]
+    },
+    {
+      "name": "decision_reveal",
+      "surface": "run",
+      "description": "The recorded public decision was revealed after consent.",
+      "required_properties": ["decision_id", "result_state"],
+      "consent_required": true,
+      "server_confirmed": false,
+      "allowed_properties": ["decision_id", "result_state"]
+    },
+    {
+      "name": "evidence_open",
+      "surface": "evidence",
+      "description": "A visitor opened a public evidence reference after consent.",
+      "required_properties": [],
+      "consent_required": true,
+      "server_confirmed": false,
+      "allowed_properties": []
+    },
+    {
+      "name": "replay_download",
+      "surface": "evidence",
+      "description": "A declared replay package download was requested after consent.",
+      "required_properties": [],
+      "consent_required": true,
+      "server_confirmed": false,
+      "allowed_properties": []
+    },
+    {
+      "name": "build_start",
+      "surface": "build",
+      "description": "A documented developer setup workflow began after consent.",
+      "required_properties": ["workflow"],
+      "consent_required": true,
+      "server_confirmed": false,
+      "allowed_properties": ["workflow"]
+    },
+    {
+      "name": "quickstart_success",
+      "surface": "build",
+      "description": "The server observed a useful quickstart completion.",
+      "required_properties": ["workflow", "status"],
+      "consent_required": true,
+      "server_confirmed": true,
+      "allowed_properties": ["workflow", "status"]
+    },
+    {
+      "name": "docs_error",
+      "surface": "docs",
+      "description": "A coarse documentation error class was observed.",
+      "required_properties": ["error_class"],
+      "consent_required": false,
+      "server_confirmed": false,
+      "allowed_properties": ["error_class", "status"]
+    },
+    {
+      "name": "subscribe_confirmed",
+      "surface": "subscription",
+      "description": "The subscription service confirmed a subscription without emitting the address.",
+      "required_properties": ["status"],
+      "consent_required": true,
+      "server_confirmed": true,
+      "allowed_properties": ["status"]
+    },
+    {
+      "name": "unsubscribe_completed",
+      "surface": "subscription",
+      "description": "The subscription service confirmed an unsubscribe without emitting the address.",
+      "required_properties": ["status"],
+      "consent_required": true,
+      "server_confirmed": true,
+      "allowed_properties": ["status"]
+    }
+  ],
+  "prohibited_fields": [
+    "email", "private_run_id", "raw_prompt", "raw_action_payload", "save", "secret",
+    "token", "ip_address", "full_referrer", "device_fingerprint", "user_agent"
+  ],
+  "metrics": [
+    {
+      "id": "audience-engagement-rate",
+      "name": "Audience engagement rate",
+      "numerator": "meaningful_watch_or_read events",
+      "denominator": "eligible run_page_view events",
+      "window": "calendar week",
+      "exclusions": ["synthetic events", "bots and test traffic", "views without an eligible public content ID"],
+      "absent_value": "no_observations"
+    },
+    {
+      "id": "decision-interaction-rate",
+      "name": "Decision interaction rate",
+      "numerator": "decision_guess plus decision_reveal events",
+      "denominator": "decision_presented events",
+      "window": "calendar week",
+      "exclusions": ["synthetic events", "events without granted consent", "duplicate event IDs"],
+      "absent_value": "no_observations"
+    },
+    {
+      "id": "evidence-inspection-rate",
+      "name": "Evidence inspection rate",
+      "numerator": "evidence_open events",
+      "denominator": "eligible run_page_view events",
+      "window": "calendar week",
+      "exclusions": ["synthetic events", "bots and test traffic"],
+      "absent_value": "no_observations"
+    },
+    {
+      "id": "developer-activation-rate",
+      "name": "Developer activation rate",
+      "numerator": "server-confirmed quickstart_success events",
+      "denominator": "build_start events",
+      "window": "calendar week",
+      "exclusions": ["synthetic events", "client-only success claims", "infrastructure failures"],
+      "absent_value": "no_observations"
+    },
+    {
+      "id": "repeat-engagement-proxy",
+      "name": "Repeat engagement proxy",
+      "numerator": "distinct consented coarse cohort values with an eligible event",
+      "denominator": "not defined as a person-level denominator",
+      "window": "calendar month",
+      "exclusions": ["anonymous sessions without consent", "synthetic events", "fingerprinted identity"],
+      "absent_value": "no_observations"
+    },
+    {
+      "id": "publication-failure-count",
+      "name": "Observed publication or workflow failure count",
+      "numerator": "coarse failed status events",
+      "denominator": "not a conversion rate",
+      "window": "calendar week",
+      "exclusions": ["synthetic events", "game outcomes", "provider or host telemetry"],
+      "absent_value": "no_observations"
+    }
+  ]
+}
