@@ -1,0 +1,25 @@
+{
+  "schema_version": "ai-ascension.authentic-intake-status.v1",
+  "records": [
+    {
+      "public_run_id": "windows-seeded-astra-20260906",
+      "source_reference": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+      "status": "private_intake_schema_valid",
+      "exact_run_timestamp": "not_in_public_report",
+      "rights_review": "pending",
+      "independent_review": "pending",
+      "publication_approval": "absent"
+    },
+    {
+      "public_run_id": "linux-seeded-astra-20260906",
+      "source_reference": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+      "status": "private_intake_schema_valid",
+      "exact_run_timestamp": "not_in_public_report",
+      "rights_review": "pending",
+      "independent_review": "pending",
+      "publication_approval": "absent"
+    }
+  ],
+  "production_outputs_created": false,
+  "limits": "Only published owner reports were read. No private trajectories, binary assets, captures, provider calls or game runtime were accessed. No approval was enrolled."
+}

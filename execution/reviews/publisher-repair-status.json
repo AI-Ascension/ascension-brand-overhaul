@@ -24,14 +24,13 @@
     },
     {
       "finding": "W07-PUB-04",
-      "commit": "3246830efcf17b4dd2ccd321940ef7a1b51b713a",
-      "status": "partial",
-      "remaining": "Approval must explicitly bind the public URI register; syntax and label identity checks do not establish publication rights."
+      "commit": "f33f24bc4222e3f58a5569f71a942e7df10da462",
+      "status": "implemented_pending_independent_recheck"
     },
     {
       "finding": "W07-PUB-05",
-      "status": "open",
-      "remaining": "Trusted approval source, optional field projection, renderer and token approval pins."
+      "status": "implemented_pending_independent_recheck",
+      "commit": "f33f24bc4222e3f58a5569f71a942e7df10da462"
     },
     {
       "finding": "W07-PUB-06",
@@ -53,8 +52,8 @@
     },
     {
       "finding": "W07-MEA-03",
-      "status": "open",
-      "remaining": "Date windows, eligible content registry, bot/test and infrastructure exclusions."
+      "status": "implemented_pending_independent_recheck",
+      "commit": "dad9c8ef8b752ac1da0e93b81766663754c812f8"
     },
     {
       "finding": "W07-MEA-04",
@@ -64,13 +63,28 @@
     },
     {
       "finding": "W07-MEA-05",
-      "status": "open",
-      "remaining": "Trusted event input and verifiable same-start evidence."
+      "status": "implemented_pending_independent_recheck",
+      "commit": "cf5eab1eae34e832a3558c81fec1faa2c89f2a60"
     },
     {
       "finding": "W07-MEA-06",
-      "status": "open",
-      "remaining": "Capability output path, atomicity, and publication classification gates."
+      "status": "implemented_pending_independent_recheck",
+      "commit": "cf5eab1eae34e832a3558c81fec1faa2c89f2a60"
+    },
+    {
+      "finding": "W07-PUB-07",
+      "commit": "5b752cd49c16a5bec32816a09dd93920bb419437",
+      "status": "implemented_pending_independent_recheck"
+    },
+    {
+      "finding": "W07-PUB-08",
+      "commit": "5b752cd49c16a5bec32816a09dd93920bb419437",
+      "status": "implemented_pending_independent_recheck"
+    },
+    {
+      "finding": "W07-PUB-09",
+      "commit": "5b752cd49c16a5bec32816a09dd93920bb419437",
+      "status": "implemented_pending_independent_recheck"
     }
   ],
   "residual_metadata_repairs": {
@@ -78,5 +92,12 @@
     "tests": "tests/test_publication_lineage.py",
     "status": "implemented_pending_independent_recheck"
   },
-  "evidence_limits": "Local regression tests use synthetic records and artificial approval shapes. They do not constitute authority, real artwork, deployment, or public publication approval."
+  "evidence_limits": "Local regression tests use synthetic records and artificial approval shapes. They do not constitute authority, real artwork, deployment, or public publication approval.",
+  "followup_review": "execution/reviews/W07-L-publication-freeze-review.md",
+  "latest_full_suite": {
+    "source_revision": "5b752cd49c16a5bec32816a09dd93920bb419437",
+    "tests": 149,
+    "result": "pass",
+    "log_sha256": "e6a56951aa7d85e39a1e0a5e9b6449e0ec33e6c61c450abf4719258234cdc82c"
+  }
 }
