@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "User authorization for the root image-tool route",
+  "description": "The single explicit user override that permits root-authored image-tool records. It does not attest a named model, backend, native child, or generated output.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "ai-ascension.root-generation-authorization.v1"},
+    "authorization_id": {"const": "root-image-tool-route-20260907"},
+    "authorized_by": {"const": "user"},
+    "authorized_at": {"type": "string", "format": "date"},
+    "authorization_text": {"const": "you can of course generate them images instead."},
+    "scope": {"const": "all_requested_new_artwork"},
+    "author_role_id": {"const": "ROOT"},
+    "tool_name": {"const": "image_gen__imagegen"},
+    "image_model_policy": {"const": "unknown_unless_observed"},
+    "backend_policy": {"const": "unspecified"},
+    "native_agent_attestation": {"const": false},
+    "independent_design_review_required": {"const": true},
+    "exact_prompt_and_output_hashes_required": {"const": true},
+    "evidence_media_generation_prohibited": {"const": true}
+  },
+  "required": [
+    "schema_version",
+    "authorization_id",
+    "authorized_by",
+    "authorized_at",
+    "authorization_text",
+    "scope",
+    "author_role_id",
+    "tool_name",
+    "image_model_policy",
+    "backend_policy",
+    "native_agent_attestation",
+    "independent_design_review_required",
+    "exact_prompt_and_output_hashes_required",
+    "evidence_media_generation_prohibited"
+  ]
+}

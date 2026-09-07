@@ -4,6 +4,7 @@ from pathlib import Path, PurePosixPath
 import hashlib, json, re, sys, os
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from package_inventory import load_json, manifest_errors
+from art_policy import ART_ROLES, LEGACY_ROUTE, ROOT_ROUTE, ROUTES, validate_root_authorization
 
 LOCAL_ONLY_DIRECTORIES={'.git','.execution','.execution-private','.codex','.agents','private','node_modules','.venv','venv','vendor','target','__pycache__','.pytest_cache'}
 
@@ -69,10 +70,39 @@ def validate(root):
     evidence=load(root/'art/evidence-media-registry.json'); references=load(root/'art/reference-registry.json')
     check(len(artwork)==72 and len(evidence)==3 and len(references)==5,'Unexpected visual-resource classification counts.')
     assets=artwork+evidence+references; amap={a['id']:a for a in assets}
+    root_origin=ROUTES.get(ROOT_ROUTE,{}).get('origin')
+    artwork_routes=[]
     for a in artwork:
-        check(a['method']=='generate' and a['generation_model']=='gpt-image-2' and a['prompt_author_model']=='gpt-6-astra',f'Wrong art pipeline: {a["id"]}')
-        check(a['prompt_author_role_id'] in ['W02-C1-BUILD','W02-C2-BUILD'],f'Wrong art author role: {a["id"]}')
+        route=a.get('generation_route')
+        if route is None and a.get('origin')==root_origin:
+            route=ROOT_ROUTE
+        if route is None:
+            route=LEGACY_ROUTE
+        artwork_routes.append(route)
+        spec=ROUTES.get(route) if isinstance(route, str) else None
+        check(spec is not None,f'Unknown art generation route: {a["id"]}')
+        if spec is not None:
+            check(a.get('origin')==spec.get('origin'),f'Wrong art origin for route: {a["id"]}')
+        if route==ROOT_ROUTE:
+            check(a.get('method')=='generate' and a.get('generation_model')=='unknown' and a.get('prompt_author_model')=='unknown',f'Wrong root art pipeline: {a["id"]}')
+            if 'prompt_author_effort' in a: check(a.get('prompt_author_effort')=='unknown',f'Wrong root prompt effort: {a["id"]}')
+            check(a.get('prompt_author_role_id')=='ROOT',f'Wrong root art author role: {a["id"]}')
+        else:
+            check(a.get('method')=='generate' and a.get('generation_model')=='gpt-image-2' and a.get('prompt_author_model')=='gpt-6-astra',f'Wrong art pipeline: {a["id"]}')
+            check(a.get('prompt_author_role_id') in ART_ROLES,f'Wrong art author role: {a["id"]}')
         check(all(e['format']!='svg' for e in a['exports']),f'Native vector art promise: {a["id"]}')
+    if ROOT_ROUTE in artwork_routes:
+        auth_path=root/'art/root-generation-authorization.json'
+        schema_path=root/'schemas/art-generation-authorization.schema.json'
+        check(auth_path.is_file(),'Missing root generation authorization record.')
+        check(schema_path.is_file(),'Missing root generation authorization schema.')
+        if auth_path.is_file():
+            auth_spec=ROUTES[ROOT_ROUTE].get('authorization',{})
+            digest=auth_spec.get('sha256')
+            try:
+                validate_root_authorization(auth_spec.get('path'), digest)
+            except (OSError, KeyError, TypeError, ValueError, UnicodeError) as exc:
+                errors.append('Invalid root generation authorization: '+str(exc))
     for a in evidence:
         check(a['method']=='authentic_capture' and a['generation_prohibited'] is True,f'Unsafe evidence handling: {a["id"]}')
     for a in references:

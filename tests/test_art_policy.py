@@ -55,6 +55,60 @@ class ArtPolicyTests(unittest.TestCase):
     def tearDown(self): self.temp.cleanup()
     def errors(self): return art_policy.validate_generation_record(self.record,self.planned,self.root,self.ledger)
     def test_declared_art_policy_consistency(self): self.assertEqual(self.errors(),[])
+    def root_fixture(self):
+        planned=copy.deepcopy(self.planned)
+        planned['prompt_author_role_id']='ROOT'
+        record=copy.deepcopy(self.record)
+        record.update(generation_route=art_policy.ROOT_ROUTE, author_role_id='ROOT', author_agent_id='root',
+                      author_parent_id=None, author_depth=0, image_model_requested='unknown',
+                      image_model_observed='unknown', image_backend='unspecified',
+                      tool_name='image_gen__imagegen',
+                      author_runtime_evidence_reference='not-applicable:user-authorized-root-route',
+                      image_model_evidence_reference='not-observed:available-image-tool',
+                      user_authorization_reference=art_policy.ROOT_AUTHORIZATION_PATH,
+                      user_authorization_sha256=art_policy.ROOT_AUTHORIZATION['sha256'])
+        for phase in ('requested','accepted','observed'):
+            record[phase+'_author_model']='unknown';record[phase+'_author_effort']='unknown'
+        manifest=copy.deepcopy(self.manifest)
+        manifest.update(generation_route=art_policy.ROOT_ROUTE, origin='root_user_authorized_image_tool',
+                        generation_records=[record])
+        return planned,record,manifest
+
+    def test_authorized_root_route_accepts_without_native_ledger(self):
+        planned,record,manifest=self.root_fixture()
+        self.assertEqual(art_policy.validate_generation_record(record,planned,self.root,None),[])
+        self.assertEqual(validate_assets.verify([planned],[manifest],self.root,None),[])
+        self.assertEqual(validate_assets.verify([planned],[manifest],self.root,{'not':'a native ledger'}),[])
+
+    def test_root_route_requires_canonical_user_authorization(self):
+        planned,record,_=self.root_fixture()
+        record['user_authorization_reference']='art/fake-authorization.json'
+        self.assertTrue(art_policy.validate_generation_record(record,planned,self.root,None))
+        record['user_authorization_reference']=art_policy.ROOT_AUTHORIZATION_PATH
+        record['user_authorization_sha256']='0'*64
+        self.assertTrue(art_policy.validate_generation_record(record,planned,self.root,None))
+
+    def test_root_route_requires_explicit_null_parent(self):
+        planned,record,_=self.root_fixture()
+        del record['author_parent_id']
+        self.assertTrue(art_policy.validate_generation_record(record,planned,self.root,None))
+
+    def test_root_route_rejects_spoofed_model_or_backend(self):
+        planned,record,_=self.root_fixture()
+        for field,value in [('image_model_requested','gpt-image-2'),('image_model_observed','gpt-image-2'),
+                            ('image_backend','openai'),('requested_author_model','gpt-6-astra')]:
+            candidate=copy.deepcopy(record);candidate[field]=value
+            with self.subTest(field=field): self.assertTrue(art_policy.validate_generation_record(candidate,planned,self.root,None))
+
+    def test_root_route_asset_origin_is_checked(self):
+        planned,_,manifest=self.root_fixture()
+        self.assertEqual(validate_assets.verify([planned],[manifest],self.root,None),[])
+        manifest['origin']='astra_authored_gpt_image_2'
+        self.assertTrue(validate_assets.verify([planned],[manifest],self.root,None))
+
+    def test_explicit_legacy_route_remains_valid(self):
+        self.record['generation_route']=art_policy.LEGACY_ROUTE
+        self.assertEqual(self.errors(),[])
     def test_designated_astra_native_chain(self):
         result=agent_ledger.validate_ledger(self.ledger);self.assertEqual(result['astra_author_nodes'],1);self.assertTrue(result['all_models_verified'])
     def test_ordinary_role_cannot_become_astra(self):
@@ -117,7 +171,20 @@ class ArtPolicyTests(unittest.TestCase):
         self.assertTrue(self.errors());self.record['revised_prompt_astra_review_reference']='synthetic-test-only-astra-review';self.assertEqual(self.errors(),[])
     def test_all_art_rows_use_mandated_pipeline(self):
         rows=json.loads((ROOT/'art/asset-registry.json').read_text());self.assertEqual(len(rows),72)
-        self.assertTrue(all(a['method']=='generate' and a['prompt_author_model']=='gpt-6-astra' and a['generation_model']=='gpt-image-2' for a in rows))
+        for asset in rows:
+            route=asset.get('generation_route',art_policy.LEGACY_ROUTE)
+            with self.subTest(asset=asset['id']):
+                self.assertIn(route,art_policy.ROUTES)
+                if route==art_policy.ROOT_ROUTE:
+                    self.assertEqual(asset['method'],'generate')
+                    self.assertEqual(asset['prompt_author_role_id'],'ROOT')
+                    self.assertEqual(asset['prompt_author_model'],'unknown')
+                    self.assertEqual(asset['generation_model'],'unknown')
+                else:
+                    self.assertEqual(asset['method'],'generate')
+                    self.assertIn(asset['prompt_author_role_id'],art_policy.ART_ROLES)
+                    self.assertEqual(asset['prompt_author_model'],'gpt-6-astra')
+                    self.assertEqual(asset['generation_model'],'gpt-image-2')
     def test_evidence_is_not_regenerated(self):
         rows=json.loads((ROOT/'art/evidence-media-registry.json').read_text());self.assertEqual(len(rows),3);self.assertTrue(all(a['generation_prohibited'] for a in rows))
     def test_legacy_is_not_new_brand_art(self):

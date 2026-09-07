@@ -1,15 +1,32 @@
 #!/usr/bin/env python3
-"""Consistency checks for declared Astra -> gpt-image-2 provenance, not runtime attestation."""
+"""Consistency checks for declared artwork provenance, not runtime attestation."""
 from pathlib import Path, PurePosixPath
 import hashlib
 import json
 import re
-from datetime import datetime
+from datetime import date, datetime
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 POLICY = json.loads((ROOT / 'art/generation-policy.json').read_text(encoding='utf-8'))
 ART_ROLES = frozenset(POLICY['art_prompt_author_role_ids'])
+LEGACY_ROUTE = 'astra_gpt_image_2'
+ROOT_ROUTE = 'user_authorized_root_image_tool'
+ROUTES = POLICY.get('generation_routes', {})
+ROOT_ROUTE_SPEC = ROUTES.get(ROOT_ROUTE, {})
+ROOT_AUTHORIZATION = ROOT_ROUTE_SPEC.get('authorization', {})
+ROOT_AUTHORIZATION_PATH = 'art/root-generation-authorization.json'
+ROOT_AUTHORIZATION_ID = 'root-image-tool-route-20260907'
+ROOT_AUTHORIZATION_SHA256 = '230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de'
+
+
+def _unique(pairs):
+    value = {}
+    for key, item in pairs:
+        if key in value:
+            raise ValueError('Duplicate authorization key.')
+        value[key] = item
+    return value
 
 
 def expected_settings(role_id: str) -> tuple[str, str]:
@@ -77,31 +94,93 @@ def validate_alias_evidence(record: dict, root: Path) -> None:
         raise ValueError('Alias capture timestamp needs a timezone.')
 
 
+def validate_root_authorization(reference: str, digest: str) -> None:
+    """Verify the one recorded user override; a self-authored substitute is not enough."""
+    if reference != ROOT_AUTHORIZATION_PATH:
+        raise ValueError('Root image generation needs the canonical user authorization reference.')
+    if ROOT_AUTHORIZATION.get('path') != ROOT_AUTHORIZATION_PATH or ROOT_AUTHORIZATION.get('authorization_id') != ROOT_AUTHORIZATION_ID:
+        raise ValueError('Root image generation policy does not identify the canonical authorization record.')
+    if ROOT_AUTHORIZATION.get('sha256') != ROOT_AUTHORIZATION_SHA256 or digest != ROOT_AUTHORIZATION_SHA256:
+        raise ValueError('Root image generation authorization hash does not match policy.')
+    raw = verify_hash(ROOT, reference, digest, 64 * 1024)
+    value = json.loads(raw, object_pairs_hook=_unique)
+    expected = {
+        'schema_version': 'ai-ascension.root-generation-authorization.v1',
+        'authorization_id': ROOT_AUTHORIZATION_ID,
+        'authorized_by': 'user',
+        'authorization_text': 'you can of course generate them images instead.',
+        'scope': 'all_requested_new_artwork',
+        'author_role_id': 'ROOT',
+        'tool_name': 'image_gen__imagegen',
+        'image_model_policy': 'unknown_unless_observed',
+        'backend_policy': 'unspecified',
+        'native_agent_attestation': False,
+        'independent_design_review_required': True,
+        'exact_prompt_and_output_hashes_required': True,
+        'evidence_media_generation_prohibited': True,
+    }
+    if not isinstance(value, dict) or set(value) != set(expected) | {'authorized_at'}:
+        raise ValueError('Invalid root image generation authorization envelope.')
+    if any(value.get(key) != item for key, item in expected.items()):
+        raise ValueError('Root image generation authorization does not match the recorded user override.')
+    try:
+        captured = date.fromisoformat(value['authorized_at'])
+    except (AttributeError, TypeError, ValueError) as exc:
+        raise ValueError('Root authorization date is invalid.') from exc
+    if captured.isoformat() != value['authorized_at']:
+        raise ValueError('Root authorization date must be an ISO date.')
+
+
 def validate_generation_record(record: dict, planned: dict, root: Path, ledger: dict | None) -> list[str]:
-    """Validate actual file/hash references and declared models. Inspect native logs separately."""
+    """Validate actual file/hash references and route-specific declarations."""
     errors = []
     def check(ok: bool, message: str) -> None:
         if not ok:
             errors.append(message)
+    route = record.get('generation_route', LEGACY_ROUTE)
+    known_route = isinstance(route, str) and route in {LEGACY_ROUTE, ROOT_ROUTE}
+    check(known_route, 'Unknown artwork generation route.')
+    if 'generation_route' in planned:
+        check(planned.get('generation_route') == route, 'Generation route does not match the planned asset.')
     check(record.get('status') == 'verified', 'Generation job is not verified.')
     check(record.get('test_fixture') is False, 'Test/unclassified generation provenance cannot be released.')
     check(record.get('asset_id') == planned['id'], 'Generation asset ID mismatch.')
-    check(record.get('author_role_id') == planned['prompt_author_role_id'], 'Wrong Astra author role for asset.')
-    check(record.get('author_role_id') in ART_ROLES, 'Art prompt author is not a designated Astra leaf.')
-    check(record.get('author_depth') == 3, 'Art author must be a depth-3 leaf.')
-    for phase in ('requested', 'accepted', 'observed'):
-        check(record.get(phase + '_author_model') == 'gpt-6-astra', 'Missing/wrong ' + phase + ' Astra author model.')
-        check(record.get(phase + '_author_effort') == 'max', 'Missing/wrong ' + phase + ' Astra author effort.')
-    check(record.get('image_model_requested') == 'gpt-image-2', 'Artwork must request exactly gpt-image-2.')
-    observed = record.get('image_model_observed')
-    check(observed in POLICY['accepted_resolved_image_model_ids'], 'Unverified or prohibited image backend.')
-    if observed != 'gpt-image-2':
+    if route == LEGACY_ROUTE:
+        check(record.get('author_role_id') == planned['prompt_author_role_id'], 'Wrong Astra author role for asset.')
+        check(record.get('author_role_id') in ART_ROLES, 'Art prompt author is not a designated Astra leaf.')
+        check(record.get('author_depth') == 3, 'Art author must be a depth-3 leaf.')
+        for phase in ('requested', 'accepted', 'observed'):
+            check(record.get(phase + '_author_model') == 'gpt-6-astra', 'Missing/wrong ' + phase + ' Astra author model.')
+            check(record.get(phase + '_author_effort') == 'max', 'Missing/wrong ' + phase + ' Astra author effort.')
+        check(record.get('image_model_requested') == 'gpt-image-2', 'Artwork must request exactly gpt-image-2.')
+        observed = record.get('image_model_observed')
+        check(observed in POLICY['accepted_resolved_image_model_ids'], 'Unverified or prohibited image backend.')
+        if observed != 'gpt-image-2':
+            try:
+                validate_alias_evidence(record, root)
+            except (OSError, KeyError, ValueError, TypeError, UnicodeError) as exc:
+                errors.append('Dated image model alias evidence: ' + str(exc))
+    elif route == ROOT_ROUTE:
+        check(record.get('author_role_id') == 'ROOT', 'Root route requires author role ROOT.')
+        check(record.get('author_agent_id') == 'root', 'Root route requires the root author ID.')
+        check('author_parent_id' in record and record.get('author_parent_id') is None,
+              'Root route requires an explicit null parent agent.')
+        check(record.get('author_depth') == 0, 'Root route author depth must be zero.')
+        for phase in ('requested', 'accepted', 'observed'):
+            check(record.get(phase + '_author_model') == 'unknown', 'Root author model must remain unknown unless observed.')
+            check(record.get(phase + '_author_effort') == 'unknown', 'Root author effort must remain unknown unless observed.')
+        check(record.get('image_model_requested') == 'unknown', 'Root route cannot claim a requested image model.')
+        check(record.get('image_model_observed') == 'unknown', 'Root route cannot claim an observed image model without a policy update.')
+        check(record.get('image_backend') == 'unspecified', 'Root route backend must remain unspecified.')
+        check(record.get('tool_name') == 'image_gen__imagegen', 'Root route must identify image_gen__imagegen.')
         try:
-            validate_alias_evidence(record, root)
+            validate_root_authorization(record['user_authorization_reference'], record['user_authorization_sha256'])
         except (OSError, KeyError, ValueError, TypeError, UnicodeError) as exc:
-            errors.append('Dated image model alias evidence: ' + str(exc))
+            errors.append('User-authorized root route: ' + str(exc))
     for field in ('record_id', 'author_agent_id', 'author_parent_id', 'author_runtime_evidence_reference',
                   'image_model_evidence_reference', 'tool_name', 'tool_execution_reference', 'reviewer_reference', 'created_at'):
+        if field == 'author_parent_id' and route == ROOT_ROUTE:
+            continue
         check(bool(record.get(field)), 'Missing generation provenance: ' + field)
     check(record.get('reviewer_reference') != record.get('author_agent_id'), 'Author cannot independently review their own art.')
     try:
@@ -122,6 +201,9 @@ def validate_generation_record(record: dict, planned: dict, root: Path, ledger: 
                   'Invalid raw output height.')
     except (OSError, KeyError, ValueError, TypeError, UnicodeError) as exc:
         errors.append(str(exc))
+    if route == ROOT_ROUTE:
+        # Root authorship is explicitly user-authorized and has no fabricated native child record.
+        return errors
     if ledger is None:
         errors.append('Native agent ledger is required for artwork acceptance.')
     else:
