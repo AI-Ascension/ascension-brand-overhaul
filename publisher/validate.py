@@ -4,7 +4,6 @@ from __future__ import annotations
 
 from copy import deepcopy
 import hashlib
-import re
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import Any, Iterable
@@ -20,7 +19,7 @@ from .schema import (
     validate_public_projection,
     validate_timeline_schema,
 )
-from .security import checked_path, inspect_artifact_root, reject_forbidden_fields, safe_public_url
+from .security import checked_path, inspect_artifact_root, reject_forbidden_fields, require_approved_text_uris, safe_public_url
 
 
 REQUIRED_APPROVAL_FIELDS = {
@@ -337,21 +336,7 @@ def validate_production_publication(
     projection = project_approved_fields(manifest, approval["allowed_fields"])
     # Escaping does not remove a private URL from visible text. Apply the
     # same register to URL-bearing text in the actual public projection.
-    uri_token = re.compile(r"(?:[A-Za-z][A-Za-z0-9+.-]*://|//|(?<![\w:])/[A-Za-z0-9._~-])[^\s<>\"']*")
-    approved_uris = set(approval["approved_public_uris"])
-    def check_text(value):
-        if isinstance(value, dict):
-            for child in value.values():
-                check_text(child)
-        elif isinstance(value, list):
-            for child in value:
-                check_text(child)
-        elif isinstance(value, str):
-            for match in uri_token.finditer(value):
-                candidate = match.group(0)
-                if candidate not in approved_uris and candidate.rstrip(".,;!?)]}") not in approved_uris:
-                    raise ApprovalError("URL-like text is outside the approved public URI register")
-    check_text(projection)
+    require_approved_text_uris(projection, approval["approved_public_uris"])
     require_registered_approval(approval)
     return validate_public_projection(projection)
 

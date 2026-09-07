@@ -3,11 +3,39 @@
 from __future__ import annotations
 
 import os
+import re
 from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 from urllib.parse import urlsplit
 
-from .errors import SecurityError
+from .errors import ApprovalError, SecurityError
+
+
+def require_approved_text_uris(value: Any, approved_uris: Iterable[str]) -> None:
+    """Check URL-bearing text before it is emitted, including opaque schemes.
+
+    A colon followed by whitespace is ordinary prose. A scheme followed by
+    non-whitespace data is a URI candidate even without the ``//`` spelling.
+    Registered values must also pass the narrower public-link syntax policy.
+    """
+    approved = set(approved_uris)
+    for uri in approved:
+        safe_public_url(uri)
+    token = re.compile(r"(?<![\w+.-])(?:[A-Za-z][A-Za-z0-9+.-]*:(?=[^\s<>\"'])|//|(?<![\w:])/[A-Za-z0-9._~-])[^\s<>\"']*")
+
+    def inspect(child: Any) -> None:
+        if isinstance(child, dict):
+            for nested in child.values():
+                inspect(nested)
+        elif isinstance(child, list):
+            for nested in child:
+                inspect(nested)
+        elif isinstance(child, str):
+            for match in token.finditer(child):
+                candidate = match.group(0)
+                if candidate not in approved and candidate.rstrip(".,;!?)]}") not in approved:
+                    raise ApprovalError("URL-like text is outside the approved public URI register")
+    inspect(value)
 
 
 FORBIDDEN_FIELD_NAMES = {

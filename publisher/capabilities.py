@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import Any, Iterable
 
-from .schema import unique_schema_object, validate_capability_schema
+from .schema import unique_schema_object, validate_capability_schema, validate_instance
 from .security import reject_forbidden_fields, reject_symlink_path, safe_public_url
 
 
@@ -59,6 +59,7 @@ def load_capability_registry(path: str | Path) -> tuple[list[dict[str, Any]], di
     if isinstance(value, list):
         records = value
     elif isinstance(value, dict) and value.get("schema_version") == W01_REGISTRY_SCHEMA:
+        validate_instance(value, "capability-registry.schema.json")
         unknown = sorted(set(value) - W01_REGISTRY_FIELDS)
         if unknown:
             raise ValueError("unknown W01 capability registry fields: " + ", ".join(unknown))

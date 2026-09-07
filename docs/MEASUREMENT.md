@@ -54,6 +54,8 @@ Weekly metrics use `[Monday 00:00 UTC, next Monday 00:00 UTC)`. The cohort proxy
 
 Add `--approval CAPABILITY_APPROVAL.json` only for reviewed public output. A `capability-approval-v1` record binds the SHA-256 of canonical `{"records": validated_sorted_records, "metadata": registry_metadata_or_null}`, the exact renderer digest, and approved source URLs. Every public record needs approved, dated review. The same fixed deployment approval registry used by the run publisher must contain the exact approval digest. The shipped registry remains empty. Evidence kind stays separate from review and release support: an approved offline-test record remains an offline-test record.
 
+An envelope must supply every collection, source, baseline, review-boundary, and claim-policy field with the types in `schemas/capability-registry.schema.json`; partial envelopes fail. The compatibility list form has no collection envelope and displays that limitation on both preview and public pages. Public capability text uses the same URI register checks as run pages, including opaque scheme strings such as `mailto:` and `data:`. Escaped text still needs rights review.
+
 ## Same-start comparison evidence
 
 Exploratory comparisons remain available without a same-start claim. A `same_start` comparison or `same_start_required` rule requires `start_evidence_root` and a per-run `start_evidence` path/digest. The validator reads each bounded, symlink-free `comparison-start-v1` file, verifies its bytes, and compares its game build, source-owned seed digest, and initial-state digest. A matching policy string alone is insufficient. Changed bytes, differing identities, missing files, or a game-build mismatch fail.

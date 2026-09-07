@@ -103,17 +103,11 @@ class MeasurementTests(unittest.TestCase):
         self.assertEqual(result["metrics"]["audience-engagement-rate"]["value"], 1.0)
 
     def test_w01_capability_envelope_preserves_exact_source_ids(self):
+        from tests.capability_envelope_helper import capability_envelope
         source_record = json.loads(CAPABILITY_FIXTURE.read_text(encoding="utf-8"))[0]
         source_record["capability_id"] = "CAP-ORG-POLICY"
-        envelope = {
-            "schema_version": "ai-ascension.capabilities.v1",
-            "collected_at": "2026-09-07",
-            "source_snapshot": "execution/source-snapshot.json",
-            "baseline_package_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
-            "review_boundary": {"independent_reviewer": None},
-            "claim_policy": {"verified_win": False},
-            "capabilities": [source_record],
-        }
+        envelope = capability_envelope([source_record])
+        envelope["source_snapshot"] = "execution/source-snapshot.json"
         with tempfile.TemporaryDirectory() as temp:
             path = Path(temp) / "capabilities.json"
             path.write_text(json.dumps(envelope), encoding="utf-8")

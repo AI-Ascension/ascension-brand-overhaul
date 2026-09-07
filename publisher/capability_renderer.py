@@ -14,7 +14,7 @@ from .capabilities import load_capability_registry, render_capabilities
 from .errors import ApprovalError, PublisherError
 from .publisher import _read_json
 from .schema import validate_instance
-from .security import ensure_separate_output, reject_symlink_path, safe_public_url
+from .security import ensure_separate_output, reject_symlink_path, require_approved_text_uris, safe_public_url
 from .validate import _parse_datetime
 
 
@@ -51,8 +51,11 @@ def render_registry(records_path: Path, output: Path, *, approval_path: Path | N
                 raise ApprovalError('capability source URL is not approved')
         for uri in approval['approved_public_uris']:
             safe_public_url(uri)
+        require_approved_text_uris(records, approval['approved_public_uris'])
         require_registered_approval(approval)
         page = render_capabilities(records)
+    if metadata is None:
+        page = page.replace('<main>', '<main><p>Collection-level source and review details were not supplied with these records.</p>', 1)
     output.parent.mkdir(parents=True, exist_ok=True)
     reject_symlink_path(output)
     descriptor, temporary = tempfile.mkstemp(prefix='.capability-', dir=output.parent)
