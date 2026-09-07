@@ -79,6 +79,20 @@
           "reason"
         ]
       }
+    },
+    "measurement_semantics_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "reporting_mode": {
+      "enum": [
+        "current",
+        "historical"
+      ]
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
     }
   },
   "required": [
@@ -93,6 +107,9 @@
     "public_content_registry_digest",
     "eligible_public_content_ids",
     "server_rules_reference",
-    "excluded_events"
+    "excluded_events",
+    "measurement_semantics_digest",
+    "reporting_mode",
+    "reviewed_at"
   ]
 }

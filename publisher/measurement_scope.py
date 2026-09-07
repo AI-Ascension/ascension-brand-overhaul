@@ -8,11 +8,21 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .canonical import canonical_json
+from .authority import renderer_digest
 from .errors import PublisherError
 from .schema import unique_schema_object, validate_instance
 from .security import reject_symlink_path
 
 REGISTRY_PATH = Path(__file__).resolve().parents[1] / 'config/measurement-authorities.json'
+
+
+def utc_now() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def measurement_semantics_digest(contract: dict) -> str:
+    """Bind metric/privacy definitions and the installed evaluator/schema code."""
+    return hashlib.sha256(canonical_json({'publisher_revision_digest': renderer_digest(), 'event_contract': contract})).hexdigest()
 
 
 def event_stream_digest(events: list[dict]) -> str:
@@ -30,10 +40,12 @@ def parse_time(value: str) -> datetime:
     return result.astimezone(timezone.utc)
 
 
-def require_scope(events: list[dict], receipt: dict | None) -> dict:
+def require_scope(events: list[dict], receipt: dict | None, *, contract: dict, now: datetime | None = None) -> dict:
     if receipt is None:
         raise PublisherError('production metrics require an enrolled upstream scope receipt')
     validate_instance(receipt, 'measurement-scope.schema.json')
+    if receipt['measurement_semantics_digest'] != measurement_semantics_digest(contract):
+        raise PublisherError('measurement receipt semantics revision is stale')
     if receipt['event_stream_digest'] != event_stream_digest(events):
         raise PublisherError('measurement receipt does not match the event stream')
     expected_content_digest = hashlib.sha256(canonical_json(sorted(receipt["eligible_public_content_ids"]))).hexdigest()
@@ -63,6 +75,15 @@ def require_scope(events: list[dict], receipt: dict | None) -> dict:
     week = parse_time(receipt['week_start'])
     month = parse_time(receipt['month_start'])
     through = parse_time(receipt['observed_through'])
+    reviewed = parse_time(receipt['reviewed_at'])
+    current = now or utc_now()
+    if current.tzinfo is None:
+        raise PublisherError('measurement evaluation clock requires timezone')
+    current = current.astimezone(timezone.utc)
+    if through > reviewed or reviewed > current:
+        raise PublisherError('measurement cutoff or receipt review is dated in the future')
+    if receipt['reporting_mode'] == 'current' and (current - reviewed > timedelta(days=1) or current - through > timedelta(days=2)):
+        raise PublisherError('current measurement receipt is stale; use an explicitly reviewed historical receipt')
     if week.weekday() != 0 or any((week.hour, week.minute, week.second, week.microsecond)):
         raise PublisherError('weekly scope must start Monday at midnight UTC')
     if month.day != 1 or any((month.hour, month.minute, month.second, month.microsecond)):
@@ -75,4 +96,4 @@ def require_scope(events: list[dict], receipt: dict | None) -> dict:
     if len(set(excluded_ids)) != len(excluded_ids) or not set(excluded_ids).issubset(known):
         raise PublisherError('scope exclusions contain duplicate or unknown event IDs')
     month_end = month + timedelta(days=calendar.monthrange(month.year, month.month)[1])
-    return {'week_start': week, 'week_end': week + timedelta(days=7), 'month_start': month, 'month_end': month_end, 'observed_through': through}
+    return {'week_start': week, 'week_end': week + timedelta(days=7), 'month_start': month, 'month_end': month_end, 'observed_through': through, 'reviewed_at': reviewed, 'evaluated_at': current}

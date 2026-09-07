@@ -9,8 +9,8 @@ from pathlib import Path
 from typing import Any, Iterable
 
 from .errors import PublisherError
-from .schema import validate_event_contract_schema, validate_event_schema
-from .security import reject_forbidden_fields
+from .schema import unique_schema_object, validate_event_contract_schema, validate_event_schema
+from .security import reject_forbidden_fields, reject_symlink_path
 from .measurement_scope import require_scope
 
 
@@ -19,8 +19,13 @@ CONTRACT_PATH = ROOT / "analytics" / "event-contract.json"
 
 
 def load_event_contract() -> dict[str, Any]:
+    reject_symlink_path(CONTRACT_PATH)
     try:
-        contract = json.loads(CONTRACT_PATH.read_text(encoding="utf-8"))
+        with CONTRACT_PATH.open('rb') as handle:
+            raw = handle.read(1024 * 1024 + 1)
+        if len(raw) > 1024 * 1024:
+            raise PublisherError('event contract exceeds the 1 MiB limit')
+        contract = json.loads(raw, object_pairs_hook=unique_schema_object)
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise PublisherError(f"cannot read event contract: {exc}") from exc
     if not isinstance(contract, dict):
@@ -115,6 +120,7 @@ def aggregate_events(
     *,
     include_synthetic: bool = False,
     scope_receipt: dict[str, Any] | None = None,
+    now: datetime | None = None,
 ) -> dict[str, Any]:
     """Compute scoped production metrics or explicitly unscoped local tests.
 
@@ -140,7 +146,7 @@ def aggregate_events(
     monthly = validated
     scope = {"state": "local_unscoped_test" if include_synthetic else "no_observations"}
     if not include_synthetic and (validated or scope_receipt is not None):
-        bounds = require_scope(unique, scope_receipt)
+        bounds = require_scope(unique, scope_receipt, contract=contract, now=now)
         eligible = set(scope_receipt["eligible_public_content_ids"])
         excluded = {entry["event_id"] for entry in scope_receipt["excluded_events"]}
         qualified = [event for event in validated if event["content_id"] in eligible and event["event_id"] not in excluded and _parse_event_time(event) <= bounds["observed_through"]]
@@ -149,6 +155,8 @@ def aggregate_events(
         scope = {
             "state": "operator_enrolled_upstream_receipt",
             "receipt_id": scope_receipt["receipt_id"],
+            "reporting_mode": scope_receipt["reporting_mode"],
+            "measurement_semantics_digest": scope_receipt["measurement_semantics_digest"],
             **{key: value.isoformat() for key, value in bounds.items()},
             "week_complete": bounds["observed_through"] >= bounds["week_end"],
             "month_complete": bounds["observed_through"] >= bounds["month_end"],
@@ -191,7 +199,7 @@ def aggregate_events(
         "event_count": len(validated) if validated else None,
         "scope": scope,
         "metrics": {
-            metric_id: {"value": value, "state": "no_observations" if value is None else "observed"}
+            metric_id: {"value": value, "state": "no_observations" if value is None else ("historical_observation" if scope.get("reporting_mode") == "historical" else "observed")}
             for metric_id, value in values.items()
         },
     }
