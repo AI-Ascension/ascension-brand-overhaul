@@ -46,3 +46,16 @@ The receipt binds the canonical event stream after exact retry deduplication, an
 Weekly metrics use `[Monday 00:00 UTC, next Monday 00:00 UTC)`. The cohort proxy separately uses `[month start 00:00 UTC, next month start 00:00 UTC)`. Both exclude events beyond the receipt's `observed_through` cutoff. Output declares the exact bounds and whether the week/month was complete at the cutoff; partial windows are not full-period results. All metrics exclude synthetic events, ineligible public content IDs, and the receipt's bot/test/infrastructure exclusions. No eligible observations remain `None`.
 
 `include_synthetic=True` is explicitly `local_unscoped_test`; it exercises calculations without claiming a production reporting window. Empty input without a receipt reports no observations. The package neither enrolls production receipts nor stores or deletes a deployed event stream; the 90-day retention policy remains an operator responsibility.
+
+
+## Capability previews and public outputs
+
+`python3 -m publisher.capability_renderer RECORDS.json OUTPUT.html` creates an explicitly labelled local preview. It refuses output within the input tree, symlink ancestors, and existing destinations. It installs a complete file atomically without replacing an existing file; a failed install removes only its own temporary file. JSON input is bounded to 4 MiB and duplicate object keys fail.
+
+Add `--approval CAPABILITY_APPROVAL.json` only for reviewed public output. A `capability-approval-v1` record binds the SHA-256 of canonical `{"records": validated_sorted_records, "metadata": registry_metadata_or_null}`, the exact renderer digest, and approved source URLs. Every public record needs approved, dated review. The same fixed deployment approval registry used by the run publisher must contain the exact approval digest. The shipped registry remains empty. Evidence kind stays separate from review and release support: an approved offline-test record remains an offline-test record.
+
+## Same-start comparison evidence
+
+Exploratory comparisons remain available without a same-start claim. A `same_start` comparison or `same_start_required` rule requires `start_evidence_root` and a per-run `start_evidence` path/digest. The validator reads each bounded, symlink-free `comparison-start-v1` file, verifies its bytes, and compares its game build, source-owned seed digest, and initial-state digest. A matching policy string alone is insufficient. Changed bytes, differing identities, missing files, or a game-build mismatch fail.
+
+These are comparisons of supplied source-owned start records. The offline tool does not reproduce the initial game state, recover a hidden seed, authenticate a gameplay host, or authorize the records for public release. Source owners must sanitize and review those records; private seed/state hashes can themselves be sensitive. Ranking claims remain disabled, and renderer output continues to disclose comparison context and limitations.

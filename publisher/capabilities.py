@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import Any, Iterable
 
-from .schema import validate_capability_schema
+from .schema import unique_schema_object, validate_capability_schema
 from .security import reject_forbidden_fields, reject_symlink_path, safe_public_url
 
 
@@ -49,7 +49,11 @@ def load_capability_registry(path: str | Path) -> tuple[list[dict[str, Any]], di
     path = raw_path.resolve()
     if not path.is_file():
         raise ValueError(f"capability registry must be a real JSON file: {path}")
-    value = json.loads(path.read_text(encoding="utf-8"))
+    with path.open("rb") as handle:
+        raw = handle.read(4 * 1024 * 1024 + 1)
+    if len(raw) > 4 * 1024 * 1024:
+        raise ValueError("capability registry exceeds the 4 MiB limit")
+    value = json.loads(raw.decode("utf-8"), object_pairs_hook=unique_schema_object)
     reject_forbidden_fields(value)
     metadata: dict[str, Any] | None = None
     if isinstance(value, list):
@@ -108,7 +112,7 @@ def render_capabilities(records: Iterable[dict[str, Any]]) -> str:
     rows = []
     for record in validate_capabilities(records):
         esc = lambda value: html.escape(str(value), quote=True)
-        observed = record["observed_at"] or "No observation date"
+        observed = record.get("observed_at") or "No observation date"
         safe_public_url(record["source_url"])
         rows.append(
             "<tr>"

@@ -6,10 +6,24 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "schema_version": { "const": "comparison-v1" },
-    "comparison_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,119}$" },
-    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
-    "comparison_kind": { "enum": ["same_start", "exploratory"] },
+    "schema_version": {
+      "const": "comparison-v1"
+    },
+    "comparison_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{2,119}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "comparison_kind": {
+      "enum": [
+        "same_start",
+        "exploratory"
+      ]
+    },
     "runs": {
       "type": "array",
       "minItems": 2,
@@ -18,19 +32,80 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "public_run_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,79}$" },
-          "label": { "type": "string", "minLength": 1, "maxLength": 160 },
-          "game_build": { "type": "string", "minLength": 1, "maxLength": 200 },
-          "seed_policy": { "type": "string", "minLength": 1, "maxLength": 1000 },
-          "observation_policy": { "type": "string", "minLength": 1, "maxLength": 1000 },
-          "action_interface": { "type": "string", "minLength": 1, "maxLength": 1000 },
-          "budget": { "type": "string", "minLength": 1, "maxLength": 1000 },
-          "retry_policy": { "type": "string", "minLength": 1, "maxLength": 1000 },
-          "intervention_policy": { "type": "string", "minLength": 1, "maxLength": 1000 }
+          "public_run_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{2,79}$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "game_build": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "seed_policy": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "observation_policy": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "action_interface": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "budget": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "retry_policy": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "intervention_policy": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "start_evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "artifact_path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500
+              },
+              "artifact_digest": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "artifact_path",
+              "artifact_digest"
+            ]
+          }
         },
         "required": [
-          "public_run_id", "label", "game_build", "seed_policy", "observation_policy", "action_interface",
-          "budget", "retry_policy", "intervention_policy"
+          "public_run_id",
+          "label",
+          "game_build",
+          "seed_policy",
+          "observation_policy",
+          "action_interface",
+          "budget",
+          "retry_policy",
+          "intervention_policy"
         ]
       }
     },
@@ -38,27 +113,64 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "same_start_required": { "type": "boolean" },
-        "same_game_build": { "type": "boolean" },
-        "same_seed_policy": { "type": "boolean" },
-        "same_observation_policy": { "type": "boolean" },
-        "same_action_interface": { "type": "boolean" },
-        "same_budget": { "type": "boolean" },
-        "retries_declared": { "type": "boolean" },
-        "interventions_declared": { "type": "boolean" },
-        "ranking_claims_allowed": { "const": false }
+        "same_start_required": {
+          "type": "boolean"
+        },
+        "same_game_build": {
+          "type": "boolean"
+        },
+        "same_seed_policy": {
+          "type": "boolean"
+        },
+        "same_observation_policy": {
+          "type": "boolean"
+        },
+        "same_action_interface": {
+          "type": "boolean"
+        },
+        "same_budget": {
+          "type": "boolean"
+        },
+        "retries_declared": {
+          "type": "boolean"
+        },
+        "interventions_declared": {
+          "type": "boolean"
+        },
+        "ranking_claims_allowed": {
+          "const": false
+        }
       },
       "required": [
-        "same_start_required", "same_game_build", "same_seed_policy", "same_observation_policy",
-        "same_action_interface", "same_budget", "retries_declared", "interventions_declared", "ranking_claims_allowed"
+        "same_start_required",
+        "same_game_build",
+        "same_seed_policy",
+        "same_observation_policy",
+        "same_action_interface",
+        "same_budget",
+        "retries_declared",
+        "interventions_declared",
+        "ranking_claims_allowed"
       ]
     },
     "limitations": {
       "type": "array",
       "minItems": 1,
-      "items": { "type": "string", "minLength": 1, "maxLength": 1000 },
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      },
       "maxItems": 100
     }
   },
-  "required": ["schema_version", "comparison_id", "title", "comparison_kind", "runs", "rules", "limitations"]
+  "required": [
+    "schema_version",
+    "comparison_id",
+    "title",
+    "comparison_kind",
+    "runs",
+    "rules",
+    "limitations"
+  ]
 }

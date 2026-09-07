@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed capability publication approval",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "approval_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{2,159}$"
+    },
+    "authority_reference": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "approved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "renderer_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "approved_public_uris": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 1000,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 2000
+      }
+    },
+    "revoked": {
+      "type": "boolean"
+    },
+    "schema_version": {
+      "const": "capability-approval-v1"
+    },
+    "operation": {
+      "const": "publish_capabilities"
+    },
+    "content_classification": {
+      "const": "approved_public"
+    }
+  },
+  "required": [
+    "approval_id",
+    "authority_reference",
+    "approved_at",
+    "expires_at",
+    "source_digest",
+    "renderer_digest",
+    "approved_public_uris",
+    "revoked",
+    "schema_version",
+    "operation",
+    "content_classification"
+  ]
+}

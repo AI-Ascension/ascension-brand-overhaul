@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "comparison-start-v1"
+    },
+    "game_build": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "seed_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "initial_state_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_reference": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    }
+  },
+  "required": [
+    "schema_version",
+    "game_build",
+    "seed_digest",
+    "initial_state_digest",
+    "source_reference"
+  ]
+}
