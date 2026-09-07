@@ -39,15 +39,18 @@
           "model": "gpt-5.6-luna",
           "reasoningEffort": "max"
         },
-        "accepted": null,
-        "observed": {
-          "nativeAgentId": null,
-          "parentNativeAgentId": null,
-          "model": null,
-          "reasoningEffort": null
+        "accepted": {
+          "model": "gpt-5.6-luna",
+          "reasoningEffort": "max"
         },
-        "status": "unverified",
-        "evidence": "The child session does not expose trustworthy native identity metadata."
+        "observed": {
+          "nativeAgentId": "01a07a53-0521-7673-b4fd-15921bfaa4b8",
+          "parentNativeAgentId": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+          "model": "gpt-5.6-luna",
+          "reasoningEffort": "max"
+        },
+        "status": "verified",
+        "evidence": "Root supplied the actual native thread and parent IDs from the installed-client runtime snapshot."
       },
       {
         "roleId": "W02-C1",
