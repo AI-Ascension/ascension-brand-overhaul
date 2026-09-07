@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import html
+import hashlib
+from pathlib import Path
 from typing import Any
 
 from .security import safe_public_url
@@ -36,6 +38,8 @@ def _status(manifest: dict[str, Any]) -> tuple[str, str]:
 def render_html(manifest: dict[str, Any]) -> str:
     """Render one manifest using only static templates and escaped values."""
 
+    tokens = (Path(__file__).resolve().parents[1] / 'brand/tokens.css').read_text(encoding='utf-8')
+    token_digest = hashlib.sha256(tokens.encode('utf-8')).hexdigest()
     _, status_label = _status(manifest)
     evidence = manifest["evidence"]
     source = manifest["source"]
@@ -61,15 +65,16 @@ def render_html(manifest: dict[str, Any]) -> str:
             f"<td>{_text(decision['floor']) if decision['floor'] is not None else '—'}</td>"
             f"<td>{_text(state)}</td>"
             f"<td>{choices}</td>"
-            f"<td>{_text(decision['chosen_action']) if decision['chosen_action'] is not None else 'Unavailable'}</td>"
-            f"<td>{_text(decision['observed_consequence']) if decision['observed_consequence'] is not None else 'Unavailable'}</td>"
-            f"<td>{explanation}</td>"
+            '<td><details class="decision-result"><summary>Reveal recorded result</summary><dl>'
+            f"<dt>Recorded action</dt><dd>{_text(decision['chosen_action']) if decision['chosen_action'] is not None else 'Unavailable'}</dd>"
+            f"<dt>Consequence</dt><dd>{_text(decision['observed_consequence']) if decision['observed_consequence'] is not None else 'Unavailable'}</dd>"
+            f"<dt>Explanation provenance</dt><dd>{explanation}</dd></dl></details></td>"
             "</tr>"
         )
     timeline_body = (
-        "<table><thead><tr><th>Step</th><th>Floor</th><th>Observed state</th><th>Legal choices</th>"
-        "<th>Recorded action</th><th>Consequence</th><th>Explanation provenance</th></tr></thead>"
-        f"<tbody>{''.join(rows)}</tbody></table>"
+        '<div class="timeline-scroll" role="region" aria-label="Decision timeline table" tabindex="0"><table><thead><tr><th>Step</th><th>Floor</th><th>Observed state</th><th>Legal choices</th>'
+        "<th>Recorded result</th></tr></thead>"
+        f"<tbody>{''.join(rows)}</tbody></table></div>"
         if rows
         else "<p class=\"unavailable\">Decision timeline unavailable.</p>"
     )
@@ -89,6 +94,7 @@ def render_html(manifest: dict[str, Any]) -> str:
             f"<fieldset><legend>What should the agent do?</legend>{''.join(options)}</fieldset>"
             "<details><summary>Reveal the recorded decision</summary>"
             f"<p>{_text(first['chosen_action']) if first['chosen_action'] is not None else 'Unavailable'}</p>"
+            f"<p>{_text(first['observed_consequence']) if first['observed_consequence'] is not None else 'Consequence unavailable'}</p>"
             "</details></section>"
         )
     else:
@@ -112,15 +118,18 @@ def render_html(manifest: dict[str, Any]) -> str:
         "<!doctype html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
         f"<title>{_text(manifest['title'])} · AI Ascension</title>"
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
+        f'<meta name="ai-ascension-token-sha256" content="{token_digest}">'
         "<style>"
-        ":root{color-scheme:light dark;--paper:#f6f0e4;--ink:#211f1a;--amber:#a86620;--muted:#706b61}"
+        f"{tokens}"
+        ":root{--paper:var(--aa-color-surface-page);--ink:var(--aa-color-text-primary);--amber:var(--aa-color-accent-text);--muted:var(--aa-color-text-secondary)}"
         "body{margin:0;padding:2rem;max-width:72rem;margin-inline:auto;font:16px/1.5 system-ui,sans-serif;background:var(--paper);color:var(--ink)}"
         "a{color:var(--amber)}main{display:grid;gap:1.5rem}section{border:1px solid color-mix(in srgb,var(--ink) 20%,transparent);padding:1rem;border-radius:.4rem}"
         ".eyebrow{color:var(--amber);font-weight:700;letter-spacing:.08em;text-transform:uppercase}.unavailable{color:var(--muted)}"
         ".notice{border-left:.35rem solid var(--amber);padding:.65rem 1rem;background:color-mix(in srgb,var(--amber) 12%,transparent)}"
-        "table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{border-bottom:1px solid color-mix(in srgb,var(--ink) 20%,transparent);padding:.5rem;text-align:left;vertical-align:top}"
+        "table{border-collapse:collapse;width:100%;min-width:40rem;font-size:.92rem}th,td{border-bottom:1px solid color-mix(in srgb,var(--ink) 20%,transparent);padding:.5rem;text-align:left;vertical-align:top}"
         "fieldset{display:grid;gap:.5rem;border:0;padding:0}details{margin-top:1rem}small{color:var(--muted)}"
-        "@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}@media (max-width:50rem){body{padding:1rem;overflow-wrap:anywhere}table{display:block;overflow:auto;white-space:normal}}"
+        ".timeline-scroll{overflow:auto}main,section{min-width:0}body{overflow-wrap:anywhere}:focus-visible{outline:3px solid var(--aa-color-focus);outline-offset:3px}"
+        "@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}@media (max-width:50rem){body{padding:1rem}table{white-space:normal}}"
         "</style></head><body><main>"
         f"<header><p class=\"eyebrow\">AI Ascension · Run report</p><h1>{_text(manifest['title'])}</h1>"
         f"<p class=\"notice\"><strong>{_text(status_label)}</strong> · Outcome: {_text(manifest['outcome'])}</p></header>"
@@ -150,8 +159,7 @@ def render_html(manifest: dict[str, Any]) -> str:
         f"<ul>{source_refs}</ul>"
         f"<p>Decision card: {_text(manifest['decision_card']['status'])}"
         f"{(' · ' + _text(manifest['decision_card']['asset_id']) + ' · ' + _text(manifest['decision_card']['artifact_digest'])) if manifest['decision_card']['status'] == 'available' else ''}</p></section>"
-        f"<section><h2>Decision timeline</h2>{timeline_body}</section>"
-        f"{guess_html}{case_html}"
+        f"{guess_html}<section><h2>Decision timeline</h2>{timeline_body}</section>{case_html}"
         f"<section><h2>Disclosures</h2><ul>{disclosures}</ul></section>"
         "</main></body></html>\n"
     )

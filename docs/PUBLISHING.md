@@ -105,3 +105,5 @@ victory fixture cannot be rendered as a model-earned win because production
 publication rejects the fixture classification entirely.
 
 Input JSON is bounded to 4 MiB and rejects duplicate keys. Both input and output paths reject symlink ancestors before resolution. This check does not replace source-owner review of the sanitized values.
+
+Generated pages embed the canonical `brand/tokens.css` and record its SHA-256 in a meta field. Both timeline results and the local guess consequence remain behind explicit reveal controls. The scrollable timeline is keyboard-focusable; its wider table preserves mobile readability. This is a functional HTML interface, not generated decision-card artwork.
