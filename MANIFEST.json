@@ -29,7 +29,7 @@
     {
       "path": "PACKAGE_STATS.json",
       "bytes": 1046,
-      "sha256": "4e9bb1b73308955c7c0db8e585b1b486fc27ba0de25ebcd10473d8b3493ce0c6"
+      "sha256": "5393f7667ad1320da7d1845392794c684c9aa1dd17b6843fb31e549b12a98dfa"
     },
     {
       "path": "PACKAGE_VALIDATION.json",
@@ -710,6 +710,11 @@
       "path": "execution/reviews/W03-handoff-inventory-review.md",
       "bytes": 6211,
       "sha256": "2710058c316b68d1538205238e01b28917d6bfa8fbea16014f35ab732e7e799b"
+    },
+    {
+      "path": "execution/reviews/W03-handoff-repair-rereview.md",
+      "bytes": 4643,
+      "sha256": "54b4286df7878358d6a8e58ae34efb9318d7fb420b2eec4a1584225f28c9a616"
     },
     {
       "path": "execution/reviews/W03-precommit-review-001.json",
@@ -1803,8 +1808,8 @@
     },
     {
       "path": "scripts/render_handoff.py",
-      "bytes": 9699,
-      "sha256": "8c5965b71d8b15b7e44fea31f9e39933d5591fcf9841d24e5d3388d45e6194cf"
+      "bytes": 9870,
+      "sha256": "f4d77c03a5a31836489f42f9379e8e279555de34d238215bbc2a1bcb229c2386"
     },
     {
       "path": "scripts/review_subscription_http.py",
@@ -1993,8 +1998,8 @@
     },
     {
       "path": "tests/test_handoff.py",
-      "bytes": 6072,
-      "sha256": "8ddcf6d6ca92283f3436083cc8b8b20e85e81467ed054c2c00f0f70bebdee3b2"
+      "bytes": 6944,
+      "sha256": "402b95b2d8c20cd5a29e0858a9145a5d79adf3bc7588e78a13709c1e8d7771cf"
     },
     {
       "path": "tests/test_marketing_experiments.py",

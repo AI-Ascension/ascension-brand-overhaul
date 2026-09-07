@@ -7,9 +7,9 @@ import json
 from pathlib import Path
 
 
-def read(root, name):
+def read(root, name, include_bytes=False):
     path = root / name
-    if path.is_symlink() or not path.resolve().is_relative_to(root.resolve()):
+    if path.is_symlink() or any(parent.is_symlink() for parent in path.parents) or not path.resolve().is_relative_to(root.resolve()):
         raise ValueError('Unsafe ledger path: ' + name)
     if not path.is_file():
         raise ValueError('Ledger must be a regular file: ' + name)
@@ -24,7 +24,8 @@ def read(root, name):
                 raise ValueError('Duplicate ledger key: ' + key)
             result[key] = value
         return result
-    return json.loads(raw, object_pairs_hook=unique)
+    value = json.loads(raw, object_pairs_hook=unique)
+    return (value, raw) if include_bytes else value
 
 
 def validate_release(value):
@@ -124,8 +125,8 @@ def render(root, require_release=False):
               'Run `python3 scripts/validate_package.py` and `python3 -m unittest discover -s tests` for package checks. Product and host validation are separate. Follow `docs/OPERATIONS.md` and `docs/ROLLBACK.md`; consult `execution/root-helper-checks.json`, `execution/toolchain.json`, and independent review records for the exact tested scope.', '',
               'Art authorship and image route: `execution/art-model-attestation.json`. Source claims: `execution/source-snapshot.json` and `execution/capabilities.json`. This report does not grant deployment, rename, merge, private-publication or campaign authority.', '',
               '## Input digests', '', '| Ledger | SHA-256 |', '| --- | --- |']
-    for name in ['data/requirements.json', 'execution/requirements-status.json', 'art/asset-registry.json', 'brand/asset-manifest.json', 'execution/operations.json'] + (['execution/release-status.json'] if release_present else []) + [name for name in ['execution/source-snapshot.json', 'execution/source-tree-inventory.json'] if (root / name).is_file()]:
-        lines.append(f'| {name} | {hashlib.sha256((root / name).read_bytes()).hexdigest()} |')
+    for name in ['data/requirements.json', 'execution/requirements-status.json', 'art/asset-registry.json', 'brand/asset-manifest.json', 'execution/operations.json'] + (['execution/release-status.json'] if release_present else []) + [name for name in ['execution/source-snapshot.json', 'execution/source-tree-inventory.json'] if (root / name).exists() or (root / name).is_symlink()]:
+        lines.append(f'| {name} | {hashlib.sha256(read(root, name, include_bytes=True)[1]).hexdigest()} |')
     return '\n'.join(lines) + '\n'
 
 

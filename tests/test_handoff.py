@@ -107,6 +107,18 @@ class HandoffTests(unittest.TestCase):
                 else: path.symlink_to(root/'missing.json')
                 with self.assertRaises(ValueError): handoff.render(root)
 
+    def test_optional_source_digest_inputs_use_safe_bounded_json_reader(self):
+        for kind in ['external_symlink','oversized','non_json','directory','dangling']:
+            with self.subTest(kind=kind), tempfile.TemporaryDirectory() as tmp, tempfile.TemporaryDirectory() as outside:
+                root=Path(tmp); self.fixture(root); path=root/'execution/source-tree-inventory.json'
+                if kind=='external_symlink':
+                    target=Path(outside)/'source.json'; target.write_text('{}'); path.symlink_to(target)
+                elif kind=='oversized': path.write_bytes(b' '*(4*1024*1024+1))
+                elif kind=='non_json': path.write_text('not JSON')
+                elif kind=='directory': path.mkdir()
+                else: path.symlink_to(root/'missing.json')
+                with self.assertRaises(ValueError): handoff.render(root)
+
 
 if __name__ == '__main__':
     unittest.main()
