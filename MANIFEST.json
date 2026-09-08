@@ -2162,6 +2162,11 @@
       "sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690"
     },
     {
+      "path": "docs/CODING_STANDARDS.md",
+      "bytes": 1941,
+      "sha256": "cf7e70a560f87ebd92382e8c1734691a63fa49e14079c4d472e16c77499a6f07"
+    },
+    {
       "path": "docs/GITHUB_PRESENTATION.md",
       "bytes": 2818,
       "sha256": "c9ae03dc8b55d2d3d1537175383b087428c3abfdb082c5ea1bb9f44c0443647e"
