@@ -32,17 +32,26 @@ def main():
                           lambda match: match[1] + payload + match[2], board, count=1, flags=re.S)
     if count != 1:
         raise ValueError('Catalog data anchor missing')
-    board_path.write_text(board)
     sources = json.loads((ROOT / 'brand/provenance/root-generation-index.json').read_text())['records']
     formats = Counter(export['format'] for row in manifest for export in row['exports'])
     statuses = Counter(row['status'] for row in manifest)
     raster_count = sum(formats[name] for name in ('png', 'webp', 'jpeg', 'jpg'))
+    notice = (f'{len(registry)} artwork families · 3 authentic evidence-media families · 5 historical/reference records. '
+              f'{len(sources)} preserved generated sources; {sum(formats.values())} planned export files exist. '
+              f'{statuses["verified"]} families verified; {statuses["blocked"]} still require approved content or integration. '
+              'Root generation is user-authorized. Model/backend identity remains unknown.')
+    board, count = re.subn(r'(<p class="notice">).*?(</p>)',
+                          lambda match: match[1] + notice + match[2], board, count=1, flags=re.S)
+    if count != 1:
+        raise ValueError('Catalog notice anchor missing')
+    board_path.write_text(board)
     lines = [
         '# Artwork access and execution status', '',
         'Updated ' + datetime.now(timezone.utc).isoformat() + '. The user authorized root generation with the available image tool; see [the recorded amendment](../art/root-generation-authorization.json).', '',
-        f'{len(sources)} actual generated masters are preserved with exact prompts, input references and SHA-256 hashes. {raster_count} raster exports and {formats["html"]} functional HTML exports exist. Asset-family states: ' + ', '.join(f'{count} {state}' for state, count in sorted(statuses.items())) + '.', '',
+        f'{len(sources)} generated sources, including superseded attempts, are preserved with exact prompts, input references and SHA-256 hashes. {raster_count} raster exports, {formats["webm"]} WebM transition and {formats["html"]} functional HTML exports exist. Asset-family states: ' + ', '.join(f'{count} {state}' for state, count in sorted(statuses.items())) + '.', '',
         'The full requirement remains 72 families and 115 exports. Verified artwork means the scoped generation, source-use and export review passed; it does not authorize public distribution.', '',
-        'The image service rejected CAST-01, CAST-02 and CAST-03 with HTTP 429 `usage_limit_reached`. Remaining creative generation is blocked on service capacity; the recorded reset is 2026-09-14T02:55:51Z. See [failure receipt](../execution/reviews/root-image-service-limit.json).', '',
+        'Image access resumed after the historical service-limit failures. See the [successful access observation](../execution/reviews/root-image-access-restored.json) and the subsequent source/export records. The [earlier failure receipt](../execution/reviews/root-image-service-limit.json) is retained as history, not a current capacity blocker.', '',
+        'A file can exist while its asset brief remains incomplete. Blank campaign layouts are preparatory templates; they do not supply approved episode outcomes, challenge rules, release facts or contributor permissions. The transition has separate mechanical and local-browser receipts, not live broadcast proof.', '',
         'The image backend and root author model remain unknown. The original native agent hierarchy is a separate unmet requirement. Generated artwork is not gameplay or provider evidence. The press approval registry remains empty.', '',
         '| Family | Current status | Existing exports | Remaining gate |',
         '| --- | --- | ---: | --- |',

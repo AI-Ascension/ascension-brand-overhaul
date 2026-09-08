@@ -15,7 +15,7 @@
         64
       ],
       "output_path": "brand/assets/identity/mark.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "f2179261ad9b0b17a679838fd6ba4cb521966bf61816be4d9ca8c4e53be036f9",
       "output_sha256": "df78cf0b82c61e56e519785e399b1412bb3fb228cf5006febabee8471bf3656c",
       "output_bytes": 4437,
@@ -25,7 +25,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-01",
@@ -41,7 +42,7 @@
         64
       ],
       "output_path": "brand/assets/identity/mark-mono.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "f2179261ad9b0b17a679838fd6ba4cb521966bf61816be4d9ca8c4e53be036f9",
       "output_sha256": "4f3a2e91d0bc420a658de9b41d4c33898fef5ae898c80facb5db151c6b0e7ec1",
       "output_bytes": 4487,
@@ -51,7 +52,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-02",
@@ -67,7 +69,7 @@
         220
       ],
       "output_path": "brand/assets/identity/ai-ascension-light.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "3a71c24c0dd6d26e5bcb35fdc00edbd76e16f9d9827754a6f7f099852bb76a5b",
       "output_sha256": "a712a91d522f7e89c612e813f8fd6b84125ddcd2e31bc4c18f655b6c89a55c76",
       "output_bytes": 201607,
@@ -77,7 +79,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-02",
@@ -93,7 +96,7 @@
         220
       ],
       "output_path": "brand/assets/identity/ai-ascension-dark.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "3a71c24c0dd6d26e5bcb35fdc00edbd76e16f9d9827754a6f7f099852bb76a5b",
       "output_sha256": "3ec535ff647ece972c6bd9590f6b61f3e9859ac361e002240c79f53874d2b35d",
       "output_bytes": 198982,
@@ -103,7 +106,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-03",
@@ -119,7 +123,7 @@
         220
       ],
       "output_path": "brand/assets/identity/ascension-light.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "44277b3a0ec36dc112720aae4c1b8195378deb4aee4951c3e9acc2bb6d3b3500",
       "output_sha256": "688d3ef3d73d9bc62a14ea77e9f9b845c0d7e85a974d42e46935dee3e3d2a9b5",
       "output_bytes": 183974,
@@ -129,7 +133,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-03",
@@ -145,7 +150,7 @@
         220
       ],
       "output_path": "brand/assets/identity/ascension-dark.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "44277b3a0ec36dc112720aae4c1b8195378deb4aee4951c3e9acc2bb6d3b3500",
       "output_sha256": "7623c76492838ff2f947ea23b3bf4c599ecd67b9800f3617592246f56603bd8a",
       "output_bytes": 180603,
@@ -155,7 +160,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-04",
@@ -171,7 +177,7 @@
         400
       ],
       "output_path": "brand/assets/identity/the-climb-master.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "a09ba42d43372ad1c0461e4feb9b75bf604f76cadda2e5dbcb2ee4670028d80c",
       "output_sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156",
       "output_bytes": 387844,
@@ -181,7 +187,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-04",
@@ -197,7 +204,7 @@
         400
       ],
       "output_path": "brand/assets/identity/the-climb.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "a09ba42d43372ad1c0461e4feb9b75bf604f76cadda2e5dbcb2ee4670028d80c",
       "output_sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156",
       "output_bytes": 387844,
@@ -207,7 +214,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-05",
@@ -223,7 +231,7 @@
         1024
       ],
       "output_path": "brand/assets/identity/avatar-1024.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "355c6f50d4263e7a6b04ad2e6ddaf6b5d33ec346e2e4b8e98c69548053632445",
       "output_sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
       "output_bytes": 614142,
@@ -233,7 +241,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-05",
@@ -249,7 +258,7 @@
         256
       ],
       "output_path": "brand/assets/identity/avatar-256.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "355c6f50d4263e7a6b04ad2e6ddaf6b5d33ec346e2e4b8e98c69548053632445",
       "output_sha256": "585eeb86eab23f06b6b4d7e606b56b6b00cb0037496d991ec2624da8c52b7d4e",
       "output_bytes": 45423,
@@ -259,7 +268,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-06",
@@ -275,7 +285,7 @@
         64
       ],
       "output_path": "brand/assets/identity/favicon.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
       "output_sha256": "b94d0ea4f03cc73d0459426e61b3977ab7bb609d9902a4ecbb59a640244a95ea",
       "output_bytes": 4301,
@@ -285,7 +295,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-06",
@@ -301,7 +312,7 @@
         32
       ],
       "output_path": "brand/assets/identity/favicon-32.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
       "output_sha256": "dbb3bef4fed5398a7fa1b53981f5b9473e4bcdfa3f5ea52b26d9c3261279cccb",
       "output_bytes": 1646,
@@ -311,7 +322,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-06",
@@ -327,7 +339,7 @@
         16
       ],
       "output_path": "brand/assets/identity/favicon-16.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
       "output_sha256": "256b18b8a6c79286b824e06fd8095019da7bb1df39ef282ee2471f7c202421f9",
       "output_bytes": 648,
@@ -337,7 +349,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-06",
@@ -353,7 +366,7 @@
         180
       ],
       "output_path": "brand/assets/identity/apple-touch-icon.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
       "output_sha256": "902a544011f7314bce6e0f46027409f0895aff07ab964a85a82c62a002bbe019",
       "output_bytes": 26272,
@@ -363,7 +376,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-07",
@@ -379,7 +393,7 @@
         1024
       ],
       "output_path": "brand/assets/identity/icons.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "0fcc0b9f244470de56c70d04be1fc6dcb3e976b5aaf19a695026d952aa3524ab",
       "output_sha256": "6ae239eb3b509b77ce00cafaad5cc9b5edce93b4c09e68b417e25cb44780bc09",
       "output_bytes": 712577,
@@ -389,7 +403,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "ID-08",
@@ -405,7 +420,7 @@
         2000
       ],
       "output_path": "brand/assets/identity/specimen.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "28f9343f13307ea672db605c2021cf362d9c054ad93b3412f470638009103766",
       "output_sha256": "97272f6704cda951761eb97c9027b001dd41d072f7242e4ccd9b572733aee49e",
       "output_bytes": 2258107,
@@ -415,7 +430,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "BG-01",
@@ -431,7 +447,7 @@
         1600
       ],
       "output_path": "brand/assets/illustration/ascent-master.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
       "output_sha256": "4545652f3e1026e9d14e052ddb02720119e899bcc80c14ec6d46adb6134bba5d",
       "output_bytes": 4362145,
@@ -441,7 +457,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "BG-02",
@@ -457,7 +474,7 @@
         1440
       ],
       "output_path": "brand/assets/illustration/broadcast-master.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "5be7e3b68f65d6ec31860984521390091d7cc0496d1f2280ed04cc524add5ead",
       "output_sha256": "b9ef900991511a3edb9f8356ca491215110b6149ba1412ff8930fdc094f3c9ec",
       "output_bytes": 2774396,
@@ -467,7 +484,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "BG-03",
@@ -483,7 +501,7 @@
         2160
       ],
       "output_path": "brand/assets/illustration/series-master.png",
-      "review_state": "ready_for_mechanical_export",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "0ff4f0492163d0e95ac0a0055aef38991ec1096a3a2f9cd58b26634b77395c66",
       "output_sha256": "e41579d621bea4eb6e1c1abbd47cd7ebbaa72544481eb6b69f33f64cb90aefbb",
       "output_bytes": 4653353,
@@ -493,7 +511,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
     },
     {
       "asset_id": "BG-04",
@@ -509,7 +528,7 @@
         800
       ],
       "output_path": "brand/assets/illustration/route-pattern-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "cc9ed221dc45860d95c834d30149b599fa096b251033b365a8c16d207f888edd",
       "output_sha256": "a53db565da2872984b547f8c0bd6b3a721774aa0de9470a7692dbd18c0c5497d",
       "output_bytes": 22767,
@@ -519,7 +538,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "BG-04",
@@ -535,7 +555,7 @@
         800
       ],
       "output_path": "brand/assets/illustration/route-pattern-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "befa470557a3abb70fd1dd3bf5745cdba7076f33b9437ae3a119fddaf63c8039",
       "output_sha256": "91b5b230f3658ad034b94e0e60272a9b3308b5501714603d19991b5945f2fbd9",
       "output_bytes": 346674,
@@ -545,7 +565,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "WEB-01",
@@ -561,7 +582,7 @@
         1000
       ],
       "output_path": "brand/assets/web/home-desktop.webp",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
       "output_sha256": "58b2dde67a37aa71292acc306ad43f9aeea80cd9ff557b275a631990fd3cad19",
       "output_bytes": 111128,
@@ -576,7 +597,8 @@
         "lossless": false,
         "quality": 86,
         "method": 6
-      }
+      },
+      "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json"
     },
     {
       "asset_id": "WEB-01",
@@ -592,7 +614,7 @@
         1000
       ],
       "output_path": "brand/assets/web/home-mobile.webp",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
       "output_sha256": "9f5c58f090c29eb235acc66fce55ae5888eaff99b16e5636e8e261e97c65efb9",
       "output_bytes": 47376,
@@ -607,7 +629,8 @@
         "lossless": false,
         "quality": 86,
         "method": 6
-      }
+      },
+      "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json"
     },
     {
       "asset_id": "WEB-02",
@@ -623,7 +646,7 @@
         900
       ],
       "output_path": "brand/assets/web/latest-run-poster.webp",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "3bff30fbf01cbd531a9a58a42b77beda1d04b4fb07ef88a34815c7295e57373b",
       "output_sha256": "95ed105e415a6aa7a3c076a4dfc414ce9e93a61a349e3504cde3680b4b614c28",
       "output_bytes": 1412322,
@@ -633,7 +656,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-02",
@@ -649,7 +673,7 @@
         1200
       ],
       "output_path": "brand/assets/web/latest-run-poster-mobile.webp",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "09b8448d5b0d921390ea310e2ad1323f3e8b6ecb9e0ece3a6edaba74239e03e5",
       "output_sha256": "b4dc73d00d308e4365a984a9aa74f20aa6308e5db8f97db171bdb542c3877204",
       "output_bytes": 1098978,
@@ -659,7 +683,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-03",
@@ -675,7 +700,7 @@
         500
       ],
       "output_path": "brand/assets/web/path-watch.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "efd8646759aeb0c176bcde3eb6b449e0e9f4defd3ec5154a576d6d261b715e86",
       "output_sha256": "cbfdd6b79a0cfca7f43c741d5fb962a95476389cd9fa9deae388667d00b125fa",
       "output_bytes": 266136,
@@ -685,7 +710,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-03",
@@ -701,7 +727,7 @@
         500
       ],
       "output_path": "brand/assets/web/path-build.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "efd8646759aeb0c176bcde3eb6b449e0e9f4defd3ec5154a576d6d261b715e86",
       "output_sha256": "082a5514431c9c4f89c04517ee3f12c8050e61e3a82e8a58ec8c8934b87fab24",
       "output_bytes": 256831,
@@ -711,7 +737,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-04",
@@ -727,7 +754,7 @@
         630
       ],
       "output_path": "brand/assets/web/site-og.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "a296dd381e0fabe451b533d60b24357908970f1e61be4c1befff56e4c5ad2e5b",
       "output_sha256": "684ca219c6f4bfbdbc976a7a6fabd07571ef05f801942a635ff1e4b5c940c937",
       "output_bytes": 991951,
@@ -737,7 +764,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-05",
@@ -753,7 +781,7 @@
         600
       ],
       "output_path": "brand/assets/web/404.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "0598f68e066ac15767d24d3e1d547d2ec19a17576d3e9fc97431575434dbe3f0",
       "output_sha256": "20708d150db81489c53e4153b1c8273175b4265324c8d2ca293d6aeafd1190bd",
       "output_bytes": 316246,
@@ -763,7 +791,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-05",
@@ -779,7 +808,7 @@
         600
       ],
       "output_path": "brand/assets/web/unavailable.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "0598f68e066ac15767d24d3e1d547d2ec19a17576d3e9fc97431575434dbe3f0",
       "output_sha256": "1b2388061f132853235dfe54a65d56a306d1100ac61f8f684dac419bd94dc7d2",
       "output_bytes": 282605,
@@ -789,7 +818,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-06",
@@ -805,7 +835,7 @@
         300
       ],
       "output_path": "brand/assets/web/subscribe-confirm.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "a3dded6f46a32d0fcdb2f45224a3565748bbea1a6a2b19b9dd6bf622aadd0173",
       "output_sha256": "9b29588a0746cc43ff563d4eb60074e5b18afc271f43c3162a7eeb3941ecfb72",
       "output_bytes": 91526,
@@ -815,7 +845,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-06",
@@ -831,7 +862,7 @@
         300
       ],
       "output_path": "brand/assets/web/subscribe-success.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "a3dded6f46a32d0fcdb2f45224a3565748bbea1a6a2b19b9dd6bf622aadd0173",
       "output_sha256": "1859fff07e055ac8291de414d445045164f2bd71af85bcc58e078a416707c0a8",
       "output_bytes": 96924,
@@ -841,7 +872,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-07",
@@ -857,7 +889,7 @@
         900
       ],
       "output_path": "brand/assets/web/capabilities.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "4a091df54539ac8b95c6e7edabd7f4d502e8bc12836f4767bff6c5bb4d786f45",
       "output_sha256": "5f58ef856ab6eaeb5ee0f784b79893ea947861aa855f004e909735c5a6e88661",
       "output_bytes": 1165512,
@@ -867,7 +899,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-08",
@@ -883,7 +916,7 @@
         960
       ],
       "output_path": "brand/assets/web/map-preview.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "2c2c9f3d0c2d57c8de90ac340ba849b84f437d13fb1440d72a3cb0a79fea2b50",
       "output_sha256": "0e9723738c99e12fcb90d820c7fa580debccc495c6a8e5dbf836216a3c3ac010",
       "output_bytes": 1253360,
@@ -893,7 +926,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "WEB-08",
@@ -909,7 +943,7 @@
         1200
       ],
       "output_path": "brand/assets/web/map-preview-mobile.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "1ae5c9bfd6d6b7bdcd68069bc558ebc90483a728e0ac402f3dab1ed8d820ba60",
       "output_sha256": "e8120038a768a50ff208dbb93027afcb38288136c24400d18231a64cd228bf96",
       "output_bytes": 1009070,
@@ -919,7 +953,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "RUN-01",
@@ -935,7 +970,7 @@
         630
       ],
       "output_path": "brand/assets/run/summary-template.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "258c5237705b0384531552c5ea8bd9b2ab27a6ce20c9041766ba654a952b9579",
       "output_sha256": "bfce85dd8894e2a5f030b02f3b1eb2c3b91b63e90235e58f52a9d879d2fd6215",
       "output_bytes": 634425,
@@ -945,7 +980,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "RUN-02",
@@ -961,7 +997,7 @@
         630
       ],
       "output_path": "brand/assets/run/decision-landscape.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "72bb09ff9e071529e50665bef37a8fa55dbd27c5750ffb35330f9c987e6dddc6",
       "output_sha256": "0d71b2965863d98a6d089a866484fd239df052839b25486f6ae374588423446c",
       "output_bytes": 739767,
@@ -971,7 +1007,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "RUN-02",
@@ -987,7 +1024,7 @@
         1920
       ],
       "output_path": "brand/assets/run/decision-vertical.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "f0d07c6648cbd75be128e265be9bbd17b3de4aa39f6f1dd34721832b6ac2c946",
       "output_sha256": "3b9eaa4c73bb5d67c8e19a4e138ad7aebc95364f012b7a352efdac478e41d534",
       "output_bytes": 1819945,
@@ -997,7 +1034,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "RUN-04",
@@ -1013,7 +1051,7 @@
         630
       ],
       "output_path": "brand/assets/run/replay-receipt.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "21cb55f1fe882a1185129b25e90c79c68ea6ea5b1c39e333d85745e382374ca6",
       "output_sha256": "5c08997cdf34f5e86b13e58a9a17fa279583a42c209d8218c6e5b3e1ba3e69b0",
       "output_bytes": 523673,
@@ -1023,7 +1061,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "RUN-05",
@@ -1039,7 +1078,7 @@
         900
       ],
       "output_path": "brand/assets/run/comparison-template.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "b014c353cde347d51d52486473ae2d32f9e60bdaee932d0186d14db75aef0c6d",
       "output_sha256": "b66fe8206d3dd85cca32229df6a2b81b61467b1df63c485f329ccd991c27b224",
       "output_bytes": 999250,
@@ -1049,7 +1088,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
     },
     {
       "asset_id": "CAST-01",
@@ -1065,7 +1105,7 @@
         1080
       ],
       "output_path": "brand/assets/broadcast/single-agent-master.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "48073d0090c2a19b6bd16c2754b6f4c93c87b89b8d00615e54cffe3f9b01fa60",
       "output_sha256": "fd01d6e933c9ac70cc57a8864a088cee37523bf3396d3a7d81f0527bf17c3525",
       "output_bytes": 536102,
@@ -1075,7 +1115,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-002.json"
     },
     {
       "asset_id": "CAST-01",
@@ -1091,7 +1132,7 @@
         1080
       ],
       "output_path": "brand/assets/broadcast/single-agent.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "48073d0090c2a19b6bd16c2754b6f4c93c87b89b8d00615e54cffe3f9b01fa60",
       "output_sha256": "fd01d6e933c9ac70cc57a8864a088cee37523bf3396d3a7d81f0527bf17c3525",
       "output_bytes": 536102,
@@ -1101,7 +1142,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-002.json"
     },
     {
       "asset_id": "CAST-02",
@@ -1117,7 +1159,7 @@
         1080
       ],
       "output_path": "brand/assets/broadcast/comparison.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "d53c75f3f92053ce1e2bfe22463994023f23a25faac0a4c8e446f87e368a9883",
       "output_sha256": "12c34b01f2eed2b74de8fa912f2e1ca77fd6f6ff3db92af76815e3f9dfee448d",
       "output_bytes": 1577047,
@@ -1127,7 +1169,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "CAST-03",
@@ -1143,7 +1186,7 @@
         1920
       ],
       "output_path": "brand/assets/broadcast/vertical.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "97001e70df9bd682e479cd6bd5ab8516f34627c03942569b24c9c8bfe1ae0b68",
       "output_sha256": "1113cb2f0acaf792cb0c906adaa9c710c71a76f4f8fb71e42e85d23f481eca67",
       "output_bytes": 1624885,
@@ -1153,7 +1196,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "CAST-04",
@@ -1169,7 +1213,7 @@
         1080
       ],
       "output_path": "brand/assets/broadcast/starting.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "54b3608cb8f18a2900408c6a167cb86d447988fa186801c92489a27156b115f5",
       "output_sha256": "ccd3249241fd6eeb70eab7e4513e30d23218bb56c5e3d95242349839a990e51d",
       "output_bytes": 1936207,
@@ -1179,7 +1223,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "CAST-04",
@@ -1195,7 +1240,7 @@
         1080
       ],
       "output_path": "brand/assets/broadcast/intermission.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "1953f62b204d5271ce925b99c633b94550b4df0da17e75fe6f45ebc7d71bb821",
       "output_sha256": "6131f348bef85a10d3ca01c8c7771884fa040a5ed41aa464385b3e26159b0627",
       "output_bytes": 1888178,
@@ -1205,7 +1250,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "CAST-04",
@@ -1221,7 +1267,7 @@
         1080
       ],
       "output_path": "brand/assets/broadcast/ended.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "cb3803bfedc118dff8b9eb76e31e4820390f9de93f3f3bdb76fa33a6a581558a",
       "output_sha256": "3662012f72595f83b1a1f9e79e880f61da2e3a8fb92a53f54db83ec9084bc50c",
       "output_bytes": 2025154,
@@ -1231,7 +1277,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "CAST-05",
@@ -1247,7 +1294,7 @@
         240
       ],
       "output_path": "brand/assets/broadcast/lower-third.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "a8b85c64ee68215ffc08868717cd6ce454eea331b0f0df493a44c6f5b5b69936",
       "output_sha256": "08c958d5150d346c1c0f0dd04cdca751782d8ec1faa7c4b4622ed2fac735ffe4",
       "output_bytes": 265275,
@@ -1257,7 +1304,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "CAST-05",
@@ -1273,7 +1321,7 @@
         160
       ],
       "output_path": "brand/assets/broadcast/disclosure.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "1e89c4c22c6c1ff1cfa7b0f14281dfd74477f33c01e833baa3a62b133299b17a",
       "output_sha256": "1c5c086b194de6ea31305b2537bc80c10592c40d2901a591f366f877951ca185",
       "output_bytes": 168183,
@@ -1283,7 +1331,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "CAST-06",
@@ -1299,7 +1348,7 @@
         1080
       ],
       "output_path": "brand/assets/broadcast/title-transition-still.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
       "output_sha256": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
       "output_bytes": 2101919,
@@ -1309,7 +1358,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W03-root-motion-browser-review.json"
     },
     {
       "asset_id": "CAST-07",
@@ -1325,7 +1375,7 @@
         1000
       ],
       "output_path": "brand/assets/broadcast/scene-map.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "c8ff0614acccd038616c3366d4aa00b0b0fb5b0248c49b6c277cc08521c01aad",
       "output_sha256": "8800ac444036d13e1adeb0ac267e6e47a4119c0b77f8622e70b490e463b2c9df",
       "output_bytes": 1771781,
@@ -1335,7 +1385,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-003.json"
     },
     {
       "asset_id": "MKT-01",
@@ -1351,7 +1402,7 @@
         1440
       ],
       "output_path": "brand/assets/marketing/channel-cover.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "09a3d51821fae5e547d28b38d5dd76ca732b16339d4a3957961134d3d56851f2",
       "output_sha256": "023491553c11d7a0818078cea54792624759d8304ca09615202f6655f76e50ad",
       "output_bytes": 3196417,
@@ -1361,7 +1412,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-003.json"
     },
     {
       "asset_id": "MKT-02",
@@ -1377,7 +1429,7 @@
         500
       ],
       "output_path": "brand/assets/marketing/social-header.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "3a655b4159aa12366230cb2d62717ae1cc4721d1a909733c5f2642e3b23bea27",
       "output_sha256": "9e1b6fe616ac131f82d6575dc9e0484c90cb0b3737d6e1ccefbf3161b4b9eb59",
       "output_bytes": 784856,
@@ -1387,7 +1439,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "MKT-08",
@@ -1403,7 +1456,7 @@
         400
       ],
       "output_path": "brand/assets/marketing/sponsor-disclosure.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "0db5aab96b0f1fb3b280d4844a6bbcad32f219ed29064b9827e430d45eb5c172",
       "output_sha256": "2e0fc88e4537c06e1ced719db635b3ba59a3c545020760220c712ba67178d593",
       "output_bytes": 323213,
@@ -1413,7 +1466,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
     },
     {
       "asset_id": "MKT-09",
@@ -1429,7 +1483,7 @@
         900
       ],
       "output_path": "brand/assets/press/cover.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "25d7f052d3bab7a5c95e42be5af7ae78e9968f5b4b70899af952e4814ef0ee8f",
       "output_sha256": "e7ad9b62ae162030c1209ddc1b9e92e026b9a3c5a56485b4065eb3ea2360bece",
       "output_bytes": 1299065,
@@ -1439,7 +1493,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-01-B",
@@ -1455,7 +1510,7 @@
         400
       ],
       "output_path": "brand/assets/github/ascension-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "563f20121f9e152e3010fd83cc3a79050cfbba41980f6b44fb7769e6b393ec46",
       "output_sha256": "c2f24f7bf4eae6b2b50736088b2df83257f1a5666e9b5d115971f008fc78b65d",
       "output_bytes": 476116,
@@ -1465,7 +1520,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-01-B",
@@ -1481,7 +1537,7 @@
         400
       ],
       "output_path": "brand/assets/github/ascension-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "563f20121f9e152e3010fd83cc3a79050cfbba41980f6b44fb7769e6b393ec46",
       "output_sha256": "f5eb3f64caa8df7c2cc8b2a4b5acbd11fccffdc585c4e26165eb8d11d1b407c3",
       "output_bytes": 494354,
@@ -1491,7 +1547,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-02-B",
@@ -1507,7 +1564,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-mcp-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "27131ee8f51d7ddccd93c6fba06c222c07814cabf8e62034802cad3356758837",
       "output_sha256": "19980d6bb29f50d4fb3dd3710204eed912abb799eea23ea9294b9e2413f36fd1",
       "output_bytes": 499616,
@@ -1517,7 +1574,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-02-B",
@@ -1533,7 +1591,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-mcp-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "27131ee8f51d7ddccd93c6fba06c222c07814cabf8e62034802cad3356758837",
       "output_sha256": "0f3042eb591f85693e5a894412fa01c65865864a8c7df212d562a2d6f8f321ae",
       "output_bytes": 500508,
@@ -1543,7 +1601,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-03-B",
@@ -1559,7 +1618,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-mod-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "7069e316c754b83d7bf334cde14d51beefa70dda0fe3b7a57327ce2508d04a38",
       "output_sha256": "bd096c78cf5d13d001d86498619d90fd2e06d3b05e92549150866b9a9027a853",
       "output_bytes": 478997,
@@ -1569,7 +1628,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-03-B",
@@ -1585,7 +1645,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-mod-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "7069e316c754b83d7bf334cde14d51beefa70dda0fe3b7a57327ce2508d04a38",
       "output_sha256": "80a48e2cb815bed1ad30a66885bc1d880c1933fa45317db0f6656c6e32265a4c",
       "output_bytes": 502824,
@@ -1595,7 +1655,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-04-B",
@@ -1611,7 +1672,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-core-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "30464a2745bce742136dd1dacb7820c6bbbf973f8c389bdf6af0cd89a0192b0d",
       "output_sha256": "291ffca0cb7cd52f633996c2dba36ee666701bbd84b9ff452c6db2b82d376711",
       "output_bytes": 532711,
@@ -1621,7 +1682,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
     },
     {
       "asset_id": "GH-04-B",
@@ -1637,7 +1699,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-core-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "30464a2745bce742136dd1dacb7820c6bbbf973f8c389bdf6af0cd89a0192b0d",
       "output_sha256": "b00139bf53bdc944080a4ccb411cf93d7324eefc4d04735e085d93cca4f5cd7b",
       "output_bytes": 504923,
@@ -1647,7 +1709,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
     },
     {
       "asset_id": "GH-05-B",
@@ -1663,7 +1726,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-gateway-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "13a8fe6fea68488641d19433b6fd57418f353c32f9577acc6caa1965e4a23f59",
       "output_sha256": "271495529cdc677514cb1ed34a07febf0552e1d01f596128982a9671ca798d3e",
       "output_bytes": 472370,
@@ -1673,7 +1736,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-05-B",
@@ -1689,7 +1753,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-gateway-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "13a8fe6fea68488641d19433b6fd57418f353c32f9577acc6caa1965e4a23f59",
       "output_sha256": "ef858eff4df99ec3556dc6fedbded21411e8997055e0d6db369dc48aa90d5bc4",
       "output_bytes": 492639,
@@ -1699,7 +1763,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-06-B",
@@ -1715,7 +1780,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-protocol-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "b1f4a768036f8077541845c3330bd74aaf7a6d26a9c6e54fcbb692896c46639b",
       "output_sha256": "24515459ec22bdc35441f9fabe22c7787fd600943cc3b2b1f49d89defa70caea",
       "output_bytes": 470739,
@@ -1725,7 +1790,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-06-B",
@@ -1741,7 +1807,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-protocol-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "b1f4a768036f8077541845c3330bd74aaf7a6d26a9c6e54fcbb692896c46639b",
       "output_sha256": "a3c06d6c8c81419a819b40b3aa9ceff3fbfd5f2be6286197726c2da1518b6b9e",
       "output_bytes": 487213,
@@ -1751,7 +1817,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-07-B",
@@ -1767,7 +1834,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-map-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "cec7b917be0659c3f078354d6149f7afd9a19ce6fb740a4ac7fbfeeea5358748",
       "output_sha256": "236dee4961306c1022f7656bfe85859f367e65cdc8da4e575bbac5ec1516560b",
       "output_bytes": 470577,
@@ -1777,7 +1844,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-07-B",
@@ -1793,7 +1861,7 @@
         400
       ],
       "output_path": "brand/assets/github/sts2-map-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "cec7b917be0659c3f078354d6149f7afd9a19ce6fb740a4ac7fbfeeea5358748",
       "output_sha256": "5be0a00277f864f08fa0d5c0fb30bf7fc48daf79999772d04efcb19e4bac845f",
       "output_bytes": 482060,
@@ -1803,7 +1871,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-08-B",
@@ -1819,7 +1888,7 @@
         400
       ],
       "output_path": "brand/assets/github/ascension-watchdog-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "6cd1ff58a4d74413841dcf19d3d57c61a0a19ffb2f9ebd0e0c3d7d191906f661",
       "output_sha256": "929d2b281551ec3fb3a312869fde5f5400a896125c8b373cfb5cee93b021c8da",
       "output_bytes": 524066,
@@ -1829,7 +1898,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-08-B",
@@ -1845,7 +1915,7 @@
         400
       ],
       "output_path": "brand/assets/github/ascension-watchdog-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "6cd1ff58a4d74413841dcf19d3d57c61a0a19ffb2f9ebd0e0c3d7d191906f661",
       "output_sha256": "c6938080ee7f35dbefe105795416ba0d288c3ffa6aa11daf32a6cc2a87e2b94b",
       "output_bytes": 535612,
@@ -1855,7 +1925,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-09-B",
@@ -1871,7 +1942,7 @@
         400
       ],
       "output_path": "brand/assets/github/ascension-observability-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "793b7f31a029cdbfa563a4f0e10d3ed05b464a9abf19a83c36ca970dca632978",
       "output_sha256": "8558e3faa70faf9f30e404f234362bfc31578b3027e832c889f891255ef06dd0",
       "output_bytes": 473770,
@@ -1881,7 +1952,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-09-B",
@@ -1897,7 +1969,7 @@
         400
       ],
       "output_path": "brand/assets/github/ascension-observability-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "793b7f31a029cdbfa563a4f0e10d3ed05b464a9abf19a83c36ca970dca632978",
       "output_sha256": "ee711d8be1e2516046f5de826018c84f43245381988d415aa770fb9125d978fe",
       "output_bytes": 487184,
@@ -1907,7 +1979,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-10-B",
@@ -1923,7 +1996,7 @@
         400
       ],
       "output_path": "brand/assets/github/website-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "3c66d1f75be878c60efdc63c5e3895a4b6fa66012e69faa23d219879bd64b804",
       "output_sha256": "7e7812b280c1a585fccdf6e12ebf7669bf3f87322e2546b9023962510685d3ef",
       "output_bytes": 491555,
@@ -1933,7 +2006,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-10-B",
@@ -1949,7 +2023,7 @@
         400
       ],
       "output_path": "brand/assets/github/website-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "3c66d1f75be878c60efdc63c5e3895a4b6fa66012e69faa23d219879bd64b804",
       "output_sha256": "85bae86b7ff211815d72915e44cac08f2697449a8f2ddb0fa7f65e038f640346",
       "output_bytes": 507160,
@@ -1959,7 +2033,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-11-B",
@@ -1975,7 +2050,7 @@
         400
       ],
       "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "26c6bbd74ed963a75d9567bfd61da5eaf1998fc272b7563a29c17ada0fab54e2",
       "output_sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
       "output_bytes": 484449,
@@ -1985,7 +2060,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-11-B",
@@ -2001,7 +2077,7 @@
         400
       ],
       "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "26c6bbd74ed963a75d9567bfd61da5eaf1998fc272b7563a29c17ada0fab54e2",
       "output_sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
       "output_bytes": 493866,
@@ -2011,7 +2087,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-12-B",
@@ -2027,7 +2104,7 @@
         400
       ],
       "output_path": "brand/assets/github/dot-github-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "67b9f49f0348fbf5ce07f122555397b3b1c520b6587f0121b4b13e038cd3f951",
       "output_sha256": "0fefcf2a46bc3e717c48d7ab2b3396f0add1c6e3733c9d5b51189d7af54a06da",
       "output_bytes": 478204,
@@ -2037,7 +2114,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-12-B",
@@ -2053,7 +2131,7 @@
         400
       ],
       "output_path": "brand/assets/github/dot-github-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "67b9f49f0348fbf5ce07f122555397b3b1c520b6587f0121b4b13e038cd3f951",
       "output_sha256": "a8a93a5fa92f75874a698a2267ebc6afdc9e22817e9954cc0c0bc5c5351890ba",
       "output_bytes": 507080,
@@ -2063,7 +2141,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-13-B",
@@ -2079,7 +2158,7 @@
         400
       ],
       "output_path": "brand/assets/github/ascension-brand-overhaul-banner-light.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "05fd26518e3a2b60a9c42834212759073c602bb23b0ae704ff9776a77950db8d",
       "output_sha256": "1db5dc0abca2ddabde9cc53a2f8470dafa1f9a05302c3e56792e0007ed67f44a",
       "output_bytes": 484497,
@@ -2089,7 +2168,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-13-B",
@@ -2105,7 +2185,7 @@
         400
       ],
       "output_path": "brand/assets/github/ascension-brand-overhaul-banner-dark.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "05fd26518e3a2b60a9c42834212759073c602bb23b0ae704ff9776a77950db8d",
       "output_sha256": "498b508094cad76579868c2f11ce4252720868a199df073232d48724bd15a653",
       "output_bytes": 498159,
@@ -2115,7 +2195,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "GH-01-S",
@@ -2131,7 +2212,7 @@
         640
       ],
       "output_path": "brand/assets/github/ascension-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "ff0402ed51100dd01685ef943829e27d8f8784b9ff7c07e54975463661960c2d",
       "output_sha256": "4f3c2dbca0788ea2a9e2f74b4387383f59fcbfc252e35c4db7115c90d7fc2998",
       "output_bytes": 681400,
@@ -2141,7 +2222,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-02-S",
@@ -2157,7 +2239,7 @@
         640
       ],
       "output_path": "brand/assets/github/sts2-mcp-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "b1f199aa55da55caefe4125a201cc01744535ff8ca316ec3e7b3113bf7fe9500",
       "output_sha256": "00dac35788b25a4210958f6216924cd9c084a69f666f7f0e2469d9c041ded479",
       "output_bytes": 529971,
@@ -2167,7 +2249,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-03-S",
@@ -2183,7 +2266,7 @@
         640
       ],
       "output_path": "brand/assets/github/sts2-mod-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "cd505c9fa109205a70868f5893c8bae85b9b782c094821c4c5e2548db9d289ba",
       "output_sha256": "df89ed6c0c664624bd5bff965faf2ca5d779348de614d10d8aea1dc469506b4f",
       "output_bytes": 545817,
@@ -2193,7 +2276,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-04-S",
@@ -2209,7 +2293,7 @@
         640
       ],
       "output_path": "brand/assets/github/sts2-core-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "4005947aaa7f549991c3d93591486eeead620f7c8600a9193fd3d055fc04d823",
       "output_sha256": "8da8e7771fd7c9b4daf1dd9404bcdc6280e172a9e7b9396fd10300849aebca30",
       "output_bytes": 516176,
@@ -2219,7 +2303,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-05-S",
@@ -2235,7 +2320,7 @@
         640
       ],
       "output_path": "brand/assets/github/sts2-gateway-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "3a0474ec35ae8573bd9f8c02129ae9c919c8bf219e739c37d379be667c7b3824",
       "output_sha256": "882bd6cc0ac0054e5741aa360db8afb9edceee62d1c4b481fb5bf94c56d6a042",
       "output_bytes": 517642,
@@ -2245,7 +2330,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-06-S",
@@ -2261,7 +2347,7 @@
         640
       ],
       "output_path": "brand/assets/github/sts2-protocol-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "28b4de748ea4a66019732ae91fcf1d38db22909da96afee1b937fd1c25148608",
       "output_sha256": "166fe7a07add61ce3aca17d98df6a154def9d524a7679d027c3bcee84e03d85d",
       "output_bytes": 518785,
@@ -2271,7 +2357,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-07-S",
@@ -2287,7 +2374,7 @@
         640
       ],
       "output_path": "brand/assets/github/sts2-map-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "6ddd28b9700dcf3eca9bc4f41be8ea596a9b41080e824b8b6ce5fc05c5848f23",
       "output_sha256": "91a284c776755c0bf60e6ce1d98d7969530c445d46a9da5dfb0690c2e4f114ea",
       "output_bytes": 528359,
@@ -2297,7 +2384,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-08-S",
@@ -2313,7 +2401,7 @@
         640
       ],
       "output_path": "brand/assets/github/ascension-watchdog-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "1fdb9a892c3fca77569fc2db3a45749310c2921a18a29698f14f6cc9984f0e8b",
       "output_sha256": "ec27376fff226765c17e8a01649146dcd8a9a67910476893524bc0cdb1e9330e",
       "output_bytes": 519773,
@@ -2323,7 +2411,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-09-S",
@@ -2339,7 +2428,7 @@
         640
       ],
       "output_path": "brand/assets/github/ascension-observability-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "dc2fe0260b78021e1b15d90e5a52e8b63aafdf119fdc52b652963e7defe0b821",
       "output_sha256": "8aae147c380341b43c8d19cefd77d9360cd3daa30f2930cbee43ff64f2a9d81f",
       "output_bytes": 572211,
@@ -2349,7 +2438,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-10-S",
@@ -2365,7 +2455,7 @@
         640
       ],
       "output_path": "brand/assets/github/website-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "f78fe20a776514843f74e98186f82184f87c6c9c3188a61fe05ab5955673d255",
       "output_sha256": "c5357c11202ea84b36cb8199164446d1cef9f80ff8e466454b05c499909aa708",
       "output_bytes": 527199,
@@ -2375,7 +2465,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-11-S",
@@ -2391,7 +2482,7 @@
         640
       ],
       "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "f2aa0badedbb21b8c7a76939a9c0c9f313630e32da2fdf91ca7f5b35c6379fc8",
       "output_sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
       "output_bytes": 634582,
@@ -2401,7 +2492,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-12-S",
@@ -2417,7 +2509,7 @@
         640
       ],
       "output_path": "brand/assets/github/dot-github-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "02f67c6c61b512af430234ea1552fede23635a4b2cbb8cdf0752390b4b03d6a1",
       "output_sha256": "0da06e15e3b0303e8eb3480a20890be2adb18dd00802afb0efccf3ba596f6687",
       "output_bytes": 537687,
@@ -2427,7 +2519,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "GH-13-S",
@@ -2443,7 +2536,7 @@
         640
       ],
       "output_path": "brand/assets/github/ascension-brand-overhaul-social.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "2d17eea1e9a6d97b426524cbf3bece7a1b9e2abe4d3f2b6a651dc2a749e3b194",
       "output_sha256": "6ff079d6cc932cdf6d23ba215454aad895ec3f1b96179d45412799cdd93d59df",
       "output_bytes": 525500,
@@ -2453,7 +2546,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
     },
     {
       "asset_id": "DOC-01",
@@ -2469,7 +2563,7 @@
         900
       ],
       "output_path": "brand/assets/docs/runtime-architecture-master.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "e2ad345db954da5eba9f44aa720731bb64f2e1b1e148006833cb1db8de34f450",
       "output_sha256": "db23c43c05670633ec167958299e053bf255fa80bb25e8e65f08fcd233ed7ec1",
       "output_bytes": 1564556,
@@ -2479,7 +2573,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "DOC-01",
@@ -2495,7 +2590,7 @@
         1350
       ],
       "output_path": "brand/assets/docs/runtime-architecture.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "e2ad345db954da5eba9f44aa720731bb64f2e1b1e148006833cb1db8de34f450",
       "output_sha256": "d2bd5e0d3c9792e08670d3063a6e7cffa6834ce088620af36259fe3514762dcc",
       "output_bytes": 2871957,
@@ -2505,7 +2600,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "DOC-02",
@@ -2521,7 +2617,7 @@
         1000
       ],
       "output_path": "brand/assets/docs/publication-flow.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "40868a5332821dea008ace6b85e58bc92d6f8c4a865986ea57eeb37dabfcf36e",
       "output_sha256": "dbbf22ac0f93cd8e7fae941410929df9f770dd5efea0d4f8c4921928864d912b",
       "output_bytes": 1382588,
@@ -2531,7 +2627,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "DOC-03",
@@ -2547,7 +2644,7 @@
         1200
       ],
       "output_path": "brand/assets/docs/repository-map.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "94700818b4c6e5f6c94c2fa05ec61bb0f12fc135e997ab8c6d0c06b2663e1541",
       "output_sha256": "e60bdcb8670d89ea8efe7afad1c125f2d9a1bd1d9a92ac10cdb853dd04432afe",
       "output_bytes": 1436902,
@@ -2557,7 +2654,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "DOC-04",
@@ -2573,7 +2671,7 @@
         1400
       ],
       "output_path": "brand/assets/docs/agent-tree.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "baca141fe42d9d092289fbea733e23c2ff91e03b2e41361e234c04bb4cbd376d",
       "output_sha256": "51bc5e3ca0f0f17342576bbf3a609999ac05fea84c205d6b846a5b78c1d5fb08",
       "output_bytes": 2492004,
@@ -2583,7 +2681,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "DOC-05",
@@ -2599,7 +2698,7 @@
         900
       ],
       "output_path": "brand/assets/docs/contributor-path.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "aef2eff2579c4fab5b394c8425658fbf2c78977860aedf77793ba8d3d997488a",
       "output_sha256": "178fc6fe16418b33996207e2d9450b2ab991359bf4fc30b0db8661321e97d170",
       "output_bytes": 795557,
@@ -2609,7 +2708,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "RUN-01",
@@ -2625,7 +2725,7 @@
         1080
       ],
       "output_path": "brand/assets/run/summary-template-square.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "a99d9be17c87fe0a4d63fd60aa26f11c5f99e15f335360660221182666643050",
       "output_sha256": "a0ad2f7a55bef8e4e44d8a4e318b56dd10c65dc24717e9309cfbf772c1f5e9f6",
       "output_bytes": 770425,
@@ -2635,7 +2735,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "RUN-02",
@@ -2651,7 +2752,7 @@
         1080
       ],
       "output_path": "brand/assets/run/decision-square.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "4635734be9a751754880f5c163ca5e75780399c5abfe52d6d89a77a5d775ad61",
       "output_sha256": "39e3795e0a7135fe852ff3805d27c8c2216be1c509cfc188a55063016ef1a95f",
       "output_bytes": 1015541,
@@ -2661,7 +2762,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "RUN-03",
@@ -2677,7 +2779,7 @@
         500
       ],
       "output_path": "brand/assets/run/timeline-template.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "7db2a7021ed27d13970b2de886fca643b0b5d45dcb63f69918a877085b9c897f",
       "output_sha256": "2a0d1ce51328c73f12e0d72b9df11479c37f211635824f15e9d0995b45026309",
       "output_bytes": 497703,
@@ -2687,7 +2789,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
     },
     {
       "asset_id": "MKT-07",
@@ -2703,7 +2806,7 @@
         320
       ],
       "output_path": "brand/assets/marketing/email-header.png",
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "58d6cd96a6b10877f3d97cb4d6c9d12a2d0d2b4cff5d2694eda00846902b15a3",
       "output_sha256": "fb92e1b60b83f6645c0df5fec2e868fd1d57c0c1a7a306478cbd24bd54e76763",
       "output_bytes": 251951,
@@ -2713,7 +2816,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-009.json"
     },
     {
       "asset_id": "MKT-04",
@@ -2729,7 +2833,7 @@
         1920,
         1080
       ],
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "b575a9aef61c14638464e6c228b7a917ca5273a74c506688c0c69cedc9534f0e",
       "output_sha256": "896f151a88d5201e00f845fbb0a29ee2778fe8b9add5842d2475d6a556a77f68",
       "output_bytes": 2452876,
@@ -2739,7 +2843,8 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
     },
     {
       "asset_id": "MKT-04",
@@ -2755,7 +2860,7 @@
         1080,
         1920
       ],
-      "review_state": "pending_independent_review",
+      "review_state": "independently_reviewed_source_and_export",
       "source_sha256": "c0db6e0010ef72d28c593164fc2d7af5894343649b9f5a6870f67ea6be2e8c31",
       "output_sha256": "9b1062798c3fe8010755aafa63a10de0ef596e7ad6bff1537a4f1261f680c516",
       "output_bytes": 2395048,
@@ -2765,11 +2870,12 @@
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
     },
     {
       "asset_id": "MKT-07",
-      "source_path": "brand/sources/generated/MKT-07/generation-002.png",
+      "source_path": "brand/sources/generated/MKT-07/generation-003.png",
       "crop_box": [
         0,
         0,
@@ -2781,25 +2887,26 @@
         1200,
         630
       ],
-      "review_state": "pending_independent_review",
-      "source_sha256": "1f64439f5c04ca142048bca7c7044b4b5c613d0911ea62b0af174cd152e04430",
-      "output_sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
-      "output_bytes": 521834,
+      "review_state": "independently_reviewed_source_and_export",
+      "source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+      "output_sha256": "c9e70f5db8cd5c2393f9c0f77ec1207c3f7368bde95640d8be99804d76190815",
+      "output_bytes": 1127789,
       "operations": [
         "crop",
         "resize",
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-009.json"
     },
     {
       "asset_id": "MKT-06",
-      "source_path": "brand/sources/generated/MKT-06/generation-001.png",
+      "source_path": "brand/sources/generated/MKT-06/generation-003.png",
       "crop_box": [
         0,
         0,
-        1730,
+        1731,
         909
       ],
       "output_path": "brand/assets/marketing/release-template.png",
@@ -2807,21 +2914,22 @@
         1200,
         630
       ],
-      "review_state": "pending_independent_review",
-      "source_sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
-      "output_sha256": "d563bd1f1450f607d6ca44a0896075aa889e7a29d74414121749d01935dc754f",
-      "output_bytes": 491181,
+      "review_state": "independently_reviewed_source_and_export",
+      "source_sha256": "c239754685c0e59ed52f2bc5eb66e5eee8cf194c83e61c27614503835b1053d5",
+      "output_sha256": "fb786cf8d827b909c1be92d39c8ea5b978fd8d821015f1b85bf173a4a274ea48",
+      "output_bytes": 847532,
       "operations": [
         "crop",
         "resize",
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
     },
     {
       "asset_id": "MKT-06",
-      "source_path": "brand/sources/generated/MKT-06/generation-002.png",
+      "source_path": "brand/sources/generated/MKT-06/generation-004.png",
       "crop_box": [
         0,
         0,
@@ -2833,21 +2941,22 @@
         1080,
         1080
       ],
-      "review_state": "pending_independent_review",
-      "source_sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759",
-      "output_sha256": "0c526b21d26f4875c695497eeeb820107fa538b31951edf8acf554c7aa7ddae1",
-      "output_bytes": 726373,
+      "review_state": "independently_reviewed_source_and_export",
+      "source_sha256": "2094b9573c10282e5344cefae1efed830d550752be17f9bb262fcb828a037e73",
+      "output_sha256": "fc3dcf0d01a79c755ab0ba019713591d3b994a3ccd716c4a7f265334da5f1b1e",
+      "output_bytes": 961788,
       "operations": [
         "crop",
         "resize",
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
     },
     {
       "asset_id": "MKT-05",
-      "source_path": "brand/sources/generated/MKT-05/generation-001.png",
+      "source_path": "brand/sources/generated/MKT-05/generation-002.png",
       "crop_box": [
         0,
         0,
@@ -2859,21 +2968,22 @@
         1080,
         1080
       ],
-      "review_state": "pending_independent_review",
-      "source_sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
-      "output_sha256": "499685f65dea3fb225be02eff64583235f9d98f6a9a16076d42e1c0585a4cad4",
-      "output_bytes": 749979,
+      "review_state": "independently_reviewed_source_and_export",
+      "source_sha256": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9",
+      "output_sha256": "60ff9fed0a6be1eb2b73ca01ea4f5b0c26ace17980f7d91dec8a93693b56c2d7",
+      "output_bytes": 1108166,
       "operations": [
         "crop",
         "resize",
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
     },
     {
       "asset_id": "MKT-03",
-      "source_path": "brand/sources/generated/MKT-03/generation-001.png",
+      "source_path": "brand/sources/generated/MKT-03/generation-003.png",
       "crop_box": [
         0,
         0,
@@ -2885,21 +2995,22 @@
         1280,
         720
       ],
-      "review_state": "pending_independent_review",
-      "source_sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
-      "output_sha256": "d6aec732aca7b367363398e582c6e3a7a52b0af620bdb8dfa5f385c907c8a132",
-      "output_bytes": 848591,
+      "review_state": "independently_reviewed_source_and_export",
+      "source_sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca",
+      "output_sha256": "7972f092969b38aa44883372ce6cbf5fb4438d757a2c1ba3c52c2848847b1fdb",
+      "output_bytes": 948143,
       "operations": [
         "crop",
         "resize",
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
     },
     {
       "asset_id": "MKT-03",
-      "source_path": "brand/sources/generated/MKT-03/generation-002.png",
+      "source_path": "brand/sources/generated/MKT-03/generation-004.png",
       "crop_box": [
         0,
         0,
@@ -2911,17 +3022,18 @@
         1280,
         720
       ],
-      "review_state": "pending_independent_review",
-      "source_sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93",
-      "output_sha256": "908f81c489a9465fc6b513ceadd03ced8d2222802113d21752cd573c860f3abc",
-      "output_bytes": 661785,
+      "review_state": "independently_reviewed_source_and_export",
+      "source_sha256": "14ade5e06f04a12e000715d181f99caf331581ee7f4f823167dfc53ee5b6aa5d",
+      "output_sha256": "d25cc01f8d4b4516a7c3818eca098310228c164f8c0666610f540f31f7b76bb0",
+      "output_bytes": 835566,
       "operations": [
         "crop",
         "resize",
         "encode",
         "metadata_strip"
       ],
-      "publication_approved": false
+      "publication_approved": false,
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
     }
   ]
 }

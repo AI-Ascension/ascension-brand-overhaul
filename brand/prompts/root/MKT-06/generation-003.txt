@@ -1,0 +1,8 @@
+Create a polished AI Ascension editorial artwork, continuing the warm Ascent Ledger visual language of the supplied root-generated reference. Paper ivory, deep ink, restrained amber, elegant editorial serif headline, clear small supporting text, ample negative space. This is original generated presentation art, NOT a screenshot or gameplay evidence. Do not depict a game screen, game character, game card, proprietary logo, photograph, trophy, fake chart, invented metric, QR code, testimonial, badge of verification, or extra text. Keep all essential copy comfortably inside the central 80 percent safe area. All text must be correctly spelled, crisp, and exactly as specified. Reflow creatively to fit the requested aspect ratio; do not preserve any old blank-field labels, form boxes, or template copy from the reference. Use only a very restrained abstract branching-path ornament. The art is a private draft, not permission to publish.
+
+Landscape 40:21 aspect ratio, intended final export 1200x630. A complete release-state card with no blank fields. The only visible text is:
+Headline: "Brand verification tools"
+Large version: "v0.1.0"
+Conspicuous status: "DRAFT — NOT RELEASED"
+Footer: "AI Ascension"
+Make the unreleased status unmistakable, not tiny fine print. Do not write "released", "available now", a date, a runtime version, a success claim, or a download button. The v0.1.0 is the actual declared version of the private ai-ascension-brand-verification package at source revision40b0c07796b24e029fbee3bf913b5869cb61fe35; zero GitHub releases were observed. This does not assert a release or a game/toolkit compatibility version. The precise copy and private-source context passed independent review in W02-marketing-concrete-copy-review.json.

@@ -31,18 +31,18 @@
     },
     {
       "path": "brand/asset-manifest.json",
-      "sha256": "8bf2a863735706a8fdd10ece04ef70549ecd1221f29ee0b6de266dc154409af0",
-      "bytes": 158052
+      "sha256": "eae9daf31d586692930a35ca7538ea08e0bef6bf979b1fe2b757fe7ad6f7bd4d",
+      "bytes": 324021
     },
     {
       "path": "brand/ART_ACCESS.md",
-      "sha256": "f90711e73b531d7dd33f51a93e8decc83067027bd786862fdd366542fe2e1f3d",
-      "bytes": 16492
+      "sha256": "fa9036575b883e5d36bd47670cf7a20c38dfba7a1760450dd8351264cf0d3ed6",
+      "bytes": 9496
     },
     {
       "path": "art/asset-registry.json",
-      "sha256": "0e71cf13afba70da828b384da8ea3b36021796b044f1c5e53c3d1c6cd6656032",
-      "bytes": 183853
+      "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3",
+      "bytes": 183884
     },
     {
       "path": "art/evidence-media-registry.json",
@@ -56,13 +56,13 @@
     },
     {
       "path": "art/generation-policy.json",
-      "sha256": "c5f32a13e79bdf96e6def1d76123a9f5ad0dfa8382a391347a943ae089c0ae95",
-      "bytes": 3105
+      "sha256": "dabc08e924fd6c24c2277ca1ee8eea7c5ea041dc00367300f3c92e4b90f16f10",
+      "bytes": 3134
     },
     {
       "path": "execution/art-model-attestation.json",
-      "sha256": "f7285859ec8870d2ed3bf736029a72f835ba50dadd6766dee38eba27db922e91",
-      "bytes": 51047
+      "sha256": "ee5fdfab2878ceb0e3e223c446a22b2d49d6512310f0448a1726e265a2a522d5",
+      "bytes": 44969
     },
     {
       "path": "execution/reviews/asset-gate-001.json",

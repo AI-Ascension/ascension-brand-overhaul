@@ -36,8 +36,8 @@
     },
     {
       "path": "execution/release-status.json",
-      "sha256": "7a7095bb12f9c2e2792b38416ce8072d3afa43fbabcb5058649e57d86c4ea1a3",
-      "bytes": 8012
+      "sha256": "8a474668741c40dd711a2d5b988193066b4e85ddc8540b6b81f2f5f6eaada431",
+      "bytes": 9486
     },
     {
       "path": "execution/findings.json",
@@ -46,13 +46,13 @@
     },
     {
       "path": "execution/QUALITY_REPORT.md",
-      "sha256": "fde38adfb3f9ad2da155f68a81b392eb655e0edc6609edf601f9e8d13a1d5368",
-      "bytes": 3976
+      "sha256": "d59ae40192582bde54549ce30175d4bd1ab7ec57ef87e01f6127e385516b634d",
+      "bytes": 4040
     },
     {
       "path": "execution/ROOT_STATUS.md",
-      "sha256": "db0ac3b195e7853912ab70f287cf23589e83fdd42912dd921f04db9298890ab4",
-      "bytes": 3038
+      "sha256": "60159cd943311d51c6fc4f37b4cc9bda332901c282ea0d1fee3efffd6dfc60cf",
+      "bytes": 3821
     },
     {
       "path": "execution/runtime-observation.json",
@@ -66,13 +66,13 @@
     },
     {
       "path": "delivery/MANIFEST.json",
-      "sha256": "44d19ff64d6c03644c139bac3fcbee6c828f286b7ec3b60790eee72276b974ff",
-      "bytes": 6859
+      "sha256": "d3f893d13466afbfe749bb2c39e4c5624a11df8c364aca4b4a2b75f92a77dd0a",
+      "bytes": 6913
     },
     {
       "path": "delivery/RUNBOOK.md",
-      "sha256": "6498f840f0f14c0effb22604c7b2196550f8f53775fceb781653e095b76f43c4",
-      "bytes": 7143
+      "sha256": "9bb2b6d36173907684f52d23b83185ea7c1438ea4efa33937a8be7735c54d9df",
+      "bytes": 7709
     },
     {
       "path": "delivery/PRIVACY_SCOPE.md",

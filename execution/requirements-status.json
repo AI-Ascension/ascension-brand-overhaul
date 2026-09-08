@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T21:58:33.047772+00:00",
+  "updated_at": "2026-09-08T04:58:19.926094+00:00",
   "scope": "Full MASTER_PROMPT.md and binding data/requirements.json; status is execution evidence, not package validation",
   "acceptance_boundary": "Per-row local/source/control status. The full overhaul is incomplete while any mandatory asset or native-depth requirement is blocked.",
   "requirements": [
@@ -220,7 +220,7 @@
         "brand/identity-review.md"
       ],
       "evidence_expected": "execution/evidence/REQ-007.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
@@ -255,11 +255,16 @@
         "execution/reviews/W03-root-export-review.json",
         "execution/reviews/W03-root-export-followup.json",
         "execution/root-art-acceptance.json",
-        "execution/reviews/W03-root-art-final-acceptance.json"
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W03-final-art-manifest-followup.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
       ],
-      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
-      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
-      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped identity functional checks under policy 2.0.0 and the user-authorized root route",
       "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
@@ -275,7 +280,7 @@
         "brand/identity-review.md"
       ],
       "evidence_expected": "execution/evidence/REQ-008.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
@@ -310,11 +315,17 @@
         "execution/reviews/W03-root-export-review.json",
         "execution/reviews/W03-root-export-followup.json",
         "execution/root-art-acceptance.json",
-        "execution/reviews/W03-root-art-final-acceptance.json"
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-007.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
       ],
-      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
-      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
-      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped identity text/accessibility truth; full release remains blocked",
       "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
@@ -330,7 +341,7 @@
         "brand/identity-review.md"
       ],
       "evidence_expected": "execution/evidence/REQ-009.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
@@ -365,11 +376,15 @@
         "execution/reviews/W03-root-export-review.json",
         "execution/reviews/W03-root-export-followup.json",
         "execution/root-art-acceptance.json",
-        "execution/reviews/W03-root-art-final-acceptance.json"
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
       ],
-      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
-      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
-      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped integration check for raster lettering, font-binary absence, and identity consistency",
       "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
@@ -385,7 +400,7 @@
         "brand/ART_REVIEW.md"
       ],
       "evidence_expected": "execution/evidence/REQ-010.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
@@ -420,11 +435,19 @@
         "execution/reviews/W03-root-export-review.json",
         "execution/reviews/W03-root-export-followup.json",
         "execution/root-art-acceptance.json",
-        "execution/reviews/W03-root-art-final-acceptance.json"
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "brand/asset-manifest.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "execution/reviews/W03-final-art-manifest-followup.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
       ],
-      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
-      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
-      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped per-export source/digest/placement/alt/decorative/lineage contract",
       "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
@@ -440,7 +463,7 @@
         "brand/ART_REVIEW.md"
       ],
       "evidence_expected": "execution/evidence/REQ-011.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
@@ -475,11 +498,22 @@
         "execution/reviews/W03-root-export-review.json",
         "execution/reviews/W03-root-export-followup.json",
         "execution/root-art-acceptance.json",
-        "execution/reviews/W03-root-art-final-acceptance.json"
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-003.json",
+        "execution/reviews/W02-broadcast-source-review-004.json",
+        "execution/reviews/W02-broadcast-source-review-005.json",
+        "execution/reviews/W02-broadcast-source-review-006.json",
+        "execution/reviews/W02-broadcast-source-review-007.json",
+        "execution/reviews/root-season-evidence-refresh.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
       ],
-      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
-      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
-      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped truth check separating generated artwork/templates from gameplay and product evidence",
       "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
@@ -2294,11 +2328,20 @@
         "execution/reviews/W03-root-export-review.json",
         "execution/reviews/W03-root-export-followup.json",
         "execution/root-art-acceptance.json",
-        "execution/reviews/W03-root-art-final-acceptance.json"
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "brand/provenance/root-generation-records.json",
+        "execution/art-model-attestation.json",
+        "execution/reviews/root-native-capability-recheck-002.json",
+        "execution/reviews/W02-final-art-acceptance-review.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json",
+        "execution/reviews/root-native-direct-capability-recheck.json"
       ],
-      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
-      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
-      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": "All 123 source generations are root-authored under the user amendment; required native Astra/max depth-three author records remain absent. Independent prompt/source reviews and original-byte preservation do not establish that native chain.",
+      "verification_scope": "literal authorship/native-agent requirement",
       "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
@@ -2348,11 +2391,20 @@
         "execution/reviews/W03-root-export-review.json",
         "execution/reviews/W03-root-export-followup.json",
         "execution/root-art-acceptance.json",
-        "execution/reviews/W03-root-art-final-acceptance.json"
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "art/generation-policy.json",
+        "brand/provenance/root-generation-records.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json",
+        "execution/reviews/W03-image-c2pa-provenance-review.json"
       ],
-      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
-      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
-      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": "All 123 generation records retain unknown image model and unspecified backend. The 122-file trusted OpenAI C2PA scan supplies signed provenance but no documented mapping to the exact required API model. No backend identity is inferred.",
+      "verification_scope": "literal observed image-model/backend requirement",
       "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
@@ -2441,7 +2493,7 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-065.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
@@ -2476,11 +2528,20 @@
         "execution/reviews/W03-root-export-review.json",
         "execution/reviews/W03-root-export-followup.json",
         "execution/root-art-acceptance.json",
-        "execution/reviews/W03-root-art-final-acceptance.json"
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "brand/asset-manifest.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "execution/reviews/W03-final-art-manifest-followup.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
       ],
-      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
-      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
-      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped per-export lineage under the accepted root route",
       "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {
@@ -2495,7 +2556,7 @@
         "execution/art-model-attestation.json"
       ],
       "evidence_expected": "execution/evidence/REQ-066.json",
-      "status": "blocked",
+      "status": "verified",
       "mandatory": true,
       "implementation_paths": [
         "brand/tokens.json",
@@ -2530,11 +2591,22 @@
         "execution/reviews/W03-root-export-review.json",
         "execution/reviews/W03-root-export-followup.json",
         "execution/root-art-acceptance.json",
-        "execution/reviews/W03-root-art-final-acceptance.json"
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-003.json",
+        "execution/reviews/W02-broadcast-source-review-004.json",
+        "execution/reviews/W02-broadcast-source-review-005.json",
+        "execution/reviews/W02-broadcast-source-review-006.json",
+        "execution/reviews/W02-broadcast-source-review-007.json",
+        "execution/reviews/root-season-evidence-refresh.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
       ],
-      "independent_reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
-      "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
-      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped copy/source-fact and generated-art truth check",
       "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
     },
     {

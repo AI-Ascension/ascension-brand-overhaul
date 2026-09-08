@@ -1,0 +1,596 @@
+{
+  "schema_version": "ai-ascension.w03.final-expanded-art-handoff-review.v1",
+  "status": "verified_with_scoped_blockers",
+  "reviewer": "w03-final-expanded-art-handoff-independent-review",
+  "observed_at": "2026-09-08T05:59:48Z",
+  "task": "Bounded independent final review of the current root-authored artwork source ledgers, provenance, export receipts, requirement bindings, and private GitHub-art handoff metadata.",
+  "scope": "Read-only review of the current brand-root-art worktree. Core source, registry, manifest, provenance, export, requirement, candidate-map, candidate-result, social-preview, and private-delivery metadata were checked. The prior W03 candidate restoration receipts and GH-11 follow-up are reused as the independent bundle evidence; no twelve-bundle restore or remote refetch was repeated, and the 218-test suite was not repeated.",
+  "working_tree": {
+    "path": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "branch": "work/root-authored-art",
+    "git_head": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+    "dirty_before_review": true,
+    "status_porcelain_line_count": 121,
+    "pre_existing_changes_preserved": true,
+    "exclusive_workspace_write": "execution/reviews/W03-final-expanded-art-handoff-review.json",
+    "source_manifest_ledger_edits_by_reviewer": false,
+    "generation_or_export_by_reviewer": false,
+    "remote_or_public_mutation_by_reviewer": false
+  },
+  "source_pins": {
+    "package": [
+      {
+        "path": "MANIFEST.json",
+        "bytes": 169795,
+        "sha256": "f3abd87f0dffa177370564f0f9d328273ad281f4e1f57ab8f870d40635d44070"
+      },
+      {
+        "path": "CHECKSUMS.sha256",
+        "bytes": 103427,
+        "sha256": "9bf6412755a2896606ca1172d4bd2f37da451b5574dc9f23cfeddfcebad4650a"
+      }
+    ],
+    "source_and_ledgers": [
+      {
+        "path": "art/asset-registry.json",
+        "bytes": 183884,
+        "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3"
+      },
+      {
+        "path": "data/requirements.json",
+        "bytes": 35617,
+        "sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3"
+      },
+      {
+        "path": "brand/asset-manifest.json",
+        "bytes": 324021,
+        "sha256": "eae9daf31d586692930a35ca7538ea08e0bef6bf979b1fe2b757fe7ad6f7bd4d"
+      },
+      {
+        "path": "brand/remaining-artwork.json",
+        "bytes": 1458,
+        "sha256": "772d6ec2297b887c7e01e1bd46f14cadb777dda8ba5e1f04a37018dfbf63df93"
+      },
+      {
+        "path": "brand/provenance/root-generation-index.json",
+        "bytes": 133957,
+        "sha256": "7a9258818e5fa34c686cc3f00aabb89e9d8367db033a2f86c66b9543aeb5749e"
+      },
+      {
+        "path": "brand/provenance/root-generation-records.json",
+        "bytes": 235791,
+        "sha256": "762be2fdd45af27bc8cdcbcf151bd3cfc9a6f669e514d68e313a04c0a6af758d"
+      },
+      {
+        "path": "brand/provenance/root-tool-observations.json",
+        "bytes": 130763,
+        "sha256": "ced41302474f65c91ff8655610dc34e8a1b50bd782ba9b6f784a1fc875979c1e"
+      },
+      {
+        "path": "brand/provenance/root-export-recipe.json",
+        "bytes": 52040,
+        "sha256": "c22c3e4925ee22273b6760fb7cbccdbbe059310594120146cec819a563cb3944"
+      },
+      {
+        "path": "brand/provenance/root-export-receipts.json",
+        "bytes": 92020,
+        "sha256": "9e05f056d98163a495ca95ae6197bcfc9dbec20fe67029aa2ce7983a2772ff6c"
+      },
+      {
+        "path": "brand/provenance/root-motion-recipe.json",
+        "bytes": 1243,
+        "sha256": "f009f9289634422bf1c6d15c5d1393bc1cac932efb98e129183c92a9c7d0cc01"
+      }
+    ],
+    "execution_and_reviews": [
+      {
+        "path": "execution/root-art-acceptance.json",
+        "bytes": 6474,
+        "sha256": "c181db5d06983593ddcc5f0b3404a514f6c6cc42b71d30462c2082fd671720ba"
+      },
+      {
+        "path": "execution/requirements-status.json",
+        "bytes": 126208,
+        "sha256": "9cc6cc3087eab360a32a61ba29732d91b6be5491b43b5684ae6e6bb2a2fbc4a7"
+      },
+      {
+        "path": "execution/art-model-attestation.json",
+        "bytes": 44969,
+        "sha256": "ee5fdfab2878ceb0e3e223c446a22b2d49d6512310f0448a1726e265a2a522d5"
+      },
+      {
+        "path": "execution/reviews/root-native-direct-capability-recheck.json",
+        "bytes": 3942,
+        "sha256": "86a7b4cd0b3edb01037dd68dfc5952a20ae1821494cbfd3e4fe5036d63d17e6c"
+      },
+      {
+        "path": "execution/reviews/root-final-art-integration-checks.json",
+        "bytes": 1992,
+        "sha256": "f928f9221fcab79e45e53f8e7826bcfdee2ba5045194b245f8fed98ff29900ad"
+      },
+      {
+        "path": "execution/reviews/root-final-expanded-art-local-tests.json",
+        "bytes": 6128,
+        "sha256": "d3a70b208fb22cc8ae4cdbf3c8c1716286527c0f42da64d07260c37785f4d01b"
+      },
+      {
+        "path": "execution/reviews/W02-broadcast-source-review-008.json",
+        "bytes": 46414,
+        "sha256": "dd4a32d74bc8a5154f490c9bc24f9be6b2a18001e923664d3ede2d2da31882b0"
+      },
+      {
+        "path": "execution/reviews/W02-broadcast-source-review-009.json",
+        "bytes": 28328,
+        "sha256": "778c1106337e1fb605210d4e3d6e84accf9616c006ad3be5ea7de5dc41e4826d"
+      },
+      {
+        "path": "execution/reviews/root-original-output-preservation.json",
+        "bytes": 40997,
+        "sha256": "f3b83e674959bc0d0684dd172181c63c06b52b52975f16883b3caf130de54d2a"
+      },
+      {
+        "path": "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "bytes": 34547,
+        "sha256": "7c06989f8d43a7385943105afa3b440fc4151a175ebc2668500109f1f9c65146"
+      }
+    ],
+    "private_candidate_delivery": [
+      {
+        "path": "delivery/github-art-candidates/github-art-candidates-map.json",
+        "bytes": 63421,
+        "sha256": "d6e0f916aa9a04e16c8e99067bf91a4d0991fb00a24d9534836747ff920bae18"
+      },
+      {
+        "path": ".execution-private/github-art-candidates-result.json",
+        "bytes": 63698,
+        "sha256": "ac78d8644e3398646894d1e07734a0b5023ede5cac9c4ee5b1c6788c2405d7d1"
+      },
+      {
+        "path": "delivery/github-art-candidates/README.md",
+        "bytes": 2270,
+        "sha256": "8a3b8f646143e2274c5c01d490e9e3a800df6021d2be0a7dae74cd5e67fc05f3"
+      },
+      {
+        "path": "github/social-preview-candidates.json",
+        "bytes": 12893,
+        "sha256": "de440bcc9fb93d59bdbb0e61c4fe52f8c7d0cf0449c3078b8cb4ffa251f1ce5a"
+      },
+      {
+        "path": "README.md",
+        "bytes": 6317,
+        "sha256": "839523eb585891130e61b283d535597a66e5c9426087c58273d60a6bec24cd13"
+      },
+      {
+        "path": "delivery/RUNBOOK.md",
+        "bytes": 7709,
+        "sha256": "9bb2b6d36173907684f52d23b83185ea7c1438ea4efa33937a8be7735c54d9df"
+      },
+      {
+        "path": "marketing/launch/art-source-copy.json",
+        "bytes": 4114,
+        "sha256": "716d193e00e4d68b440a3d263e010b685ec12bb7dd74a00ab4e8bf1763d383c9"
+      }
+    ],
+    "canonical_source": {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "manifest": "brand/asset-manifest.json",
+      "revision_state": "local_canonical_source_pin"
+    }
+  },
+  "current_state": {
+    "asset_inventory": {
+      "registry_count": 72,
+      "manifest_count": 72,
+      "registry_manifest_id_binding": "72/72; no binding mismatches",
+      "manifest_status_counts": {
+        "verified": 70,
+        "blocked": 2
+      },
+      "declared_output_paths": 115,
+      "output_files_existing": 115,
+      "output_hashes_current": 115,
+      "raster_exports": 112,
+      "raster_dimensions_current": 112,
+      "non_raster_or_special_outputs": [
+        {
+          "path": "brand/assets/identity/specimen.html",
+          "exists": true,
+          "manifest_hash_current": true
+        },
+        {
+          "path": "brand/assets/broadcast/title-transition.webm",
+          "exists": true,
+          "manifest_hash_current": true
+        },
+        {
+          "path": "brand/assets/press/index.html",
+          "exists": true,
+          "manifest_hash_current": true
+        }
+      ],
+      "content_dependent_blockers": {
+        "CAST-03": "Approved actual footage crop and host integration evidence is absent.",
+        "MKT-05": "Operator approval for a real challenge remains absent."
+      }
+    },
+    "generation_provenance": {
+      "source_png_files": 123,
+      "generation_index_rows": 123,
+      "generation_record_rows": 123,
+      "tool_observation_rows": 123,
+      "record_status_counts": {
+        "verified": 90,
+        "blocked": 33
+      },
+      "prompt_files": 126,
+      "indexed_prompt_files": 123,
+      "unindexed_prompts": [
+        "brand/prompts/root/CAST-01/generation-001.txt",
+        "brand/prompts/root/CAST-02/generation-001.txt",
+        "brand/prompts/root/CAST-03/generation-001.txt"
+      ],
+      "unindexed_prompts_are_known_failed_calls": true,
+      "index_record_observation_source_hash_parity": "pass; zero parity errors",
+      "route": "user_authorized_root_image_tool",
+      "author_identity": "ROOT/root, depth 0, no parent on all current records",
+      "model_backend_fields": "unknown model fields and unspecified backend retained on current records"
+    },
+    "mechanical_exports": {
+      "recipe_rows": 112,
+      "receipt_rows": 112,
+      "recipe_receipt_output_set": "112/112 equal",
+      "recipe_receipt_metadata_parity": "112/112 including reviewer_reference",
+      "source_hashes_and_output_hashes": "112/112 current",
+      "dimensions": "112/112 current",
+      "publication_approved": false,
+      "deferred": [],
+      "special_outputs_hashes_current": true,
+      "motion_paths": [
+        "brand/assets/broadcast/title-transition.webm",
+        "brand/assets/broadcast/title-transition-still.png"
+      ]
+    },
+    "requirements": {
+      "data_requirements": 70,
+      "execution_status_rows": 70,
+      "data_status_counts": {
+        "not_started": 70
+      },
+      "execution_status_counts": {
+        "verified": 63,
+        "blocked": 7
+      },
+      "data_status_binding": "pass; zero field mismatches",
+      "requirements_digest": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+      "missing_review_or_evidence_references": 0,
+      "evidence_artifacts_checked": 1042,
+      "evidence_artifacts_current": 1030,
+      "evidence_artifacts_with_hash_or_byte_drift": 12,
+      "drift": {
+        "path": "delivery/RUNBOOK.md",
+        "affected_requirement_ids": [
+          "REQ-037",
+          "REQ-038",
+          "REQ-039",
+          "REQ-040",
+          "REQ-041",
+          "REQ-042",
+          "REQ-057",
+          "REQ-058",
+          "REQ-059",
+          "REQ-060",
+          "REQ-069",
+          "REQ-070"
+        ],
+        "current": {
+          "bytes": 7709,
+          "sha256": "9bb2b6d36173907684f52d23b83185ea7c1438ea4efa33937a8be7735c54d9df"
+        },
+        "evidence_declared": {
+          "bytes": 7258,
+          "sha256": "2717d8349320f3bcb6871e3c531e019e9af6be13904833d34135d4a9ba1f6fd9"
+        }
+      },
+      "blocked_requirement_ids": [
+        "REQ-031",
+        "REQ-039",
+        "REQ-057",
+        "REQ-058",
+        "REQ-061",
+        "REQ-062",
+        "REQ-069"
+      ]
+    },
+    "attestation_and_native": {
+      "successful_generation_calls_recorded": 123,
+      "failed_generation_calls_recorded": 3,
+      "actual_backend": null,
+      "backend_attested": false,
+      "author_model_attested": false,
+      "requested_model": "gpt-5.6-luna",
+      "accepted_model": "unknown",
+      "observed_model": "unknown",
+      "required_depth_three_chain_established": false,
+      "native_receipt_conclusion": "No callable collaboration namespace was exposed; no fabricated child ancestry or model claim was used."
+    },
+    "source_copy": {
+      "status": "independently_reviewed_for_private_artwork",
+      "independent_review_reference": "execution/reviews/W02-broadcast-source-review-008.json",
+      "publication_approved": false,
+      "challenge_approval": null
+    }
+  },
+  "candidate_handoff": {
+    "current_map": {
+      "path": "delivery/github-art-candidates/github-art-candidates-map.json",
+      "sha256": "d6e0f916aa9a04e16c8e99067bf91a4d0991fb00a24d9534836747ff920bae18",
+      "status": "independently_reviewed_private_candidates",
+      "candidate_count": 12,
+      "canonical_source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "top_level_review_references": [
+        "execution/reviews/W03-github-art-candidates-review.json",
+        "execution/reviews/W03-github-art-candidates-followup.json"
+      ],
+      "candidate_approval_states": {
+        "passed_scoped_source_and_bundle_review": 12
+      },
+      "bundle_declared_verified": 12,
+      "bundle_declared_restored_head_matches": 12,
+      "delivery_boundary": {
+        "public_push": false,
+        "settings_mutation": false,
+        "merge_to_default": false,
+        "publication_approval": "not_granted"
+      },
+      "portable_readme_current": true
+    },
+    "current_result": {
+      "path": ".execution-private/github-art-candidates-result.json",
+      "sha256": "ac78d8644e3398646894d1e07734a0b5023ede5cac9c4ee5b1c6788c2405d7d1",
+      "status": "private_candidates_ready_for_independent_non_author_review",
+      "candidate_count": 12,
+      "map_result_candidate_tuples": "12/12 equal",
+      "stale_blocker": "INDEPENDENT-REVIEW remains open in this private author result despite the current map carrying both independent review references."
+    },
+    "bundle_file_sha256_matches_current_map": {
+      "count": "12/12",
+      "sha256": {
+        "GH-01": "4a1836b5c234131ad2280e7887e2e33f0b9138f7766c638a854a6666a674072e",
+        "GH-02": "e75804becd7cf94b64f61a013152b13ebc4e999fa2f12bf4e89812318c0c754c",
+        "GH-03": "bc64ab2c1189f2096ac768dac705db97768717c174089caa239062f1e5d6bd3f",
+        "GH-04": "1619eeaf27ad10af3b2fbddfcf661609b5398a855f2991c91377684bebdcd6bf",
+        "GH-05": "43b9aafa17a45fc4879df8bc383eae79fb8476a39b9d1277c05e166e43a6d1f6",
+        "GH-06": "f9fedecca5c38ea11da219456d45a369f01054f521f782fed03e3c60f112dd12",
+        "GH-07": "550300fe26e927dc25f4135dd8301fbaac9b013dba9b0184801707bff3b0f48c",
+        "GH-08": "ddd781fa4aec923f939bbd8aa839ad709c3a580602a0e1044b062292c45369d4",
+        "GH-09": "ec8baf4ebe36ebb40f6fa686a4343119154420b07b4619ee72b3521758dbf8b0",
+        "GH-10": "a413d1bd1644e9bd6772f25d88d6497b5ed9e9295b7cc6f7bc36573170489c00",
+        "GH-11": "261a868e406fcd241a831d9f51c6f63284f1f72a37444b4be742213d89276620",
+        "GH-12": "67830eae836411858162c1d34d3aad91f2af6963071c75381b3b11b9a36e8d7a"
+      }
+    },
+    "historical_independent_receipts": {
+      "initial_review": {
+        "path": "execution/reviews/W03-github-art-candidates-review.json",
+        "sha256": "cb9e985f120962cf9d22f0688a30c79ce2fec84a07d517be28ed0a67f1a44431",
+        "status": "verified_with_scoped_finding",
+        "bundle_verify": "12/12 passed",
+        "bundle_restoration": "12/12 exact head passed",
+        "remote_prerequisite_rechecks": "12/12 passed at receipt time",
+        "stable_repository_ids": "12/12 passed at receipt time",
+        "png_sha_and_byte_identity": "36/36 passed",
+        "png_dimensions": "36/36 passed",
+        "social_preview_records": "13/13 passed",
+        "pass_ids": [
+          "GH-01",
+          "GH-02",
+          "GH-03",
+          "GH-04",
+          "GH-05",
+          "GH-06",
+          "GH-07",
+          "GH-08",
+          "GH-09",
+          "GH-10",
+          "GH-12"
+        ],
+        "scoped_finding": "GH-11 immediate-parent/history metadata mismatch, subsequently repaired."
+      },
+      "gh11_followup": {
+        "path": "execution/reviews/W03-github-art-candidates-followup.json",
+        "sha256": "ca7430e7b7f35d245b8a5cb1c968224495cf9039260f388dc0e5f42c7d718671",
+        "status": "followup_pass",
+        "bundle_sha256": "261a868e406fcd241a831d9f51c6f63284f1f72a37444b4be742213d89276620",
+        "integration_base": "e5153d6628843bbc734686ae926e143a1cf90526",
+        "direct_parent": "d6b70237ec7e20b4dac6fc8d03ea1467772d17c1",
+        "candidate_head": "054294ebdbc760f132053753f801aed078369e3e",
+        "direct_parent_delta": "receipt-only .ai-ascension-art-sync.json",
+        "integration_delta": "exact five-file presentation scope",
+        "png_sha_and_byte_identity": "3/3 passed"
+      },
+      "reuse_basis": "Current bundle files retain the declared hashes above and current map/result tuples reconcile 12/12; historical receipts supply the independent restore, remote identity, stable-ID, and PNG byte evidence without a redundant network or twelve-bundle rerun."
+    }
+  },
+  "gh13_root_owned_presentation": {
+    "integration_candidate": "skipped because root README is root-owned",
+    "readme_picture_light_dark_alt_old_shared_banner": "pass",
+    "root_readme_sha256": "839523eb585891130e61b283d535597a66e5c9426087c58273d60a6bec24cd13",
+    "assets": [
+      {
+        "path": "brand/assets/github/ascension-brand-overhaul-banner-light.png",
+        "sha256": "1db5dc0abca2ddabde9cc53a2f8470dafa1f9a05302c3e56792e0007ed67f44a",
+        "bytes": 484497,
+        "dimensions": [
+          1600,
+          400
+        ]
+      },
+      {
+        "path": "brand/assets/github/ascension-brand-overhaul-banner-dark.png",
+        "sha256": "498b508094cad76579868c2f11ce4252720868a199df073232d48724bd15a653",
+        "bytes": 498159,
+        "dimensions": [
+          1600,
+          400
+        ]
+      },
+      {
+        "path": "brand/assets/github/ascension-brand-overhaul-social.png",
+        "sha256": "6ff079d6cc932cdf6d23ba215454aad895ec3f1b96179d45412799cdd93d59df",
+        "bytes": 525500,
+        "dimensions": [
+          1280,
+          640
+        ]
+      }
+    ],
+    "social_preview_records": "13/13 current hash/dimension/metadata joins pass",
+    "stable_repository_id_from_current_join_and_prior_check": 1359787764,
+    "publication_approved": false
+  },
+  "checks": [
+    {
+      "id": "current-ledger-inventory",
+      "method": "bounded read-only JSON, filesystem, SHA-256 and PNG-dimension probe",
+      "exit_code": 0,
+      "result": "72 registry/manifest IDs bind; 115/115 declared outputs exist and hash; 123 source/index/record/observation rows have zero parity errors; 112/112 recipe and receipt rows are current and metadata-equal; deferred queue is empty."
+    },
+    {
+      "id": "requirements-binding-and-evidence",
+      "method": "bounded read-only requirements/status/evidence hash probe",
+      "exit_code": 0,
+      "result": "70/70 data and execution IDs bind; status is 63 verified and 7 blocked; 1,030/1,042 evidence artifact rows are current; 12 RUNBOOK rows retain the older declared digest listed under current_state.requirements.drift."
+    },
+    {
+      "id": "root-acceptance-boundary",
+      "method": "existing execution/reviews/root-final-art-integration-checks.json receipt",
+      "exit_code": 1,
+      "result": "Expected incomplete full validation boundary: only CAST-03 and MKT-05 remain not verified; scoped art verification reports 70 families and zero lineage errors.",
+      "receipt": "execution/reviews/root-final-art-integration-checks.json"
+    },
+    {
+      "id": "package-local-suite",
+      "method": "existing execution/reviews/root-final-expanded-art-local-tests.json receipt; suite intentionally not repeated",
+      "exit_code": 0,
+      "result": "218 tests passed at the recorded receipt time.",
+      "receipt": "execution/reviews/root-final-expanded-art-local-tests.json"
+    },
+    {
+      "id": "private-github-art-candidates",
+      "method": "current bundle file hashes/map-result tuple/approval reconciliation plus prior independent receipts",
+      "exit_code": 0,
+      "result": "12/12 current bundle file hashes match the map; 12/12 map/result candidate tuples match; all 12 map approvals are passed scoped reviews; prior independent receipts cover 12/12 bundle verification/restoration, GH-11 follow-up, 36/36 PNG identity, 13/13 social records, and prior remote/stable-ID checks.",
+      "remote_refetch_performed": false,
+      "bundle_restore_repeated": false
+    },
+    {
+      "id": "root-owned-gh13-and-source-copy",
+      "method": "current README/social/source-copy metadata probe",
+      "exit_code": 0,
+      "result": "Root README picture, light/dark sources, alt text and old shared-banner absence pass; 13/13 social records are prepared_not_applied; marketing source copy is independently_reviewed_for_private_artwork with publication approval false."
+    },
+    {
+      "id": "model-native-boundary",
+      "method": "current attestation and root-native-direct-capability-recheck receipts",
+      "exit_code": 0,
+      "result": "Model/backend remain unattested and the requested native depth-three chain remains unavailable; no promotion or fabricated ancestry is supported.",
+      "receipts": [
+        "execution/art-model-attestation.json",
+        "execution/reviews/root-native-direct-capability-recheck.json"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "W03-FEAH-001",
+      "severity": "high",
+      "status": "open",
+      "title": "Requirement evidence rows retain a pre-refresh RUNBOOK digest",
+      "detail": "REQ-037, REQ-038, REQ-039, REQ-040, REQ-041, REQ-042, REQ-057, REQ-058, REQ-059, REQ-060, REQ-069 and REQ-070 still declare 7,258-byte SHA-256 2717d8349320f3bcb6871e3c531e019e9af6be13904833d34135d4a9ba1f6fd9, while current delivery/RUNBOOK.md is 7,709 bytes with SHA-256 9bb2b6d36173907684f52d23b83185ea7c1438ea4efa33937a8be7735c54d9df.",
+      "required_follow_up": "After the final RUNBOOK text is frozen, refresh these evidence artifact rows and their package-level digests, then rerun the bounded evidence/package validation.",
+      "evidence": [
+        "execution/requirements-status.json",
+        "delivery/RUNBOOK.md"
+      ]
+    },
+    {
+      "id": "W03-FEAH-002",
+      "severity": "medium",
+      "status": "open",
+      "title": "Private candidate result status trails the current reviewed map",
+      "detail": "The current delivery map records independently_reviewed_private_candidates and all 12 candidate approvals as passed scoped source-and-bundle reviews, including both review references for GH-11. The private .execution-private result remains private_candidates_ready_for_independent_non_author_review with INDEPENDENT-REVIEW open.",
+      "required_follow_up": "Refresh or explicitly supersede the private result status before treating that result file as the current candidate review summary; retain the current map and both independent receipts as the delivery authority.",
+      "evidence": [
+        "delivery/github-art-candidates/github-art-candidates-map.json",
+        ".execution-private/github-art-candidates-result.json",
+        "execution/reviews/W03-github-art-candidates-review.json",
+        "execution/reviews/W03-github-art-candidates-followup.json"
+      ]
+    },
+    {
+      "id": "W03-FEAH-003",
+      "severity": "medium",
+      "status": "open",
+      "title": "Package envelope digests await the final receipt/report refresh",
+      "detail": "The current root package MANIFEST.json, CHECKSUMS.sha256, delivery/MANIFEST.json and delivery/FINAL_REPORT.md are point-in-time pre-finalization artifacts; this review receipt and the final evidence/report refresh are not yet represented in those package-level outputs.",
+      "required_follow_up": "Regenerate the final report, package inventory and checksums after this receipt and final evidence refresh, then run the package validator at the exact resulting head.",
+      "evidence": [
+        "MANIFEST.json",
+        "CHECKSUMS.sha256",
+        "delivery/MANIFEST.json",
+        "delivery/FINAL_REPORT.md"
+      ]
+    },
+    {
+      "id": "W03-FEAH-004",
+      "severity": "blocking_for_full_release",
+      "status": "open",
+      "title": "Two actual-content artwork gates remain blocked",
+      "detail": "CAST-03 still lacks approved actual footage crop/host integration evidence, and MKT-05 still lacks operator approval for a real challenge brief.",
+      "required_follow_up": "Keep full_art_release_status incomplete until those content and integration gates are independently supplied and reviewed.",
+      "evidence": [
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ]
+    },
+    {
+      "id": "W03-FEAH-005",
+      "severity": "blocking_for_model_and_native_gates",
+      "status": "open",
+      "title": "Model, backend and native ancestry remain unproven",
+      "detail": "The 123 successful and 3 failed generation call counts are recorded, but actual backend and author model are not attested, current records retain unknown model fields, and the requested native coordinator-to-depth-three chain was not established.",
+      "required_follow_up": "Retain the model/native requirements blocked until observed provider/model metadata and actual native ancestry records exist.",
+      "evidence": [
+        "execution/art-model-attestation.json",
+        "execution/reviews/root-native-direct-capability-recheck.json"
+      ]
+    }
+  ],
+  "decision": {
+    "overall": "source_and_private_handoff_verified_with_scoped_blockers",
+    "core_source_ledger_integrity": "pass",
+    "mechanical_export_integrity": "pass",
+    "requirement_binding": "pass_with_12_current_RUNBOOK_artifact_hash_drifts",
+    "private_github_art_candidate_handoff": "verified_using_current_hash_reconciliation_and_prior_independent_restore_receipts",
+    "full_art_release_status": "incomplete",
+    "model_promotion_approved": false,
+    "native_hierarchy_verified": false,
+    "publication_approved": false,
+    "settings_mutation": false,
+    "public_push": false,
+    "merge_to_default": false,
+    "send_approved": false,
+    "rights_clearance_granted": false
+  },
+  "limitations": [
+    "No new remote fetch, stable-ID API request, or twelve-bundle restoration was performed in this bounded pass; those claims are reused from the pinned W03 independent receipts and current unchanged bundle SHA-256 values.",
+    "The 218-test suite and visual reviews were not repeated; their exact prior receipts are cited.",
+    "The current map is private candidate delivery metadata. It does not authorize a public push, merge, GitHub Settings upload, deployment, email send, or rename.",
+    "Root-owned GH-13 presentation was checked locally and is excluded from the twelve-repository integration candidate set.",
+    "Generated artwork and local HTML/media checks do not establish gameplay, actual footage, product, native-agent, exact-model, rights, publication, or live deployment evidence."
+  ],
+  "publication_approved": false,
+  "settings_mutation": false,
+  "public_push": false
+}

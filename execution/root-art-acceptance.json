@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-09-08T02:34:43.522932+00:00",
+  "observed_at": "2026-09-08T04:53:29.620774+00:00",
   "decision_owner": "ROOT",
   "scope": "Root integration decision based on the cited independent source-use, visual and export reviews. Verification does not grant public distribution approval or model/backend attestation.",
   "verified_families": [
@@ -54,7 +54,10 @@
     "ID-08",
     "MKT-01",
     "MKT-02",
+    "MKT-03",
     "MKT-04",
+    "MKT-06",
+    "MKT-07",
     "MKT-08",
     "MKT-09",
     "RUN-01",
@@ -71,10 +74,10 @@
     "WEB-07",
     "WEB-08"
   ],
-  "verified_family_count": 67,
+  "verified_family_count": 70,
   "all_family_count": 72,
   "existing_exports": 115,
-  "exports_in_verified_families": 107,
+  "exports_in_verified_families": 113,
   "independent_reviews": [
     "execution/reviews/W02-root-identity-source-use-review.json",
     "execution/reviews/W02-root-art-identity-review.json",
@@ -90,18 +93,20 @@
     "execution/reviews/W03-root-motion-browser-review.json",
     "execution/reviews/W03-root-motion-metadata-review.json",
     "execution/reviews/W03-final-art-manifest-review.json",
-    "execution/reviews/W03-final-art-manifest-followup.json"
+    "execution/reviews/W03-final-art-manifest-followup.json",
+    "execution/reviews/W02-broadcast-source-review-008.json",
+    "execution/reviews/W02-broadcast-source-review-009.json"
   ],
   "schema_result": "72/72 pass after W03-FAM-001 repair: explicit nullable metadata for functional MKT09 HTML; see W03-final-art-manifest-followup.json.",
   "scoped_lineage_result": {
-    "verified_families": 67,
+    "verified_families": 70,
     "errors": []
   },
   "full_release_status": "incomplete",
   "publication_approvals": 0,
   "remaining_creative_queue": "brand/remaining-artwork.json",
   "native_hierarchy": "unfulfilled; see execution/reviews/root-native-capability-recheck-002.json",
-  "generation_records_verified": 84,
+  "generation_records_verified": 90,
   "blocked_generation_record_reasons": {
     "ID-01-generation-001": "Not accepted for the current required export set: superseded/rejected attempt, missing creative reflow, or unmet seamless-repeat condition. Preserved for traceability and reviewed reference use where separately recorded.",
     "ID-01-generation-002": "Not accepted for the current required export set: superseded/rejected attempt, missing creative reflow, or unmet seamless-repeat condition. Preserved for traceability and reviewed reference use where separately recorded.",
@@ -114,14 +119,14 @@
   "generation_record_scope": "Selected source records have independent design/source-use review; superseded sources remain preserved and do not count as current exports.",
   "content_dependent_families": {
     "CAST-03": "Generated portrait layouts are reviewed; the brief still requires approved actual-footage cropping and host integration checks. No approved footage was supplied.",
-    "MKT-03": "Reviewed blank outcome/question templates exist; actual per-episode outcome and decision-question copy and source approval are missing.",
-    "MKT-05": "Reviewed blank challenge template exists; an actual approved challenge, rules, dates and source content are missing.",
-    "MKT-06": "Reviewed blank release/contributor templates exist; actual release content, contributor attribution and consent are missing.",
-    "MKT-07": "Reviewed blank run-card artwork exists; approved run-manifest values and completed HTML/text run-report assembly remain outstanding."
+    "MKT-05": "A reviewed concrete private challenge proposal with rules and proposed dates exists. Operator approval for a real challenge remains absent; see source review 008."
   },
   "adjudications": {
     "BG-04": "Accepted against the sparse visually repeatable motif brief after independent 3x3 repeat review. Prompt-level alpha-margin, motif-centering and low-level RGB edge deviations are retained in review 006; this is not exact pixel-invariant conformance.",
     "MKT-01": "Text remains in the reviewed platform crop. Decorative route clipping outside the band does not remove essential copy; accept for the bounded banner brief.",
-    "blank_templates": "Source and export design verification does not complete factual-content requirements or publication approval."
+    "blank_templates": "Source and export design verification does not complete factual-content requirements or publication approval.",
+    "MKT-03": "Concrete outcome and question variants passed independent review 008 against pinned maintainer reports.",
+    "MKT-06": "Concrete private draft release and anonymous contributor variants passed independent review 008; no person-specific consent condition is triggered.",
+    "MKT-07": "Report-only image and populated HTML/plain fallback passed independent review 009 using separately reviewed private art-context facts; this does not approve a send or enroll a publisher."
   }
 }

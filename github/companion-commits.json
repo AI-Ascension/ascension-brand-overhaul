@@ -38,16 +38,16 @@
   },
   {
     "repository": "AI-Ascension/AI-Ascension.github.io",
-    "base_revision": "e81dd4e9ff2f8e5f8ffafc8b1a489d1e1cc7ef9f",
+    "base_revision": "79269774bd6d0b7dbf2792607b39da0764adfede",
     "branch": "work/w04-presentation",
-    "revision": "b50f7d725c8d6abb6306963d059fbb7fa067402c",
+    "revision": "e5153d6628843bbc734686ae926e143a1cf90526",
     "paths": [
       "README.md",
       "index.html"
     ],
     "file_sha256": {
-      "README.md": "d10bad9768f196b0f28fc38c1e270ae5ce64ebf861694020e777cbe1da2ed570",
-      "index.html": "8d80243177c3dd702429dc102ef76b569289c6b9d56275dcc5d6774cbcec0840"
+      "README.md": "546500a8e05559d2ad90250b38e4e5ec07ccdf7c3cad8c1199b6299c4faa2d4d",
+      "index.html": "1427fc30bfb28f0b3f8eab3f734dc1d1eccaaaf3f5ca88c548d3e1dacf9f2146"
     },
     "status": "independently_reviewed_open_draft",
     "pushed": true,
@@ -61,17 +61,31 @@
         }
       ],
       "baseRefName": "main",
-      "headRefOid": "b50f7d725c8d6abb6306963d059fbb7fa067402c",
+      "headRefOid": "e5153d6628843bbc734686ae926e143a1cf90526",
       "isDraft": true,
       "number": 12,
       "state": "OPEN",
-      "url": "https://github.com/AI-Ascension/AI-Ascension.github.io/pull/12"
+      "url": "https://github.com/AI-Ascension/AI-Ascension.github.io/pull/12",
+      "headRefName": "work/w04-presentation",
+      "mergeable": "MERGEABLE",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-08T03:18:03Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/AI-Ascension.github.io/actions/runs/34183010304/job/101925721945",
+          "name": "static-and-proof",
+          "startedAt": "2026-09-08T03:17:44Z",
+          "status": "COMPLETED",
+          "workflowName": "Validate site source"
+        }
+      ]
     },
     "original_presentation_revision": "fdc78f6d80bb8d19791d5a4f2091e4719043cc43",
     "original_base_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
-    "integration": "Merged fresh default-branch evidence changes; source-only presentation diff remains narrow.",
-    "verified_at": "2026-09-07T17:23:31.444734+00:00",
-    "review": "execution/reviews/W01-companion-presentation-review.md"
+    "integration": "Merged the advanced main branch after a single index.html conflict; preserved current candidate evidence, historical proof paths and source-only presentation boundaries.",
+    "verified_at": "2026-09-08T03:21:54.791562+00:00",
+    "review": "execution/reviews/W03-pages-conflict-repair-review.json"
   },
   {
     "repository": "AI-Ascension/sts2-harness",

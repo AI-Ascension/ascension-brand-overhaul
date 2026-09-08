@@ -16,5 +16,5 @@
     "execution/reviews/subscription-http-review-002.json",
     "execution/reviews/website-home-review-001.json"
   ],
-  "missing": "Verified generated artwork and separate production deployment approval."
+  "missing": "Public distribution approval for the independently reviewed local website artwork candidate, plus separate production deployment authority. See github/website-art-candidate.json."
 }

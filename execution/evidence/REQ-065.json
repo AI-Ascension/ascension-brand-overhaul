@@ -4,9 +4,9 @@
   "binding_requirement": "Every artwork export links to a reviewed original gpt-image-2 output and its Astra prompt; only enumerated noncreative transformations are allowed.",
   "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
   "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
-  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
-  "status": "blocked",
-  "reviewer": "W02 independent visual/source-use reviewers and W03 independent export/code reviewer; complete scope remains blocked",
+  "recorded_at": "2026-09-08T04:58:19.926094+00:00",
+  "status": "verified",
+  "reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
   "actual_review_records": [
     "execution/reviews/asset-gate-001.json",
     "docs/W07-L-W02-helper-rereview.md",
@@ -19,16 +19,24 @@
     "execution/reviews/W03-root-export-review.json",
     "execution/reviews/W03-root-export-followup.json",
     "execution/root-art-acceptance.json",
-    "execution/reviews/W03-root-art-final-acceptance.json"
+    "execution/reviews/W03-root-art-final-acceptance.json",
+    "brand/asset-manifest.json",
+    "brand/provenance/root-generation-records.json",
+    "brand/provenance/root-export-recipe.json",
+    "brand/provenance/root-export-receipts.json",
+    "execution/reviews/W03-final-art-manifest-followup.json",
+    "execution/reviews/W02-broadcast-source-review-008.json",
+    "execution/reviews/W02-broadcast-source-review-009.json",
+    "execution/reviews/W03-requirements-refresh-recommendations.json",
+    "execution/reviews/root-original-output-preservation.json"
   ],
   "procedures": [
-    "Independent source/use and visual reviews at the actual_review_records listed below",
-    "Scoped validate_assets.verify of the 21 verified plans and deliveries, including the declared BG01 parent for WEB01",
-    "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root . (full gate expected to report 51 blocked families)",
-    "python3 -m unittest discover -s tests -p test_art_policy.py",
-    "python3 -m unittest discover -s tests -p test_press_index.py"
+    "Independent actual-source, visual and mechanical-export reviews at actual_review_records",
+    "Scoped validate_assets.verify over all 70 verified plans and deliveries; zero lineage errors in execution/root-art-acceptance.json",
+    "Full validate_assets.py gate retains CAST-03 and MKT-05 blocked; missing authentic footage/challenge approval is not a schema or hash success",
+    "Exact prompt/raw-source preservation checks in execution/reviews/root-original-output-preservation.json"
   ],
-  "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+  "result_scope": "scoped per-export lineage under the accepted root route",
   "artifacts": [
     {
       "path": "brand/tokens.json",
@@ -42,18 +50,18 @@
     },
     {
       "path": "brand/asset-manifest.json",
-      "sha256": "8bf2a863735706a8fdd10ece04ef70549ecd1221f29ee0b6de266dc154409af0",
-      "bytes": 158052
+      "sha256": "eae9daf31d586692930a35ca7538ea08e0bef6bf979b1fe2b757fe7ad6f7bd4d",
+      "bytes": 324021
     },
     {
       "path": "brand/ART_ACCESS.md",
-      "sha256": "f90711e73b531d7dd33f51a93e8decc83067027bd786862fdd366542fe2e1f3d",
-      "bytes": 16492
+      "sha256": "fa9036575b883e5d36bd47670cf7a20c38dfba7a1760450dd8351264cf0d3ed6",
+      "bytes": 9496
     },
     {
       "path": "art/asset-registry.json",
-      "sha256": "0e71cf13afba70da828b384da8ea3b36021796b044f1c5e53c3d1c6cd6656032",
-      "bytes": 183853
+      "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3",
+      "bytes": 183884
     },
     {
       "path": "art/evidence-media-registry.json",
@@ -67,13 +75,13 @@
     },
     {
       "path": "art/generation-policy.json",
-      "sha256": "c5f32a13e79bdf96e6def1d76123a9f5ad0dfa8382a391347a943ae089c0ae95",
-      "bytes": 3105
+      "sha256": "dabc08e924fd6c24c2277ca1ee8eea7c5ea041dc00367300f3c92e4b90f16f10",
+      "bytes": 3134
     },
     {
       "path": "execution/art-model-attestation.json",
-      "sha256": "f7285859ec8870d2ed3bf736029a72f835ba50dadd6766dee38eba27db922e91",
-      "bytes": 51047
+      "sha256": "ee5fdfab2878ceb0e3e223c446a22b2d49d6512310f0448a1726e265a2a522d5",
+      "bytes": 44969
     },
     {
       "path": "art/root-generation-authorization.json",
@@ -82,28 +90,28 @@
     },
     {
       "path": "brand/provenance/root-generation-index.json",
-      "sha256": "91200a1334a849ef3f54eb7471bb3a05d060c18fac84e198d1519bdfd4cb2fd3",
-      "bytes": 32029
+      "sha256": "7a9258818e5fa34c686cc3f00aabb89e9d8367db033a2f86c66b9543aeb5749e",
+      "bytes": 133957
     },
     {
       "path": "brand/provenance/root-tool-observations.json",
-      "sha256": "8cd540218de79cf701bc251f7c9dd99da9fbadad00059b8696bb01d2180114fe",
-      "bytes": 30746
+      "sha256": "ced41302474f65c91ff8655610dc34e8a1b50bd782ba9b6f784a1fc875979c1e",
+      "bytes": 130763
     },
     {
       "path": "brand/provenance/root-generation-records.json",
-      "sha256": "d810ea1f590c969ddefd982ddb7692d2a867187ca3594bdd4516df00f3007e5e",
-      "bytes": 61443
+      "sha256": "762be2fdd45af27bc8cdcbcf151bd3cfc9a6f669e514d68e313a04c0a6af758d",
+      "bytes": 235791
     },
     {
       "path": "brand/provenance/root-export-recipe.json",
-      "sha256": "9729af2c899c9438ab3816b8e5e9f6ab628fd93878469920f0f022fe6188d168",
-      "bytes": 14698
+      "sha256": "c22c3e4925ee22273b6760fb7cbccdbbe059310594120146cec819a563cb3944",
+      "bytes": 52040
     },
     {
       "path": "brand/provenance/root-export-receipts.json",
-      "sha256": "f1e1ba935da37c2a1a7b7cda8a769d4a81d774d6ae4664ff5f656028a9cd564f",
-      "bytes": 28808
+      "sha256": "9e05f056d98163a495ca95ae6197bcfc9dbec20fe67029aa2ce7983a2772ff6c",
+      "bytes": 92020
     },
     {
       "path": "brand/identity-review.md",
@@ -112,13 +120,13 @@
     },
     {
       "path": "execution/root-art-acceptance.json",
-      "sha256": "cc59aea2df370b4d313c9344c3a26fc4c3190592ee6adcb4e385fce2d9b025e5",
-      "bytes": 3530
+      "sha256": "c181db5d06983593ddcc5f0b3404a514f6c6cc42b71d30462c2082fd671720ba",
+      "bytes": 6474
     },
     {
       "path": "brand/remaining-artwork.json",
-      "sha256": "aae9d70a0229e97e06fd66ba535131945bbad58e972d12c7395a0f7b5784d55a",
-      "bytes": 46111
+      "sha256": "772d6ec2297b887c7e01e1bd46f14cadb777dda8ba5e1f04a37018dfbf63df93",
+      "bytes": 1458
     },
     {
       "path": "execution/reviews/asset-gate-001.json",
@@ -174,10 +182,35 @@
       "path": "execution/reviews/W03-root-art-final-acceptance.json",
       "sha256": "857ec9bb30e7fffba97fe5c6ce5caf8061abb9b0b85eac52bcecdf5bf04c0ed2",
       "bytes": 16783
+    },
+    {
+      "path": "execution/reviews/W03-final-art-manifest-followup.json",
+      "sha256": "aa0e0087fe3f1aa469edab1de39ef78d9d0962a650f7f944702f153e43b51ba7",
+      "bytes": 7049
+    },
+    {
+      "path": "execution/reviews/W02-broadcast-source-review-008.json",
+      "sha256": "dd4a32d74bc8a5154f490c9bc24f9be6b2a18001e923664d3ede2d2da31882b0",
+      "bytes": 46414
+    },
+    {
+      "path": "execution/reviews/W02-broadcast-source-review-009.json",
+      "sha256": "778c1106337e1fb605210d4e3d6e84accf9616c006ad3be5ea7de5dc41e4826d",
+      "bytes": 28328
+    },
+    {
+      "path": "execution/reviews/W03-requirements-refresh-recommendations.json",
+      "sha256": "7c06989f8d43a7385943105afa3b440fc4151a175ebc2668500109f1f9c65146",
+      "bytes": 34547
+    },
+    {
+      "path": "execution/reviews/root-original-output-preservation.json",
+      "sha256": "f3b83e674959bc0d0684dd172181c63c06b52b52975f16883b3caf130de54d2a",
+      "bytes": 40997
     }
   ],
-  "blocker": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
+  "blocker": null,
   "notes": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review.",
   "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
-  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations."
+  "source_binding": "Current artifact bytes are listed here. Historical reviews retain their actual dates, input hashes and revisions. Current root acceptance incorporates reviews008/009 and the user-authorized root route; native/model and operational gates remain separate."
 }

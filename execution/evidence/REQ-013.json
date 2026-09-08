@@ -25,8 +25,8 @@
   "artifacts": [
     {
       "path": "github/website-pull-request.json",
-      "sha256": "c3868893f4bc4423c58a93e974b7b7fbcadbc9ed211e6c550778c1cc88966518",
-      "bytes": 773
+      "sha256": "770fdf6d23af98ac6203eac186f015afffd7cacc8d6b68dde4bc0b00d245a54a",
+      "bytes": 880
     },
     {
       "path": "execution/output-locations.json",

@@ -1,0 +1,585 @@
+{
+  "schema_version": "ai-ascension.w03-requirements-refresh-recommendations.v1",
+  "observed_at": "2026-09-08T04:42:05Z",
+  "reviewer": "w03-expanded-art-requirements-independent-review",
+  "task": "Read-only refresh of the expanded artwork inventory, current generated sources and exports, provenance chain, and art-related requirement recommendations after the MKT-07 generation-003 integration.",
+  "scope": "This is a recommendation receipt. It re-pins current files, reconciles the current filesystem against the ledgers, and separates private artwork readiness from factual content, native-agent, model, publication, rights, and release gates. It does not edit any ledger, manifest, requirements row, policy, schema, prompt, source, export, or artwork file.",
+  "working_tree": {
+    "path": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "branch": "work/root-authored-art",
+    "head": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+    "exclusive_write": "execution/reviews/W03-requirements-refresh-recommendations.json",
+    "pre_existing_dirty_changes_preserved": true,
+    "writes_by_this_review": [
+      "execution/reviews/W03-requirements-refresh-recommendations.json"
+    ]
+  },
+  "decision": {
+    "state": "scoped_requirements_refresh_recommendations",
+    "full_art_release_status": "incomplete",
+    "recommended_root_action": "Rebind the current replaced sources, generation records, receipts, manifest exports, and affected evidence/status rows before making any requirement promotion or full-art acceptance claim.",
+    "publication_approved": false,
+    "send_approved": false,
+    "model_promotion_approved": false,
+    "native_hierarchy_verified": false,
+    "rights_clearance_granted": false
+  },
+  "source_pins": {
+    "data/requirements.json": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+    "execution/requirements-status.json": "4f64d627dfae1e26fe0305fdd58161f705be281c879b42b490117e7c9620bca2",
+    "art/asset-registry.json": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3",
+    "art/generation-policy.json": "dabc08e924fd6c24c2277ca1ee8eea7c5ea041dc00367300f3c92e4b90f16f10",
+    "art/root-generation-authorization.json": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+    "brand/asset-manifest.json": "49f55d7f731fb47df9dff6a2c36891c9c5c5729a39bdea48838ff013a87d9112",
+    "execution/root-art-acceptance.json": "50ce0e6ada864ae9b7953cdc55b222cfa605677b37ec6471c5d38c539ca7f919",
+    "brand/remaining-artwork.json": "3890819331a48e3937d55f0350f59c4551d75715ad0797bd1caa770c7e558cd0",
+    "brand/provenance/root-generation-index.json": "0249e1f5cf83bec974f07ff47c57f13c9c3e7f838eab426694958b8ae7f802f3",
+    "brand/provenance/root-generation-records.json": "f24347eb376fa2c7517d6d809ee00486778cb5fe47c6b8e462558608b0137d0a",
+    "brand/provenance/root-tool-observations.json": "ced41302474f65c91ff8655610dc34e8a1b50bd782ba9b6f784a1fc875979c1e",
+    "brand/provenance/root-export-recipe.json": "cbe92b3b27f090ffa92dbd3c00438bc60945bdae3d6a12c5bb502ade36c0172c",
+    "brand/provenance/root-export-receipts.json": "fa9b0af05da2d02e777ea673e1a3cdcb60741cbdd98aa33510062ee21d1470bc",
+    "execution/art-model-attestation.json": "738de46bf3a994ec48244ee103837122316553920326b086725d0be4580094db",
+    "execution/reviews/W02-final-art-acceptance-review.json": "4e0152f66c173d036790a3cfbe0aef0cb7e4075ef0f11bc3a9c1bfe5c2fdc2bc",
+    "execution/reviews/W02-broadcast-source-review-008.json": "dd4a32d74bc8a5154f490c9bc24f9be6b2a18001e923664d3ede2d2da31882b0",
+    "execution/reviews/W02-email-art-context-review.json": "2751629b84d866560ce8b03ee72cd603ed77d3445ac40fa6d34859c452e18bf3",
+    "execution/reviews/W03-final-art-manifest-followup.json": "aa0e0087fe3f1aa469edab1de39ef78d9d0962a650f7f944702f153e43b51ba7",
+    "execution/reviews/W03-image-c2pa-provenance-review.json": "49525a89000ca5b899ad01595f910976d8a58bed54e0cdf824ef6738e846b208",
+    "execution/reviews/root-original-output-preservation.json": "f3b83e674959bc0d0684dd172181c63c06b52b52975f16883b3caf130de54d2a",
+    "execution/reviews/root-email-fallback-browser.json": "cd1b5ca778243d3304d116b2a5439ba0f63f13285a08d35ae23288acb72630d0",
+    "marketing/launch/email-art-context.json": "68f49d882382dcb2d87f96bea14e8e9a3bddb2cc62d11074245b79e99118985c",
+    "marketing/launch/email-run-card.html": "da9c32aa1ac5b203d7d482de378afc78c8a4e2eaeb7f4c92399f1d25f3dfbba3",
+    "marketing/launch/email-run-card.txt": "6ae40e95f1a20a10a7ac71b06d204cf0607e04c7fb2bc27b1abed7cc629200df",
+    "execution/reviews/root-native-capability-recheck-002.json": "d575aa191797e2ac1073beecf58fce11238c2b7a0e9ac031c2cdf66bbfd12751"
+  },
+  "current_state": {
+    "requirements": {
+      "binding_rows": 70,
+      "status_rows": 70,
+      "status_counts": {
+        "verified": 56,
+        "blocked": 14
+      },
+      "blocked_ids": [
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011",
+        "REQ-031",
+        "REQ-039",
+        "REQ-057",
+        "REQ-058",
+        "REQ-061",
+        "REQ-062",
+        "REQ-065",
+        "REQ-066",
+        "REQ-069"
+      ],
+      "interpretation": "The requirements file is the binding 70-row matrix. The status file is current execution evidence, but its nine art blocker strings still contain the superseded 32-master/42-export snapshot and require a root-owned refresh."
+    },
+    "art_manifest": {
+      "family_count": 72,
+      "family_status_counts": {
+        "verified": 67,
+        "blocked": 5
+      },
+      "blocked_family_ids": [
+        "CAST-03",
+        "MKT-03",
+        "MKT-05",
+        "MKT-06",
+        "MKT-07"
+      ],
+      "declared_export_count": 115,
+      "verified_family_exports": 107,
+      "blocked_family_exports": 8,
+      "all_declared_output_paths_present": true,
+      "verified_family_output_hash_matches": "107/107",
+      "blocked_family_output_hash_matches": "2/8",
+      "manifest_output_hash_mismatch_count": 6,
+      "strict_asset_schema": "72/72 pass after the MKT-09 nullable functional-HTML metadata repair; the repair is pinned by W03-final-art-manifest-followup.json.",
+      "canonical_asset_validator": "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root . exited 1 with only the five expected Not verified families: CAST-03, MKT-03, MKT-05, MKT-06, MKT-07."
+    },
+    "source_and_provenance": {
+      "source_png_count": 123,
+      "generation_index_records": 123,
+      "generation_records": 123,
+      "tool_observations": 123,
+      "generation_record_status_counts": {
+        "verified": 84,
+        "blocked": 39
+      },
+      "all_current_source_paths_and_hashes_match_ledgers": true,
+      "all_original_output_preservation_matches": 123,
+      "preserved_filename_fields_repaired": 85,
+      "author_depths": [
+        0
+      ],
+      "author_roles": [
+        "ROOT"
+      ],
+      "model_and_backend_attestation": "All current root records retain requested/accepted/observed author and image-model fields as unknown or unattested; this is preserved as an explicit limitation."
+    },
+    "export_lineage": {
+      "recipe_rows": 112,
+      "recipe_review_state_counts": {
+        "ready_for_mechanical_export": 18,
+        "pending_independent_review": 94
+      },
+      "receipt_rows": 112,
+      "receipt_review_state_counts": {
+        "independently_reviewed_source_and_export": 111,
+        "pending_independent_review": 1
+      },
+      "receipt_and_recipe_hash_audit": "112/112 rows have current source/output files and no hash errors; review-state and manifest metadata still need reconciliation.",
+      "publication_approved_receipts": 0
+    },
+    "model_attestation": {
+      "observed_at": "2026-09-08T02:44:32.854298+00:00",
+      "successful_generation_calls_recorded": 117,
+      "failed_generation_calls_recorded": 3,
+      "all_artwork_complete": false,
+      "verified_families_recorded": 67,
+      "existing_exports_recorded": 115,
+      "generation_route": "user_authorized_root_image_tool",
+      "actual_backend": null,
+      "backend_attested": false,
+      "author_model_attested": false,
+      "interpretation": "This attestation predates the current 123-record ledger and remains stale for counts. Its unknown backend/model values remain materially current."
+    },
+    "c2pa": {
+      "scan_review": "execution/reviews/W03-image-c2pa-provenance-review.json",
+      "scanned_source_pngs": 122,
+      "trusted_provider_signed_manifests": 122,
+      "signed_claim_profile": "OpenAI Media Service claim generator, softwareAgent gpt-image version 2.0, trainedAlgorithmicMedia digital source type.",
+      "exact_gpt_image_2_api_model_mapping": "unresolved",
+      "root_tool_session_binding": "not established",
+      "latest_mkt07_generation_003_in_scan": false,
+      "requirement_effect": "C2PA supports provider-origin provenance but does not clear REQ-062 because the signed softwareAgent label is not mapped to the exact gpt-image-2 API ID or root request trace."
+    },
+    "current_review_boundaries": {
+      "w02_broadcast_source_review_008": "MKT-03 outcome/question and MKT-06 release/anonymous-contributor replacements pass private source, copy, visual, crop, and output checks; MKT-05 proposed card passes privately but remains blocked on actual challenge approval.",
+      "w02_email_context_review": "The six report-only factual fields pass, populated HTML/plain parity passes, and the private context remains pending publication/send/visual approval.",
+      "w03_manifest_followup": "The MKT-09 strict-schema repair passes for all 72 rows; no full raster replay was performed.",
+      "original_output_preservation": "All 123 current preserved PNG sources match the recorded original tool-returned bytes and UUID basenames; this resolves preservation evidence without attesting the model/backend.",
+      "mkt07_visual_state": "Generation-003 is a current candidate and has been descriptively inspected as clean/readable report-only artwork, but it has no independent visual/export acceptance yet."
+    }
+  },
+  "manifest_reconciliation": {
+    "finding": "Six integrated replacement exports are current on disk and in the export receipts, while brand/asset-manifest.json still contains their superseded hashes and, for MKT-07, the superseded source/generation link.",
+    "mismatches": [
+      {
+        "asset_id": "MKT-03",
+        "output_path": "brand/assets/marketing/thumbnail-outcome.png",
+        "generation_record_id": "MKT-03-generation-001",
+        "raw_source_path": "brand/sources/generated/MKT-03/generation-001.png",
+        "manifest_sha256": "d6aec732aca7b367363398e582c6e3a7a52b0af620bdb8dfa5f385c907c8a132",
+        "actual_output_sha256": "7972f092969b38aa44883372ce6cbf5fb4438d757a2c1ba3c52c2848847b1fdb",
+        "current_receipt_source_path": "brand/sources/generated/MKT-03/generation-003.png",
+        "current_receipt_source_sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca"
+      },
+      {
+        "asset_id": "MKT-03",
+        "output_path": "brand/assets/marketing/thumbnail-question.png",
+        "generation_record_id": "MKT-03-generation-002",
+        "raw_source_path": "brand/sources/generated/MKT-03/generation-002.png",
+        "manifest_sha256": "908f81c489a9465fc6b513ceadd03ced8d2222802113d21752cd573c860f3abc",
+        "actual_output_sha256": "d25cc01f8d4b4516a7c3818eca098310228c164f8c0666610f540f31f7b76bb0",
+        "current_receipt_source_path": "brand/sources/generated/MKT-03/generation-004.png",
+        "current_receipt_source_sha256": "14ade5e06f04a12e000715d181f99caf331581ee7f4f823167dfc53ee5b6aa5d"
+      },
+      {
+        "asset_id": "MKT-05",
+        "output_path": "brand/assets/marketing/challenge-template.png",
+        "generation_record_id": "MKT-05-generation-001",
+        "raw_source_path": "brand/sources/generated/MKT-05/generation-001.png",
+        "manifest_sha256": "499685f65dea3fb225be02eff64583235f9d98f6a9a16076d42e1c0585a4cad4",
+        "actual_output_sha256": "60ff9fed0a6be1eb2b73ca01ea4f5b0c26ace17980f7d91dec8a93693b56c2d7",
+        "current_receipt_source_path": "brand/sources/generated/MKT-05/generation-002.png",
+        "current_receipt_source_sha256": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9"
+      },
+      {
+        "asset_id": "MKT-06",
+        "output_path": "brand/assets/marketing/release-template.png",
+        "generation_record_id": "MKT-06-generation-001",
+        "raw_source_path": "brand/sources/generated/MKT-06/generation-001.png",
+        "manifest_sha256": "d563bd1f1450f607d6ca44a0896075aa889e7a29d74414121749d01935dc754f",
+        "actual_output_sha256": "fb786cf8d827b909c1be92d39c8ea5b978fd8d821015f1b85bf173a4a274ea48",
+        "current_receipt_source_path": "brand/sources/generated/MKT-06/generation-003.png",
+        "current_receipt_source_sha256": "c239754685c0e59ed52f2bc5eb66e5eee8cf194c83e61c27614503835b1053d5"
+      },
+      {
+        "asset_id": "MKT-06",
+        "output_path": "brand/assets/marketing/contributor-template.png",
+        "generation_record_id": "MKT-06-generation-002",
+        "raw_source_path": "brand/sources/generated/MKT-06/generation-002.png",
+        "manifest_sha256": "0c526b21d26f4875c695497eeeb820107fa538b31951edf8acf554c7aa7ddae1",
+        "actual_output_sha256": "fc3dcf0d01a79c755ab0ba019713591d3b994a3ccd716c4a7f265334da5f1b1e",
+        "current_receipt_source_path": "brand/sources/generated/MKT-06/generation-004.png",
+        "current_receipt_source_sha256": "2094b9573c10282e5344cefae1efed830d550752be17f9bb262fcb828a037e73"
+      },
+      {
+        "asset_id": "MKT-07",
+        "output_path": "brand/assets/marketing/email-run-card.png",
+        "generation_record_id": "MKT-07-generation-002",
+        "raw_source_path": "brand/sources/generated/MKT-07/generation-002.png",
+        "manifest_sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
+        "actual_output_sha256": "c9e70f5db8cd5c2393f9c0f77ec1207c3f7368bde95640d8be99804d76190815",
+        "current_receipt_source_path": "brand/sources/generated/MKT-07/generation-003.png",
+        "current_receipt_source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58"
+      }
+    ],
+    "recommended_reconciliation": [
+      "Rebind the six manifest export objects to the current receipt source paths, generation record IDs, dimensions, and output hashes.",
+      "Keep blocked family status until its content and independent-review gate is separately cleared; a hash rebind alone is not publication approval.",
+      "Rerun the strict schema validator, full output hash audit, and canonical asset validator after root integration."
+    ]
+  },
+  "latest_candidate": {
+    "asset_id": "MKT-07",
+    "generation_record_id": "MKT-07-generation-003",
+    "status": "blocked_pending_independent_source_visual_export_review",
+    "prompt_path": "brand/prompts/root/MKT-07/generation-003.txt",
+    "prompt_sha256": "07ff4e62a1e0a3b9831c060cfc971fe5223143c4e88b78397e01a14983046a1b",
+    "source_path": "brand/sources/generated/MKT-07/generation-003.png",
+    "source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+    "source_bytes": 2314792,
+    "source_dimensions": [
+      1731,
+      909
+    ],
+    "source_mode": "RGB",
+    "original_output_basename": "exec-b3d21136-6fef-41fa-a31b-e138c19a90b1.png",
+    "preservation_review": "root-original-output-preservation.json records a matching preserved source hash and original basename.",
+    "export": {
+      "output_path": "brand/assets/marketing/email-run-card.png",
+      "output_sha256": "c9e70f5db8cd5c2393f9c0f77ec1207c3f7368bde95640d8be99804d76190815",
+      "output_bytes": 1127789,
+      "size": [
+        1200,
+        630
+      ],
+      "crop_box": [
+        0,
+        0,
+        1731,
+        909
+      ],
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "receipt_review_state": "pending_independent_review",
+      "publication_approved": false
+    },
+    "required_followup": "Open the source and 1200x630 output with the independent reviewer, verify report-only copy/crop/readability/hash and receipt/manifest linkage, then decide whether MKT-07 can move to a bounded verified state."
+  },
+  "family_projection": {
+    "current": {
+      "verified": 67,
+      "blocked": 5,
+      "total": 72
+    },
+    "after_w02_008_mkt03_and_mkt06_rebind": {
+      "verified": 69,
+      "blocked": 3,
+      "basis": "W02-broadcast-source-review-008 recommends the current MKT-03 and MKT-06 replacements for bounded private use; root must rebind evidence/status/manifest records first."
+    },
+    "after_mkt07_independent_review_and_reconciliation": {
+      "verified": 70,
+      "blocked": 2,
+      "basis": "MKT-07 generation-003 must pass independent source/output/visual review and manifest/receipt reconciliation."
+    },
+    "remaining_blocked_families": {
+      "CAST-03": "Requires approved actual footage cropping and host integration; generated layouts do not satisfy the capture gate.",
+      "MKT-05": "Private proposed card passes bounded review, but real approved challenge content, rules, dates, and source approval remain absent."
+    },
+    "missing_output_paths": 0,
+    "publication_or_send_effect": "No family projection grants rights, publication, email send, or campaign operation approval."
+  },
+  "stale_status_wording": {
+    "affected_status_file": "execution/requirements-status.json",
+    "affected_requirement_ids": [
+      "REQ-007",
+      "REQ-008",
+      "REQ-009",
+      "REQ-010",
+      "REQ-011",
+      "REQ-061",
+      "REQ-062",
+      "REQ-065",
+      "REQ-066"
+    ],
+    "affected_evidence_files": [
+      "execution/evidence/REQ-007.json",
+      "execution/evidence/REQ-008.json",
+      "execution/evidence/REQ-009.json",
+      "execution/evidence/REQ-010.json",
+      "execution/evidence/REQ-011.json",
+      "execution/evidence/REQ-061.json",
+      "execution/evidence/REQ-062.json",
+      "execution/evidence/REQ-065.json",
+      "execution/evidence/REQ-066.json"
+    ],
+    "superseded_sentence": "The root-authorized route has produced 32 masters and 42 exports (40 raster, two functional HTML). Twenty-one families passed scoped independent source/use, visual, export and provenance checks. The complete required set remains unfinished: 73 exports are missing and BG-04 needs a seamless replacement. Creative generation is blocked by the recorded image-service quota. Original author/backend wording is amended by the recorded user authorization; actual identities remain unknown.",
+    "recommended_current_statement": "Current observation: 123 preserved source PNGs are indexed by 123 root generation records and 123 tool observations; 84 records are verified and 39 blocked. The 72-family manifest declares 67 verified families, 5 blocked families, and 115 output paths; all output paths exist, while the six replacement exports listed in this review currently differ from manifest hashes. MKT-03 and MKT-06 replacements pass the W02-008 private source/output review; MKT-05's proposed card passes private review but real challenge/rules/dates approval remains blocked; MKT-07 generation-003 is the current 1200x630 email-run-card candidate awaiting independent source/visual/export review; CAST-03 still needs approved actual footage crop and host integration. REQ-061 and REQ-062 remain blocked; the art-model attestation is stale at 117 successful calls and still has no backend/model attestation.",
+    "recommendation": "Root should refresh the status and evidence rows against the source pins in this receipt. This review does not edit them. Preserve the REQ-061/REQ-062 native and model blockers after wording refresh."
+  },
+  "requirement_recommendations": [
+    {
+      "id": "REQ-007",
+      "current_status": "blocked",
+      "proposed_status": "verified",
+      "interim_disposition": "retain blocked until the evidence and status blocker are rebound to current counts and pins",
+      "basis": "The scoped identity visual/source-use review supports the mark-size and monochrome behavior. The current blocking string is stale; complete art/model/native acceptance remains separate.",
+      "required_action": "Rebind execution/evidence/REQ-007.json and its status row to current source/manifest/review pins, then retain separate REQ-061 and REQ-062 blockers."
+    },
+    {
+      "id": "REQ-008",
+      "current_status": "blocked",
+      "proposed_status": "verified",
+      "interim_disposition": "retain blocked until evidence/status rebind",
+      "basis": "The scoped identity review supports deterministic, accurate, accessible text treatment. The old 32/42 blocker no longer describes the current inventory.",
+      "required_action": "Refresh the evidence and status row with current identity review and source pins; do not use this promotion to attest the exact image model."
+    },
+    {
+      "id": "REQ-009",
+      "current_status": "blocked",
+      "proposed_status": "verified",
+      "interim_disposition": "retain blocked until evidence/status rebind",
+      "basis": "The scoped review supports no font binaries and no ambiguous copied marks. Native author and model requirements remain independently blocked.",
+      "required_action": "Refresh the evidence and status row, preserving the current no-font and source-use evidence and separate REQ-061/REQ-062 boundaries."
+    },
+    {
+      "id": "REQ-010",
+      "current_status": "blocked",
+      "proposed_status": "verified",
+      "interim_disposition": "retain blocked",
+      "basis": "The complete export set exists and strict schema passes, but six manifest/export/source links are stale and MKT-07 generation-003 has no independent export review.",
+      "required_action": "Rebind the six manifest rows, complete independent MKT-07 source/output review, reconcile receipt/recipe state, rerun validators, and then reassess the full export gate."
+    },
+    {
+      "id": "REQ-011",
+      "current_status": "blocked",
+      "proposed_status": "verified",
+      "interim_disposition": "retain blocked until evidence/status rebind",
+      "basis": "The current source-use reviews preserve genuine evidence separately from generated editorial art. The stale blocker string incorrectly reports missing exports and quota state.",
+      "required_action": "Refresh the evidence and status row to cite the current generated-art/evidence-media boundary and preserve CAST-03's actual-footage gate."
+    },
+    {
+      "id": "REQ-012",
+      "current_status": "verified",
+      "proposed_status": "verified",
+      "basis": "The exact-ID blocking behavior is verified in scope; no blocked family is silently called delivered.",
+      "required_action": "Retain the verified status with current counts when the next root evidence refresh is made."
+    },
+    {
+      "id": "REQ-045",
+      "current_status": "verified",
+      "proposed_status": "verified",
+      "basis": "The produced-or-specifically-blocked inventory covers all 72 families and 115 export paths, with five content-dependent families explicitly blocked.",
+      "required_action": "Refresh only stale count references; keep the inventory status distinct from full art completion."
+    },
+    {
+      "id": "REQ-046",
+      "current_status": "verified",
+      "proposed_status": "verified",
+      "basis": "The source candidate contains no font binaries and the archive rule is recorded.",
+      "required_action": "Retain verified; no font binary or licensed-asset change is authorized by this review."
+    },
+    {
+      "id": "REQ-047",
+      "current_status": "verified",
+      "proposed_status": "verified",
+      "basis": "Generated editorial art and authentic evidence media remain separately classified; no generated screenshot is accepted as gameplay evidence.",
+      "required_action": "Retain verified and keep the CAST-03 footage requirement separate from generated layout readiness."
+    },
+    {
+      "id": "REQ-061",
+      "current_status": "blocked",
+      "proposed_status": "blocked",
+      "basis": "All 123 current generation records are ROOT depth 0. The required native gpt-6-astra/max depth-3 art-author records are absent.",
+      "required_action": "Keep blocked. A different independent re-review may inspect superseded attempts, but it cannot clear the required native Astra authorship/depth evidence."
+    },
+    {
+      "id": "REQ-062",
+      "current_status": "blocked",
+      "proposed_status": "blocked",
+      "basis": "The 122-file C2PA review found trusted OpenAI-signed manifests with softwareAgent gpt-image version 2.0, but no exact API model-ID mapping or root tool-session binding; MKT-07 generation-003 is outside that scan.",
+      "required_action": "Keep blocked until each required generation has a trustworthy provider request/response trace or documented mapping to gpt-image-2 or an accepted snapshot. Do not rewrite model fields from C2PA alone."
+    },
+    {
+      "id": "REQ-063",
+      "current_status": "verified",
+      "proposed_status": "verified",
+      "basis": "The blocking policy rejects code-drawn, stock, traced, legacy, alternate-model, and silent-substitution artwork.",
+      "required_action": "Retain verified; this policy result does not prove the missing native/model evidence."
+    },
+    {
+      "id": "REQ-064",
+      "current_status": "verified",
+      "proposed_status": "verified",
+      "basis": "The registry distinguishes 72 new-art families from three authentic evidence-media families and five historical/reference records.",
+      "required_action": "Retain verified and refresh only stale count prose if it is copied into another status artifact."
+    },
+    {
+      "id": "REQ-065",
+      "current_status": "blocked",
+      "proposed_status": "verified",
+      "interim_disposition": "retain blocked",
+      "basis": "Receipt rows now carry current replacement source/output hashes, but six manifest objects still point at superseded output bytes and MKT-07 generation-003 is pending independent review.",
+      "required_action": "Rebind all six manifest/source/generation-record links, complete MKT-07 independent review, and reconcile receipt/recipe review states before promotion."
+    },
+    {
+      "id": "REQ-066",
+      "current_status": "blocked",
+      "proposed_status": "verified",
+      "interim_disposition": "retain blocked",
+      "basis": "W02-008 passes the factual copy and bounded-use review for MKT-03 and MKT-06; MKT-05 remains a proposal and the current MKT-07 candidate has not received independent visual/export review.",
+      "required_action": "Complete MKT-07 factual/visual/export review and reconcile its current run-card linkage; keep MKT-05 challenge approval and publication gates separate."
+    },
+    {
+      "id": "REQ-067",
+      "current_status": "verified",
+      "proposed_status": "verified",
+      "basis": "Generated posters, cards, and diagrams remain labeled presentation art and are not used as genuine gameplay evidence.",
+      "required_action": "Retain verified; no generated media may be promoted to evidence by this refresh."
+    },
+    {
+      "id": "REQ-068",
+      "current_status": "verified",
+      "proposed_status": "verified",
+      "basis": "Approved art is precomputed/content-addressed and current page/export checks do not make implicit image-generation calls.",
+      "required_action": "Retain verified; explicit creative jobs and their provenance remain required for future variants."
+    },
+    {
+      "id": "REQ-069",
+      "current_status": "blocked",
+      "proposed_status": "blocked",
+      "basis": "The native depth-three chain and two required Astra leaves are absent; all current records are root-authored depth 0.",
+      "required_action": "Keep blocked until actual native ancestry and leaf restrictions are evidenced. Do not infer this from the 250-slot setting or review records."
+    },
+    {
+      "id": "REQ-070",
+      "current_status": "verified",
+      "proposed_status": "verified",
+      "basis": "Unavailable model/attestation blocks exact IDs while unrelated work continues, and no fallback has been given a verified flag.",
+      "required_action": "Retain verified; continue to leave unresolved model/native fields explicit."
+    }
+  ],
+  "remaining_blockers": [
+    {
+      "id": "ART-MANIFEST-REBINDS",
+      "severity": "high",
+      "status": "open",
+      "detail": "Six manifest export objects have superseded output hashes, and MKT-03/MKT-05/MKT-06/MKT-07 also have current replacement source records in receipts.",
+      "next_action": "Root-owned manifest, evidence, and status rebind followed by schema/hash validation."
+    },
+    {
+      "id": "MKT-07-INDEPENDENT-REVIEW",
+      "severity": "high",
+      "status": "open",
+      "detail": "MKT-07 generation-003 and its 1200x630 email-run-card output are pending independent source, crop, visual, export, and manifest linkage review.",
+      "next_action": "Assign a distinct read-only reviewer and record the result against the current source/output hashes."
+    },
+    {
+      "id": "CAST-03-ACTUAL-FOOTAGE",
+      "severity": "high",
+      "status": "open",
+      "detail": "The generated mobile layout is not approved actual footage and has not passed crop/host integration against supplied capture media.",
+      "next_action": "Obtain approved footage and run the real crop/host integration gate."
+    },
+    {
+      "id": "MKT-05-CHALLENGE-APPROVAL",
+      "severity": "high",
+      "status": "open",
+      "detail": "The proposed challenge card has private visual/copy review, but actual approved challenge content, rules, dates, and source approval are absent.",
+      "next_action": "Obtain and review the real challenge brief before public use."
+    },
+    {
+      "id": "REQ-061-NATIVE-ASTRA",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "No required native gpt-6-astra/max depth-3 art-author records exist; current records are root depth 0.",
+      "next_action": "Capture actual supported native ancestry and role-specific runtime metadata, or retain the requirement blocked."
+    },
+    {
+      "id": "REQ-062-EXACT-MODEL",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "Current root records have unknown requested/observed model and backend; 122 trusted C2PA manifests do not map gpt-image version 2.0 to the exact accepted API ID, and generation-003 is not scanned.",
+      "next_action": "Preserve provider request/response or documented alias evidence for each required generation and rerun the bounded provenance scan after any byte-changing export."
+    },
+    {
+      "id": "STALE-ART-STATUS-WORDING",
+      "severity": "high",
+      "status": "open",
+      "detail": "Nine art status/evidence rows still state 32 masters, 42 exports, 73 missing exports, BG-04 replacement, and quota blockage.",
+      "next_action": "Root-owned refresh using stale_status_wording.recommended_current_statement; preserve native/model blockers."
+    },
+    {
+      "id": "ART-ATTESTATION-COUNT",
+      "severity": "medium",
+      "status": "open",
+      "detail": "execution/art-model-attestation.json records 117 successful calls while the current generation ledger contains 123 records; model/backend attestation is also false.",
+      "next_action": "Refresh the attestation from current ledgers without turning unknown model/backend values into claims."
+    },
+    {
+      "id": "RECEIPT-RECIPE-RECONCILIATION",
+      "severity": "medium",
+      "status": "open",
+      "detail": "The recipe has 94 pending and 18 ready rows while receipts have 111 independently reviewed and one pending row; these fields do not yet form one reconciled acceptance state.",
+      "next_action": "Root-owned metadata reconciliation after the independent review decisions are pinned."
+    },
+    {
+      "id": "OUT-OF-SCOPE-REQUIREMENTS",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "REQ-031 publication/source approvals, REQ-039 reviewer/depth-three evidence, REQ-057 role-specific runtime evidence, REQ-058 native-depth evidence, and REQ-069 no-fourth-layer evidence remain blocked outside this artwork refresh.",
+      "next_action": "Keep these requirements in their own execution workstreams; this receipt does not change them."
+    }
+  ],
+  "validation_performed": [
+    {
+      "procedure": "Current manifest output hash audit",
+      "result": "115 output paths present; 107/107 verified-family outputs match; six blocked-family replacement outputs mismatch the stale manifest hashes."
+    },
+    {
+      "procedure": "Current source/ledger/tool-observation hash comparison",
+      "result": "123 preserved source PNGs, 123 generation records, and 123 observations/index entries; all current source paths and hashes match."
+    },
+    {
+      "procedure": "Strict Draft 2020-12 manifest validation with local art-generation resolver",
+      "result": "72/72 rows pass with zero errors."
+    },
+    {
+      "procedure": "Canonical scripts/validate_assets.py validation",
+      "result": "Exit 1 only because CAST-03, MKT-03, MKT-05, MKT-06, and MKT-07 remain Not verified."
+    },
+    {
+      "procedure": "Export recipe/receipt source/output hash audit",
+      "result": "112/112 rows have no source/output hash errors; review-state and manifest linkage reconciliation remains open."
+    },
+    {
+      "procedure": "MKT-07 source/output inspection",
+      "result": "The current source and 1200x630 output were descriptively inspected; this review records no independent visual/export acceptance."
+    },
+    {
+      "procedure": "Original output preservation review",
+      "result": "root-original-output-preservation.json records 123 matching preserved sources and 85 repaired UUID basename fields; it is preservation evidence only."
+    }
+  ],
+  "delivery_boundaries": {
+    "this_receipt_changes_requirement_status": false,
+    "this_receipt_changes_manifest_or_ledgers": false,
+    "this_receipt_approves_publication": false,
+    "this_receipt_approves_email_send": false,
+    "this_receipt_attests_gpt_6_astra": false,
+    "this_receipt_attests_exact_gpt_image_2_model": false,
+    "this_receipt_clears_actual_gameplay_or_footage_gates": false,
+    "this_receipt_clears_challenge_rights_or_consent_gates": false,
+    "preservation_rule": "Keep all UUID/basename mappings and preserved source files. Do not rename or delete current original PNGs while reconciling records."
+  }
+}

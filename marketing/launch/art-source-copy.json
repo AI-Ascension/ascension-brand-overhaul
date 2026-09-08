@@ -1,0 +1,86 @@
+{
+  "schema_version": "ai-ascension.marketing-source-copy.v1",
+  "recorded_at": "2026-09-08T03:18:54.848075+00:00",
+  "status": "independently_reviewed_for_private_artwork",
+  "publication_approved": false,
+  "assets": [
+    {
+      "asset_id": "MKT-03",
+      "variant": "outcome",
+      "headline": "Reported defeat",
+      "subtitle": "Windows practice campaign \u00b7 Floor 17",
+      "status_label": "REPORT ONLY",
+      "footer": "AI Ascension",
+      "source": {
+        "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md",
+        "repository_revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+        "document_sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+        "kind": "published_maintainer_report_only"
+      },
+      "boundary": "Factual report summary in original editorial art. No claim that this project independently replayed gameplay or published a genuine capture."
+    },
+    {
+      "asset_id": "MKT-03",
+      "variant": "question",
+      "headline": "Rage before Bash+?",
+      "subtitle": "Reported action order",
+      "status_label": "REPORT ONLY",
+      "footer": "AI Ascension",
+      "source": {
+        "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/bounded-astra-plans-20260906.md",
+        "repository_revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+        "document_sha256": "8cefac7a5bedf06141c6ad0aa90636bd894e4319fc52f9f9de38f4cd93c82e9b",
+        "kind": "published_maintainer_report_only"
+      },
+      "boundary": "An honest question about the published order Rage, Bash+, Strike, End turn. No hidden rationale, full decision state, optimality or counterfactual outcome is asserted."
+    },
+    {
+      "asset_id": "MKT-06",
+      "variant": "release",
+      "headline": "Brand verification tools",
+      "version": "v0.1.0",
+      "status_label": "DRAFT \u2014 NOT RELEASED",
+      "footer": "AI Ascension",
+      "source": {
+        "repository": "AI-Ascension/ascension-brand-overhaul",
+        "revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+        "path": "package.json",
+        "sha256": "3e3bfc085d49410a6d24752c802c42026371051f629fe2c7214e866502946692",
+        "observed_published_github_releases": 0
+      },
+      "boundary": "Declared verification-tool package version and current unreleased draft state. This is not a toolkit/runtime version or a release announcement."
+    },
+    {
+      "asset_id": "MKT-06",
+      "variant": "contributor",
+      "headline": "Contributor thanks",
+      "body": "Thank you for careful reviews.",
+      "footer": "AI Ascension",
+      "identity_policy": "Anonymous collective acknowledgment. No individual name, photo, quotation, endorsement, testimonial, attributed contribution or permission claim."
+    },
+    {
+      "asset_id": "MKT-05",
+      "variant": "proposed_challenge",
+      "headline": "Check one reported result",
+      "status_label": "PROPOSED \u2014 NOT SCHEDULED",
+      "rules": [
+        "Read the public report.",
+        "Cite the exact source revision.",
+        "Identify one claim needing evidence.",
+        "Share no private data."
+      ],
+      "source": {
+        "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md",
+        "repository_revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+        "document_sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+        "kind": "published_maintainer_report_only"
+      },
+      "image_source_label": "github.com/AI-Ascension/sts2-harness",
+      "footer": "AI Ascension",
+      "deadline": null,
+      "challenge_approval": null,
+      "boundary": "Concrete private proposal for review. It is not an approved or announced community challenge and has no deadline, votes, participation, prize or outcome."
+    }
+  ],
+  "independent_review_reference": "execution/reviews/W02-broadcast-source-review-008.json"
+}

@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-09-08T02:53:49.834689+00:00",
+  "observed_at": "2026-09-08T04:32:45.300516+00:00",
   "scope": "Read-only preintegration snapshot. Current root-art changes have not been committed or pushed. Private candidate artwork is not in public consumer PRs. No merge or deployment.",
   "results": [
     {
@@ -17,18 +17,18 @@
       "repository": "AI-Ascension/AI-Ascension.github.io",
       "baseRefName": "main",
       "headRefName": "work/w04-presentation",
-      "headRefOid": "b50f7d725c8d6abb6306963d059fbb7fa067402c",
+      "headRefOid": "e5153d6628843bbc734686ae926e143a1cf90526",
       "isDraft": true,
-      "mergeable": "CONFLICTING",
+      "mergeable": "MERGEABLE",
       "state": "OPEN",
       "statusCheckRollup": [
         {
           "__typename": "CheckRun",
-          "completedAt": "2026-09-07T17:23:48Z",
+          "completedAt": "2026-09-08T03:18:03Z",
           "conclusion": "SUCCESS",
-          "detailsUrl": "https://github.com/AI-Ascension/AI-Ascension.github.io/actions/runs/34147405522/job/101822299441",
+          "detailsUrl": "https://github.com/AI-Ascension/AI-Ascension.github.io/actions/runs/34183010304/job/101925721945",
           "name": "static-and-proof",
-          "startedAt": "2026-09-07T17:23:33Z",
+          "startedAt": "2026-09-08T03:17:44Z",
           "status": "COMPLETED",
           "workflowName": "Validate site source"
         }
@@ -41,7 +41,7 @@
       "headRefName": "work/w04-presentation",
       "headRefOid": "d2105005ebdb6a5f7dd5e266e80b139e294cf89e",
       "isDraft": true,
-      "mergeable": "UNKNOWN",
+      "mergeable": "MERGEABLE",
       "state": "OPEN",
       "statusCheckRollup": [
         {
@@ -147,7 +147,7 @@
       "headRefName": "work/w04-presentation",
       "headRefOid": "22d780c12c60d8a2e5e1310f57deeea172decbd6",
       "isDraft": true,
-      "mergeable": "UNKNOWN",
+      "mergeable": "MERGEABLE",
       "state": "OPEN",
       "statusCheckRollup": [
         {
@@ -179,7 +179,7 @@
       "headRefName": "work/w04-presentation",
       "headRefOid": "6ad97aeead88cdb2097675ddff076bc4bb97529d",
       "isDraft": true,
-      "mergeable": "UNKNOWN",
+      "mergeable": "MERGEABLE",
       "state": "OPEN",
       "statusCheckRollup": [
         {
@@ -211,7 +211,7 @@
       "headRefName": "work/w04-presentation",
       "headRefOid": "0c39c5a53b005d94df59f14f0962255d0962203a",
       "isDraft": true,
-      "mergeable": "UNKNOWN",
+      "mergeable": "MERGEABLE",
       "state": "OPEN",
       "statusCheckRollup": [
         {
@@ -254,7 +254,7 @@
       "headRefName": "work/w04-presentation",
       "headRefOid": "f872902ed987f5946bf843824063d10884a1bd29",
       "isDraft": true,
-      "mergeable": "UNKNOWN",
+      "mergeable": "MERGEABLE",
       "state": "OPEN",
       "statusCheckRollup": [
         {

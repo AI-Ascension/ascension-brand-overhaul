@@ -1,11 +1,11 @@
 {
   "schema_version": "ai-ascension.release-status.v1",
-  "summary": "Private engineering handoff with partially verified root-authorized artwork and a local website art candidate. The full overhaul is incomplete: required artwork, native depth-three orchestration and operational evidence/authority remain unresolved. Twelve existing draft PRs remain open and mergeable at the recorded remote snapshot; the website artwork candidate has not been publicly uploaded or deployed.",
+  "summary": "Private engineering handoff with reviewed root-authorized artwork and local website/GitHub art candidates. All planned art export paths exist; final family acceptance is recorded in execution/root-art-acceptance.json. Native depth-three orchestration and operational evidence/authority remain unresolved. Recorded remote states are historical until the final external remote receipt refresh.",
   "dimensions": {
-    "locally_verified": "218 local package/contract tests pass at the implementation hashes recorded in execution/reviews/root-art-local-checks.json. Final package integrity and exact-head CI are recorded in the external archive receipt; website and companion scopes remain separate.",
+    "locally_verified": "218 local package/contract tests pass at the code/test hashes in execution/reviews/root-final-expanded-art-local-tests.json. Final source inventory and exact-head CI are recorded in the external archive receipt; website and companion scopes remain separate.",
     "independently_reviewed": "Engineering and final requirement coverage source reviews recorded; exact archive acceptance is bound by external final-review.json beside the ZIP",
-    "mandatory_artwork": "Partial: 32 generated source masters, 40 raster exports and two functional HTML exports; 21 of 72 families verified for scoped source/export acceptance. 73 of 115 required exports are missing; BG-04 also requires a seamless replacement. Zero public distribution approvals.",
-    "native_orchestration": "Blocked: the requested 49-role depth-three chain is not established; current descendant tool recheck still reports no callable child-spawn tool.",
+    "mandatory_artwork": "All 115 planned export paths exist: 112 raster, one WebM, two functional HTML. 123 generated sources including superseded attempts are preserved. 70/72 families pass scoped acceptance; CAST-03, MKT-05 remain incomplete. Zero public distribution approvals.",
+    "native_orchestration": "Blocked: the requested 49-role depth-three chain is not established; execution/reviews/root-native-direct-capability-recheck.json confirms the child has no direct collaboration namespace or callable spawn tool. This conclusion does not rely solely on ALL_TOOLS enumeration.",
     "draft_prs": "Twelve open, draft, mergeable PRs observed at execution/reviews/root-art-remote-snapshot.json. Configured checks pass at those recorded heads; empty check sets remain explicit. Final brand artwork push and exact-head CI are recorded in the external delivery receipt.",
     "merged": "none performed",
     "deployed": "none performed",
@@ -21,12 +21,13 @@
     "Ten companion presentation PRs independently reviewed with exact changed-file hashes;13 repository settings proposals and six-pin checklist prepared.",
     "Twelve episode drafts, 24 clip drafts,six technical article outlines,launch/report-only alternatives,outreach/email templates, 72 content gates, and experiments with unobserved results.",
     "All configured remote checks on the ten companion PRs pass at their recorded heads; website and companions reported mergeable. No-check repositories are distinguished in execution/reviews/companion-remote-checks-001.json.",
-    "Root-authorized artwork: 21 complete families passed scoped provenance verification using independent visual, source-use and mechanical export reviews. Exact prompts and source PNGs are retained; model/backend identity stays unknown. Three additional RUN01/RUN02 source calls are reviewed for existing variants while their families remain blocked.",
-    "The reviewed local website art revision 7e63ff4a5317de5305602f5d407a93246e66d248 is included as delivery/website-art-candidate.bundle, with an exact prerequisite and 41 changed-file hashes. The existing public website draft remains at 56e532b21922f39480cd15dcbb465676770408f5."
+    "Root-authorized artwork: 70 families passed scoped independent source-use, visual, mechanical export and provenance review. All 115 export paths exist. Exact prompts and 123 source PNGs are preserved, including superseded attempts; model/backend identity stays unknown. Two briefs remain incomplete.",
+    "The reviewed local website art revision 7e63ff4a5317de5305602f5d407a93246e66d248 is included as delivery/website-art-candidate.bundle, with an exact prerequisite and 41 changed-file hashes. The existing public website draft remains at 56e532b21922f39480cd15dcbb465676770408f5.",
+    "Twelve local GitHub presentation art candidates have independently reviewed bundles and exact changed-file hashes. GH-11 distinguishes its integration base from its receipt-only direct parent; its repaired bundle passes follow-up review. Thirteen social preview candidates are prepared; none has been applied to live settings."
   ],
   "remaining_conditions": [
     "Restore actual native coordinator/leaf spawning and role-correct Luna/max and Astra/max observations; retain the 250-open-descendant ceiling.",
-    "Resume the user-authorized root image-tool route after the recorded usage limit resets; finish missing artwork and aspect variants, independent source/export review and generation provenance for all 72 families/115 exports.",
+    "Complete approved actual-footage cropping and host checks for CAST-03. Approve the concrete MKT-05 proposed challenge and rules before treating it as a real challenge. MKT-03/06/07 now have independently reviewed concrete private content; publication and send approvals remain separate.",
     "Supply approved sanitized run evidence, rights, captions, exact digest-bound publication approval, and enrolled authorities before a real public timeline/video/replay/card publication.",
     "Reconcile active map/runtime work and unavailable Pages configuration before any authorized repository rename; refresh all mutable gates.",
     "Authorize the exact reviewed PR merges and 13 proposed metadata changes when ready; generated-art and deployment acceptance remains separate.",
@@ -64,7 +65,23 @@
     "execution/reviews/W03-root-art-final-acceptance.json",
     "execution/reviews/W03-root-website-art-review.json",
     "execution/reviews/root-art-local-checks.json",
-    "execution/reviews/W03-root-website-art-followup.json"
+    "execution/reviews/W03-root-website-art-followup.json",
+    "execution/reviews/W02-broadcast-source-review-006.json",
+    "execution/reviews/W02-broadcast-source-review-007.json",
+    "execution/reviews/root-native-capability-recheck-002.json",
+    "execution/reviews/W03-github-art-candidates-review.json",
+    "execution/reviews/W03-github-art-candidates-followup.json",
+    "execution/reviews/W03-image-c2pa-provenance-review.json",
+    "execution/reviews/W02-superseded-source-prompt-review.json",
+    "execution/reviews/W02-broadcast-source-review-008.json",
+    "execution/reviews/W02-email-art-context-review.json",
+    "execution/reviews/root-native-direct-capability-recheck.json",
+    "execution/reviews/W02-broadcast-source-review-009.json",
+    "execution/reviews/root-original-output-preservation.json",
+    "execution/reviews/W03-requirements-refresh-recommendations.json",
+    "execution/reviews/root-final-art-integration-checks.json",
+    "execution/reviews/root-final-expanded-art-local-tests.json",
+    "execution/reviews/W03-final-expanded-art-handoff-review.json"
   ],
   "unverified_assumptions": [
     "No provider-side execution attestation follows from installed-client thread metadata.",

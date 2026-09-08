@@ -1,0 +1,260 @@
+{
+  "schema_version": "ai-ascension.w02-email-art-context-review.v1",
+  "observed_at": "2026-09-08T04:09:15+00:00",
+  "reviewer": "w02-email-art-context-independent-factual-review-001",
+  "task": "Independent factual review of the private MKT-07 email artwork context and parity review of its populated HTML and plain-text assembly previews.",
+  "scope": "Private artwork context only. The review compares the six report-only fields with the first Windows report embedded in current-season-evidence.json, verifies the pinned GitHub owner/repository/path and bytes, and checks populated email HTML/plain fallback parity. It does not enroll a publisher record, authorize a send, publish an artifact, edit context, author a prompt, or generate an image.",
+  "working_tree": {
+    "path": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "exclusive_write": "execution/reviews/W02-email-art-context-review.json",
+    "context_edits_by_reviewer": false,
+    "html_plain_edits_by_reviewer": false,
+    "prompt_or_image_authoring_by_reviewer": false,
+    "pre_existing_dirty_changes_preserved": true
+  },
+  "source_pins": {
+    "email_art_context": {
+      "path": "marketing/launch/email-art-context.json",
+      "sha256": "84ea60398b413add68df2220f49c61d659fa77bcba8e49019daac7d1c977f04e",
+      "bytes": 1735,
+      "schema_version": 1,
+      "scope": "private_art_context_only",
+      "approval_status": "pending_independent_factual_review",
+      "publication_authorized": false
+    },
+    "current_season_evidence": {
+      "path": ".execution-private/current-season-evidence.json",
+      "sha256": "ced0e81bdc77c660f142872b71efce3efa4de709a759843d2a15b190c99d7cdc",
+      "bytes": 16407,
+      "repository": "AI-Ascension/sts2-harness",
+      "revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+      "first_windows_document": {
+        "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+        "sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+        "evidence_line": ".execution-private/current-season-evidence.json#L5-L7",
+        "used_by": "all six email context fields"
+      }
+    },
+    "html_preview": {
+      "path": "marketing/launch/email-run-card.html",
+      "sha256": "05ec997a987f8af76af70d4d35cbb3bb1b7bf72106cb8c52d7c71d64955979ba",
+      "bytes": 2637
+    },
+    "plain_text_preview": {
+      "path": "marketing/launch/email-run-card.txt",
+      "sha256": "2282def6c868e4bf6a01d2b031d73faf86895e18cff3aab7e02665cd1f08fc36",
+      "bytes": 1154
+    },
+    "existing_image_fallback": {
+      "path": "brand/assets/marketing/email-run-card.png",
+      "sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
+      "bytes": 521834,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "mode": "RGB",
+      "state": "existing_blank_template"
+    }
+  },
+  "source_url_verification": {
+    "repository_api": {
+      "endpoint": "https://api.github.com/repos/AI-Ascension/sts2-harness",
+      "http_status": 200,
+      "full_name": "AI-Ascension/sts2-harness",
+      "owner": "AI-Ascension",
+      "name": "sts2-harness",
+      "html_url": "https://github.com/AI-Ascension/sts2-harness",
+      "private": false
+    },
+    "contents_api": {
+      "endpoint": "https://api.github.com/repos/AI-Ascension/sts2-harness/contents/docs/evidence/seeded-astra-campaign-20260906.md?ref=05398376e660e39a2dbc000e8debd33da8718e63",
+      "http_status": 200,
+      "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+      "name": "seeded-astra-campaign-20260906.md",
+      "git_blob_sha": "f0aebd49c9fba58a2376e33d8c193ac3c0dc8ba4",
+      "git_blob_bytes": 4049,
+      "html_url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md",
+      "download_url": "https://raw.githubusercontent.com/AI-Ascension/sts2-harness/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md"
+    },
+    "raw_bytes": {
+      "url": "https://raw.githubusercontent.com/AI-Ascension/sts2-harness/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md",
+      "http_status": 200,
+      "sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+      "matches_context_source_sha256": true,
+      "note": "Git blob object SHA and content SHA-256 are recorded separately."
+    },
+    "url_copies": {
+      "context_source": "marketing/launch/email-art-context.json#L7",
+      "context_field": "marketing/launch/email-art-context.json#L19",
+      "html_href_and_text": "marketing/launch/email-run-card.html#L21",
+      "plain_text": "marketing/launch/email-run-card.txt#L18",
+      "all_use_correct_owner_and_repository": true,
+      "old_wrong_harness_path_present": false
+    },
+    "verdict": "pass_exact_owner_repository_revision_path_and_content_digest"
+  },
+  "factual_review": {
+    "basis": "The remote raw bytes at the pinned revision match the embedded first Windows report text digest in current-season-evidence.json. The source report is maintainer-reported public evidence; private trajectory and native capture remain outside this review.",
+    "report_only": true,
+    "fields": [
+      {
+        "field": "Run ID",
+        "context_location": "marketing/launch/email-art-context.json#L14",
+        "value": "windows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)",
+        "verdict": "pass_explicit_editorial_alias",
+        "source_fidelity": "The source report does not supply a native run ID; the context labels this value as an editorial alias.",
+        "unknowns": [
+          "native run ID not supplied by the public report"
+        ]
+      },
+      {
+        "field": "Outcome",
+        "context_location": "marketing/launch/email-art-context.json#L15",
+        "value": "Reported Defeat at zero HP on floor 17; not a victory",
+        "verdict": "pass_reported_defeat_only",
+        "source_fidelity": "The report states Defeat at zero HP on floor 17 and explicitly says the setup-to-defeat episode is not a victory or completion of every act.",
+        "unknowns": []
+      },
+      {
+        "field": "Model configuration",
+        "context_location": "marketing/launch/email-art-context.json#L16",
+        "value": "Reported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.",
+        "verdict": "pass_reported_configuration_with_unknowns",
+        "source_fidelity": "The report names OpenAI Astra model gpt-6-astra, Windows v0.107.1, a practice campaign, and seed AIASCENSIONV3FULL1.",
+        "unknowns": [
+          "other model settings not specified in the public report"
+        ]
+      },
+      {
+        "field": "Interventions",
+        "context_location": "marketing/launch/email-art-context.json#L17",
+        "value": "Report states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.",
+        "verdict": "pass_reported_negative_controls_with_inventory_unknown",
+        "source_fidelity": "The report states that no OS input automation or save restoration drove the episode; it does not provide a complete human-intervention inventory.",
+        "unknowns": [
+          "complete human-intervention inventory not supplied"
+        ]
+      },
+      {
+        "field": "Evidence",
+        "context_location": "marketing/launch/email-art-context.json#L18",
+        "value": "Public report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.",
+        "verdict": "pass_aggregate_report_only",
+        "source_fidelity": "The report records 333 settled operations in 399 episode steps. The context preserves the public-report scope and does not present private artifacts as available evidence.",
+        "unknowns": [
+          "underlying private trajectory and native capture were not inspected"
+        ]
+      },
+      {
+        "field": "Source URL",
+        "context_location": "marketing/launch/email-art-context.json#L19",
+        "value": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md",
+        "verdict": "pass_exact_pinned_source_link",
+        "source_fidelity": "The URL resolves through GitHub contents API status 200 to the verified AI-Ascension/sts2-harness repository, exact revision, path, and matching raw content digest.",
+        "unknowns": []
+      }
+    ],
+    "aggregate": {
+      "field_count": 6,
+      "pass_count": 6,
+      "report_only_field_count": 6,
+      "unknowns_explicit_for_applicable_fields": true,
+      "required_factual_correction": null,
+      "decision": "pass_private_factual_context_review",
+      "private_art_generation_factual_gate": "pass"
+    }
+  },
+  "html_plain_parity": {
+    "html_location": "marketing/launch/email-run-card.html#L10-L24",
+    "plain_text_location": "marketing/launch/email-run-card.txt#L1-L23",
+    "comparison": "Parsed the six HTML dt/dd field pairs and six plain-text field lines, then compared each value with email-art-context.json fields.",
+    "field_labels": [
+      "Run ID",
+      "Outcome",
+      "Model configuration",
+      "Interventions",
+      "Evidence",
+      "Source URL"
+    ],
+    "html_values_match_context": true,
+    "plain_text_values_match_context": true,
+    "html_plain_values_match": true,
+    "source_href_and_text_match": true,
+    "pending_review_wording": {
+      "html": "await independent factual review",
+      "plain_text": "await independent factual review against email-art-context.json",
+      "both_present": true,
+      "verdict": "pass_explicit_pending_review"
+    },
+    "approval_send_wording": {
+      "html": "No digest has been approved or sent.",
+      "plain_text": "No digest has been approved or sent.",
+      "both_present": true,
+      "verdict": "pass_explicit_no_approval_or_send"
+    },
+    "non_field_disclosure": {
+      "verdict": "semantic_match_with_wording_difference",
+      "html": "The HTML footer enumerates no tracking pixel, remote font, script, form, or recipient identifier.",
+      "plain_text": "The plain-text footer states no tracking or recipient identifier.",
+      "impact": "The plain-text version carries the same six factual fields and source link; the shorter privacy wording does not add a factual run claim or contradict the HTML.",
+      "required_copy_correction": null
+    },
+    "verdict": "pass_populated_six_field_and_source_parity"
+  },
+  "existing_artwork_observation": {
+    "asset": "brand/assets/marketing/email-run-card.png",
+    "opened_with": "view_image",
+    "observed_dimensions": [
+      1200,
+      630
+    ],
+    "observed_mode": "RGB",
+    "visual_observation": "The existing image is a blank Run digest template with TEMPLATE — NO RUN DATA and empty labels. It contains no populated run fact, private artifact, or generated source claim.",
+    "image_copy_context": "email-art-context.json image_copy is future generation copy; it is not asserted to be present in this unchanged fallback image.",
+    "verdict": "existing_blank_fallback_preserved_pending_new_generation_and_visual_review"
+  },
+  "boundaries": {
+    "public_report_only": true,
+    "private_trajectory_inspected": false,
+    "native_capture_inspected": false,
+    "native_run_id_claimed": false,
+    "publisher_enrollment": false,
+    "send_authorization": false,
+    "publication_authorization": false,
+    "context_or_preview_mutation": false,
+    "rights_or_recipient_review": "not performed by this factual review"
+  },
+  "validation": [
+    {
+      "command": "gh api repos/AI-Ascension/sts2-harness",
+      "result": "HTTP 200; full_name AI-Ascension/sts2-harness, owner AI-Ascension, name sts2-harness."
+    },
+    {
+      "command": "gh api -i repos/AI-Ascension/sts2-harness/contents/docs/evidence/seeded-astra-campaign-20260906.md?ref=05398376e660e39a2dbc000e8debd33da8718e63",
+      "result": "HTTP/2 200 OK; GitHub blob SHA f0aebd49c9fba58a2376e33d8c193ac3c0dc8ba4; 4049 bytes."
+    },
+    {
+      "command": "curl -L --fail raw pinned report | sha256sum",
+      "result": "HTTP 200; 46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e, matching the context and current-season-evidence document digest."
+    },
+    {
+      "command": "independent JSON/HTML/plain extraction and comparison",
+      "result": "All six field values match context and each other; source href/text matches; pending-review and no-approval/send disclosures are present in both forms."
+    },
+    {
+      "command": "python3 -m json.tool execution/reviews/W02-email-art-context-review.json",
+      "result": "pass"
+    }
+  ],
+  "aggregate": {
+    "decision": "pass_private_factual_and_html_plain_review",
+    "private_art_generation": "permitted_for_factual_context_only",
+    "required_correction": null,
+    "visual_artwork_acceptance": "not_granted",
+    "publication_approved": false,
+    "send_approved": false,
+    "publisher_enrollment": false,
+    "next_state": "MKT-07 may use the reviewed report-only context for privately authorized artwork generation; retain explicit unknowns and pending-review wording, and perform separate visual, rights, and publication/send reviews."
+  }
+}

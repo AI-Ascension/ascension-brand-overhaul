@@ -1,0 +1,25 @@
+[
+  {
+    "asset_id": "MKT-03",
+    "generation_id": "MKT-03-generation-003",
+    "prompt_path": "brand/prompts/root/MKT-03/generation-003.txt",
+    "prompt_sha256": "85a5609710dac2cbec74ea6d36478551b6b7a5a65c92f7de228fac7457a21a80",
+    "source_path": "brand/sources/generated/MKT-03/generation-003.png",
+    "source_sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [
+      {
+        "path": "brand/sources/generated/MKT-03/generation-001.png",
+        "sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T03:32:09.439535+00:00"
+  }
+]

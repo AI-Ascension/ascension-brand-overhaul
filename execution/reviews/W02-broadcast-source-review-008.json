@@ -1,0 +1,1058 @@
+{
+  "schema_version": "ai-ascension.w02-broadcast-source-review.v5",
+  "observed_at": "2026-09-08T04:01:40+00:00",
+  "reviewer": "w02-marketing-concrete-visual-independent-review-008",
+  "task": "Independent source and export review of the five concrete marketing variants generated from the approved private copy sidecar.",
+  "scope": "MKT-03 generation-003/004 outcome and question thumbnails, MKT-06 generation-003/004 release and anonymous contributor cards, and MKT-05 generation-002 proposed challenge card. Each source and its integrated output was opened with view_image at the recorded dimensions. The review covers literal copy, report-only and proposal boundaries, version/release state, anonymous contributor treatment, crop and readability, source/output hashes, and the distinction between private artwork readiness and challenge, rights, publication, or runtime approval. No prompt, source, output, manifest, registry, ledger, or copy file was edited.",
+  "working_tree": {
+    "path": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "exclusive_write": "execution/reviews/W02-broadcast-source-review-008.json",
+    "source_prompt_image_edits_by_reviewer": false,
+    "pre_existing_dirty_changes_preserved": true
+  },
+  "source_pins": {
+    "copy_sidecar": {
+      "path": "marketing/launch/art-source-copy.json",
+      "sha256": "7df5d7351089f280dc6feeadaa51a01821f76589f3d3ee336025a3bb76e7a4ae",
+      "bytes": 4019,
+      "recorded_at": "2026-09-08T03:18:54.848075+00:00",
+      "status": "private_copy_candidate_pending_independent_review",
+      "publication_approved": false
+    },
+    "concrete_copy_review": {
+      "path": "execution/reviews/W02-marketing-concrete-copy-review.json",
+      "sha256": "cf0d78aa27e2804b8004a90a7bad37b76f7e6fb718ff42da90e831511370dec5",
+      "decision": "all_five_variants_pass_source_use_and_factual_copy_review"
+    },
+    "integration_receipt": {
+      "path": ".execution-private/broadcast-records-result-014.json",
+      "sha256": "1b367d336b945b881490e5f6b6b0f4ccb47c354f8227150c0dd1cf940accfec4",
+      "recorded_at": "2026-09-08T04:00:00Z",
+      "generation_record_count": 5,
+      "export_count": 5
+    },
+    "generation_receipts": [
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-014.json",
+        "sha256": "3605c36eb2ef147d3c7010249b64ce1b7d6427066171596bf10dd269acd9d12f"
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-015.json",
+        "sha256": "8c4a908fdb1524c0f85a83f11e9f5663fdeca77950f3a8746106dfd6a525f801"
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-016.json",
+        "sha256": "99f7c528ca8022756a2b66a79e8afa7ad063be2f5babe05dd52e150c63b3021f"
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-017.json",
+        "sha256": "cb8299d4b11e86dd85b8d7be6d5f7f505c4f0ffb443ce00c297685b25a645afe"
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-018.json",
+        "sha256": "1393ea2c5d019467cf0cb76effc17afbdee7a9705c88947247307ef2cfa146f1"
+      }
+    ],
+    "season_evidence": {
+      "path": ".execution-private/current-season-evidence.json",
+      "sha256": "ced0e81bdc77c660f142872b71efce3efa4de709a759843d2a15b190c99d7cdc",
+      "repository": "AI-Ascension/sts2-harness",
+      "revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+      "documents": [
+        {
+          "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+          "sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+          "used_by": [
+            "MKT-03/outcome",
+            "MKT-05/proposed_challenge"
+          ]
+        },
+        {
+          "path": "docs/evidence/bounded-astra-plans-20260906.md",
+          "sha256": "8cefac7a5bedf06141c6ad0aa90636bd894e4319fc52f9f9de38f4cd93c82e9b",
+          "used_by": [
+            "MKT-03/question"
+          ]
+        }
+      ],
+      "text_digest_check": "pass_extracted_text_hashes_match_embedded_documents"
+    },
+    "brand_package": {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "path": "package.json",
+      "sha256": "3e3bfc085d49410a6d24752c802c42026371051f629fe2c7214e866502946692",
+      "verified_fields": {
+        "name": "ai-ascension-brand-verification",
+        "version": "0.1.0",
+        "private": true
+      },
+      "used_by": [
+        "MKT-06/release"
+      ]
+    },
+    "published_releases": {
+      "path": ".execution-private/current-brand-releases.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "json_value": [],
+      "observed_count": 0,
+      "used_by": [
+        "MKT-06/release"
+      ]
+    },
+    "briefs": {
+      "promptbook": {
+        "path": "art/PROMPTBOOK.md",
+        "sha256": "a9581d8aa648897ba6e23bd9a9b41497d77f47158e14c511ed7959b330c2eb2e",
+        "sections": {
+          "MKT-03": "lines 817-838",
+          "MKT-05": "lines 865-885",
+          "MKT-06": "lines 888-909"
+        }
+      },
+      "brand_guide": {
+        "path": "brand/BRAND_GUIDE.md",
+        "sha256": "b1551f9c49572b0f1a8034fbdd7de89446bf119e2ad84bd5bea714575c4a8a23",
+        "relevant_rule": "The public organization identity is AI Ascension; display typography may style the canonical words while preserving the name."
+      }
+    }
+  },
+  "receipt_records": {
+    "generation_records": [
+      {
+        "generation_id": "MKT-03-generation-003",
+        "asset_id": "MKT-03",
+        "prompt_path": "brand/prompts/root/MKT-03/generation-003.txt",
+        "prompt_sha256": "85a5609710dac2cbec74ea6d36478551b6b7a5a65c92f7de228fac7457a21a80",
+        "source_path": "brand/sources/generated/MKT-03/generation-003.png",
+        "source_sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca",
+        "source_bytes": 1582103,
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "source_mode": "RGB",
+        "references": [
+          {
+            "path": "brand/sources/generated/MKT-03/generation-001.png",
+            "sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12"
+          }
+        ],
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-03/generation-001.png",
+            "sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+            "rights_reference": "pending:generated-original-reference-review"
+          }
+        ],
+        "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-014.json",
+        "generation_receipt_sha256": "3605c36eb2ef147d3c7010249b64ce1b7d6427066171596bf10dd269acd9d12f",
+        "observed_at": "2026-09-08T03:32:09.439535+00:00",
+        "tool": "image_gen__imagegen",
+        "author_role": "ROOT",
+        "generation_record_status": "blocked",
+        "review_state": "pending_independent_review"
+      },
+      {
+        "generation_id": "MKT-03-generation-004",
+        "asset_id": "MKT-03",
+        "prompt_path": "brand/prompts/root/MKT-03/generation-004.txt",
+        "prompt_sha256": "1a58946ac1b5940a589bb603ca23e57f697072e192b84b85fec4e0b0e456597f",
+        "source_path": "brand/sources/generated/MKT-03/generation-004.png",
+        "source_sha256": "14ade5e06f04a12e000715d181f99caf331581ee7f4f823167dfc53ee5b6aa5d",
+        "source_bytes": 1391327,
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "source_mode": "RGB",
+        "references": [
+          {
+            "path": "brand/sources/generated/MKT-03/generation-002.png",
+            "sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93"
+          }
+        ],
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-03/generation-002.png",
+            "sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93",
+            "rights_reference": "pending:generated-original-reference-review"
+          }
+        ],
+        "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-015.json",
+        "generation_receipt_sha256": "8c4a908fdb1524c0f85a83f11e9f5663fdeca77950f3a8746106dfd6a525f801",
+        "observed_at": "2026-09-08T03:34:13.766085+00:00",
+        "tool": "image_gen__imagegen",
+        "author_role": "ROOT",
+        "generation_record_status": "blocked",
+        "review_state": "pending_independent_review"
+      },
+      {
+        "generation_id": "MKT-06-generation-003",
+        "asset_id": "MKT-06",
+        "prompt_path": "brand/prompts/root/MKT-06/generation-003.txt",
+        "prompt_sha256": "cf61feff2babfcfc59da3c88da6425ef137ac9a72e5cefc56555dc63195634af",
+        "source_path": "brand/sources/generated/MKT-06/generation-003.png",
+        "source_sha256": "c239754685c0e59ed52f2bc5eb66e5eee8cf194c83e61c27614503835b1053d5",
+        "source_bytes": 1772185,
+        "source_dimensions": [
+          1731,
+          909
+        ],
+        "source_mode": "RGB",
+        "references": [
+          {
+            "path": "brand/sources/generated/MKT-06/generation-001.png",
+            "sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f"
+          }
+        ],
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-06/generation-001.png",
+            "sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+            "rights_reference": "pending:generated-original-reference-review"
+          }
+        ],
+        "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-016.json",
+        "generation_receipt_sha256": "99f7c528ca8022756a2b66a79e8afa7ad063be2f5babe05dd52e150c63b3021f",
+        "observed_at": "2026-09-08T03:36:01.406273+00:00",
+        "tool": "image_gen__imagegen",
+        "author_role": "ROOT",
+        "generation_record_status": "blocked",
+        "review_state": "pending_independent_review"
+      },
+      {
+        "generation_id": "MKT-06-generation-004",
+        "asset_id": "MKT-06",
+        "prompt_path": "brand/prompts/root/MKT-06/generation-004.txt",
+        "prompt_sha256": "3852abda6949c27aebcb7074c4fa58f302175b34ee0ea502e71f35a7845ae40b",
+        "source_path": "brand/sources/generated/MKT-06/generation-004.png",
+        "source_sha256": "2094b9573c10282e5344cefae1efed830d550752be17f9bb262fcb828a037e73",
+        "source_bytes": 1298456,
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "references": [
+          {
+            "path": "brand/sources/generated/MKT-06/generation-002.png",
+            "sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759"
+          }
+        ],
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-06/generation-002.png",
+            "sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759",
+            "rights_reference": "pending:generated-original-reference-review"
+          }
+        ],
+        "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-017.json",
+        "generation_receipt_sha256": "cb8299d4b11e86dd85b8d7be6d5f7f505c4f0ffb443ce00c297685b25a645afe",
+        "observed_at": "2026-09-08T03:37:32.860797+00:00",
+        "tool": "image_gen__imagegen",
+        "author_role": "ROOT",
+        "generation_record_status": "blocked",
+        "review_state": "pending_independent_review"
+      },
+      {
+        "generation_id": "MKT-05-generation-002",
+        "asset_id": "MKT-05",
+        "prompt_path": "brand/prompts/root/MKT-05/generation-002.txt",
+        "prompt_sha256": "b895fd6e95f677a2f6ab6d8c673b8bc701782b10e55c5bf86802b50c46e70f74",
+        "source_path": "brand/sources/generated/MKT-05/generation-002.png",
+        "source_sha256": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9",
+        "source_bytes": 1475229,
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "references": [
+          {
+            "path": "brand/sources/generated/MKT-05/generation-001.png",
+            "sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64"
+          }
+        ],
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-05/generation-001.png",
+            "sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+            "rights_reference": "pending:generated-original-reference-review"
+          }
+        ],
+        "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-018.json",
+        "generation_receipt_sha256": "1393ea2c5d019467cf0cb76effc17afbdee7a9705c88947247307ef2cfa146f1",
+        "observed_at": "2026-09-08T03:39:22.519488+00:00",
+        "tool": "image_gen__imagegen",
+        "author_role": "ROOT",
+        "generation_record_status": "blocked",
+        "review_state": "pending_independent_review"
+      }
+    ],
+    "export_records": [
+      {
+        "asset_id": "MKT-03",
+        "output_path": "brand/assets/marketing/thumbnail-outcome.png",
+        "source_path": "brand/sources/generated/MKT-03/generation-003.png",
+        "source_sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca",
+        "output_sha256": "7972f092969b38aa44883372ce6cbf5fb4438d757a2c1ba3c52c2848847b1fdb",
+        "output_bytes": 948143,
+        "output_dimensions": [
+          1280,
+          720
+        ],
+        "output_mode": "RGB",
+        "crop_box": [
+          0,
+          0,
+          1672,
+          941
+        ],
+        "operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "receipt_review_state": "pending_independent_review",
+        "publication_approved": false,
+        "replacement_of": {
+          "source_path": "brand/sources/generated/MKT-03/generation-001.png",
+          "source_sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+          "output_sha256": "d6aec732aca7b367363398e582c6e3a7a52b0af620bdb8dfa5f385c907c8a132",
+          "output_bytes": 848591,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ]
+        }
+      },
+      {
+        "asset_id": "MKT-03",
+        "output_path": "brand/assets/marketing/thumbnail-question.png",
+        "source_path": "brand/sources/generated/MKT-03/generation-004.png",
+        "source_sha256": "14ade5e06f04a12e000715d181f99caf331581ee7f4f823167dfc53ee5b6aa5d",
+        "output_sha256": "d25cc01f8d4b4516a7c3818eca098310228c164f8c0666610f540f31f7b76bb0",
+        "output_bytes": 835566,
+        "output_dimensions": [
+          1280,
+          720
+        ],
+        "output_mode": "RGB",
+        "crop_box": [
+          0,
+          0,
+          1672,
+          941
+        ],
+        "operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "receipt_review_state": "pending_independent_review",
+        "publication_approved": false,
+        "replacement_of": {
+          "source_path": "brand/sources/generated/MKT-03/generation-002.png",
+          "source_sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93",
+          "output_sha256": "908f81c489a9465fc6b513ceadd03ced8d2222802113d21752cd573c860f3abc",
+          "output_bytes": 661785,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ]
+        }
+      },
+      {
+        "asset_id": "MKT-06",
+        "output_path": "brand/assets/marketing/release-template.png",
+        "source_path": "brand/sources/generated/MKT-06/generation-003.png",
+        "source_sha256": "c239754685c0e59ed52f2bc5eb66e5eee8cf194c83e61c27614503835b1053d5",
+        "output_sha256": "fb786cf8d827b909c1be92d39c8ea5b978fd8d821015f1b85bf173a4a274ea48",
+        "output_bytes": 847532,
+        "output_dimensions": [
+          1200,
+          630
+        ],
+        "output_mode": "RGB",
+        "crop_box": [
+          0,
+          0,
+          1731,
+          909
+        ],
+        "operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "receipt_review_state": "pending_independent_review",
+        "publication_approved": false,
+        "replacement_of": {
+          "source_path": "brand/sources/generated/MKT-06/generation-001.png",
+          "source_sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+          "output_sha256": "d563bd1f1450f607d6ca44a0896075aa889e7a29d74414121749d01935dc754f",
+          "output_bytes": 491181,
+          "crop_box": [
+            0,
+            0,
+            1730,
+            909
+          ]
+        }
+      },
+      {
+        "asset_id": "MKT-06",
+        "output_path": "brand/assets/marketing/contributor-template.png",
+        "source_path": "brand/sources/generated/MKT-06/generation-004.png",
+        "source_sha256": "2094b9573c10282e5344cefae1efed830d550752be17f9bb262fcb828a037e73",
+        "output_sha256": "fc3dcf0d01a79c755ab0ba019713591d3b994a3ccd716c4a7f265334da5f1b1e",
+        "output_bytes": 961788,
+        "output_dimensions": [
+          1080,
+          1080
+        ],
+        "output_mode": "RGB",
+        "crop_box": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "receipt_review_state": "pending_independent_review",
+        "publication_approved": false,
+        "replacement_of": {
+          "source_path": "brand/sources/generated/MKT-06/generation-002.png",
+          "source_sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759",
+          "output_sha256": "0c526b21d26f4875c695497eeeb820107fa538b31951edf8acf554c7aa7ddae1",
+          "output_bytes": 726373,
+          "crop_box": [
+            0,
+            0,
+            1254,
+            1254
+          ]
+        }
+      },
+      {
+        "asset_id": "MKT-05",
+        "output_path": "brand/assets/marketing/challenge-template.png",
+        "source_path": "brand/sources/generated/MKT-05/generation-002.png",
+        "source_sha256": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9",
+        "output_sha256": "60ff9fed0a6be1eb2b73ca01ea4f5b0c26ace17980f7d91dec8a93693b56c2d7",
+        "output_bytes": 1108166,
+        "output_dimensions": [
+          1080,
+          1080
+        ],
+        "output_mode": "RGB",
+        "crop_box": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "receipt_review_state": "pending_independent_review",
+        "publication_approved": false,
+        "replacement_of": {
+          "source_path": "brand/sources/generated/MKT-05/generation-001.png",
+          "source_sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+          "output_sha256": "499685f65dea3fb225be02eff64583235f9d98f6a9a16076d42e1c0585a4cad4",
+          "output_bytes": 749979,
+          "crop_box": [
+            0,
+            0,
+            1254,
+            1254
+          ]
+        }
+      }
+    ]
+  },
+  "validation": {
+    "sidecar_json_and_pin": "pass",
+    "source_prompt_hashes": "5/5 pass",
+    "source_dimensions_modes_bytes": "5/5 pass; all RGB",
+    "output_hashes_dimensions_modes_bytes": "5/5 pass; all RGB",
+    "crop_records": "5/5 full-source crops match intended output aspect and target dimensions",
+    "visual_inspection": "10/10 source and output PNGs opened with view_image",
+    "factual_sources": "pass_pinned_report_text_and_private_package",
+    "publication_approval": false
+  },
+  "assets": [
+    {
+      "asset_id": "MKT-03",
+      "brief_reference": "art/PROMPTBOOK.md#MKT-03 (lines 817-838)",
+      "selected_generations": [
+        "MKT-03-generation-003",
+        "MKT-03-generation-004"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-03-generation-003",
+          "asset_id": "MKT-03",
+          "prompt_path": "brand/prompts/root/MKT-03/generation-003.txt",
+          "prompt_sha256": "85a5609710dac2cbec74ea6d36478551b6b7a5a65c92f7de228fac7457a21a80",
+          "source_path": "brand/sources/generated/MKT-03/generation-003.png",
+          "source_sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca",
+          "source_bytes": 1582103,
+          "source_dimensions": [
+            1672,
+            941
+          ],
+          "source_mode": "RGB",
+          "references": [
+            {
+              "path": "brand/sources/generated/MKT-03/generation-001.png",
+              "sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12"
+            }
+          ],
+          "reference_inputs": [
+            {
+              "reference": "brand/sources/generated/MKT-03/generation-001.png",
+              "sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+              "rights_reference": "pending:generated-original-reference-review"
+            }
+          ],
+          "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-014.json",
+          "generation_receipt_sha256": "3605c36eb2ef147d3c7010249b64ce1b7d6427066171596bf10dd269acd9d12f",
+          "observed_at": "2026-09-08T03:32:09.439535+00:00",
+          "tool": "image_gen__imagegen",
+          "author_role": "ROOT",
+          "generation_record_status": "blocked",
+          "review_state": "pending_independent_review"
+        },
+        {
+          "generation_id": "MKT-03-generation-004",
+          "asset_id": "MKT-03",
+          "prompt_path": "brand/prompts/root/MKT-03/generation-004.txt",
+          "prompt_sha256": "1a58946ac1b5940a589bb603ca23e57f697072e192b84b85fec4e0b0e456597f",
+          "source_path": "brand/sources/generated/MKT-03/generation-004.png",
+          "source_sha256": "14ade5e06f04a12e000715d181f99caf331581ee7f4f823167dfc53ee5b6aa5d",
+          "source_bytes": 1391327,
+          "source_dimensions": [
+            1672,
+            941
+          ],
+          "source_mode": "RGB",
+          "references": [
+            {
+              "path": "brand/sources/generated/MKT-03/generation-002.png",
+              "sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93"
+            }
+          ],
+          "reference_inputs": [
+            {
+              "reference": "brand/sources/generated/MKT-03/generation-002.png",
+              "sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93",
+              "rights_reference": "pending:generated-original-reference-review"
+            }
+          ],
+          "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-015.json",
+          "generation_receipt_sha256": "8c4a908fdb1524c0f85a83f11e9f5663fdeca77950f3a8746106dfd6a525f801",
+          "observed_at": "2026-09-08T03:34:13.766085+00:00",
+          "tool": "image_gen__imagegen",
+          "author_role": "ROOT",
+          "generation_record_status": "blocked",
+          "review_state": "pending_independent_review"
+        }
+      ],
+      "export_records": [
+        {
+          "asset_id": "MKT-06",
+          "output_path": "brand/assets/marketing/contributor-template.png",
+          "source_path": "brand/sources/generated/MKT-06/generation-004.png",
+          "source_sha256": "2094b9573c10282e5344cefae1efed830d550752be17f9bb262fcb828a037e73",
+          "output_sha256": "fc3dcf0d01a79c755ab0ba019713591d3b994a3ccd716c4a7f265334da5f1b1e",
+          "output_bytes": 961788,
+          "output_dimensions": [
+            1080,
+            1080
+          ],
+          "output_mode": "RGB",
+          "crop_box": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "replacement_of": {
+            "source_path": "brand/sources/generated/MKT-06/generation-002.png",
+            "source_sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759",
+            "output_sha256": "0c526b21d26f4875c695497eeeb820107fa538b31951edf8acf554c7aa7ddae1",
+            "output_bytes": 726373,
+            "crop_box": [
+              0,
+              0,
+              1254,
+              1254
+            ]
+          }
+        },
+        {
+          "asset_id": "MKT-05",
+          "output_path": "brand/assets/marketing/challenge-template.png",
+          "source_path": "brand/sources/generated/MKT-05/generation-002.png",
+          "source_sha256": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9",
+          "output_sha256": "60ff9fed0a6be1eb2b73ca01ea4f5b0c26ace17980f7d91dec8a93693b56c2d7",
+          "output_bytes": 1108166,
+          "output_dimensions": [
+            1080,
+            1080
+          ],
+          "output_mode": "RGB",
+          "crop_box": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "replacement_of": {
+            "source_path": "brand/sources/generated/MKT-05/generation-001.png",
+            "source_sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+            "output_sha256": "499685f65dea3fb225be02eff64583235f9d98f6a9a16076d42e1c0585a4cad4",
+            "output_bytes": 749979,
+            "crop_box": [
+              0,
+              0,
+              1254,
+              1254
+            ]
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_key": "MKT-03/outcome",
+          "copy_verdict": "pass",
+          "required_copy_correction": null,
+          "observed_copy": [
+            "Reported defeat",
+            "Windows practice campaign · Floor 17",
+            "REPORT ONLY",
+            "AI Ascension"
+          ],
+          "copy_result": "Exact sidecar copy is visible and legible in source and 1280x720 output.",
+          "source_accuracy": "The pinned Windows report says the visible v0.107.1 practice campaign reached Defeat at zero HP on floor 17. The headline and subtitle summarize that report without adding a win, completion, score, or other result.",
+          "boundary_result": "REPORT ONLY remains conspicuous; the art is editorial summary, not a project replay, native capture, or gameplay proof.",
+          "invented_outcome_or_rationale": "pass_no_new_outcome_or_hidden_reasoning",
+          "consent_result": "not_applicable_no_person_name_photo_quote_or_attribution"
+        },
+        {
+          "variant_key": "MKT-03/question",
+          "copy_verdict": "pass",
+          "required_copy_correction": null,
+          "observed_copy": [
+            "Rage before Bash+?",
+            "Reported action order",
+            "REPORT ONLY",
+            "AI Ascension"
+          ],
+          "copy_result": "Exact plus sign in Bash+ and question mark are visible and legible in source and 1280x720 output.",
+          "source_accuracy": "The pinned bounded-plan report lists Rage, Bash+, Strike, End turn in that order. The headline asks only about the recorded order.",
+          "boundary_result": "REPORT ONLY remains conspicuous; the sidecar explicitly excludes hidden rationale, full decision state, optimality, counterfactuals, and a result claim.",
+          "invented_outcome_or_rationale": "pass_no_new_outcome_optimality_or_hidden_reasoning",
+          "consent_result": "not_applicable_no_person_name_photo_quote_or_attribution"
+        }
+      ],
+      "visual_observations": [
+        "Both source masters and full-frame exports are clean RGB editorial thumbnails with readable serif typography, broad margins, and no visible clipping of required copy.",
+        "The outcome uses a restrained abstract landscape/path motif without a game screen, card, character, metric, screenshot, trophy, or badge; the question uses abstract branching lines without game UI or a claimed strategy rationale.",
+        "The 1280x720 exports preserve all required text and intended hierarchy after the recorded full-source crops."
+      ],
+      "source_output_verdict": "ready_for_bounded_use",
+      "recommended_family_status": "verified",
+      "issues": [],
+      "evidence_boundary": "Report-derived private artwork only; per-episode source approval, rights, public distribution, and publication remain separate gates."
+    },
+    {
+      "asset_id": "MKT-06",
+      "brief_reference": "art/PROMPTBOOK.md#MKT-06 (lines 888-909)",
+      "selected_generations": [
+        "MKT-06-generation-003",
+        "MKT-06-generation-004"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-06-generation-003",
+          "asset_id": "MKT-06",
+          "prompt_path": "brand/prompts/root/MKT-06/generation-003.txt",
+          "prompt_sha256": "cf61feff2babfcfc59da3c88da6425ef137ac9a72e5cefc56555dc63195634af",
+          "source_path": "brand/sources/generated/MKT-06/generation-003.png",
+          "source_sha256": "c239754685c0e59ed52f2bc5eb66e5eee8cf194c83e61c27614503835b1053d5",
+          "source_bytes": 1772185,
+          "source_dimensions": [
+            1731,
+            909
+          ],
+          "source_mode": "RGB",
+          "references": [
+            {
+              "path": "brand/sources/generated/MKT-06/generation-001.png",
+              "sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f"
+            }
+          ],
+          "reference_inputs": [
+            {
+              "reference": "brand/sources/generated/MKT-06/generation-001.png",
+              "sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+              "rights_reference": "pending:generated-original-reference-review"
+            }
+          ],
+          "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-016.json",
+          "generation_receipt_sha256": "99f7c528ca8022756a2b66a79e8afa7ad063be2f5babe05dd52e150c63b3021f",
+          "observed_at": "2026-09-08T03:36:01.406273+00:00",
+          "tool": "image_gen__imagegen",
+          "author_role": "ROOT",
+          "generation_record_status": "blocked",
+          "review_state": "pending_independent_review"
+        },
+        {
+          "generation_id": "MKT-06-generation-004",
+          "asset_id": "MKT-06",
+          "prompt_path": "brand/prompts/root/MKT-06/generation-004.txt",
+          "prompt_sha256": "3852abda6949c27aebcb7074c4fa58f302175b34ee0ea502e71f35a7845ae40b",
+          "source_path": "brand/sources/generated/MKT-06/generation-004.png",
+          "source_sha256": "2094b9573c10282e5344cefae1efed830d550752be17f9bb262fcb828a037e73",
+          "source_bytes": 1298456,
+          "source_dimensions": [
+            1254,
+            1254
+          ],
+          "source_mode": "RGB",
+          "references": [
+            {
+              "path": "brand/sources/generated/MKT-06/generation-002.png",
+              "sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759"
+            }
+          ],
+          "reference_inputs": [
+            {
+              "reference": "brand/sources/generated/MKT-06/generation-002.png",
+              "sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759",
+              "rights_reference": "pending:generated-original-reference-review"
+            }
+          ],
+          "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-017.json",
+          "generation_receipt_sha256": "cb8299d4b11e86dd85b8d7be6d5f7f505c4f0ffb443ce00c297685b25a645afe",
+          "observed_at": "2026-09-08T03:37:32.860797+00:00",
+          "tool": "image_gen__imagegen",
+          "author_role": "ROOT",
+          "generation_record_status": "blocked",
+          "review_state": "pending_independent_review"
+        }
+      ],
+      "export_records": [
+        {
+          "asset_id": "MKT-03",
+          "output_path": "brand/assets/marketing/thumbnail-outcome.png",
+          "source_path": "brand/sources/generated/MKT-03/generation-003.png",
+          "source_sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca",
+          "output_sha256": "7972f092969b38aa44883372ce6cbf5fb4438d757a2c1ba3c52c2848847b1fdb",
+          "output_bytes": 948143,
+          "output_dimensions": [
+            1280,
+            720
+          ],
+          "output_mode": "RGB",
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "replacement_of": {
+            "source_path": "brand/sources/generated/MKT-03/generation-001.png",
+            "source_sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+            "output_sha256": "d6aec732aca7b367363398e582c6e3a7a52b0af620bdb8dfa5f385c907c8a132",
+            "output_bytes": 848591,
+            "crop_box": [
+              0,
+              0,
+              1672,
+              941
+            ]
+          }
+        },
+        {
+          "asset_id": "MKT-03",
+          "output_path": "brand/assets/marketing/thumbnail-question.png",
+          "source_path": "brand/sources/generated/MKT-03/generation-004.png",
+          "source_sha256": "14ade5e06f04a12e000715d181f99caf331581ee7f4f823167dfc53ee5b6aa5d",
+          "output_sha256": "d25cc01f8d4b4516a7c3818eca098310228c164f8c0666610f540f31f7b76bb0",
+          "output_bytes": 835566,
+          "output_dimensions": [
+            1280,
+            720
+          ],
+          "output_mode": "RGB",
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "replacement_of": {
+            "source_path": "brand/sources/generated/MKT-03/generation-002.png",
+            "source_sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93",
+            "output_sha256": "908f81c489a9465fc6b513ceadd03ced8d2222802113d21752cd573c860f3abc",
+            "output_bytes": 661785,
+            "crop_box": [
+              0,
+              0,
+              1672,
+              941
+            ]
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_key": "MKT-06/release",
+          "copy_verdict": "pass",
+          "required_copy_correction": null,
+          "observed_copy": [
+            "Brand verification tools",
+            "v0.1.0",
+            "DRAFT — NOT RELEASED",
+            "AI ASCENSION (spaced all-caps display footer)"
+          ],
+          "copy_result": "The headline, version, and unreleased status are exact, conspicuous, and legible in source and 1200x630 output.",
+          "source_accuracy": "The pinned private package at revision 40b0c07796b24e029fbee3bf913b5869cb61fe35 declares ai-ascension-brand-verification version 0.1.0 with private=true; the current release inventory is [].",
+          "footer_case_observation": "The requested canonical words AI Ascension render as spaced all-caps AI ASCENSION. This is a display-typography case treatment of the same organization name; the brief does not impose a case-sensitive footer contract, so no copy correction is required.",
+          "boundary_result": "The status clearly says DRAFT — NOT RELEASED; the card does not claim a public release, runtime/toolkit version, download, date, or compatibility.",
+          "invented_outcome_or_rationale": "pass_no_release_claim_or_unstated_capability",
+          "consent_result": "not_applicable_no_person_name_photo_quote_or_attribution"
+        },
+        {
+          "variant_key": "MKT-06/contributor",
+          "copy_verdict": "pass",
+          "required_copy_correction": null,
+          "observed_copy": [
+            "Contributor thanks",
+            "Thank you for careful reviews.",
+            "AI Ascension"
+          ],
+          "copy_result": "Exact sidecar copy is visible and legible in source and 1080x1080 output.",
+          "source_accuracy": "This is generic acknowledgment copy and makes no claim about a person, contribution, endorsement, testimonial, or outcome.",
+          "boundary_result": "The abstract branching ornament contains no person, face, avatar, name, handle, photograph, quotation, signature, or partner mark.",
+          "invented_outcome_or_rationale": "pass_no_attribution_or_personal_story",
+          "consent_result": "not_applicable_no_actual_name_photo_quote_endorsement_testimonial_attributed_contribution_or_permission_claim"
+        }
+      ],
+      "visual_observations": [
+        "Both source masters and exports are clean RGB compositions with readable serif hierarchy, generous margins, and no clipped required copy.",
+        "The release status is visually prominent in an amber badge; the version is readable and the footer case treatment does not change the canonical organization name.",
+        "The contributor card remains anonymous and contains only the approved generic thanks plus restrained decorative branching art."
+      ],
+      "source_output_verdict": "ready_for_bounded_use",
+      "recommended_family_status": "verified",
+      "issues": [],
+      "evidence_boundary": "Private release-state and anonymous-thanks artwork only; package publication, runtime behavior, contributor identity/permission, rights, and public distribution remain separate."
+    },
+    {
+      "asset_id": "MKT-05",
+      "brief_reference": "art/PROMPTBOOK.md#MKT-05 (lines 865-885)",
+      "selected_generations": [
+        "MKT-05-generation-002"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-05-generation-002",
+          "asset_id": "MKT-05",
+          "prompt_path": "brand/prompts/root/MKT-05/generation-002.txt",
+          "prompt_sha256": "b895fd6e95f677a2f6ab6d8c673b8bc701782b10e55c5bf86802b50c46e70f74",
+          "source_path": "brand/sources/generated/MKT-05/generation-002.png",
+          "source_sha256": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9",
+          "source_bytes": 1475229,
+          "source_dimensions": [
+            1254,
+            1254
+          ],
+          "source_mode": "RGB",
+          "references": [
+            {
+              "path": "brand/sources/generated/MKT-05/generation-001.png",
+              "sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64"
+            }
+          ],
+          "reference_inputs": [
+            {
+              "reference": "brand/sources/generated/MKT-05/generation-001.png",
+              "sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+              "rights_reference": "pending:generated-original-reference-review"
+            }
+          ],
+          "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-018.json",
+          "generation_receipt_sha256": "1393ea2c5d019467cf0cb76effc17afbdee7a9705c88947247307ef2cfa146f1",
+          "observed_at": "2026-09-08T03:39:22.519488+00:00",
+          "tool": "image_gen__imagegen",
+          "author_role": "ROOT",
+          "generation_record_status": "blocked",
+          "review_state": "pending_independent_review"
+        }
+      ],
+      "export_records": [
+        {
+          "asset_id": "MKT-06",
+          "output_path": "brand/assets/marketing/release-template.png",
+          "source_path": "brand/sources/generated/MKT-06/generation-003.png",
+          "source_sha256": "c239754685c0e59ed52f2bc5eb66e5eee8cf194c83e61c27614503835b1053d5",
+          "output_sha256": "fb786cf8d827b909c1be92d39c8ea5b978fd8d821015f1b85bf173a4a274ea48",
+          "output_bytes": 847532,
+          "output_dimensions": [
+            1200,
+            630
+          ],
+          "output_mode": "RGB",
+          "crop_box": [
+            0,
+            0,
+            1731,
+            909
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "replacement_of": {
+            "source_path": "brand/sources/generated/MKT-06/generation-001.png",
+            "source_sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+            "output_sha256": "d563bd1f1450f607d6ca44a0896075aa889e7a29d74414121749d01935dc754f",
+            "output_bytes": 491181,
+            "crop_box": [
+              0,
+              0,
+              1730,
+              909
+            ]
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_key": "MKT-05/proposed_challenge",
+          "copy_verdict": "pass",
+          "required_copy_correction": null,
+          "observed_copy": [
+            "Check one reported result",
+            "PROPOSED — NOT SCHEDULED",
+            "Read the public report.",
+            "Cite the exact source revision.",
+            "Identify one claim needing evidence.",
+            "Share no private data.",
+            "github.com/AI-Ascension/sts2-harness",
+            "AI Ascension"
+          ],
+          "copy_result": "All specified lines are present, correctly spelled, and readable in source and 1080x1080 output.",
+          "source_accuracy": "The card points to the pinned public Windows report repository and the sidecar carries its exact revision and document digest. The printed repository label is a readable source label; it must not be mistaken for the full revision URL by itself.",
+          "boundary_result": "PROPOSED — NOT SCHEDULED is conspicuous; deadline and challenge approval remain null. The card contains no date, prize, vote, participant, response count, result, sponsor, or announced-event claim.",
+          "invented_outcome_or_rationale": "pass_no_new_result_private_data_or_report_rationale",
+          "consent_result": "not_applicable_no_person_name_photo_quote_or_attribution"
+        }
+      ],
+      "visual_observations": [
+        "The source and full-frame 1080x1080 export preserve the headline, status, four rules, repository label, and footer with readable spacing and no crop loss.",
+        "The branching ornament is decorative and does not create a chart, game screen, QR code, metric, or fabricated evidence."
+      ],
+      "source_output_verdict": "pass_for_private_proposed_card",
+      "recommended_family_status": "blocked_pending_real_challenge_approval",
+      "issues": [
+        {
+          "severity": "brief_gate_pending",
+          "finding": "The MKT-05 brief calls for a real approved challenge; the current copy is explicitly only a proposed unscheduled challenge with no approval record.",
+          "required_follow_up": "Obtain challenge approval before treating this family as an approved or publicly announced challenge. No copy correction is required while the proposed/unscheduled label remains true."
+        },
+        {
+          "severity": "source_link_boundary",
+          "finding": "The artwork prints the approved repository label, while the exact report URL and revision remain in the source sidecar.",
+          "required_follow_up": "Keep the exact sidecar URL/revision attached in any link or accessible adjacent text before publication; do not describe the printed label alone as a revision citation."
+        }
+      ],
+      "evidence_boundary": "Private proposed challenge artwork only; no challenge approval, schedule, community participation, outcome, rights clearance, or publication approval is established."
+    }
+  ],
+  "aggregate_decision": {
+    "variant_copy_verdicts": {
+      "MKT-03/outcome": "pass",
+      "MKT-03/question": "pass",
+      "MKT-06/release": "pass",
+      "MKT-06/contributor": "pass",
+      "MKT-05/proposed_challenge": "pass"
+    },
+    "required_copy_correction_count": 0,
+    "recommended_family_statuses": {
+      "MKT-03": "verified",
+      "MKT-06": "verified",
+      "MKT-05": "blocked_pending_real_challenge_approval"
+    },
+    "decision": "MKT-03 and MKT-06 pass bounded source/output review; MKT-05 copy and artwork pass as a private proposed card but remains blocked by the real-approved-challenge brief gate.",
+    "private_generation_use": "pass_with_existing_user_authorized_route; this review does not attest model identity or backend.",
+    "publication_approval": false,
+    "rights_clearance": "not_granted",
+    "challenge_approval": "not_granted",
+    "consent_result": "No actual name, photograph, quotation, endorsement, testimonial, or attributed contribution is used in the five variants; no person-specific consent condition is triggered."
+  },
+  "limitations": [
+    "MKT-03 reports a pinned public maintainer report and bounded plan; it is not independent gameplay replay or a genuine project capture.",
+    "MKT-05 remains a concrete proposal awaiting challenge approval; its private artwork does not announce or schedule a community event.",
+    "MKT-06 v0.1.0 is the declared version of a private brand-verification package, not a toolkit/runtime release or public distribution.",
+    "The review records the MKT-06 all-caps footer as a typographic treatment of the canonical words; a future case-sensitive raster contract would require a separate authored recheck.",
+    "Source/output review does not grant rights, trademark, contributor permission, publication, channel placement, send, deployment, runtime, gameplay, or model/backend approval."
+  ]
+}

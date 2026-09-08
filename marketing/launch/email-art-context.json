@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "scope": "private_art_context_only",
+  "approval_status": "independently_reviewed_for_private_art_context",
+  "publication_authorized": false,
+  "source": {
+    "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md",
+    "revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+    "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+    "sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e"
+  },
+  "evidence_boundary": "Public report only. Private trajectories and native captures were not inspected for this artwork. This is not an enrolled publisher run manifest or send approval.",
+  "fields": {
+    "Run ID": "windows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)",
+    "Outcome": "Reported Defeat at zero HP on floor 17; not a victory",
+    "Model configuration": "Reported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.",
+    "Interventions": "Report states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.",
+    "Evidence": "Public report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.",
+    "Source URL": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md"
+  },
+  "image_copy": [
+    "Run digest",
+    "Reported defeat \u00b7 Floor 17",
+    "gpt-6-astra \u00b7 Windows practice campaign",
+    "333 settled operations \u00b7 Report only",
+    "AI Ascension"
+  ],
+  "factual_review_reference": "execution/reviews/W02-email-art-context-review.json"
+}

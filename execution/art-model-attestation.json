@@ -1,9 +1,9 @@
 {
-  "observed_at": "2026-09-07T21:35:36.002811+00:00",
-  "status": "partial_artwork_verified_remaining_creative_work_blocked",
+  "observed_at": "2026-09-08T04:55:39.066308+00:00",
+  "status": "all_export_files_exist_two_briefs_incomplete",
   "artwork_generated": true,
   "all_artwork_complete": false,
-  "successful_generation_calls_recorded": 32,
+  "successful_generation_calls_recorded": 123,
   "failed_generation_calls_recorded": 3,
   "generation_route": "user_authorized_root_image_tool",
   "authorization_reference": "art/root-generation-authorization.json",
@@ -113,12 +113,12 @@
     },
     {
       "asset_id": "BG-04",
-      "status": "blocked",
+      "status": "verified",
       "existing_exports": [
         "brand/assets/illustration/route-pattern-light.png",
         "brand/assets/illustration/route-pattern-dark.png"
       ],
-      "remaining_gate": "Both tile exports exist, but the independent review found visible repeat seams. The mandatory seamless requirement needs a new generated master; image service capacity is unavailable."
+      "remaining_gate": null
     },
     {
       "asset_id": "WEB-01",
@@ -192,26 +192,30 @@
     },
     {
       "asset_id": "RUN-01",
-      "status": "blocked",
+      "status": "verified",
       "existing_exports": [
-        "brand/assets/run/summary-template.png"
+        "brand/assets/run/summary-template.png",
+        "brand/assets/run/summary-template-square.png"
       ],
-      "remaining_gate": "The landscape export was independently reviewed. The required square export is missing and needs authored reflow after image service capacity returns."
+      "remaining_gate": null
     },
     {
       "asset_id": "RUN-02",
-      "status": "blocked",
+      "status": "verified",
       "existing_exports": [
         "brand/assets/run/decision-landscape.png",
+        "brand/assets/run/decision-square.png",
         "brand/assets/run/decision-vertical.png"
       ],
-      "remaining_gate": "Landscape and vertical exports were independently reviewed. The required square export is missing and needs authored reflow after image service capacity returns."
+      "remaining_gate": null
     },
     {
       "asset_id": "RUN-03",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "A source master exists, but no required 1600\u00d7500 export exists. Independent review requires a new wide creative reflow; image service capacity is unavailable."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/run/timeline-template.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "RUN-04",
@@ -231,287 +235,403 @@
     },
     {
       "asset_id": "CAST-01",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/broadcast/single-agent-master.png",
+        "brand/assets/broadcast/single-agent.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "CAST-02",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/broadcast/comparison.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "CAST-03",
       "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "Image tool returned HTTP 429 usage_limit_reached on 2026-09-07. Required authored masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "existing_exports": [
+        "brand/assets/broadcast/vertical.png"
+      ],
+      "remaining_gate": "Generated portrait layouts are reviewed; the brief still requires approved actual-footage cropping and host integration checks. No approved footage was supplied."
     },
     {
       "asset_id": "CAST-04",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/broadcast/starting.png",
+        "brand/assets/broadcast/intermission.png",
+        "brand/assets/broadcast/ended.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "CAST-05",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/broadcast/lower-third.png",
+        "brand/assets/broadcast/disclosure.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "CAST-06",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/broadcast/title-transition.webm",
+        "brand/assets/broadcast/title-transition-still.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "CAST-07",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/broadcast/scene-map.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "MKT-01",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/marketing/channel-cover.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "MKT-02",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/marketing/social-header.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "MKT-03",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/marketing/thumbnail-outcome.png",
+        "brand/assets/marketing/thumbnail-question.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "MKT-04",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/marketing/season-key-visual.png",
+        "brand/assets/marketing/season-key-visual-vertical.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "MKT-05",
       "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "existing_exports": [
+        "brand/assets/marketing/challenge-template.png"
+      ],
+      "remaining_gate": "A reviewed concrete private challenge proposal with rules and proposed dates exists. Operator approval for a real challenge remains absent; see source review 008."
     },
     {
       "asset_id": "MKT-06",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/marketing/release-template.png",
+        "brand/assets/marketing/contributor-template.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "MKT-07",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/marketing/email-header.png",
+        "brand/assets/marketing/email-run-card.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "MKT-08",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/marketing/sponsor-disclosure.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "MKT-09",
-      "status": "blocked",
+      "status": "verified",
       "existing_exports": [
+        "brand/assets/press/cover.png",
         "brand/assets/press/index.html"
       ],
-      "remaining_gate": "The functional press catalog exists and currently exposes zero downloads. The required generated cover is missing; image service capacity is unavailable. Public distribution approvals remain empty."
+      "remaining_gate": null
     },
     {
       "asset_id": "DOC-01",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/docs/runtime-architecture-master.png",
+        "brand/assets/docs/runtime-architecture.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "DOC-02",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/docs/publication-flow.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "DOC-03",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/docs/repository-map.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "DOC-04",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/docs/agent-tree.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "DOC-05",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/docs/contributor-path.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-01-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ascension-banner-light.png",
+        "brand/assets/github/ascension-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-01-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ascension-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-02-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-mcp-banner-light.png",
+        "brand/assets/github/sts2-mcp-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-02-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-mcp-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-03-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-mod-banner-light.png",
+        "brand/assets/github/sts2-mod-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-03-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-mod-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-04-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-core-banner-light.png",
+        "brand/assets/github/sts2-core-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-04-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-core-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-05-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-gateway-banner-light.png",
+        "brand/assets/github/sts2-gateway-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-05-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-gateway-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-06-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-protocol-banner-light.png",
+        "brand/assets/github/sts2-protocol-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-06-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-protocol-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-07-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-map-banner-light.png",
+        "brand/assets/github/sts2-map-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-07-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/sts2-map-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-08-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ascension-watchdog-banner-light.png",
+        "brand/assets/github/ascension-watchdog-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-08-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ascension-watchdog-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-09-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ascension-observability-banner-light.png",
+        "brand/assets/github/ascension-observability-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-09-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ascension-observability-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-10-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/website-banner-light.png",
+        "brand/assets/github/website-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-10-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/website-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-11-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+        "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-11-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ai-ascensiondot-githubdot-io-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-12-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/dot-github-banner-light.png",
+        "brand/assets/github/dot-github-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-12-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/dot-github-social.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-13-B",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ascension-brand-overhaul-banner-light.png",
+        "brand/assets/github/ascension-brand-overhaul-banner-dark.png"
+      ],
+      "remaining_gate": null
     },
     {
       "asset_id": "GH-13-S",
-      "status": "blocked",
-      "existing_exports": [],
-      "remaining_gate": "No image invocation was completed for this family. Creative generation is blocked by the service quota observed on CAST-01 through CAST-03; required masters and exports are missing. See execution/reviews/root-image-service-limit.json."
+      "status": "verified",
+      "existing_exports": [
+        "brand/assets/github/ascension-brand-overhaul-social.png"
+      ],
+      "remaining_gate": null
     }
   ],
   "historical_pre_amendment_snapshot": {
@@ -1393,7 +1513,13 @@
     "latest_child_capability_review": "execution/reviews/W03-W01-review.md",
     "latest_child_capability_result": "W03 actual callable-surface check again returned no collaboration or child-spawn tool; no depth2/depth3 identity exists."
   },
-  "verified_families": 21,
-  "existing_exports": 42,
-  "acceptance_reference": "execution/root-art-acceptance.json"
+  "verified_families": 70,
+  "existing_exports": 115,
+  "acceptance_reference": "execution/root-art-acceptance.json",
+  "service_access_restored_receipt": "execution/reviews/root-image-access-restored.json",
+  "supplemental_signed_provenance": {
+    "reference": "execution/reviews/W03-image-c2pa-provenance-review.json",
+    "scope": "122 scanned source PNGs have trusted OpenAI C2PA signatures; softwareAgent gpt-image version 2.0 is not a verified API model mapping. The newest source is separately scoped in any follow-up review.",
+    "changes_backend_attestation": false
+  }
 }

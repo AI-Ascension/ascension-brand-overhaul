@@ -1,10 +1,16 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="brand/assets/github/ascension-brand-overhaul-banner-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="brand/assets/github/ascension-brand-overhaul-banner-light.png">
+  <img src="brand/assets/github/ascension-brand-overhaul-banner-light.png" alt="AI Ascension brand sources — identity assets, publishing tools, and campaign templates" width="1600" height="400">
+</picture>
+
 # AI Ascension — complete brand-overhaul execution package
 
 **Target repository:** `AI-Ascension/ascension-brand-overhaul`
 **Original agent configuration requested:** Luna/max for 47 ordinary roles and Astra/max for two depth-3 art-author roles. The recorded user amendment authorizes root image generation with the available tool; model/backend identity remains unknown. See [the amendment](art/root-generation-authorization.json).
 **Hierarchy:** root → workstream leads → work-package coordinators → implementation/review specialists.
 
-This repository contains the executed engineering, text and partial artwork for the overhaul, together with the binding brief and recorded amendments. The private repository and reviewed draft PRs were created. The website, offline publisher, measurement contracts, migration tooling, presentation copy, and twelve-week content kit have local verification records. Thirty-two generated source masters and 42 exports exist; 21 of 72 families are verified for scoped source/export acceptance. Seventy-three required exports, a seamless tile replacement and the requested native depth-three hierarchy remain outstanding. This is not a completed rebrand or live launch.
+This repository contains the executed engineering, text and partial artwork for the overhaul, together with the binding brief and recorded amendments. The private repository and reviewed draft PRs were created. The website, offline publisher, measurement contracts, migration tooling, presentation copy, and twelve-week content kit have local verification records. All 115 planned export files exist, with 123 generated sources preserved including superseded attempts. Seventy of 72 families pass scoped source/export acceptance. Two briefs still require approved footage integration or real challenge approval, and the requested native depth-three hierarchy remains outstanding. This is not a completed rebrand or live launch.
 
 This is a **private audit source handoff**. Internal model ancestry and operation receipts are retained to satisfy the execution audit. Do not make the repository or local archive public without a separate content/privacy review and explicit publication authority. Raw private trajectories, captures, provider diagnostics, credentials, and font binaries are excluded.
 
@@ -56,6 +62,6 @@ No actual font files, proprietary game files, credentials, or unpublished gamepl
 
 The current artwork route is `user_authorized_root_image_tool`. Root authors and preserves exact prompts, generated raster sources, input references and hashes; independent reviewers assess source use, visuals and mechanical exports. The available tool does not attest the author model or image backend, so these remain unknown. The original Astra-specific route remains documented for historical traceability.
 
-The map still covers 72 artwork families, three authentic evidence-media families and five historical/reference records across 16 surfaces. Genuine evidence is not synthesized, and legacy art remains reference/archive-only. Read [artwork access](brand/ART_ACCESS.md), [the actual acceptance record](execution/root-art-acceptance.json) and [remaining creative work](brand/remaining-artwork.json). The image-service quota currently blocks further generation; the recorded reset is 2026-09-14T02:55:51Z. Verified artwork does not itself authorize public downloads, deployment or distribution of this private archive.
+The map still covers 72 artwork families, three authentic evidence-media families and five historical/reference records across 16 surfaces. Genuine evidence is not synthesized, and legacy art remains reference/archive-only. Read [artwork access](brand/ART_ACCESS.md), [the actual acceptance record](execution/root-art-acceptance.json) and [remaining creative work](brand/remaining-artwork.json). Image generation resumed successfully after the historical service limit. Verified artwork does not itself authorize public downloads, deployment or distribution of this private archive.
 
 The current [private website artwork candidate](delivery/WEBSITE_CANDIDATE.md) is included as a restorable Git bundle; its source revision and review receipts are recorded separately from the existing public website draft PR.

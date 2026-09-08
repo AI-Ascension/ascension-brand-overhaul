@@ -1,0 +1,222 @@
+{
+  "schema_version": "ai-ascension.w02-marketing-concrete-copy-review.v1",
+  "observed_at": "2026-09-08T03:31:00Z",
+  "reviewer": "w02-marketing-concrete-copy-independent-review",
+  "task": "Independent source-use and factual-copy review of the five private concrete marketing variants authored in marketing/launch/art-source-copy.json.",
+  "scope": "Read-only review of the sidecar copy against the pinned current season evidence, its exact public report revision, the exact brand package revision, and the current published-release inventory. This review checks source fidelity, factual accuracy, invented outcomes or rationale, and name/photo consent boundaries. It does not author prompts or images and does not grant visual, rights, challenge, distribution, or publication approval.",
+  "working_tree": {
+    "path": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "exclusive_write": "execution/reviews/W02-marketing-concrete-copy-review.json",
+    "source_copy_edits_by_reviewer": false,
+    "prompt_or_image_authoring_by_reviewer": false,
+    "pre_existing_dirty_changes_preserved": true
+  },
+  "source_pins": {
+    "copy_sidecar": {
+      "path": "marketing/launch/art-source-copy.json",
+      "sha256": "7df5d7351089f280dc6feeadaa51a01821f76589f3d3ee336025a3bb76e7a4ae",
+      "bytes": 4019,
+      "schema_version": "ai-ascension.marketing-source-copy.v1",
+      "recorded_at": "2026-09-08T03:18:54.848075+00:00",
+      "status": "private_copy_candidate_pending_independent_review",
+      "publication_approved": false
+    },
+    "current_season_evidence": {
+      "path": ".execution-private/current-season-evidence.json",
+      "sha256": "ced0e81bdc77c660f142872b71efce3efa4de709a759843d2a15b190c99d7cdc",
+      "bytes": 16407,
+      "repository": "AI-Ascension/sts2-harness",
+      "revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+      "selected_documents": [
+        {
+          "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+          "sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+          "used_by": [
+            "MKT-03/outcome",
+            "MKT-05/proposed_challenge"
+          ]
+        },
+        {
+          "path": "docs/evidence/bounded-astra-plans-20260906.md",
+          "sha256": "8cefac7a5bedf06141c6ad0aa90636bd894e4319fc52f9f9de38f4cd93c82e9b",
+          "used_by": [
+            "MKT-03/question"
+          ]
+        }
+      ],
+      "text_hash_validation": "selected document text extracted from this sidecar matches each embedded document SHA-256"
+    },
+    "brand_package": {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "path": "package.json",
+      "sha256": "3e3bfc085d49410a6d24752c802c42026371051f629fe2c7214e866502946692",
+      "bytes": 354,
+      "verified_fields": {
+        "name": "ai-ascension-brand-verification",
+        "version": "0.1.0",
+        "private": true,
+        "description": "Local browser verification for the AI Ascension presentation overhaul"
+      }
+    },
+    "current_brand_releases": {
+      "path": ".execution-private/current-brand-releases.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "json_value": [],
+      "observed_published_github_releases": 0
+    }
+  },
+  "source_validation": {
+    "sidecar_json": "pass",
+    "sidecar_pin": "pass",
+    "season_evidence_sidecar_pin": "pass",
+    "public_revision_pin": "pass",
+    "selected_public_document_hashes": "pass",
+    "package_revision_and_hash": "pass",
+    "published_release_inventory": "pass_zero_releases_observed",
+    "factual_claim_boundary": "pass",
+    "invented_outcome_or_rationale_check": "pass",
+    "personal_name_or_photo_consent_check": "not_applicable_no_name_or_photo_content"
+  },
+  "variants": [
+    {
+      "variant_key": "MKT-03/outcome",
+      "asset_id": "MKT-03",
+      "variant": "outcome",
+      "copy_verdict": "pass",
+      "required_copy_correction": null,
+      "copy_review": {
+        "headline": "Reported defeat",
+        "subtitle": "Windows practice campaign · Floor 17",
+        "status_label": "REPORT ONLY",
+        "footer": "AI Ascension",
+        "exactness": "The report describes a visible Windows v0.107.1 practice campaign reaching Defeat at zero HP on floor 17; the subtitle and headline summarize that result without adding a win, score, or completion claim.",
+        "source_use": "The source revision and document digest are pinned in the sidecar and match the current season-evidence text.",
+        "invented_claim_check": "pass_no_project_replay_or_capture_claim",
+        "rationale_check": "pass_no_hidden_strategy_or_model_rationale",
+        "consent_check": "not_applicable_no_name_photo_quote_or_attributed_person",
+        "publication_boundary": "REPORT ONLY and the sidecar boundary keep this as a summary of a published maintainer report, not project-owned gameplay evidence or publication approval."
+      },
+      "evidence": [
+        ".execution-private/current-season-evidence.json#docs/evidence/seeded-astra-campaign-20260906.md",
+        "marketing/launch/art-source-copy.json#/assets/0/source"
+      ]
+    },
+    {
+      "variant_key": "MKT-03/question",
+      "asset_id": "MKT-03",
+      "variant": "question",
+      "copy_verdict": "pass",
+      "required_copy_correction": null,
+      "copy_review": {
+        "headline": "Rage before Bash+?",
+        "subtitle": "Reported action order",
+        "status_label": "REPORT ONLY",
+        "footer": "AI Ascension",
+        "exactness": "The bounded-plan report lists the settled move order Rage, Bash+, Strike, End turn. The headline now uses the exact upgraded card name Bash+ and asks only about ordering.",
+        "source_use": "The source revision and document digest are pinned in the sidecar and match the current season-evidence text.",
+        "invented_claim_check": "pass_question_does_not_assert_outcome_or_optimality",
+        "rationale_check": "pass_explicit_boundary_excludes_hidden_rationale_full_decision_state_and_counterfactuals",
+        "consent_check": "not_applicable_no_name_photo_quote_or_attributed_person",
+        "publication_boundary": "REPORT ONLY and the sidecar boundary keep the action sequence as report-derived copy; no new gameplay evidence is claimed."
+      },
+      "evidence": [
+        ".execution-private/current-season-evidence.json#docs/evidence/bounded-astra-plans-20260906.md",
+        "marketing/launch/art-source-copy.json#/assets/1/source"
+      ]
+    },
+    {
+      "variant_key": "MKT-06/release",
+      "asset_id": "MKT-06",
+      "variant": "release",
+      "copy_verdict": "pass",
+      "required_copy_correction": null,
+      "copy_review": {
+        "headline": "Brand verification tools",
+        "version": "v0.1.0",
+        "status_label": "DRAFT — NOT RELEASED",
+        "footer": "AI Ascension",
+        "exactness": "The pinned package.json at revision 40b0c07796b24e029fbee3bf913b5869cb61fe35 declares version 0.1.0, is private, and describes local browser verification. The current release inventory is an empty array, so the unreleased label is accurate.",
+        "source_use": "Package name, version, private flag, description, revision, and digest are all directly pinned; no toolkit/runtime version is inferred.",
+        "invented_claim_check": "pass_no_release_date_download_count_feature_claim_or_public_release_claim",
+        "rationale_check": "pass_no_unstated_release_reason_or_product_capability",
+        "consent_check": "not_applicable_no_name_photo_quote_or_attributed_person",
+        "publication_boundary": "DRAFT — NOT RELEASED accurately preserves the private package and zero observed published releases; it is not an announcement or distribution approval."
+      },
+      "evidence": [
+        "AI-Ascension/ascension-brand-overhaul@40b0c07796b24e029fbee3bf913b5869cb61fe35:package.json",
+        ".execution-private/current-brand-releases.json",
+        "marketing/launch/art-source-copy.json#/assets/2/source"
+      ]
+    },
+    {
+      "variant_key": "MKT-06/contributor",
+      "asset_id": "MKT-06",
+      "variant": "contributor",
+      "copy_verdict": "pass",
+      "required_copy_correction": null,
+      "copy_review": {
+        "headline": "Contributor thanks",
+        "body": "Thank you for careful reviews.",
+        "footer": "AI Ascension",
+        "exactness": "The copy is a generic acknowledgment and does not assert who contributed, what anyone contributed, or that an individual endorsed the project.",
+        "source_use": "No external factual source is needed for this anonymous editorial acknowledgment; the sidecar records the identity policy explicitly.",
+        "invented_claim_check": "pass_no_contribution_details_or_testimonial",
+        "rationale_check": "pass_no_attributed_motivation_or_personal_story",
+        "consent_check": "not_applicable_no_actual_name_photo_quote_endorsement_testimonial_attributed_contribution_or_permission_claim",
+        "publication_boundary": "The anonymous collective wording can proceed to private artwork generation as copy; any future named person, photograph, quotation, endorsement, or attribution would require a new consent and rights review."
+      },
+      "evidence": [
+        "marketing/launch/art-source-copy.json#/assets/3",
+        ".execution-private/current-brand-releases.json (separate release-state pin; no identity claim)"
+      ]
+    },
+    {
+      "variant_key": "MKT-05/proposed_challenge",
+      "asset_id": "MKT-05",
+      "variant": "proposed_challenge",
+      "copy_verdict": "pass",
+      "required_copy_correction": null,
+      "copy_review": {
+        "headline": "Check one reported result",
+        "status_label": "PROPOSED — NOT SCHEDULED",
+        "rules": [
+          "Read the public report.",
+          "Cite the exact source revision.",
+          "Identify one claim needing evidence.",
+          "Share no private data."
+        ],
+        "exactness": "The proposal points to the pinned public Windows report and requires the same exact revision that the sidecar records. The rules define a bounded review exercise and do not assert an approved challenge, participation, prize, deadline, or result.",
+        "source_use": "The report URL, repository revision, document digest, and image-source label identify the public maintainer report; no private trajectory or capture is used by the proposed copy.",
+        "invented_claim_check": "pass_no_new_outcome_claim_and_no_private_data_claim",
+        "rationale_check": "pass_no_claim_about_why_the_reported_result_happened",
+        "consent_check": "not_applicable_no_name_photo_quote_or_attributed_person",
+        "publication_boundary": "PROPOSED — NOT SCHEDULED, null deadline, null challenge approval, and the explicit boundary preserve the pending challenge-approval state."
+      },
+      "evidence": [
+        ".execution-private/current-season-evidence.json#docs/evidence/seeded-astra-campaign-20260906.md",
+        "marketing/launch/art-source-copy.json#/assets/4/source"
+      ]
+    }
+  ],
+  "aggregate": {
+    "variant_count": 5,
+    "pass_count": 5,
+    "required_copy_correction_count": 0,
+    "decision": "all_five_variants_pass_source_use_and_factual_copy_review",
+    "private_draft_generation": "permitted_with_existing_authorization",
+    "visual_review": "pending_later_independent_review_after_generation",
+    "challenge_approval": "pending",
+    "publication_approved": false,
+    "observed_published_github_releases": 0,
+    "identity_consent": "not_applicable_for_current_copy; no actual name, photograph, quotation, endorsement, testimonial, or attributed contribution is used"
+  },
+  "limitations": [
+    "The two MKT-03 variants summarize a published maintainer report and bounded action-plan report; they do not establish this project independently replayed the episode or own a native capture.",
+    "MKT-05 remains a concrete private proposal awaiting challenge approval; no deadline, participation, prize, votes, or outcome exists in this review.",
+    "MKT-06 release copy describes a private versioned package and zero observed published releases; it does not announce a release or certify runtime/toolkit behavior.",
+    "MKT-06 contributor copy is anonymous and does not satisfy or require named-person consent; adding a person, photo, quotation, endorsement, or attribution later requires a separate review.",
+    "Private copy approval and the existing user-authorized image-generation route do not grant visual acceptance, rights clearance, public distribution, challenge approval, or publication approval."
+  ]
+}

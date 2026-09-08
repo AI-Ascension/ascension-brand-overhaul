@@ -7,9 +7,9 @@
   "components": [
     {
       "repository": "AI-Ascension/ascension-brand-overhaul",
-      "last_tested_implementation_revision": "b938b75799aa0525f5a47ed2ec34802653cb02c3",
       "pull_request": "https://github.com/AI-Ascension/ascension-brand-overhaul/pull/1",
-      "final_revision_locator": "External RECEIPT.json beside the ZIP; excluded here to avoid self-reference."
+      "final_revision_locator": "External RECEIPT.json beside the ZIP; excluded here to avoid self-reference.",
+      "tested_implementation_and_test_hashes": "../execution/reviews/root-final-expanded-art-local-tests.json"
     },
     {
       "repository": "AI-Ascension/aiascension.tech",
@@ -29,11 +29,11 @@
     },
     {
       "repository": "AI-Ascension/AI-Ascension.github.io",
-      "revision": "b50f7d725c8d6abb6306963d059fbb7fa067402c",
+      "revision": "e5153d6628843bbc734686ae926e143a1cf90526",
       "pull_request": "https://github.com/AI-Ascension/AI-Ascension.github.io/pull/12",
       "changed_file_sha256": {
-        "README.md": "d10bad9768f196b0f28fc38c1e270ae5ce64ebf861694020e777cbe1da2ed570",
-        "index.html": "8d80243177c3dd702429dc102ef76b569289c6b9d56275dcc5d6774cbcec0840"
+        "README.md": "546500a8e05559d2ad90250b38e4e5ec07ccdf7c3cad8c1199b6299c4faa2d4d",
+        "index.html": "1427fc30bfb28f0b3f8eab3f734dc1d1eccaaaf3f5ca88c548d3e1dacf9f2146"
       }
     },
     {
@@ -104,13 +104,13 @@
   "artwork": {
     "families": 72,
     "required_exports": 115,
-    "delivered_exports": 42,
-    "status": "partial_verified_remaining_creative_work_blocked",
+    "delivered_exports": 115,
+    "status": "all_exports_exist_two_content_integration_briefs_blocked",
     "registry": "../art/asset-registry.json",
     "execution_manifest": "../brand/asset-manifest.json",
     "attestation": "../execution/art-model-attestation.json",
-    "verified_families": 21,
-    "source_masters": 32,
+    "verified_families": 70,
+    "source_masters": 123,
     "remaining_work": "../brand/remaining-artwork.json",
     "acceptance": "../execution/root-art-acceptance.json"
   },
@@ -137,8 +137,8 @@
   "final_report": "FINAL_REPORT.md",
   "runbook": "RUNBOOK.md",
   "privacy_scope": "PRIVACY_SCOPE.md",
-  "remote_review_snapshot": "../execution/reviews/root-art-remote-snapshot.json",
-  "remote_review_snapshot_sha256": "8e195f17c8129fbfe3d632c1e654d8a48ca558f6d9bee2f1e6c646a7bd7369fe",
+  "remote_review_snapshot": "../execution/reviews/root-final-art-remote-snapshot-preintegration.json",
+  "remote_review_snapshot_sha256": "c202f2dd86b48cc9b5fcfa19d1de7c9dd2e8415e78b4bad4ba15ccb264579b37",
   "source_tree_inventory": "../execution/source-tree-inventory.json",
   "archive_acceptance_locator": "External final-review.json binds the exact source manifest and candidate ZIP; external RECEIPT.json binds the final reviewed ZIP and remote heads."
 }

@@ -21,12 +21,12 @@
   "artifacts": [
     {
       "path": "github/companion-commits.json",
-      "sha256": "7dbed618aee2f9addd5bbefd2ae45ec0339893574d1ff26fb6e73e17391156bf",
-      "bytes": 11110
+      "sha256": "7ead43647ee05ad472e09357fde3ed828541f935547d92eee101b3093a98e9e7",
+      "bytes": 11736
     },
     {
       "path": "github/presentation-manifest.json",
-      "sha256": "e4dd7ec08533b616d2c511fe5eafa9eb8531ad0bc7a2e686d25c63098a51a472",
+      "sha256": "cb9083da4818210c89187c0b325b56c5e28f8ebf9c82fea9d9994db49e1920ce",
       "bytes": 5221
     },
     {

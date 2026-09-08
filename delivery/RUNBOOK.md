@@ -21,13 +21,15 @@ Read the external `RECEIPT.json` beside the current ZIP for final source and tes
 
 `github/companion-commits.json` enumerates ten reviewed draft PRs, exact source revisions, changed paths, and SHA-256 values. `execution/reviews/companion-validation-001.json` records commands and qualifications. Six Rust README policy checks and two byte-exact quickstart recipes passed; Pages passed five Node tests and its local viewport/theme review. Watchdog has no Cargo manifest at the reviewed bootstrap source. Observability deployment was not checked because Docker is unavailable. Neither limitation is hidden by the presentation review.
 
+The twelve private GitHub artwork candidates are indexed in `github-art-candidates/github-art-candidates-map.json`. Follow `github-art-candidates/README.md` to restore a candidate in a fresh clone and verify its exact prerequisite, head, bundle digest and copied PNG hashes. The thirteen social preview proposals are in `../github/social-preview-candidates.json`. These local candidates have not been applied to public repositories or live settings.
+
 Before any merge, re-read each actual remote default and PR head, checks, mergeability, and current owner work. Reconcile any change in an isolated checkout and obtain review of the resulting diff. Never force-push or modify unrelated runtime/map/sync PRs.
 
 ## Artwork and native hierarchy
 
 The current user-authorized route is recorded in `art/root-generation-authorization.json`: root may generate with the available image tool, while the author model and image backend stay unknown. `brand/ART_ACCESS.md` and `brand/asset-manifest.json` give actual per-family review states. The package retains 32 source masters, exact prompts, generation observations and 40 raster exports plus two functional HTML exports. Generated artwork is never gameplay evidence.
 
-The full inventory remains 72 families and 115 exports. Read every missing-export and creative-reflow gate before resuming. The last image call returned `usage_limit_reached`; the recorded reset is 2026-09-14T02:55:51Z. Preserve source bytes and generation IDs, use a new prompt/attempt for creative revisions, then run mechanical exports and obtain independent source-use, visual and export review. `generated_original_reviewed` records that bounded source-use review; it is not legal/trademark clearance or public distribution authority.
+The full inventory remains 72 families and 115 exports. All 115 export paths now exist; 70 families pass scoped acceptance and two still require approved footage integration or real challenge approval. Image generation resumed successfully after the historical service limit. Read `brand/remaining-artwork.json` for the current gates. Preserve source bytes and generation IDs, use a new prompt/attempt for creative revisions, then run mechanical exports and obtain independent source-use, visual and export review. `generated_original_reviewed` records that bounded source-use review; it is not legal/trademark clearance or public distribution authority.
 
 The original native depth-three hierarchy is still a separate unmet requirement. Current descendants report no callable child-spawn tools even after the proactive delegation setting changed. Do not invent ancestry or replace the required chain with role names.
 

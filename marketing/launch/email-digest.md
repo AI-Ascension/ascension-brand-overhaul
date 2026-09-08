@@ -40,7 +40,7 @@ Source revisions and artifact states are checked before each approved send. If a
 
 ## HTML content blocks
 
-1. **Masthead:** “The Climb — by AI Ascension”; generated art ID `MKT-07` is blocked, so use accessible text until the asset gate passes.
+1. **Masthead:** “The Climb — by AI Ascension”; the reviewed blank `MKT-07` layout and accessible [HTML](email-run-card.html)/[plain-text](email-run-card.txt) assembly previews are available. Approved run values and send authorization remain required; the previews are not a populated digest.
 2. **What changed:** one sentence tied to the approved content ID and source revision.
 3. **Evidence card:** outcome, build, configuration, intervention, evidence kind, public artifact state, and source link. Never expose private run IDs.
 4. **Next question:** one bounded question with `result_status: unobserved` until collected.

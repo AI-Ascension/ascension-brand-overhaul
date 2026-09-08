@@ -1,0 +1,33 @@
+{
+  "observed_at": "2026-09-08T05:01:19.022649+00:00",
+  "scope": "Root integration checks after independent artwork reviews008/009; no native, model, legal, publication or live-host assertion.",
+  "scoped_art_verify": {
+    "verified_family_count": 70,
+    "lineage_errors": []
+  },
+  "full_gate": {
+    "command": "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root .",
+    "exit_code": 1,
+    "output": [
+      "Not verified: CAST-03",
+      "Not verified: MKT-05"
+    ],
+    "interpretation": "Expected incomplete full release; two actual-content/integration gates remain."
+  },
+  "requirements": {
+    "verified": 63,
+    "blocked": 7
+  },
+  "source_pins": {
+    "brand/asset-manifest.json": "eae9daf31d586692930a35ca7538ea08e0bef6bf979b1fe2b757fe7ad6f7bd4d",
+    "brand/provenance/root-generation-records.json": "762be2fdd45af27bc8cdcbcf151bd3cfc9a6f669e514d68e313a04c0a6af758d",
+    "brand/provenance/root-export-recipe.json": "c22c3e4925ee22273b6760fb7cbccdbbe059310594120146cec819a563cb3944",
+    "brand/provenance/root-export-receipts.json": "9e05f056d98163a495ca95ae6197bcfc9dbec20fe67029aa2ce7983a2772ff6c",
+    "execution/root-art-acceptance.json": "c181db5d06983593ddcc5f0b3404a514f6c6cc42b71d30462c2082fd671720ba",
+    "execution/requirements-status.json": "9cc6cc3087eab360a32a61ba29732d91b6be5491b43b5684ae6e6bb2a2fbc4a7"
+  },
+  "package_test_suite": "218 tests passed; see execution/reviews/root-final-expanded-art-local-tests.json. Later final report/manifest refresh is metadata only.",
+  "metadata_reconciled_at": "2026-09-08T05:25:35.124025+00:00",
+  "recipe_review_metadata": "All112 recipe reviewer references equal their receipt references; exporter copies recipe metadata into reproduced receipts.",
+  "stale_deferred_rows_removed": "RUN01/02/03 reflows are reviewed in the current recipes and acceptance; CAST06 WebM is separately bound by root-motion-export.json and independent W03 reviews. No unresolved mechanical export remains."
+}

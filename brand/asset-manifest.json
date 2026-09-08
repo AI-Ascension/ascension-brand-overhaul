@@ -86,7 +86,7 @@
           {
             "reference": "brand/sources/generated/ID-01/generation-001.png",
             "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
-            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -199,7 +199,7 @@
           {
             "reference": "brand/sources/generated/ID-01/generation-001.png",
             "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
-            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -312,7 +312,7 @@
           {
             "reference": "brand/sources/generated/ID-01/generation-001.png",
             "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
-            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -425,7 +425,7 @@
           {
             "reference": "brand/sources/generated/ID-01/generation-001.png",
             "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
-            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -538,7 +538,7 @@
           {
             "reference": "brand/sources/generated/ID-01/generation-001.png",
             "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
-            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -681,7 +681,7 @@
           {
             "reference": "brand/sources/generated/ID-01/generation-001.png",
             "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
-            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -880,7 +880,7 @@
           {
             "reference": "brand/sources/generated/ID-08/generation-001.png",
             "sha256": "f08518246553d5f235031b4b6bfcb53a191af091810ce49795ab2c8f4241c952",
-            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -1261,7 +1261,7 @@
           {
             "reference": "brand/sources/generated/BG-04/generation-002.png",
             "sha256": "ee0d4cb2a4adfb085c129f3e2bfd37185dd8e9ef2ae71a261868fc0649ed3579",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -1519,7 +1519,7 @@
           {
             "reference": "brand/sources/generated/BG-01/generation-001.png",
             "sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
-            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
           }
         ],
         "raw_outputs": [
@@ -1770,12 +1770,12 @@
           {
             "reference": "brand/sources/generated/BG-01/generation-001.png",
             "sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
-            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
           },
           {
             "reference": "brand/sources/generated/ID-01/generation-001.png",
             "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
-            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -2082,7 +2082,7 @@
           {
             "reference": "brand/sources/generated/WEB-07/generation-001.png",
             "sha256": "4aa7c679695cd3f81eb9443312c35fddecf95570b0fcbc7e3e49da271adf4b28",
-            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -2586,7 +2586,7 @@
           {
             "reference": "brand/sources/generated/RUN-02/generation-001.png",
             "sha256": "72bb09ff9e071529e50665bef37a8fa55dbd27c5750ffb35330f9c987e6dddc6",
-            "rights_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+            "rights_reference": "execution/reviews/W02-broadcast-source-review-005.json"
           }
         ],
         "raw_outputs": [
@@ -3047,7 +3047,7 @@
           {
             "reference": "brand/sources/generated/CAST-02/generation-002.png",
             "sha256": "6048383ebb62576535b3592182bd1fe43d0b77f353a033575ffa652e085e45e8",
-            "rights_reference": "execution/reviews/root-broadcast-generation-repair-001.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -3140,7 +3140,7 @@
           {
             "reference": "brand/sources/generated/CAST-03/generation-002.png",
             "sha256": "bf71fe357606b3fb9c95b1b8df1acc2c425913ace576c4ebee9524d4bef3fb40",
-            "rights_reference": "execution/reviews/root-broadcast-generation-repair-002.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -3305,7 +3305,7 @@
           {
             "reference": "brand/sources/generated/CAST-04/generation-002.png",
             "sha256": "4829dc232e03d65dd402d2fd483383834643327b4efdbf7072a0592772005136",
-            "rights_reference": "execution/reviews/root-broadcast-generation-repair-003.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -3352,7 +3352,7 @@
           {
             "reference": "brand/sources/generated/CAST-04/generation-003.png",
             "sha256": "a98caf6a642a06f39e541f7989cf9b953ae858874ed2e1e955a5cd44701f19f6",
-            "rights_reference": "execution/reviews/root-broadcast-generation-repair-004.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -3529,6 +3529,9 @@
       "brand/provenance/root-generation-records.json",
       "brand/provenance/root-export-receipts.json",
       "execution/reviews/W02-broadcast-source-review-003.json",
+      "execution/reviews/root-motion-export.json",
+      "execution/reviews/W03-root-motion-browser-review.json",
+      "execution/reviews/W03-root-motion-metadata-review.json",
       "execution/reviews/root-motion-export.json",
       "execution/reviews/W03-root-motion-browser-review.json",
       "execution/reviews/W03-root-motion-metadata-review.json"
@@ -3868,7 +3871,7 @@
           {
             "reference": "brand/sources/generated/MKT-02/generation-001.png",
             "sha256": "5da22c2084eec9cc2ee4388956f127f28637242f82ce13e659fe71a6ef012671",
-            "rights_reference": "execution/reviews/root-marketing-generation-repair-001.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -3894,16 +3897,17 @@
   },
   {
     "asset_id": "MKT-03",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
       "art/asset-registry.json#MKT-03",
       "art/root-generation-authorization.json",
       "brand/provenance/root-generation-records.json",
       "brand/provenance/root-export-receipts.json",
-      "execution/reviews/W02-broadcast-source-review-007.json"
+      "execution/reviews/W02-broadcast-source-review-007.json",
+      "execution/reviews/W02-broadcast-source-review-008.json"
     ],
-    "source_digest": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+    "source_digest": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca",
     "production_tool": "image_gen__imagegen",
     "actual_model": "unknown",
     "parent_asset_ids": [
@@ -3911,19 +3915,19 @@
     ],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "generated_original_reviewed",
-    "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
+    "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json",
     "approval_references": [],
-    "alt_text": "Thumbnail system; generated artwork with blank content fields.",
+    "alt_text": "Thumbnail system; generated artwork, not gameplay evidence.",
     "decorative": false,
     "exports": [
       {
         "path": "brand/assets/marketing/thumbnail-outcome.png",
-        "sha256": "d6aec732aca7b367363398e582c6e3a7a52b0af620bdb8dfa5f385c907c8a132",
+        "sha256": "7972f092969b38aa44883372ce6cbf5fb4438d757a2c1ba3c52c2848847b1fdb",
         "format": "png",
         "width": 1280,
         "height": 720,
-        "generation_record_id": "MKT-03-generation-001",
-        "raw_source_path": "brand/sources/generated/MKT-03/generation-001.png",
+        "generation_record_id": "MKT-03-generation-003",
+        "raw_source_path": "brand/sources/generated/MKT-03/generation-003.png",
         "derivation_operations": [
           "crop",
           "resize",
@@ -3933,12 +3937,12 @@
       },
       {
         "path": "brand/assets/marketing/thumbnail-question.png",
-        "sha256": "908f81c489a9465fc6b513ceadd03ced8d2222802113d21752cd573c860f3abc",
+        "sha256": "d25cc01f8d4b4516a7c3818eca098310228c164f8c0666610f540f31f7b76bb0",
         "format": "png",
         "width": 1280,
         "height": 720,
-        "generation_record_id": "MKT-03-generation-002",
-        "raw_source_path": "brand/sources/generated/MKT-03/generation-002.png",
+        "generation_record_id": "MKT-03-generation-004",
+        "raw_source_path": "brand/sources/generated/MKT-03/generation-004.png",
         "derivation_operations": [
           "crop",
           "resize",
@@ -3947,11 +3951,11 @@
         ]
       }
     ],
-    "blocker": "Reviewed blank outcome/question templates exist; actual per-episode outcome and decision-question copy and source approval are missing.",
+    "blocker": null,
     "origin": "root_user_authorized_image_tool",
     "generation_records": [
       {
-        "record_id": "MKT-03-generation-001",
+        "record_id": "MKT-03-generation-003",
         "asset_id": "MKT-03",
         "status": "verified",
         "test_fixture": false,
@@ -3961,22 +3965,28 @@
         "author_parent_id": null,
         "author_depth": 0,
         "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
-        "prompt_path": "brand/prompts/root/MKT-03/generation-001.txt",
-        "prompt_sha256": "fcccd01179e1cec20d2982d67e401f8c66391b4425084d3159d95fa4d53cb12a",
+        "prompt_path": "brand/prompts/root/MKT-03/generation-003.txt",
+        "prompt_sha256": "85a5609710dac2cbec74ea6d36478551b6b7a5a65c92f7de228fac7457a21a80",
         "image_model_requested": "unknown",
         "image_model_observed": "unknown",
         "image_backend": "unspecified",
         "image_model_evidence_reference": "not-observed:available-image-tool",
         "snapshot_alias_evidence_reference": null,
         "tool_name": "image_gen__imagegen",
-        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-03-generation-001",
-        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
-        "created_at": "2026-09-08T01:57:21.308683+00:00",
-        "reference_inputs": [],
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-03-generation-003",
+        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json",
+        "created_at": "2026-09-08T03:32:09.439535+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-03/generation-001.png",
+            "sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+            "rights_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+          }
+        ],
         "raw_outputs": [
           {
-            "path": "brand/sources/generated/MKT-03/generation-001.png",
-            "sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+            "path": "brand/sources/generated/MKT-03/generation-003.png",
+            "sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca",
             "format": "png",
             "width": 1672,
             "height": 941
@@ -3992,7 +4002,7 @@
         "observed_author_effort": "unknown"
       },
       {
-        "record_id": "MKT-03-generation-002",
+        "record_id": "MKT-03-generation-004",
         "asset_id": "MKT-03",
         "status": "verified",
         "test_fixture": false,
@@ -4002,22 +4012,28 @@
         "author_parent_id": null,
         "author_depth": 0,
         "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
-        "prompt_path": "brand/prompts/root/MKT-03/generation-002.txt",
-        "prompt_sha256": "986d07c7b85e0e4ced429e7a4edff7a639ccdd93bc66d88f279c97a3dbc466c8",
+        "prompt_path": "brand/prompts/root/MKT-03/generation-004.txt",
+        "prompt_sha256": "1a58946ac1b5940a589bb603ca23e57f697072e192b84b85fec4e0b0e456597f",
         "image_model_requested": "unknown",
         "image_model_observed": "unknown",
         "image_backend": "unspecified",
         "image_model_evidence_reference": "not-observed:available-image-tool",
         "snapshot_alias_evidence_reference": null,
         "tool_name": "image_gen__imagegen",
-        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-03-generation-002",
-        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
-        "created_at": "2026-09-08T01:58:10.245576+00:00",
-        "reference_inputs": [],
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-03-generation-004",
+        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json",
+        "created_at": "2026-09-08T03:34:13.766085+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-03/generation-002.png",
+            "sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93",
+            "rights_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+          }
+        ],
         "raw_outputs": [
           {
-            "path": "brand/sources/generated/MKT-03/generation-002.png",
-            "sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93",
+            "path": "brand/sources/generated/MKT-03/generation-004.png",
+            "sha256": "14ade5e06f04a12e000715d181f99caf331581ee7f4f823167dfc53ee5b6aa5d",
             "format": "png",
             "width": 1672,
             "height": 941
@@ -4205,9 +4221,10 @@
       "art/root-generation-authorization.json",
       "brand/provenance/root-generation-records.json",
       "brand/provenance/root-export-receipts.json",
-      "execution/reviews/W02-broadcast-source-review-007.json"
+      "execution/reviews/W02-broadcast-source-review-007.json",
+      "execution/reviews/W02-broadcast-source-review-008.json"
     ],
-    "source_digest": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+    "source_digest": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9",
     "production_tool": "image_gen__imagegen",
     "actual_model": "unknown",
     "parent_asset_ids": [
@@ -4215,19 +4232,19 @@
     ],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "generated_original_reviewed",
-    "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
+    "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json",
     "approval_references": [],
-    "alt_text": "Community challenge card; generated artwork with blank content fields.",
+    "alt_text": "Community challenge card; generated artwork, private challenge proposal; approval pending.",
     "decorative": false,
     "exports": [
       {
         "path": "brand/assets/marketing/challenge-template.png",
-        "sha256": "499685f65dea3fb225be02eff64583235f9d98f6a9a16076d42e1c0585a4cad4",
+        "sha256": "60ff9fed0a6be1eb2b73ca01ea4f5b0c26ace17980f7d91dec8a93693b56c2d7",
         "format": "png",
         "width": 1080,
         "height": 1080,
-        "generation_record_id": "MKT-05-generation-001",
-        "raw_source_path": "brand/sources/generated/MKT-05/generation-001.png",
+        "generation_record_id": "MKT-05-generation-002",
+        "raw_source_path": "brand/sources/generated/MKT-05/generation-002.png",
         "derivation_operations": [
           "crop",
           "resize",
@@ -4236,11 +4253,11 @@
         ]
       }
     ],
-    "blocker": "Reviewed blank challenge template exists; an actual approved challenge, rules, dates and source content are missing.",
+    "blocker": "A reviewed concrete private challenge proposal with rules and proposed dates exists. Operator approval for a real challenge remains absent; see source review 008.",
     "origin": "root_user_authorized_image_tool",
     "generation_records": [
       {
-        "record_id": "MKT-05-generation-001",
+        "record_id": "MKT-05-generation-002",
         "asset_id": "MKT-05",
         "status": "verified",
         "test_fixture": false,
@@ -4250,22 +4267,28 @@
         "author_parent_id": null,
         "author_depth": 0,
         "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
-        "prompt_path": "brand/prompts/root/MKT-05/generation-001.txt",
-        "prompt_sha256": "711d0be7a914a31dae1f6f38dd2f909c5d73f69553e559945b10ea6acfa27ee7",
+        "prompt_path": "brand/prompts/root/MKT-05/generation-002.txt",
+        "prompt_sha256": "b895fd6e95f677a2f6ab6d8c673b8bc701782b10e55c5bf86802b50c46e70f74",
         "image_model_requested": "unknown",
         "image_model_observed": "unknown",
         "image_backend": "unspecified",
         "image_model_evidence_reference": "not-observed:available-image-tool",
         "snapshot_alias_evidence_reference": null,
         "tool_name": "image_gen__imagegen",
-        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-05-generation-001",
-        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
-        "created_at": "2026-09-08T01:56:39.574809+00:00",
-        "reference_inputs": [],
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-05-generation-002",
+        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json",
+        "created_at": "2026-09-08T03:39:22.519488+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-05/generation-001.png",
+            "sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+            "rights_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+          }
+        ],
         "raw_outputs": [
           {
-            "path": "brand/sources/generated/MKT-05/generation-001.png",
-            "sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+            "path": "brand/sources/generated/MKT-05/generation-002.png",
+            "sha256": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9",
             "format": "png",
             "width": 1254,
             "height": 1254
@@ -4285,16 +4308,17 @@
   },
   {
     "asset_id": "MKT-06",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
       "art/asset-registry.json#MKT-06",
       "art/root-generation-authorization.json",
       "brand/provenance/root-generation-records.json",
       "brand/provenance/root-export-receipts.json",
-      "execution/reviews/W02-broadcast-source-review-007.json"
+      "execution/reviews/W02-broadcast-source-review-007.json",
+      "execution/reviews/W02-broadcast-source-review-008.json"
     ],
-    "source_digest": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+    "source_digest": "c239754685c0e59ed52f2bc5eb66e5eee8cf194c83e61c27614503835b1053d5",
     "production_tool": "image_gen__imagegen",
     "actual_model": "unknown",
     "parent_asset_ids": [
@@ -4302,19 +4326,19 @@
     ],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "generated_original_reviewed",
-    "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
+    "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json",
     "approval_references": [],
-    "alt_text": "Release and contributor card; generated artwork with blank content fields.",
+    "alt_text": "Release and contributor card; generated artwork, not gameplay evidence.",
     "decorative": false,
     "exports": [
       {
         "path": "brand/assets/marketing/release-template.png",
-        "sha256": "d563bd1f1450f607d6ca44a0896075aa889e7a29d74414121749d01935dc754f",
+        "sha256": "fb786cf8d827b909c1be92d39c8ea5b978fd8d821015f1b85bf173a4a274ea48",
         "format": "png",
         "width": 1200,
         "height": 630,
-        "generation_record_id": "MKT-06-generation-001",
-        "raw_source_path": "brand/sources/generated/MKT-06/generation-001.png",
+        "generation_record_id": "MKT-06-generation-003",
+        "raw_source_path": "brand/sources/generated/MKT-06/generation-003.png",
         "derivation_operations": [
           "crop",
           "resize",
@@ -4324,12 +4348,12 @@
       },
       {
         "path": "brand/assets/marketing/contributor-template.png",
-        "sha256": "0c526b21d26f4875c695497eeeb820107fa538b31951edf8acf554c7aa7ddae1",
+        "sha256": "fc3dcf0d01a79c755ab0ba019713591d3b994a3ccd716c4a7f265334da5f1b1e",
         "format": "png",
         "width": 1080,
         "height": 1080,
-        "generation_record_id": "MKT-06-generation-002",
-        "raw_source_path": "brand/sources/generated/MKT-06/generation-002.png",
+        "generation_record_id": "MKT-06-generation-004",
+        "raw_source_path": "brand/sources/generated/MKT-06/generation-004.png",
         "derivation_operations": [
           "crop",
           "resize",
@@ -4338,11 +4362,11 @@
         ]
       }
     ],
-    "blocker": "Reviewed blank release/contributor templates exist; actual release content, contributor attribution and consent are missing.",
+    "blocker": null,
     "origin": "root_user_authorized_image_tool",
     "generation_records": [
       {
-        "record_id": "MKT-06-generation-001",
+        "record_id": "MKT-06-generation-003",
         "asset_id": "MKT-06",
         "status": "verified",
         "test_fixture": false,
@@ -4352,24 +4376,30 @@
         "author_parent_id": null,
         "author_depth": 0,
         "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
-        "prompt_path": "brand/prompts/root/MKT-06/generation-001.txt",
-        "prompt_sha256": "8877368dc7a010488cb0a02d0499c2e6f8ba037473ca78440f813f5f0ea185db",
+        "prompt_path": "brand/prompts/root/MKT-06/generation-003.txt",
+        "prompt_sha256": "cf61feff2babfcfc59da3c88da6425ef137ac9a72e5cefc56555dc63195634af",
         "image_model_requested": "unknown",
         "image_model_observed": "unknown",
         "image_backend": "unspecified",
         "image_model_evidence_reference": "not-observed:available-image-tool",
         "snapshot_alias_evidence_reference": null,
         "tool_name": "image_gen__imagegen",
-        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-06-generation-001",
-        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
-        "created_at": "2026-09-08T01:55:14.136126+00:00",
-        "reference_inputs": [],
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-06-generation-003",
+        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json",
+        "created_at": "2026-09-08T03:36:01.406273+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-06/generation-001.png",
+            "sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+            "rights_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+          }
+        ],
         "raw_outputs": [
           {
-            "path": "brand/sources/generated/MKT-06/generation-001.png",
-            "sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+            "path": "brand/sources/generated/MKT-06/generation-003.png",
+            "sha256": "c239754685c0e59ed52f2bc5eb66e5eee8cf194c83e61c27614503835b1053d5",
             "format": "png",
-            "width": 1730,
+            "width": 1731,
             "height": 909
           }
         ],
@@ -4383,7 +4413,7 @@
         "observed_author_effort": "unknown"
       },
       {
-        "record_id": "MKT-06-generation-002",
+        "record_id": "MKT-06-generation-004",
         "asset_id": "MKT-06",
         "status": "verified",
         "test_fixture": false,
@@ -4393,22 +4423,28 @@
         "author_parent_id": null,
         "author_depth": 0,
         "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
-        "prompt_path": "brand/prompts/root/MKT-06/generation-002.txt",
-        "prompt_sha256": "3aedc82d4babb0da2970369177040633c31b768495f5e586a2b9744f052e7a5e",
+        "prompt_path": "brand/prompts/root/MKT-06/generation-004.txt",
+        "prompt_sha256": "3852abda6949c27aebcb7074c4fa58f302175b34ee0ea502e71f35a7845ae40b",
         "image_model_requested": "unknown",
         "image_model_observed": "unknown",
         "image_backend": "unspecified",
         "image_model_evidence_reference": "not-observed:available-image-tool",
         "snapshot_alias_evidence_reference": null,
         "tool_name": "image_gen__imagegen",
-        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-06-generation-002",
-        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
-        "created_at": "2026-09-08T01:55:59.127440+00:00",
-        "reference_inputs": [],
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-06-generation-004",
+        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json",
+        "created_at": "2026-09-08T03:37:32.860797+00:00",
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-06/generation-002.png",
+            "sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759",
+            "rights_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+          }
+        ],
         "raw_outputs": [
           {
-            "path": "brand/sources/generated/MKT-06/generation-002.png",
-            "sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759",
+            "path": "brand/sources/generated/MKT-06/generation-004.png",
+            "sha256": "2094b9573c10282e5344cefae1efed830d550752be17f9bb262fcb828a037e73",
             "format": "png",
             "width": 1254,
             "height": 1254
@@ -4428,14 +4464,15 @@
   },
   {
     "asset_id": "MKT-07",
-    "status": "blocked",
+    "status": "verified",
     "method": "generate",
     "source_references": [
       "art/asset-registry.json#MKT-07",
       "art/root-generation-authorization.json",
       "brand/provenance/root-generation-records.json",
       "brand/provenance/root-export-receipts.json",
-      "execution/reviews/W02-broadcast-source-review-007.json"
+      "execution/reviews/W02-broadcast-source-review-007.json",
+      "execution/reviews/W02-broadcast-source-review-009.json"
     ],
     "source_digest": "58d6cd96a6b10877f3d97cb4d6c9d12a2d0d2b4cff5d2694eda00846902b15a3",
     "production_tool": "image_gen__imagegen",
@@ -4446,9 +4483,9 @@
     ],
     "content_class": "generated_art_not_product_evidence",
     "rights_status": "generated_original_reviewed",
-    "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
+    "reviewer_reference": "execution/reviews/W02-broadcast-source-review-009.json",
     "approval_references": [],
-    "alt_text": "Email digest artwork; generated artwork with blank content fields.",
+    "alt_text": "Email digest artwork; generated artwork, not gameplay evidence.",
     "decorative": false,
     "exports": [
       {
@@ -4468,12 +4505,12 @@
       },
       {
         "path": "brand/assets/marketing/email-run-card.png",
-        "sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
+        "sha256": "c9e70f5db8cd5c2393f9c0f77ec1207c3f7368bde95640d8be99804d76190815",
         "format": "png",
         "width": 1200,
         "height": 630,
-        "generation_record_id": "MKT-07-generation-002",
-        "raw_source_path": "brand/sources/generated/MKT-07/generation-002.png",
+        "generation_record_id": "MKT-07-generation-003",
+        "raw_source_path": "brand/sources/generated/MKT-07/generation-003.png",
         "derivation_operations": [
           "crop",
           "resize",
@@ -4482,7 +4519,7 @@
         ]
       }
     ],
-    "blocker": "Reviewed blank run-card artwork exists; approved run-manifest values and completed HTML/text run-report assembly remain outstanding.",
+    "blocker": null,
     "origin": "root_user_authorized_image_tool",
     "generation_records": [
       {
@@ -4505,7 +4542,7 @@
         "snapshot_alias_evidence_reference": null,
         "tool_name": "image_gen__imagegen",
         "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-07-generation-001",
-        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
+        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-009.json",
         "created_at": "2026-09-08T01:12:58.764252+00:00",
         "reference_inputs": [],
         "raw_outputs": [
@@ -4527,7 +4564,7 @@
         "observed_author_effort": "unknown"
       },
       {
-        "record_id": "MKT-07-generation-002",
+        "record_id": "MKT-07-generation-003",
         "asset_id": "MKT-07",
         "status": "verified",
         "test_fixture": false,
@@ -4537,22 +4574,22 @@
         "author_parent_id": null,
         "author_depth": 0,
         "author_runtime_evidence_reference": "not-applicable:user-authorized-root-route",
-        "prompt_path": "brand/prompts/root/MKT-07/generation-002.txt",
-        "prompt_sha256": "2c3fb2855af2f30faa0331b3328dfaef3b02de07a42cfac550b0b63ba5f65e0e",
+        "prompt_path": "brand/prompts/root/MKT-07/generation-003.txt",
+        "prompt_sha256": "07ff4e62a1e0a3b9831c060cfc971fe5223143c4e88b78397e01a14983046a1b",
         "image_model_requested": "unknown",
         "image_model_observed": "unknown",
         "image_backend": "unspecified",
         "image_model_evidence_reference": "not-observed:available-image-tool",
         "snapshot_alias_evidence_reference": null,
         "tool_name": "image_gen__imagegen",
-        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-07-generation-002",
-        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json",
-        "created_at": "2026-09-08T01:53:32.887783+00:00",
+        "tool_execution_reference": "brand/provenance/root-tool-observations.json#MKT-07-generation-003",
+        "reviewer_reference": "execution/reviews/W02-broadcast-source-review-009.json",
+        "created_at": "2026-09-08T04:14:45.251951+00:00",
         "reference_inputs": [],
         "raw_outputs": [
           {
-            "path": "brand/sources/generated/MKT-07/generation-002.png",
-            "sha256": "1f64439f5c04ca142048bca7c7044b4b5c613d0911ea62b0af174cd152e04430",
+            "path": "brand/sources/generated/MKT-07/generation-003.png",
+            "sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
             "format": "png",
             "width": 1731,
             "height": 909
@@ -4637,7 +4674,7 @@
           {
             "reference": "brand/sources/generated/MKT-08/generation-001.png",
             "sha256": "123251d919168e5e7ab86d933ba11d28798f65c99dcd0320c0b9938b9c1e83c5",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -4926,7 +4963,7 @@
           {
             "reference": "brand/sources/generated/DOC-02/generation-001.png",
             "sha256": "b6472868b529f55a4805637aed21710c0fc83f527da8770b91d04d9422b35693",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -5378,7 +5415,7 @@
           {
             "reference": "brand/sources/generated/GH-01-S/generation-001.png",
             "sha256": "2997f899a7d2997cc2670d52e9865b2e59ebf233651450e96381fe0a1b7effcd",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -5575,7 +5612,7 @@
           {
             "reference": "brand/sources/generated/GH-02-S/generation-001.png",
             "sha256": "8c78f697119e8440c97115725cb13847470a7a009787d9aec8072f057673d06f",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -5772,7 +5809,7 @@
           {
             "reference": "brand/sources/generated/GH-03-S/generation-001.png",
             "sha256": "22c046f317c2ee808eca592ac285bc7506aa18670ddae173bda2d86118c9c86a",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -5881,7 +5918,7 @@
           {
             "reference": "brand/sources/generated/GH-04-B/generation-001.png",
             "sha256": "fed40915f984608ec22489794078ded7b6074dc078145726529a7858d4ca3236",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -5975,7 +6012,7 @@
           {
             "reference": "brand/sources/generated/GH-04-S/generation-001.png",
             "sha256": "50fc78e51ed078f1a1daf41ae76db8b1bf6cb6e367060b17b3ecef4c5d9ed28e",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -6172,7 +6209,7 @@
           {
             "reference": "brand/sources/generated/GH-05-S/generation-001.png",
             "sha256": "5a319baa130cfb691c0dd42832f612c366331cf1883d32e934d82a38a19b8bf6",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -6369,7 +6406,7 @@
           {
             "reference": "brand/sources/generated/GH-06-S/generation-001.png",
             "sha256": "c5929b4e2e0778fd306cc7d8d18b50fa0d377bfc417ea64dbd787802d4b06d96",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -6566,7 +6603,7 @@
           {
             "reference": "brand/sources/generated/GH-07-S/generation-001.png",
             "sha256": "51bcd92502f6ceb3899d57b5acd842286b489de59ef87b9bf5477711a49cc54c",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -6763,7 +6800,7 @@
           {
             "reference": "brand/sources/generated/GH-08-S/generation-001.png",
             "sha256": "4b0ae6f1c2d9c289ff4894d1f3cd0c66855acd091aeb919f84a7d1e26cd8103a",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -7157,7 +7194,7 @@
           {
             "reference": "brand/sources/generated/GH-10-S/generation-001.png",
             "sha256": "83623871a34cc8c645767ab4693bbba17a447d40746edb129bbb2e705b227c8a",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -7354,7 +7391,7 @@
           {
             "reference": "brand/sources/generated/GH-11-S/generation-001.png",
             "sha256": "31745ed708cfabd298b70f62fa6095b7eb1fe79fd9ecfed3e1e57d4e64b50f09",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -7551,7 +7588,7 @@
           {
             "reference": "brand/sources/generated/GH-12-S/generation-001.png",
             "sha256": "cc72c6bb7b9d3c59da9070c208b66a95adc942523e6a2d982559bcb68c82ef37",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [
@@ -7748,7 +7785,7 @@
           {
             "reference": "brand/sources/generated/GH-13-S/generation-001.png",
             "sha256": "4ae9e462781b40d5f38002324b6e6c3092999bb4e8e50ace9b9aad24e03e02d4",
-            "rights_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+            "rights_reference": "execution/reviews/W02-superseded-source-prompt-review.json"
           }
         ],
         "raw_outputs": [

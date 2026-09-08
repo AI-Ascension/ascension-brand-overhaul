@@ -1,0 +1,267 @@
+{
+  "schema_version": "ai-ascension.social-preview-candidates.v1",
+  "recorded_at": "2026-09-08T03:09:30.944297+00:00",
+  "scope": "Thirteen reviewed image candidates prepared privately for manual GitHub social-preview settings. No upload or settings change has occurred.",
+  "candidates": [
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "stable_repository_id": 1354378100,
+      "asset_id": "GH-01-S",
+      "source_path": "brand/assets/github/ascension-social.png",
+      "sha256": "4f3c2dbca0788ea2a9e2f74b4387383f59fcbfc252e35c4db7115c90d7fc2998",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/sts2-mcp-server",
+      "stable_repository_id": 1354378057,
+      "asset_id": "GH-02-S",
+      "source_path": "brand/assets/github/sts2-mcp-social.png",
+      "sha256": "00dac35788b25a4210958f6216924cd9c084a69f666f7f0e2469d9c041ded479",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "stable_repository_id": 1354377975,
+      "asset_id": "GH-03-S",
+      "source_path": "brand/assets/github/sts2-mod-social.png",
+      "sha256": "df89ed6c0c664624bd5bff965faf2ca5d779348de614d10d8aea1dc469506b4f",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-core",
+      "stable_repository_id": 1354377929,
+      "asset_id": "GH-04-S",
+      "source_path": "brand/assets/github/sts2-core-social.png",
+      "sha256": "8da8e7771fd7c9b4daf1dd9404bcdc6280e172a9e7b9396fd10300849aebca30",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/sts2-gateway",
+      "stable_repository_id": 1354378018,
+      "asset_id": "GH-05-S",
+      "source_path": "brand/assets/github/sts2-gateway-social.png",
+      "sha256": "882bd6cc0ac0054e5741aa360db8afb9edceee62d1c4b481fb5bf94c56d6a042",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/sts2-protocol",
+      "stable_repository_id": 1354378136,
+      "asset_id": "GH-06-S",
+      "source_path": "brand/assets/github/sts2-protocol-social.png",
+      "sha256": "166fe7a07add61ce3aca17d98df6a154def9d524a7679d027c3bcee84e03d85d",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/ascension-map-visualizer",
+      "stable_repository_id": 1359701124,
+      "asset_id": "GH-07-S",
+      "source_path": "brand/assets/github/sts2-map-social.png",
+      "sha256": "91a284c776755c0bf60e6ce1d98d7969530c445d46a9da5dfb0690c2e4f114ea",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/ascension-watchdog",
+      "stable_repository_id": 1359537708,
+      "asset_id": "GH-08-S",
+      "source_path": "brand/assets/github/ascension-watchdog-social.png",
+      "sha256": "ec27376fff226765c17e8a01649146dcd8a9a67910476893524bc0cdb1e9330e",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/ai-agent-observability",
+      "stable_repository_id": 1357224960,
+      "asset_id": "GH-09-S",
+      "source_path": "brand/assets/github/ascension-observability-social.png",
+      "sha256": "8aae147c380341b43c8d19cefd77d9360cd3daa30f2930cbee43ff64f2a9d81f",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/aiascension.tech",
+      "stable_repository_id": 1209899690,
+      "asset_id": "GH-10-S",
+      "source_path": "brand/assets/github/website-social.png",
+      "sha256": "c5357c11202ea84b36cb8199164446d1cef9f80ff8e466454b05c499909aa708",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "stable_repository_id": 1354473981,
+      "asset_id": "GH-11-S",
+      "source_path": "brand/assets/github/ai-ascensiondot-githubdot-io-social.png",
+      "sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/.github",
+      "stable_repository_id": 1354466045,
+      "asset_id": "GH-12-S",
+      "source_path": "brand/assets/github/dot-github-social.png",
+      "sha256": "0da06e15e3b0303e8eb3480a20890be2adb18dd00802afb0efccf3ba596f6687",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    },
+    {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "stable_repository_id": 1359787764,
+      "asset_id": "GH-13-S",
+      "source_path": "brand/assets/github/ascension-brand-overhaul-social.png",
+      "sha256": "6ff079d6cc932cdf6d23ba215454aad895ec3f1b96179d45412799cdd93d59df",
+      "width": 1280,
+      "height": 640,
+      "source_revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "source_repository": "AI-Ascension/ascension-brand-overhaul",
+      "design_status": "verified",
+      "operation": "manual_repository_social_preview_upload",
+      "status": "prepared_not_applied",
+      "publication_approved": false,
+      "preconditions": [
+        "Confirm the stable repository ID and desired repository name immediately before upload.",
+        "Obtain approval for this exact image digest and target repository.",
+        "Inspect the actual GitHub preview crop after any authorized upload; retain a separate operation receipt."
+      ]
+    }
+  ]
+}

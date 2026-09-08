@@ -1,0 +1,1671 @@
+{
+  "schema_version": "ai-ascension.w02-superseded-source-prompt-review.v1",
+  "observed_at": "2026-09-08T03:17:29.255Z",
+  "reviewer": "w02-superseded-source-prompt-independent-review",
+  "reviewer_runtime": {
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "accepted_model": "unknown",
+    "accepted_effort": "unknown",
+    "observed_model": "unknown",
+    "observed_effort": "unknown",
+    "runtime_evidence_reference": "not-observed:review-session-metadata"
+  },
+  "task": "W02 superseded source and exact prompt review for blocked root generation records",
+  "scope": "Bounded independent review of all 33 non-verified records in brand/provenance/root-generation-records.json. Existing W02 actual source/prompt coverage is recorded where it is exact; six records without an exact prior source-view entry were inspected with view_image. This review does not promote any artwork, alter canonical statuses, author prompts, edit images, generate images, or approve publication.",
+  "inputs_read": [
+    "AGENTS.md",
+    "MASTER_PROMPT.md",
+    "orchestration/CONTRACT.md",
+    "art/root-generation-authorization.json",
+    "brand/provenance/root-generation-records.json",
+    "brand/provenance/root-generation-index.json",
+    "brand/provenance/root-export-recipe.json",
+    "brand/provenance/root-export-receipts.json",
+    "art/asset-registry.json",
+    "execution/reviews/W02-root-art-identity-review.json",
+    "execution/reviews/W02-root-art-second-batch-review.json",
+    "execution/reviews/W02-root-identity-source-use-review.json",
+    "execution/reviews/W02-broadcast-source-review-002.json",
+    "execution/reviews/W02-broadcast-source-review-003.json",
+    "execution/reviews/W02-broadcast-source-review-004.json",
+    "execution/reviews/W02-broadcast-source-review-005.json",
+    "execution/reviews/W02-broadcast-source-review-006.json",
+    "execution/reviews/W02-broadcast-source-review-007.json",
+    "execution/reviews/W03-final-art-manifest-review.json",
+    "execution/reviews/W03-root-art-final-acceptance.json"
+  ],
+  "route_authorization": {
+    "basis": "User-authorized root image-tool route recorded in art/root-generation-authorization.json.",
+    "authorization_path": "art/root-generation-authorization.json",
+    "authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+    "route": "user_authorized_root_image_tool",
+    "tool_name": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "author_model": "unknown",
+    "image_model": "unknown",
+    "image_backend": "unspecified",
+    "native_agent_attestation": false,
+    "independent_review_required": true,
+    "image_generation_or_edit_performed_by_reviewer": false
+  },
+  "source_pins": {
+    "generation_records": {
+      "path": "brand/provenance/root-generation-records.json",
+      "sha256": "74311575b0486deb03e914496c452d6e944244115e3061252bdb88c497f09b82"
+    },
+    "generation_index": {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "5acb8f14ee0bc846456b007f884f7e897ff2991e5b85359cae5cdeda495a136e"
+    },
+    "export_receipts": {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a"
+    },
+    "export_recipe": {
+      "path": "brand/provenance/root-export-recipe.json",
+      "sha256": "7380210a8654f0342485a22d116591d95865e368fc237c290a433fb106ff8b27"
+    },
+    "asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3"
+    },
+    "authorization": {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de"
+    },
+    "review_chain": [
+      {
+        "path": "execution/reviews/W02-root-art-identity-review.json",
+        "sha256": "90eb2ba6e624f0c12791f188507f77ae673b3dcbbc403f56508f6778dce0730a"
+      },
+      {
+        "path": "execution/reviews/W02-root-art-second-batch-review.json",
+        "sha256": "e301020b4fed32221930ffd344d07c90b23703a251088cc5b1ed579854e48e35"
+      },
+      {
+        "path": "execution/reviews/W02-root-identity-source-use-review.json",
+        "sha256": "1a0a5f749de6f244be4bded45e541e55b0a60c305674624d1bbe97742ebc180e"
+      },
+      {
+        "path": "execution/reviews/W02-broadcast-source-review-002.json",
+        "sha256": "e8869811f6242bc1131d5b2f9bda0036cb1b294566b3a634122723d655f3e063"
+      },
+      {
+        "path": "execution/reviews/W02-broadcast-source-review-003.json",
+        "sha256": "4c8157f45cb8361b525e91dec7849e290d7edce573ee44414da6b4b5377c8f12"
+      },
+      {
+        "path": "execution/reviews/W02-broadcast-source-review-004.json",
+        "sha256": "a68a30c6f82368efc9ac98c0cbc18ffcd7b80ef93760f27eee6d859202ce49e5"
+      },
+      {
+        "path": "execution/reviews/W02-broadcast-source-review-005.json",
+        "sha256": "9f98c2311908c6fccf5574c245511f5577f04b800bdb01542d5443891ff5e0d9"
+      },
+      {
+        "path": "execution/reviews/W02-broadcast-source-review-006.json",
+        "sha256": "651eacd148862bc585b6a778b0e1010cfed5d9768075daa654d70ccb13ef972d"
+      },
+      {
+        "path": "execution/reviews/W02-broadcast-source-review-007.json",
+        "sha256": "0cd8b2cc46e8f314256b208544abd9fc263c57492576ef48edb0638e0b8b7a1b"
+      },
+      {
+        "path": "execution/reviews/W03-final-art-manifest-review.json",
+        "sha256": "6322ab79b71bbcc8e7fbd3ec482568881679f0e86b03233f115071e07b648ba2"
+      },
+      {
+        "path": "execution/reviews/W03-root-art-final-acceptance.json",
+        "sha256": "857ec9bb30e7fffba97fe5c6ce5caf8061abb9b0b85eac52bcecdf5bf04c0ed2"
+      }
+    ]
+  },
+  "method": {
+    "exact_record_selection": "jq -r '.[] | select(.status != \"verified\") | .record_id' brand/provenance/root-generation-records.json",
+    "selected_record_count": 33,
+    "canonical_status_counts": {
+      "blocked": 33
+    },
+    "exact_prompt_and_source_hash_check": "sha256sum over each selected prompt_path and raw_outputs[0].path, compared with the corresponding root-generation-records fields",
+    "exact_prompt_hash_result": "33/33 pass",
+    "exact_source_hash_result": "33/33 pass",
+    "unique_declared_reference_hash_check": "sha256sum over each unique declared reference_inputs.reference path, compared with its recorded sha256",
+    "unique_declared_reference_count": 5,
+    "unique_declared_reference_hash_result": "5/5 pass",
+    "prior_review_coverage_rule": "A prior review counts only when its actual source-view method or exact asset entry names the record/source, or explicitly records the exact source in a viewed reference-lineage list. Generation batch receipts alone were not counted as independent visual review.",
+    "prior_w02_records_with_exact_coverage": 27,
+    "new_records_with_exact_source_inspection": 6,
+    "new_actual_source_files_viewed_with_view_image": [
+      "brand/sources/generated/ID-01/generation-002.png",
+      "brand/sources/generated/ID-01/generation-003.png",
+      "brand/sources/generated/BG-04/generation-002.png",
+      "brand/sources/generated/BG-04/generation-004.png",
+      "brand/sources/generated/BG-04/generation-005.png",
+      "brand/sources/generated/BG-04/generation-006.png"
+    ],
+    "current_export_source_check": "jq '.exports[] | .source_path' brand/provenance/root-export-receipts.json compared to every selected blocked raw_outputs[0].path",
+    "current_export_source_match_result": "0/33 records match a current export source",
+    "current_export_source_matches": [],
+    "no_generation_no_image_edit": true,
+    "no_canonical_status_edit": true
+  },
+  "summary": {
+    "non_verified_records_audited": 33,
+    "records_with_prior_exact_w02_coverage": 27,
+    "records_newly_inspected": 6,
+    "audit_dispositions": {
+      "retained_reference_only": 24,
+      "rejected": 7,
+      "superseded": 2
+    },
+    "all_canonical_statuses_remain": "blocked",
+    "current_export_source_matches": 0,
+    "current_export_source_check_result": "0/33 blocked source paths are direct source_path values in current root-export-receipts.json exports.",
+    "decision": "Audit complete. The six newly inspected records retain their blocked/rejected boundaries, and the 27 records with exact prior W02 coverage retain those prior findings. No blocked record is promoted or used as a current export source."
+  },
+  "records": [
+    {
+      "record_id": "ID-01-generation-001",
+      "asset_id": "ID-01",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/ID-01/generation-001.txt",
+        "sha256": "25632b93679bdb6b380b379143447eae54a74effd42e2a6f24ec02b194aeb4fc",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Single flat branching-A symbol on uniform warm paper, with no words or extra symbols."
+      },
+      "source": {
+        "path": "brand/sources/generated/ID-01/generation-001.png",
+        "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+        "dimensions": "1254x1254",
+        "mode": "RGBA",
+        "bytes": 318663,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-root-identity-source-use-review.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 source-use review method.reference_sources_viewed includes the exact ID-01 generation-001 PNG; its reference-lineage entry records the same path and hash. The review compared the selected generation prompt/record and observed the local generated identity reference."
+      },
+      "source_use_boundary": "Local generated identity/specimen artwork. Declared references are local generated PNGs; no game/evidence media, third-party mark, or font binary was observed.",
+      "visual_or_prior_finding": "Prior W02 source-use observation found a local generated identity reference with no third-party mark, game capture, or font binary.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as a local generated reference input for later identity generations, while generation-004 replaced it as the current ID-01 export source.",
+      "superseded_by": [
+        "ID-01-generation-004",
+        "ID-02-generation-001",
+        "ID-03-generation-001",
+        "ID-04-generation-001",
+        "ID-05-generation-001",
+        "ID-06-generation-001"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "ID-01-generation-002",
+      "asset_id": "ID-01",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/ID-01/generation-002.txt",
+        "sha256": "25b6c3e78019ceb3c7605373c5b94e5d9cd3455af6798b56811ca9a13e86535a",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Two equal marks on genuine transparency with no painted checkerboard, plus clean flat colors."
+      },
+      "source": {
+        "path": "brand/sources/generated/ID-01/generation-002.png",
+        "sha256": "e3903d0efdca519c309caa82a60c2d41af443349cf6da22f4935a37a526b4e65",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 961121,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/sources/generated/ID-01/generation-001.png",
+          "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+          "rights_reference": "pending:generated-original-reference-review"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "new_actual_source_inspection",
+        "review_files": [],
+        "actual_source_viewed": true,
+        "image_inspection_tool": "view_image",
+        "evidence": "Viewed the exact source PNG with view_image. The two side-by-side marks sit on a visibly painted white/gray checkerboard; the saved source is RGB, so the requested genuine transparent background is absent."
+      },
+      "source_use_boundary": "Local generated identity/specimen artwork. Declared references are local generated PNGs; no game/evidence media, third-party mark, or font binary was observed.",
+      "visual_or_prior_finding": "New image inspection found a painted checkerboard across the entire two-mark sheet; this directly violates the exact prompt's genuine transparency requirement.",
+      "audit_disposition": "rejected",
+      "disposition_reason": "Rejected because the viewed output is a painted checkerboard RGB sheet rather than the genuine transparent two-mark PNG required by its prompt.",
+      "superseded_by": [
+        "ID-01-generation-004"
+      ],
+      "retained_as_reference_input": false,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "ID-01-generation-003",
+      "asset_id": "ID-01",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/ID-01/generation-003.txt",
+        "sha256": "1cb69cb2ac05f7d348d42bb58c5edc6036f19a78f9828c9a3240f49be4483fa3",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "One isolated left mark with real alpha transparency, including the open interior, and no checkerboard."
+      },
+      "source": {
+        "path": "brand/sources/generated/ID-01/generation-003.png",
+        "sha256": "1cd7d505256ee6bd7b18b7a5ae84ba15041b957b5649377f9c6d41012f4669d9",
+        "dimensions": "1254x1254",
+        "mode": "RGB",
+        "bytes": 916838,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/sources/generated/ID-01/generation-002.png",
+          "sha256": "e3903d0efdca519c309caa82a60c2d41af443349cf6da22f4935a37a526b4e65",
+          "rights_reference": "pending:generated-original-reference-review"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "new_actual_source_inspection",
+        "review_files": [],
+        "actual_source_viewed": true,
+        "image_inspection_tool": "view_image",
+        "evidence": "Viewed the exact source PNG with view_image. The isolated left mark is surrounded by a visibly painted checkerboard, including the open interior; the saved source is RGB, so this is not a real alpha extraction."
+      },
+      "source_use_boundary": "Local generated identity/specimen artwork. Declared references are local generated PNGs; no game/evidence media, third-party mark, or font binary was observed.",
+      "visual_or_prior_finding": "New image inspection found a painted checkerboard behind and within the single extracted mark; this directly violates the exact prompt's real alpha requirement.",
+      "audit_disposition": "rejected",
+      "disposition_reason": "Rejected because the viewed output still contains a painted checkerboard around and inside the isolated mark rather than real alpha transparency.",
+      "superseded_by": [
+        "ID-01-generation-004"
+      ],
+      "retained_as_reference_input": false,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "ID-08-generation-001",
+      "asset_id": "ID-08",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/ID-08/generation-001.txt",
+        "sha256": "6f3c9ea1f6cd15525a473408b49495b39353502771f64b6823240afde6cfe155",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Portrait specimen with exact requested labels, including Bricolage Grotesque and Geist Mono in the saved prompt; canonical guide later requires JetBrains Mono."
+      },
+      "source": {
+        "path": "brand/sources/generated/ID-08/generation-001.png",
+        "sha256": "f08518246553d5f235031b4b6bfcb53a191af091810ce49795ab2c8f4241c952",
+        "dimensions": "1122x1402",
+        "mode": "RGB",
+        "bytes": 1074030,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/sources/generated/ID-01/generation-001.png",
+          "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+          "rights_reference": "pending:generated-original-reference-review"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-root-art-identity-review.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 identity review method records all 12 native masters viewed with view_image and its ID-08 generation-001 asset entry records the exact prompt/source path and hash, a requires_revision verdict, and the visible Geist Mono mismatch."
+      },
+      "source_use_boundary": "Local generated identity/specimen artwork. Declared references are local generated PNGs; no game/evidence media, third-party mark, or font binary was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found the polished specimen readable but the visible mono caption says Geist Mono; this is the recorded canonical copy mismatch.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the declared local reference for generation-002 but superseded for export because its visible mono caption says Geist Mono while the canonical guide requires JetBrains Mono.",
+      "superseded_by": [
+        "ID-08-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "BG-04-generation-001",
+      "asset_id": "BG-04",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/BG-04/generation-001.txt",
+        "sha256": "417501547c5c9ac652eaf1ebcbdbc86b1dd2ca8edd1b134ac172c27269c52761",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Two opaque square panels with uniform edge strips and a mathematically seamless repeat."
+      },
+      "source": {
+        "path": "brand/sources/generated/BG-04/generation-001.png",
+        "sha256": "8f9fd2025a5897559a89ce83cc16ab6ea1a3779fdee0e54c4fcde82efcec072e",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 989750,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-root-art-identity-review.json",
+          "execution/reviews/W02-root-identity-source-use-review.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 identity reviews record the exact BG-04 generation-001 source. The source-use review records the viewed sparse two-panel paths and the unmet seamless-repeat requirement; the identity review records the measured repeat seam caveat."
+      },
+      "source_use_boundary": "Local generated decorative pattern artwork. No external visual input, gameplay/evidence media, product UI, or third-party mark was observed.",
+      "visual_or_prior_finding": "Prior W02 visual/source review found sparse decorative paths and no external mark, but measured visible repeat seams and nonuniform edge fields.",
+      "audit_disposition": "superseded",
+      "disposition_reason": "Superseded after W02 measured visible repeat seams and nonuniform edge fields; later light/dark sources became generation-003 and generation-007.",
+      "superseded_by": [
+        "BG-04-generation-003",
+        "BG-04-generation-007"
+      ],
+      "retained_as_reference_input": false,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "WEB-07-generation-001",
+      "asset_id": "WEB-07",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/WEB-07/generation-001.txt",
+        "sha256": "03f8705b0d2fa9018278e3ed467adafa6a2464973df1668d84011a531d3c16b4",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Four separate evidence dimensions, exact labels/footer, and no overarching approval badge."
+      },
+      "source": {
+        "path": "brand/sources/generated/WEB-07/generation-001.png",
+        "sha256": "4aa7c679695cd3f81eb9443312c35fddecf95570b0fcbc7e3e49da271adf4b28",
+        "dimensions": "1567x1004",
+        "mode": "RGB",
+        "bytes": 1202735,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-root-art-second-batch-review.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 second-batch review asset entry records generation-001 path/hash and says the exact source was viewed in the generation-001 versus corrected generation-002 comparison; the visible v1.2.3 Support badge is explicitly identified as superseded."
+      },
+      "source_use_boundary": "Local generated artwork; no gameplay/evidence media or third-party mark was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact evidence labels but the Support badge says v1.2.3; the corrected current master says Scoped.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because its Support badge visibly says v1.2.3; generation-002 corrected it to Scoped.",
+      "superseded_by": [
+        "WEB-07-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "RUN-03-generation-001",
+      "asset_id": "RUN-03",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/RUN-03/generation-001.txt",
+        "sha256": "03413e352fc1b300c3f2a6d869db5c999b8e80fe7d3f3b0d31299572c5634e26",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "1600x500 blank timeline with no event data and exact template labels/footer."
+      },
+      "source": {
+        "path": "brand/sources/generated/RUN-03/generation-001.png",
+        "sha256": "9767ec17fe8fca60baa9bf7a5e8092d1fc77b2824e375c03f6551145446b85d2",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1234982,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-root-art-second-batch-review.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 second-batch review asset entry records the exact source path/hash and the viewed blank timeline. It explicitly finds the approximately 2:1 source unable to satisfy the required approximately 3.2:1 export by mechanical crop."
+      },
+      "source_use_boundary": "Local generated blank run template. No event data, gameplay capture, live state, or outcome value is depicted.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found the blank labels/baseline and no data, but the aspect mismatch blocks a safe mechanical export.",
+      "audit_disposition": "superseded",
+      "disposition_reason": "Superseded because the approximately 2:1 source cannot be mechanically cropped to the required approximately 3.2:1 1600x500 layout without losing required labels or footer.",
+      "superseded_by": [
+        "RUN-03-generation-002"
+      ],
+      "retained_as_reference_input": false,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "CAST-02-generation-002",
+      "asset_id": "CAST-02",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/CAST-02/generation-002.txt",
+        "sha256": "e256862b44cd98202acd33b5b231387210c7e5f5eade6ff61d4456b9f3ef9c68",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "16:9 two-view empty comparison template with blank fields and TEMPLATE · NO LIVE DATA."
+      },
+      "source": {
+        "path": "brand/sources/generated/CAST-02/generation-002.png",
+        "sha256": "6048383ebb62576535b3592182bd1fe43d0b77f353a033575ffa652e085e45e8",
+        "dimensions": "1672x941",
+        "mode": "RGB",
+        "bytes": 1023163,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-002.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 broadcast source review says all six declared source PNGs were opened with view_image and includes CAST-02 generation-002; its asset verdict is conditional_hold_creative_mark_review."
+      },
+      "source_use_boundary": "Local generated broadcast artwork/template. No gameplay capture, game image, provider/publisher logo, fabricated value, or live runtime proof was observed; host behavior remains outside this art review.",
+      "visual_or_prior_finding": "Prior W02 source review found the empty two-view template and no invented scene, with an unverified A-like footer mark condition.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as a reference for generation-003 but superseded after W02 found an unverified A-like footer mark requiring a creative correction.",
+      "superseded_by": [
+        "CAST-02-generation-003"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "CAST-03-generation-002",
+      "asset_id": "CAST-03",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/CAST-03/generation-002.txt",
+        "sha256": "542e4f69de1f9e850d07844c74928535fff21de1ba1af332fe4ee32074f8af9d",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "9:16 empty phone broadcast template with blank status fields and no fabricated game scene."
+      },
+      "source": {
+        "path": "brand/sources/generated/CAST-03/generation-002.png",
+        "sha256": "bf71fe357606b3fb9c95b1b8df1acc2c425913ace576c4ebee9524d4bef3fb40",
+        "dimensions": "941x1672",
+        "mode": "RGB",
+        "bytes": 1289654,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-002.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 broadcast source review says all six declared source PNGs were opened with view_image and includes CAST-03 generation-002; its asset verdict records the actual-footage crop and host check as unverified."
+      },
+      "source_use_boundary": "Local generated broadcast artwork/template. No gameplay capture, game image, provider/publisher logo, fabricated value, or live runtime proof was observed; host behavior remains outside this art review.",
+      "visual_or_prior_finding": "Prior W02 source review found the empty phone template and no fabricated scene, with real-footage crop/host verification still untested.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as a reference for generation-003 but superseded pending a real-footage crop/host check and cleanup of unspecified meter-like intervention cells.",
+      "superseded_by": [
+        "CAST-03-generation-003"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "CAST-04-generation-002",
+      "asset_id": "CAST-04",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/CAST-04/generation-002.txt",
+        "sha256": "abd7a0aa95dd29b15ecc7bc38a76dc637d7eea893123da33f93588623ed10576",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "16:9 intermission scene with exact state copy and no live/timer/metric claim."
+      },
+      "source": {
+        "path": "brand/sources/generated/CAST-04/generation-002.png",
+        "sha256": "4829dc232e03d65dd402d2fd483383834643327b4efdbf7072a0592772005136",
+        "dimensions": "1672x941",
+        "mode": "RGB",
+        "bytes": 1747943,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-002.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 broadcast source review says all six declared source PNGs were opened with view_image and includes CAST-04 generations-001 through -003; generation-002 is conditional because of its unverified footer monogram."
+      },
+      "source_use_boundary": "Local generated broadcast artwork/template. No gameplay capture, game image, provider/publisher logo, fabricated value, or live runtime proof was observed; host behavior remains outside this art review.",
+      "visual_or_prior_finding": "Prior W02 source review found correct intermission copy and no live claim, but an unverified A-like footer monogram.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as a reference for generation-004 but superseded because the intermission footer has an unverified A-like monogram inconsistent with the approved identity.",
+      "superseded_by": [
+        "CAST-04-generation-004"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "CAST-04-generation-003",
+      "asset_id": "CAST-04",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/CAST-04/generation-003.txt",
+        "sha256": "0c1d4817533898fe647a03864f6bfdd26f6caf5f9e5b059047c503fa38bccc2d",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "16:9 ended scene with exact state copy and no replay/outcome claim."
+      },
+      "source": {
+        "path": "brand/sources/generated/CAST-04/generation-003.png",
+        "sha256": "a98caf6a642a06f39e541f7989cf9b953ae858874ed2e1e955a5cd44701f19f6",
+        "dimensions": "1672x941",
+        "mode": "RGB",
+        "bytes": 1690401,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-002.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 broadcast source review says all six declared source PNGs were opened with view_image and includes CAST-04 generations-001 through -003; generation-003 is conditional because of its unverified footer monogram."
+      },
+      "source_use_boundary": "Local generated broadcast artwork/template. No gameplay capture, game image, provider/publisher logo, fabricated value, or live runtime proof was observed; host behavior remains outside this art review.",
+      "visual_or_prior_finding": "Prior W02 source review found correct ended copy and no outcome claim, but an unverified A-like footer monogram.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as a reference for generation-005 but superseded because the ended-scene footer has an unverified A-like monogram inconsistent with the approved identity.",
+      "superseded_by": [
+        "CAST-04-generation-005"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "CAST-05-generation-001",
+      "asset_id": "CAST-05",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/CAST-05/generation-001.txt",
+        "sha256": "77e055cf6d6620e2996c6592ef87a9b7b820fb58bcbfda4118512a4e43374313",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "1920x240 8:1 transparent lower-third strip with blank fields and no marks."
+      },
+      "source": {
+        "path": "brand/sources/generated/CAST-05/generation-001.png",
+        "sha256": "494f6fff1b787d93f31d898d7ab0e300612d8633488fc4d842c5cc68b961a558",
+        "dimensions": "2172x724",
+        "mode": "RGBA",
+        "bytes": 355878,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-003.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 broadcast source review says all seven declared source PNGs were opened with view_image and includes CAST-05 generation-001; its asset entry records the 15.6:1 geometry and outside-strip speckles."
+      },
+      "source_use_boundary": "Local generated broadcast artwork/template. No gameplay capture, game image, provider/publisher logo, fabricated value, or live runtime proof was observed; host behavior remains outside this art review.",
+      "visual_or_prior_finding": "Prior W02 source review found readable blank labels but approximately 15.6:1 strip geometry and stray low-alpha colored speckles.",
+      "audit_disposition": "rejected",
+      "disposition_reason": "Rejected for current use because the strip is approximately 15.6:1 instead of 8:1 and has stray low-alpha colored speckles outside the strip.",
+      "superseded_by": [
+        "CAST-05-generation-003"
+      ],
+      "retained_as_reference_input": false,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "CAST-05-generation-002",
+      "asset_id": "CAST-05",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/CAST-05/generation-002.txt",
+        "sha256": "f569d73a70a8af2123fccbc21b6d71c02a57e1b9ecd0d4206ca65ae24f67559d",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "1920x160 12:1 transparent disclosure strip with blank fields and no marks."
+      },
+      "source": {
+        "path": "brand/sources/generated/CAST-05/generation-002.png",
+        "sha256": "2afd0425f880f67015cee04219daf8bf40de8600eca9832c4b2d4eab7e8554c4",
+        "dimensions": "2172x724",
+        "mode": "RGBA",
+        "bytes": 284304,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-003.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 broadcast source review says all seven declared source PNGs were opened with view_image and includes CAST-05 generation-002; its asset entry records the 16.3:1 geometry and outside-strip speckles."
+      },
+      "source_use_boundary": "Local generated broadcast artwork/template. No gameplay capture, game image, provider/publisher logo, fabricated value, or live runtime proof was observed; host behavior remains outside this art review.",
+      "visual_or_prior_finding": "Prior W02 source review found readable blank disclosure labels but approximately 16.3:1 strip geometry and stray low-alpha colored speckles.",
+      "audit_disposition": "rejected",
+      "disposition_reason": "Rejected for current use because the strip is approximately 16.3:1 instead of 12:1 and has stray low-alpha colored speckles outside the strip.",
+      "superseded_by": [
+        "CAST-05-generation-004"
+      ],
+      "retained_as_reference_input": false,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "MKT-02-generation-001",
+      "asset_id": "MKT-02",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/MKT-02/generation-001.txt",
+        "sha256": "b77292102c802582c4ffb04f305ce25ca6a167be6feddb5e8e4b08b57715efdb",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "1500x500 3:1 header with exact AI Ascension/The Climb/promise copy and central75%x60% safe area."
+      },
+      "source": {
+        "path": "brand/sources/generated/MKT-02/generation-001.png",
+        "sha256": "5da22c2084eec9cc2ee4388956f127f28637242f82ce13e659fe71a6ef012671",
+        "dimensions": "2172x724",
+        "mode": "RGB",
+        "bytes": 1688665,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-003.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 broadcast source review says all seven declared source PNGs were opened with view_image and includes MKT-02 generation-001; it records the trailing period in The Climb. as the copy condition."
+      },
+      "source_use_boundary": "Local generated marketing artwork/template. No sponsor identity, campaign outcome, metric, or evidence media was observed; publication and campaign operation remain outside this review.",
+      "visual_or_prior_finding": "Prior W02 source review found the copy and central crop readable, but the title has an unwanted terminal period.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because the visible title is The Climb. with an unwanted terminal period.",
+      "superseded_by": [
+        "MKT-02-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "MKT-08-generation-001",
+      "asset_id": "MKT-08",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/MKT-08/generation-001.txt",
+        "sha256": "ef8bee8b0491d201b640dedd83fd5ea8519401e775eab91a427c5fbe1a7b02db",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "1200x400 3:1 unfilled sponsorship template with exact disclosure copy and central80%x65% safe area."
+      },
+      "source": {
+        "path": "brand/sources/generated/MKT-08/generation-001.png",
+        "sha256": "123251d919168e5e7ab86d933ba11d28798f65c99dcd0320c0b9938b9c1e83c5",
+        "dimensions": "2172x724",
+        "mode": "RGB",
+        "bytes": 941768,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-003.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 broadcast source review says all seven declared source PNGs were opened with view_image and includes MKT-08 generation-001; it records the required central-crop heading clip and creative reflow blocker."
+      },
+      "source_use_boundary": "Local generated marketing artwork/template. No sponsor identity, campaign outcome, metric, or evidence media was observed; publication and campaign operation remain outside this review.",
+      "visual_or_prior_finding": "Prior W02 source review found the unfilled disclosure wording but the heading is clipped by the required central crop.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because the required central crop clips the leading heading; a creative reflow was needed.",
+      "superseded_by": [
+        "MKT-08-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-04-B-generation-001",
+      "asset_id": "GH-04-B",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-04-B/generation-001.txt",
+        "sha256": "b2ca08471997b02d3a2d7103d0737d803af65fae05656e6d1c8a9f2655c04eef",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Stacked light/dark 4:1 banners with exact STS2 Domain Core title/role and identical layout."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-04-B/generation-001.png",
+        "sha256": "fed40915f984608ec22489794078ded7b6074dc078145726529a7858d4ca3236",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1160557,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-04-B generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is the sans-serif family mismatch, later repaired by generation-002."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role and clean geometry, with a sans-serif family mismatch.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found a family-inconsistent sans-serif banner treatment.",
+      "superseded_by": [
+        "GH-04-B-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-01-S-generation-001",
+      "asset_id": "GH-01-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-01-S/generation-001.txt",
+        "sha256": "1afa58a6e47dbe55c376b9c971b072e0c02277b7a08919b400bd6eef29fb01bc",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-01-S/generation-001.png",
+        "sha256": "2997f899a7d2997cc2670d52e9865b2e59ebf233651450e96381fe0a1b7effcd",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1052139,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-01-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is the central safe-crop tolerance/overflow condition."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-01-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-02-S-generation-001",
+      "asset_id": "GH-02-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-02-S/generation-001.txt",
+        "sha256": "d096aaf225d1a389dff003a0167d3135dd4c9f8538ba9e891a5bbf944b05731f",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-02-S/generation-001.png",
+        "sha256": "8c78f697119e8440c97115725cb13847470a7a009787d9aec8072f057673d06f",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1001429,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-02-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is blocking central safe-crop overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-02-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-03-S-generation-001",
+      "asset_id": "GH-03-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-03-S/generation-001.txt",
+        "sha256": "dc42c7241a04a786ffc835f455b27b8d99c7368e351c5159a17c2e92938c301c",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-03-S/generation-001.png",
+        "sha256": "22c046f317c2ee808eca592ac285bc7506aa18670ddae173bda2d86118c9c86a",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1075763,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-03-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is blocking central safe-crop overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-03-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-04-S-generation-001",
+      "asset_id": "GH-04-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-04-S/generation-001.txt",
+        "sha256": "39e8fbe8033898e534ec137976f46f83533c2ae8e83fd65b04112ac9471f07c6",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-04-S/generation-001.png",
+        "sha256": "50fc78e51ed078f1a1daf41ae76db8b1bf6cb6e367060b17b3ecef4c5d9ed28e",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1010623,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-04-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issues are crop tolerance and the family-consistency condition."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-04-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-05-S-generation-001",
+      "asset_id": "GH-05-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-05-S/generation-001.txt",
+        "sha256": "346bcb1c319609e7addeb0d3f59719b952072ec2644d85857a83e44f97115b9c",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-05-S/generation-001.png",
+        "sha256": "5a319baa130cfb691c0dd42832f612c366331cf1883d32e934d82a38a19b8bf6",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1047800,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-05-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is crop tolerance/overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-05-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-06-S-generation-001",
+      "asset_id": "GH-06-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-06-S/generation-001.txt",
+        "sha256": "03acfdb4cfe2a4d9c4cab7997042ab87d009d6b9c7090e19ed2df65ae159c977",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-06-S/generation-001.png",
+        "sha256": "c5929b4e2e0778fd306cc7d8d18b50fa0d377bfc417ea64dbd787802d4b06d96",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1030557,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-06-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is blocking central safe-crop overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-06-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-07-S-generation-001",
+      "asset_id": "GH-07-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-07-S/generation-001.txt",
+        "sha256": "8a4fc7bd4910f791fbb12a051c0479dd3f88425f4498af9f5bc33b842554f401",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-07-S/generation-001.png",
+        "sha256": "51bcd92502f6ceb3899d57b5acd842286b489de59ef87b9bf5477711a49cc54c",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 917131,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-07-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is crop tolerance/overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-07-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-08-S-generation-001",
+      "asset_id": "GH-08-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-08-S/generation-001.txt",
+        "sha256": "607849925ae6a171ce6ac5bbe1fd01f35952ce76cc196ff3a67153976220dbfc",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-08-S/generation-001.png",
+        "sha256": "4b0ae6f1c2d9c289ff4894d1f3cd0c66855acd091aeb919f84a7d1e26cd8103a",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1040491,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-08-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is blocking central safe-crop overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-08-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-10-S-generation-001",
+      "asset_id": "GH-10-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-10-S/generation-001.txt",
+        "sha256": "a2cbea868b0cfff051289266016db2dc48350e17d57f44e0d3394d15250bd73c",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-10-S/generation-001.png",
+        "sha256": "83623871a34cc8c645767ab4693bbba17a447d40746edb129bbb2e705b227c8a",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1009473,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-10-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is blocking central safe-crop overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-10-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-11-S-generation-001",
+      "asset_id": "GH-11-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-11-S/generation-001.txt",
+        "sha256": "dd97ca2efb579881e6ce06f3ac0692e48a102929e4e879080af4f3ecba758125",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-11-S/generation-001.png",
+        "sha256": "31745ed708cfabd298b70f62fa6095b7eb1fe79fd9ecfed3e1e57d4e64b50f09",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1082906,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-11-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is crop tolerance/overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-11-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-12-S-generation-001",
+      "asset_id": "GH-12-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-12-S/generation-001.txt",
+        "sha256": "05738822d523a5b410b3db0e6bf8993821ad2658d522d7c421f389816fb82dff",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-12-S/generation-001.png",
+        "sha256": "cc72c6bb7b9d3c59da9070c208b66a95adc942523e6a2d982559bcb68c82ef37",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1350958,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-12-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is blocking central safe-crop overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-12-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "GH-13-S-generation-001",
+      "asset_id": "GH-13-S",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/GH-13-S/generation-001.txt",
+        "sha256": "9b9f291ea070fca219f3a41ec6e95fe5d9ead11ea19e3226e0a7169911588452",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "2:1 social preview with exact repository title/role/attribution, approved mark reference, and central84%x76% crop-safe content."
+      },
+      "source": {
+        "path": "brand/sources/generated/GH-13-S/generation-001.png",
+        "sha256": "4ae9e462781b40d5f38002324b6e6c3092999bb4e8e50ace9b9aad24e03e02d4",
+        "dimensions": "1774x887",
+        "mode": "RGB",
+        "bytes": 1040204,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/assets/identity/avatar-1024.png",
+          "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+          "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "Both W02 follow-up reviews list the exact GH-13-S generation-001 source in their actual_source_files_viewed_with_view_image arrays; the recorded issue is crop tolerance/overflow."
+      },
+      "source_use_boundary": "Local generated repository campaign artwork. Declared identity input is the local generated avatar-1024 reference; no gameplay/evidence media, provider/publisher logo, fabricated metric, or public-release proof was observed.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found exact title/role/attribution and only the local generated identity reference, but the generation-001 composition failed or approached the required central crop-safe region.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because W02 found the generation-001 social composition outside or too close to the required central crop-safe region.",
+      "superseded_by": [
+        "GH-13-S-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "DOC-02-generation-001",
+      "asset_id": "DOC-02",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/DOC-02/generation-001.txt",
+        "sha256": "354455a2ab18eab3272ef93397ce544f122dbd5224c967fc98618c06b7469431",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "1600x1000 private/public publication flow with exact boxes and an upward arrow into Validation."
+      },
+      "source": {
+        "path": "brand/sources/generated/DOC-02/generation-001.png",
+        "sha256": "b6472868b529f55a4805637aed21710c0fc83f527da8770b91d04d9422b35693",
+        "dimensions": "1586x992",
+        "mode": "RGB",
+        "bytes": 1147943,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "prior_w02_actual_review",
+        "review_files": [
+          "execution/reviews/W02-broadcast-source-review-004.json"
+        ],
+        "actual_source_viewed": true,
+        "evidence": "The W02 follow-up review lists DOC-02 generation-001 in its actual_source_files_viewed_with_view_image array and records the missing upward arrowhead from Digest-bound approval into Validation."
+      },
+      "source_use_boundary": "Local generated documentation diagram. The declared factual input is a repository document where present; no gameplay/evidence media or runtime/deployment proof is depicted.",
+      "visual_or_prior_finding": "Prior W02 visual inspection found the private/public flow and exact labels, but no visible upward arrowhead from Digest-bound approval into Validation.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for generation-002 but superseded because the required upward arrowhead into Validation is not visible.",
+      "superseded_by": [
+        "DOC-02-generation-002"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "BG-04-generation-002",
+      "asset_id": "BG-04",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/BG-04/generation-002.txt",
+        "sha256": "f8c5346267ea853ff5733980866dfdb4d9bbb3dfb6aa3d537792ef73ce0508db",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Square flat opaque light tile with uniform #F4EEE2 field, central motifs, and clean repeat margins."
+      },
+      "source": {
+        "path": "brand/sources/generated/BG-04/generation-002.png",
+        "sha256": "ee0d4cb2a4adfb085c129f3e2bfd37185dd8e9ef2ae71a261868fc0649ed3579",
+        "dimensions": "1254x1254",
+        "mode": "RGB",
+        "bytes": 811949,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "new_actual_source_inspection",
+        "review_files": [],
+        "actual_source_viewed": true,
+        "image_inspection_tool": "view_image",
+        "evidence": "Viewed the exact source PNG with view_image. It is a light 1:1 tile with three sparse branching motifs on a visibly warm paper field; it has no transparent background and is a predecessor to the transparent generation-003 light variant."
+      },
+      "source_use_boundary": "Local generated decorative pattern artwork. No external visual input, gameplay/evidence media, product UI, or third-party mark was observed.",
+      "visual_or_prior_finding": "New image inspection found a sparse light tile predecessor with no external imagery; it is retained only as lineage input for generation-003.",
+      "audit_disposition": "retained_reference_only",
+      "disposition_reason": "Retained as the local reference for the transparent light generation-003, then superseded as an export source by the generation-003/generation-007 pair.",
+      "superseded_by": [
+        "BG-04-generation-003"
+      ],
+      "retained_as_reference_input": true,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "BG-04-generation-004",
+      "asset_id": "BG-04",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/BG-04/generation-004.txt",
+        "sha256": "0f133c351b2869f5c9fbd71c2b590a688638b7affcc64b73548ed6bc4cc31b6b",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Dark variant requiring true transparent RGBA background, preserved three motifs, and alpha-zero outer margins."
+      },
+      "source": {
+        "path": "brand/sources/generated/BG-04/generation-004.png",
+        "sha256": "66ed229bc9be9d8f69fa41f4369666072d1d59eb7609abdf42608ec238be0342",
+        "dimensions": "1254x1254",
+        "mode": "RGB",
+        "bytes": 778283,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/sources/generated/BG-04/generation-003.png",
+          "sha256": "cc9ed221dc45860d95c834d30149b599fa096b251033b365a8c16d207f888edd",
+          "rights_reference": "pending:generated-original-reference-review"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "new_actual_source_inspection",
+        "review_files": [],
+        "actual_source_viewed": true,
+        "image_inspection_tool": "view_image",
+        "evidence": "Viewed the exact source PNG with view_image. It visibly contains a white/gray checkerboard behind the ivory/gold motifs; the saved source is RGB despite the prompt requiring a true transparent RGBA dark tile."
+      },
+      "source_use_boundary": "Local generated decorative pattern artwork. No external visual input, gameplay/evidence media, product UI, or third-party mark was observed.",
+      "visual_or_prior_finding": "New image inspection found the painted checkerboard that the prompt explicitly prohibits; the RGB mode confirms it is not a transparent dark variant.",
+      "audit_disposition": "rejected",
+      "disposition_reason": "Rejected because the viewed image contains a painted checkerboard and is RGB despite the prompt requiring a true transparent RGBA dark tile.",
+      "superseded_by": [
+        "BG-04-generation-007"
+      ],
+      "retained_as_reference_input": false,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "BG-04-generation-005",
+      "asset_id": "BG-04",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/BG-04/generation-005.txt",
+        "sha256": "d810022dec4cbeba57664e8c7e64c231f7f3ef017a8e6dd8dd54fbc6a0088b61",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Checkerboard-removal edit requiring real transparency while preserving only the three motifs."
+      },
+      "source": {
+        "path": "brand/sources/generated/BG-04/generation-005.png",
+        "sha256": "faa71b3c25539e789e1b7b3971588c5efa16a6dad7f194cbaab685dc751dca2f",
+        "dimensions": "1254x1254",
+        "mode": "RGB",
+        "bytes": 990161,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [
+        {
+          "path": "brand/sources/generated/BG-04/generation-004.png",
+          "sha256": "66ed229bc9be9d8f69fa41f4369666072d1d59eb7609abdf42608ec238be0342",
+          "rights_reference": "pending:generated-original-reference-review"
+        }
+      ],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "new_actual_source_inspection",
+        "review_files": [],
+        "actual_source_viewed": true,
+        "image_inspection_tool": "view_image",
+        "evidence": "Viewed the exact source PNG with view_image. It visibly contains the checkerboard background the prompt says to remove; the saved source is RGB, so it is not a clean transparent master."
+      },
+      "source_use_boundary": "Local generated decorative pattern artwork. No external visual input, gameplay/evidence media, product UI, or third-party mark was observed.",
+      "visual_or_prior_finding": "New image inspection found the checkerboard remained after the requested removal edit; the RGB mode confirms it is not a transparent master.",
+      "audit_disposition": "rejected",
+      "disposition_reason": "Rejected because the viewed image still contains a painted checkerboard and is RGB, so it is not the clean transparent result requested.",
+      "superseded_by": [
+        "BG-04-generation-007"
+      ],
+      "retained_as_reference_input": false,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    },
+    {
+      "record_id": "BG-04-generation-006",
+      "asset_id": "BG-04",
+      "canonical_status_unchanged": "blocked",
+      "prompt": {
+        "path": "brand/prompts/root/BG-04/generation-006.txt",
+        "sha256": "ea25e02314840085372015a6fb342e56dec00b05172b4ccd286252bfe1f09d15",
+        "exact_saved_prompt_read": true,
+        "saved_prompt_sha256_matches": true,
+        "requirement_checked": "Clean transparent sticker with only three bright branching strokes, wide empty margins, and no backdrop or artifacts."
+      },
+      "source": {
+        "path": "brand/sources/generated/BG-04/generation-006.png",
+        "sha256": "bee4196b1763d65baf8eb4bcea7933ae4c881bbbfcd38bab3b2cb36d4dac7b6b",
+        "dimensions": "1254x1254",
+        "mode": "RGBA",
+        "bytes": 207581,
+        "exact_saved_source_read": true,
+        "saved_source_sha256_matches": true
+      },
+      "declared_reference_inputs": [],
+      "declared_reference_hashes_match": true,
+      "review_coverage": {
+        "coverage_type": "new_actual_source_inspection",
+        "review_files": [],
+        "actual_source_viewed": true,
+        "image_inspection_tool": "view_image",
+        "evidence": "Viewed the exact source PNG with view_image. It visibly has a black matte/background, rough white/gold strokes, and stray edge/speckle artifacts rather than the requested isolated clean transparent tile; the saved source is RGBA but the visible matte/artifacts remain."
+      },
+      "source_use_boundary": "Local generated decorative pattern artwork. No external visual input, gameplay/evidence media, product UI, or third-party mark was observed.",
+      "visual_or_prior_finding": "New image inspection found a black matte and rough stray pixels around the strokes, inconsistent with the prompt's clean transparent sticker.",
+      "audit_disposition": "rejected",
+      "disposition_reason": "Rejected because the viewed image shows a black matte and substantial stray/rough pixels rather than an isolated clean transparent tile.",
+      "superseded_by": [
+        "BG-04-generation-007"
+      ],
+      "retained_as_reference_input": false,
+      "current_export_source_match": false,
+      "current_export_matches": [],
+      "no_current_export_promotion": true
+    }
+  ]
+}
