@@ -1,5 +1,7 @@
 # AI Ascension — complete brand, product-presentation, and marketing implementation
 
+> **Product model choice (2026-09-08):** Individuals choose their own model and provider. Ascension must support extension through compatible provider adapters without a fixed model/vendor requirement. See [docs/MODEL_CHOICE.md](docs/MODEL_CHOICE.md). Model-specific test reports describe observed configurations, not restrictions on user choice.
+
 > **Recorded user amendment (2026-09-07):** The user authorized root image generation: "you can of course generate them images instead." For current artwork, use `user_authorized_root_image_tool` as recorded in [art/root-generation-authorization.json](art/root-generation-authorization.json). The available tool does not attest its backend or the root model, so these remain unknown. This amends the artwork author/backend route only; independent review, original sources, mechanical-export limits, evidence boundaries, all 72 asset families and the remaining project requirements still apply. Historical Astra-specific wording below describes the original route.
 
 

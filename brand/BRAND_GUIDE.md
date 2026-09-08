@@ -67,6 +67,8 @@ For spectators, show the outcome first: “A run reached floor 17 and ended in D
 
 For developers, show the tested entry point and boundary: “Build the controlled path from harness to MCP, gateway, and game adapter.” Name prerequisites and exact versions in the technical documentation. Say when a source or test is local, synthetic, or tied to one host fixture. Do not imply that every provider or game path is supported.
 
+Ascension is model-agnostic: individuals choose their own model and provider. Explain compatible adapters and workflow requirements, and provide an extension path for additional models. Describe tested configurations accurately without making a tested model mandatory. See `docs/MODEL_CHOICE.md`.
+
 For researchers, show the observation rules, seed/build, action and model budget, intervention or restart history, source revision, and evidence artifact state. Link to the structured record or report. Never expose private trajectories, hidden reasoning, credentials, saves, or host files.
 
 For contributors, show one bounded task and the repository owner. Explain where a change belongs before asking someone to install the whole stack. Keep the contributor path aligned with the repository map.
