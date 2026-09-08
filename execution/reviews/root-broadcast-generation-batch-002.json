@@ -1,0 +1,36 @@
+[
+  {
+    "asset_id": "CAST-02",
+    "generation_id": "CAST-02-generation-002",
+    "prompt_path": "brand/prompts/root/CAST-02/generation-002.txt",
+    "prompt_sha256": "e256862b44cd98202acd33b5b231387210c7e5f5eade6ff61d4456b9f3ef9c68",
+    "source_path": "brand/sources/generated/CAST-02/generation-002.png",
+    "source_sha256": "6048383ebb62576535b3592182bd1fe43d0b77f353a033575ffa652e085e45e8",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:37:57.275384+00:00"
+  },
+  {
+    "asset_id": "CAST-03",
+    "generation_id": "CAST-03-generation-002",
+    "prompt_path": "brand/prompts/root/CAST-03/generation-002.txt",
+    "prompt_sha256": "542e4f69de1f9e850d07844c74928535fff21de1ba1af332fe4ee32074f8af9d",
+    "source_path": "brand/sources/generated/CAST-03/generation-002.png",
+    "source_sha256": "bf71fe357606b3fb9c95b1b8df1acc2c425913ace576c4ebee9524d4bef3fb40",
+    "dimensions": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:37:57.324337+00:00"
+  }
+]

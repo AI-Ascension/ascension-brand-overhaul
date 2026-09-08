@@ -1,0 +1,20 @@
+[
+  {
+    "asset_id": "CAST-05",
+    "generation_id": "CAST-05-generation-004",
+    "prompt_path": "brand/prompts/root/CAST-05/generation-004.txt",
+    "prompt_sha256": "40418f994a0f130addf2374a874a2a604954b761f38148f688f70e50ac4dc8e0",
+    "source_path": "brand/sources/generated/CAST-05/generation-004.png",
+    "source_sha256": "1e89c4c22c6c1ff1cfa7b0f14281dfd74477f33c01e833baa3a62b133299b17a",
+    "dimensions": [
+      1374,
+      1145
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:10:05.737750+00:00"
+  }
+]

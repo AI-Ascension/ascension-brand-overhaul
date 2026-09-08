@@ -1,0 +1,27 @@
+[
+  {
+    "asset_id": "CAST-03",
+    "generation_id": "CAST-03-generation-003",
+    "prompt_path": "brand/prompts/root/CAST-03/generation-003.txt",
+    "prompt_sha256": "b0ae285a094845c31e42997bb8cdbc8d981a7987754bceec622eb70d65716e4d",
+    "source_path": "brand/sources/generated/CAST-03/generation-003.png",
+    "source_sha256": "97001e70df9bd682e479cd6bd5ab8516f34627c03942569b24c9c8bfe1ae0b68",
+    "dimensions": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [
+      {
+        "path": "brand/sources/generated/CAST-03/generation-002.png",
+        "sha256": "bf71fe357606b3fb9c95b1b8df1acc2c425913ace576c4ebee9524d4bef3fb40",
+        "purpose": "edit_existing_root_generated_art",
+        "content_class": "generated_art_not_product_evidence"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:04:17.173883+00:00"
+  }
+]

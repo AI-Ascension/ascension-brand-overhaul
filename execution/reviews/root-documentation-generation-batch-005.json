@@ -1,0 +1,30 @@
+[
+  {
+    "asset_id": "DOC-05",
+    "generation_id": "DOC-05-generation-001",
+    "prompt_path": "brand/prompts/root/DOC-05/generation-001.txt",
+    "prompt_sha256": "df7e906d1e8bdd49c62f7a25117e2e1e35874bb08ba688ea038607762b50c09d",
+    "source_path": "brand/sources/generated/DOC-05/generation-001.png",
+    "source_sha256": "aef2eff2579c4fab5b394c8425658fbf2c78977860aedf77793ba8d3d997488a",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [],
+    "factual_source_documents": [
+      {
+        "path": "docs/TESTED_QUICKSTART.md",
+        "sha256": "6d10c672a8edb286df025fe90828dcbddd922084a8e7f1fbe31aabd38650d470"
+      },
+      {
+        "path": "marketing/community-playbook.md",
+        "sha256": "4e376b92a0506b15984a83d513357aec3536636ad44c123d382dff08c924c4af"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:34:03.738503+00:00"
+  }
+]

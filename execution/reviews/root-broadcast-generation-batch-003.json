@@ -1,0 +1,53 @@
+[
+  {
+    "asset_id": "CAST-04",
+    "generation_id": "CAST-04-generation-001",
+    "prompt_path": "brand/prompts/root/CAST-04/generation-001.txt",
+    "prompt_sha256": "e4236650ef6390aa4754e075ce0b5b77541120a81af2d8e94396f151ced9957f",
+    "source_path": "brand/sources/generated/CAST-04/generation-001.png",
+    "source_sha256": "54b3608cb8f18a2900408c6a167cb86d447988fa186801c92489a27156b115f5",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:39:57.083206+00:00"
+  },
+  {
+    "asset_id": "CAST-04",
+    "generation_id": "CAST-04-generation-002",
+    "prompt_path": "brand/prompts/root/CAST-04/generation-002.txt",
+    "prompt_sha256": "abd7a0aa95dd29b15ecc7bc38a76dc637d7eea893123da33f93588623ed10576",
+    "source_path": "brand/sources/generated/CAST-04/generation-002.png",
+    "source_sha256": "4829dc232e03d65dd402d2fd483383834643327b4efdbf7072a0592772005136",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:39:57.134970+00:00"
+  },
+  {
+    "asset_id": "CAST-04",
+    "generation_id": "CAST-04-generation-003",
+    "prompt_path": "brand/prompts/root/CAST-04/generation-003.txt",
+    "prompt_sha256": "0c1d4817533898fe647a03864f6bfdd26f6caf5f9e5b059047c503fa38bccc2d",
+    "source_path": "brand/sources/generated/CAST-04/generation-003.png",
+    "source_sha256": "a98caf6a642a06f39e541f7989cf9b953ae858874ed2e1e955a5cd44701f19f6",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:39:57.177141+00:00"
+  }
+]

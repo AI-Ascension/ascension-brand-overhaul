@@ -1,0 +1,30 @@
+[
+  {
+    "asset_id": "DOC-01",
+    "generation_id": "DOC-01-generation-001",
+    "prompt_path": "brand/prompts/root/DOC-01/generation-001.txt",
+    "prompt_sha256": "aa0797ebd910470e2c641a756da835818e925f6f99e52acdaffe3f78649a488b",
+    "source_path": "brand/sources/generated/DOC-01/generation-001.png",
+    "source_sha256": "e2ad345db954da5eba9f44aa720731bb64f2e1b1e148006833cb1db8de34f450",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [],
+    "factual_source_documents": [
+      {
+        "path": "docs/BASELINE_AUDIT.md",
+        "sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690"
+      },
+      {
+        "path": "docs/PUBLISHING.md",
+        "sha256": "c0a1dd6dc95cbd9dfefec1c9af6e938163095535268c56439e02882515ed086f"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:28:14.393378+00:00"
+  }
+]

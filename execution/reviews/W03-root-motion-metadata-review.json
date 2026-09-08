@@ -1,0 +1,447 @@
+{
+  "schema_version": "ai-ascension.root-motion-metadata-review.v1",
+  "observed_at": "2026-09-08T02:35:43Z",
+  "reviewer": "w03-root-motion-metadata-independent-review",
+  "task": "Final metadata and policy contract review of the root-authored CAST-06 mechanical title-transition export",
+  "scope": "Read-only verification of the current motion recipe, exporter operation gate, policy/schema/CAST-06 registry declarations, CAST-06 source lineage, existing motion receipt, and actual WebM metadata and full sampled decode. This receipt is the only repository write for this review; no source, prompt, still, WebM, raster provenance ledger, recipe, exporter, manifest, or acceptance file was edited by this review.",
+  "working_tree": {
+    "git_head": "4ef7063536efb61903316270c661bf82dc45c4c5",
+    "branch": "work/root-authored-art",
+    "dirty_before_review": true,
+    "exclusive_write": "execution/reviews/W03-root-motion-metadata-review.json",
+    "source_manifest_motion_code_written": false,
+    "five_raster_ledgers_touched": false,
+    "motion_output_written": false
+  },
+  "review_evidence": {
+    "script": {
+      "path": "/tmp/run_motion_metadata_checks.py",
+      "sha256": "39c0f77883d19ed63cf4a9c7f81f6ef2929e1a717e6712c0bcb7e86440cffbbe"
+    },
+    "evidence": {
+      "path": "/tmp/motion-metadata-evidence.json",
+      "sha256": "e4a053b5ba2d51db8b13bf1281ae00d6c7aa0aca5321a2e1527e45ba0280dcb3"
+    },
+    "method": "Parsed JSON with strict local schema references, hashed all pinned files, inspected PNG geometry/mode, used the recorded FFmpeg binary for a pipe-only metadata probe and full 64x36 RGB decode, and applied the exporter static contract checks."
+  },
+  "source_pins": {
+    "motion_recipe": {
+      "path": "brand/provenance/root-motion-recipe.json",
+      "sha256": "f009f9289634422bf1c6d15c5d1393bc1cac932efb98e129183c92a9c7d0cc01",
+      "bytes": 1243
+    },
+    "motion_exporter": {
+      "path": "scripts/export_root_motion.py",
+      "sha256": "e78f2fec372e5d2bd44db7855ee7112f82ae9b4e8942f74151993afb17ce792e",
+      "bytes": 4870
+    },
+    "generation_policy": {
+      "path": "art/generation-policy.json",
+      "sha256": "dabc08e924fd6c24c2277ca1ee8eea7c5ea041dc00367300f3c92e4b90f16f10",
+      "bytes": 3134
+    },
+    "asset_schema": {
+      "path": "schemas/asset.schema.json",
+      "sha256": "388a76b27eba4e15b721c16b1dea32203479100f2d56dcc16f3112190c6fc386",
+      "bytes": 5227
+    },
+    "asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3",
+      "bytes": 183884
+    },
+    "promptbook": {
+      "path": "art/PROMPTBOOK.md",
+      "sha256": "a9581d8aa648897ba6e23bd9a9b41497d77f47158e14c511ed7959b330c2eb2e",
+      "bytes": 156054
+    },
+    "art_policy_document": {
+      "path": "art/ASTRA_GPT_IMAGE_2_POLICY.md",
+      "sha256": "604f9bf533cc868b7cfdf605f8e51b97bf0245fc97d6443f4d1fd912ef24ec96",
+      "bytes": 16367
+    },
+    "root_authorization": {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+      "bytes": 637
+    },
+    "root_generation_index": {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "5acb8f14ee0bc846456b007f884f7e897ff2991e5b85359cae5cdeda495a136e",
+      "bytes": 115713
+    },
+    "root_generation_records": {
+      "path": "brand/provenance/root-generation-records.json",
+      "sha256": "afde463c2a729222a86a89d4b005d65115a1c6e2282212b78fb48bb33493c064",
+      "bytes": 222328
+    },
+    "root_tool_observations": {
+      "path": "brand/provenance/root-tool-observations.json",
+      "sha256": "eb4964c854e0c799dcb43acf0eae296280c7dd67e9dbe200e83329c4249996ca",
+      "bytes": 121489
+    },
+    "CAST06_generation_receipt": {
+      "path": "execution/reviews/root-broadcast-generation-batch-005.json",
+      "sha256": "7bd8aedaebb5e56f0c989c82df2bdb18537a33a989ac42ccb44ebcb9e39eb832",
+      "bytes": 654
+    },
+    "CAST06_visual_source_review": {
+      "path": "execution/reviews/W02-broadcast-source-review-003.json",
+      "sha256": "4c8157f45cb8361b525e91dec7849e290d7edce573ee44414da6b4b5377c8f12",
+      "bytes": 26696
+    },
+    "existing_motion_export_receipt": {
+      "path": "execution/reviews/root-motion-export.json",
+      "sha256": "92106c3d0e8415e9e159c150111ecf540a3fbf247125d50e1840098502e5e818",
+      "bytes": 2465
+    },
+    "CAST06_prompt": {
+      "path": "brand/prompts/root/CAST-06/generation-001.txt",
+      "sha256": "82aeee5fae3687da39b894f17e2f3c23ec5ef6d19f04d81e1c80529d78a92ff5",
+      "bytes": 649
+    },
+    "CAST06_raw_source": {
+      "path": "brand/sources/generated/CAST-06/generation-001.png",
+      "sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
+      "bytes": 1805508
+    },
+    "reduced_motion_still": {
+      "path": "brand/assets/broadcast/title-transition-still.png",
+      "sha256": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
+      "bytes": 2101919
+    },
+    "webm": {
+      "path": "brand/assets/broadcast/title-transition.webm",
+      "sha256": "5983f7c4f822b286a70f71bfbdd5281c1cd57962ca3c16d3e7675a592292aefd",
+      "bytes": 8487674
+    }
+  },
+  "lineage": {
+    "asset_id": "CAST-06",
+    "generation_record_id": "CAST-06-generation-001",
+    "generation_status": "blocked",
+    "generation_route": "user_authorized_root_image_tool",
+    "root_author_role_id": "ROOT",
+    "root_author_model": "unknown",
+    "image_model_requested": "unknown",
+    "image_model_observed": "unknown",
+    "image_backend": "unspecified",
+    "prompt_path": "brand/prompts/root/CAST-06/generation-001.txt",
+    "prompt_sha256": "82aeee5fae3687da39b894f17e2f3c23ec5ef6d19f04d81e1c80529d78a92ff5",
+    "raw_source_path": "brand/sources/generated/CAST-06/generation-001.png",
+    "raw_source_sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
+    "raw_source_bytes": 1805508,
+    "raw_source_dimensions": [
+      1672,
+      941
+    ],
+    "raw_source_mode": "RGB",
+    "raw_source_matches_recipe_index_record_observation": true,
+    "still_path": "brand/assets/broadcast/title-transition-still.png",
+    "still_sha256": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
+    "still_dimensions": [
+      1920,
+      1080
+    ],
+    "still_mode": "RGB",
+    "output_path": "brand/assets/broadcast/title-transition.webm",
+    "output_sha256": "5983f7c4f822b286a70f71bfbdd5281c1cd57962ca3c16d3e7675a592292aefd",
+    "output_bytes": 8487674,
+    "declared_image_references": [],
+    "source_review_readiness": "source_ready_for_bounded_mechanical_export",
+    "publication_approved": false
+  },
+  "policy_and_metadata_contract": {
+    "policy_motion_rule": {
+      "path": "art/ASTRA_GPT_IMAGE_2_POLICY.md",
+      "lines": "64",
+      "text": "Motion uses generated stills/layers or generated frames mechanically sequenced, positioned, or faded according to a recorded assembly recipe.",
+      "result": "pass"
+    },
+    "brief_motion_rule": {
+      "path": "art/PROMPTBOOK.md",
+      "lines": "730, 738-739",
+      "text": "Mechanically sequence or fade approved generated frames into a transition; provide reduced-motion still.",
+      "result": "pass"
+    },
+    "policy_allowed_export_operations": [
+      "identity",
+      "resize",
+      "crop",
+      "encode",
+      "lossless_optimize",
+      "metadata_strip",
+      "sprite_slice",
+      "assemble_unchanged_frames",
+      "fade_generated_frames",
+      "alpha_preserving_export"
+    ],
+    "CAST06_registry_allowed_export_operations": [
+      "identity",
+      "resize",
+      "crop",
+      "encode",
+      "lossless_optimize",
+      "metadata_strip",
+      "sprite_slice",
+      "assemble_unchanged_frames",
+      "fade_generated_frames",
+      "alpha_preserving_export"
+    ],
+    "asset_schema_derivation_operation_enum": [
+      "identity",
+      "resize",
+      "crop",
+      "encode",
+      "lossless_optimize",
+      "metadata_strip",
+      "sprite_slice",
+      "assemble_unchanged_frames",
+      "fade_generated_frames",
+      "alpha_preserving_export"
+    ],
+    "recipe_operations": [
+      "assemble_unchanged_frames",
+      "fade_generated_frames",
+      "encode",
+      "metadata_strip"
+    ],
+    "export_receipt_operations": [
+      "assemble_unchanged_frames",
+      "fade_generated_frames",
+      "encode",
+      "metadata_strip"
+    ],
+    "exporter_required_operation_sequence": [
+      "assemble_unchanged_frames",
+      "fade_generated_frames",
+      "encode",
+      "metadata_strip"
+    ],
+    "operation_declarations_identical": true,
+    "creative_boundary": "Only the recorded generated still is input to the mechanical frame assembly; fade filters, fixed frame count, encoding, and metadata stripping are declared. No new shapes, labels, gameplay imagery, audio, interpolation, or procedural drawing path is present.",
+    "reduced_motion_path": "brand/assets/broadcast/title-transition-still.png"
+  },
+  "recipe": {
+    "schema_version": "root-mechanical-motion-recipe-v1",
+    "asset_id": "CAST-06",
+    "generation_record_id": "CAST-06-generation-001",
+    "raw_source_path": "brand/sources/generated/CAST-06/generation-001.png",
+    "raw_source_sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
+    "still_path": "brand/assets/broadcast/title-transition-still.png",
+    "still_sha256": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
+    "output_path": "brand/assets/broadcast/title-transition.webm",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 45,
+    "duration_seconds": 1.5,
+    "fade_in_seconds": 0.3,
+    "fade_out_start_seconds": 1.2,
+    "fade_out_seconds": 0.3,
+    "codec": "libvpx-vp9",
+    "pixel_format": "yuv420p",
+    "audio": false,
+    "operations": [
+      "assemble_unchanged_frames",
+      "fade_generated_frames",
+      "encode",
+      "metadata_strip"
+    ],
+    "assembly_description": "Repeat the reviewed generated still for 45 frames, with one fade from black and one fade to black. No new shapes, labels, interpolation, audio or gameplay imagery.",
+    "reduced_motion_path": "brand/assets/broadcast/title-transition-still.png",
+    "review_state": "pending_independent_review",
+    "publication_approved": false
+  },
+  "exporter_static_review": {
+    "result": "pass",
+    "checks": {
+      "explicit_operation_sequence_gate": true,
+      "safe_path_validation": true,
+      "recorded_source_and_still_hash_gates": true,
+      "fixed_recipe_contract_gate": true,
+      "still_geometry_mode_gate": true,
+      "fade_filters_match_recipe": true,
+      "fixed_45_frame_encode": true,
+      "VP9_encode": true,
+      "YUV420P_encode": true,
+      "no_audio": true,
+      "metadata_strip": true,
+      "bitexact_flags": true,
+      "full_decode_frame_gate": true,
+      "copy_candidate_to_output": true
+    },
+    "observed_contract": "The exporter requires the exact four-operation recipe, validates safe paths and recorded source/still hashes and geometry, applies the recorded fade timings, fixes 45 VP9/yuv420p frames with no audio, strips input metadata and uses bitexact flags, then copies the temporary candidate. It contains no drawing primitive or audio authoring path."
+  },
+  "existing_motion_export_receipt": {
+    "path": "execution/reviews/root-motion-export.json",
+    "sha256": "92106c3d0e8415e9e159c150111ecf540a3fbf247125d50e1840098502e5e818",
+    "recipe_sha256": "f009f9289634422bf1c6d15c5d1393bc1cac932efb98e129183c92a9c7d0cc01",
+    "raw_source_sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
+    "still_sha256": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
+    "output_sha256": "5983f7c4f822b286a70f71bfbdd5281c1cd57962ca3c16d3e7675a592292aefd",
+    "output_bytes": 8487674,
+    "operations": [
+      "assemble_unchanged_frames",
+      "fade_generated_frames",
+      "encode",
+      "metadata_strip"
+    ],
+    "decoded_frame_count": 45,
+    "decoded_rgb_sample_size": [
+      64,
+      36,
+      3
+    ],
+    "review_state": "pending_independent_review",
+    "publication_approved": false,
+    "receipt_consistency_result": "pass"
+  },
+  "video_metadata": {
+    "probe_tool": {
+      "path": "/home/timot/.local/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2",
+      "sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+      "version": "ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers"
+    },
+    "artifact_path": "brand/assets/broadcast/title-transition.webm",
+    "artifact_sha256": "5983f7c4f822b286a70f71bfbdd5281c1cd57962ca3c16d3e7675a592292aefd",
+    "artifact_bytes": 8487674,
+    "container": "matroska,webm",
+    "video_codec": "vp9",
+    "pixel_format": "yuv420p",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "duration_seconds": 1.5,
+    "audio_stream": false,
+    "decoded_frame_count": 45,
+    "probe_excerpt": "  Duration: 00:00:01.50, start: 0.000000, bitrate: 45267 kb/s\n  Stream #0:0: Video: vp9 (Profile 0), yuv420p(tv, progressive), 1920x1080, SAR 1:1 DAR 16:9, 30 fps, 30 tbr, 1k tbn\n  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn\nframe=   45 fps= 40 q=-0.0 Lsize=N/A time=00:00:01.50 bitrate=N/A speed=1.35x    ",
+    "sampled_decode": {
+      "sample_size": [
+        64,
+        36,
+        3
+      ],
+      "mean_rgb": [
+        0.0,
+        1.1075,
+        2.965,
+        5.1204,
+        7.396,
+        9.682,
+        12.0376,
+        14.3734,
+        16.719,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        19.1292,
+        16.719,
+        14.3734,
+        12.0376,
+        9.682,
+        7.396,
+        5.1204,
+        2.965,
+        1.1075
+      ],
+      "first_frame_black_threshold_passed": true,
+      "fade_in_frames_0_to_9_monotonic": true,
+      "static_hold_frames_9_to_35": true,
+      "static_hold_mean_range": 0.0,
+      "fade_out_frames_36_to_44_monotonic": true,
+      "full_decoded_frame_count": 45
+    },
+    "result": "pass"
+  },
+  "strict_validation": {
+    "asset_manifest_schema": {
+      "schema": "schemas/asset.schema.json",
+      "validator": "Draft202012Validator with local art-generation.schema.json resolver",
+      "entries_checked": 72,
+      "errors": [],
+      "result": "pass"
+    },
+    "test_art_policy": {
+      "command": "python3 -m unittest tests/test_art_policy.py -v",
+      "tests": 38,
+      "result": "pass"
+    },
+    "test_asset_status_schema": {
+      "command": "python3 -m unittest tests/test_asset_status_schema.py -v",
+      "tests": 2,
+      "result": "pass"
+    },
+    "git_diff_check": {
+      "command": "git diff --check",
+      "result": "pass_before_receipt_write"
+    }
+  },
+  "historical_review_context": {
+    "static_motion_review": {
+      "path": "execution/reviews/W03-root-motion-review.json",
+      "sha256": "4f8e09988f8b51d37b4fc9002626d0d0c633b9ac1b037e5fcfb5864f605931a7",
+      "note": "Historical independent reproducibility review; its recipe/exporter pins predate the current explicit fade operation declaration."
+    },
+    "browser_motion_review": {
+      "path": "execution/reviews/W03-root-motion-browser-review.json",
+      "sha256": "868d0dd657ee6dbcc90b4d632443399dd691ad7b1b7523112e0faabc612e5330",
+      "note": "Historical headless Chromium review of the same unchanged WebM and reduced-motion still; its recipe/exporter pins predate the current metadata declaration.",
+      "same_current_artifact_hashes": true,
+      "fresh_browser_run_in_this_review": false
+    },
+    "source_review": {
+      "path": "execution/reviews/W02-broadcast-source-review-003.json",
+      "sha256": "4c8157f45cb8361b525e91dec7849e290d7edce573ee44414da6b4b5377c8f12",
+      "CAST06_status": "source_ready_for_bounded_mechanical_export"
+    }
+  },
+  "checks": {
+    "source_prompt_still_lineage": "pass: current source, prompt, still, recipe, generation index, generation record, tool observation, and export receipt hashes agree",
+    "policy_registry_schema_operation_alignment": "pass: all three allowed-operation declarations include fade_generated_frames in the same list",
+    "recipe_operation_sequence": "pass: assemble_unchanged_frames, fade_generated_frames, encode, metadata_strip",
+    "exporter_operation_enforcement": "pass: exporter rejects any operation sequence other than the exact recorded four operations",
+    "export_receipt_consistency": "pass: current receipt recipe/source/still/output hashes, operation sequence, dimensions, and decoded fields match current files/recipe",
+    "webm_hash_and_bytes": "pass: current output matches the current export receipt",
+    "webm_metadata": "pass: VP9/yuv420p 1920x1080 at 30 fps, 1.5 seconds, 45 frames, no audio stream",
+    "fade_and_hold_decode": "pass: first frame black threshold, monotonic fade-in, zero-variance sampled hold, and monotonic fade-out",
+    "strict_asset_schema": "pass: 72 manifest entries, 0 schema errors",
+    "art_policy_tests": "pass: 38/38",
+    "asset_status_schema_tests": "pass: 2/2",
+    "repository_output_preserved": "pass: no motion output or source was written by this review",
+    "consumer_playback": "separate historical review pass for the same unchanged WebM/still; not rerun here",
+    "publication_approval": false
+  },
+  "decision": "motion_metadata_contract_pass_consumer_playback_separate",
+  "publication_approved": false,
+  "limitations": [
+    "The root generation record remains blocked and the root image-tool author/model/backend values remain unknown or unspecified; this metadata review does not create provider or native-model attestation.",
+    "This receipt verifies policy declarations, deterministic exporter metadata, source lineage, file hashes, stream metadata, and sampled decode. It does not approve visual design, rights, trademark use, public release, deployment, or live broadcast use.",
+    "The prior W03 browser receipt proves playback for the same WebM and still hashes, but its recipe/exporter pins predate the current explicit fade metadata declarations; this review did not rerun a browser.",
+    "No source, still, WebM, prompt, recipe, exporter, manifest, acceptance file, or provenance ledger was edited; only this review receipt was written."
+  ]
+}

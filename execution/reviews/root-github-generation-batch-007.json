@@ -1,0 +1,19 @@
+[
+  {
+    "asset_id": "GH-07-B",
+    "generation_id": "GH-07-B-generation-001",
+    "prompt_path": "brand/prompts/root/GH-07-B/generation-001.txt",
+    "prompt_sha256": "05c61a5391be37d5aed0bccb8641b517517f87b098311a82a926e14ea1018ead",
+    "source_path": "brand/sources/generated/GH-07-B/generation-001.png",
+    "source_sha256": "cec7b917be0659c3f078354d6149f7afd9a19ce6fb740a4ac7fbfeeea5358748",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:55:46.611102+00:00"
+  }
+]

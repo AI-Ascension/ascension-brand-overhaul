@@ -1,0 +1,25 @@
+[
+  {
+    "asset_id": "DOC-02",
+    "generation_id": "DOC-02-generation-002",
+    "prompt_path": "brand/prompts/root/DOC-02/generation-002.txt",
+    "prompt_sha256": "13b2ccbacfae17e1ea845fea02d76cdd8e4e507f7dae7bf6346d174136ab98b7",
+    "source_path": "brand/sources/generated/DOC-02/generation-002.png",
+    "source_sha256": "40868a5332821dea008ace6b85e58bc92d6f8c4a865986ea57eeb37dabfcf36e",
+    "dimensions": [
+      1586,
+      992
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [
+      {
+        "path": "brand/sources/generated/DOC-02/generation-001.png",
+        "sha256": "b6472868b529f55a4805637aed21710c0fc83f527da8770b91d04d9422b35693"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T01:09:14.907168+00:00"
+  }
+]

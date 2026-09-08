@@ -1,0 +1,74 @@
+{
+  "schema_version": "ai-ascension.root-native-capability-recheck.v1",
+  "observed_at": "2026-09-08T02:21:16Z",
+  "scope": "Bounded current callable-tool and native-descendant capability check for the batch013 independent receipt-review request. This receipt records capability availability only; it is not model identity, provider, backend, authorship, rights, or export attestation.",
+  "task": "/root/broadcast_records",
+  "requirements_read": [
+    "START_HERE.md:10-14",
+    "AGENTS.md:6-10",
+    "orchestration/runtime-intent.json",
+    "package-info.json"
+  ],
+  "requested_chain": {
+    "coordinator": {
+      "requested_model": "gpt-5.6-luna",
+      "requested_effort": "max",
+      "requested_fork_turns": "none",
+      "intended_depth": 2
+    },
+    "leaf": {
+      "requested_model": "gpt-5.6-luna",
+      "requested_effort": "max",
+      "requested_fork_turns": "none",
+      "intended_depth": 3
+    }
+  },
+  "runtime_settings": {
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "accepted_model": "unknown",
+    "accepted_effort": "unknown",
+    "observed_model": "unknown",
+    "observed_effort": "unknown"
+  },
+  "tool_surface_probe": {
+    "method": "Enumerated the current functions.exec ALL_TOOLS metadata in this session.",
+    "all_tools_entry_count": 146,
+    "matching_collaboration_entries": [],
+    "missing_exact_tool_names": [
+      "collaboration.spawn_agent",
+      "collaboration.send_message",
+      "collaboration.list_agents",
+      "followup_task",
+      "wait_agent"
+    ],
+    "collaboration_namespace_callable": false,
+    "native_child_spawn_attempted": false,
+    "shell_or_client_substitute_attempted": false
+  },
+  "delegation_result": {
+    "coordinator_created": false,
+    "leaf_created": false,
+    "actual_parent_child_ids": [],
+    "required_depth_three_chain_established": false,
+    "new_descendants_used": 0,
+    "reason": "No callable collaboration.spawn_agent entry or collaboration namespace is exposed in the current tool surface; the requested coordinator and its depth-3 leaf could not be created.",
+    "backend_attestation": "none"
+  },
+  "independent_receipt_review": {
+    "status": "not_performed_native_delegate_unavailable",
+    "target_result": ".execution-private/broadcast-records-result-013.json",
+    "target_paths": [
+      "brand/assets/marketing/sponsor-disclosure.png",
+      "brand/assets/github/sts2-core-banner-light.png",
+      "brand/assets/github/sts2-core-banner-dark.png"
+    ],
+    "review_receipts": [
+      "brand/provenance/root-export-recipe.json",
+      "brand/provenance/root-export-receipts.json"
+    ],
+    "reason": "A local shell/client check would not establish the required independent delegated reviewer. No child review is claimed or simulated."
+  },
+  "prior_capability_reference": "execution/reviews/root-native-capability-recheck.json",
+  "conclusion": "The current session still lacks a callable native collaboration spawn surface. The requested Luna/max coordinator-to-depth-3-leaf receipt review remains unavailable. Requested, accepted, and observed settings are kept separate; no parent-child identifiers or backend claims were invented."
+}

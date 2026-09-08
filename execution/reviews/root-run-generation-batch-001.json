@@ -1,0 +1,20 @@
+[
+  {
+    "asset_id": "RUN-01",
+    "generation_id": "RUN-01-generation-002",
+    "prompt_path": "brand/prompts/root/RUN-01/generation-002.txt",
+    "prompt_sha256": "1f2e82b25460a3f93fd776debdefe1c400079ebbdf98a4fa78bf6c758da1900b",
+    "source_path": "brand/sources/generated/RUN-01/generation-002.png",
+    "source_sha256": "a99d9be17c87fe0a4d63fd60aa26f11c5f99e15f335360660221182666643050",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:58:57.787606+00:00"
+  }
+]

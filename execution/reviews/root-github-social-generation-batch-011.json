@@ -1,0 +1,28 @@
+[
+  {
+    "asset_id": "GH-11-S",
+    "generation_id": "GH-11-S-generation-001",
+    "prompt_path": "brand/prompts/root/GH-11-S/generation-001.txt",
+    "prompt_sha256": "dd97ca2efb579881e6ce06f3ac0692e48a102929e4e879080af4f3ecba758125",
+    "source_path": "brand/sources/generated/GH-11-S/generation-001.png",
+    "source_sha256": "31745ed708cfabd298b70f62fa6095b7eb1fe79fd9ecfed3e1e57d4e64b50f09",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [
+      {
+        "path": "brand/assets/identity/avatar-1024.png",
+        "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+        "purpose": "approved_generated_identity_reference",
+        "content_class": "generated_art_not_product_evidence",
+        "parent_asset_id": "ID-05"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:22:21.470960+00:00"
+  }
+]

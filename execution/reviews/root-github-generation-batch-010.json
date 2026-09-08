@@ -1,0 +1,19 @@
+[
+  {
+    "asset_id": "GH-10-B",
+    "generation_id": "GH-10-B-generation-001",
+    "prompt_path": "brand/prompts/root/GH-10-B/generation-001.txt",
+    "prompt_sha256": "6651a399863fe5d9ed89cc0c336c4398ed271d3626ff53a5361189ae0403a1cc",
+    "source_path": "brand/sources/generated/GH-10-B/generation-001.png",
+    "source_sha256": "3c66d1f75be878c60efdc63c5e3895a4b6fa66012e69faa23d219879bd64b804",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:58:27.830867+00:00"
+  }
+]

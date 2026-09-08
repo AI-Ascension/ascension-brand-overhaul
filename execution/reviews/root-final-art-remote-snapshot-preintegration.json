@@ -1,0 +1,317 @@
+{
+  "observed_at": "2026-09-08T02:53:49.834689+00:00",
+  "scope": "Read-only preintegration snapshot. Current root-art changes have not been committed or pushed. Private candidate artwork is not in public consumer PRs. No merge or deployment.",
+  "results": [
+    {
+      "repository": "AI-Ascension/.github",
+      "baseRefName": "main",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "d84523795a64556b82d29f6da1dab62eb9b8b4c8",
+      "isDraft": true,
+      "mergeable": "MERGEABLE",
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "url": "https://github.com/AI-Ascension/.github/pull/10"
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "baseRefName": "main",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "b50f7d725c8d6abb6306963d059fbb7fa067402c",
+      "isDraft": true,
+      "mergeable": "CONFLICTING",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:23:48Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/AI-Ascension.github.io/actions/runs/34147405522/job/101822299441",
+          "name": "static-and-proof",
+          "startedAt": "2026-09-07T17:23:33Z",
+          "status": "COMPLETED",
+          "workflowName": "Validate site source"
+        }
+      ],
+      "url": "https://github.com/AI-Ascension/AI-Ascension.github.io/pull/12"
+    },
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "baseRefName": "main",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "d2105005ebdb6a5f7dd5e266e80b139e294cf89e",
+      "isDraft": true,
+      "mergeable": "UNKNOWN",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:24:57Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-harness/actions/runs/34147422237/job/101822349024",
+          "name": "Rust quality gates",
+          "startedAt": "2026-09-07T17:23:47Z",
+          "status": "COMPLETED",
+          "workflowName": "Continuous integration"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:24:08Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-harness/actions/runs/34147422208/job/101822348812",
+          "name": "policy",
+          "startedAt": "2026-09-07T17:23:49Z",
+          "status": "COMPLETED",
+          "workflowName": "Repository policy"
+        }
+      ],
+      "url": "https://github.com/AI-Ascension/sts2-harness/pull/34"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-core",
+      "baseRefName": "main",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "9a27a80c32dcadd8030cf42c861e9e5da4daed1c",
+      "isDraft": true,
+      "mergeable": "MERGEABLE",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:24:22Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-game-core/actions/runs/34147434219/job/101822384921",
+          "name": "Rust quality gates",
+          "startedAt": "2026-09-07T17:23:59Z",
+          "status": "COMPLETED",
+          "workflowName": "Continuous integration"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:24:14Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-game-core/actions/runs/34147434243/job/101822385015",
+          "name": "policy",
+          "startedAt": "2026-09-07T17:23:58Z",
+          "status": "COMPLETED",
+          "workflowName": "Repository policy"
+        }
+      ],
+      "url": "https://github.com/AI-Ascension/sts2-game-core/pull/9"
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "baseRefName": "main",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "7cc0af3c64da639b191060251e667782d535bb0c",
+      "isDraft": true,
+      "mergeable": "MERGEABLE",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:24:55Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-game-mod/actions/runs/34147447682/job/101822424350",
+          "name": "Rust foundation gates",
+          "startedAt": "2026-09-07T17:24:10Z",
+          "status": "COMPLETED",
+          "workflowName": "Continuous integration"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:24:36Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-game-mod/actions/runs/34147447684/job/101822424290",
+          "name": "policy",
+          "startedAt": "2026-09-07T17:24:09Z",
+          "status": "COMPLETED",
+          "workflowName": "Repository policy"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:25:30Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-game-mod/actions/runs/34147447682/job/101822424520",
+          "name": "Managed source-only boundary",
+          "startedAt": "2026-09-07T17:24:10Z",
+          "status": "COMPLETED",
+          "workflowName": "Continuous integration"
+        }
+      ],
+      "url": "https://github.com/AI-Ascension/sts2-game-mod/pull/55"
+    },
+    {
+      "repository": "AI-Ascension/sts2-gateway",
+      "baseRefName": "main",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "22d780c12c60d8a2e5e1310f57deeea172decbd6",
+      "isDraft": true,
+      "mergeable": "UNKNOWN",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:25:09Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-gateway/actions/runs/34147458857/job/101822456167",
+          "name": "Rust quality gates",
+          "startedAt": "2026-09-07T17:24:19Z",
+          "status": "COMPLETED",
+          "workflowName": "Continuous integration"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:24:34Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-gateway/actions/runs/34147458872/job/101822456042",
+          "name": "Repository policy",
+          "startedAt": "2026-09-07T17:24:18Z",
+          "status": "COMPLETED",
+          "workflowName": "Repository policy"
+        }
+      ],
+      "url": "https://github.com/AI-Ascension/sts2-gateway/pull/21"
+    },
+    {
+      "repository": "AI-Ascension/sts2-mcp-server",
+      "baseRefName": "main",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "6ad97aeead88cdb2097675ddff076bc4bb97529d",
+      "isDraft": true,
+      "mergeable": "UNKNOWN",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:25:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-mcp-server/actions/runs/34147469961/job/101822490582",
+          "name": "Foundation quality gates",
+          "startedAt": "2026-09-07T17:24:28Z",
+          "status": "COMPLETED",
+          "workflowName": "Continuous integration"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:24:40Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-mcp-server/actions/runs/34147469921/job/101822490215",
+          "name": "policy",
+          "startedAt": "2026-09-07T17:24:27Z",
+          "status": "COMPLETED",
+          "workflowName": "Repository policy"
+        }
+      ],
+      "url": "https://github.com/AI-Ascension/sts2-mcp-server/pull/26"
+    },
+    {
+      "repository": "AI-Ascension/sts2-protocol",
+      "baseRefName": "main",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "0c39c5a53b005d94df59f14f0962255d0962203a",
+      "isDraft": true,
+      "mergeable": "UNKNOWN",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:25:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-protocol/actions/runs/34147479675/job/101822520140",
+          "name": "Rust quality gates",
+          "startedAt": "2026-09-07T17:24:35Z",
+          "status": "COMPLETED",
+          "workflowName": "Continuous integration"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:24:52Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/sts2-protocol/actions/runs/34147479717/job/101822520054",
+          "name": "policy",
+          "startedAt": "2026-09-07T17:24:35Z",
+          "status": "COMPLETED",
+          "workflowName": "Repository policy"
+        }
+      ],
+      "url": "https://github.com/AI-Ascension/sts2-protocol/pull/20"
+    },
+    {
+      "repository": "AI-Ascension/ascension-watchdog",
+      "baseRefName": "bootstrap",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "9e240e916726b367dbae2cfd0eea64c3afeb35fa",
+      "isDraft": true,
+      "mergeable": "MERGEABLE",
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "url": "https://github.com/AI-Ascension/ascension-watchdog/pull/3"
+    },
+    {
+      "repository": "AI-Ascension/ai-agent-observability",
+      "baseRefName": "main",
+      "headRefName": "work/w04-presentation",
+      "headRefOid": "f872902ed987f5946bf843824063d10884a1bd29",
+      "isDraft": true,
+      "mergeable": "UNKNOWN",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T17:25:17Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/ai-agent-observability/actions/runs/34147496891/job/101822572026",
+          "name": "Validate deployment contract",
+          "startedAt": "2026-09-07T17:24:50Z",
+          "status": "COMPLETED",
+          "workflowName": "CI"
+        }
+      ],
+      "url": "https://github.com/AI-Ascension/ai-agent-observability/pull/13"
+    },
+    {
+      "repository": "AI-Ascension/aiascension.tech",
+      "baseRefName": "codex/wire-mailing-list-email",
+      "headRefName": "work/brand-overhaul",
+      "headRefOid": "56e532b21922f39480cd15dcbb465676770408f5",
+      "isDraft": true,
+      "mergeable": "MERGEABLE",
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "url": "https://github.com/AI-Ascension/aiascension.tech/pull/1"
+    },
+    {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "baseRefName": "main",
+      "headRefName": "work/brand-overhaul",
+      "headRefOid": "4ef7063536efb61903316270c661bf82dc45c4c5",
+      "isDraft": true,
+      "mergeable": "MERGEABLE",
+      "state": "OPEN",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T22:04:49Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/ascension-brand-overhaul/actions/runs/34165374093/job/101875254051",
+          "name": "source-and-contracts",
+          "startedAt": "2026-09-07T22:04:26Z",
+          "status": "COMPLETED",
+          "workflowName": "Validate brand sources and contracts"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-07T22:04:45Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/ascension-brand-overhaul/actions/runs/34165370921/job/101875246354",
+          "name": "source-and-contracts",
+          "startedAt": "2026-09-07T22:04:23Z",
+          "status": "COMPLETED",
+          "workflowName": "Validate brand sources and contracts"
+        }
+      ],
+      "url": "https://github.com/AI-Ascension/ascension-brand-overhaul/pull/1"
+    }
+  ]
+}

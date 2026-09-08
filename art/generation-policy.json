@@ -85,6 +85,7 @@
     "metadata_strip",
     "sprite_slice",
     "assemble_unchanged_frames",
+    "fade_generated_frames",
     "alpha_preserving_export"
   ],
   "forbidden_art_origins": [

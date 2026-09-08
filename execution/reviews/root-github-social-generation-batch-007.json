@@ -1,0 +1,28 @@
+[
+  {
+    "asset_id": "GH-07-S",
+    "generation_id": "GH-07-S-generation-001",
+    "prompt_path": "brand/prompts/root/GH-07-S/generation-001.txt",
+    "prompt_sha256": "8a4fc7bd4910f791fbb12a051c0479dd3f88425f4498af9f5bc33b842554f401",
+    "source_path": "brand/sources/generated/GH-07-S/generation-001.png",
+    "source_sha256": "51bcd92502f6ceb3899d57b5acd842286b489de59ef87b9bf5477711a49cc54c",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [
+      {
+        "path": "brand/assets/identity/avatar-1024.png",
+        "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+        "purpose": "approved_generated_identity_reference",
+        "content_class": "generated_art_not_product_evidence",
+        "parent_asset_id": "ID-05"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:18:30.474265+00:00"
+  }
+]

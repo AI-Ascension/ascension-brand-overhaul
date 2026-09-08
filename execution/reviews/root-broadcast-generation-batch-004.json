@@ -1,0 +1,36 @@
+[
+  {
+    "asset_id": "CAST-05",
+    "generation_id": "CAST-05-generation-001",
+    "prompt_path": "brand/prompts/root/CAST-05/generation-001.txt",
+    "prompt_sha256": "77e055cf6d6620e2996c6592ef87a9b7b820fb58bcbfda4118512a4e43374313",
+    "source_path": "brand/sources/generated/CAST-05/generation-001.png",
+    "source_sha256": "494f6fff1b787d93f31d898d7ab0e300612d8633488fc4d842c5cc68b961a558",
+    "dimensions": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:41:23.827111+00:00"
+  },
+  {
+    "asset_id": "CAST-05",
+    "generation_id": "CAST-05-generation-002",
+    "prompt_path": "brand/prompts/root/CAST-05/generation-002.txt",
+    "prompt_sha256": "f569d73a70a8af2123fccbc21b6d71c02a57e1b9ecd0d4206ca65ae24f67559d",
+    "source_path": "brand/sources/generated/CAST-05/generation-002.png",
+    "source_sha256": "2afd0425f880f67015cee04219daf8bf40de8600eca9832c4b2d4eab7e8554c4",
+    "dimensions": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:41:23.880594+00:00"
+  }
+]

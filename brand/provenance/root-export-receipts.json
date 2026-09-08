@@ -497,22 +497,22 @@
     },
     {
       "asset_id": "BG-04",
-      "source_path": "brand/sources/generated/BG-04/generation-001.png",
+      "source_path": "brand/sources/generated/BG-04/generation-003.png",
       "crop_box": [
         0,
         0,
-        887,
-        887
+        1254,
+        1254
       ],
       "size": [
         800,
         800
       ],
       "output_path": "brand/assets/illustration/route-pattern-light.png",
-      "review_state": "ready_for_mechanical_export",
-      "source_sha256": "8f9fd2025a5897559a89ce83cc16ab6ea1a3779fdee0e54c4fcde82efcec072e",
-      "output_sha256": "028451e0b6b44c874b6ac670a03b37c743ed376e7f072966a087b0e0954d4b49",
-      "output_bytes": 392768,
+      "review_state": "pending_independent_review",
+      "source_sha256": "cc9ed221dc45860d95c834d30149b599fa096b251033b365a8c16d207f888edd",
+      "output_sha256": "a53db565da2872984b547f8c0bd6b3a721774aa0de9470a7692dbd18c0c5497d",
+      "output_bytes": 22767,
       "operations": [
         "crop",
         "resize",
@@ -523,22 +523,22 @@
     },
     {
       "asset_id": "BG-04",
-      "source_path": "brand/sources/generated/BG-04/generation-001.png",
+      "source_path": "brand/sources/generated/BG-04/generation-007.png",
       "crop_box": [
-        887,
         0,
-        1774,
-        887
+        0,
+        1254,
+        1254
       ],
       "size": [
         800,
         800
       ],
       "output_path": "brand/assets/illustration/route-pattern-dark.png",
-      "review_state": "ready_for_mechanical_export",
-      "source_sha256": "8f9fd2025a5897559a89ce83cc16ab6ea1a3779fdee0e54c4fcde82efcec072e",
-      "output_sha256": "f8703b4c727ee298087b150d170985d9580f0f4704483a12777da2192e086ff1",
-      "output_bytes": 395315,
+      "review_state": "pending_independent_review",
+      "source_sha256": "befa470557a3abb70fd1dd3bf5745cdba7076f33b9437ae3a119fddaf63c8039",
+      "output_sha256": "91b5b230f3658ad034b94e0e60272a9b3308b5501714603d19991b5945f2fbd9",
+      "output_bytes": 346674,
       "operations": [
         "crop",
         "resize",
@@ -1043,6 +1043,1878 @@
       "source_sha256": "b014c353cde347d51d52486473ae2d32f9e60bdaee932d0186d14db75aef0c6d",
       "output_sha256": "b66fe8206d3dd85cca32229df6a2b81b61467b1df63c485f329ccd991c27b224",
       "output_bytes": 999250,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-01",
+      "source_path": "brand/sources/generated/CAST-01/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/single-agent-master.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "48073d0090c2a19b6bd16c2754b6f4c93c87b89b8d00615e54cffe3f9b01fa60",
+      "output_sha256": "fd01d6e933c9ac70cc57a8864a088cee37523bf3396d3a7d81f0527bf17c3525",
+      "output_bytes": 536102,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-01",
+      "source_path": "brand/sources/generated/CAST-01/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/single-agent.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "48073d0090c2a19b6bd16c2754b6f4c93c87b89b8d00615e54cffe3f9b01fa60",
+      "output_sha256": "fd01d6e933c9ac70cc57a8864a088cee37523bf3396d3a7d81f0527bf17c3525",
+      "output_bytes": 536102,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-02",
+      "source_path": "brand/sources/generated/CAST-02/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/comparison.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "d53c75f3f92053ce1e2bfe22463994023f23a25faac0a4c8e446f87e368a9883",
+      "output_sha256": "12c34b01f2eed2b74de8fa912f2e1ca77fd6f6ff3db92af76815e3f9dfee448d",
+      "output_bytes": 1577047,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-03",
+      "source_path": "brand/sources/generated/CAST-03/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        941,
+        1672
+      ],
+      "size": [
+        1080,
+        1920
+      ],
+      "output_path": "brand/assets/broadcast/vertical.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "97001e70df9bd682e479cd6bd5ab8516f34627c03942569b24c9c8bfe1ae0b68",
+      "output_sha256": "1113cb2f0acaf792cb0c906adaa9c710c71a76f4f8fb71e42e85d23f481eca67",
+      "output_bytes": 1624885,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-04",
+      "source_path": "brand/sources/generated/CAST-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/starting.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "54b3608cb8f18a2900408c6a167cb86d447988fa186801c92489a27156b115f5",
+      "output_sha256": "ccd3249241fd6eeb70eab7e4513e30d23218bb56c5e3d95242349839a990e51d",
+      "output_bytes": 1936207,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-04",
+      "source_path": "brand/sources/generated/CAST-04/generation-004.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/intermission.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "1953f62b204d5271ce925b99c633b94550b4df0da17e75fe6f45ebc7d71bb821",
+      "output_sha256": "6131f348bef85a10d3ca01c8c7771884fa040a5ed41aa464385b3e26159b0627",
+      "output_bytes": 1888178,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-04",
+      "source_path": "brand/sources/generated/CAST-04/generation-005.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/ended.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "cb3803bfedc118dff8b9eb76e31e4820390f9de93f3f3bdb76fa33a6a581558a",
+      "output_sha256": "3662012f72595f83b1a1f9e79e880f61da2e3a8fb92a53f54db83ec9084bc50c",
+      "output_bytes": 2025154,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-05",
+      "source_path": "brand/sources/generated/CAST-05/generation-003.png",
+      "crop_box": [
+        0,
+        273,
+        1983,
+        521
+      ],
+      "size": [
+        1920,
+        240
+      ],
+      "output_path": "brand/assets/broadcast/lower-third.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "a8b85c64ee68215ffc08868717cd6ce454eea331b0f0df493a44c6f5b5b69936",
+      "output_sha256": "08c958d5150d346c1c0f0dd04cdca751782d8ec1faa7c4b4622ed2fac735ffe4",
+      "output_bytes": 265275,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-05",
+      "source_path": "brand/sources/generated/CAST-05/generation-004.png",
+      "crop_box": [
+        0,
+        480,
+        1374,
+        595
+      ],
+      "size": [
+        1920,
+        160
+      ],
+      "output_path": "brand/assets/broadcast/disclosure.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "1e89c4c22c6c1ff1cfa7b0f14281dfd74477f33c01e833baa3a62b133299b17a",
+      "output_sha256": "1c5c086b194de6ea31305b2537bc80c10592c40d2901a591f366f877951ca185",
+      "output_bytes": 168183,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-06",
+      "source_path": "brand/sources/generated/CAST-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/title-transition-still.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
+      "output_sha256": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
+      "output_bytes": 2101919,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "CAST-07",
+      "source_path": "brand/sources/generated/CAST-07/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1586,
+        992
+      ],
+      "size": [
+        1600,
+        1000
+      ],
+      "output_path": "brand/assets/broadcast/scene-map.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "c8ff0614acccd038616c3366d4aa00b0b0fb5b0248c49b6c277cc08521c01aad",
+      "output_sha256": "8800ac444036d13e1adeb0ac267e6e47a4119c0b77f8622e70b490e463b2c9df",
+      "output_bytes": 1771781,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-01",
+      "source_path": "brand/sources/generated/MKT-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        2560,
+        1440
+      ],
+      "output_path": "brand/assets/marketing/channel-cover.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "09a3d51821fae5e547d28b38d5dd76ca732b16339d4a3957961134d3d56851f2",
+      "output_sha256": "023491553c11d7a0818078cea54792624759d8304ca09615202f6655f76e50ad",
+      "output_bytes": 3196417,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-02",
+      "source_path": "brand/sources/generated/MKT-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "size": [
+        1500,
+        500
+      ],
+      "output_path": "brand/assets/marketing/social-header.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "3a655b4159aa12366230cb2d62717ae1cc4721d1a909733c5f2642e3b23bea27",
+      "output_sha256": "9e1b6fe616ac131f82d6575dc9e0484c90cb0b3737d6e1ccefbf3161b4b9eb59",
+      "output_bytes": 784856,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-08",
+      "source_path": "brand/sources/generated/MKT-08/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "size": [
+        1200,
+        400
+      ],
+      "output_path": "brand/assets/marketing/sponsor-disclosure.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "0db5aab96b0f1fb3b280d4844a6bbcad32f219ed29064b9827e430d45eb5c172",
+      "output_sha256": "2e0fc88e4537c06e1ced719db635b3ba59a3c545020760220c712ba67178d593",
+      "output_bytes": 323213,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-09",
+      "source_path": "brand/sources/generated/MKT-09/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/press/cover.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "25d7f052d3bab7a5c95e42be5af7ae78e9968f5b4b70899af952e4814ef0ee8f",
+      "output_sha256": "e7ad9b62ae162030c1209ddc1b9e92e026b9a3c5a56485b4065eb3ea2360bece",
+      "output_bytes": 1299065,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-01-B",
+      "source_path": "brand/sources/generated/GH-01-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "563f20121f9e152e3010fd83cc3a79050cfbba41980f6b44fb7769e6b393ec46",
+      "output_sha256": "c2f24f7bf4eae6b2b50736088b2df83257f1a5666e9b5d115971f008fc78b65d",
+      "output_bytes": 476116,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-01-B",
+      "source_path": "brand/sources/generated/GH-01-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "563f20121f9e152e3010fd83cc3a79050cfbba41980f6b44fb7769e6b393ec46",
+      "output_sha256": "f5eb3f64caa8df7c2cc8b2a4b5acbd11fccffdc585c4e26165eb8d11d1b407c3",
+      "output_bytes": 494354,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-02-B",
+      "source_path": "brand/sources/generated/GH-02-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-mcp-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "27131ee8f51d7ddccd93c6fba06c222c07814cabf8e62034802cad3356758837",
+      "output_sha256": "19980d6bb29f50d4fb3dd3710204eed912abb799eea23ea9294b9e2413f36fd1",
+      "output_bytes": 499616,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-02-B",
+      "source_path": "brand/sources/generated/GH-02-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-mcp-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "27131ee8f51d7ddccd93c6fba06c222c07814cabf8e62034802cad3356758837",
+      "output_sha256": "0f3042eb591f85693e5a894412fa01c65865864a8c7df212d562a2d6f8f321ae",
+      "output_bytes": 500508,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-03-B",
+      "source_path": "brand/sources/generated/GH-03-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-mod-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "7069e316c754b83d7bf334cde14d51beefa70dda0fe3b7a57327ce2508d04a38",
+      "output_sha256": "bd096c78cf5d13d001d86498619d90fd2e06d3b05e92549150866b9a9027a853",
+      "output_bytes": 478997,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-03-B",
+      "source_path": "brand/sources/generated/GH-03-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-mod-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "7069e316c754b83d7bf334cde14d51beefa70dda0fe3b7a57327ce2508d04a38",
+      "output_sha256": "80a48e2cb815bed1ad30a66885bc1d880c1933fa45317db0f6656c6e32265a4c",
+      "output_bytes": 502824,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-04-B",
+      "source_path": "brand/sources/generated/GH-04-B/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-core-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "30464a2745bce742136dd1dacb7820c6bbbf973f8c389bdf6af0cd89a0192b0d",
+      "output_sha256": "291ffca0cb7cd52f633996c2dba36ee666701bbd84b9ff452c6db2b82d376711",
+      "output_bytes": 532711,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-04-B",
+      "source_path": "brand/sources/generated/GH-04-B/generation-002.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-core-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "30464a2745bce742136dd1dacb7820c6bbbf973f8c389bdf6af0cd89a0192b0d",
+      "output_sha256": "b00139bf53bdc944080a4ccb411cf93d7324eefc4d04735e085d93cca4f5cd7b",
+      "output_bytes": 504923,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-05-B",
+      "source_path": "brand/sources/generated/GH-05-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-gateway-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "13a8fe6fea68488641d19433b6fd57418f353c32f9577acc6caa1965e4a23f59",
+      "output_sha256": "271495529cdc677514cb1ed34a07febf0552e1d01f596128982a9671ca798d3e",
+      "output_bytes": 472370,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-05-B",
+      "source_path": "brand/sources/generated/GH-05-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-gateway-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "13a8fe6fea68488641d19433b6fd57418f353c32f9577acc6caa1965e4a23f59",
+      "output_sha256": "ef858eff4df99ec3556dc6fedbded21411e8997055e0d6db369dc48aa90d5bc4",
+      "output_bytes": 492639,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-06-B",
+      "source_path": "brand/sources/generated/GH-06-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-protocol-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "b1f4a768036f8077541845c3330bd74aaf7a6d26a9c6e54fcbb692896c46639b",
+      "output_sha256": "24515459ec22bdc35441f9fabe22c7787fd600943cc3b2b1f49d89defa70caea",
+      "output_bytes": 470739,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-06-B",
+      "source_path": "brand/sources/generated/GH-06-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-protocol-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "b1f4a768036f8077541845c3330bd74aaf7a6d26a9c6e54fcbb692896c46639b",
+      "output_sha256": "a3c06d6c8c81419a819b40b3aa9ceff3fbfd5f2be6286197726c2da1518b6b9e",
+      "output_bytes": 487213,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-07-B",
+      "source_path": "brand/sources/generated/GH-07-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-map-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "cec7b917be0659c3f078354d6149f7afd9a19ce6fb740a4ac7fbfeeea5358748",
+      "output_sha256": "236dee4961306c1022f7656bfe85859f367e65cdc8da4e575bbac5ec1516560b",
+      "output_bytes": 470577,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-07-B",
+      "source_path": "brand/sources/generated/GH-07-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-map-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "cec7b917be0659c3f078354d6149f7afd9a19ce6fb740a4ac7fbfeeea5358748",
+      "output_sha256": "5be0a00277f864f08fa0d5c0fb30bf7fc48daf79999772d04efcb19e4bac845f",
+      "output_bytes": 482060,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-08-B",
+      "source_path": "brand/sources/generated/GH-08-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-watchdog-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "6cd1ff58a4d74413841dcf19d3d57c61a0a19ffb2f9ebd0e0c3d7d191906f661",
+      "output_sha256": "929d2b281551ec3fb3a312869fde5f5400a896125c8b373cfb5cee93b021c8da",
+      "output_bytes": 524066,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-08-B",
+      "source_path": "brand/sources/generated/GH-08-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-watchdog-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "6cd1ff58a4d74413841dcf19d3d57c61a0a19ffb2f9ebd0e0c3d7d191906f661",
+      "output_sha256": "c6938080ee7f35dbefe105795416ba0d288c3ffa6aa11daf32a6cc2a87e2b94b",
+      "output_bytes": 535612,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-09-B",
+      "source_path": "brand/sources/generated/GH-09-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-observability-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "793b7f31a029cdbfa563a4f0e10d3ed05b464a9abf19a83c36ca970dca632978",
+      "output_sha256": "8558e3faa70faf9f30e404f234362bfc31578b3027e832c889f891255ef06dd0",
+      "output_bytes": 473770,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-09-B",
+      "source_path": "brand/sources/generated/GH-09-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-observability-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "793b7f31a029cdbfa563a4f0e10d3ed05b464a9abf19a83c36ca970dca632978",
+      "output_sha256": "ee711d8be1e2516046f5de826018c84f43245381988d415aa770fb9125d978fe",
+      "output_bytes": 487184,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-10-B",
+      "source_path": "brand/sources/generated/GH-10-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/website-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "3c66d1f75be878c60efdc63c5e3895a4b6fa66012e69faa23d219879bd64b804",
+      "output_sha256": "7e7812b280c1a585fccdf6e12ebf7669bf3f87322e2546b9023962510685d3ef",
+      "output_bytes": 491555,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-10-B",
+      "source_path": "brand/sources/generated/GH-10-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/website-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "3c66d1f75be878c60efdc63c5e3895a4b6fa66012e69faa23d219879bd64b804",
+      "output_sha256": "85bae86b7ff211815d72915e44cac08f2697449a8f2ddb0fa7f65e038f640346",
+      "output_bytes": 507160,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-11-B",
+      "source_path": "brand/sources/generated/GH-11-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "26c6bbd74ed963a75d9567bfd61da5eaf1998fc272b7563a29c17ada0fab54e2",
+      "output_sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+      "output_bytes": 484449,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-11-B",
+      "source_path": "brand/sources/generated/GH-11-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "26c6bbd74ed963a75d9567bfd61da5eaf1998fc272b7563a29c17ada0fab54e2",
+      "output_sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+      "output_bytes": 493866,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-12-B",
+      "source_path": "brand/sources/generated/GH-12-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/dot-github-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "67b9f49f0348fbf5ce07f122555397b3b1c520b6587f0121b4b13e038cd3f951",
+      "output_sha256": "0fefcf2a46bc3e717c48d7ab2b3396f0add1c6e3733c9d5b51189d7af54a06da",
+      "output_bytes": 478204,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-12-B",
+      "source_path": "brand/sources/generated/GH-12-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/dot-github-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "67b9f49f0348fbf5ce07f122555397b3b1c520b6587f0121b4b13e038cd3f951",
+      "output_sha256": "a8a93a5fa92f75874a698a2267ebc6afdc9e22817e9954cc0c0bc5c5351890ba",
+      "output_bytes": 507080,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-13-B",
+      "source_path": "brand/sources/generated/GH-13-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-brand-overhaul-banner-light.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "05fd26518e3a2b60a9c42834212759073c602bb23b0ae704ff9776a77950db8d",
+      "output_sha256": "1db5dc0abca2ddabde9cc53a2f8470dafa1f9a05302c3e56792e0007ed67f44a",
+      "output_bytes": 484497,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-13-B",
+      "source_path": "brand/sources/generated/GH-13-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-brand-overhaul-banner-dark.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "05fd26518e3a2b60a9c42834212759073c602bb23b0ae704ff9776a77950db8d",
+      "output_sha256": "498b508094cad76579868c2f11ce4252720868a199df073232d48724bd15a653",
+      "output_bytes": 498159,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-01-S",
+      "source_path": "brand/sources/generated/GH-01-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ascension-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "ff0402ed51100dd01685ef943829e27d8f8784b9ff7c07e54975463661960c2d",
+      "output_sha256": "4f3c2dbca0788ea2a9e2f74b4387383f59fcbfc252e35c4db7115c90d7fc2998",
+      "output_bytes": 681400,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-02-S",
+      "source_path": "brand/sources/generated/GH-02-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-mcp-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "b1f199aa55da55caefe4125a201cc01744535ff8ca316ec3e7b3113bf7fe9500",
+      "output_sha256": "00dac35788b25a4210958f6216924cd9c084a69f666f7f0e2469d9c041ded479",
+      "output_bytes": 529971,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-03-S",
+      "source_path": "brand/sources/generated/GH-03-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-mod-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "cd505c9fa109205a70868f5893c8bae85b9b782c094821c4c5e2548db9d289ba",
+      "output_sha256": "df89ed6c0c664624bd5bff965faf2ca5d779348de614d10d8aea1dc469506b4f",
+      "output_bytes": 545817,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-04-S",
+      "source_path": "brand/sources/generated/GH-04-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-core-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "4005947aaa7f549991c3d93591486eeead620f7c8600a9193fd3d055fc04d823",
+      "output_sha256": "8da8e7771fd7c9b4daf1dd9404bcdc6280e172a9e7b9396fd10300849aebca30",
+      "output_bytes": 516176,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-05-S",
+      "source_path": "brand/sources/generated/GH-05-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-gateway-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "3a0474ec35ae8573bd9f8c02129ae9c919c8bf219e739c37d379be667c7b3824",
+      "output_sha256": "882bd6cc0ac0054e5741aa360db8afb9edceee62d1c4b481fb5bf94c56d6a042",
+      "output_bytes": 517642,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-06-S",
+      "source_path": "brand/sources/generated/GH-06-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-protocol-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "28b4de748ea4a66019732ae91fcf1d38db22909da96afee1b937fd1c25148608",
+      "output_sha256": "166fe7a07add61ce3aca17d98df6a154def9d524a7679d027c3bcee84e03d85d",
+      "output_bytes": 518785,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-07-S",
+      "source_path": "brand/sources/generated/GH-07-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-map-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "6ddd28b9700dcf3eca9bc4f41be8ea596a9b41080e824b8b6ce5fc05c5848f23",
+      "output_sha256": "91a284c776755c0bf60e6ce1d98d7969530c445d46a9da5dfb0690c2e4f114ea",
+      "output_bytes": 528359,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-08-S",
+      "source_path": "brand/sources/generated/GH-08-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ascension-watchdog-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "1fdb9a892c3fca77569fc2db3a45749310c2921a18a29698f14f6cc9984f0e8b",
+      "output_sha256": "ec27376fff226765c17e8a01649146dcd8a9a67910476893524bc0cdb1e9330e",
+      "output_bytes": 519773,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-09-S",
+      "source_path": "brand/sources/generated/GH-09-S/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ascension-observability-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "dc2fe0260b78021e1b15d90e5a52e8b63aafdf119fdc52b652963e7defe0b821",
+      "output_sha256": "8aae147c380341b43c8d19cefd77d9360cd3daa30f2930cbee43ff64f2a9d81f",
+      "output_bytes": 572211,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-10-S",
+      "source_path": "brand/sources/generated/GH-10-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/website-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "f78fe20a776514843f74e98186f82184f87c6c9c3188a61fe05ab5955673d255",
+      "output_sha256": "c5357c11202ea84b36cb8199164446d1cef9f80ff8e466454b05c499909aa708",
+      "output_bytes": 527199,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-11-S",
+      "source_path": "brand/sources/generated/GH-11-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "f2aa0badedbb21b8c7a76939a9c0c9f313630e32da2fdf91ca7f5b35c6379fc8",
+      "output_sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+      "output_bytes": 634582,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-12-S",
+      "source_path": "brand/sources/generated/GH-12-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/dot-github-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "02f67c6c61b512af430234ea1552fede23635a4b2cbb8cdf0752390b4b03d6a1",
+      "output_sha256": "0da06e15e3b0303e8eb3480a20890be2adb18dd00802afb0efccf3ba596f6687",
+      "output_bytes": 537687,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "GH-13-S",
+      "source_path": "brand/sources/generated/GH-13-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ascension-brand-overhaul-social.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "2d17eea1e9a6d97b426524cbf3bece7a1b9e2abe4d3f2b6a651dc2a749e3b194",
+      "output_sha256": "6ff079d6cc932cdf6d23ba215454aad895ec3f1b96179d45412799cdd93d59df",
+      "output_bytes": 525500,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "DOC-01",
+      "source_path": "brand/sources/generated/DOC-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/docs/runtime-architecture-master.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "e2ad345db954da5eba9f44aa720731bb64f2e1b1e148006833cb1db8de34f450",
+      "output_sha256": "db23c43c05670633ec167958299e053bf255fa80bb25e8e65f08fcd233ed7ec1",
+      "output_bytes": 1564556,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "DOC-01",
+      "source_path": "brand/sources/generated/DOC-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        2400,
+        1350
+      ],
+      "output_path": "brand/assets/docs/runtime-architecture.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "e2ad345db954da5eba9f44aa720731bb64f2e1b1e148006833cb1db8de34f450",
+      "output_sha256": "d2bd5e0d3c9792e08670d3063a6e7cffa6834ce088620af36259fe3514762dcc",
+      "output_bytes": 2871957,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "DOC-02",
+      "source_path": "brand/sources/generated/DOC-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1586,
+        992
+      ],
+      "size": [
+        1600,
+        1000
+      ],
+      "output_path": "brand/assets/docs/publication-flow.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "40868a5332821dea008ace6b85e58bc92d6f8c4a865986ea57eeb37dabfcf36e",
+      "output_sha256": "dbbf22ac0f93cd8e7fae941410929df9f770dd5efea0d4f8c4921928864d912b",
+      "output_bytes": 1382588,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "DOC-03",
+      "source_path": "brand/sources/generated/DOC-03/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "size": [
+        1600,
+        1200
+      ],
+      "output_path": "brand/assets/docs/repository-map.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "94700818b4c6e5f6c94c2fa05ec61bb0f12fc135e997ab8c6d0c06b2663e1541",
+      "output_sha256": "e60bdcb8670d89ea8efe7afad1c125f2d9a1bd1d9a92ac10cdb853dd04432afe",
+      "output_bytes": 1436902,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "DOC-04",
+      "source_path": "brand/sources/generated/DOC-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1422,
+        1106
+      ],
+      "size": [
+        1800,
+        1400
+      ],
+      "output_path": "brand/assets/docs/agent-tree.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "baca141fe42d9d092289fbea733e23c2ff91e03b2e41361e234c04bb4cbd376d",
+      "output_sha256": "51bc5e3ca0f0f17342576bbf3a609999ac05fea84c205d6b846a5b78c1d5fb08",
+      "output_bytes": 2492004,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "DOC-05",
+      "source_path": "brand/sources/generated/DOC-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "size": [
+        1200,
+        900
+      ],
+      "output_path": "brand/assets/docs/contributor-path.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "aef2eff2579c4fab5b394c8425658fbf2c78977860aedf77793ba8d3d997488a",
+      "output_sha256": "178fc6fe16418b33996207e2d9450b2ab991359bf4fc30b0db8661321e97d170",
+      "output_bytes": 795557,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "RUN-01",
+      "source_path": "brand/sources/generated/RUN-01/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1080,
+        1080
+      ],
+      "output_path": "brand/assets/run/summary-template-square.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "a99d9be17c87fe0a4d63fd60aa26f11c5f99e15f335360660221182666643050",
+      "output_sha256": "a0ad2f7a55bef8e4e44d8a4e318b56dd10c65dc24717e9309cfbf772c1f5e9f6",
+      "output_bytes": 770425,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "RUN-02",
+      "source_path": "brand/sources/generated/RUN-02/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1080,
+        1080
+      ],
+      "output_path": "brand/assets/run/decision-square.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "4635734be9a751754880f5c163ca5e75780399c5abfe52d6d89a77a5d775ad61",
+      "output_sha256": "39e3795e0a7135fe852ff3805d27c8c2216be1c509cfc188a55063016ef1a95f",
+      "output_bytes": 1015541,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "RUN-03",
+      "source_path": "brand/sources/generated/RUN-03/generation-002.png",
+      "crop_box": [
+        0,
+        87,
+        1983,
+        707
+      ],
+      "size": [
+        1600,
+        500
+      ],
+      "output_path": "brand/assets/run/timeline-template.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "7db2a7021ed27d13970b2de886fca643b0b5d45dcb63f69918a877085b9c897f",
+      "output_sha256": "2a0d1ce51328c73f12e0d72b9df11479c37f211635824f15e9d0995b45026309",
+      "output_bytes": 497703,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-07",
+      "source_path": "brand/sources/generated/MKT-07/generation-001.png",
+      "crop_box": [
+        0,
+        132,
+        1983,
+        661
+      ],
+      "size": [
+        1200,
+        320
+      ],
+      "output_path": "brand/assets/marketing/email-header.png",
+      "review_state": "pending_independent_review",
+      "source_sha256": "58d6cd96a6b10877f3d97cb4d6c9d12a2d0d2b4cff5d2694eda00846902b15a3",
+      "output_sha256": "fb92e1b60b83f6645c0df5fec2e868fd1d57c0c1a7a306478cbd24bd54e76763",
+      "output_bytes": 251951,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-04",
+      "source_path": "brand/sources/generated/MKT-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "output_path": "brand/assets/marketing/season-key-visual.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "review_state": "pending_independent_review",
+      "source_sha256": "b575a9aef61c14638464e6c228b7a917ca5273a74c506688c0c69cedc9534f0e",
+      "output_sha256": "896f151a88d5201e00f845fbb0a29ee2778fe8b9add5842d2475d6a556a77f68",
+      "output_bytes": 2452876,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-04",
+      "source_path": "brand/sources/generated/MKT-04/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        941,
+        1672
+      ],
+      "output_path": "brand/assets/marketing/season-key-visual-vertical.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "review_state": "pending_independent_review",
+      "source_sha256": "c0db6e0010ef72d28c593164fc2d7af5894343649b9f5a6870f67ea6be2e8c31",
+      "output_sha256": "9b1062798c3fe8010755aafa63a10de0ef596e7ad6bff1537a4f1261f680c516",
+      "output_bytes": 2395048,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-07",
+      "source_path": "brand/sources/generated/MKT-07/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1731,
+        909
+      ],
+      "output_path": "brand/assets/marketing/email-run-card.png",
+      "size": [
+        1200,
+        630
+      ],
+      "review_state": "pending_independent_review",
+      "source_sha256": "1f64439f5c04ca142048bca7c7044b4b5c613d0911ea62b0af174cd152e04430",
+      "output_sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
+      "output_bytes": 521834,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-06",
+      "source_path": "brand/sources/generated/MKT-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        909
+      ],
+      "output_path": "brand/assets/marketing/release-template.png",
+      "size": [
+        1200,
+        630
+      ],
+      "review_state": "pending_independent_review",
+      "source_sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+      "output_sha256": "d563bd1f1450f607d6ca44a0896075aa889e7a29d74414121749d01935dc754f",
+      "output_bytes": 491181,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-06",
+      "source_path": "brand/sources/generated/MKT-06/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "output_path": "brand/assets/marketing/contributor-template.png",
+      "size": [
+        1080,
+        1080
+      ],
+      "review_state": "pending_independent_review",
+      "source_sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759",
+      "output_sha256": "0c526b21d26f4875c695497eeeb820107fa538b31951edf8acf554c7aa7ddae1",
+      "output_bytes": 726373,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-05",
+      "source_path": "brand/sources/generated/MKT-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "output_path": "brand/assets/marketing/challenge-template.png",
+      "size": [
+        1080,
+        1080
+      ],
+      "review_state": "pending_independent_review",
+      "source_sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+      "output_sha256": "499685f65dea3fb225be02eff64583235f9d98f6a9a16076d42e1c0585a4cad4",
+      "output_bytes": 749979,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-03",
+      "source_path": "brand/sources/generated/MKT-03/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "output_path": "brand/assets/marketing/thumbnail-outcome.png",
+      "size": [
+        1280,
+        720
+      ],
+      "review_state": "pending_independent_review",
+      "source_sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+      "output_sha256": "d6aec732aca7b367363398e582c6e3a7a52b0af620bdb8dfa5f385c907c8a132",
+      "output_bytes": 848591,
+      "operations": [
+        "crop",
+        "resize",
+        "encode",
+        "metadata_strip"
+      ],
+      "publication_approved": false
+    },
+    {
+      "asset_id": "MKT-03",
+      "source_path": "brand/sources/generated/MKT-03/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "output_path": "brand/assets/marketing/thumbnail-question.png",
+      "size": [
+        1280,
+        720
+      ],
+      "review_state": "pending_independent_review",
+      "source_sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93",
+      "output_sha256": "908f81c489a9465fc6b513ceadd03ced8d2222802113d21752cd573c860f3abc",
+      "output_bytes": 661785,
       "operations": [
         "crop",
         "resize",

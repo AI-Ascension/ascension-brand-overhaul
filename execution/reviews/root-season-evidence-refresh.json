@@ -1,0 +1,35 @@
+{
+  "observed_at": "2026-09-08T03:02:14.156553+00:00",
+  "repository": "AI-Ascension/sts2-harness",
+  "revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+  "scope": "Read-only published report refresh for MKT04 season framing. Four selected current evidence documents; no private capture or trajectory accessed. Report statements remain maintainer reports, not independently rerun gameplay.",
+  "documents": [
+    {
+      "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+      "sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+      "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md"
+    },
+    {
+      "path": "docs/evidence/linux-seeded-campaign-20260906.md",
+      "sha256": "5837a161bd90d6e68d506375562844c0b268430908f82edd56274b4795ff3a15",
+      "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/linux-seeded-campaign-20260906.md"
+    },
+    {
+      "path": "docs/evidence/live-episode-stability-20260906.md",
+      "sha256": "b66173e4550d31462f2f75814550091d7285127c2ad0c5027165176bea22d02d",
+      "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/live-episode-stability-20260906.md"
+    },
+    {
+      "path": "docs/evidence/bounded-astra-plans-20260906.md",
+      "sha256": "8cefac7a5bedf06141c6ad0aa90636bd894e4319fc52f9f9de38f4cd93c82e9b",
+      "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/bounded-astra-plans-20260906.md"
+    }
+  ],
+  "findings": [
+    "The Windows campaign report still describes Defeat at floor 17 and explicitly distinguishes its fresh 333-action replay from a model-played win.",
+    "The Linux campaign report still describes Defeat at floor 24 with a controller restart and explicitly says a model-played win remains separate unverified work.",
+    "The stability and bounded-plan documents do not report a verified campaign win."
+  ],
+  "decision": "No verified campaign win was found in the inspected published reports, so the initial Road to the First Verified Win framing remains supported within this dated source scope. This does not establish absence of other unpublished or uninspected outcomes.",
+  "publication_approved": false
+}

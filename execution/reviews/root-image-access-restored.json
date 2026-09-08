@@ -1,0 +1,25 @@
+{
+  "observed_at": "2026-09-07T23:35:51.029504+00:00",
+  "user_report": "Different account; retry image generation with main agent.",
+  "author_role": "ROOT",
+  "tool": "image_gen__imagegen",
+  "result": "success",
+  "prior_quota_blocker": "superseded for current access by successful generation",
+  "asset_id": "CAST-01",
+  "generation_id": "CAST-01-generation-002",
+  "source_path": "brand/sources/generated/CAST-01/generation-002.png",
+  "source_sha256": "48073d0090c2a19b6bd16c2754b6f4c93c87b89b8d00615e54cffe3f9b01fa60",
+  "prompt_path": "brand/prompts/root/CAST-01/generation-002.txt",
+  "prompt_sha256": "8d23628ad785b32606e99d3b9b5fab828561b9b844e21bf84fa52bac81778253",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "status": "generated_pending_export_and_independent_review",
+  "model_backend": "unknown_unless_attested"
+}

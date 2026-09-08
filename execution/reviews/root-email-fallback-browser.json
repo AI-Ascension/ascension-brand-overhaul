@@ -1,0 +1,118 @@
+{
+  "observed_at": "2026-09-08T02:46:34.280Z",
+  "scope": "Local Chromium blank HTML preview at two widths with images enabled/blocked. Not an email-client delivery test or approved run digest.",
+  "hashes": {
+    "marketing/launch/email-run-card.html": "bf4745bc605dd3d97dd694412ffc9127cf9474522862fc53161d569c92da1ac2",
+    "marketing/launch/email-run-card.txt": "22f75a63f44a19fc1f9fb54991f9d52cd09c83fa87ff5648d3db399ead9828e5"
+  },
+  "results": [
+    {
+      "width": 390,
+      "images": true,
+      "overflow": false,
+      "labels": [
+        "Run ID",
+        "Outcome",
+        "Model configuration",
+        "Interventions",
+        "Evidence",
+        "Source URL"
+      ],
+      "values": [
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied."
+      ],
+      "decorativeImage": true,
+      "scripts": 0,
+      "forms": 0,
+      "text": "Run digest\n\nTemplate — no run data. This is a local assembly preview. No digest has been approved or sent.\n\nRun details\n\nThe fields below are intentionally unpopulated. Before an approved send, replace them only with reviewed public values from the approved manifest. Keep the same information in the plain-text message.\n\nRun ID\nNot supplied.\nOutcome\nNot supplied.\nModel configuration\nNot supplied.\nInterventions\nNot supplied.\nEvidence\nNot supplied.\nSource URL\nNot supplied.\n\nAI Ascension\n\nThe sending system must add its approved unsubscribe route and consent information. This preview contains no tracking pixel, remote font, script, form, or recipient identifier.",
+      "external": [],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "images": false,
+      "overflow": false,
+      "labels": [
+        "Run ID",
+        "Outcome",
+        "Model configuration",
+        "Interventions",
+        "Evidence",
+        "Source URL"
+      ],
+      "values": [
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied."
+      ],
+      "decorativeImage": true,
+      "scripts": 0,
+      "forms": 0,
+      "text": "Run digest\n\nTemplate — no run data. This is a local assembly preview. No digest has been approved or sent.\n\nRun details\n\nThe fields below are intentionally unpopulated. Before an approved send, replace them only with reviewed public values from the approved manifest. Keep the same information in the plain-text message.\n\nRun ID\nNot supplied.\nOutcome\nNot supplied.\nModel configuration\nNot supplied.\nInterventions\nNot supplied.\nEvidence\nNot supplied.\nSource URL\nNot supplied.\n\nAI Ascension\n\nThe sending system must add its approved unsubscribe route and consent information. This preview contains no tracking pixel, remote font, script, form, or recipient identifier.",
+      "external": [],
+      "errors": []
+    },
+    {
+      "width": 1200,
+      "images": true,
+      "overflow": false,
+      "labels": [
+        "Run ID",
+        "Outcome",
+        "Model configuration",
+        "Interventions",
+        "Evidence",
+        "Source URL"
+      ],
+      "values": [
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied."
+      ],
+      "decorativeImage": true,
+      "scripts": 0,
+      "forms": 0,
+      "text": "Run digest\n\nTemplate — no run data. This is a local assembly preview. No digest has been approved or sent.\n\nRun details\n\nThe fields below are intentionally unpopulated. Before an approved send, replace them only with reviewed public values from the approved manifest. Keep the same information in the plain-text message.\n\nRun ID\nNot supplied.\nOutcome\nNot supplied.\nModel configuration\nNot supplied.\nInterventions\nNot supplied.\nEvidence\nNot supplied.\nSource URL\nNot supplied.\n\nAI Ascension\n\nThe sending system must add its approved unsubscribe route and consent information. This preview contains no tracking pixel, remote font, script, form, or recipient identifier.",
+      "external": [],
+      "errors": []
+    },
+    {
+      "width": 1200,
+      "images": false,
+      "overflow": false,
+      "labels": [
+        "Run ID",
+        "Outcome",
+        "Model configuration",
+        "Interventions",
+        "Evidence",
+        "Source URL"
+      ],
+      "values": [
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied.",
+        "Not supplied."
+      ],
+      "decorativeImage": true,
+      "scripts": 0,
+      "forms": 0,
+      "text": "Run digest\n\nTemplate — no run data. This is a local assembly preview. No digest has been approved or sent.\n\nRun details\n\nThe fields below are intentionally unpopulated. Before an approved send, replace them only with reviewed public values from the approved manifest. Keep the same information in the plain-text message.\n\nRun ID\nNot supplied.\nOutcome\nNot supplied.\nModel configuration\nNot supplied.\nInterventions\nNot supplied.\nEvidence\nNot supplied.\nSource URL\nNot supplied.\n\nAI Ascension\n\nThe sending system must add its approved unsubscribe route and consent information. This preview contains no tracking pixel, remote font, script, form, or recipient identifier.",
+      "external": [],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "asset_id": "DOC-04",
+    "generation_id": "DOC-04-generation-001",
+    "prompt_path": "brand/prompts/root/DOC-04/generation-001.txt",
+    "prompt_sha256": "a0b67637a62ab997923aaff66217ae389fcbc1ff7d7e33c5315cca8db860aaaf",
+    "source_path": "brand/sources/generated/DOC-04/generation-001.png",
+    "source_sha256": "baca141fe42d9d092289fbea733e23c2ff91e03b2e41361e234c04bb4cbd376d",
+    "dimensions": [
+      1422,
+      1106
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [],
+    "factual_source_documents": [
+      {
+        "path": "orchestration/CONTRACT.md",
+        "sha256": "22bba55c22da2898b2450d9aad061bdbc4bd4630d259669ca5b7559e549bb194"
+      },
+      {
+        "path": "art/root-generation-authorization.json",
+        "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:32:46.538693+00:00"
+  }
+]

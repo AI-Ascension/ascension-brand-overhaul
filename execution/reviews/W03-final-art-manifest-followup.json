@@ -1,0 +1,182 @@
+{
+  "schema_version": "ai-ascension.w03-final-art-manifest-followup.v1",
+  "observed_at": "2026-09-08T02:55:28Z",
+  "reviewer": "w03-final-art-manifest-independent-followup",
+  "task": "Bounded follow-up verification of the W03-FAM-001 MKT-09 manifest repair",
+  "scope": "Re-validated all 72 manifest rows against the strict asset schema and compared the repaired manifest byte stream with the original W03 pinned manifest. The only authorized repository write for this follow-up is this receipt; no full test suite or raster replay was performed because the repair changed manifest metadata only.",
+  "working_tree": {
+    "git_head": "4ef7063536efb61903316270c661bf82dc45c4c5",
+    "branch": "work/root-authored-art",
+    "dirty_before_review": true,
+    "exclusive_write": "execution/reviews/W03-final-art-manifest-followup.json",
+    "source_or_output_bytes_replayed": false
+  },
+  "source_pins": {
+    "original_final_manifest_review": {
+      "path": "execution/reviews/W03-final-art-manifest-review.json",
+      "bytes": 225586,
+      "sha256": "6322ab79b71bbcc8e7fbd3ec482568881679f0e86b03233f115071e07b648ba2"
+    },
+    "pinned_pre_repair_manifest": {
+      "path": "brand/asset-manifest.json",
+      "bytes": 322234,
+      "sha256": "28d185e855cfd164cf35efe2e5865ab6a988f87285bef267f5609b69d0c6d0ee",
+      "pin_source": "W03-final-art-manifest-review.json source_pins.brand/asset-manifest.json"
+    },
+    "current_repaired_manifest": {
+      "path": "brand/asset-manifest.json",
+      "bytes": 322389,
+      "sha256": "49f55d7f731fb47df9dff6a2c36891c9c5c5729a39bdea48838ff013a87d9112"
+    },
+    "asset_schema": {
+      "path": "schemas/asset.schema.json",
+      "bytes": 5227,
+      "sha256": "388a76b27eba4e15b721c16b1dea32203479100f2d56dcc16f3112190c6fc386"
+    },
+    "press_html_output": {
+      "path": "brand/assets/press/index.html",
+      "bytes": 1193,
+      "sha256": "40f8f65e29b2d2b0f1318222f46327e68174571c5821ddcd6551451c7ca786bf"
+    }
+  },
+  "repair": {
+    "finding_id": "W03-FAM-001",
+    "asset_id": "MKT-09",
+    "export_path": "brand/assets/press/index.html",
+    "changed_fields": [
+      {
+        "asset_id": "MKT-09",
+        "export_path": "brand/assets/press/index.html",
+        "field": "derivation_operations",
+        "before": "missing",
+        "after": []
+      },
+      {
+        "asset_id": "MKT-09",
+        "export_path": "brand/assets/press/index.html",
+        "field": "generation_record_id",
+        "before": "missing",
+        "after": null
+      },
+      {
+        "asset_id": "MKT-09",
+        "export_path": "brand/assets/press/index.html",
+        "field": "height",
+        "before": "missing",
+        "after": null
+      },
+      {
+        "asset_id": "MKT-09",
+        "export_path": "brand/assets/press/index.html",
+        "field": "raw_source_path",
+        "before": "missing",
+        "after": null
+      },
+      {
+        "asset_id": "MKT-09",
+        "export_path": "brand/assets/press/index.html",
+        "field": "width",
+        "before": "missing",
+        "after": null
+      }
+    ],
+    "byte_reconstruction": {
+      "method": "Replace exactly the repaired MKT-09 HTML export object with its original three-field object, then compare against the original review pin.",
+      "repaired_block_occurrences": 1,
+      "reconstructed_bytes": 322234,
+      "reconstructed_sha256": "28d185e855cfd164cf35efe2e5865ab6a988f87285bef267f5609b69d0c6d0ee",
+      "matches_original_review_pin": true
+    },
+    "current_values": {
+      "width": null,
+      "height": null,
+      "generation_record_id": null,
+      "raw_source_path": null,
+      "derivation_operations": []
+    }
+  },
+  "inventory": {
+    "manifest_entries": 72,
+    "status_counts": {
+      "verified": 67,
+      "blocked": 5
+    },
+    "strict_schema_entries_checked": 72
+  },
+  "strict_asset_schema": {
+    "schema": "schemas/asset.schema.json",
+    "validator": "Draft202012Validator with local art-generation.schema.json resolver",
+    "entries_checked": 72,
+    "errors": [],
+    "result": "pass"
+  },
+  "original_finding": {
+    "id": "W03-FAM-001",
+    "severity": "blocking_for_strict_asset_schema_only",
+    "asset_id": "MKT-09",
+    "export_path": "brand/assets/press/index.html",
+    "result": "schema_error",
+    "evidence": [
+      {
+        "asset_id": "MKT-09",
+        "path": [
+          "exports",
+          1
+        ],
+        "message": "'width' is a required property"
+      },
+      {
+        "asset_id": "MKT-09",
+        "path": [
+          "exports",
+          1
+        ],
+        "message": "'height' is a required property"
+      },
+      {
+        "asset_id": "MKT-09",
+        "path": [
+          "exports",
+          1
+        ],
+        "message": "'generation_record_id' is a required property"
+      },
+      {
+        "asset_id": "MKT-09",
+        "path": [
+          "exports",
+          1
+        ],
+        "message": "'raw_source_path' is a required property"
+      },
+      {
+        "asset_id": "MKT-09",
+        "path": [
+          "exports",
+          1
+        ],
+        "message": "'derivation_operations' is a required property"
+      }
+    ],
+    "detail": "The functional HTML export has a correct current file hash and is declared requires_generation_lineage=false in the registry, but the current asset schema still requires width, height, generation_record_id, raw_source_path, and derivation_operations on every export object.",
+    "semantic_verifier_boundary": "validate_assets.verify does not enforce those five structural fields for HTML, so the scoped 67-family verifier passes and the full verifier returns only the five expected Not verified errors. This is an additional strict-schema defect and must be reconciled before claiming all 72 entries schema-valid.",
+    "reviewer_action": "Recorded only; no manifest or schema edit was authorized in this review."
+  },
+  "checks": {
+    "manifest_count_72": "pass",
+    "strict_asset_schema_all_72": "pass: 72/72 rows validate with zero errors",
+    "pinned_manifest_reconstruction": "pass: reconstructed pre-repair bytes match the original 322234-byte SHA-256 pin",
+    "only_five_metadata_fields_changed": "pass: exact paths are MKT-09 exports[1] width, height, generation_record_id, raw_source_path, and derivation_operations",
+    "original_finding_preserved": "pass: W03-FAM-001 retained verbatim above",
+    "full_tests": "not_run: unchanged-bytes bounded follow-up",
+    "raster_replay": "not_run: unchanged-bytes bounded follow-up"
+  },
+  "decision": "strict_asset_manifest_schema_followup_pass",
+  "finding_disposition": "W03-FAM-001 is reconciled by the five-field MKT-09 metadata repair; the historical finding remains preserved in this receipt and the original W03 review.",
+  "publication_approved": false,
+  "limitations": [
+    "This receipt verifies manifest structure and the exact five-field repair only.",
+    "No visual judgment, full test suite, or raster replay was repeated.",
+    "Existing verified and blocked family statuses remain unchanged: 67 verified and 5 blocked."
+  ]
+}

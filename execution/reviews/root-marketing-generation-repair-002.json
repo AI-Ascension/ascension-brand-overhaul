@@ -1,0 +1,25 @@
+[
+  {
+    "asset_id": "MKT-08",
+    "generation_id": "MKT-08-generation-002",
+    "prompt_path": "brand/prompts/root/MKT-08/generation-002.txt",
+    "prompt_sha256": "b6d0f8888116c4aaeea9b4c2430a35890ce56e9ac0080b15b658e6bd400cdd91",
+    "source_path": "brand/sources/generated/MKT-08/generation-002.png",
+    "source_sha256": "0db5aab96b0f1fb3b280d4844a6bbcad32f219ed29064b9827e430d45eb5c172",
+    "dimensions": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [
+      {
+        "path": "brand/sources/generated/MKT-08/generation-001.png",
+        "sha256": "123251d919168e5e7ab86d933ba11d28798f65c99dcd0320c0b9938b9c1e83c5"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T02:08:38.954478+00:00"
+  }
+]
