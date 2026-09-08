@@ -3,12 +3,43 @@
 from pathlib import Path, PurePosixPath
 import hashlib, json, re, sys, os
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from package_inventory import load_json, manifest_errors
+from package_inventory import load_json, manifest_errors, source_files
 from art_policy import ART_ROLES, LEGACY_ROUTE, ROOT_ROUTE, ROUTES, validate_root_authorization
 
 LOCAL_ONLY_DIRECTORIES={'.git','.execution','.execution-private','.codex','.agents','private','node_modules','.venv','venv','vendor','target','__pycache__','.pytest_cache'}
 
 FONT_EXTENSIONS={'.ttf','.otf','.woff','.woff2','.ttc','.eot'}
+
+# Workstation-specific filesystem paths identify a contributor's machine and never belong in
+# delivery or review evidence. Records must use a neutral placeholder such as
+# <workstation>/sts2-project/... or a repository-relative path. Case-insensitive forms cover
+# absolute Linux home directories, WSL mounts, macOS homes, Windows profiles (both slash
+# directions), and UNC WSL shares; relative "home" or "users" segments (site/home/, api/users/) are not.
+PERSONAL_PATH_PATTERN=re.compile(r'(?<![a-z0-9._/-])/(?:home|mnt/[a-z]/users|users)/[a-z]|[a-z]:[\\/]+users[\\/]|\\\\wsl(\$|\.localhost)\\',re.I)
+PERSONAL_PATH_TEXT_SUFFIXES={'.json','.md','.txt','.py','.mjs','.js','.html','.css','.yml','.yaml','.toml','.mmd','.svg','.csv','.sha256','.gitignore'}
+# The pattern's own self-test must spell out the forbidden forms with synthetic user names.
+PERSONAL_PATH_PATTERN_SOURCES={'tests/test_package_personal_paths.py'}
+# Frozen review records whose SHA-256 is pinned inside other evidence receipts
+# (execution/evidence/REQ-*.json and review-chain records). Rewriting them would silently
+# invalidate reviewer attestations, so they stay exempt until the owner re-issues those receipts.
+# An exemption that no longer matches is reported so the list only shrinks.
+PERSONAL_PATH_EXEMPTIONS={
+    'delivery/github-art-candidates/github-art-candidates-map.json',
+    'execution/reviews/W02-broadcast-source-review-008.json',
+    'execution/reviews/W02-broadcast-source-review-009.json',
+    'execution/reviews/W02-email-art-context-review.json',
+    'execution/reviews/W02-final-art-acceptance-review.json',
+    'execution/reviews/W02-marketing-concrete-copy-review.json',
+    'execution/reviews/W03-github-art-candidates-followup.json',
+    'execution/reviews/W03-github-art-candidates-review.json',
+    'execution/reviews/W03-image-c2pa-provenance-review.json',
+    'execution/reviews/W03-requirements-refresh-recommendations.json',
+    'execution/reviews/W03-root-motion-browser-review.json',
+    'execution/reviews/W03-root-motion-metadata-review.json',
+    'execution/reviews/W03-root-motion-review.json',
+    'execution/reviews/W03-root-website-art-followup.json',
+    'execution/reviews/W03-root-website-art-review.json',
+}
 def load(path):
     return load_json(path)
 def safe_relative(value):
@@ -16,6 +47,29 @@ def safe_relative(value):
         return False
     p=PurePosixPath(value)
     return bool(value) and not p.is_absolute() and '..' not in p.parts and ':' not in value
+
+def personal_path_errors(root, exemptions=None):
+    """Report workstation-specific paths in package text without echoing the path itself."""
+    root=Path(root)
+    exemptions=PERSONAL_PATH_EXEMPTIONS if exemptions is None else set(exemptions)
+    errors=[]
+    seen=set()
+    try: files=source_files(root)
+    except ValueError as exc: return [str(exc)]
+    for path in files:
+        if path.suffix.casefold() not in PERSONAL_PATH_TEXT_SUFFIXES and path.suffix!='': continue
+        relative=path.relative_to(root).as_posix()
+        if relative in PERSONAL_PATH_PATTERN_SOURCES: continue
+        try: text=path.read_text(encoding='utf-8')
+        except UnicodeError: continue
+        lines=[number for number,line in enumerate(text.splitlines(),1) if PERSONAL_PATH_PATTERN.search(line)]
+        if not lines: continue
+        seen.add(relative)
+        if relative in exemptions: continue
+        errors.append(f'Personal filesystem path in {relative}: line(s) {", ".join(str(n) for n in lines)}')
+    for relative in sorted(set(exemptions)-seen):
+        errors.append(f'Stale personal-path exemption (no longer matches, remove it): {relative}')
+    return errors
 
 def validate(root):
     errors=[]
@@ -144,6 +198,7 @@ def validate(root):
     config=(root/'orchestration/runtime-config.example.toml').read_text()
     check(not re.search(r'^\s*max_depth\s*=',config,re.M),'An unsupported depth config was assumed.')
     errors.extend(manifest_errors(root))
+    errors.extend(personal_path_errors(root))
     return errors
 
 def main():

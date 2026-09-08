@@ -6,7 +6,7 @@
   "task": "Bounded independent final review of the current root-authored artwork source ledgers, provenance, export receipts, requirement bindings, and private GitHub-art handoff metadata.",
   "scope": "Read-only review of the current brand-root-art worktree. Core source, registry, manifest, provenance, export, requirement, candidate-map, candidate-result, social-preview, and private-delivery metadata were checked. The prior W03 candidate restoration receipts and GH-11 follow-up are reused as the independent bundle evidence; no twelve-bundle restore or remote refetch was repeated, and the 218-test suite was not repeated.",
   "working_tree": {
-    "path": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "path": "<workstation>/sts2-project/sts2-project-worktrees/brand-root-art",
     "branch": "work/root-authored-art",
     "git_head": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
     "dirty_before_review": true,

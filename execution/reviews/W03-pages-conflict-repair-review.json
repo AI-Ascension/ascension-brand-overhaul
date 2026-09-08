@@ -5,7 +5,7 @@
   "task": "Independent non-author review of the Pages PR #12 conflict repair",
   "scope": "Reviewed merge commit e5153d6628843bbc734686ae926e143a1cf90526 against both parents, checked the historical/current evidence copy selection and conflict resolution, and reran the repository node suite plus both documented Rust recipe byte comparisons. Generated artwork and the brand-root-art source tree were excluded from this review.",
   "working_tree": {
-    "path": "/mnt/c/users/timot/Documents/projects/sts2-project/sts2-project-worktrees/pages-conflict-repair",
+    "path": "<workstation>/sts2-project/sts2-project-worktrees/pages-conflict-repair",
     "branch": "repair/pr12-main-merge",
     "commit": "e5153d6628843bbc734686ae926e143a1cf90526",
     "dirty_before_review": false,

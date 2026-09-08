@@ -2,7 +2,7 @@
 
 Python helpers use Python 3.10+ standard library; schema tests additionally use the pinned development requirement. The JavaScript browser runner uses the pinned Playwright and axe development dependencies. These helpers do not call models, generate artwork, or mutate remote systems. Runtime observation reads local client metadata; browser review connects only to the supplied loopback site and blocks external requests.
 
-`validate_package.py` verifies this kit's required files, role ancestry, dependency graph, art/surface references, planned state, path safety, and existing manifest hashes. It parses JSON but is not a general-purpose JSON Schema implementation.
+`validate_package.py` verifies this kit's required files, role ancestry, dependency graph, art/surface references, planned state, path safety, existing manifest hashes, and the absence of workstation-specific filesystem paths (`/home/...`, `/mnt/<drive>/users/...`, `<drive>:/Users/...`, `<drive>:\Users\...`) outside the frozen receipts listed in `PERSONAL_PATH_EXEMPTIONS`; records use `<workstation>/...` or repository-relative paths instead. It parses JSON but is not a general-purpose JSON Schema implementation.
 
 `agent_ledger.py PATH` validates recorded native thread relationships, required requested model/effort, model-verification evidence fields, parent lifetimes, and global open-count intervals. The helper does not observe native threads itself and is not an enforcement hook. The root must compare the ledger with trustworthy runtime metadata and use available native limits.
 

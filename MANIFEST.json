@@ -2743,8 +2743,8 @@
     },
     {
       "path": "execution/reviews/W03-final-expanded-art-handoff-review.json",
-      "bytes": 26804,
-      "sha256": "18815b54fe4e0c41ebdce0574eb52058bf2ce0c2a27618d634c98fc9aea0d3df"
+      "bytes": 26780,
+      "sha256": "7d7c8618216f3402c3375763e761a7c833a38b5f3536d2ce058ca1fe4eb8d620"
     },
     {
       "path": "execution/reviews/W03-github-art-candidates-followup.json",
@@ -2778,8 +2778,8 @@
     },
     {
       "path": "execution/reviews/W03-pages-conflict-repair-review.json",
-      "bytes": 9126,
-      "sha256": "c702439dbfd1526b9c376c33dd59102004aeb382e40bcd7ea834ed48111867e8"
+      "bytes": 9102,
+      "sha256": "6f5506d5686fab6c5c5813550a60ba2a6d3624bd9aa39139ca5df79fa830f76e"
     },
     {
       "path": "execution/reviews/W03-precommit-review-001.json",
@@ -4473,8 +4473,8 @@
     },
     {
       "path": "scripts/README.md",
-      "bytes": 5423,
-      "sha256": "09f7be7c3601fec0ab284e6e4a31d66c5a94e582e22d7454919de1481712ded3"
+      "bytes": 5696,
+      "sha256": "7661b59f9e40b387a5a17a33ad77a0aca49248881fd0ebac0b54010b7f90ccbb"
     },
     {
       "path": "scripts/agent_ledger.py",
@@ -4558,8 +4558,8 @@
     },
     {
       "path": "scripts/validate_package.py",
-      "bytes": 10422,
-      "sha256": "1588eefe76caac1a510d154f09933184a9e3c3e9d08c3a30c40429a8685450c8"
+      "bytes": 13880,
+      "sha256": "34d1275d4d79c15287a870412787cdd2c4e89f72bed839a0b41da4035300d7fc"
     },
     {
       "path": "specs/MARKETING.md",
@@ -4785,6 +4785,11 @@
       "path": "tests/test_package_local_boundaries.py",
       "bytes": 1293,
       "sha256": "858bb80f246df725cb758ac9dcda4aad38384a817552bea13ed0506b09a82e2b"
+    },
+    {
+      "path": "tests/test_package_personal_paths.py",
+      "bytes": 3960,
+      "sha256": "25aacc308497910d104788008dd02930c05b645d298cc26e57ac21e30225f9cc"
     },
     {
       "path": "tests/test_press_index.py",
