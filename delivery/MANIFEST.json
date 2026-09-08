@@ -129,7 +129,7 @@
     "private_game_trajectories_and_captures": "not included",
     "font_binaries": "not included",
     "raw_provider_diagnostics": "not included",
-    "generated_art_masters_and_prompts": "32 actual source PNGs and exact prompt files included; partial reviewed exports; no public distribution approvals",
+    "generated_art_masters_and_prompts": "123 generated source PNGs including superseded attempts and exact prompt files included; all 115 planned exports exist, 70 of 72 families accepted; no public distribution approvals",
     "website_artwork_candidate": "Included as a private prerequisite Git bundle with exact revision, changed-file hashes and restoration instructions; not present in the public website PR."
   },
   "operation_ledger": "../execution/operations.json",

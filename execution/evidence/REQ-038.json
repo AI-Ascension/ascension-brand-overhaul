@@ -65,13 +65,13 @@
     },
     {
       "path": "delivery/MANIFEST.json",
-      "sha256": "d3f893d13466afbfe749bb2c39e4c5624a11df8c364aca4b4a2b75f92a77dd0a",
-      "bytes": 6913
+      "sha256": "25b7b81d30dbdd16247a018025a3d6b4c3795e0e642935480e761939f9f13ab0",
+      "bytes": 6980
     },
     {
       "path": "delivery/RUNBOOK.md",
-      "sha256": "9bb2b6d36173907684f52d23b83185ea7c1438ea4efa33937a8be7735c54d9df",
-      "bytes": 7709
+      "sha256": "0129dd653d730b113bff48528e10ba75d8d7057038cb135e2bc28c3a19b4144f",
+      "bytes": 7958
     },
     {
       "path": "delivery/PRIVACY_SCOPE.md",
