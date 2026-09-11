@@ -1,0 +1,532 @@
+{
+  "schema_version": "ai-ascension.w02-broadcast-source-review.v5",
+  "observed_at": "2026-09-08T04:51:05.319589+00:00",
+  "reviewer": "w02-marketing-concrete-visual-independent-review-009",
+  "task": "Independent source, export, and bounded fallback review of MKT-07 generation-003 email digest artwork.",
+  "scope": "Current MKT-07 generation-003 raw source and integrated email-run-card export only. The review covers prompt/source/output hash lineage, exact five-line artwork copy, report-only boundaries, crop and small-scale readability, RGB/metadata state, and parity of the already populated HTML/plain fallback. It records unknown model/backend identity and keeps private art-context, rights, publication, enrollment, consent, delivery, and send decisions separate. No prompt, source, output, manifest, registry, ledger, recipe, receipt, context, HTML, or plain-text file was edited.",
+  "working_tree": {
+    "path": "/mnt/c/users/timot/documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "exclusive_write": "execution/reviews/W02-broadcast-source-review-009.json",
+    "source_prompt_image_edits_by_reviewer": false,
+    "pre_existing_dirty_changes_preserved": true,
+    "email_send_or_publisher_enrollment_by_reviewer": false
+  },
+  "source_pins": {
+    "email_art_context": {
+      "path": "marketing/launch/email-art-context.json",
+      "sha256": "68f49d882382dcb2d87f96bea14e8e9a3bddb2cc62d11074245b79e99118985c",
+      "bytes": 1832,
+      "schema_version": 1,
+      "scope": "private_art_context_only",
+      "approval_status": "independently_reviewed_for_private_art_context",
+      "publication_authorized": false,
+      "factual_review_reference": "execution/reviews/W02-email-art-context-review.json"
+    },
+    "source_context_review": {
+      "path": "execution/reviews/W02-email-art-context-review.json",
+      "sha256": "2751629b84d866560ce8b03ee72cd603ed77d3445ac40fa6d34859c452e18bf3",
+      "decision": "pass_private_factual_context_review",
+      "scope": "report_only_context_and_preview_parity"
+    },
+    "current_season_evidence": {
+      "path": ".execution-private/current-season-evidence.json",
+      "sha256": "ced0e81bdc77c660f142872b71efce3efa4de709a759843d2a15b190c99d7cdc",
+      "bytes": 16407,
+      "repository": "AI-Ascension/sts2-harness",
+      "revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+      "first_windows_document": {
+        "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+        "sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+        "evidence_boundary": "public report only; private trajectory and native capture were not inspected for this artwork"
+      }
+    },
+    "source_url_verification": {
+      "repository": "AI-Ascension/sts2-harness",
+      "owner": "AI-Ascension",
+      "name": "sts2-harness",
+      "pinned_revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+      "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+      "document_sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+      "verification_reference": "execution/reviews/W02-email-art-context-review.json",
+      "result": "HTTP 200 repository and pinned contents checks recorded; raw document digest matches the context."
+    },
+    "promptbook": {
+      "path": "art/PROMPTBOOK.md",
+      "sha256": "a9581d8aa648897ba6e23bd9a9b41497d77f47158e14c511ed7959b330c2eb2e",
+      "brief_reference": "MKT-07 lines 912-933"
+    },
+    "brand_guide": {
+      "path": "brand/BRAND_GUIDE.md",
+      "sha256": "b1551f9c49572b0f1a8034fbdd7de89446bf119e2ad84bd5bea714575c4a8a23",
+      "relevant_rule": "The public organization identity is AI Ascension; display typography may style the canonical words while preserving the name."
+    },
+    "root_authorization": {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+      "authorization_id": "root-image-tool-route-20260907",
+      "route": "all_requested_new_artwork",
+      "tool": "image_gen__imagegen",
+      "backend_attestation": "unspecified",
+      "native_agent_attestation": false,
+      "independent_design_review_required": true
+    },
+    "generation_receipt": {
+      "path": "execution/reviews/root-marketing-generation-batch-019.json",
+      "sha256": "82bf6f82b520beba8190867b9e47d61ac0ddf6050741e013a41fb091a4be2973",
+      "generation_id": "MKT-07-generation-003",
+      "prompt_sha256": "07ff4e62a1e0a3b9831c060cfc971fe5223143c4e88b78397e01a14983046a1b",
+      "source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+      "dimensions": [
+        1731,
+        909
+      ],
+      "mode": "RGB",
+      "status": "generated_pending_export_and_independent_review"
+    },
+    "integration_receipt": {
+      "path": ".execution-private/broadcast-records-result-015.json",
+      "sha256": "1c44a30380bf27023895da7f3bb5e8102f53c6ce9d49ecc7c14e36f709cf2e8b",
+      "recorded_at": "2026-09-08T04:40:00Z",
+      "generation_record_count": 1,
+      "export_count": 1,
+      "review_state": "pending_independent_review",
+      "publication_approved": false
+    },
+    "export_recipe": {
+      "path": "brand/provenance/root-export-recipe.json",
+      "sha256": "cbe92b3b27f090ffa92dbd3c00438bc60945bdae3d6a12c5bb502ade36c0172c",
+      "selected_row": {
+        "asset_id": "MKT-07",
+        "source_path": "brand/sources/generated/MKT-07/generation-003.png",
+        "crop_box": [
+          0,
+          0,
+          1731,
+          909
+        ],
+        "output_path": "brand/assets/marketing/email-run-card.png",
+        "size": [
+          1200,
+          630
+        ],
+        "review_state": "pending_independent_review"
+      }
+    },
+    "export_receipts": {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "fa9b0af05da2d02e777ea673e1a3cdcb60741cbdd98aa33510062ee21d1470bc",
+      "selected_row": {
+        "asset_id": "MKT-07",
+        "source_path": "brand/sources/generated/MKT-07/generation-003.png",
+        "crop_box": [
+          0,
+          0,
+          1731,
+          909
+        ],
+        "output_path": "brand/assets/marketing/email-run-card.png",
+        "size": [
+          1200,
+          630
+        ],
+        "review_state": "pending_independent_review",
+        "source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+        "output_sha256": "c9e70f5db8cd5c2393f9c0f77ec1207c3f7368bde95640d8be99804d76190815",
+        "output_bytes": 1127789,
+        "operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "publication_approved": false,
+        "reviewer_reference": "pending:independent-visual-export-review"
+      }
+    },
+    "generation_index": {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "0249e1f5cf83bec974f07ff47c57f13c9c3e7f838eab426694958b8ae7f802f3",
+      "selected_row": {
+        "asset_id": "MKT-07",
+        "attempt": 3,
+        "prompt_path": "brand/prompts/root/MKT-07/generation-003.txt",
+        "prompt_sha256": "07ff4e62a1e0a3b9831c060cfc971fe5223143c4e88b78397e01a14983046a1b",
+        "source_path": "brand/sources/generated/MKT-07/generation-003.png",
+        "source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+        "source_bytes": 2314792,
+        "width": 1731,
+        "height": 909,
+        "mode": "RGB",
+        "has_alpha_channel": false,
+        "references": [],
+        "tool": "image_gen__imagegen",
+        "author": "root",
+        "author_model_attested": false,
+        "generation_backend_attested": false,
+        "backend_identity": null,
+        "authorization_reference": "art/root-generation-authorization.json",
+        "content_class": "generated_art_not_product_evidence",
+        "review_state": "pending_independent_review"
+      }
+    },
+    "generation_records": {
+      "path": "brand/provenance/root-generation-records.json",
+      "sha256": "1f1eb36099dae0c008c96816eee5aba1782247d82bf13060ec2942a4a90e4fa7",
+      "selected_record_id": "MKT-07-generation-003",
+      "selected_status": "blocked",
+      "selected_model_fields": {
+        "requested": "unknown",
+        "observed": "unknown",
+        "backend": "unspecified",
+        "evidence_reference": "not-observed:available-image-tool"
+      }
+    },
+    "tool_observation": {
+      "path": "brand/provenance/root-tool-observations.json",
+      "sha256": "ced41302474f65c91ff8655610dc34e8a1b50bd782ba9b6f784a1fc875979c1e",
+      "selected_observation_id": "MKT-07-generation-003",
+      "evidence_class": "root_tool_observation_not_provider_signed_attestation",
+      "requested_model": "unknown",
+      "observed_backend": "unknown",
+      "provider_revised_prompt_returned": false
+    },
+    "fallback_browser_receipt": {
+      "path": "execution/reviews/root-email-fallback-browser.json",
+      "sha256": "cd1b5ca778243d3304d116b2a5439ba0f63f13285a08d35ae23288acb72630d0",
+      "observed_at": "2026-09-08T04:23:55.687Z",
+      "scope": "Local Chromium populated report-only HTML preview at two widths with images enabled/blocked. Exact six fields compared with independently reviewed private art context. Not an email-client delivery test or approved send.",
+      "html_sha256": "da9c32aa1ac5b203d7d482de378afc78c8a4e2eaeb7f4c92399f1d25f3dfbba3",
+      "plain_text_sha256": "6ae40e95f1a20a10a7ac71b06d204cf0607e04c7fb2bc27b1abed7cc629200df",
+      "image_sha256": "c9e70f5db8cd5c2393f9c0f77ec1207c3f7368bde95640d8be99804d76190815"
+    },
+    "html_preview": {
+      "path": "marketing/launch/email-run-card.html",
+      "sha256": "da9c32aa1ac5b203d7d482de378afc78c8a4e2eaeb7f4c92399f1d25f3dfbba3",
+      "bytes": 2626
+    },
+    "plain_text_preview": {
+      "path": "marketing/launch/email-run-card.txt",
+      "sha256": "6ae40e95f1a20a10a7ac71b06d204cf0607e04c7fb2bc27b1abed7cc629200df",
+      "bytes": 1177
+    },
+    "raw_source": {
+      "path": "brand/sources/generated/MKT-07/generation-003.png",
+      "sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+      "bytes": 2314792,
+      "dimensions": [
+        1731,
+        909
+      ],
+      "mode": "RGB",
+      "metadata_keys": []
+    },
+    "integrated_output": {
+      "path": "brand/assets/marketing/email-run-card.png",
+      "sha256": "c9e70f5db8cd5c2393f9c0f77ec1207c3f7368bde95640d8be99804d76190815",
+      "bytes": 1127789,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "mode": "RGB",
+      "metadata_keys": []
+    }
+  },
+  "receipt_records": {
+    "generation_records": [
+      {
+        "generation_id": "MKT-07-generation-003",
+        "asset_id": "MKT-07",
+        "prompt_path": "brand/prompts/root/MKT-07/generation-003.txt",
+        "prompt_sha256": "07ff4e62a1e0a3b9831c060cfc971fe5223143c4e88b78397e01a14983046a1b",
+        "source_path": "brand/sources/generated/MKT-07/generation-003.png",
+        "source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+        "source_bytes": 2314792,
+        "source_dimensions": [
+          1731,
+          909
+        ],
+        "source_mode": "RGB",
+        "references": [],
+        "reference_inputs": [],
+        "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-019.json",
+        "generation_receipt_sha256": "82bf6f82b520beba8190867b9e47d61ac0ddf6050741e013a41fb091a4be2973",
+        "integration_receipt_path": ".execution-private/broadcast-records-result-015.json",
+        "integration_receipt_sha256": "1c44a30380bf27023895da7f3bb5e8102f53c6ce9d49ecc7c14e36f709cf2e8b",
+        "generation_record_path": "brand/provenance/root-generation-records.json",
+        "generation_record_sha256": "1f1eb36099dae0c008c96816eee5aba1782247d82bf13060ec2942a4a90e4fa7",
+        "generation_record_status": "blocked",
+        "review_state_at_observation": "pending_independent_review",
+        "observed_at": "2026-09-08T04:14:45.251951+00:00",
+        "tool": "image_gen__imagegen",
+        "author_role": "ROOT",
+        "generation_route": "user_authorized_root_image_tool",
+        "requested_model": "unknown",
+        "observed_model": "unknown",
+        "image_backend": "unspecified",
+        "model_evidence": "not-observed:available-image-tool",
+        "independent_review_result": "pass_bounded_source_and_visual_review"
+      }
+    ],
+    "export_records": [
+      {
+        "asset_id": "MKT-07",
+        "output_path": "brand/assets/marketing/email-run-card.png",
+        "source_path": "brand/sources/generated/MKT-07/generation-003.png",
+        "source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+        "output_sha256": "c9e70f5db8cd5c2393f9c0f77ec1207c3f7368bde95640d8be99804d76190815",
+        "output_bytes": 1127789,
+        "output_dimensions": [
+          1200,
+          630
+        ],
+        "output_mode": "RGB",
+        "crop_box": [
+          0,
+          0,
+          1731,
+          909
+        ],
+        "operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "export_recipe_path": "brand/provenance/root-export-recipe.json",
+        "export_recipe_sha256": "cbe92b3b27f090ffa92dbd3c00438bc60945bdae3d6a12c5bb502ade36c0172c",
+        "export_receipt_path": "brand/provenance/root-export-receipts.json",
+        "export_receipt_sha256": "fa9b0af05da2d02e777ea673e1a3cdcb60741cbdd98aa33510062ee21d1470bc",
+        "integration_receipt_path": ".execution-private/broadcast-records-result-015.json",
+        "integration_receipt_sha256": "1c44a30380bf27023895da7f3bb5e8102f53c6ce9d49ecc7c14e36f709cf2e8b",
+        "receipt_review_state_at_observation": "pending_independent_review",
+        "publication_approved": false,
+        "independent_review_result": "pass_bounded_source_and_visual_review",
+        "replacement_of": {
+          "source_path": "brand/sources/generated/MKT-07/generation-002.png",
+          "source_sha256": "1f64439f5c04ca142048bca7c7044b4b5c613d0911ea62b0af174cd152e04430",
+          "output_sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
+          "output_bytes": 521834,
+          "crop_box": [
+            0,
+            0,
+            1731,
+            909
+          ]
+        }
+      }
+    ]
+  },
+  "validation": {
+    "source_prompt_hashes": "pass: local prompt and RGB source hashes match generation receipt, integration receipt, generation index, root record, and tool observation",
+    "source_dimensions_modes_bytes": "pass: generation-003 source is 1731x909 RGB with 2314792 bytes and no PNG metadata",
+    "output_hashes_dimensions_modes_bytes": "pass: email-run-card export is 1200x630 RGB with 1127789 bytes and no PNG metadata",
+    "crop_records": "pass: [0, 0, 1731, 909] full-source crop matches recipe, export receipt, and integrated output aspect",
+    "mechanical_export_lineage": "pass: integration, recipe, export receipt, source hash, output hash, dimensions, and operations agree",
+    "literal_art_copy": "pass: exact five requested lines visible; no extra wording or fabricated identifier observed",
+    "visual_inspection": "pass: raw 1731x909 source and 1200x630 export opened with view_image; 600x315 downscale also inspected for readability",
+    "report_only_boundary": "pass: outcome wording is reported defeat, operation count is labeled report only, and decorative branch is not a factual map or gameplay evidence",
+    "lightweight_image_boundary": "pass_no_numeric_cap: 1127789-byte RGB PNG is a decorative optional image with complete HTML/plain fallback; image-off preview retained all six fields and no overflow",
+    "fallback_html_plain_parity": "pass: six populated fields and pinned source URL match context and each other in HTML/plain preview; local Chromium receipt covers 390px and 1200px with image on/off",
+    "source_url_owner_name": "pass: pinned GitHub repository resolves as AI-Ascension/sts2-harness; exact revision/path/document digest are carried in context",
+    "model_backend_identity": "unknown_not_attested: root tool observation records requested and observed model/backend as unknown",
+    "rights_clearance": "not_granted",
+    "publication_approval": false,
+    "send_or_enrollment_approval": false
+  },
+  "assets": [
+    {
+      "asset_id": "MKT-07",
+      "title": "Email digest artwork",
+      "brief_reference": "art/PROMPTBOOK.md#MKT-07 (lines 912-933)",
+      "selected_generations": [
+        "MKT-07-generation-003"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-07-generation-003",
+          "asset_id": "MKT-07",
+          "prompt_path": "brand/prompts/root/MKT-07/generation-003.txt",
+          "prompt_sha256": "07ff4e62a1e0a3b9831c060cfc971fe5223143c4e88b78397e01a14983046a1b",
+          "source_path": "brand/sources/generated/MKT-07/generation-003.png",
+          "source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+          "source_bytes": 2314792,
+          "source_dimensions": [
+            1731,
+            909
+          ],
+          "source_mode": "RGB",
+          "references": [],
+          "reference_inputs": [],
+          "generation_receipt_path": "execution/reviews/root-marketing-generation-batch-019.json",
+          "generation_receipt_sha256": "82bf6f82b520beba8190867b9e47d61ac0ddf6050741e013a41fb091a4be2973",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-015.json",
+          "integration_receipt_sha256": "1c44a30380bf27023895da7f3bb5e8102f53c6ce9d49ecc7c14e36f709cf2e8b",
+          "generation_record_path": "brand/provenance/root-generation-records.json",
+          "generation_record_sha256": "1f1eb36099dae0c008c96816eee5aba1782247d82bf13060ec2942a4a90e4fa7",
+          "generation_record_status": "blocked",
+          "review_state_at_observation": "pending_independent_review",
+          "observed_at": "2026-09-08T04:14:45.251951+00:00",
+          "tool": "image_gen__imagegen",
+          "author_role": "ROOT",
+          "generation_route": "user_authorized_root_image_tool",
+          "requested_model": "unknown",
+          "observed_model": "unknown",
+          "image_backend": "unspecified",
+          "model_evidence": "not-observed:available-image-tool",
+          "independent_review_result": "pass_bounded_source_and_visual_review"
+        }
+      ],
+      "export_records": [
+        {
+          "asset_id": "MKT-07",
+          "output_path": "brand/assets/marketing/email-run-card.png",
+          "source_path": "brand/sources/generated/MKT-07/generation-003.png",
+          "source_sha256": "825498a24c205f64d20780b68d8841c95696c5129ff7e37f747dbfb8f7da8b58",
+          "output_sha256": "c9e70f5db8cd5c2393f9c0f77ec1207c3f7368bde95640d8be99804d76190815",
+          "output_bytes": 1127789,
+          "output_dimensions": [
+            1200,
+            630
+          ],
+          "output_mode": "RGB",
+          "crop_box": [
+            0,
+            0,
+            1731,
+            909
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "export_recipe_path": "brand/provenance/root-export-recipe.json",
+          "export_recipe_sha256": "cbe92b3b27f090ffa92dbd3c00438bc60945bdae3d6a12c5bb502ade36c0172c",
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "fa9b0af05da2d02e777ea673e1a3cdcb60741cbdd98aa33510062ee21d1470bc",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-015.json",
+          "integration_receipt_sha256": "1c44a30380bf27023895da7f3bb5e8102f53c6ce9d49ecc7c14e36f709cf2e8b",
+          "receipt_review_state_at_observation": "pending_independent_review",
+          "publication_approved": false,
+          "independent_review_result": "pass_bounded_source_and_visual_review",
+          "replacement_of": {
+            "source_path": "brand/sources/generated/MKT-07/generation-002.png",
+            "source_sha256": "1f64439f5c04ca142048bca7c7044b4b5c613d0911ea62b0af174cd152e04430",
+            "output_sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
+            "output_bytes": 521834,
+            "crop_box": [
+              0,
+              0,
+              1731,
+              909
+            ]
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_key": "MKT-07/email_run_card",
+          "copy_verdict": "pass",
+          "required_copy_correction": null,
+          "observed_copy": [
+            "Run digest",
+            "Reported defeat · Floor 17",
+            "gpt-6-astra · Windows practice campaign",
+            "333 settled operations · Report only",
+            "AI Ascension"
+          ],
+          "copy_result": "All five requested lines are present, correctly spelled, and readable in the raw source, 1200x630 export, and 600x315 inspection downscale. No URL, run ID, score, victory wording, or extra text is rendered in the artwork.",
+          "source_accuracy": "The artwork summarizes the independently reviewed public Windows report context: reported defeat on floor 17 and 333 settled operations. The model and campaign wording match the report context; the art does not claim independent replay or a complete private run record.",
+          "boundary_result": "The line “Report only” is conspicuous. The branching route is decorative and the prompt explicitly excludes a factual map, screenshot, interface, characters, chart, score, victory imagery, logo, and monogram.",
+          "invented_outcome_or_rationale": "pass_no_new_outcome_reasoning_or_evidence",
+          "consent_result": "not_applicable_no_person_name_photo_quote_or_attribution"
+        }
+      ],
+      "fallback_parity": {
+        "context_path": "marketing/launch/email-art-context.json",
+        "context_sha256": "68f49d882382dcb2d87f96bea14e8e9a3bddb2cc62d11074245b79e99118985c",
+        "html_path": "marketing/launch/email-run-card.html",
+        "html_sha256": "da9c32aa1ac5b203d7d482de378afc78c8a4e2eaeb7f4c92399f1d25f3dfbba3",
+        "plain_text_path": "marketing/launch/email-run-card.txt",
+        "plain_text_sha256": "6ae40e95f1a20a10a7ac71b06d204cf0607e04c7fb2bc27b1abed7cc629200df",
+        "field_labels": [
+          "Run ID",
+          "Outcome",
+          "Model configuration",
+          "Interventions",
+          "Evidence",
+          "Source URL"
+        ],
+        "html_values_match_context": true,
+        "plain_text_values_match_context": true,
+        "html_plain_values_match": true,
+        "source_href_and_text_match": true,
+        "report_only_and_status_disclosure": "pass: HTML and plain text identify a local report-only draft and say no digest has been approved or sent",
+        "privacy_disclosure": "semantic_match_with_wording_difference: HTML enumerates no tracking pixel, remote font, script, form, or recipient identifier; plain text states no tracking or recipient identifier",
+        "browser_receipt_path": "execution/reviews/root-email-fallback-browser.json",
+        "browser_receipt_sha256": "cd1b5ca778243d3304d116b2a5439ba0f63f13285a08d35ae23288acb72630d0",
+        "browser_tested_widths": [
+          390,
+          1200
+        ],
+        "browser_images_on_and_off": true,
+        "browser_no_overflow": true,
+        "browser_no_external_requests": true,
+        "browser_script_count": 0,
+        "browser_form_count": 0,
+        "image_natural_dimensions_when_enabled": [
+          1200,
+          630
+        ],
+        "verdict": "pass_populated_six_field_and_source_parity"
+      },
+      "visual_observations": [
+        "The raw 1731x909 RGB source and full-frame 1200x630 RGB export use warm off-white paper, near-black ink, muted amber accents, restrained editorial serif typography, generous margins, and a coherent hierarchy.",
+        "At the recorded target size and 600x315 inspection downscale, Run digest, the primary “Reported defeat · Floor 17” line, both secondary lines, and the AI Ascension footer remain readable with no visible clipping. Required text begins within approximately the requested 7 percent left/top safe inset; the right-side ornament does not overlap the text.",
+        "The branching linework is visibly decorative and unlabeled; it does not establish a map, path measurement, chart, game state, score, screenshot, character, trophy, victory, or product result.",
+        "The footer preserves the canonical words AI Ascension with letter spacing as typographic treatment; no separate mark or monogram is introduced. No extra generated text, URL, identifier, or metadata was observed.",
+        "The 1127789-byte textured PNG is larger than a flat-color card would be, but the brief supplies no numeric byte cap and the complete HTML/plain fallback remains usable with the image blocked; no material lightweight-delivery defect is established by this review."
+      ],
+      "model_authorship_status": {
+        "requested_model": "unknown",
+        "observed_model": "unknown",
+        "backend": "unspecified",
+        "provider_attestation": false,
+        "decision": "No model or backend identity claim is made by this review."
+      },
+      "source_output_verdict": "ready_for_bounded_use",
+      "recommended_family_status": "verified",
+      "issues": [],
+      "evidence_boundary": "Private report-derived artwork and local HTML/plain fallback preview only. This supports bounded report-only presentation after separate rights and publication decisions; it does not establish a model/backend attestation, native run identity, independent replay, private trajectory/capture inspection, publisher enrollment, consent, send, deployment, gameplay, or public release."
+    }
+  ],
+  "aggregate_decision": {
+    "variant_copy_verdicts": {
+      "MKT-07/email_run_card": "pass",
+      "MKT-07/email_fallback": "pass"
+    },
+    "required_copy_correction_count": 0,
+    "recommended_family_statuses": {
+      "MKT-07": "verified"
+    },
+    "decision": "MKT-07 generation-003 source, integrated export, and populated HTML/plain fallback pass bounded source, visual, and report-only review. Model/backend identity remains unknown; rights, publication, send, and publisher enrollment remain unapproved.",
+    "private_generation_use": "pass_with_existing_user_authorized_route",
+    "model_backend_identity": "unknown_not_attested",
+    "publication_approval": false,
+    "rights_clearance": "not_granted",
+    "send_approval": false,
+    "publisher_enrollment": false,
+    "consent_result": "No person name, photograph, quotation, endorsement, testimonial, or attributed contribution is used."
+  },
+  "limitations": [
+    "The root generation receipt and tool observation record image_gen__imagegen but requested model, observed model, and backend are unknown; this review does not attest the promptbook model/authorship requirement.",
+    "The artwork uses public report context only. The private trajectory and native capture were not inspected for this artwork, and the graphic is not empirical gameplay evidence or an independent replay.",
+    "The context keeps an editorial public run alias because no native run ID is supplied; other model settings and a complete human-intervention inventory remain unspecified in the report.",
+    "The local Chromium fallback receipt checks populated HTML/plain parity, image-on/off behavior, overflow, external requests, scripts, and forms at 390px and 1200px. It is not an email-client rendering, delivery, consent, unsubscribe, send, or publisher-enrollment test.",
+    "The image is 1127789 bytes after PNG optimization and metadata stripping. The brief has no numeric lightweight threshold, and image-off fallback is complete; a separate byte-budget requirement would need a new check.",
+    "Generated source/output review grants no copyright, trademark, license, contributor permission, rights clearance, channel placement, publication approval, deployment, runtime, gameplay, or public-release approval.",
+    "The existing MKT-07 email-header export is outside this new generation-003 visual decision; this review covers the newly integrated run-card output and the already reviewed fallback context."
+  ]
+}

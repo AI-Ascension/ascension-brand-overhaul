@@ -1,0 +1,58 @@
+{
+  "status": "migration_tooling_locally_verified_presentation_pending_review",
+  "builder_role": "W04-L",
+  "builder_native_id": "01a07a69-bd54-7f72-9713-f2f3c76576c0",
+  "root_completion": "Preserved orphaned implementation; repaired receipt retry/interrupt safety, sync manifest, quickstart dependency preparation, and Markdown fences.",
+  "source_revision": "eb32e7efcf362f395cf44c7c020f2e1ebfc58a3d",
+  "checks": {
+    "migration_negative_tests": {
+      "count": 37,
+      "result": "pass",
+      "network": "fake clients only",
+      "command": "python3 -m unittest tests.test_migration_tooling tests.test_migration_review_repairs tests.test_migration_residual_repairs",
+      "independent_review": "execution/reviews/W07-L-W04-migration-residual-rereview.md"
+    },
+    "presentation_sync": "dry run passed against canonical c09a9da28ff4ee2264139353ba2313804ab55104 in a temporary consumer",
+    "quickstart": {
+      "repository": "AI-Ascension/sts2-harness",
+      "revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "fetch": "cargo fetch --locked succeeded",
+      "fake_run": "cargo run --locked --offline --package sts2-harness --bin sts2-harness-runtime-v2-fake succeeded",
+      "focused_tests": "3 runtime_v2 tests passed",
+      "policy": "350 sized files, 0 warnings, 0 errors",
+      "target_directory": "/tmp/ai-ascension-brand-w04-harness-target",
+      "limit": "Fake offline component workflow; no game or model provider"
+    }
+  },
+  "live_observation": {
+    "at": "2026-09-07T16:41:19Z",
+    "actor": "CompleteDotTech",
+    "operation": "read-only plan",
+    "repositories": 13,
+    "input": "migration/input-map.json",
+    "receipt": "migration/plan.json",
+    "review": "execution/reviews/migration-preflight-002.json"
+  },
+  "remote_mutations": [],
+  "companion_changes": "Ten local presentation commits; github/companion-commits.json records exact current base/head revisions. Independent presentation review pending.",
+  "orchestration": "No actual depth-2/3 descendants; requested hierarchy not delivered",
+  "independent_reviewer": "W07-L for migration tooling; presentation reviewer pending",
+  "file_sha256": {
+    "migration/tooling/github_migration.py": "01fb9acfd01ffd90f142b2e0ac1b18819d2e5f86862e43b031879f875a7c0cbb",
+    "migration/input-map.json": "868e6c719b7a3947ebe0f39f209eed08699631897140498d6608175f27ad666b",
+    "migration/plan.json": "874883e236336291a4d0ea003b3612565369d68e37b3116c5fde6cbf2e03c096",
+    "github/presentation-manifest.json": "e4dd7ec08533b616d2c511fe5eafa9eb8531ad0bc7a2e686d25c63098a51a472",
+    "docs/TESTED_QUICKSTART.md": "6d10c672a8edb286df025fe90828dcbddd922084a8e7f1fbe31aabd38650d470",
+    "tests/test_migration_tooling.py": "605d811cfe4f94e6c11d3d5d36f1a3c94f09b7dd054c5491cbe5a875ab1025ea",
+    "tests/test_migration_residual_repairs.py": "35191e8de81931d15bbc98da10720d6377c27efede9a7da2c21cd6d912450976"
+  },
+  "initial_source_revision": "4d09cd40fb077cc3364197a1cb1056950b980361",
+  "latest_privacy_repair": {
+    "revision": "b276375035ae3ff400efe5dfe3f7921f9978a9f4",
+    "test_count": 38,
+    "result": "pass",
+    "command": "python3 -m unittest tests.test_migration_residual_repairs tests.test_migration_tooling tests.test_migration_review_repairs -q",
+    "scope": "Offline regression contracts only; fresh read-only plan separate.",
+    "review": "execution/reviews/W07-private-delivery-scope-review.md"
+  }
+}

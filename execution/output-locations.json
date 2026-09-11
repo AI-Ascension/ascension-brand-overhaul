@@ -1,0 +1,19 @@
+{
+  "schema_version": "ai-ascension.output-locations.v1",
+  "scope": "Binding output names mapped to actual canonical or companion implementations. No duplicate scaffolding is created for naming differences.",
+  "mappings": {
+    "website implementation changes": "github/website-pull-request.json",
+    "site/route-manifest.json": "AI-Ascension/aiascension.tech@56e532b21922f39480cd15dcbb465676770408f5:site/route-manifest.json",
+    "site/visual-regression-baselines/": "AI-Ascension/aiascension.tech@56e532b21922f39480cd15dcbb465676770408f5:site/visual-regression-baselines/",
+    "docs/SUBSCRIPTION_OPERATIONS.md": "AI-Ascension/aiascension.tech@56e532b21922f39480cd15dcbb465676770408f5:docs/SUBSCRIPTION_OPERATIONS.md",
+    "execution/subscription-review.json": "AI-Ascension/aiascension.tech@56e532b21922f39480cd15dcbb465676770408f5:execution/subscription-review.json",
+    "companion README/profile changes": "github/companion-commits.json",
+    "tools/publisher/": "publisher/",
+    "tests/publication/": "tests/test_publication*.py and tests/fixtures/publication/",
+    "tools/capability-renderer/": "publisher/capabilities.py",
+    "tests/analytics/": "tests/test_measurement*.py",
+    "tests/integration/": "tests/test_content_sync.py, tests/test_migration*.py, scripts/review_subscription_http.py, and external website tests/SubscriptionFlowTest.php",
+    "tests/visual/": "scripts/browser_review.mjs and execution/reviews/W03-repair-review-002.json; private screenshot receipts stay excluded"
+  },
+  "art_paths": "Absent and individually blocked; mappings do not substitute tokens or historical artwork for required generated outputs."
+}

@@ -1,0 +1,245 @@
+{
+  "recordType": "w02_access_capability",
+  "recordVersion": "1.0.0",
+  "recordedAt": "2026-09-07",
+  "task": {
+    "taskId": "W02-L",
+    "roleId": "W02-L",
+    "workstream": "W02",
+    "sourceSnapshot": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+    "worktree": "<isolated-worktrees>/brand-w02",
+    "writeLease": [
+      "brand/tokens.json",
+      "brand/tokens.css",
+      "brand/ART_ACCESS.md",
+      "execution/w02-access.json"
+    ],
+    "forbiddenWritePaths": [
+      "orchestration/",
+      "art/",
+      "brand/prompts/",
+      "brand/sources/",
+      "brand/assets/"
+    ]
+  },
+  "nativeLineage": {
+    "required": "ROOT -> W02-L -> W02-C1 -> W02-C1-BUILD",
+    "status": "blocked_missing_native_spawn_control",
+    "slotRequest": {
+      "roleId": "W02-C1",
+      "status": "not_sent",
+      "reason": "No collaboration spawn or messaging control is exposed to this child session; no receipt can be fabricated."
+    },
+    "nodes": [
+      {
+        "roleId": "W02-L",
+        "depth": 1,
+        "parentRoleId": "ROOT",
+        "requested": {
+          "model": "gpt-5.6-luna",
+          "reasoningEffort": "max"
+        },
+        "accepted": {
+          "model": "gpt-5.6-luna",
+          "reasoningEffort": "max"
+        },
+        "observed": {
+          "nativeAgentId": "01a07a53-0521-7673-b4fd-15921bfaa4b8",
+          "parentNativeAgentId": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+          "model": "gpt-5.6-luna",
+          "reasoningEffort": "max"
+        },
+        "status": "verified",
+        "evidence": "Root supplied the actual native thread and parent IDs from the installed-client runtime snapshot."
+      },
+      {
+        "roleId": "W02-C1",
+        "depth": 2,
+        "parentRoleId": "W02-L",
+        "requested": {
+          "model": "gpt-5.6-luna",
+          "reasoningEffort": "max"
+        },
+        "accepted": null,
+        "observed": {
+          "nativeAgentId": null,
+          "parentNativeAgentId": null,
+          "model": null,
+          "reasoningEffort": null
+        },
+        "status": "blocked",
+        "evidence": "No native collaboration.spawn_agent control is available in this child session; coordinator was not spawned."
+      },
+      {
+        "roleId": "W02-C1-BUILD",
+        "depth": 3,
+        "parentRoleId": "W02-C1",
+        "requested": {
+          "model": "gpt-6-astra",
+          "reasoningEffort": "max"
+        },
+        "accepted": null,
+        "observed": {
+          "nativeAgentId": null,
+          "parentNativeAgentId": null,
+          "model": null,
+          "reasoningEffort": null
+        },
+        "status": "blocked",
+        "evidence": "No valid depth-3 parent exists and no native spawn receipt or Astra runtime attestation is available."
+      }
+    ],
+    "callableSurfaceObservation": {
+      "checkedAt": "2026-09-07",
+      "missingControls": [
+        "collaboration.spawn_agent",
+        "collaboration.send_message",
+        "collaboration.wait_agent"
+      ],
+      "interpretation": "The required native nested delegation cannot be executed or verified from this child session. This is a capability limitation, not evidence of a different model."
+    }
+  },
+  "imageGeneration": {
+    "requiredModel": "gpt-image-2",
+    "acceptedResolvedModelIds": [
+      "gpt-image-2",
+      "gpt-image-2-2026-04-21"
+    ],
+    "tool": "image_gen.imagegen",
+    "available": true,
+    "schemaFieldsObserved": [
+      "prompt",
+      "referenced_image_paths",
+      "num_last_images_to_include"
+    ],
+    "explicitModelSelectorObserved": false,
+    "requestedModel": "gpt-image-2",
+    "acceptedModel": null,
+    "observedModel": null,
+    "backendAttestation": null,
+    "status": "blocked_unverified_backend",
+    "reason": "The exposed image tool does not provide a model selector or trustworthy response metadata establishing the required backend."
+  },
+  "policyPins": {
+    "policyPath": "art/generation-policy.json",
+    "policySha256": "44b2c55363eac3d55d2a959646920f88c26d7d4485d27fdeac71cafbd1794245",
+    "assetRegistryPath": "art/asset-registry.json",
+    "assetRegistrySha256": "58b933b693e15ebc606cbc542eea84ec3b498c1ce7cac9f87131dd6c231ae223",
+    "rolesPath": "orchestration/roles.json",
+    "rolesSha256": "9b8f1026ea223b1f8ae8eec7ce54694434659e1003cac988518e73fb8532a742",
+    "artPolicyPath": "art/ASTRA_GPT_IMAGE_2_POLICY.md",
+    "artPolicySha256": "daca7b25db5b916036e680853d016f55bbf5300bdaa72386d0a1de95327c35ab",
+    "authorMetaPromptPath": "art/ASTRA_ART_PROMPT_AUTHOR.md",
+    "authorMetaPromptSha256": "6b1132f5ecfe5ce94a440c99a0c8ac3bb001ad5c85a1cf59945edb45d07682c5"
+  },
+  "artStatus": {
+    "registryCount": 72,
+    "blockedCount": 72,
+    "blockedIds": [
+      "ID-01",
+      "ID-02",
+      "ID-03",
+      "ID-04",
+      "ID-05",
+      "ID-06",
+      "ID-07",
+      "ID-08",
+      "BG-01",
+      "BG-02",
+      "BG-03",
+      "BG-04",
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "RUN-01",
+      "RUN-02",
+      "RUN-03",
+      "RUN-04",
+      "RUN-05",
+      "CAST-01",
+      "CAST-02",
+      "CAST-03",
+      "CAST-04",
+      "CAST-05",
+      "CAST-06",
+      "CAST-07",
+      "MKT-01",
+      "MKT-02",
+      "MKT-03",
+      "MKT-04",
+      "MKT-05",
+      "MKT-06",
+      "MKT-07",
+      "MKT-08",
+      "MKT-09",
+      "DOC-01",
+      "DOC-02",
+      "DOC-03",
+      "DOC-04",
+      "DOC-05",
+      "GH-01-B",
+      "GH-01-S",
+      "GH-02-B",
+      "GH-02-S",
+      "GH-03-B",
+      "GH-03-S",
+      "GH-04-B",
+      "GH-04-S",
+      "GH-05-B",
+      "GH-05-S",
+      "GH-06-B",
+      "GH-06-S",
+      "GH-07-B",
+      "GH-07-S",
+      "GH-08-B",
+      "GH-08-S",
+      "GH-09-B",
+      "GH-09-S",
+      "GH-10-B",
+      "GH-10-S",
+      "GH-11-B",
+      "GH-11-S",
+      "GH-12-B",
+      "GH-12-S",
+      "GH-13-B",
+      "GH-13-S"
+    ],
+    "commonBlockers": [
+      "ORCH-NATIVE-SPAWN-UNAVAILABLE",
+      "IMAGE-BACKEND-UNVERIFIED",
+      "ART-PROVENANCE-ABSENT"
+    ],
+    "promptsAuthored": 0,
+    "rawOutputsPresent": 0,
+    "generationRecordsPresent": 0,
+    "independentReviewsPresent": 0,
+    "fallbackUsed": false
+  },
+  "nonArtClasses": {
+    "evidenceMediaIds": [
+      "RUN-06",
+      "RUN-07",
+      "RUN-08"
+    ],
+    "referenceIds": [
+      "OLD-01",
+      "OLD-02",
+      "OLD-03",
+      "OLD-04",
+      "OLD-05"
+    ],
+    "handling": "Remain separate from generated art. No synthetic gameplay evidence or generative repair was performed."
+  },
+  "deliverables": {
+    "tokens": "brand/tokens.json",
+    "css": "brand/tokens.css",
+    "artAccess": "brand/ART_ACCESS.md",
+    "prompts": "none",
+    "generatedArt": "none"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "ai-ascension.requirement-evidence.v1",
+  "requirement_id": "REQ-054",
+  "binding_requirement": "Source content changes invalidate approval by digest; synthetic or forced-fixture results fail normal production publication.",
+  "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+  "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+  "status": "verified",
+  "reviewer": "W07-L",
+  "actual_review_records": [
+    "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+    "execution/reviews/publisher-repair-status.json"
+  ],
+  "procedures": [
+    "python3 -m unittest discover -s tests -v (195pass at5d1c26ecee9ce753eae89c525c4a8764d29a18e5; exact W05 source unchanged)",
+    "Focused independent publisher/measurement negative probes in W07 review chain."
+  ],
+  "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+  "artifacts": [
+    {
+      "path": "publisher/__init__.py",
+      "sha256": "96e6f8b9c8bd8a4ba27144dc07e2da4f107568dd4611224a0e9b1fe0bcaec670",
+      "bytes": 921
+    },
+    {
+      "path": "publisher/capabilities.py",
+      "sha256": "698df5047c177ad25cb73a91c40c4941ba4dfa32ca72cf69ee42fa92b2bfe054",
+      "bytes": 6361
+    },
+    {
+      "path": "publisher/authority.py",
+      "sha256": "1155c643e8079948133a681789165cbe102329a8ab26d7256540306fa0cc9510",
+      "bytes": 3165
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "sha256": "c0a1dd6dc95cbd9dfefec1c9af6e938163095535268c56439e02882515ed086f",
+      "bytes": 11487
+    },
+    {
+      "path": "docs/MEASUREMENT.md",
+      "sha256": "32f28da2eb67b6f1653fd1476fa2595d65187cf103b88089401539a63e0730e9",
+      "bytes": 7628
+    },
+    {
+      "path": "config/publication-authorities.json",
+      "sha256": "f0a2508f0584c80edee3f1e20bb43e52c28525aa91addabc90c1ff31ae01b0f9",
+      "bytes": 72
+    },
+    {
+      "path": "config/measurement-authorities.json",
+      "sha256": "32841efe6039106edcd85cf19f508bb5f332b5c3dc06fb4323769e7c2a12a0df",
+      "bytes": 71
+    },
+    {
+      "path": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+      "sha256": "aa0f16594a1cf3b8f08007f42df3988258e3f8fbc207350ad6df7421881adb0d",
+      "bytes": 6906
+    },
+    {
+      "path": "execution/reviews/publisher-repair-status.json",
+      "sha256": "5db94bc1ded21918d12793f4e916e2ab59c53ccfd30ecf1d42d3e718968e81ef",
+      "bytes": 6047
+    }
+  ],
+  "blocker": null,
+  "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
+  "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations."
+}

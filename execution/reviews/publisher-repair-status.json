@@ -1,0 +1,159 @@
+{
+  "schema_version": "ai-ascension.review-repair-status.v1",
+  "review": "execution/reviews/W07-L-publisher-measurement-review.md",
+  "independent_recheck": "reviewed_at_0e03d97",
+  "production_acceptance": "not_approved",
+  "repairs": [
+    {
+      "finding": "W07-PUB-01",
+      "commit": "0cc75a71398e53b62952ecb4d5d2718ad046eb01",
+      "status": "verified_for_reviewed_local_contract",
+      "tests": "tests/test_publication_review_repairs.py",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-PUB-02",
+      "commit": "ec1fc2e9f41653cadc0ae22d12f3a31c998a49ac",
+      "status": "verified_for_reviewed_local_contract",
+      "tests": "tests/test_publication_artifacts.py",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-PUB-03",
+      "commit": "3246830efcf17b4dd2ccd321940ef7a1b51b713a",
+      "status": "verified_for_reviewed_local_contract",
+      "tests": "tests/test_publication_lineage.py",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-PUB-04",
+      "commit": "f33f24bc4222e3f58a5569f71a942e7df10da462",
+      "status": "verified_for_reviewed_local_contract",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-PUB-05",
+      "status": "verified_for_reviewed_local_contract",
+      "commit": "f33f24bc4222e3f58a5569f71a942e7df10da462",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-PUB-06",
+      "commit": "0cc75a71398e53b62952ecb4d5d2718ad046eb01",
+      "status": "verified_for_reviewed_local_contract",
+      "tests": "tests/test_publication_review_repairs.py",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-MEA-01",
+      "commit": "09d79db1d2ad295dde6c877a4bc0a293e9aed40b",
+      "status": "verified_for_reviewed_local_contract",
+      "tests": "tests/test_measurement_review_repairs.py",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-MEA-02",
+      "commit": "09d79db1d2ad295dde6c877a4bc0a293e9aed40b",
+      "status": "verified_for_reviewed_local_contract",
+      "tests": "tests/test_measurement_review_repairs.py",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-MEA-03",
+      "status": "verified_for_reviewed_local_contract",
+      "commit": "dad9c8ef8b752ac1da0e93b81766663754c812f8",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-MEA-04",
+      "commit": "09d79db1d2ad295dde6c877a4bc0a293e9aed40b",
+      "status": "verified_for_reviewed_local_contract",
+      "tests": "tests/test_measurement_review_repairs.py",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-MEA-05",
+      "status": "verified_for_reviewed_local_contract",
+      "commit": "cf5eab1eae34e832a3558c81fec1faa2c89f2a60",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-MEA-06",
+      "status": "verified_for_reviewed_local_contract",
+      "commit": "cf5eab1eae34e832a3558c81fec1faa2c89f2a60",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-PUB-07",
+      "commit": "5b752cd49c16a5bec32816a09dd93920bb419437",
+      "status": "verified_for_reviewed_local_contract",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-PUB-08",
+      "commit": "5b752cd49c16a5bec32816a09dd93920bb419437",
+      "status": "verified_for_reviewed_local_contract",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-PUB-09",
+      "commit": "5b752cd49c16a5bec32816a09dd93920bb419437",
+      "status": "verified_for_reviewed_local_contract",
+      "independent_reviewer": "W07-L"
+    },
+    {
+      "finding": "W07-PUB-10",
+      "commit": "1a9ef6761192ac1a5db6e297e5cb0fcdcc6dff09",
+      "status": "verified_for_reviewed_local_contract",
+      "independent_reviewer": "W07-L",
+      "review": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+    },
+    {
+      "finding": "W07-MEA-07",
+      "commit": "cf88c468031b808e1ea758b996e0cfa12c00474e",
+      "status": "verified_for_reviewed_local_contract",
+      "independent_reviewer": "W07-L",
+      "review": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+    },
+    {
+      "finding": "W07-MEA-08",
+      "commit": "cf88c468031b808e1ea758b996e0cfa12c00474e",
+      "status": "verified_for_reviewed_local_contract",
+      "independent_reviewer": "W07-L",
+      "review": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+    },
+    {
+      "finding": "W07-CAP-01",
+      "commit": "1a9ef6761192ac1a5db6e297e5cb0fcdcc6dff09",
+      "status": "verified_for_reviewed_local_contract",
+      "independent_reviewer": "W07-L",
+      "review": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+    },
+    {
+      "finding": "W07-CAP-02",
+      "commit": "1a9ef6761192ac1a5db6e297e5cb0fcdcc6dff09",
+      "status": "verified_for_reviewed_local_contract",
+      "independent_reviewer": "W07-L",
+      "review": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+    }
+  ],
+  "residual_metadata_repairs": {
+    "commit": "3246830efcf17b4dd2ccd321940ef7a1b51b713a",
+    "tests": "tests/test_publication_lineage.py",
+    "status": "verified_for_reviewed_local_contract"
+  },
+  "evidence_limits": "Local regression tests use synthetic records and artificial approval shapes. They do not constitute authority, real artwork, deployment, or public publication approval.",
+  "followup_review": "execution/reviews/W07-L-publication-freeze-review.md",
+  "latest_full_suite": {
+    "source_revision": "0e03d97bc6af6b7622d33d830bdde1eef1c2b1d8",
+    "tests": 170,
+    "result": "pass",
+    "reviewer": "W07-L",
+    "review": "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+  },
+  "review_chain": [
+    "execution/reviews/W07-L-publication-freeze-review.md",
+    "execution/reviews/W07-L-5b-publication-measurement-rereview.md",
+    "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md"
+  ]
+}

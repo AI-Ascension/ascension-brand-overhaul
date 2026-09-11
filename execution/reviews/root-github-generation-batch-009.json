@@ -1,0 +1,19 @@
+[
+  {
+    "asset_id": "GH-09-B",
+    "generation_id": "GH-09-B-generation-001",
+    "prompt_path": "brand/prompts/root/GH-09-B/generation-001.txt",
+    "prompt_sha256": "69259ae8c69334083f3a25aa31fd1ec9c359e9c0f91b0153c824e5a62c095c0e",
+    "source_path": "brand/sources/generated/GH-09-B/generation-001.png",
+    "source_sha256": "793b7f31a029cdbfa563a4f0e10d3ed05b464a9abf19a83c36ca970dca632978",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:57:33.505409+00:00"
+  }
+]

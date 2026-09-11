@@ -1,0 +1,104 @@
+{
+  "schema_version": "ai-ascension.root-native-direct-capability-recheck.v1",
+  "observed_at": "2026-09-08T04:47:03Z",
+  "scope": "Bounded direct callable-namespace correction check for the requested native descendant capability. This receipt records only the current direct tool surface; it is not model identity, provider, backend, authorship, rights, or export attestation.",
+  "task": "/root/broadcast_records",
+  "requirements_read": [
+    "AGENTS.md:6-10",
+    "execution/reviews/root-native-capability-recheck-002.json"
+  ],
+  "requested_chain": {
+    "coordinator": {
+      "requested_model": "gpt-5.6-luna",
+      "requested_effort": "max",
+      "requested_fork_turns": "none",
+      "intended_depth": 2
+    },
+    "leaf": {
+      "requested_model": "gpt-5.6-luna",
+      "requested_effort": "max",
+      "requested_fork_turns": "none",
+      "intended_depth": 3
+    }
+  },
+  "direct_callable_surface_probe": {
+    "method": "Inspected the actual top-level callable namespaces and their directly declared methods in the current turn. The functions.exec nested ALL_TOOLS metadata was not used as the availability test, and no shell or alternate client substitute was used.",
+    "callable_top_level_namespaces": [
+      "functions",
+      "history",
+      "notes"
+    ],
+    "direct_callable_methods_by_namespace": {
+      "functions": [
+        "exec",
+        "wait",
+        "request_user_input",
+        "new_context",
+        "request_plugin_install",
+        "get_context_remaining",
+        "list_mcp_resources",
+        "list_mcp_resource_templates",
+        "read_mcp_resource",
+        "view_image",
+        "write_stdin",
+        "create_goal",
+        "get_goal",
+        "update_goal"
+      ],
+      "history": [
+        "list_items",
+        "list_windows",
+        "read_item",
+        "search_contents"
+      ],
+      "notes": [
+        "append_to_file",
+        "list_files_by_prefix",
+        "read_file",
+        "search_contents",
+        "write_file"
+      ]
+    },
+    "collaboration_namespace": {
+      "namespace_name": "collaboration",
+      "exposed_as_top_level_callable_namespace": false,
+      "callable_methods": [],
+      "requested_direct_method": "collaboration.spawn_agent",
+      "missing_direct_methods": [
+        "collaboration.spawn_agent",
+        "collaboration.send_message",
+        "collaboration.list_agents",
+        "collaboration.followup_task",
+        "collaboration.wait_agent",
+        "collaboration.interrupt_agent"
+      ],
+      "availability_result": "no_callable_direct_collaboration_method_exposed"
+    },
+    "shell_or_client_substitute_attempted": false
+  },
+  "runtime_settings": {
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "accepted_model": "unknown",
+    "accepted_effort": "unknown",
+    "observed_model": "unknown",
+    "observed_effort": "unknown"
+  },
+  "delegation_result": {
+    "coordinator_created": false,
+    "leaf_created": false,
+    "actual_parent_child_ids": [],
+    "required_depth_three_chain_established": false,
+    "new_descendants_used": 0,
+    "native_spawn_attempted": false,
+    "reason": "The actual callable direct namespaces in this turn are functions, history and notes; no collaboration namespace or collaboration.spawn_agent direct method is exposed, so no native call could be made.",
+    "backend_attestation": "none"
+  },
+  "prior_record_integrity": {
+    "path": "execution/reviews/root-native-capability-recheck-002.json",
+    "sha256_before_new_receipt": "d575aa191797e2ac1073beecf58fce11238c2b7a0e9ac031c2cdf66bbfd12751",
+    "write_target_exclusive": true,
+    "prior_record_modified": false
+  },
+  "conclusion": "Direct namespace inspection confirms that no callable collaboration.spawn_agent method is exposed in this session. The requested Luna/max coordinator-to-depth-3-leaf chain remains unavailable; no shell/client substitute, fabricated ancestry, model claim, or child receipt was used."
+}

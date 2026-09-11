@@ -1,0 +1,237 @@
+{
+  "schema_version": "ai-ascension.website-art-candidate.v1",
+  "observed_at": "2026-09-07T21:58:32.812098+00:00",
+  "status": "reviewed_local_private_candidate_not_publicly_uploaded",
+  "repository": "AI-Ascension/aiascension.tech",
+  "branch": "work/root-art-integration",
+  "base_revision": "56e532b21922f39480cd15dcbb465676770408f5",
+  "revision": "7e63ff4a5317de5305602f5d407a93246e66d248",
+  "root_art_source_revision": "b938b75799aa0525f5a47ed2ec34802653cb02c3",
+  "existing_public_draft_pr": {
+    "url": "https://github.com/AI-Ascension/aiascension.tech/pull/1",
+    "observed_head": "56e532b21922f39480cd15dcbb465676770408f5",
+    "includes_this_candidate": false
+  },
+  "bundle": {
+    "path": "delivery/website-art-candidate.bundle",
+    "sha256": "3cb11b0860f97b6711db36f8804eaafe170591a12bc5ec3d74cd28e5f18ed16a",
+    "bytes": 8814401,
+    "ref": "refs/heads/work/root-art-integration",
+    "prerequisite_revision": "56e532b21922f39480cd15dcbb465676770408f5"
+  },
+  "changed_files": [
+    {
+      "path": "404.html",
+      "sha256": "f00203456989395f62c13f205bf801f2ae56ccca5fe958d64364b010c964dcb1",
+      "bytes": 2494
+    },
+    {
+      "path": "404.shtml",
+      "sha256": "ebdb870c554ec0c2593f868dfe8bc7eca1cd3d2258f895a9af1886f138039fbe",
+      "bytes": 2486
+    },
+    {
+      "path": "api/_functions.php",
+      "sha256": "3892c1e2ec73d2b0ddb3f2f62617609a5892379e9f93fd265e42baab0238d975",
+      "bytes": 26260
+    },
+    {
+      "path": "api/confirm.php",
+      "sha256": "3bbe02272e9c3d1ca6537506acf51a63a6ff01253b0d3c66fc29f7495909acd1",
+      "bytes": 2041
+    },
+    {
+      "path": "assets/brand/404.png",
+      "sha256": "20708d150db81489c53e4153b1c8273175b4265324c8d2ca293d6aeafd1190bd",
+      "bytes": 316246
+    },
+    {
+      "path": "assets/brand/apple-touch-icon.png",
+      "sha256": "902a544011f7314bce6e0f46027409f0895aff07ab964a85a82c62a002bbe019",
+      "bytes": 26272
+    },
+    {
+      "path": "assets/brand/ascension-dark.png",
+      "sha256": "7623c76492838ff2f947ea23b3bf4c599ecd67b9800f3617592246f56603bd8a",
+      "bytes": 180603
+    },
+    {
+      "path": "assets/brand/ascension-light.png",
+      "sha256": "688d3ef3d73d9bc62a14ea77e9f9b845c0d7e85a974d42e46935dee3e3d2a9b5",
+      "bytes": 183974
+    },
+    {
+      "path": "assets/brand/capabilities.png",
+      "sha256": "5f58ef856ab6eaeb5ee0f784b79893ea947861aa855f004e909735c5a6e88661",
+      "bytes": 1165512
+    },
+    {
+      "path": "assets/brand/favicon-16.png",
+      "sha256": "256b18b8a6c79286b824e06fd8095019da7bb1df39ef282ee2471f7c202421f9",
+      "bytes": 648
+    },
+    {
+      "path": "assets/brand/favicon-32.png",
+      "sha256": "dbb3bef4fed5398a7fa1b53981f5b9473e4bcdfa3f5ea52b26d9c3261279cccb",
+      "bytes": 1646
+    },
+    {
+      "path": "assets/brand/favicon.png",
+      "sha256": "b94d0ea4f03cc73d0459426e61b3977ab7bb609d9902a4ecbb59a640244a95ea",
+      "bytes": 4301
+    },
+    {
+      "path": "assets/brand/home-desktop.webp",
+      "sha256": "58b2dde67a37aa71292acc306ad43f9aeea80cd9ff557b275a631990fd3cad19",
+      "bytes": 111128
+    },
+    {
+      "path": "assets/brand/home-mobile.webp",
+      "sha256": "9f5c58f090c29eb235acc66fce55ae5888eaff99b16e5636e8e261e97c65efb9",
+      "bytes": 47376
+    },
+    {
+      "path": "assets/brand/latest-run-poster-mobile.webp",
+      "sha256": "b4dc73d00d308e4365a984a9aa74f20aa6308e5db8f97db171bdb542c3877204",
+      "bytes": 1098978
+    },
+    {
+      "path": "assets/brand/latest-run-poster.webp",
+      "sha256": "95ed105e415a6aa7a3c076a4dfc414ce9e93a61a349e3504cde3680b4b614c28",
+      "bytes": 1412322
+    },
+    {
+      "path": "assets/brand/map-preview-mobile.png",
+      "sha256": "e8120038a768a50ff208dbb93027afcb38288136c24400d18231a64cd228bf96",
+      "bytes": 1009070
+    },
+    {
+      "path": "assets/brand/map-preview.png",
+      "sha256": "0e9723738c99e12fcb90d820c7fa580debccc495c6a8e5dbf836216a3c3ac010",
+      "bytes": 1253360
+    },
+    {
+      "path": "assets/brand/mark.png",
+      "sha256": "df78cf0b82c61e56e519785e399b1412bb3fb228cf5006febabee8471bf3656c",
+      "bytes": 4437
+    },
+    {
+      "path": "assets/brand/path-build.png",
+      "sha256": "082a5514431c9c4f89c04517ee3f12c8050e61e3a82e8a58ec8c8934b87fab24",
+      "bytes": 256831
+    },
+    {
+      "path": "assets/brand/path-watch.png",
+      "sha256": "cbfdd6b79a0cfca7f43c741d5fb962a95476389cd9fa9deae388667d00b125fa",
+      "bytes": 266136
+    },
+    {
+      "path": "assets/brand/site-og.png",
+      "sha256": "684ca219c6f4bfbdbc976a7a6fabd07571ef05f801942a635ff1e4b5c940c937",
+      "bytes": 991951
+    },
+    {
+      "path": "assets/brand/subscribe-confirm.png",
+      "sha256": "9b29588a0746cc43ff563d4eb60074e5b18afc271f43c3162a7eeb3941ecfb72",
+      "bytes": 91526
+    },
+    {
+      "path": "assets/brand/subscribe-success.png",
+      "sha256": "1859fff07e055ac8291de414d445045164f2bd71af85bcc58e078a416707c0a8",
+      "bytes": 96924
+    },
+    {
+      "path": "assets/brand/tokens.css",
+      "sha256": "e180a8c3c816d3c225632ae5cf1fe71540322eef024ffa2933f44849b4d7eb9f",
+      "bytes": 15597
+    },
+    {
+      "path": "assets/brand/unavailable.png",
+      "sha256": "1b2388061f132853235dfe54a65d56a306d1100ac61f8f684dac419bd94dc7d2",
+      "bytes": 282605
+    },
+    {
+      "path": "build.html",
+      "sha256": "15c72757331bf4b9a2da4b01ca8e69895911ba0b007512332183b5a075fe3d37",
+      "bytes": 10011
+    },
+    {
+      "path": "contributors.html",
+      "sha256": "e74b353c936b9ff88d734a95d6d9888befa3a5b3222ad8c919782e23cc86bd3b",
+      "bytes": 6053
+    },
+    {
+      "path": "decision.html",
+      "sha256": "73f8367128960d272d38f48f1f1bc56235127f1e51be54147286f8578ed18d94",
+      "bytes": 4794
+    },
+    {
+      "path": "docs.html",
+      "sha256": "5f10b4ae903715065710dd281cd4a0e234f24774b23becd4942d46f716672802",
+      "bytes": 10176
+    },
+    {
+      "path": "execution/root-art-integration.json",
+      "sha256": "19466e80dd3a4196cab04b516d15d7862efc273b4f77f7430ae0a0dbe5b83eab",
+      "bytes": 5416
+    },
+    {
+      "path": "home.html",
+      "sha256": "7f65a56990681d3a40ce0a3c0b87b1ca169f88e25bc2e1503d4bbdb8f47fd6a1",
+      "bytes": 2243
+    },
+    {
+      "path": "index.html",
+      "sha256": "d57ff9133a69711370eadd167abf4c6fb507d623bc5235fc2c70015d4488a858",
+      "bytes": 12214
+    },
+    {
+      "path": "press.html",
+      "sha256": "63efce7defeabf00ad2703ccbde06c070545c0d888323ec3682593ce3d4a7c34",
+      "bytes": 5685
+    },
+    {
+      "path": "privacy.html",
+      "sha256": "21a74bb1a3911a7f5d09a455d9a4d168bcd984dcf747978cde3b2ecb25a3f9a0",
+      "bytes": 7156
+    },
+    {
+      "path": "run.html",
+      "sha256": "ce55b2daf6d5ae54f826ea56f9e2f245df8c88d5fafc64b2a149bc0cd1485c0f",
+      "bytes": 9530
+    },
+    {
+      "path": "runs.html",
+      "sha256": "405e87564c2e026e76c3bd0cc15fcfcd75506344a9bc46ed68532e2fc048daee",
+      "bytes": 6783
+    },
+    {
+      "path": "script.js",
+      "sha256": "8d412c735c81b3a5b441502b8867d76c9fb65e6a1b1d5ceb36d64510aa6504aa",
+      "bytes": 7819
+    },
+    {
+      "path": "styles.css",
+      "sha256": "245a022593dc90e4607a965ef7959727140d5f4fc2913075d19b96ebb8068cf1",
+      "bytes": 28173
+    },
+    {
+      "path": "tests/SubscriptionFlowTest.php",
+      "sha256": "c0e79b84a9d10e624f61e8de420cc4d1d5ead3d6fe70f57c966012ebd0baf8e2",
+      "bytes": 11415
+    },
+    {
+      "path": "watch.html",
+      "sha256": "e6dde3afb3369b26c3a47ecfcdf9d2982966a62146f576a509933aa72f8c47f3",
+      "bytes": 7281
+    }
+  ],
+  "verification_records": [
+    "execution/reviews/W03-root-website-art-review.json",
+    "execution/reviews/W03-root-website-art-followup.json",
+    "execution/reviews/root-art-subscription-http.json"
+  ],
+  "source_binding": "The browser matrix and shell followup precede the final source_revision/status additions to execution/root-art-integration.json. Those metadata-only additions do not change UI, PHP, JS or artwork bytes. All 23 copy records match their pinned brand sources.",
+  "restoration": "delivery/WEBSITE_CANDIDATE.md",
+  "publication_authority": "none; preserve this private candidate until exact public distribution and deployment gates are satisfied."
+}

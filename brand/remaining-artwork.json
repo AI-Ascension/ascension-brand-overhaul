@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-09-08T04:53:29.620774+00:00",
+  "scope": "All planned export paths exist. Listed families still lack required authentic content or integration; blank templates are not full brief completion.",
+  "authorized_route": "user_authorized_root_image_tool",
+  "image_service_status": "Root generation succeeded after the historical quota failure; see execution/reviews/root-image-access-restored.json.",
+  "required_families": 72,
+  "required_exports": 115,
+  "existing_exports": 115,
+  "missing_exports": 0,
+  "verified_families": 70,
+  "families": [
+    {
+      "asset_id": "CAST-03",
+      "title": "Mobile broadcast layout",
+      "brief_reference": "art/asset-registry.json#CAST-03",
+      "missing_exports": [],
+      "existing_exports": [
+        "brand/assets/broadcast/vertical.png"
+      ],
+      "blocker": "Generated portrait layouts are reviewed; the brief still requires approved actual-footage cropping and host integration checks. No approved footage was supplied."
+    },
+    {
+      "asset_id": "MKT-05",
+      "title": "Community challenge card",
+      "brief_reference": "art/asset-registry.json#MKT-05",
+      "missing_exports": [],
+      "existing_exports": [
+        "brand/assets/marketing/challenge-template.png"
+      ],
+      "blocker": "A reviewed concrete private challenge proposal with rules and proposed dates exists. Operator approval for a real challenge remains absent; see source review 008."
+    }
+  ]
+}

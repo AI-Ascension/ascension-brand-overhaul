@@ -1,0 +1,19 @@
+[
+  {
+    "asset_id": "GH-12-B",
+    "generation_id": "GH-12-B-generation-001",
+    "prompt_path": "brand/prompts/root/GH-12-B/generation-001.txt",
+    "prompt_sha256": "69e3145b23725f76d2631a7b7e02f48e230339c39a72ce3adf1808efc0598efd",
+    "source_path": "brand/sources/generated/GH-12-B/generation-001.png",
+    "source_sha256": "67b9f49f0348fbf5ce07f122555397b3b1c520b6587f0121b4b13e038cd3f951",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:00:31.053649+00:00"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "scope": "Synthetic local publisher UI only; not authentic public gameplay or production publishing",
+  "result": "pass",
+  "publication_tests": 19,
+  "browser_states": 10,
+  "browser": "Chromium 153.0.8010.12",
+  "widths": [
+    360,
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "manual_views": [
+    "synthetic-390-dark.png before and after table width repair"
+  ],
+  "interaction": "Local HTML browser probe: selected option persisted and consequence appeared only after explicit reveal; timeline result initially hidden",
+  "source_sha256": {
+    "publisher/render.py": "0caa93a83c0c0513a96d24bcb929f993cf52adeaa6b25c5b74ac8c585b4cdcfe",
+    "brand/tokens.css": "68922303e31051e522704061d3bd72d4735e3eea1f072ec2a10a104557e31ba2",
+    "tests/test_publication_render_behavior.py": "cd135549b70b9aebe4d4fa0db23a9eb03584c462ad4a0807abed0cf20e970471"
+  },
+  "evidence_sha256": {
+    "publisher-browser-002/report.json": "c0b4cefc08cdf7fb1d4ea563a479fc8f342c0453c589a95cc5f2b8fef6cff627",
+    "publisher-interaction-001.json": "0e13b30641cae9077e6ef6aa908ffe306d5cdf7292bc0d9f7d946529ccd7413c"
+  },
+  "independent_review": "pending W07; root authored repair",
+  "production_operations": []
+}

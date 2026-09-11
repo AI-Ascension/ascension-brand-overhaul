@@ -1,0 +1,206 @@
+{
+  "schema_version": "ai-ascension.requirement-evidence.v1",
+  "requirement_id": "REQ-009",
+  "binding_requirement": "No bundled font binaries or ambiguous copied marks. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+  "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+  "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+  "recorded_at": "2026-09-08T04:58:19.926094+00:00",
+  "status": "verified",
+  "reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+  "actual_review_records": [
+    "execution/reviews/asset-gate-001.json",
+    "docs/W07-L-W02-helper-rereview.md",
+    "execution/reviews/W07-private-delivery-scope-review.md",
+    "execution/reviews/W02-root-art-identity-review.json",
+    "execution/reviews/root-art-browser-smoke.json",
+    "execution/reviews/root-image-service-limit.json",
+    "execution/reviews/W02-root-art-second-batch-review.json",
+    "execution/reviews/W02-root-identity-source-use-review.json",
+    "execution/reviews/W03-root-export-review.json",
+    "execution/reviews/W03-root-export-followup.json",
+    "execution/root-art-acceptance.json",
+    "execution/reviews/W03-root-art-final-acceptance.json",
+    "execution/reviews/W02-broadcast-source-review-008.json",
+    "execution/reviews/W02-broadcast-source-review-009.json",
+    "execution/reviews/W03-requirements-refresh-recommendations.json",
+    "execution/reviews/root-original-output-preservation.json"
+  ],
+  "procedures": [
+    "Independent actual-source, visual and mechanical-export reviews at actual_review_records",
+    "Scoped validate_assets.verify over all 70 verified plans and deliveries; zero lineage errors in execution/root-art-acceptance.json",
+    "Full validate_assets.py gate retains CAST-03 and MKT-05 blocked; missing authentic footage/challenge approval is not a schema or hash success",
+    "Exact prompt/raw-source preservation checks in execution/reviews/root-original-output-preservation.json"
+  ],
+  "result_scope": "scoped integration check for raster lettering, font-binary absence, and identity consistency",
+  "artifacts": [
+    {
+      "path": "brand/tokens.json",
+      "sha256": "222bf6fd2806532ebedb2f748a9ab89b870b4da6d3aa4bbf4e614dd72194e2d8",
+      "bytes": 13973
+    },
+    {
+      "path": "brand/tokens.css",
+      "sha256": "e180a8c3c816d3c225632ae5cf1fe71540322eef024ffa2933f44849b4d7eb9f",
+      "bytes": 15597
+    },
+    {
+      "path": "brand/asset-manifest.json",
+      "sha256": "eae9daf31d586692930a35ca7538ea08e0bef6bf979b1fe2b757fe7ad6f7bd4d",
+      "bytes": 324021
+    },
+    {
+      "path": "brand/ART_ACCESS.md",
+      "sha256": "fa9036575b883e5d36bd47670cf7a20c38dfba7a1760450dd8351264cf0d3ed6",
+      "bytes": 9496
+    },
+    {
+      "path": "art/asset-registry.json",
+      "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3",
+      "bytes": 183884
+    },
+    {
+      "path": "art/evidence-media-registry.json",
+      "sha256": "2c30ce4f41f063b3e592088ac82c1d4a7183d2aa91069b06db25956279924c2b",
+      "bytes": 4721
+    },
+    {
+      "path": "art/reference-registry.json",
+      "sha256": "262219e47db5c0a6615906dcafe0a5deade10a8da58d3d0e26bd4abeaabee316",
+      "bytes": 5369
+    },
+    {
+      "path": "art/generation-policy.json",
+      "sha256": "dabc08e924fd6c24c2277ca1ee8eea7c5ea041dc00367300f3c92e4b90f16f10",
+      "bytes": 3134
+    },
+    {
+      "path": "execution/art-model-attestation.json",
+      "sha256": "ee5fdfab2878ceb0e3e223c446a22b2d49d6512310f0448a1726e265a2a522d5",
+      "bytes": 44969
+    },
+    {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+      "bytes": 637
+    },
+    {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "7a9258818e5fa34c686cc3f00aabb89e9d8367db033a2f86c66b9543aeb5749e",
+      "bytes": 133957
+    },
+    {
+      "path": "brand/provenance/root-tool-observations.json",
+      "sha256": "ced41302474f65c91ff8655610dc34e8a1b50bd782ba9b6f784a1fc875979c1e",
+      "bytes": 130763
+    },
+    {
+      "path": "brand/provenance/root-generation-records.json",
+      "sha256": "762be2fdd45af27bc8cdcbcf151bd3cfc9a6f669e514d68e313a04c0a6af758d",
+      "bytes": 235791
+    },
+    {
+      "path": "brand/provenance/root-export-recipe.json",
+      "sha256": "c22c3e4925ee22273b6760fb7cbccdbbe059310594120146cec819a563cb3944",
+      "bytes": 52040
+    },
+    {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "9e05f056d98163a495ca95ae6197bcfc9dbec20fe67029aa2ce7983a2772ff6c",
+      "bytes": 92020
+    },
+    {
+      "path": "brand/identity-review.md",
+      "sha256": "e5d88941de7edde7d95f2a1ed440f0d8231fc8f0d57ac397ca41649a2a205142",
+      "bytes": 2897
+    },
+    {
+      "path": "execution/root-art-acceptance.json",
+      "sha256": "c181db5d06983593ddcc5f0b3404a514f6c6cc42b71d30462c2082fd671720ba",
+      "bytes": 6474
+    },
+    {
+      "path": "brand/remaining-artwork.json",
+      "sha256": "772d6ec2297b887c7e01e1bd46f14cadb777dda8ba5e1f04a37018dfbf63df93",
+      "bytes": 1458
+    },
+    {
+      "path": "execution/reviews/asset-gate-001.json",
+      "sha256": "a81c8df685fef9eddd898b7fe2c650e4bc535d0cda6242d2a2c90945b5bf5442",
+      "bytes": 777
+    },
+    {
+      "path": "docs/W07-L-W02-helper-rereview.md",
+      "sha256": "7f938978b3c48d08a897df265215ed4cdf6a4cb6e776e15d83106ac51479ea0f",
+      "bytes": 5368
+    },
+    {
+      "path": "execution/reviews/W07-private-delivery-scope-review.md",
+      "sha256": "e74c5c794f8bc8a7a05ff689da982cc5c0504c56b2aedba09dc7b4f1585a498c",
+      "bytes": 6223
+    },
+    {
+      "path": "execution/reviews/W02-root-art-identity-review.json",
+      "sha256": "90eb2ba6e624f0c12791f188507f77ae673b3dcbbc403f56508f6778dce0730a",
+      "bytes": 19177
+    },
+    {
+      "path": "execution/reviews/root-art-browser-smoke.json",
+      "sha256": "44afd831e72a9dfc76126c0e8b7a06bf7c82fe295ae926b5d57a73f70cb1f543",
+      "bytes": 1004
+    },
+    {
+      "path": "execution/reviews/root-image-service-limit.json",
+      "sha256": "92727d8df105f53a4acd58bf8778fb8386977999a32f5a936a73c300127e4d86",
+      "bytes": 399
+    },
+    {
+      "path": "execution/reviews/W02-root-art-second-batch-review.json",
+      "sha256": "e301020b4fed32221930ffd344d07c90b23703a251088cc5b1ed579854e48e35",
+      "bytes": 48475
+    },
+    {
+      "path": "execution/reviews/W02-root-identity-source-use-review.json",
+      "sha256": "1a0a5f749de6f244be4bded45e541e55b0a60c305674624d1bbe97742ebc180e",
+      "bytes": 25824
+    },
+    {
+      "path": "execution/reviews/W03-root-export-review.json",
+      "sha256": "59b02d5ccef77c47ea69b5f3109248bdc477c96654262644eebbbadb7fe3ea3c",
+      "bytes": 26992
+    },
+    {
+      "path": "execution/reviews/W03-root-export-followup.json",
+      "sha256": "033708c5ca2bc7cbf5ec54d350a1b64f23b5672506e283b6154bbef779f65c41",
+      "bytes": 13121
+    },
+    {
+      "path": "execution/reviews/W03-root-art-final-acceptance.json",
+      "sha256": "857ec9bb30e7fffba97fe5c6ce5caf8061abb9b0b85eac52bcecdf5bf04c0ed2",
+      "bytes": 16783
+    },
+    {
+      "path": "execution/reviews/W02-broadcast-source-review-008.json",
+      "sha256": "dd4a32d74bc8a5154f490c9bc24f9be6b2a18001e923664d3ede2d2da31882b0",
+      "bytes": 46414
+    },
+    {
+      "path": "execution/reviews/W02-broadcast-source-review-009.json",
+      "sha256": "778c1106337e1fb605210d4e3d6e84accf9616c006ad3be5ea7de5dc41e4826d",
+      "bytes": 28328
+    },
+    {
+      "path": "execution/reviews/W03-requirements-refresh-recommendations.json",
+      "sha256": "7c06989f8d43a7385943105afa3b440fc4151a175ebc2668500109f1f9c65146",
+      "bytes": 34547
+    },
+    {
+      "path": "execution/reviews/root-original-output-preservation.json",
+      "sha256": "f3b83e674959bc0d0684dd172181c63c06b52b52975f16883b3caf130de54d2a",
+      "bytes": 40997
+    }
+  ],
+  "blocker": null,
+  "notes": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review.",
+  "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
+  "source_binding": "Current artifact bytes are listed here. Historical reviews retain their actual dates, input hashes and revisions. Current root acceptance incorporates reviews008/009 and the user-authorized root route; native/model and operational gates remain separate."
+}

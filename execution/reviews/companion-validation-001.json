@@ -1,0 +1,865 @@
+{
+  "schema_version": "ai-ascension.companion-validation.v1",
+  "observed_at": "2026-09-07T16:34:17.541437+00:00",
+  "scope": "Local component validation and presentation-only source edits; no deployment or host-play validation.",
+  "component_checks": [
+    {
+      "evidence_file": "ascension-watchdog.json",
+      "evidence_sha256": "e40e16fe3d56bb920a931f65317a893bdd92c20dd2b3be33b5259cbc85170665",
+      "result": {
+        "repository": "ascension-watchdog",
+        "source_revision": "dc2d20badb9e86c12067316b92d6c8289b2e6995",
+        "checks": [
+          {
+            "command": [
+              "cargo",
+              "fetch",
+              "--locked"
+            ],
+            "exit_code": 101,
+            "elapsed_seconds": 0.67,
+            "log": "ascension-watchdog-0.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "metadata",
+              "--locked",
+              "--no-deps",
+              "--format-version",
+              "1"
+            ],
+            "exit_code": 101,
+            "elapsed_seconds": 0.43,
+            "log": "ascension-watchdog-1.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "build",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features"
+            ],
+            "exit_code": 101,
+            "elapsed_seconds": 0.43,
+            "log": "ascension-watchdog-2.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "fmt",
+              "--all",
+              "--check"
+            ],
+            "exit_code": 1,
+            "elapsed_seconds": 0.72,
+            "log": "ascension-watchdog-3.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "clippy",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features",
+              "--",
+              "-D",
+              "warnings"
+            ],
+            "exit_code": 101,
+            "elapsed_seconds": 1.25,
+            "log": "ascension-watchdog-4.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "test",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features"
+            ],
+            "exit_code": 101,
+            "elapsed_seconds": 0.33,
+            "log": "ascension-watchdog-5.log"
+          }
+        ]
+      }
+    },
+    {
+      "evidence_file": "game-mod-managed.json",
+      "evidence_sha256": "1139e54b97414f6b79bbccda9fd4e1ba62c84f29d42bc162476af6ec29f7b206",
+      "result": [
+        {
+          "command": [
+            "dotnet",
+            "build",
+            "experiments/managed-rust-interop/managed/ManagedInteropSpike.csproj",
+            "--configuration",
+            "Release"
+          ],
+          "exit_code": 0,
+          "log": "game-mod-managed-0.log"
+        },
+        {
+          "command": [
+            "dotnet",
+            "run",
+            "--project",
+            "experiments/managed-rust-interop/workshop/WorkshopValidationProbe.csproj",
+            "--configuration",
+            "Release"
+          ],
+          "exit_code": 0,
+          "log": "game-mod-managed-1.log"
+        }
+      ]
+    },
+    {
+      "evidence_file": "observability.json",
+      "evidence_sha256": "2cd2e9e93a7c97a35a6a760223330117bec323306d79d972eed9311f64976da9",
+      "result": {
+        "checks": [
+          {
+            "command": [
+              "bash",
+              "-n",
+              "deploy/init.sh"
+            ],
+            "exit_code": 0,
+            "log": "observability-0.log"
+          },
+          {
+            "command": [
+              "bash",
+              "-n",
+              "deploy/laminar/bootstrap-project-key.sh"
+            ],
+            "exit_code": 0,
+            "log": "observability-1.log"
+          },
+          {
+            "command": [
+              "bash",
+              "-n",
+              "tests/bootstrap.sh"
+            ],
+            "exit_code": 0,
+            "log": "observability-2.log"
+          },
+          {
+            "command": [
+              "bash",
+              "-n",
+              "tests/compose-invariants.sh"
+            ],
+            "exit_code": 0,
+            "log": "observability-3.log"
+          },
+          {
+            "command": [
+              "bash",
+              "-n",
+              "tests/compose-required-settings.sh"
+            ],
+            "exit_code": 0,
+            "log": "observability-4.log"
+          },
+          {
+            "command": [
+              "bash",
+              "-n",
+              "tests/validation-regressions.sh"
+            ],
+            "exit_code": 0,
+            "log": "observability-5.log"
+          },
+          {
+            "command": [
+              "bash",
+              "-n",
+              "tests/fixtures/docker"
+            ],
+            "exit_code": 0,
+            "log": "observability-6.log"
+          },
+          {
+            "command": [
+              "bash",
+              "-n",
+              "tests/fixtures/docker-compose-config"
+            ],
+            "exit_code": 0,
+            "log": "observability-7.log"
+          },
+          {
+            "command": [
+              "bash",
+              "-n",
+              "tests/fixtures/openssl"
+            ],
+            "exit_code": 0,
+            "log": "observability-8.log"
+          },
+          {
+            "command": [
+              "shellcheck",
+              "--severity=warning",
+              "deploy/init.sh",
+              "deploy/laminar/bootstrap-project-key.sh",
+              "tests/bootstrap.sh",
+              "tests/compose-invariants.sh",
+              "tests/compose-required-settings.sh",
+              "tests/validation-regressions.sh",
+              "tests/fixtures/docker",
+              "tests/fixtures/docker-compose-config",
+              "tests/fixtures/openssl"
+            ],
+            "exit_code": 0,
+            "log": "observability-9.log"
+          },
+          {
+            "command": [
+              "git",
+              "diff",
+              "--check"
+            ],
+            "exit_code": 0,
+            "log": "observability-10.log"
+          },
+          {
+            "command": [
+              "bash",
+              "tests/validation-regressions.sh"
+            ],
+            "exit_code": 0,
+            "log": "observability-11.log"
+          },
+          {
+            "command": [
+              "bash",
+              "tests/compose-invariants.sh"
+            ],
+            "exit_code": 127,
+            "log": "observability-12.log"
+          },
+          {
+            "command": [
+              "bash",
+              "tests/bootstrap.sh"
+            ],
+            "exit_code": 0,
+            "log": "observability-13.log"
+          }
+        ],
+        "docker_checks": "Docker/buildx unavailable locally; these remain unverified, no host operations attempted"
+      }
+    },
+    {
+      "evidence_file": "sts2-game-core.json",
+      "evidence_sha256": "91ad4f3875bf6428e4f3c29e63023c1d5bbae81d8dc119e5d5657ead51b488ce",
+      "result": {
+        "repository": "sts2-game-core",
+        "source_revision": "87e0f3d9355c0827e989d9fbc31804440852519b",
+        "checks": [
+          {
+            "command": [
+              "cargo",
+              "fetch",
+              "--locked"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 0.95,
+            "log": "sts2-game-core-0.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "metadata",
+              "--locked",
+              "--no-deps",
+              "--format-version",
+              "1"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 0.38,
+            "log": "sts2-game-core-1.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "run",
+              "--locked",
+              "--offline",
+              "--package",
+              "repo-policy",
+              "--",
+              "--strict"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 23.09,
+            "log": "sts2-game-core-2.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "fmt",
+              "--all",
+              "--check"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 1.9,
+            "log": "sts2-game-core-3.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "clippy",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features",
+              "--",
+              "-D",
+              "warnings"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 22.44,
+            "log": "sts2-game-core-4.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "test",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 38.41,
+            "log": "sts2-game-core-5.log"
+          }
+        ]
+      }
+    },
+    {
+      "evidence_file": "sts2-game-mod.json",
+      "evidence_sha256": "926a6632c1c5e89ab9293a8ed46ff1c2ff2a75cb90a48bd80c7b7291744175eb",
+      "result": {
+        "repository": "sts2-game-mod",
+        "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+        "checks": [
+          {
+            "command": [
+              "cargo",
+              "fetch",
+              "--locked"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 1.17,
+            "log": "sts2-game-mod-0.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "metadata",
+              "--locked",
+              "--no-deps",
+              "--format-version",
+              "1"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 0.73,
+            "log": "sts2-game-mod-1.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "run",
+              "--locked",
+              "--offline",
+              "--package",
+              "repo-policy",
+              "--",
+              "--strict"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 16.58,
+            "log": "sts2-game-mod-2.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "build",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 91.95,
+            "log": "sts2-game-mod-3.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "fmt",
+              "--all",
+              "--check"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 5.26,
+            "log": "sts2-game-mod-4.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "clippy",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features",
+              "--",
+              "-D",
+              "warnings"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 35.95,
+            "log": "sts2-game-mod-5.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "test",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 8.84,
+            "log": "sts2-game-mod-6.log"
+          }
+        ]
+      }
+    },
+    {
+      "evidence_file": "sts2-gateway.json",
+      "evidence_sha256": "ef24a750af037172094b4ab2c5473b80e01056151bec05c571b400d597a4122a",
+      "result": {
+        "repository": "sts2-gateway",
+        "source_revision": "33ea48f3b549f08e19db80d8c68c1438fa12a60a",
+        "checks": [
+          {
+            "command": [
+              "cargo",
+              "fetch",
+              "--locked"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 1.18,
+            "log": "sts2-gateway-0.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "metadata",
+              "--locked",
+              "--no-deps",
+              "--format-version",
+              "1"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 0.45,
+            "log": "sts2-gateway-1.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "run",
+              "--locked",
+              "--offline",
+              "--package",
+              "repo-policy",
+              "--",
+              "--strict"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 23.93,
+            "log": "sts2-gateway-2.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "fmt",
+              "--all",
+              "--check"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 3.02,
+            "log": "sts2-gateway-3.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "clippy",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features",
+              "--",
+              "-D",
+              "warnings"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 123.5,
+            "log": "sts2-gateway-4.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "test",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 186.17,
+            "log": "sts2-gateway-5.log"
+          }
+        ]
+      }
+    },
+    {
+      "evidence_file": "sts2-mcp-server.json",
+      "evidence_sha256": "af79ed1b6299c2fd969bd059d75b555fa427428029480b70206d034a0f396183",
+      "result": {
+        "repository": "sts2-mcp-server",
+        "source_revision": "eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+        "checks": [
+          {
+            "command": [
+              "cargo",
+              "fetch",
+              "--locked"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 1.26,
+            "log": "sts2-mcp-server-0.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "metadata",
+              "--locked",
+              "--no-deps",
+              "--format-version",
+              "1"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 0.6,
+            "log": "sts2-mcp-server-1.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "run",
+              "--locked",
+              "--offline",
+              "--package",
+              "repo-policy",
+              "--",
+              "--strict"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 14.1,
+            "log": "sts2-mcp-server-2.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "fmt",
+              "--all",
+              "--check"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 5.45,
+            "log": "sts2-mcp-server-3.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "clippy",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features",
+              "--",
+              "-D",
+              "warnings"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 89.29,
+            "log": "sts2-mcp-server-4.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "test",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 242.53,
+            "log": "sts2-mcp-server-5.log"
+          }
+        ]
+      }
+    },
+    {
+      "evidence_file": "sts2-protocol.json",
+      "evidence_sha256": "1e13d8a4645218b8a1e2cf1a47e248077be3a58cfd2540cf514ed3551ef57060",
+      "result": {
+        "repository": "sts2-protocol",
+        "source_revision": "8874b0951289fd943c7e14dea36557fa24c401d1",
+        "checks": [
+          {
+            "command": [
+              "cargo",
+              "fetch",
+              "--locked"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 1.08,
+            "log": "sts2-protocol-0.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "metadata",
+              "--locked",
+              "--no-deps",
+              "--format-version",
+              "1"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 0.34,
+            "log": "sts2-protocol-1.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "run",
+              "--locked",
+              "--offline",
+              "--package",
+              "repo-policy",
+              "--",
+              "--strict"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 26.63,
+            "log": "sts2-protocol-2.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "fmt",
+              "--all",
+              "--check"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 2.07,
+            "log": "sts2-protocol-3.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "clippy",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features",
+              "--",
+              "-D",
+              "warnings"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 142.38,
+            "log": "sts2-protocol-4.log"
+          },
+          {
+            "command": [
+              "cargo",
+              "test",
+              "--locked",
+              "--offline",
+              "--workspace",
+              "--all-targets",
+              "--all-features"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 247.81,
+            "log": "sts2-protocol-5.log"
+          }
+        ]
+      }
+    }
+  ],
+  "refreshed_readme_policy": [
+    {
+      "repository": "sts2-harness",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--offline",
+        "--package",
+        "repo-policy",
+        "--",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "readme_sha256": "e71fc571b24c05f46c7ffaa096c5d8a371624d7bb60506134cf41b0e56518150"
+    },
+    {
+      "repository": "sts2-game-core",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--offline",
+        "--package",
+        "repo-policy",
+        "--",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "readme_sha256": "12550880ea7b974f419ba425f9730737bb83a09ae74b982b8f099538a8b73d22"
+    },
+    {
+      "repository": "sts2-game-mod",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--offline",
+        "--package",
+        "repo-policy",
+        "--",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "readme_sha256": "300a659688335637da320f74c7f82e11c7efd4bd3191d12aa110c34570523396"
+    },
+    {
+      "repository": "sts2-gateway",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--offline",
+        "--package",
+        "repo-policy",
+        "--",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "readme_sha256": "0b7ca6db86a62c1472546a382afbc4144b81b38d66b8a5f8719d3097f9a8be73"
+    },
+    {
+      "repository": "sts2-mcp-server",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--offline",
+        "--package",
+        "repo-policy",
+        "--",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "readme_sha256": "813b5d3b0ae2ee2ca67bc735c54f404b51abfa8d9d1c7b7d2437f5d516f451f0"
+    },
+    {
+      "repository": "sts2-protocol",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--offline",
+        "--package",
+        "repo-policy",
+        "--",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "readme_sha256": "f7a5bbe1295cad4d68dbc22488ae66520355b1f16ca3ac13b68263e8fafed54d"
+    }
+  ],
+  "unavailable": [
+    "ascension-watchdog has no Cargo.toml at pinned source dc2d20badb9e86c12067316b92d6c8289b2e6995; Rust validation cannot run.",
+    "Docker is absent; observability compose/build checks requiring Docker are unavailable."
+  ],
+  "source_code_changed": false,
+  "review_status": "independently_reviewed",
+  "command_normalization": "Locally provisioned executable paths are recorded here by executable name; exact commands remain in the digest-bound private receipts.",
+  "historical_pages_checks": [
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/proof.test.cjs",
+        "tests/site.test.cjs"
+      ],
+      "working_directory": ".",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "cargo",
+        "+1.97.1",
+        "run",
+        "--locked",
+        "--release"
+      ],
+      "working_directory": "recipes/gateway-lease-fence",
+      "exit_code": 0,
+      "fixture_bytes_match": true
+    },
+    {
+      "command": [
+        "cargo",
+        "+1.97.1",
+        "run",
+        "--locked",
+        "--release"
+      ],
+      "working_directory": "recipes/mcp-seam",
+      "exit_code": 0,
+      "fixture_bytes_match": true
+    }
+  ],
+  "independent_review": "execution/reviews/W01-companion-presentation-review.md"
+}

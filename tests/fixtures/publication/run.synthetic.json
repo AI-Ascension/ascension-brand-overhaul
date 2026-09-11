@@ -1,0 +1,116 @@
+{
+  "schema_version": "public-run-v2",
+  "public_run_id": "synthetic-local-run",
+  "title": "Synthetic local test — <fixture>",
+  "recorded_at": null,
+  "publication_version": 1,
+  "classification": "synthetic",
+  "evidence_kind": "report_only",
+  "outcome": "not_applicable",
+  "model_configuration": {
+    "identifier": "none",
+    "provider": "none",
+    "revision": "local-fixture",
+    "calls_measured": null
+  },
+  "game_configuration": {
+    "game": "No game contacted",
+    "build": "local-fixture",
+    "mod_revision": "none",
+    "harness_revision": "none"
+  },
+  "observation_policy": "Synthetic visible values for renderer tests only",
+  "seed_policy": "No seed; fixture only",
+  "resource_budget": {
+    "description": "No measured gameplay resources",
+    "provider_calls": null,
+    "wall_time_seconds": null,
+    "token_budget": null
+  },
+  "intervention": {
+    "occurred": false,
+    "kind": "none",
+    "summary": "Not applicable to a local fixture"
+  },
+  "source": {
+    "record_id": "synthetic-local-source",
+    "revision": "fixture-v1",
+    "content_digest": "16d8765aee84efd7f329ef5391377d3f6e8eaf3e5631851135516756d0c693c6",
+    "references": [
+      {
+        "label": "synthetic-source",
+        "uri": "/fixtures/publication/synthetic-source.json",
+        "revision": "fixture-v1",
+        "digest": null
+      }
+    ]
+  },
+  "evidence": {
+    "availability": "report_only",
+    "video_url": null,
+    "replay_url": null,
+    "evidence_reference": "/fixtures/publication/synthetic-report.json",
+    "rights_status": "unknown",
+    "caption_support": "none"
+  },
+  "action_timeline": {
+    "schema_version": "action-timeline-v1",
+    "public_run_id": "synthetic-local-run",
+    "status": "available",
+    "decisions": [
+      {
+        "schema_version": "action-v1",
+        "public_run_id": "synthetic-local-run",
+        "decision_id": "synthetic-decision-1",
+        "sequence": 0,
+        "turn": 1,
+        "floor": 1,
+        "state_visibility": "approved",
+        "state_summary": "Synthetic state <escaped>",
+        "legal_choices": ["Defend", "Strike"],
+        "chosen_action": "Defend",
+        "observed_consequence": "Synthetic consequence",
+        "evidence_ref": null,
+        "explanation": {
+          "kind": "retrospective_summary",
+          "text": "Synthetic explanation only",
+          "source_reference": "synthetic-source"
+        },
+        "timing": {
+          "media_offset_ms": null,
+          "captured": false
+        },
+        "decision_card": null
+      }
+    ]
+  },
+  "evidence_context": {
+    "capture_scope": "report_only",
+    "observed_fields": ["synthetic_state"],
+    "redacted_fields": ["raw_trace"],
+    "source_reference": "synthetic-source"
+  },
+  "decision_card": {
+    "status": "unavailable",
+    "asset_id": null,
+    "artifact_digest": null,
+    "provenance_reference": null,
+    "provenance_status": "unverified"
+  },
+  "case_study": {
+    "status": "unavailable",
+    "summary": null,
+    "source_reference": null
+  },
+  "local_guess_reveal": {
+    "status": "available",
+    "mode": "local_only",
+    "legal_option_count": 2
+  },
+  "approval_reference": null,
+  "disclosures": [
+    "Synthetic fixture. Must fail production publication.",
+    "No model or game was contacted."
+  ],
+  "test_fixture": true
+}

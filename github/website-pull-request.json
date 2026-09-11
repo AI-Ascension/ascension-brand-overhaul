@@ -1,0 +1,20 @@
+{
+  "repository": "AI-Ascension/aiascension.tech",
+  "stable_repository_id": 1209899690,
+  "base_branch": "codex/wire-mailing-list-email",
+  "base_revision": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+  "head_branch": "work/brand-overhaul",
+  "head_revision": "56e532b21922f39480cd15dcbb465676770408f5",
+  "pull_request": "https://github.com/AI-Ascension/aiascension.tech/pull/1",
+  "state": "OPEN",
+  "draft": true,
+  "assignee": "CompleteDotTech",
+  "merged": false,
+  "deployed": false,
+  "local_validation": [
+    "execution/reviews/W03-repair-review-002.json",
+    "execution/reviews/subscription-http-review-002.json",
+    "execution/reviews/website-home-review-001.json"
+  ],
+  "missing": "Public distribution approval for the independently reviewed local website artwork candidate, plus separate production deployment authority. See github/website-art-candidate.json."
+}

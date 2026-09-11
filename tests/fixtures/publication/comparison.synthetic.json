@@ -1,0 +1,45 @@
+{
+  "schema_version": "comparison-v1",
+  "comparison_id": "synthetic-comparison",
+  "title": "Synthetic context comparison",
+  "comparison_kind": "exploratory",
+  "runs": [
+    {
+      "public_run_id": "synthetic-run-a",
+      "label": "Fixture A",
+      "game_build": "fixture-build",
+      "seed_policy": "fixture seed withheld",
+      "observation_policy": "fixture state",
+      "action_interface": "fixture choices",
+      "budget": "no measured budget",
+      "retry_policy": "no retries",
+      "intervention_policy": "none"
+    },
+    {
+      "public_run_id": "synthetic-run-b",
+      "label": "Fixture B",
+      "game_build": "fixture-build",
+      "seed_policy": "fixture seed withheld",
+      "observation_policy": "fixture state",
+      "action_interface": "fixture choices",
+      "budget": "no measured budget",
+      "retry_policy": "no retries",
+      "intervention_policy": "none"
+    }
+  ],
+  "rules": {
+    "same_start_required": false,
+    "same_game_build": true,
+    "same_seed_policy": true,
+    "same_observation_policy": true,
+    "same_action_interface": true,
+    "same_budget": true,
+    "retries_declared": true,
+    "interventions_declared": true,
+    "ranking_claims_allowed": false
+  },
+  "limitations": [
+    "Synthetic records are for local contract tests only.",
+    "No outcome or intelligence ranking is represented."
+  ]
+}

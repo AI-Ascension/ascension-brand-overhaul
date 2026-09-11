@@ -1,5 +1,10 @@
 # AI Ascension — complete brand, product-presentation, and marketing implementation
 
+> **Product model choice (2026-09-08):** Individuals choose their own model and provider. Ascension must support extension through compatible provider adapters without a fixed model/vendor requirement. See [docs/MODEL_CHOICE.md](docs/MODEL_CHOICE.md). Model-specific test reports describe observed configurations, not restrictions on user choice.
+
+> **Recorded user amendment (2026-09-07):** The user authorized root image generation: "you can of course generate them images instead." For current artwork, use `user_authorized_root_image_tool` as recorded in [art/root-generation-authorization.json](art/root-generation-authorization.json). The available tool does not attest its backend or the root model, so these remain unknown. This amends the artwork author/backend route only; independent review, original sources, mechanical-export limits, evidence boundaries, all 72 asset families and the remaining project requirements still apply. Historical Astra-specific wording below describes the original route.
+
+
 ## 1. Mission
 
 You are the root implementation orchestrator. Create or safely reuse **AI-Ascension/ascension-brand-overhaul** and complete the user-selected overhaul across the organization. This is an execution assignment: deliver production-quality sources, art generated exclusively by gpt-image-2 from Astra-authored prompts, working website changes, publication tooling, GitHub presentation, validated migration tooling, campaign materials, tests, and a traceable release handoff. Do not end with a second strategy document, empty scaffolding, disconnected subagent reports, placeholder buttons, or claims that planned work already exists.
@@ -45,7 +50,7 @@ Use exactly three descendant layers below the root:
 - Depth 2: bounded work-package coordinators.
 - Depth 3: implementation or independent-review specialists. These are leaves and may not spawn.
 
-The tree in orchestration/roles.json is a role catalog, not an instruction to run all roles concurrently. Use a global ceiling of **12 open descendants**, lowered to the actual account/runtime allowance. Count waiting leads, coordinators, and reviewers, not just active coders. Enforce a single root-owned registry; a per-session setting may not bound a multi-session tree. Use native depth restrictions when supported and record actual ancestry. Do not bypass stricter runtime limits by starting hidden clients or renaming a descendant as a new root.
+The tree in orchestration/roles.json is a role catalog, not an instruction to run all roles concurrently. Use a global ceiling of **250 open descendants**, lowered to the actual account/runtime allowance. Count waiting leads, coordinators, and reviewers, not just active coders. Enforce a single root-owned registry; a per-session setting may not bound a multi-session tree. Use native depth restrictions when supported and record actual ancestry. Do not bypass stricter runtime limits by starting hidden clients or renaming a descendant as a new root.
 
 Prove genuine useful D0→D1→D2→D3 delegation early. Record real thread IDs and parent IDs. If the native system does not permit the required role-specific Luna/max or Astra/max settings, gpt-image-2 generation, or this depth, preserve the exact error, finish all independent authorized work, and label the requested orchestration unverified/blocked. Do not pretend that headings in a document are subagents.
 

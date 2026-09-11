@@ -1,0 +1,45 @@
+{
+  "observed_at": "2026-09-07T05:32:24.298052+00:00",
+  "repository": "AI-Ascension/aiascension.tech",
+  "source_head": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+  "host_git_head": "598ce386521f720f480c946486c4442b60610c9c",
+  "host_branch": "codex/wire-mailing-list-email",
+  "host_dirty_relevant_paths": [
+    "README.md",
+    "index.html",
+    "styles.css"
+  ],
+  "unrelated_host_changes": "present and preserved; paths omitted",
+  "host_php": "8.3.33",
+  "host_file_sha256": {
+    "index.html": "5ef2d1821aa3537f32e22f8a0abe4ed7b85d63b2d2c76b155b36eba25aaed1c7",
+    "styles.css": "119e073954d8b45ad8a7cb31caa5f3ba8875e76368ab1889204f2eddb723e3a1",
+    "script.js": "e4dd90554d17c25b3938097b29ee6e29819cc2638162269c23acb5f55f982b95",
+    "api/subscribe.php": "e96a258a4fec72142b95714c55683f725275175ec2043e2698c36767785a806e",
+    "api/_functions.php": "5aef8f761887fb67e354d13bd021918fb58373b96be3bcea0ffbe477fe55d654",
+    "composer.lock": "aebcedef77daa6e6abee9855f425aa6a05315ffbe5d7ec691faa3ce71dddc2f2"
+  },
+  "github_file_sha256": {
+    "index.html": "5ef2d1821aa3537f32e22f8a0abe4ed7b85d63b2d2c76b155b36eba25aaed1c7",
+    "styles.css": "119e073954d8b45ad8a7cb31caa5f3ba8875e76368ab1889204f2eddb723e3a1",
+    "script.js": "e4dd90554d17c25b3938097b29ee6e29819cc2638162269c23acb5f55f982b95",
+    "api/subscribe.php": "e96a258a4fec72142b95714c55683f725275175ec2043e2698c36767785a806e",
+    "api/_functions.php": "5aef8f761887fb67e354d13bd021918fb58373b96be3bcea0ffbe477fe55d654",
+    "composer.lock": "aebcedef77daa6e6abee9855f425aa6a05315ffbe5d7ec691faa3ce71dddc2f2"
+  },
+  "http_home": {
+    "url": "https://aiascension.tech/",
+    "status": 200,
+    "bytes": 23458,
+    "sha256": "2c04c3c3f712e1b1308e075461bcfb0df906b2545f787907f77b86df6ef2553c",
+    "matches_host_index": false,
+    "difference_from_source": "Hosting injects a monitoring bootstrap and external https://img1.wsimg.com/traffic-assets/js/tccl.min.js immediately before closing html. The fetched source otherwise matches linewise."
+  },
+  "subscription_get": {
+    "url": "https://aiascension.tech/api/subscribe.php",
+    "status": 405,
+    "body_sha256": "11f48297522ca721ef3b9fd23dcd5bddd0fcfe7453b0a319663f1987c4701d95"
+  },
+  "scope": "Read-only SSH git metadata, PHP version, SHA256; public GET requests only. No subscription POST, production mail or mutation.",
+  "privacy_followup": "Review hosting-injected monitoring purposes/retention; no hosting setting change or opt-out has been performed."
+}

@@ -1,0 +1,370 @@
+{
+  "schema_version": "ai-ascension.github-settings.v1",
+  "mode": "review_only",
+  "observed_at": "2026-09-07T16:00:42.473681+00:00",
+  "authority": "No live settings or pin changes authorized by this manifest.",
+  "repositories": [
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "stable_repository_id": 1354378100,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Experiment coordinator for AI runs: episodes, a pluggable model-provider interface, replay of recorded records, and artifact lineage.",
+        "topics": [
+          "ai-ascension",
+          "evaluation-harness",
+          "replay",
+          "rust"
+        ],
+        "homepage": "https://ai-ascension.github.io/repositories.html#sts2-harness",
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "Agent-run coordination, structured records, and replay; starting with Slay the Spire 2.",
+        "topics": [
+          "ai-ascension",
+          "evaluation-harness",
+          "replay",
+          "rust",
+          "slay-the-spire-2"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/sts2-mcp-server",
+      "stable_repository_id": 1354378057,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Thin MCP tool adapter that maps approved calls to the authenticated gateway API without bypassing it.",
+        "topics": [
+          "ai-ascension",
+          "mcp",
+          "model-context-protocol",
+          "rust"
+        ],
+        "homepage": "https://ai-ascension.github.io/repositories.html#sts2-mcp-server",
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "MCP tools for the controlled STS2 gateway interface.",
+        "topics": [
+          "ai-ascension",
+          "mcp",
+          "model-context-protocol",
+          "rust",
+          "slay-the-spire-2"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "stable_repository_id": 1354377975,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Game-process adapter: a bounded main-thread work queue, versioned ABI check, and HTTP request admission limits.",
+        "topics": [
+          "ai-ascension",
+          "game-mod",
+          "host-boundary",
+          "rust"
+        ],
+        "homepage": "https://ai-ascension.github.io/repositories.html#sts2-game-mod",
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "Native game integration for controlled observation and actions.",
+        "topics": [
+          "ai-ascension",
+          "game-modding",
+          "rust",
+          "slay-the-spire-2"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-core",
+      "stable_repository_id": 1354377929,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Host-independent Rust domain core: typed game-state values, pure validation, and policy rules with no I/O.",
+        "topics": [
+          "ai-ascension",
+          "domain-model",
+          "rust",
+          "validation"
+        ],
+        "homepage": "https://ai-ascension.github.io/repositories.html#sts2-game-core",
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "Typed STS2 state and validation primitives.",
+        "topics": [
+          "ai-ascension",
+          "rust",
+          "slay-the-spire-2"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/sts2-gateway",
+      "stable_repository_id": 1354378018,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "In-memory control plane for game-host instances: lifecycle, one lease per instance with epoch fencing, and fixed routes.",
+        "topics": [
+          "ai-ascension",
+          "control-plane",
+          "lease-fencing",
+          "rust"
+        ],
+        "homepage": "https://ai-ascension.github.io/repositories.html#sts2-gateway",
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "Game-instance routing, lifecycle boundaries, and request authority.",
+        "topics": [
+          "ai-ascension",
+          "gateway",
+          "rust",
+          "slay-the-spire-2"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/sts2-protocol",
+      "stable_repository_id": 1354378136,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Shared metadata contracts (identity, versions, error envelopes) in language-neutral schemas with golden test vectors.",
+        "topics": [
+          "ai-ascension",
+          "conformance",
+          "protocol",
+          "rust"
+        ],
+        "homepage": "https://ai-ascension.github.io/repositories.html#sts2-protocol",
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "Shared metadata contracts and conformance artifacts.",
+        "topics": [
+          "ai-ascension",
+          "protocol",
+          "rust",
+          "slay-the-spire-2"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/ascension-map-visualizer",
+      "stable_repository_id": 1359701124,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": null,
+        "topics": [],
+        "homepage": null,
+        "visibility": "public",
+        "default_branch": "bootstrap"
+      },
+      "desired": {
+        "description": "Player-visible map topology and route inspection.",
+        "topics": [
+          "ai-ascension",
+          "map-visualization",
+          "slay-the-spire-2"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/ascension-watchdog",
+      "stable_repository_id": 1359537708,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Deterministic deployment supervision and crash recovery for AI-Ascension",
+        "topics": [],
+        "homepage": null,
+        "visibility": "public",
+        "default_branch": "bootstrap"
+      },
+      "desired": {
+        "description": "Scaffolding for deterministic deployment supervision and recovery for Ascension.",
+        "topics": [
+          "ai-ascension",
+          "deployment",
+          "supervision"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/ai-agent-observability",
+      "stable_repository_id": 1357224960,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Self-hosted AI-agent observability and experiment tracking with OpenTelemetry, MLflow, and Laminar.",
+        "topics": [],
+        "homepage": null,
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "Self-hosted observability integrations for AI Ascension experiments.",
+        "topics": [
+          "ai-ascension",
+          "observability",
+          "self-hosted"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/aiascension.tech",
+      "stable_repository_id": 1209899690,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "AI Ascension \u2013 aiascension.tech | Unofficial Slay the Spire 2 AI race streaming site",
+        "topics": [],
+        "homepage": "https://aiascension.tech",
+        "visibility": "public",
+        "default_branch": "codex/wire-mailing-list-email"
+      },
+      "desired": {
+        "description": "The canonical Watch and Build experience for AI Ascension.",
+        "topics": [
+          "ai-ascension",
+          "website"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "stable_repository_id": 1354473981,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Public site for AI-Ascension: what is tested today, what is only proposed, and a browser replay of one gateway contract test.",
+        "topics": [
+          "ai-ascension",
+          "github-pages",
+          "static-site"
+        ],
+        "homepage": "https://ai-ascension.github.io",
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "Historical evidence, stable proof URLs, and the legacy entry point.",
+        "topics": [
+          "ai-ascension",
+          "github-pages",
+          "evidence"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/.github",
+      "stable_repository_id": 1354466045,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Contributor guide, issue forms, security policy, and shared standards for the AI-Ascension organization.",
+        "topics": [
+          "ai-ascension",
+          "community-health"
+        ],
+        "homepage": "https://ai-ascension.github.io",
+        "visibility": "public",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "Organization profile, contributor guidance, governance, and shared presentation.",
+        "topics": [
+          "ai-ascension",
+          "community",
+          "governance"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    },
+    {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "stable_repository_id": 1359787764,
+      "observed_at": "2026-09-07T16:00:42.473681+00:00",
+      "current": {
+        "description": "Canonical AI Ascension brand sources, publication tooling, campaign kit, and rollout evidence.",
+        "topics": [],
+        "homepage": null,
+        "visibility": "private",
+        "default_branch": "main"
+      },
+      "desired": {
+        "description": "Canonical brand sources, publication tooling, campaign kit, and rollout evidence.",
+        "topics": [
+          "ai-ascension",
+          "brand",
+          "publication-tooling"
+        ]
+      },
+      "status": "proposed_not_applied",
+      "rename_included": false,
+      "precondition": "Re-read stable ID, exact current metadata, current name, and operator authority immediately before any write."
+    }
+  ],
+  "manual_pin_checklist": {
+    "status": "proposed_not_applied",
+    "interface": "GitHub organization profile: Customize your pins",
+    "ordered_current_repositories": [
+      "sts2-harness",
+      "sts2-game-mod",
+      "sts2-mcp-server",
+      "aiascension.tech",
+      "AI-Ascension.github.io",
+      "ai-agent-observability"
+    ],
+    "steps": [
+      "After explicit settings approval, open the AI-Ascension organization profile using an account allowed to edit its public profile.",
+      "Record the current pins and ordering as rollback evidence before changing them.",
+      "Choose Customize your pins; select the six listed current repository names and arrange them in the stated order. If an approved rename has occurred, resolve each repository by the stable ID above before selecting its new name.",
+      "Save, then verify the signed-out organization profile shows the intended six repositories and links. Record the observed URL, time, order, and repository IDs."
+    ],
+    "rollback": "Restore the recorded previous pins and order through the same interface after checking current names and visibility.",
+    "api_claim": "No supported pin-mutation API is assumed."
+  }
+}

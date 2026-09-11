@@ -1,0 +1,260 @@
+{
+  "schema_version": "ai-ascension.root-export-followup.v1",
+  "observed_at": "2026-09-07T21:25:45Z",
+  "reviewer": "w03-root-export-independent-followup",
+  "task": "Independent bounded follow-up of the root-art export contract fixes",
+  "scope": "Re-reviewed the corrected root prompt policy, registry layout, reference-input validation, press builder, trusted approval registry, refreshed access catalog, current release state, and the two requested test suites. No source, master, export, manifest, registry, script, page, or package ledger was edited by this reviewer; this receipt is the only authorized write.",
+  "working_tree": {
+    "git_head": "e3e12039a4ed4d390a1d0ff53cbaa500039c6e44",
+    "branch": "work/root-authored-art",
+    "dirty_before_review": true,
+    "exclusive_write": "execution/reviews/W03-root-export-followup.json"
+  },
+  "source_pins": {
+    "policy": {
+      "path": "art/ASTRA_GPT_IMAGE_2_POLICY.md",
+      "sha256": "604f9bf533cc868b7cfdf605f8e51b97bf0245fc97d6443f4d1fd912ef24ec96"
+    },
+    "asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "0e71cf13afba70da828b384da8ea3b36021796b044f1c5e53c3d1c6cd6656032",
+      "asset_count": 72
+    },
+    "art_policy": {
+      "path": "scripts/art_policy.py",
+      "sha256": "e6f2d45bcbf0a19c3d4a5161e031a03e90d88f8dec73c70ceb25575e4d97cd99"
+    },
+    "press_builder": {
+      "path": "scripts/build_press_index.py",
+      "sha256": "9df6821e5df381523fb5e057e69e5cca198a1fb9730e0a735803af8fbc58f9f3"
+    },
+    "trusted_registry": {
+      "path": "config/press-authorities.json",
+      "sha256": "19da444327765117fe5320564c68ec05d00a2adfc46ca683b21be430dc474bb4",
+      "bytes": 66
+    },
+    "tests": {
+      "art_policy": {
+        "path": "tests/test_art_policy.py",
+        "sha256": "8261b6c87e213a14e79197ba4100195692c9e91d24db9d881379f3255e8eb0c8"
+      },
+      "press_index": {
+        "path": "tests/test_press_index.py",
+        "sha256": "769795047cacc13114d2c0723474dfac154aded1f74135db3fcd18126bdeca8"
+      }
+    },
+    "current_press_page": {
+      "path": "brand/assets/press/index.html",
+      "sha256": "40f8f65e29b2d2b0f1318222f46327e68174571c5821ddcd6551451c7ca786bf"
+    }
+  },
+  "checks": {
+    "targeted_tests": {
+      "command": "python3 tests/test_art_policy.py && python3 tests/test_press_index.py",
+      "exit_code": 0,
+      "art_policy": "38/38 pass",
+      "press_index": "9/9 pass"
+    },
+    "prompt_contract": {
+      "result": "pass",
+      "policy_location": "art/ASTRA_GPT_IMAGE_2_POLICY.md:39",
+      "policy": "The root route explicitly accepts brand/prompts/root/<asset-id>/<job-id>.txt or .md and binds the exact UTF-8 bytes and SHA-256.",
+      "indexed_root_prompts": 32,
+      "actual_extensions": {
+        ".txt": 32,
+        ".md": 0
+      },
+      "prompt_files_exist": "32/32",
+      "prompt_hashes_match_root_index_records_and_observations": "32/32",
+      "interpretation": "W03-ROOT-EXPORT-001 is corrected. The remaining review and rights gates are unchanged."
+    },
+    "registry_layout": {
+      "result": "pass",
+      "registry_rows_checked": 72,
+      "root_route_rows": 72,
+      "prompt_directory_contract": "All rows use brand/prompts/root/<asset-id>/.",
+      "generation_record_directory_contract": "All rows use brand/provenance/.",
+      "generation_record_file_contract": "All rows use brand/provenance/root-generation-records.json.",
+      "manifest_record_file_contract": "All rows use brand/asset-manifest.json.",
+      "indexed_records_in_canonical_layout": "32/32",
+      "interpretation": "W03-ROOT-EXPORT-002 is corrected. Planned blocked rows may have no prompt or record yet, as the policy's root record layout states."
+    },
+    "reference_input_integrity": {
+      "result": "pass_for_declared_inputs",
+      "implementation_location": "scripts/art_policy.py:187-196",
+      "records_checked": 28,
+      "reference_inputs_checked": 14,
+      "actual_reference_files_and_sha256": "14/14 pass",
+      "completed_rights_references": 0,
+      "pending_rights_references": 14,
+      "negative_tests": "Hash tampering and pending source-use review are rejected.",
+      "interpretation": "Declared inputs are now bound to actual files and hashes, while the current pending rights labels correctly keep generated records unaccepted."
+    },
+    "trusted_press_registry": {
+      "result": "pass_closed_catalog",
+      "path": "config/press-authorities.json",
+      "schema_version": "press-authorities-v1",
+      "approvals": 0,
+      "exact_keys": [
+        "schema_version",
+        "approvals"
+      ],
+      "current_manifest_approval_references": 0,
+      "interpretation": "The fixed canonical enrollment registry is empty; content-supplied approval records cannot enroll themselves. No public authority is represented."
+    },
+    "press_builder": {
+      "result": "pass_closed_catalog",
+      "implementation_locations": [
+        "scripts/build_press_index.py:23-70",
+        "scripts/build_press_index.py:73-118"
+      ],
+      "checks": [
+        "fixed trusted enrollment and exact approval digest",
+        "approval schema, operation, target, export digest, allowed surface and field",
+        "approved_at and expires_at time bounds with revocation",
+        "selected asset's actual generation-record ancestors through the full shared-generation closure",
+        "full validate_assets verification for every selected ancestor",
+        "current export bytes and SHA-256"
+      ],
+      "current_temp_rebuild": {
+        "output": "Built press index with 0 approved raster downloads.",
+        "temporary_page_sha256": "40f8f65e29b2d2b0f1318222f46327e68174571c5821ddcd6551451c7ca786bf",
+        "current_page_byte_identical": true,
+        "download_links": 0
+      },
+      "test_coverage": "The 9 passing tests cover positive enrollment, missing enrollment, scope/digest/operation/surface/field, revocation, future and expired dates, changed export bytes, missing generation, changed prompt/source, unrelated pending families, and actual shared-generation parent validation.",
+      "interpretation": "W03-ROOT-EXPORT-005 is corrected. The safe current result is an empty catalog because no approval is enrolled."
+    },
+    "refreshed_metadata_catalog": {
+      "result": "pass",
+      "builder": "scripts/build_art_catalog.py",
+      "board_rows": 80,
+      "expected_rows": 80,
+      "manifest_to_board_status_export_mismatches": 0,
+      "access_page_summary": "brand/ART_ACCESS.md reports 51 blocked and 21 in_progress, matching the current manifest.",
+      "interpretation": "W03-ROOT-EXPORT-006 is corrected."
+    },
+    "current_release_state": {
+      "manifest_families": 72,
+      "manifest_exports": 42,
+      "raster_exports": 40,
+      "functional_html_exports": 2,
+      "family_statuses": {
+        "in_progress": 21,
+        "blocked": 51
+      },
+      "rights_statuses": {
+        "unreviewed": 72
+      },
+      "root_generation_records": {
+        "in_progress": 28,
+        "blocked": 4,
+        "verified": 0
+      },
+      "missing_required_exports": [
+        "brand/assets/run/summary-template-square.png",
+        "brand/assets/run/decision-square.png",
+        "brand/assets/run/timeline-template.png",
+        "brand/assets/press/cover.png"
+      ],
+      "explicitly_blocked_review_families": [
+        "BG-04",
+        "RUN-01",
+        "RUN-02",
+        "RUN-03",
+        "MKT-09"
+      ]
+    },
+    "release_validator": {
+      "command": "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root .",
+      "exit_code": 1,
+      "not_verified_lines": 72,
+      "interpretation": "The release gate remains accurately closed; no asset is falsely marked verified."
+    },
+    "package_ledger": {
+      "command": "python3 scripts/validate_package.py",
+      "exit_code": 1,
+      "observed_result": "The package validator reports Incorrect package asset state for all 72 planned artwork rows because the current root package retains in_progress or blocked states.",
+      "interpretation": "Final package ledger integration remains root-pending. This is a release gate, separate from the corrected provenance and empty-press-catalog contracts."
+    }
+  },
+  "corrected_findings": [
+    {
+      "old_id": "W03-ROOT-EXPORT-001",
+      "status": "corrected",
+      "new_finding_id": null,
+      "evidence": "The policy now explicitly accepts root .txt or .md prompt containers, and all 32 indexed actual prompt files exist with matching hashes.",
+      "release_blocking": false
+    },
+    {
+      "old_id": "W03-ROOT-EXPORT-002",
+      "status": "corrected",
+      "new_finding_id": null,
+      "evidence": "All 72 registry rows now point to the root prompt directory, consolidated root-generation-records file, and asset manifest layout; actual indexed records resolve within that layout.",
+      "release_blocking": false
+    },
+    {
+      "old_id": "W03-ROOT-EXPORT-005",
+      "status": "corrected",
+      "new_finding_id": null,
+      "evidence": "The press builder verifies the fixed enrollment registry, complete approval scope/time/revocation checks, actual export bytes, and full selected shared-parent lineage through validate_assets; the 9-test suite passes.",
+      "release_blocking": false
+    },
+    {
+      "old_id": "W03-ROOT-EXPORT-006",
+      "status": "corrected",
+      "new_finding_id": null,
+      "evidence": "ART_ACCESS.md and the refreshed board catalog now report the current 51 blocked and 21 in_progress family states with zero board mismatches.",
+      "release_blocking": false
+    }
+  ],
+  "remaining_findings": [
+    {
+      "id": "W03-ROOT-EXPORT-003",
+      "severity": "blocking",
+      "status": "remains_open_expected_gate",
+      "finding": "All 72 families retain unreviewed rights; 28 generation records remain in_progress, 4 are blocked, and none is verified. The release validator reports 72 Not verified lines.",
+      "required_follow_up": "Use the recorded W02 visual and source-use reviews to finalize selected asset provenance, complete rights and independent generation-record review, and preserve blocked or in_progress states where those reviews or required outputs are absent.",
+      "release_blocking": true
+    },
+    {
+      "id": "W03-ROOT-EXPORT-004",
+      "severity": "blocking",
+      "status": "remains_open",
+      "finding": "RUN-01 summary-template-square.png, RUN-02 decision-square.png, RUN-03 timeline-template.png, and MKT-09 press/cover.png remain absent. BG-04 is also blocked for the reviewed repeat seam condition.",
+      "required_follow_up": "Obtain the required authorized authored reflows or seamless replacement when image service capacity permits, then independently review and receipt each result.",
+      "release_blocking": true
+    },
+    {
+      "id": "W03-ROOT-EXPORT-007",
+      "severity": "blocking",
+      "status": "remains_open_root_pending",
+      "finding": "The final package ledgers are not green while the package records contain 21 in_progress and 51 blocked artwork states; validate_package.py exits 1 on those 72 state entries.",
+      "required_follow_up": "Root must finalize the intended package state and refresh MANIFEST.json and CHECKSUMS.sha256, then rerun package validation after all receipts, including this follow-up, are included.",
+      "release_blocking": true
+    },
+    {
+      "id": "W03-ROOT-EXPORT-008",
+      "severity": "low",
+      "status": "remains_conditional",
+      "finding": "WEB-03 path-watch.png and path-build.png still omit their native Watch and Build headings by design.",
+      "required_follow_up": "Every consuming surface must provide adjacent visible headings and equivalent accessible text.",
+      "release_blocking": false
+    }
+  ],
+  "readiness": {
+    "selected_asset_provenance": "ready_for_root_finalization",
+    "basis": "W02-root-art-identity-review.json and W02-root-art-second-batch-review.json record the bounded visual and source-use observations for the selected families and explicitly keep legal rights and publication approval separate.",
+    "next_root_action": "Finalize provenance for the selected candidates using those W02 receipts, including completed source-use rights references and independent reviewer references, without changing blocked families or inventing missing exports.",
+    "public_authority": "none",
+    "publication": "not approved; the trusted press enrollment registry is empty and the current catalog exposes zero downloads",
+    "package": "not ready; final package ledgers remain root-pending"
+  },
+  "decision": "contract_followup_pass_release_blocked",
+  "limitations": [
+    "This was a bounded code, data, and test follow-up; no new visual generation or broad browser/art review was performed.",
+    "W02 visual/source-use observations remain candidate evidence and do not grant copyright, trademark, license, rights, or publication clearance.",
+    "The root image tool's author model and image backend remain unknown, and no native child-agent attestation is inferred.",
+    "The working tree contained pre-existing dirty changes; only this review receipt was written."
+  ]
+}

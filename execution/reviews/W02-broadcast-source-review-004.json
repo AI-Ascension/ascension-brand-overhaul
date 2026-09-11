@@ -1,0 +1,4282 @@
+{
+  "schema_version": "ai-ascension.w02-broadcast-source-review.v3",
+  "observed_at": "2026-09-08T01:04:51Z",
+  "reviewer": "w02-broadcast-source-independent-review-004",
+  "task": "W02 broadcast, marketing, GitHub, and documentation source follow-up review",
+  "scope": "Independent visual and source-use review of repaired CAST/MKT masters and exports, 13 GitHub light/dark banner pairs, 13 GitHub social previews, and DOC-01 through DOC-05 source/output diagrams. Covers exact copy, legibility, crop safety, connector/box semantics, palette and identity consistency, opaque output geometry, factual-source alignment, and the boundary between generated artwork/documentation and runtime, deployment, publication, or live evidence. No source, prompt, registry, manifest, ledger, or generated image was edited.",
+  "inputs_read": [
+    "AGENTS.md",
+    "MASTER_PROMPT.md",
+    "orchestration/CONTRACT.md",
+    "orchestration/roles.json",
+    "art/asset-registry.json",
+    "brand/BRAND_GUIDE.md",
+    "art/root-generation-authorization.json",
+    "brand/provenance/root-export-receipts.json",
+    "brand/assets/identity/avatar-1024.png",
+    "migration/repository-plan.json",
+    "docs/BASELINE_AUDIT.md",
+    "docs/PUBLISHING.md",
+    "docs/TESTED_QUICKSTART.md",
+    "marketing/community-playbook.md",
+    "execution/reviews/root-broadcast-generation-repair-001.json",
+    "execution/reviews/root-broadcast-generation-repair-002.json",
+    "execution/reviews/root-broadcast-generation-repair-003.json",
+    "execution/reviews/root-broadcast-generation-repair-004.json",
+    "execution/reviews/root-broadcast-generation-repair-005.json",
+    "execution/reviews/root-broadcast-generation-repair-006.json",
+    "execution/reviews/root-documentation-generation-batch-001.json",
+    "execution/reviews/root-documentation-generation-batch-002.json",
+    "execution/reviews/root-documentation-generation-batch-003.json",
+    "execution/reviews/root-documentation-generation-batch-004.json",
+    "execution/reviews/root-documentation-generation-batch-005.json",
+    "execution/reviews/root-github-generation-batch-001.json",
+    "execution/reviews/root-github-generation-batch-002.json",
+    "execution/reviews/root-github-generation-batch-003.json",
+    "execution/reviews/root-github-generation-batch-004.json",
+    "execution/reviews/root-github-generation-batch-005.json",
+    "execution/reviews/root-github-generation-batch-006.json",
+    "execution/reviews/root-github-generation-batch-007.json",
+    "execution/reviews/root-github-generation-batch-008.json",
+    "execution/reviews/root-github-generation-batch-009.json",
+    "execution/reviews/root-github-generation-batch-010.json",
+    "execution/reviews/root-github-generation-batch-011.json",
+    "execution/reviews/root-github-generation-batch-012.json",
+    "execution/reviews/root-github-generation-batch-013.json",
+    "execution/reviews/root-github-social-generation-batch-001.json",
+    "execution/reviews/root-github-social-generation-batch-002.json",
+    "execution/reviews/root-github-social-generation-batch-003.json",
+    "execution/reviews/root-github-social-generation-batch-004.json",
+    "execution/reviews/root-github-social-generation-batch-005.json",
+    "execution/reviews/root-github-social-generation-batch-006.json",
+    "execution/reviews/root-github-social-generation-batch-007.json",
+    "execution/reviews/root-github-social-generation-batch-008.json",
+    "execution/reviews/root-github-social-generation-batch-009.json",
+    "execution/reviews/root-github-social-generation-batch-010.json",
+    "execution/reviews/root-github-social-generation-batch-011.json",
+    "execution/reviews/root-github-social-generation-batch-012.json",
+    "execution/reviews/root-github-social-generation-batch-013.json",
+    "execution/reviews/root-marketing-generation-batch-004.json",
+    "execution/reviews/root-marketing-generation-repair-001.json",
+    "brand/prompts/root/CAST-02/generation-003.txt",
+    "brand/prompts/root/CAST-03/generation-003.txt",
+    "brand/prompts/root/CAST-04/generation-004.txt",
+    "brand/prompts/root/CAST-04/generation-005.txt",
+    "brand/prompts/root/CAST-05/generation-003.txt",
+    "brand/prompts/root/CAST-05/generation-004.txt",
+    "brand/prompts/root/MKT-02/generation-002.txt",
+    "brand/prompts/root/MKT-09/generation-001.txt",
+    "brand/prompts/root/GH-01-B/generation-001.txt",
+    "brand/prompts/root/GH-02-B/generation-001.txt",
+    "brand/prompts/root/GH-03-B/generation-001.txt",
+    "brand/prompts/root/GH-04-B/generation-001.txt",
+    "brand/prompts/root/GH-05-B/generation-001.txt",
+    "brand/prompts/root/GH-06-B/generation-001.txt",
+    "brand/prompts/root/GH-07-B/generation-001.txt",
+    "brand/prompts/root/GH-08-B/generation-001.txt",
+    "brand/prompts/root/GH-09-B/generation-001.txt",
+    "brand/prompts/root/GH-10-B/generation-001.txt",
+    "brand/prompts/root/GH-11-B/generation-001.txt",
+    "brand/prompts/root/GH-12-B/generation-001.txt",
+    "brand/prompts/root/GH-13-B/generation-001.txt",
+    "brand/prompts/root/GH-01-S/generation-001.txt",
+    "brand/prompts/root/GH-02-S/generation-001.txt",
+    "brand/prompts/root/GH-03-S/generation-001.txt",
+    "brand/prompts/root/GH-04-S/generation-001.txt",
+    "brand/prompts/root/GH-05-S/generation-001.txt",
+    "brand/prompts/root/GH-06-S/generation-001.txt",
+    "brand/prompts/root/GH-07-S/generation-001.txt",
+    "brand/prompts/root/GH-08-S/generation-001.txt",
+    "brand/prompts/root/GH-09-S/generation-001.txt",
+    "brand/prompts/root/GH-10-S/generation-001.txt",
+    "brand/prompts/root/GH-11-S/generation-001.txt",
+    "brand/prompts/root/GH-12-S/generation-001.txt",
+    "brand/prompts/root/GH-13-S/generation-001.txt",
+    "brand/prompts/root/DOC-01/generation-001.txt",
+    "brand/prompts/root/DOC-02/generation-001.txt",
+    "brand/prompts/root/DOC-03/generation-001.txt",
+    "brand/prompts/root/DOC-04/generation-001.txt",
+    "brand/prompts/root/DOC-05/generation-001.txt"
+  ],
+  "source_pins": {
+    "asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "0e71cf13afba70da828b384da8ea3b36021796b044f1c5e53c3d1c6cd6656032",
+      "selected_entries": [
+        "CAST-02",
+        "CAST-03",
+        "CAST-04",
+        "CAST-05",
+        "MKT-02",
+        "MKT-09",
+        "GH-01-B",
+        "GH-02-B",
+        "GH-03-B",
+        "GH-04-B",
+        "GH-05-B",
+        "GH-06-B",
+        "GH-07-B",
+        "GH-08-B",
+        "GH-09-B",
+        "GH-10-B",
+        "GH-11-B",
+        "GH-12-B",
+        "GH-13-B",
+        "GH-01-S",
+        "GH-02-S",
+        "GH-03-S",
+        "GH-04-S",
+        "GH-05-S",
+        "GH-06-S",
+        "GH-07-S",
+        "GH-08-S",
+        "GH-09-S",
+        "GH-10-S",
+        "GH-11-S",
+        "GH-12-S",
+        "GH-13-S",
+        "DOC-01",
+        "DOC-02",
+        "DOC-03",
+        "DOC-04",
+        "DOC-05"
+      ]
+    },
+    "brand_guide": {
+      "path": "brand/BRAND_GUIDE.md",
+      "sha256": "b1551f9c49572b0f1a8034fbdd7de89446bf119e2ad84bd5bea714575c4a8a23",
+      "relevant_rules": [
+        "The Climb — by AI Ascension is the series identity.",
+        "Use warm paper, ink, amber, branching paths, and restrained editorial typography.",
+        "Use visible evidence labels and do not present generated art as gameplay or product evidence.",
+        "Use approved generated identity exports when available; do not silently introduce an unverified logo or monogram."
+      ]
+    },
+    "authorization": {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+      "route": "user_authorized_root_image_tool",
+      "tool": "image_gen__imagegen",
+      "backend_attestation": "unknown",
+      "author_model_attestation": "unknown",
+      "native_agent_attestation": false
+    },
+    "identity_reference": {
+      "path": "brand/assets/identity/avatar-1024.png",
+      "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+      "use": "Local generated identity reference named by GH social receipts; no trademark or rights determination."
+    },
+    "export_receipts": {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "928b85ce20d7ad8ed6ebe7b73defab94384e382477b7eaf7c342c3a4f6b8df83",
+      "selected_output_count": 53,
+      "all_selected_outputs_found": true
+    },
+    "generation_receipts": [
+      {
+        "path": "execution/reviews/root-broadcast-generation-repair-001.json",
+        "sha256": "ab991e1516b249a55f14271355f4bee285a15ac57027fce7113259a08f2e47dc",
+        "records": [
+          "CAST-02-generation-003"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-broadcast-generation-repair-002.json",
+        "sha256": "59c53dc0990b0222ebbb9a445e85e12b02baf94f5d6279615feee394a17891cc",
+        "records": [
+          "CAST-03-generation-003"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-broadcast-generation-repair-003.json",
+        "sha256": "345c661f6a6bd077fb4ccae540f79a3d6bffc66d4ca4efae7d4befcbd5b8043e",
+        "records": [
+          "CAST-04-generation-004"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-broadcast-generation-repair-004.json",
+        "sha256": "507c878c5b85ec3a3afbd821afb32f2898edf43d37c329eabc24ca93a2811b21",
+        "records": [
+          "CAST-04-generation-005"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-broadcast-generation-repair-005.json",
+        "sha256": "531093cbfde23fa6207bfa3deb0e50811f7c19fe75634ca52b4aaf16b1efae3b",
+        "records": [
+          "CAST-05-generation-003"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-broadcast-generation-repair-006.json",
+        "sha256": "969f5b90aac64ad8e6b3e4f5a77215a0e37e959427579bc8ae1b76ac546b74ec",
+        "records": [
+          "CAST-05-generation-004"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-documentation-generation-batch-001.json",
+        "sha256": "af210c0d89e42b5fff8343d2dcf27232b457f720fa996f67e5862c9b9a47d2e9",
+        "records": [
+          "DOC-01-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-documentation-generation-batch-002.json",
+        "sha256": "2b5c3d691901c11dfbfb4962f2a7e43907c9f3b3d29626cee6d5d712e623ddeb",
+        "records": [
+          "DOC-02-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-documentation-generation-batch-003.json",
+        "sha256": "e6130de487ddb7bb9293aad878f9ff5a9e2fef8620208fbcc9917a6e9443dbe0",
+        "records": [
+          "DOC-03-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-documentation-generation-batch-004.json",
+        "sha256": "923116dfb269816f9673eb5fbb51bc6b8cb26d1b09a195510305c409b7569042",
+        "records": [
+          "DOC-04-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-documentation-generation-batch-005.json",
+        "sha256": "705867fef910a1094f569ac2ed7d7d05f9f02f28f0bda44bdd72979dfbaba0c2",
+        "records": [
+          "DOC-05-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-001.json",
+        "sha256": "0239943248af57a9a08d452100442b92c8ab927e4188876f2b92e383873836a9",
+        "records": [
+          "GH-01-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-002.json",
+        "sha256": "2d6ce3b199da27f8380022322a45d30525ae2cb5939a6cf6360d8a00d8b47058",
+        "records": [
+          "GH-02-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-003.json",
+        "sha256": "b01ab77ebfab87e4eda0f3d7e4fb195ce8fa7bd2e184b62e972d220db5d91c77",
+        "records": [
+          "GH-03-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-004.json",
+        "sha256": "e43a4d08d3c580a2e42cfda44c5cc86376f1d1133cd4e3eca24507bf773eb376",
+        "records": [
+          "GH-04-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-005.json",
+        "sha256": "7aaf1f36873a525d529a2a5f33a8cf261f4986cdcb02c8745f7cea2a99bb9641",
+        "records": [
+          "GH-05-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-006.json",
+        "sha256": "71248d6a1954aa387739cb42e17e7400f8890f4cd195046868563f5f35973234",
+        "records": [
+          "GH-06-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-007.json",
+        "sha256": "4b8ef8dbe44219919007dfc974fc23be03292b027f6e074008b988d9ec476f47",
+        "records": [
+          "GH-07-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-008.json",
+        "sha256": "ee8b546c8121e695d177121dd4e33a18970d50aa83d69a6c8890eb793f95d56a",
+        "records": [
+          "GH-08-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-009.json",
+        "sha256": "a3c959dee0e221e1e975d68992106017efa1117c2d2da79ed9cf9c2f770d602e",
+        "records": [
+          "GH-09-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-010.json",
+        "sha256": "8492edb3e94cf5799145d84f99e1efac4384be1e8a20e7f3ed19534427197f24",
+        "records": [
+          "GH-10-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-011.json",
+        "sha256": "bbce94539125ed45efe39fca01c08b4c0d7762a3d31356d94eb74906d8ba445a",
+        "records": [
+          "GH-11-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-012.json",
+        "sha256": "d72e89994ec4daeef0695aabc6083b5a787b1828308b75d2ba56b5a6be9c0d3b",
+        "records": [
+          "GH-12-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-generation-batch-013.json",
+        "sha256": "b6c95ca08dc8aafe1848847a981b70c981e0fd6cf9bdf2cefc60accfb3d4e711",
+        "records": [
+          "GH-13-B-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-001.json",
+        "sha256": "d5b068452c732757a5045639e9a462ecc22675aaf5c395b51f9d3e4845ea081b",
+        "records": [
+          "GH-01-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-002.json",
+        "sha256": "d9a440c59c7b4c562330062ed1b41392325b9b5237ab75dbee916a4c51befcf5",
+        "records": [
+          "GH-02-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-003.json",
+        "sha256": "74f676b72cf40014912d78e57faf446302f63819449254ad7dd3cc6aa864332c",
+        "records": [
+          "GH-03-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-004.json",
+        "sha256": "ad59617bca6fcb01420f698e4a44f7dc7374e30f7cdb39808f8668cc746db4d7",
+        "records": [
+          "GH-04-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-005.json",
+        "sha256": "3f1a55d26fd1a5b0ace4f89b35aa7d7854aa334ecdc3ef512a786c47a7fce5af",
+        "records": [
+          "GH-05-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-006.json",
+        "sha256": "f93d3d61fae2c4db3e267258be3c0fbd132b11232cf8672a317593b4a8801306",
+        "records": [
+          "GH-06-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-007.json",
+        "sha256": "f9daa28186fc856e1c1a95233379cb82fa1ae7b047393a5b01372a364360a9bf",
+        "records": [
+          "GH-07-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-008.json",
+        "sha256": "234849e3c1f008c00b36a80ffe653090f5c2e9a54b85fa1ca3b1a884dc0647f7",
+        "records": [
+          "GH-08-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-009.json",
+        "sha256": "1c4fad69bd4320b6850f950a69bf1dc9defd67932be32664f30a2dd4366b3d0d",
+        "records": [
+          "GH-09-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-010.json",
+        "sha256": "e4beff384362752ddd0ffd35d51d25d20a4ddecca5db61a1f591b401eb02486f",
+        "records": [
+          "GH-10-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-011.json",
+        "sha256": "cc20c33abc6dadc9afdded5ace8ee5be16adc10d884f1eb6e8167ce24a232c5b",
+        "records": [
+          "GH-11-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-012.json",
+        "sha256": "313d7a99a015d85929233e132197c2e87626a5ddbb24240e7aa9442ce821de29",
+        "records": [
+          "GH-12-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-social-generation-batch-013.json",
+        "sha256": "e5b445e67eacecb8edf663ed23b19b7a59fa1375d71d4e3ddf94c17c43b7e923",
+        "records": [
+          "GH-13-S-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-004.json",
+        "sha256": "10a30cabf679dd54c2f3d42d88921bc1962240662a9c649908ee36e6a190e37d",
+        "records": [
+          "MKT-09-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-repair-001.json",
+        "sha256": "fb73cbd6f7eecb2321ce861c890e5d29bf17c3fbe5aea86b636e5b162bae489c",
+        "records": [
+          "MKT-02-generation-002"
+        ]
+      }
+    ],
+    "factual_source_documents": [
+      {
+        "path": "docs/BASELINE_AUDIT.md",
+        "sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690",
+        "used_by": [
+          "DOC-01"
+        ]
+      },
+      {
+        "path": "docs/PUBLISHING.md",
+        "sha256": "c0a1dd6dc95cbd9dfefec1c9af6e938163095535268c56439e02882515ed086f",
+        "used_by": [
+          "DOC-01",
+          "DOC-02"
+        ]
+      },
+      {
+        "path": "migration/repository-plan.json",
+        "sha256": "735b578229627d2c10b0e419969a42c24c86550635a2e42117bfddaffff20591",
+        "used_by": [
+          "DOC-03"
+        ]
+      },
+      {
+        "path": "orchestration/CONTRACT.md",
+        "sha256": "22bba55c22da2898b2450d9aad061bdbc4bd4630d259669ca5b7559e549bb194",
+        "used_by": [
+          "DOC-04"
+        ]
+      },
+      {
+        "path": "orchestration/roles.json",
+        "sha256": "9b8f1026ea223b1f8ae8eec7ce54694434659e1003cac988518e73fb8532a742",
+        "used_by": [
+          "DOC-04"
+        ]
+      },
+      {
+        "path": "docs/TESTED_QUICKSTART.md",
+        "sha256": "6d10c672a8edb286df025fe90828dcbddd922084a8e7f1fbe31aabd38650d470",
+        "used_by": [
+          "DOC-05"
+        ]
+      },
+      {
+        "path": "marketing/community-playbook.md",
+        "sha256": "4e376b92a0506b15984a83d513357aec3536636ad44c123d382dff08c924c4af",
+        "used_by": [
+          "DOC-05"
+        ]
+      }
+    ]
+  },
+  "method": {
+    "image_inspection_tool": "view_image",
+    "actual_source_files_viewed_with_view_image": [
+      "brand/sources/generated/CAST-02/generation-003.png",
+      "brand/sources/generated/CAST-03/generation-003.png",
+      "brand/sources/generated/CAST-04/generation-004.png",
+      "brand/sources/generated/CAST-04/generation-005.png",
+      "brand/sources/generated/CAST-05/generation-003.png",
+      "brand/sources/generated/CAST-05/generation-004.png",
+      "brand/sources/generated/DOC-01/generation-001.png",
+      "brand/sources/generated/DOC-02/generation-001.png",
+      "brand/sources/generated/DOC-03/generation-001.png",
+      "brand/sources/generated/DOC-04/generation-001.png",
+      "brand/sources/generated/DOC-05/generation-001.png",
+      "brand/sources/generated/GH-01-B/generation-001.png",
+      "brand/sources/generated/GH-01-S/generation-001.png",
+      "brand/sources/generated/GH-02-B/generation-001.png",
+      "brand/sources/generated/GH-02-S/generation-001.png",
+      "brand/sources/generated/GH-03-B/generation-001.png",
+      "brand/sources/generated/GH-03-S/generation-001.png",
+      "brand/sources/generated/GH-04-B/generation-001.png",
+      "brand/sources/generated/GH-04-S/generation-001.png",
+      "brand/sources/generated/GH-05-B/generation-001.png",
+      "brand/sources/generated/GH-05-S/generation-001.png",
+      "brand/sources/generated/GH-06-B/generation-001.png",
+      "brand/sources/generated/GH-06-S/generation-001.png",
+      "brand/sources/generated/GH-07-B/generation-001.png",
+      "brand/sources/generated/GH-07-S/generation-001.png",
+      "brand/sources/generated/GH-08-B/generation-001.png",
+      "brand/sources/generated/GH-08-S/generation-001.png",
+      "brand/sources/generated/GH-09-B/generation-001.png",
+      "brand/sources/generated/GH-09-S/generation-001.png",
+      "brand/sources/generated/GH-10-B/generation-001.png",
+      "brand/sources/generated/GH-10-S/generation-001.png",
+      "brand/sources/generated/GH-11-B/generation-001.png",
+      "brand/sources/generated/GH-11-S/generation-001.png",
+      "brand/sources/generated/GH-12-B/generation-001.png",
+      "brand/sources/generated/GH-12-S/generation-001.png",
+      "brand/sources/generated/GH-13-B/generation-001.png",
+      "brand/sources/generated/GH-13-S/generation-001.png",
+      "brand/sources/generated/MKT-02/generation-002.png",
+      "brand/sources/generated/MKT-09/generation-001.png"
+    ],
+    "actual_output_files_viewed_with_view_image": [
+      "brand/assets/broadcast/comparison.png",
+      "brand/assets/broadcast/disclosure.png",
+      "brand/assets/broadcast/ended.png",
+      "brand/assets/broadcast/intermission.png",
+      "brand/assets/broadcast/lower-third.png",
+      "brand/assets/broadcast/vertical.png",
+      "brand/assets/docs/agent-tree.png",
+      "brand/assets/docs/contributor-path.png",
+      "brand/assets/docs/publication-flow.png",
+      "brand/assets/docs/repository-map.png",
+      "brand/assets/docs/runtime-architecture-master.png",
+      "brand/assets/docs/runtime-architecture.png",
+      "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+      "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+      "brand/assets/github/ai-ascensiondot-githubdot-io-social.png",
+      "brand/assets/github/ascension-banner-dark.png",
+      "brand/assets/github/ascension-banner-light.png",
+      "brand/assets/github/ascension-brand-overhaul-banner-dark.png",
+      "brand/assets/github/ascension-brand-overhaul-banner-light.png",
+      "brand/assets/github/ascension-brand-overhaul-social.png",
+      "brand/assets/github/ascension-observability-banner-dark.png",
+      "brand/assets/github/ascension-observability-banner-light.png",
+      "brand/assets/github/ascension-observability-social.png",
+      "brand/assets/github/ascension-social.png",
+      "brand/assets/github/ascension-watchdog-banner-dark.png",
+      "brand/assets/github/ascension-watchdog-banner-light.png",
+      "brand/assets/github/ascension-watchdog-social.png",
+      "brand/assets/github/dot-github-banner-dark.png",
+      "brand/assets/github/dot-github-banner-light.png",
+      "brand/assets/github/dot-github-social.png",
+      "brand/assets/github/sts2-core-banner-dark.png",
+      "brand/assets/github/sts2-core-banner-light.png",
+      "brand/assets/github/sts2-core-social.png",
+      "brand/assets/github/sts2-gateway-banner-dark.png",
+      "brand/assets/github/sts2-gateway-banner-light.png",
+      "brand/assets/github/sts2-gateway-social.png",
+      "brand/assets/github/sts2-map-banner-dark.png",
+      "brand/assets/github/sts2-map-banner-light.png",
+      "brand/assets/github/sts2-map-social.png",
+      "brand/assets/github/sts2-mcp-banner-dark.png",
+      "brand/assets/github/sts2-mcp-banner-light.png",
+      "brand/assets/github/sts2-mcp-social.png",
+      "brand/assets/github/sts2-mod-banner-dark.png",
+      "brand/assets/github/sts2-mod-banner-light.png",
+      "brand/assets/github/sts2-mod-social.png",
+      "brand/assets/github/sts2-protocol-banner-dark.png",
+      "brand/assets/github/sts2-protocol-banner-light.png",
+      "brand/assets/github/sts2-protocol-social.png",
+      "brand/assets/github/website-banner-dark.png",
+      "brand/assets/github/website-banner-light.png",
+      "brand/assets/github/website-social.png",
+      "brand/assets/marketing/social-header.png",
+      "brand/assets/press/cover.png"
+    ],
+    "checks": [
+      "Compared each selected source with its exact root prompt, receipt, and asset-registry brief where applicable.",
+      "Verified all selected source hashes, dimensions, modes, and bytes against local files and pinned generation receipts; all selected sources were RGB and opaque.",
+      "Verified all selected output paths, dimensions, modes, bytes, crop boxes, and output digests against the current mechanical export receipt; all selected outputs were RGB and opaque.",
+      "Inspected broadcast/marketing/documentation copy, geometry, diagrams, footers, and unwanted marks.",
+      "Inspected both themes of all 13 GitHub banner pairs for exact title/role copy, readable horizontal slices, and family consistency.",
+      "Inspected all 13 GitHub social sources and full outputs plus central-safe crop contacts; measured luminance>100 bright-content bounds against the prompt safe region.",
+      "Cross-checked DOC-03 against the migration plan, DOC-04 against roles.json and CONTRACT.md, and DOC-05 against the offline quickstart and consent playbook."
+    ],
+    "not_tested": [
+      "No source, prompt, registry, manifest, ledger, or generated image was edited.",
+      "No real-footage host, live status source, game-control path, runtime transition, model decision, settled game action, deployment, publication, or public release was run.",
+      "No platform-specific GitHub/social crop behavior was exercised beyond prompt-defined contacts.",
+      "No copyright, trademark, license, sponsorship, rights, or legal clearance determination was made."
+    ]
+  },
+  "crop_reference": {
+    "github_social": {
+      "basis": "Exact prompt requirement central84percent width and central76percent height on 1774x887 source",
+      "source_dimensions": "1774x887",
+      "safe_box_float": {
+        "x_min": 141.9,
+        "x_max": 1632.1,
+        "y_min": 106.4,
+        "y_max": 780.6
+      },
+      "measurement": "Luminance>100 bright-content bbox; full-source output crop does not exercise platform crop."
+    },
+    "note": "Source/export crop observations only; no current platform runtime crop or publication authorization."
+  },
+  "coverage": {
+    "families_reviewed": 5,
+    "family_groups": [
+      "broadcast",
+      "marketing",
+      "github_banners",
+      "github_social",
+      "documentation"
+    ],
+    "source_pngs_viewed": 39,
+    "output_files_viewed": 53,
+    "source_hash_dimension_mode_result": "39/39 pass",
+    "output_hash_dimension_mode_result": "53/53 pass",
+    "source_mode_result": "39/39 RGB opaque",
+    "output_mode_result": "53/53 RGB opaque",
+    "central_crop_checks": [
+      "GH-01-S",
+      "GH-02-S",
+      "GH-03-S",
+      "GH-04-S",
+      "GH-05-S",
+      "GH-06-S",
+      "GH-07-S",
+      "GH-08-S",
+      "GH-09-S",
+      "GH-10-S",
+      "GH-11-S",
+      "GH-12-S",
+      "GH-13-S",
+      "MKT-02"
+    ],
+    "documentation_source_fact_checks": [
+      "DOC-01",
+      "DOC-02",
+      "DOC-03",
+      "DOC-04",
+      "DOC-05"
+    ]
+  },
+  "summary": {
+    "source_ready_for_bounded_mechanical_export": [
+      "CAST-02-generation-003",
+      "CAST-04-generation-004",
+      "CAST-04-generation-005",
+      "CAST-05-generation-003",
+      "CAST-05-generation-004",
+      "MKT-02-generation-002",
+      "MKT-09-generation-001",
+      "GH-01-B",
+      "GH-02-B",
+      "GH-03-B",
+      "GH-05-B",
+      "GH-06-B",
+      "GH-07-B",
+      "GH-08-B",
+      "GH-09-B",
+      "GH-10-B",
+      "GH-11-B",
+      "GH-12-B",
+      "GH-13-B",
+      "GH-09-S",
+      "DOC-01",
+      "DOC-03",
+      "DOC-04",
+      "DOC-05"
+    ],
+    "source_conditionally_ready": [
+      "CAST-03-generation-003",
+      "GH-04-B",
+      "GH-01-S",
+      "GH-04-S",
+      "GH-05-S",
+      "GH-07-S",
+      "GH-11-S",
+      "GH-13-S"
+    ],
+    "source_blocked_or_requires_creative_reflow": [
+      "DOC-02",
+      "GH-02-S",
+      "GH-03-S",
+      "GH-06-S",
+      "GH-08-S",
+      "GH-10-S",
+      "GH-12-S"
+    ],
+    "source_blockers_or_conditions": [
+      "CAST-03 requires a separate real-footage crop/host check.",
+      "GH-04-B/GH-04-S have a family mismatch; GH-04-S also has slight safe-crop overflow.",
+      "GH-01-S/GH-05-S/GH-07-S/GH-11-S/GH-13-S have minor safe-crop tolerance/overflow conditions.",
+      "GH-02-S/GH-03-S/GH-06-S/GH-08-S/GH-10-S/GH-12-S visibly exceed the prompt safe crop and need creative reflow.",
+      "DOC-02 lacks a visible upward arrowhead from Digest-bound approval into Validation."
+    ],
+    "overall_visual_result": "Repaired broadcast/marketing outputs are clean and bounded; GitHub banners are readable with one family condition; social previews preserve exact copy but several fail the prompt safe crop; four of five documentation diagrams are source-ready while DOC-02 has a connector-semantics blocker.",
+    "decision": "Bounded follow-up source review complete. Ready items may proceed to separate export checks; conditional and blocked items retain their recorded conditions. No broadcast-host, runtime, deployment, publication, legal, trademark, sponsorship, or public-release approval is made."
+  },
+  "assets": [
+    {
+      "asset_id": "CAST-02",
+      "title": "Comparison scene",
+      "selected_generations": [
+        "CAST-02-generation-003"
+      ],
+      "source_records": [
+        {
+          "generation_id": "CAST-02-generation-003",
+          "prompt_path": "brand/prompts/root/CAST-02/generation-003.txt",
+          "prompt_sha256": "cc1978bbcdbf2207597967dd4bdd90f1373bed17865e1eb0072ffe028fd4db61",
+          "source_path": "brand/sources/generated/CAST-02/generation-003.png",
+          "source_sha256": "d53c75f3f92053ce1e2bfe22463994023f23a25faac0a4c8e446f87e368a9883",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1355730,
+          "receipt_path": "execution/reviews/root-broadcast-generation-repair-001.json",
+          "receipt_sha256": "ab991e1516b249a55f14271355f4bee285a15ac57027fce7113259a08f2e47dc",
+          "references": [
+            {
+              "path": "brand/sources/generated/CAST-02/generation-002.png",
+              "sha256": "6048383ebb62576535b3592182bd1fe43d0b77f353a033575ffa652e085e45e8",
+              "purpose": "edit_existing_root_generated_art",
+              "content_class": "generated_art_not_product_evidence"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/broadcast/comparison.png",
+          "output_sha256": "12c34b01f2eed2b74de8fa912f2e1ca77fd6f6ff3db92af76815e3f9dfee448d",
+          "output_dimensions": "1920x1080",
+          "output_mode": "RGB",
+          "output_bytes": 1577047,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Two empty comparison panels with exact labels; repaired source has no A-like symbols.",
+        "No game screenshot, telemetry, provider logo, monogram, or invented value.",
+        "Selected source/output are RGB opaque; comparison.png is 1920x1080."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Visual scene source only; no population, switching, or host behavior is proven.",
+      "source_record": {
+        "generation_id": "CAST-02-generation-003",
+        "prompt_path": "brand/prompts/root/CAST-02/generation-003.txt",
+        "prompt_sha256": "cc1978bbcdbf2207597967dd4bdd90f1373bed17865e1eb0072ffe028fd4db61",
+        "source_path": "brand/sources/generated/CAST-02/generation-003.png",
+        "source_sha256": "d53c75f3f92053ce1e2bfe22463994023f23a25faac0a4c8e446f87e368a9883",
+        "source_dimensions": "1672x941",
+        "source_mode": "RGB",
+        "source_bytes": 1355730,
+        "receipt_path": "execution/reviews/root-broadcast-generation-repair-001.json",
+        "receipt_sha256": "ab991e1516b249a55f14271355f4bee285a15ac57027fce7113259a08f2e47dc",
+        "references": [
+          {
+            "path": "brand/sources/generated/CAST-02/generation-002.png",
+            "sha256": "6048383ebb62576535b3592182bd1fe43d0b77f353a033575ffa652e085e45e8",
+            "purpose": "edit_existing_root_generated_art",
+            "content_class": "generated_art_not_product_evidence"
+          }
+        ]
+      }
+    },
+    {
+      "asset_id": "CAST-03",
+      "title": "Vertical short-form scene",
+      "selected_generations": [
+        "CAST-03-generation-003"
+      ],
+      "source_records": [
+        {
+          "generation_id": "CAST-03-generation-003",
+          "prompt_path": "brand/prompts/root/CAST-03/generation-003.txt",
+          "prompt_sha256": "b0ae285a094845c31e42997bb8cdbc8d981a7987754bceec622eb70d65716e4d",
+          "source_path": "brand/sources/generated/CAST-03/generation-003.png",
+          "source_sha256": "97001e70df9bd682e479cd6bd5ab8516f34627c03942569b24c9c8bfe1ae0b68",
+          "source_dimensions": "941x1672",
+          "source_mode": "RGB",
+          "source_bytes": 1397946,
+          "receipt_path": "execution/reviews/root-broadcast-generation-repair-002.json",
+          "receipt_sha256": "59c53dc0990b0222ebbb9a445e85e12b02baf94f5d6279615feee394a17891cc",
+          "references": [
+            {
+              "path": "brand/sources/generated/CAST-03/generation-002.png",
+              "sha256": "bf71fe357606b3fb9c95b1b8df1acc2c425913ace576c4ebee9524d4bef3fb40",
+              "purpose": "edit_existing_root_generated_art",
+              "content_class": "generated_art_not_product_evidence"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/broadcast/vertical.png",
+          "output_sha256": "1113cb2f0acaf792cb0c906adaa9c710c71a76f4f8fb71e42e85d23f481eca67",
+          "output_dimensions": "1080x1920",
+          "output_mode": "RGB",
+          "output_bytes": 1624885,
+          "crop_box": [
+            0,
+            0,
+            941,
+            1672
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "conditional_ready_real_footage_crop_and_host_check",
+      "observations": [
+        "Exact by AI Ascension byline and one long Human intervention field are readable; no live data or result is present.",
+        "vertical.png is RGB opaque at 1080x1920; source is clean pending real-footage crop/host review."
+      ],
+      "issues": [
+        {
+          "severity": "crop_and_host_condition",
+          "finding": "The eventual real-footage composition and host crop must preserve the byline and long Human intervention field.",
+          "required_follow_up": "Run the separate real-footage composition and host checks."
+        }
+      ],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Still source only; no vertical broadcast, real-footage crop, status source, or host behavior is proven.",
+      "source_record": {
+        "generation_id": "CAST-03-generation-003",
+        "prompt_path": "brand/prompts/root/CAST-03/generation-003.txt",
+        "prompt_sha256": "b0ae285a094845c31e42997bb8cdbc8d981a7987754bceec622eb70d65716e4d",
+        "source_path": "brand/sources/generated/CAST-03/generation-003.png",
+        "source_sha256": "97001e70df9bd682e479cd6bd5ab8516f34627c03942569b24c9c8bfe1ae0b68",
+        "source_dimensions": "941x1672",
+        "source_mode": "RGB",
+        "source_bytes": 1397946,
+        "receipt_path": "execution/reviews/root-broadcast-generation-repair-002.json",
+        "receipt_sha256": "59c53dc0990b0222ebbb9a445e85e12b02baf94f5d6279615feee394a17891cc",
+        "references": [
+          {
+            "path": "brand/sources/generated/CAST-03/generation-002.png",
+            "sha256": "bf71fe357606b3fb9c95b1b8df1acc2c425913ace576c4ebee9524d4bef3fb40",
+            "purpose": "edit_existing_root_generated_art",
+            "content_class": "generated_art_not_product_evidence"
+          }
+        ]
+      }
+    },
+    {
+      "asset_id": "CAST-04",
+      "title": "Intermission and ended states",
+      "selected_generations": [
+        "CAST-04-generation-004",
+        "CAST-04-generation-005"
+      ],
+      "source_records": [
+        {
+          "generation_id": "CAST-04-generation-004",
+          "prompt_path": "brand/prompts/root/CAST-04/generation-004.txt",
+          "prompt_sha256": "7017bc9c146682d8ea9678571c971b5247dffada3dd4d2451978c75bbb44b72a",
+          "source_path": "brand/sources/generated/CAST-04/generation-004.png",
+          "source_sha256": "1953f62b204d5271ce925b99c633b94550b4df0da17e75fe6f45ebc7d71bb821",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1614131,
+          "receipt_path": "execution/reviews/root-broadcast-generation-repair-003.json",
+          "receipt_sha256": "345c661f6a6bd077fb4ccae540f79a3d6bffc66d4ca4efae7d4befcbd5b8043e",
+          "references": [
+            {
+              "path": "brand/sources/generated/CAST-04/generation-002.png",
+              "sha256": "4829dc232e03d65dd402d2fd483383834643327b4efdbf7072a0592772005136",
+              "purpose": "edit_existing_root_generated_art",
+              "content_class": "generated_art_not_product_evidence"
+            }
+          ]
+        },
+        {
+          "generation_id": "CAST-04-generation-005",
+          "prompt_path": "brand/prompts/root/CAST-04/generation-005.txt",
+          "prompt_sha256": "4016daf5a2230a03a2d96d3f6ef8657f5b8cb37639b72c8567fdabb7386c5aac",
+          "source_path": "brand/sources/generated/CAST-04/generation-005.png",
+          "source_sha256": "cb3803bfedc118dff8b9eb76e31e4820390f9de93f3f3bdb76fa33a6a581558a",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1711320,
+          "receipt_path": "execution/reviews/root-broadcast-generation-repair-004.json",
+          "receipt_sha256": "507c878c5b85ec3a3afbd821afb32f2898edf43d37c329eabc24ca93a2811b21",
+          "references": [
+            {
+              "path": "brand/sources/generated/CAST-04/generation-003.png",
+              "sha256": "a98caf6a642a06f39e541f7989cf9b953ae858874ed2e1e955a5cd44701f19f6",
+              "purpose": "edit_existing_root_generated_art",
+              "content_class": "generated_art_not_product_evidence"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/broadcast/intermission.png",
+          "output_sha256": "6131f348bef85a10d3ca01c8c7771884fa040a5ed41aa464385b3e26159b0627",
+          "output_dimensions": "1920x1080",
+          "output_mode": "RGB",
+          "output_bytes": 1888178,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/broadcast/ended.png",
+          "output_sha256": "3662012f72595f83b1a1f9e79e880f61da2e3a8fb92a53f54db83ec9084bc50c",
+          "output_dimensions": "1920x1080",
+          "output_mode": "RGB",
+          "output_bytes": 2025154,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Intermission/Broadcast paused and Broadcast ended/Thank you copy are exact and readable.",
+        "Plain AI ASCENSION footer; no monogram, separator artifact, live value, game capture, or provider mark.",
+        "Both 1920x1080 outputs are RGB opaque and cleanly centered."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "State artwork only; pause/resume, end-state routing, and host transitions are unproven."
+    },
+    {
+      "asset_id": "CAST-05",
+      "title": "Lower third and disclosure bars",
+      "selected_generations": [
+        "CAST-05-generation-003",
+        "CAST-05-generation-004"
+      ],
+      "source_records": [
+        {
+          "generation_id": "CAST-05-generation-003",
+          "prompt_path": "brand/prompts/root/CAST-05/generation-003.txt",
+          "prompt_sha256": "372e165974fa1f918ed70c83ec0f3093a3f5dc29c17111808fb0b9a24c1b9f5e",
+          "source_path": "brand/sources/generated/CAST-05/generation-003.png",
+          "source_sha256": "a8b85c64ee68215ffc08868717cd6ce454eea331b0f0df493a44c6f5b5b69936",
+          "source_dimensions": "1983x793",
+          "source_mode": "RGB",
+          "source_bytes": 859425,
+          "receipt_path": "execution/reviews/root-broadcast-generation-repair-005.json",
+          "receipt_sha256": "531093cbfde23fa6207bfa3deb0e50811f7c19fe75634ca52b4aaf16b1efae3b"
+        },
+        {
+          "generation_id": "CAST-05-generation-004",
+          "prompt_path": "brand/prompts/root/CAST-05/generation-004.txt",
+          "prompt_sha256": "40418f994a0f130addf2374a874a2a604954b761f38148f688f70e50ac4dc8e0",
+          "source_path": "brand/sources/generated/CAST-05/generation-004.png",
+          "source_sha256": "1e89c4c22c6c1ff1cfa7b0f14281dfd74477f33c01e833baa3a62b133299b17a",
+          "source_dimensions": "1374x1145",
+          "source_mode": "RGB",
+          "source_bytes": 878707,
+          "receipt_path": "execution/reviews/root-broadcast-generation-repair-006.json",
+          "receipt_sha256": "969f5b90aac64ad8e6b3e4f5a77215a0e37e959427579bc8ae1b76ac546b74ec"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/broadcast/lower-third.png",
+          "output_sha256": "08c958d5150d346c1c0f0dd04cdca751782d8ec1faa7c4b4622ed2fac735ffe4",
+          "output_dimensions": "1920x240",
+          "output_mode": "RGB",
+          "output_bytes": 265275,
+          "crop_box": [
+            0,
+            273,
+            1983,
+            521
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/broadcast/disclosure.png",
+          "output_sha256": "1c5c086b194de6ea31305b2537bc80c10592c40d2901a591f366f877951ca185",
+          "output_dimensions": "1920x160",
+          "output_mode": "RGB",
+          "output_bytes": 168183,
+          "crop_box": [
+            0,
+            480,
+            1374,
+            595
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Lower-third fields AI ASCENSION, Name, Role, Model config, and Human intervention are readable with blank values.",
+        "Disclosure fields Retrospective analysis, Human intervention, and Sponsor disclosure are readable with no sponsor/disclosure value.",
+        "1920x240 and 1920x160 outputs are RGB opaque and readable; disclosure dividers touch crop edges but remain legible.",
+        "No game image, provider/company logo, sponsor identity, money, metric, checkbox, or fabricated value."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Source/output only; no scene attachment, value population, sponsor review, or disclosure logic is proven."
+    },
+    {
+      "asset_id": "MKT-02",
+      "title": "Social header",
+      "selected_generations": [
+        "MKT-02-generation-002"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-02-generation-002",
+          "prompt_path": "brand/prompts/root/MKT-02/generation-002.txt",
+          "prompt_sha256": "2d98bb53c60d25f31bebface7b0672997737b3fb545cb2157b24b0e2667dc6c7",
+          "source_path": "brand/sources/generated/MKT-02/generation-002.png",
+          "source_sha256": "3a655b4159aa12366230cb2d62717ae1cc4721d1a909733c5f2642e3b23bea27",
+          "source_dimensions": "2172x724",
+          "source_mode": "RGB",
+          "source_bytes": 1624609,
+          "receipt_path": "execution/reviews/root-marketing-generation-repair-001.json",
+          "receipt_sha256": "fb73cbd6f7eecb2321ce861c890e5d29bf17c3fbe5aea86b636e5b162bae489c",
+          "references": [
+            {
+              "path": "brand/sources/generated/MKT-02/generation-001.png",
+              "sha256": "5da22c2084eec9cc2ee4388956f127f28637242f82ce13e659fe71a6ef012671",
+              "purpose": "edit_existing_root_generated_art",
+              "content_class": "generated_art_not_product_evidence"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/marketing/social-header.png",
+          "output_sha256": "9e1b6fe616ac131f82d6575dc9e0484c90cb0b3737d6e1ccefbf3161b4b9eb59",
+          "output_dimensions": "1500x500",
+          "output_mode": "RGB",
+          "output_bytes": 784856,
+          "crop_box": [
+            0,
+            0,
+            2172,
+            724
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Exact AI Ascension attribution, The Climb without a terminal period, and Follow the decisions. Inspect the evidence. line.",
+        "Central crop retains readable copy; dark lower-left avatar-clear area remains clear.",
+        "1500x500 RGB opaque output; no logo, date, metric, game image, result, or invented value."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Campaign artwork only; no active channel, audience, episode, broadcast, or outcome is proven.",
+      "source_record": {
+        "generation_id": "MKT-02-generation-002",
+        "prompt_path": "brand/prompts/root/MKT-02/generation-002.txt",
+        "prompt_sha256": "2d98bb53c60d25f31bebface7b0672997737b3fb545cb2157b24b0e2667dc6c7",
+        "source_path": "brand/sources/generated/MKT-02/generation-002.png",
+        "source_sha256": "3a655b4159aa12366230cb2d62717ae1cc4721d1a909733c5f2642e3b23bea27",
+        "source_dimensions": "2172x724",
+        "source_mode": "RGB",
+        "source_bytes": 1624609,
+        "receipt_path": "execution/reviews/root-marketing-generation-repair-001.json",
+        "receipt_sha256": "fb73cbd6f7eecb2321ce861c890e5d29bf17c3fbe5aea86b636e5b162bae489c",
+        "references": [
+          {
+            "path": "brand/sources/generated/MKT-02/generation-001.png",
+            "sha256": "5da22c2084eec9cc2ee4388956f127f28637242f82ce13e659fe71a6ef012671",
+            "purpose": "edit_existing_root_generated_art",
+            "content_class": "generated_art_not_product_evidence"
+          }
+        ]
+      }
+    },
+    {
+      "asset_id": "MKT-09",
+      "title": "Press cover",
+      "selected_generations": [
+        "MKT-09-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-09-generation-001",
+          "prompt_path": "brand/prompts/root/MKT-09/generation-001.txt",
+          "prompt_sha256": "b1417d989af7c757b926717bc382a84dcedb226bd039195194b053a56142eddd",
+          "source_path": "brand/sources/generated/MKT-09/generation-001.png",
+          "source_sha256": "25d7f052d3bab7a5c95e42be5af7ae78e9968f5b4b70899af952e4814ef0ee8f",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1465380,
+          "receipt_path": "execution/reviews/root-marketing-generation-batch-004.json",
+          "receipt_sha256": "10a30cabf679dd54c2f3d42d88921bc1962240662a9c649908ee36e6a190e37d"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/press/cover.png",
+          "output_sha256": "e7ad9b62ae162030c1209ddc1b9e92e026b9a3c5a56485b4065eb3ea2360bece",
+          "output_dimensions": "1600x900",
+          "output_mode": "RGB",
+          "output_bytes": 1299065,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Exact AI Ascension / Press kit / The Climb copy; quiet editorial composition.",
+        "No logo, values, metrics, result, game screenshot, sponsor, or unrequested branding.",
+        "1600x900 RGB opaque output matches export receipt."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Press artwork only; no coverage, publication, audience, or live run is proven.",
+      "source_record": {
+        "generation_id": "MKT-09-generation-001",
+        "prompt_path": "brand/prompts/root/MKT-09/generation-001.txt",
+        "prompt_sha256": "b1417d989af7c757b926717bc382a84dcedb226bd039195194b053a56142eddd",
+        "source_path": "brand/sources/generated/MKT-09/generation-001.png",
+        "source_sha256": "25d7f052d3bab7a5c95e42be5af7ae78e9968f5b4b70899af952e4814ef0ee8f",
+        "source_dimensions": "1672x941",
+        "source_mode": "RGB",
+        "source_bytes": 1465380,
+        "receipt_path": "execution/reviews/root-marketing-generation-batch-004.json",
+        "receipt_sha256": "10a30cabf679dd54c2f3d42d88921bc1962240662a9c649908ee36e6a190e37d"
+      }
+    },
+    {
+      "asset_id": "GH-01-B",
+      "title": "GitHub repository banner — Ascension",
+      "selected_generations": [
+        "GH-01-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-01-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-01-B/generation-001.txt",
+          "prompt_sha256": "6d9277d0d2cc583d0f77f455e28cc0987b356e5d46e4ef2ba19aa49a501ea2d0",
+          "source_path": "brand/sources/generated/GH-01-B/generation-001.png",
+          "source_sha256": "563f20121f9e152e3010fd83cc3a79050cfbba41980f6b44fb7769e6b393ec46",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1202149,
+          "receipt_path": "execution/reviews/root-github-generation-batch-001.json",
+          "receipt_sha256": "0239943248af57a9a08d452100442b92c8ab927e4188876f2b92e383873836a9"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ascension-banner-light.png",
+          "output_sha256": "c2f24f7bf4eae6b2b50736088b2df83257f1a5666e9b5d115971f008fc78b65d",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 476116,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/ascension-banner-dark.png",
+          "output_sha256": "f5eb3f64caa8df7c2cc8b2a4b5acbd11fccffdc585c4e26165eb8d11d1b407c3",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 494354,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “Ascension” and role “Agent-run coordination, structured records, and replay; starting with Slay the Spire 2.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-01-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-01-B/generation-001.txt",
+        "prompt_sha256": "6d9277d0d2cc583d0f77f455e28cc0987b356e5d46e4ef2ba19aa49a501ea2d0",
+        "source_path": "brand/sources/generated/GH-01-B/generation-001.png",
+        "source_sha256": "563f20121f9e152e3010fd83cc3a79050cfbba41980f6b44fb7769e6b393ec46",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1202149,
+        "receipt_path": "execution/reviews/root-github-generation-batch-001.json",
+        "receipt_sha256": "0239943248af57a9a08d452100442b92c8ab927e4188876f2b92e383873836a9"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-02-B",
+      "title": "GitHub repository banner — Slay the Spire 2 MCP",
+      "selected_generations": [
+        "GH-02-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-02-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-02-B/generation-001.txt",
+          "prompt_sha256": "7afad4d9bbf6e30595758bc50b8d628ff7ffffe5d208b7285366b51f0e21f9f3",
+          "source_path": "brand/sources/generated/GH-02-B/generation-001.png",
+          "source_sha256": "27131ee8f51d7ddccd93c6fba06c222c07814cabf8e62034802cad3356758837",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1228636,
+          "receipt_path": "execution/reviews/root-github-generation-batch-002.json",
+          "receipt_sha256": "2d6ce3b199da27f8380022322a45d30525ae2cb5939a6cf6360d8a00d8b47058"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-mcp-banner-light.png",
+          "output_sha256": "19980d6bb29f50d4fb3dd3710204eed912abb799eea23ea9294b9e2413f36fd1",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 499616,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/sts2-mcp-banner-dark.png",
+          "output_sha256": "0f3042eb591f85693e5a894412fa01c65865864a8c7df212d562a2d6f8f321ae",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 500508,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “Slay the Spire 2 MCP” and role “MCP tools for the controlled STS2 gateway interface.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-02-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-02-B/generation-001.txt",
+        "prompt_sha256": "7afad4d9bbf6e30595758bc50b8d628ff7ffffe5d208b7285366b51f0e21f9f3",
+        "source_path": "brand/sources/generated/GH-02-B/generation-001.png",
+        "source_sha256": "27131ee8f51d7ddccd93c6fba06c222c07814cabf8e62034802cad3356758837",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1228636,
+        "receipt_path": "execution/reviews/root-github-generation-batch-002.json",
+        "receipt_sha256": "2d6ce3b199da27f8380022322a45d30525ae2cb5939a6cf6360d8a00d8b47058"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-03-B",
+      "title": "GitHub repository banner — Slay the Spire 2 Mod",
+      "selected_generations": [
+        "GH-03-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-03-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-03-B/generation-001.txt",
+          "prompt_sha256": "bbaed3cfb1c818fd4edc6a93297ff09c0cf8587c474517aee7ef73b56a30d9f9",
+          "source_path": "brand/sources/generated/GH-03-B/generation-001.png",
+          "source_sha256": "7069e316c754b83d7bf334cde14d51beefa70dda0fe3b7a57327ce2508d04a38",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1211018,
+          "receipt_path": "execution/reviews/root-github-generation-batch-003.json",
+          "receipt_sha256": "b01ab77ebfab87e4eda0f3d7e4fb195ce8fa7bd2e184b62e972d220db5d91c77"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-mod-banner-light.png",
+          "output_sha256": "bd096c78cf5d13d001d86498619d90fd2e06d3b05e92549150866b9a9027a853",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 478997,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/sts2-mod-banner-dark.png",
+          "output_sha256": "80a48e2cb815bed1ad30a66885bc1d880c1933fa45317db0f6656c6e32265a4c",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 502824,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “Slay the Spire 2 Mod” and role “Native game integration for controlled observation and actions.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-03-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-03-B/generation-001.txt",
+        "prompt_sha256": "bbaed3cfb1c818fd4edc6a93297ff09c0cf8587c474517aee7ef73b56a30d9f9",
+        "source_path": "brand/sources/generated/GH-03-B/generation-001.png",
+        "source_sha256": "7069e316c754b83d7bf334cde14d51beefa70dda0fe3b7a57327ce2508d04a38",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1211018,
+        "receipt_path": "execution/reviews/root-github-generation-batch-003.json",
+        "receipt_sha256": "b01ab77ebfab87e4eda0f3d7e4fb195ce8fa7bd2e184b62e972d220db5d91c77"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-04-B",
+      "title": "GitHub repository banner — STS2 Domain Core",
+      "selected_generations": [
+        "GH-04-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-04-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-04-B/generation-001.txt",
+          "prompt_sha256": "b2ca08471997b02d3a2d7103d0737d803af65fae05656e6d1c8a9f2655c04eef",
+          "source_path": "brand/sources/generated/GH-04-B/generation-001.png",
+          "source_sha256": "fed40915f984608ec22489794078ded7b6074dc078145726529a7858d4ca3236",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1160557,
+          "receipt_path": "execution/reviews/root-github-generation-batch-004.json",
+          "receipt_sha256": "e43a4d08d3c580a2e42cfda44c5cc86376f1d1133cd4e3eca24507bf773eb376"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-core-banner-light.png",
+          "output_sha256": "a005361e0769a2ba2f375219a20237e3870148385a16afdf7f5e83ddef4d33f0",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 460730,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/sts2-core-banner-dark.png",
+          "output_sha256": "512f45a4dd6258d11fc89118aaf9dc6d4517fd2c12fb9598eabb797958de4cba",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 478135,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "conditional_creative_consistency",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “STS2 Domain Core” and role “Typed STS2 state and validation primitives.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque.",
+        "Sans-serif treatment visibly differs from the surrounding serif banner set."
+      ],
+      "issues": [
+        {
+          "severity": "creative_consistency",
+          "finding": "GH-04-B is legible but family-inconsistent with the surrounding banner set.",
+          "required_follow_up": "Creative reflow in the selected banner family."
+        }
+      ],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-04-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-04-B/generation-001.txt",
+        "prompt_sha256": "b2ca08471997b02d3a2d7103d0737d803af65fae05656e6d1c8a9f2655c04eef",
+        "source_path": "brand/sources/generated/GH-04-B/generation-001.png",
+        "source_sha256": "fed40915f984608ec22489794078ded7b6074dc078145726529a7858d4ca3236",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1160557,
+        "receipt_path": "execution/reviews/root-github-generation-batch-004.json",
+        "receipt_sha256": "e43a4d08d3c580a2e42cfda44c5cc86376f1d1133cd4e3eca24507bf773eb376"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-05-B",
+      "title": "GitHub repository banner — STS2 Gateway",
+      "selected_generations": [
+        "GH-05-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-05-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-05-B/generation-001.txt",
+          "prompt_sha256": "e726f0c076da940eef90b5d2c3ad0c962266854b6516b1a83c19c951819285e7",
+          "source_path": "brand/sources/generated/GH-05-B/generation-001.png",
+          "source_sha256": "13a8fe6fea68488641d19433b6fd57418f353c32f9577acc6caa1965e4a23f59",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1186170,
+          "receipt_path": "execution/reviews/root-github-generation-batch-005.json",
+          "receipt_sha256": "7aaf1f36873a525d529a2a5f33a8cf261f4986cdcb02c8745f7cea2a99bb9641"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-gateway-banner-light.png",
+          "output_sha256": "271495529cdc677514cb1ed34a07febf0552e1d01f596128982a9671ca798d3e",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 472370,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/sts2-gateway-banner-dark.png",
+          "output_sha256": "ef858eff4df99ec3556dc6fedbded21411e8997055e0d6db369dc48aa90d5bc4",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 492639,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “STS2 Gateway” and role “Game-instance routing, lifecycle boundaries, and request authority.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-05-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-05-B/generation-001.txt",
+        "prompt_sha256": "e726f0c076da940eef90b5d2c3ad0c962266854b6516b1a83c19c951819285e7",
+        "source_path": "brand/sources/generated/GH-05-B/generation-001.png",
+        "source_sha256": "13a8fe6fea68488641d19433b6fd57418f353c32f9577acc6caa1965e4a23f59",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1186170,
+        "receipt_path": "execution/reviews/root-github-generation-batch-005.json",
+        "receipt_sha256": "7aaf1f36873a525d529a2a5f33a8cf261f4986cdcb02c8745f7cea2a99bb9641"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-06-B",
+      "title": "GitHub repository banner — STS2 Protocol",
+      "selected_generations": [
+        "GH-06-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-06-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-06-B/generation-001.txt",
+          "prompt_sha256": "ad4a830319035f08cbf2031ef6fc77656d74eb9ac96ef4796b6bd5db09fa599a",
+          "source_path": "brand/sources/generated/GH-06-B/generation-001.png",
+          "source_sha256": "b1f4a768036f8077541845c3330bd74aaf7a6d26a9c6e54fcbb692896c46639b",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1184656,
+          "receipt_path": "execution/reviews/root-github-generation-batch-006.json",
+          "receipt_sha256": "71248d6a1954aa387739cb42e17e7400f8890f4cd195046868563f5f35973234"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-protocol-banner-light.png",
+          "output_sha256": "24515459ec22bdc35441f9fabe22c7787fd600943cc3b2b1f49d89defa70caea",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 470739,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/sts2-protocol-banner-dark.png",
+          "output_sha256": "a3c06d6c8c81419a819b40b3aa9ceff3fbfd5f2be6286197726c2da1518b6b9e",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 487213,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “STS2 Protocol” and role “Shared metadata contracts and conformance artifacts.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-06-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-06-B/generation-001.txt",
+        "prompt_sha256": "ad4a830319035f08cbf2031ef6fc77656d74eb9ac96ef4796b6bd5db09fa599a",
+        "source_path": "brand/sources/generated/GH-06-B/generation-001.png",
+        "source_sha256": "b1f4a768036f8077541845c3330bd74aaf7a6d26a9c6e54fcbb692896c46639b",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1184656,
+        "receipt_path": "execution/reviews/root-github-generation-batch-006.json",
+        "receipt_sha256": "71248d6a1954aa387739cb42e17e7400f8890f4cd195046868563f5f35973234"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-07-B",
+      "title": "GitHub repository banner — STS2 Map Viewer",
+      "selected_generations": [
+        "GH-07-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-07-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-07-B/generation-001.txt",
+          "prompt_sha256": "05c61a5391be37d5aed0bccb8641b517517f87b098311a82a926e14ea1018ead",
+          "source_path": "brand/sources/generated/GH-07-B/generation-001.png",
+          "source_sha256": "cec7b917be0659c3f078354d6149f7afd9a19ce6fb740a4ac7fbfeeea5358748",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1171348,
+          "receipt_path": "execution/reviews/root-github-generation-batch-007.json",
+          "receipt_sha256": "4b8ef8dbe44219919007dfc974fc23be03292b027f6e074008b988d9ec476f47"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-map-banner-light.png",
+          "output_sha256": "236dee4961306c1022f7656bfe85859f367e65cdc8da4e575bbac5ec1516560b",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 470577,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/sts2-map-banner-dark.png",
+          "output_sha256": "5be0a00277f864f08fa0d5c0fb30bf7fc48daf79999772d04efcb19e4bac845f",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 482060,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “STS2 Map Viewer” and role “Player-visible map topology and route inspection.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-07-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-07-B/generation-001.txt",
+        "prompt_sha256": "05c61a5391be37d5aed0bccb8641b517517f87b098311a82a926e14ea1018ead",
+        "source_path": "brand/sources/generated/GH-07-B/generation-001.png",
+        "source_sha256": "cec7b917be0659c3f078354d6149f7afd9a19ce6fb740a4ac7fbfeeea5358748",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1171348,
+        "receipt_path": "execution/reviews/root-github-generation-batch-007.json",
+        "receipt_sha256": "4b8ef8dbe44219919007dfc974fc23be03292b027f6e074008b988d9ec476f47"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-08-B",
+      "title": "GitHub repository banner — Ascension Watchdog",
+      "selected_generations": [
+        "GH-08-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-08-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-08-B/generation-001.txt",
+          "prompt_sha256": "778c81482d3940dfa0319fbcce87446e235581e3ffe5701ef9f769cac8864b8d",
+          "source_path": "brand/sources/generated/GH-08-B/generation-001.png",
+          "source_sha256": "6cd1ff58a4d74413841dcf19d3d57c61a0a19ffb2f9ebd0e0c3d7d191906f661",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1296244,
+          "receipt_path": "execution/reviews/root-github-generation-batch-008.json",
+          "receipt_sha256": "ee8b546c8121e695d177121dd4e33a18970d50aa83d69a6c8890eb793f95d56a"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ascension-watchdog-banner-light.png",
+          "output_sha256": "929d2b281551ec3fb3a312869fde5f5400a896125c8b373cfb5cee93b021c8da",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 524066,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/ascension-watchdog-banner-dark.png",
+          "output_sha256": "c6938080ee7f35dbefe105795416ba0d288c3ffa6aa11daf32a6cc2a87e2b94b",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 535612,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “Ascension Watchdog” and role “Source-validated deployment supervision and recovery for Ascension.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque.",
+        "Decorative route treatment remains subordinate and is not a blocker."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-08-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-08-B/generation-001.txt",
+        "prompt_sha256": "778c81482d3940dfa0319fbcce87446e235581e3ffe5701ef9f769cac8864b8d",
+        "source_path": "brand/sources/generated/GH-08-B/generation-001.png",
+        "source_sha256": "6cd1ff58a4d74413841dcf19d3d57c61a0a19ffb2f9ebd0e0c3d7d191906f661",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1296244,
+        "receipt_path": "execution/reviews/root-github-generation-batch-008.json",
+        "receipt_sha256": "ee8b546c8121e695d177121dd4e33a18970d50aa83d69a6c8890eb793f95d56a"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-09-B",
+      "title": "GitHub repository banner — Ascension Observability",
+      "selected_generations": [
+        "GH-09-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-09-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-09-B/generation-001.txt",
+          "prompt_sha256": "69259ae8c69334083f3a25aa31fd1ec9c359e9c0f91b0153c824e5a62c095c0e",
+          "source_path": "brand/sources/generated/GH-09-B/generation-001.png",
+          "source_sha256": "793b7f31a029cdbfa563a4f0e10d3ed05b464a9abf19a83c36ca970dca632978",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1182165,
+          "receipt_path": "execution/reviews/root-github-generation-batch-009.json",
+          "receipt_sha256": "a3c959dee0e221e1e975d68992106017efa1117c2d2da79ed9cf9c2f770d602e"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ascension-observability-banner-light.png",
+          "output_sha256": "8558e3faa70faf9f30e404f234362bfc31578b3027e832c889f891255ef06dd0",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 473770,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/ascension-observability-banner-dark.png",
+          "output_sha256": "ee711d8be1e2516046f5de826018c84f43245381988d415aa770fb9125d978fe",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 487184,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “Ascension Observability” and role “Self-hosted observability integrations for AI Ascension experiments.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-09-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-09-B/generation-001.txt",
+        "prompt_sha256": "69259ae8c69334083f3a25aa31fd1ec9c359e9c0f91b0153c824e5a62c095c0e",
+        "source_path": "brand/sources/generated/GH-09-B/generation-001.png",
+        "source_sha256": "793b7f31a029cdbfa563a4f0e10d3ed05b464a9abf19a83c36ca970dca632978",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1182165,
+        "receipt_path": "execution/reviews/root-github-generation-batch-009.json",
+        "receipt_sha256": "a3c959dee0e221e1e975d68992106017efa1117c2d2da79ed9cf9c2f770d602e"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-10-B",
+      "title": "GitHub repository banner — AI Ascension Website",
+      "selected_generations": [
+        "GH-10-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-10-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-10-B/generation-001.txt",
+          "prompt_sha256": "6651a399863fe5d9ed89cc0c336c4398ed271d3626ff53a5361189ae0403a1cc",
+          "source_path": "brand/sources/generated/GH-10-B/generation-001.png",
+          "source_sha256": "3c66d1f75be878c60efdc63c5e3895a4b6fa66012e69faa23d219879bd64b804",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1229373,
+          "receipt_path": "execution/reviews/root-github-generation-batch-010.json",
+          "receipt_sha256": "8492edb3e94cf5799145d84f99e1efac4384be1e8a20e7f3ed19534427197f24"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/website-banner-light.png",
+          "output_sha256": "7e7812b280c1a585fccdf6e12ebf7669bf3f87322e2546b9023962510685d3ef",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 491555,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/website-banner-dark.png",
+          "output_sha256": "85bae86b7ff211815d72915e44cac08f2697449a8f2ddb0fa7f65e038f640346",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 507160,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “AI Ascension Website” and role “The canonical Watch and Build experience for AI Ascension.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque.",
+        "Decorative route treatment remains subordinate and is not a blocker."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-10-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-10-B/generation-001.txt",
+        "prompt_sha256": "6651a399863fe5d9ed89cc0c336c4398ed271d3626ff53a5361189ae0403a1cc",
+        "source_path": "brand/sources/generated/GH-10-B/generation-001.png",
+        "source_sha256": "3c66d1f75be878c60efdc63c5e3895a4b6fa66012e69faa23d219879bd64b804",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1229373,
+        "receipt_path": "execution/reviews/root-github-generation-batch-010.json",
+        "receipt_sha256": "8492edb3e94cf5799145d84f99e1efac4384be1e8a20e7f3ed19534427197f24"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-11-B",
+      "title": "GitHub repository banner — AI Ascension Historical Evidence",
+      "selected_generations": [
+        "GH-11-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-11-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-11-B/generation-001.txt",
+          "prompt_sha256": "21e1d22a6d94dbb63b56b1ca7bb1486c476ac06e913000f4d29719c7ef619338",
+          "source_path": "brand/sources/generated/GH-11-B/generation-001.png",
+          "source_sha256": "26c6bbd74ed963a75d9567bfd61da5eaf1998fc272b7563a29c17ada0fab54e2",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1205668,
+          "receipt_path": "execution/reviews/root-github-generation-batch-011.json",
+          "receipt_sha256": "bbce94539125ed45efe39fca01c08b4c0d7762a3d31356d94eb74906d8ba445a"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+          "output_sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 484449,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+          "output_sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 493866,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “AI Ascension Historical Evidence” and role “Historical evidence, stable proof URLs, and the legacy entry point.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-11-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-11-B/generation-001.txt",
+        "prompt_sha256": "21e1d22a6d94dbb63b56b1ca7bb1486c476ac06e913000f4d29719c7ef619338",
+        "source_path": "brand/sources/generated/GH-11-B/generation-001.png",
+        "source_sha256": "26c6bbd74ed963a75d9567bfd61da5eaf1998fc272b7563a29c17ada0fab54e2",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1205668,
+        "receipt_path": "execution/reviews/root-github-generation-batch-011.json",
+        "receipt_sha256": "bbce94539125ed45efe39fca01c08b4c0d7762a3d31356d94eb74906d8ba445a"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-12-B",
+      "title": "GitHub repository banner — AI Ascension Community",
+      "selected_generations": [
+        "GH-12-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-12-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-12-B/generation-001.txt",
+          "prompt_sha256": "69e3145b23725f76d2631a7b7e02f48e230339c39a72ce3adf1808efc0598efd",
+          "source_path": "brand/sources/generated/GH-12-B/generation-001.png",
+          "source_sha256": "67b9f49f0348fbf5ce07f122555397b3b1c520b6587f0121b4b13e038cd3f951",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1215640,
+          "receipt_path": "execution/reviews/root-github-generation-batch-012.json",
+          "receipt_sha256": "d72e89994ec4daeef0695aabc6083b5a787b1828308b75d2ba56b5a6be9c0d3b"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/dot-github-banner-light.png",
+          "output_sha256": "0fefcf2a46bc3e717c48d7ab2b3396f0add1c6e3733c9d5b51189d7af54a06da",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 478204,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/dot-github-banner-dark.png",
+          "output_sha256": "a8a93a5fa92f75874a698a2267ebc6afdc9e22817e9954cc0c0bc5c5351890ba",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 507080,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “AI Ascension Community” and role “Organization profile, contributor guidance, governance, and shared presentation.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-12-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-12-B/generation-001.txt",
+        "prompt_sha256": "69e3145b23725f76d2631a7b7e02f48e230339c39a72ce3adf1808efc0598efd",
+        "source_path": "brand/sources/generated/GH-12-B/generation-001.png",
+        "source_sha256": "67b9f49f0348fbf5ce07f122555397b3b1c520b6587f0121b4b13e038cd3f951",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1215640,
+        "receipt_path": "execution/reviews/root-github-generation-batch-012.json",
+        "receipt_sha256": "d72e89994ec4daeef0695aabc6083b5a787b1828308b75d2ba56b5a6be9c0d3b"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-13-B",
+      "title": "GitHub repository banner — AI Ascension Brand System",
+      "selected_generations": [
+        "GH-13-B-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-13-B-generation-001",
+          "prompt_path": "brand/prompts/root/GH-13-B/generation-001.txt",
+          "prompt_sha256": "5bf82f2f77c5cb89d71b8f2324db3888ec408701d2b6c3ce6a81cc9231f2df2a",
+          "source_path": "brand/sources/generated/GH-13-B/generation-001.png",
+          "source_sha256": "05fd26518e3a2b60a9c42834212759073c602bb23b0ae704ff9776a77950db8d",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1211006,
+          "receipt_path": "execution/reviews/root-github-generation-batch-013.json",
+          "receipt_sha256": "b6c95ca08dc8aafe1848847a981b70c981e0fd6cf9bdf2cefc60accfb3d4e711"
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ascension-brand-overhaul-banner-light.png",
+          "output_sha256": "1db5dc0abca2ddabde9cc53a2f8470dafa1f9a05302c3e56792e0007ed67f44a",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 484497,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/github/ascension-brand-overhaul-banner-dark.png",
+          "output_sha256": "498b508094cad76579868c2f11ce4252720868a199df073232d48724bd15a653",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 498159,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Light/dark 1600x400 outputs preserve exact title “AI Ascension Brand System” and role “Canonical brand sources, publication tooling, campaign kit, and rollout evidence.”; both are readable.",
+        "Clean horizontal geometry, restrained route treatment, no logo, screenshot, UI, metric, result, or fabricated value; source/output RGB opaque."
+      ],
+      "issues": [],
+      "source_use_observation": "No third-party mark, gameplay capture, provider logo, fabricated value, or live-status claim was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or performance is proven.",
+      "source_record": {
+        "generation_id": "GH-13-B-generation-001",
+        "prompt_path": "brand/prompts/root/GH-13-B/generation-001.txt",
+        "prompt_sha256": "5bf82f2f77c5cb89d71b8f2324db3888ec408701d2b6c3ce6a81cc9231f2df2a",
+        "source_path": "brand/sources/generated/GH-13-B/generation-001.png",
+        "source_sha256": "05fd26518e3a2b60a9c42834212759073c602bb23b0ae704ff9776a77950db8d",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1211006,
+        "receipt_path": "execution/reviews/root-github-generation-batch-013.json",
+        "receipt_sha256": "b6c95ca08dc8aafe1848847a981b70c981e0fd6cf9bdf2cefc60accfb3d4e711"
+      },
+      "limits": [
+        "GitHub UI rendering and profile publication were not tested."
+      ]
+    },
+    {
+      "asset_id": "GH-01-S",
+      "title": "GitHub repository social preview — Ascension",
+      "selected_generations": [
+        "GH-01-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-01-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-01-S/generation-001.txt",
+          "prompt_sha256": "1afa58a6e47dbe55c376b9c971b072e0c02277b7a08919b400bd6eef29fb01bc",
+          "source_path": "brand/sources/generated/GH-01-S/generation-001.png",
+          "source_sha256": "2997f899a7d2997cc2670d52e9865b2e59ebf233651450e96381fe0a1b7effcd",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1052139,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-001.json",
+          "receipt_sha256": "d5b068452c732757a5045639e9a462ecc22675aaf5c395b51f9d3e4845ea081b",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ascension-social.png",
+          "output_sha256": "275abf06d8000f084bb36d220fc9a55f508cba8f3a645827aa2ba55db1e1f0ff",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 594585,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "conditional_crop_safety_or_creative_consistency",
+      "observations": [
+        "Full 1280x640 output preserves exact title “Ascension”, role “Agent-run coordination, structured records, and replay; starting with Slay the Spire 2”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [146, 241, 1621, 734]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "crop_condition",
+          "finding": "Bright content touches or slightly exceeds the required central safe crop, leaving insufficient tolerance.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-01-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-01-S/generation-001.txt",
+        "prompt_sha256": "1afa58a6e47dbe55c376b9c971b072e0c02277b7a08919b400bd6eef29fb01bc",
+        "source_path": "brand/sources/generated/GH-01-S/generation-001.png",
+        "source_sha256": "2997f899a7d2997cc2670d52e9865b2e59ebf233651450e96381fe0a1b7effcd",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1052139,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-001.json",
+        "receipt_sha256": "d5b068452c732757a5045639e9a462ecc22675aaf5c395b51f9d3e4845ea081b",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          146,
+          241,
+          1621,
+          734
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-02-S",
+      "title": "GitHub repository social preview — Slay the Spire 2 MCP",
+      "selected_generations": [
+        "GH-02-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-02-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-02-S/generation-001.txt",
+          "prompt_sha256": "d096aaf225d1a389dff003a0167d3135dd4c9f8538ba9e891a5bbf944b05731f",
+          "source_path": "brand/sources/generated/GH-02-S/generation-001.png",
+          "source_sha256": "8c78f697119e8440c97115725cb13847470a7a009787d9aec8072f057673d06f",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1001429,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-002.json",
+          "receipt_sha256": "d9a440c59c7b4c562330062ed1b41392325b9b5237ab75dbee916a4c51befcf5",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-mcp-social.png",
+          "output_sha256": "f58b4dea0204a58b119aba63b3db062fba9350dd308175da44f3cd890d2b2717",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 567115,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "blocked_requires_creative_crop_reflow",
+      "observations": [
+        "Full 1280x640 output preserves exact title “Slay the Spire 2 MCP”, role “MCP tools for the controlled STS2 gateway interface”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [122, 269, 1682, 694]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "blocking_crop_safety",
+          "finding": "Bright content extends beyond the required central safe crop; a platform-safe crop visibly clips the composition.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-02-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-02-S/generation-001.txt",
+        "prompt_sha256": "d096aaf225d1a389dff003a0167d3135dd4c9f8538ba9e891a5bbf944b05731f",
+        "source_path": "brand/sources/generated/GH-02-S/generation-001.png",
+        "source_sha256": "8c78f697119e8440c97115725cb13847470a7a009787d9aec8072f057673d06f",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1001429,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-002.json",
+        "receipt_sha256": "d9a440c59c7b4c562330062ed1b41392325b9b5237ab75dbee916a4c51befcf5",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          122,
+          269,
+          1682,
+          694
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-03-S",
+      "title": "GitHub repository social preview — Slay the Spire 2 Mod",
+      "selected_generations": [
+        "GH-03-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-03-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-03-S/generation-001.txt",
+          "prompt_sha256": "dc42c7241a04a786ffc835f455b27b8d99c7368e351c5159a17c2e92938c301c",
+          "source_path": "brand/sources/generated/GH-03-S/generation-001.png",
+          "source_sha256": "22c046f317c2ee808eca592ac285bc7506aa18670ddae173bda2d86118c9c86a",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1075763,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-003.json",
+          "receipt_sha256": "74f676b72cf40014912d78e57faf446302f63819449254ad7dd3cc6aa864332c",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-mod-social.png",
+          "output_sha256": "a747de6fea93fd86009f70db1cb8e51b1e1216198d50b5ac8ebcf40b4f5d2bd7",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 604088,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "blocked_requires_creative_crop_reflow",
+      "observations": [
+        "Full 1280x640 output preserves exact title “Slay the Spire 2 Mod”, role “Native game integration for controlled observation and actions”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [143, 250, 1665, 733]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "blocking_crop_safety",
+          "finding": "Bright content extends beyond the required central safe crop; a platform-safe crop visibly clips the composition.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-03-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-03-S/generation-001.txt",
+        "prompt_sha256": "dc42c7241a04a786ffc835f455b27b8d99c7368e351c5159a17c2e92938c301c",
+        "source_path": "brand/sources/generated/GH-03-S/generation-001.png",
+        "source_sha256": "22c046f317c2ee808eca592ac285bc7506aa18670ddae173bda2d86118c9c86a",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1075763,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-003.json",
+        "receipt_sha256": "74f676b72cf40014912d78e57faf446302f63819449254ad7dd3cc6aa864332c",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          143,
+          250,
+          1665,
+          733
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-04-S",
+      "title": "GitHub repository social preview — STS2 Domain Core",
+      "selected_generations": [
+        "GH-04-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-04-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-04-S/generation-001.txt",
+          "prompt_sha256": "39e8fbe8033898e534ec137976f46f83533c2ae8e83fd65b04112ac9471f07c6",
+          "source_path": "brand/sources/generated/GH-04-S/generation-001.png",
+          "source_sha256": "50fc78e51ed078f1a1daf41ae76db8b1bf6cb6e367060b17b3ecef4c5d9ed28e",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1010623,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-004.json",
+          "receipt_sha256": "ad59617bca6fcb01420f698e4a44f7dc7374e30f7cdb39808f8668cc746db4d7",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-core-social.png",
+          "output_sha256": "e8025bb0acb100da52d63a63f2f26b73c779a2a487fca95c5a1447e4081c137c",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 568203,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "conditional_crop_safety_or_creative_consistency",
+      "observations": [
+        "Full 1280x640 output preserves exact title “STS2 Domain Core”, role “Typed STS2 state and validation primitives”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [172, 265, 1642, 674]; prompt safe box is x=141.9..1632.1, y=106.4..780.6.",
+        "Sans-serif family differs from the surrounding serif social set."
+      ],
+      "issues": [
+        {
+          "severity": "crop_condition",
+          "finding": "Bright content touches or slightly exceeds the required central safe crop, leaving insufficient tolerance.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        },
+        {
+          "severity": "creative_consistency",
+          "finding": "GH-04-S has family inconsistency plus slight right-side safe-crop overflow.",
+          "required_follow_up": "Reflow title/mark within the safe crop using the selected social family."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-04-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-04-S/generation-001.txt",
+        "prompt_sha256": "39e8fbe8033898e534ec137976f46f83533c2ae8e83fd65b04112ac9471f07c6",
+        "source_path": "brand/sources/generated/GH-04-S/generation-001.png",
+        "source_sha256": "50fc78e51ed078f1a1daf41ae76db8b1bf6cb6e367060b17b3ecef4c5d9ed28e",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1010623,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-004.json",
+        "receipt_sha256": "ad59617bca6fcb01420f698e4a44f7dc7374e30f7cdb39808f8668cc746db4d7",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          172,
+          265,
+          1642,
+          674
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-05-S",
+      "title": "GitHub repository social preview — STS2 Gateway",
+      "selected_generations": [
+        "GH-05-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-05-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-05-S/generation-001.txt",
+          "prompt_sha256": "346bcb1c319609e7addeb0d3f59719b952072ec2644d85857a83e44f97115b9c",
+          "source_path": "brand/sources/generated/GH-05-S/generation-001.png",
+          "source_sha256": "5a319baa130cfb691c0dd42832f612c366331cf1883d32e934d82a38a19b8bf6",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1047800,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-005.json",
+          "receipt_sha256": "3f1a55d26fd1a5b0ace4f89b35aa7d7854aa334ecdc3ef512a786c47a7fce5af",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-gateway-social.png",
+          "output_sha256": "422338e6b9296aacd433f4e9ec7da771c67d49cfa0fa3bd2925371b81e012e79",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 591589,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "conditional_crop_safety_or_creative_consistency",
+      "observations": [
+        "Full 1280x640 output preserves exact title “STS2 Gateway”, role “Game-instance routing, lifecycle boundaries, and request authority”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [138, 241, 1641, 754]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "crop_condition",
+          "finding": "Bright content touches or slightly exceeds the required central safe crop, leaving insufficient tolerance.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-05-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-05-S/generation-001.txt",
+        "prompt_sha256": "346bcb1c319609e7addeb0d3f59719b952072ec2644d85857a83e44f97115b9c",
+        "source_path": "brand/sources/generated/GH-05-S/generation-001.png",
+        "source_sha256": "5a319baa130cfb691c0dd42832f612c366331cf1883d32e934d82a38a19b8bf6",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1047800,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-005.json",
+        "receipt_sha256": "3f1a55d26fd1a5b0ace4f89b35aa7d7854aa334ecdc3ef512a786c47a7fce5af",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          138,
+          241,
+          1641,
+          754
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-06-S",
+      "title": "GitHub repository social preview — STS2 Protocol",
+      "selected_generations": [
+        "GH-06-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-06-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-06-S/generation-001.txt",
+          "prompt_sha256": "03acfdb4cfe2a4d9c4cab7997042ab87d009d6b9c7090e19ed2df65ae159c977",
+          "source_path": "brand/sources/generated/GH-06-S/generation-001.png",
+          "source_sha256": "c5929b4e2e0778fd306cc7d8d18b50fa0d377bfc417ea64dbd787802d4b06d96",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1030557,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-006.json",
+          "receipt_sha256": "f93d3d61fae2c4db3e267258be3c0fbd132b11232cf8672a317593b4a8801306",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-protocol-social.png",
+          "output_sha256": "9f949aee46e65362964a58f59e4d0fbfc946b653fec737865b7689dc6c8604f9",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 581509,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "blocked_requires_creative_crop_reflow",
+      "observations": [
+        "Full 1280x640 output preserves exact title “STS2 Protocol”, role “Shared metadata contracts and conformance artifacts”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [150, 269, 1674, 728]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "blocking_crop_safety",
+          "finding": "Bright content extends beyond the required central safe crop; a platform-safe crop visibly clips the composition.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-06-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-06-S/generation-001.txt",
+        "prompt_sha256": "03acfdb4cfe2a4d9c4cab7997042ab87d009d6b9c7090e19ed2df65ae159c977",
+        "source_path": "brand/sources/generated/GH-06-S/generation-001.png",
+        "source_sha256": "c5929b4e2e0778fd306cc7d8d18b50fa0d377bfc417ea64dbd787802d4b06d96",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1030557,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-006.json",
+        "receipt_sha256": "f93d3d61fae2c4db3e267258be3c0fbd132b11232cf8672a317593b4a8801306",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          150,
+          269,
+          1674,
+          728
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-07-S",
+      "title": "GitHub repository social preview — STS2 Map Viewer",
+      "selected_generations": [
+        "GH-07-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-07-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-07-S/generation-001.txt",
+          "prompt_sha256": "8a4fc7bd4910f791fbb12a051c0479dd3f88425f4498af9f5bc33b842554f401",
+          "source_path": "brand/sources/generated/GH-07-S/generation-001.png",
+          "source_sha256": "51bcd92502f6ceb3899d57b5acd842286b489de59ef87b9bf5477711a49cc54c",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 917131,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-007.json",
+          "receipt_sha256": "f9daa28186fc856e1c1a95233379cb82fa1ae7b047393a5b01372a364360a9bf",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-map-social.png",
+          "output_sha256": "33c7c224ac36f8cc5618e8d56196df5b80f1beec7a3f332ca4b9cfa36d1aafbc",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 520532,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "conditional_crop_safety_or_creative_consistency",
+      "observations": [
+        "Full 1280x640 output preserves exact title “STS2 Map Viewer”, role “Player-visible map topology and route inspection”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [148, 266, 1636, 703]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "crop_condition",
+          "finding": "Bright content touches or slightly exceeds the required central safe crop, leaving insufficient tolerance.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-07-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-07-S/generation-001.txt",
+        "prompt_sha256": "8a4fc7bd4910f791fbb12a051c0479dd3f88425f4498af9f5bc33b842554f401",
+        "source_path": "brand/sources/generated/GH-07-S/generation-001.png",
+        "source_sha256": "51bcd92502f6ceb3899d57b5acd842286b489de59ef87b9bf5477711a49cc54c",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 917131,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-007.json",
+        "receipt_sha256": "f9daa28186fc856e1c1a95233379cb82fa1ae7b047393a5b01372a364360a9bf",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          148,
+          266,
+          1636,
+          703
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-08-S",
+      "title": "GitHub repository social preview — Ascension Watchdog",
+      "selected_generations": [
+        "GH-08-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-08-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-08-S/generation-001.txt",
+          "prompt_sha256": "607849925ae6a171ce6ac5bbe1fd01f35952ce76cc196ff3a67153976220dbfc",
+          "source_path": "brand/sources/generated/GH-08-S/generation-001.png",
+          "source_sha256": "4b0ae6f1c2d9c289ff4894d1f3cd0c66855acd091aeb919f84a7d1e26cd8103a",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1040491,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-008.json",
+          "receipt_sha256": "234849e3c1f008c00b36a80ffe653090f5c2e9a54b85fa1ca3b1a884dc0647f7",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ascension-watchdog-social.png",
+          "output_sha256": "3f1d7be4ad3474a3fe2cc1c0520fc2965d4d3351770e4fa52769f94b8387713b",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 587509,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "blocked_requires_creative_crop_reflow",
+      "observations": [
+        "Full 1280x640 output preserves exact title “Ascension Watchdog”, role “Source-validated deployment supervision and recovery for Ascension”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [106, 227, 1698, 718]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "blocking_crop_safety",
+          "finding": "Bright content extends beyond the required central safe crop; a platform-safe crop visibly clips the composition.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-08-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-08-S/generation-001.txt",
+        "prompt_sha256": "607849925ae6a171ce6ac5bbe1fd01f35952ce76cc196ff3a67153976220dbfc",
+        "source_path": "brand/sources/generated/GH-08-S/generation-001.png",
+        "source_sha256": "4b0ae6f1c2d9c289ff4894d1f3cd0c66855acd091aeb919f84a7d1e26cd8103a",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1040491,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-008.json",
+        "receipt_sha256": "234849e3c1f008c00b36a80ffe653090f5c2e9a54b85fa1ca3b1a884dc0647f7",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          106,
+          227,
+          1698,
+          718
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-09-S",
+      "title": "GitHub repository social preview — Ascension Observability",
+      "selected_generations": [
+        "GH-09-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-09-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-09-S/generation-001.txt",
+          "prompt_sha256": "0479c9b5a7da12982e256e1cd7c87807c44aaffc948cbd7422be8316cd1ff487",
+          "source_path": "brand/sources/generated/GH-09-S/generation-001.png",
+          "source_sha256": "dc2fe0260b78021e1b15d90e5a52e8b63aafdf119fdc52b652963e7defe0b821",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1010249,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-009.json",
+          "receipt_sha256": "1c4fad69bd4320b6850f950a69bf1dc9defd67932be32664f30a2dd4366b3d0d",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ascension-observability-social.png",
+          "output_sha256": "8aae147c380341b43c8d19cefd77d9360cd3daa30f2930cbee43ff64f2a9d81f",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 572211,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Full 1280x640 output preserves exact title “Ascension Observability”, role “Self-hosted observability integrations for AI Ascension experiments”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [189, 178, 1615, 756]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-09-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-09-S/generation-001.txt",
+        "prompt_sha256": "0479c9b5a7da12982e256e1cd7c87807c44aaffc948cbd7422be8316cd1ff487",
+        "source_path": "brand/sources/generated/GH-09-S/generation-001.png",
+        "source_sha256": "dc2fe0260b78021e1b15d90e5a52e8b63aafdf119fdc52b652963e7defe0b821",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1010249,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-009.json",
+        "receipt_sha256": "1c4fad69bd4320b6850f950a69bf1dc9defd67932be32664f30a2dd4366b3d0d",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          189,
+          178,
+          1615,
+          756
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-10-S",
+      "title": "GitHub repository social preview — AI Ascension Website",
+      "selected_generations": [
+        "GH-10-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-10-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-10-S/generation-001.txt",
+          "prompt_sha256": "a2cbea868b0cfff051289266016db2dc48350e17d57f44e0d3394d15250bd73c",
+          "source_path": "brand/sources/generated/GH-10-S/generation-001.png",
+          "source_sha256": "83623871a34cc8c645767ab4693bbba17a447d40746edb129bbb2e705b227c8a",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1009473,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-010.json",
+          "receipt_sha256": "e4beff384362752ddd0ffd35d51d25d20a4ddecca5db61a1f591b401eb02486f",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/website-social.png",
+          "output_sha256": "f954ba8913dd39fd22f50e63fcb2f1c05fe39ee97ee2075836173c3a1dfa3ed6",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 568435,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "blocked_requires_creative_crop_reflow",
+      "observations": [
+        "Full 1280x640 output preserves exact title “AI Ascension Website”, role “The canonical Watch and Build experience for AI Ascension”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [117, 269, 1717, 691]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "blocking_crop_safety",
+          "finding": "Bright content extends beyond the required central safe crop; a platform-safe crop visibly clips the composition.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-10-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-10-S/generation-001.txt",
+        "prompt_sha256": "a2cbea868b0cfff051289266016db2dc48350e17d57f44e0d3394d15250bd73c",
+        "source_path": "brand/sources/generated/GH-10-S/generation-001.png",
+        "source_sha256": "83623871a34cc8c645767ab4693bbba17a447d40746edb129bbb2e705b227c8a",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1009473,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-010.json",
+        "receipt_sha256": "e4beff384362752ddd0ffd35d51d25d20a4ddecca5db61a1f591b401eb02486f",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          117,
+          269,
+          1717,
+          691
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-11-S",
+      "title": "GitHub repository social preview — AI Ascension Historical Evidence",
+      "selected_generations": [
+        "GH-11-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-11-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-11-S/generation-001.txt",
+          "prompt_sha256": "dd97ca2efb579881e6ce06f3ac0692e48a102929e4e879080af4f3ecba758125",
+          "source_path": "brand/sources/generated/GH-11-S/generation-001.png",
+          "source_sha256": "31745ed708cfabd298b70f62fa6095b7eb1fe79fd9ecfed3e1e57d4e64b50f09",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1082906,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-011.json",
+          "receipt_sha256": "cc20c33abc6dadc9afdded5ace8ee5be16adc10d884f1eb6e8167ce24a232c5b",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-social.png",
+          "output_sha256": "a8ab5f8e3c98fb661183df298c668649259a09372d0d03fc37ebe62486017785",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 614240,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "conditional_crop_safety_or_creative_consistency",
+      "observations": [
+        "Full 1280x640 output preserves exact title “AI Ascension Historical Evidence”, role “Historical evidence, stable proof URLs, and the legacy entry point”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [141, 198, 1664, 759]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "crop_condition",
+          "finding": "Bright content touches or slightly exceeds the required central safe crop, leaving insufficient tolerance.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-11-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-11-S/generation-001.txt",
+        "prompt_sha256": "dd97ca2efb579881e6ce06f3ac0692e48a102929e4e879080af4f3ecba758125",
+        "source_path": "brand/sources/generated/GH-11-S/generation-001.png",
+        "source_sha256": "31745ed708cfabd298b70f62fa6095b7eb1fe79fd9ecfed3e1e57d4e64b50f09",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1082906,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-011.json",
+        "receipt_sha256": "cc20c33abc6dadc9afdded5ace8ee5be16adc10d884f1eb6e8167ce24a232c5b",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          141,
+          198,
+          1664,
+          759
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-12-S",
+      "title": "GitHub repository social preview — AI Ascension Community",
+      "selected_generations": [
+        "GH-12-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-12-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-12-S/generation-001.txt",
+          "prompt_sha256": "05738822d523a5b410b3db0e6bf8993821ad2658d522d7c421f389816fb82dff",
+          "source_path": "brand/sources/generated/GH-12-S/generation-001.png",
+          "source_sha256": "cc72c6bb7b9d3c59da9070c208b66a95adc942523e6a2d982559bcb68c82ef37",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1350958,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-012.json",
+          "receipt_sha256": "313d7a99a015d85929233e132197c2e87626a5ddbb24240e7aa9442ce821de29",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/dot-github-social.png",
+          "output_sha256": "9ccb6b71f3ee988ce046c5fdf8e6f4c96ed430d99eeee06eb8b08023342b40da",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 735121,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "blocked_requires_creative_crop_reflow",
+      "observations": [
+        "Full 1280x640 output preserves exact title “AI Ascension Community”, role “Organization profile, contributor guidance, governance, and shared presentation”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [162, 198, 1681, 785]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "blocking_crop_safety",
+          "finding": "Bright content extends beyond the required central safe crop; a platform-safe crop visibly clips the composition.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-12-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-12-S/generation-001.txt",
+        "prompt_sha256": "05738822d523a5b410b3db0e6bf8993821ad2658d522d7c421f389816fb82dff",
+        "source_path": "brand/sources/generated/GH-12-S/generation-001.png",
+        "source_sha256": "cc72c6bb7b9d3c59da9070c208b66a95adc942523e6a2d982559bcb68c82ef37",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1350958,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-012.json",
+        "receipt_sha256": "313d7a99a015d85929233e132197c2e87626a5ddbb24240e7aa9442ce821de29",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          162,
+          198,
+          1681,
+          785
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "GH-13-S",
+      "title": "GitHub repository social preview — AI Ascension Brand System",
+      "selected_generations": [
+        "GH-13-S-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-13-S-generation-001",
+          "prompt_path": "brand/prompts/root/GH-13-S/generation-001.txt",
+          "prompt_sha256": "9b9f291ea070fca219f3a41ec6e95fe5d9ead11ea19e3226e0a7169911588452",
+          "source_path": "brand/sources/generated/GH-13-S/generation-001.png",
+          "source_sha256": "4ae9e462781b40d5f38002324b6e6c3092999bb4e8e50ace9b9aad24e03e02d4",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1040204,
+          "receipt_path": "execution/reviews/root-github-social-generation-batch-013.json",
+          "receipt_sha256": "e5b445e67eacecb8edf663ed23b19b7a59fa1375d71d4e3ddf94c17c43b7e923",
+          "references": [
+            {
+              "path": "brand/assets/identity/avatar-1024.png",
+              "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+              "purpose": "approved_generated_identity_reference",
+              "content_class": "generated_art_not_product_evidence",
+              "parent_asset_id": "ID-05"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/ascension-brand-overhaul-social.png",
+          "output_sha256": "5c36add24237b9fd889ae1fa90eab1d8d871f52fec0324be7405f38a65250bbc",
+          "output_dimensions": "1280x640",
+          "output_mode": "RGB",
+          "output_bytes": 588026,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "conditional_crop_safety_or_creative_consistency",
+      "observations": [
+        "Full 1280x640 output preserves exact title “AI Ascension Brand System”, role “Canonical brand sources, publication tooling, campaign kit, and rollout evidence”, and AI Ascension attribution.",
+        "Pinned avatar-1024 silhouette and amber path only; no extra logo, badge, screenshot, code sample, metric, version, star count, or result.",
+        "Luminance>100 source bbox on 1774x887 is [133, 199, 1588, 770]; prompt safe box is x=141.9..1632.1, y=106.4..780.6."
+      ],
+      "issues": [
+        {
+          "severity": "crop_condition",
+          "finding": "Bright content touches or slightly exceeds the required central safe crop, leaving insufficient tolerance.",
+          "required_follow_up": "Creative reflow keeping every letter and the complete mark inside the central84percent by central76percent safe region."
+        }
+      ],
+      "source_use_observation": "The only identity reference is the locally pinned generated avatar-1024 asset; no separate third-party mark or product imagery was observed.",
+      "evidence_boundary": "Repository campaign artwork only; no repository existence, code behavior, release state, deployment, or social publication is proven.",
+      "source_record": {
+        "generation_id": "GH-13-S-generation-001",
+        "prompt_path": "brand/prompts/root/GH-13-S/generation-001.txt",
+        "prompt_sha256": "9b9f291ea070fca219f3a41ec6e95fe5d9ead11ea19e3226e0a7169911588452",
+        "source_path": "brand/sources/generated/GH-13-S/generation-001.png",
+        "source_sha256": "4ae9e462781b40d5f38002324b6e6c3092999bb4e8e50ace9b9aad24e03e02d4",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1040204,
+        "receipt_path": "execution/reviews/root-github-social-generation-batch-013.json",
+        "receipt_sha256": "e5b445e67eacecb8edf663ed23b19b7a59fa1375d71d4e3ddf94c17c43b7e923",
+        "references": [
+          {
+            "path": "brand/assets/identity/avatar-1024.png",
+            "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+            "purpose": "approved_generated_identity_reference",
+            "content_class": "generated_art_not_product_evidence",
+            "parent_asset_id": "ID-05"
+          }
+        ]
+      },
+      "limits": [
+        "Full-source export viewed; platform crop behavior and publication were not exercised."
+      ],
+      "central_safe_crop_check": {
+        "source_dimensions": "1774x887",
+        "basis": "central84percent width and central76percent height from exact prompt",
+        "safe_box": {
+          "x_min": 141.9,
+          "x_max": 1632.1,
+          "y_min": 106.4,
+          "y_max": 780.6
+        },
+        "luminance_threshold": ">100",
+        "bright_bbox": [
+          133,
+          199,
+          1588,
+          770
+        ],
+        "full_output_crop_result": "No clipping in full-source export; platform crop untested."
+      }
+    },
+    {
+      "asset_id": "DOC-01",
+      "title": "Runtime authority boundaries",
+      "selected_generations": [
+        "DOC-01-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "DOC-01-generation-001",
+          "prompt_path": "brand/prompts/root/DOC-01/generation-001.txt",
+          "prompt_sha256": "aa0797ebd910470e2c641a756da835818e925f6f99e52acdaffe3f78649a488b",
+          "source_path": "brand/sources/generated/DOC-01/generation-001.png",
+          "source_sha256": "e2ad345db954da5eba9f44aa720731bb64f2e1b1e148006833cb1db8de34f450",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1761155,
+          "receipt_path": "execution/reviews/root-documentation-generation-batch-001.json",
+          "receipt_sha256": "af210c0d89e42b5fff8343d2dcf27232b457f720fa996f67e5862c9b9a47d2e9",
+          "factual_source_documents": [
+            {
+              "path": "docs/BASELINE_AUDIT.md",
+              "sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690"
+            },
+            {
+              "path": "docs/PUBLISHING.md",
+              "sha256": "c0a1dd6dc95cbd9dfefec1c9af6e938163095535268c56439e02882515ed086f"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/docs/runtime-architecture-master.png",
+          "output_sha256": "db23c43c05670633ec167958299e053bf255fa80bb25e8e65f08fcd233ed7ec1",
+          "output_dimensions": "1600x900",
+          "output_mode": "RGB",
+          "output_bytes": 1564556,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        },
+        {
+          "output_path": "brand/assets/docs/runtime-architecture.png",
+          "output_sha256": "d2bd5e0d3c9792e08670d3063a6e7cffa6834ce088620af36259fe3514762dcc",
+          "output_dimensions": "2400x1350",
+          "output_mode": "RGB",
+          "output_bytes": 2871957,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Exact five adjacent boxes Harness → MCP → Gateway → Mod → Game host with specified subtitles and right arrows.",
+        "Protocol/Core support boxes are separate; Read-only publisher/Sanitized records only is separate from runtime chain.",
+        "Exact Architecture diagram — not a live execution trace. footer; no extra hop, control arrow, metric, version, status light, screenshot, or logo."
+      ],
+      "issues": [],
+      "source_use_observation": "Receipt pins docs/BASELINE_AUDIT.md and docs/PUBLISHING.md; no external visual reference.",
+      "evidence_boundary": "Documentation diagram only; it does not prove an installed, running, or settled runtime path.",
+      "source_record": {
+        "generation_id": "DOC-01-generation-001",
+        "prompt_path": "brand/prompts/root/DOC-01/generation-001.txt",
+        "prompt_sha256": "aa0797ebd910470e2c641a756da835818e925f6f99e52acdaffe3f78649a488b",
+        "source_path": "brand/sources/generated/DOC-01/generation-001.png",
+        "source_sha256": "e2ad345db954da5eba9f44aa720731bb64f2e1b1e148006833cb1db8de34f450",
+        "source_dimensions": "1672x941",
+        "source_mode": "RGB",
+        "source_bytes": 1761155,
+        "receipt_path": "execution/reviews/root-documentation-generation-batch-001.json",
+        "receipt_sha256": "af210c0d89e42b5fff8343d2dcf27232b457f720fa996f67e5862c9b9a47d2e9",
+        "factual_source_documents": [
+          {
+            "path": "docs/BASELINE_AUDIT.md",
+            "sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690"
+          },
+          {
+            "path": "docs/PUBLISHING.md",
+            "sha256": "c0a1dd6dc95cbd9dfefec1c9af6e938163095535268c56439e02882515ed086f"
+          }
+        ]
+      }
+    },
+    {
+      "asset_id": "DOC-02",
+      "title": "Publication and evidence flow",
+      "selected_generations": [
+        "DOC-02-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "DOC-02-generation-001",
+          "prompt_path": "brand/prompts/root/DOC-02/generation-001.txt",
+          "prompt_sha256": "354455a2ab18eab3272ef93397ce544f122dbd5224c967fc98618c06b7469431",
+          "source_path": "brand/sources/generated/DOC-02/generation-001.png",
+          "source_sha256": "b6472868b529f55a4805637aed21710c0fc83f527da8770b91d04d9422b35693",
+          "source_dimensions": "1586x992",
+          "source_mode": "RGB",
+          "source_bytes": 1147943,
+          "receipt_path": "execution/reviews/root-documentation-generation-batch-002.json",
+          "receipt_sha256": "2b5c3d691901c11dfbfb4962f2a7e43907c9f3b3d29626cee6d5d712e623ddeb",
+          "factual_source_documents": [
+            {
+              "path": "docs/PUBLISHING.md",
+              "sha256": "c0a1dd6dc95cbd9dfefec1c9af6e938163095535268c56439e02882515ed086f"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/docs/publication-flow.png",
+          "output_sha256": "a7bef84c073bed61ecfdd2b7ec1bbb8d992067ba6861ae8c0b62c9d481c5d8b2",
+          "output_dimensions": "1600x1000",
+          "output_mode": "RGB",
+          "output_bytes": 1095011,
+          "crop_box": [
+            0,
+            0,
+            1586,
+            992
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "blocked_requires_creative_connector_reflow",
+      "observations": [
+        "Exact private/public regions, source→Validation→Approved public projection, Independent review→Digest-bound approval, outputs, rejection note, and footer.",
+        "Vertical connector from Digest-bound approval toward Validation is a plain line without a visible upward arrowhead, so required direction is ambiguous."
+      ],
+      "issues": [
+        {
+          "severity": "blocking_connector_semantics",
+          "finding": "Prompt requires an arrow from Digest-bound approval pointing up into Validation; reviewed source/output show no visible arrowhead.",
+          "required_follow_up": "Creative reflow with an unambiguous upward arrowhead entering Validation; do not paint it mechanically."
+        }
+      ],
+      "source_use_observation": "Receipt pins docs/PUBLISHING.md; no external visual reference.",
+      "evidence_boundary": "Conditional publication-process description only; it does not prove digest approval, publisher execution, public projection, or public links.",
+      "source_record": {
+        "generation_id": "DOC-02-generation-001",
+        "prompt_path": "brand/prompts/root/DOC-02/generation-001.txt",
+        "prompt_sha256": "354455a2ab18eab3272ef93397ce544f122dbd5224c967fc98618c06b7469431",
+        "source_path": "brand/sources/generated/DOC-02/generation-001.png",
+        "source_sha256": "b6472868b529f55a4805637aed21710c0fc83f527da8770b91d04d9422b35693",
+        "source_dimensions": "1586x992",
+        "source_mode": "RGB",
+        "source_bytes": 1147943,
+        "receipt_path": "execution/reviews/root-documentation-generation-batch-002.json",
+        "receipt_sha256": "2b5c3d691901c11dfbfb4962f2a7e43907c9f3b3d29626cee6d5d712e623ddeb",
+        "factual_source_documents": [
+          {
+            "path": "docs/PUBLISHING.md",
+            "sha256": "c0a1dd6dc95cbd9dfefec1c9af6e938163095535268c56439e02882515ed086f"
+          }
+        ]
+      }
+    },
+    {
+      "asset_id": "DOC-03",
+      "title": "Repository naming plan",
+      "selected_generations": [
+        "DOC-03-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "DOC-03-generation-001",
+          "prompt_path": "brand/prompts/root/DOC-03/generation-001.txt",
+          "prompt_sha256": "6981f1478e7626da09915cbe1c93c2fd4aee4809f787641f9098d3e9ca1f5c7b",
+          "source_path": "brand/sources/generated/DOC-03/generation-001.png",
+          "source_sha256": "94700818b4c6e5f6c94c2fa05ec61bb0f12fc135e997ab8c6d0c06b2663e1541",
+          "source_dimensions": "1448x1086",
+          "source_mode": "RGB",
+          "source_bytes": 1309717,
+          "receipt_path": "execution/reviews/root-documentation-generation-batch-003.json",
+          "receipt_sha256": "e6130de487ddb7bb9293aad878f9ff5a9e2fef8620208fbcc9917a6e9443dbe0",
+          "factual_source_documents": [
+            {
+              "path": "migration/repository-plan.json",
+              "sha256": "735b578229627d2c10b0e419969a42c24c86550635a2e42117bfddaffff20591"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/docs/repository-map.png",
+          "output_sha256": "e60bdcb8670d89ea8efe7afad1c125f2d9a1bd1d9a92ac10cdb853dd04432afe",
+          "output_dimensions": "1600x1200",
+          "output_mode": "RGB",
+          "output_bytes": 1436902,
+          "crop_box": [
+            0,
+            0,
+            1448,
+            1086
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Exact 13-row Current name / Planned name / Recorded state table, with case and punctuation preserved.",
+        "Matches migration/repository-plan.json: dry_run_prepared, 2026-09-07, apply_performed false, 13 operations.",
+        "No completion badge, fake operation, or completed-change arrow; deferred-work footer is honest."
+      ],
+      "issues": [],
+      "source_use_observation": "Receipt pins migration/repository-plan.json; no external visual reference.",
+      "evidence_boundary": "Dated migration plan summary only; no rename or current remote state is proven.",
+      "source_record": {
+        "generation_id": "DOC-03-generation-001",
+        "prompt_path": "brand/prompts/root/DOC-03/generation-001.txt",
+        "prompt_sha256": "6981f1478e7626da09915cbe1c93c2fd4aee4809f787641f9098d3e9ca1f5c7b",
+        "source_path": "brand/sources/generated/DOC-03/generation-001.png",
+        "source_sha256": "94700818b4c6e5f6c94c2fa05ec61bb0f12fc135e997ab8c6d0c06b2663e1541",
+        "source_dimensions": "1448x1086",
+        "source_mode": "RGB",
+        "source_bytes": 1309717,
+        "receipt_path": "execution/reviews/root-documentation-generation-batch-003.json",
+        "receipt_sha256": "e6130de487ddb7bb9293aad878f9ff5a9e2fef8620208fbcc9917a6e9443dbe0",
+        "factual_source_documents": [
+          {
+            "path": "migration/repository-plan.json",
+            "sha256": "735b578229627d2c10b0e419969a42c24c86550635a2e42117bfddaffff20591"
+          }
+        ]
+      }
+    },
+    {
+      "asset_id": "DOC-04",
+      "title": "Planned orchestration topology",
+      "selected_generations": [
+        "DOC-04-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "DOC-04-generation-001",
+          "prompt_path": "brand/prompts/root/DOC-04/generation-001.txt",
+          "prompt_sha256": "a0b67637a62ab997923aaff66217ae389fcbc1ff7d7e33c5315cca8db860aaaf",
+          "source_path": "brand/sources/generated/DOC-04/generation-001.png",
+          "source_sha256": "baca141fe42d9d092289fbea733e23c2ff91e03b2e41361e234c04bb4cbd376d",
+          "source_dimensions": "1422x1106",
+          "source_mode": "RGB",
+          "source_bytes": 1789370,
+          "receipt_path": "execution/reviews/root-documentation-generation-batch-004.json",
+          "receipt_sha256": "923116dfb269816f9673eb5fbb51bc6b8cb26d1b09a195510305c409b7569042",
+          "factual_source_documents": [
+            {
+              "path": "orchestration/CONTRACT.md",
+              "sha256": "22bba55c22da2898b2450d9aad061bdbc4bd4630d259669ca5b7559e549bb194"
+            },
+            {
+              "path": "art/root-generation-authorization.json",
+              "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/docs/agent-tree.png",
+          "output_sha256": "51bc5e3ca0f0f17342576bbf3a609999ac05fea84c205d6b846a5b78c1d5fb08",
+          "output_dimensions": "1800x1400",
+          "output_mode": "RGB",
+          "output_bytes": 2492004,
+          "crop_box": [
+            0,
+            0,
+            1422,
+            1106
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Exact Root/Depth 0, 7 leads/Depth 1, 14 coordinators/Depth 2, 14 implementers and 14 reviewers/Depth 3 with branch arrows.",
+        "49 descendants and Maximum 250 open descendants match roles.json (7/14/28 by depths) and CONTRACT cap language.",
+        "Plan-only subtitle and root-authored image tool footer prevent live-trace interpretation; no fake IDs, runtime badges, or deployment claims."
+      ],
+      "issues": [],
+      "source_use_observation": "Receipt pins orchestration/CONTRACT.md and authorization; count cross-checked against orchestration/roles.json.",
+      "evidence_boundary": "Aggregate plan/catalog only; no agent execution, open-slot count, or native trace is proven.",
+      "source_record": {
+        "generation_id": "DOC-04-generation-001",
+        "prompt_path": "brand/prompts/root/DOC-04/generation-001.txt",
+        "prompt_sha256": "a0b67637a62ab997923aaff66217ae389fcbc1ff7d7e33c5315cca8db860aaaf",
+        "source_path": "brand/sources/generated/DOC-04/generation-001.png",
+        "source_sha256": "baca141fe42d9d092289fbea733e23c2ff91e03b2e41361e234c04bb4cbd376d",
+        "source_dimensions": "1422x1106",
+        "source_mode": "RGB",
+        "source_bytes": 1789370,
+        "receipt_path": "execution/reviews/root-documentation-generation-batch-004.json",
+        "receipt_sha256": "923116dfb269816f9673eb5fbb51bc6b8cb26d1b09a195510305c409b7569042",
+        "factual_source_documents": [
+          {
+            "path": "orchestration/CONTRACT.md",
+            "sha256": "22bba55c22da2898b2450d9aad061bdbc4bd4630d259669ca5b7559e549bb194"
+          },
+          {
+            "path": "art/root-generation-authorization.json",
+            "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de"
+          }
+        ]
+      },
+      "factual_verification": {
+        "roles_path": "orchestration/roles.json",
+        "roles_sha256": "9b8f1026ea223b1f8ae8eec7ce54694434659e1003cac988518e73fb8532a742",
+        "role_count": 49,
+        "depth_counts": {
+          "1": 7,
+          "2": 14,
+          "3": 28
+        },
+        "contract_path": "orchestration/CONTRACT.md",
+        "contract_sha256": "22bba55c22da2898b2450d9aad061bdbc4bd4630d259669ca5b7559e549bb194"
+      }
+    },
+    {
+      "asset_id": "DOC-05",
+      "title": "Contributor path",
+      "selected_generations": [
+        "DOC-05-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "DOC-05-generation-001",
+          "prompt_path": "brand/prompts/root/DOC-05/generation-001.txt",
+          "prompt_sha256": "df7e906d1e8bdd49c62f7a25117e2e1e35874bb08ba688ea038607762b50c09d",
+          "source_path": "brand/sources/generated/DOC-05/generation-001.png",
+          "source_sha256": "aef2eff2579c4fab5b394c8425658fbf2c78977860aedf77793ba8d3d997488a",
+          "source_dimensions": "1448x1086",
+          "source_mode": "RGB",
+          "source_bytes": 1128320,
+          "receipt_path": "execution/reviews/root-documentation-generation-batch-005.json",
+          "receipt_sha256": "705867fef910a1094f569ac2ed7d7d05f9f02f28f0bda44bdd72979dfbaba0c2",
+          "factual_source_documents": [
+            {
+              "path": "docs/TESTED_QUICKSTART.md",
+              "sha256": "6d10c672a8edb286df025fe90828dcbddd922084a8e7f1fbe31aabd38650d470"
+            },
+            {
+              "path": "marketing/community-playbook.md",
+              "sha256": "4e376b92a0506b15984a83d513357aec3536636ad44c123d382dff08c924c4af"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/docs/contributor-path.png",
+          "output_sha256": "178fc6fe16418b33996207e2d9450b2ab991359bf4fc30b0db8661321e97d170",
+          "output_dimensions": "1200x900",
+          "output_mode": "RGB",
+          "output_bytes": 795557,
+          "crop_box": [
+            0,
+            0,
+            1448,
+            1086
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Exact two-row snake Tested quickstart → Focused issue → Isolated branch ↓ Focused change → Relevant tests → Owner review with captions and unambiguous arrows.",
+        "Exact consent sentence and proof-limit footer are legible.",
+        "Matches offline quickstart and consent playbook; no installer, automatic merge, publication arrow, metric, screenshot, or game imagery."
+      ],
+      "issues": [],
+      "source_use_observation": "Receipt pins docs/TESTED_QUICKSTART.md and marketing/community-playbook.md; no external visual reference.",
+      "evidence_boundary": "Contributor documentation only; no installer, contribution, test execution, review, merge, deployment, or gameplay is proven.",
+      "source_record": {
+        "generation_id": "DOC-05-generation-001",
+        "prompt_path": "brand/prompts/root/DOC-05/generation-001.txt",
+        "prompt_sha256": "df7e906d1e8bdd49c62f7a25117e2e1e35874bb08ba688ea038607762b50c09d",
+        "source_path": "brand/sources/generated/DOC-05/generation-001.png",
+        "source_sha256": "aef2eff2579c4fab5b394c8425658fbf2c78977860aedf77793ba8d3d997488a",
+        "source_dimensions": "1448x1086",
+        "source_mode": "RGB",
+        "source_bytes": 1128320,
+        "receipt_path": "execution/reviews/root-documentation-generation-batch-005.json",
+        "receipt_sha256": "705867fef910a1094f569ac2ed7d7d05f9f02f28f0bda44bdd72979dfbaba0c2",
+        "factual_source_documents": [
+          {
+            "path": "docs/TESTED_QUICKSTART.md",
+            "sha256": "6d10c672a8edb286df025fe90828dcbddd922084a8e7f1fbe31aabd38650d470"
+          },
+          {
+            "path": "marketing/community-playbook.md",
+            "sha256": "4e376b92a0506b15984a83d513357aec3536636ad44c123d382dff08c924c4af"
+          }
+        ]
+      }
+    }
+  ],
+  "source_use_and_rights_observation": {
+    "result": "bounded_generated_original_input_observation",
+    "observed_inputs": "Selected records are local root-route generated PNG sources; documentation receipts name local factual source documents; GH social receipts name the pinned generated avatar-1024 reference.",
+    "visual_observation": "No recognizable third-party mark, provider/publisher logo, proprietary game screenshot, gameplay capture, real metric, date, timer, sponsor identity, or fabricated value was observed. Decorative routes, dotted treatment, and the approved generated avatar silhouette were treated as artwork, not product evidence.",
+    "limits": [
+      "Not a copyright, trademark, license, permission, sponsorship, or legal clearance determination.",
+      "Generated artwork and diagrams are not gameplay, product, audience, campaign-performance, host, deployment, publication, or public-run evidence.",
+      "Root author model, native agent chain, image model, and image backend remain unverified.",
+      "Public publication/download still requires exact-digest, rights, and distribution gates."
+    ]
+  },
+  "unverified_or_deferred": [
+    "No functioning broadcast host, status integration, real-footage composite, game-control path, or settled live action was exercised.",
+    "No platform-specific GitHub/social crop or publication was exercised.",
+    "CAST-03 host/crop condition remains open.",
+    "GH-04 family condition and social safe-crop conditions remain open as listed.",
+    "DOC-02 connector arrowhead correction remains open.",
+    "No legal, sponsorship, trademark, license, permission, deployment, publication, or public-release decision is made here."
+  ],
+  "approval_grant": false
+}

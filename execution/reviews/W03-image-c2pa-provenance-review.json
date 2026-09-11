@@ -1,0 +1,488 @@
+{
+  "schema_version": "ai-ascension.w03-image-c2pa-provenance-review.v1",
+  "observed_at": "2026-09-08T03:57:09.437Z",
+  "reviewer": "w03-image-c2pa-provenance-independent-review",
+  "task": "Bounded C2PA provenance investigation for root-route generated artwork",
+  "scope": "Inspect the preserved PNG originals under brand/sources/generated, validate embedded C2PA manifests with the official C2PA trust list, compare the signed claims with the registered root-route and REQ-062 model evidence, and record the strict mapping outcome. This review does not edit generation records, model fields, policy, artwork, manifests, exports, or requirements status.",
+  "working_tree": {
+    "path": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "exclusive_write": "execution/reviews/W03-image-c2pa-provenance-review.json",
+    "pre_existing_dirty_changes_preserved": true,
+    "generation_or_image_edit_performed_by_reviewer": false
+  },
+  "reviewer_runtime": {
+    "requested_model": "gpt-5.6-luna",
+    "requested_effort": "max",
+    "accepted_model": "unknown",
+    "accepted_effort": "unknown",
+    "observed_model": "unknown",
+    "observed_effort": "unknown",
+    "runtime_evidence_reference": "not-observed:review-session-metadata"
+  },
+  "decision": {
+    "c2pa_provider_signed_provenance": "supported",
+    "c2pa_exact_image_model_id": "unresolved",
+    "c2pa_root_tool_session_binding": "not-established",
+    "req_062_result": "remains_blocked",
+    "root_record_model_fields_changed": false,
+    "policy_or_schema_changed": false,
+    "status_change_authorized_by_this_review": false,
+    "summary": "The files contain trusted, OpenAI-signed C2PA manifests whose signed claims identify the OpenAI Media Service claim generator and a software agent named gpt-image version 2.0. The available authoritative model documentation lists the API IDs gpt-image-2 and gpt-image-2-2026-04-21 but does not provide a mapping from the C2PA softwareAgent pair to either ID. C2PA therefore strengthens provider-origin evidence while leaving the exact API model ID and root tool session model unknown."
+  },
+  "source_pins": {
+    "scan_state": {
+      "description": "Pins used when the 122-file C2PA scan and detailed reports were produced, before five newly generated records were integrated into the working ledger.",
+      "generation_records": {
+        "path": "brand/provenance/root-generation-records.json",
+        "sha256": "74311575b0486deb03e914496c452d6e944244115e3061252bdb88c497f09b82",
+        "record_count": 117
+      },
+      "generation_index": {
+        "path": "brand/provenance/root-generation-index.json",
+        "sha256": "5acb8f14ee0bc846456b007f884f7e897ff2991e5b85359cae5cdeda495a136e"
+      },
+      "export_receipts": {
+        "path": "brand/provenance/root-export-receipts.json",
+        "sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a"
+      },
+      "export_recipe": {
+        "path": "brand/provenance/root-export-recipe.json",
+        "sha256": "7380210a8654f0342485a22d116591d95865e368fc237c290a433fb106ff8b27"
+      },
+      "root_tool_observations": {
+        "path": "brand/provenance/root-tool-observations.json",
+        "sha256": "eb4964c854e0c799dcb43acf0eae296280c7dd67e9dbe200e83329c4249996ca"
+      },
+      "asset_registry": {
+        "path": "art/asset-registry.json",
+        "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff"
+      },
+      "generation_policy": {
+        "path": "art/generation-policy.json",
+        "sha256": "dabc08e924fd6c24c2277ca1ee8eea7c5ea041dc00367300f3c92e4b90f16f10"
+      },
+      "root_authorization": {
+        "path": "art/root-generation-authorization.json",
+        "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de"
+      },
+      "requirements": {
+        "path": "data/requirements.json",
+        "sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3"
+      },
+      "requirements_status": {
+        "path": "execution/requirements-status.json",
+        "sha256": "4f64d627dfae1e26fe0305fdd58161f705be281c879b42b490117e7c9620bca2"
+      },
+      "policy_helper": {
+        "path": "scripts/art_policy.py",
+        "sha256": "e6f2d45bcbf0a19c3d4a5161e031a03e90d88f8dec73c70ceb25575e4d97cd99"
+      }
+    },
+    "current_worktree_reobserved_at_write": {
+      "generation_records": {
+        "path": "brand/provenance/root-generation-records.json",
+        "sha256": "80adf83d1a9654d42627a5ba2e455e3d2526104edc7ef1f82c1a4e96de9da200",
+        "record_count": 122,
+        "status_counts": {
+          "verified": 84,
+          "blocked": 38
+        },
+        "raw_output_paths": 122
+      },
+      "generation_index": {
+        "path": "brand/provenance/root-generation-index.json",
+        "sha256": "fb89641e938b91e2883f637da57ab7ed978a5fd94597aaf83a7b27134e05c291"
+      },
+      "export_receipts": {
+        "path": "brand/provenance/root-export-receipts.json",
+        "sha256": "e041d78fe5fb4137888dda6416b47a3d7c74c85406c225b2f9a2ab79e960ca41"
+      },
+      "export_recipe": {
+        "path": "brand/provenance/root-export-recipe.json",
+        "sha256": "b5df2fcf7669794807aa0e1ddd2082423aafbba270e14e24c37eb1b18f9054f1"
+      },
+      "root_tool_observations": {
+        "path": "brand/provenance/root-tool-observations.json",
+        "sha256": "ad7064c9d7af6c0c12cdcbe09659b9e08bf5e823bf362947e1f27e66c4e8a1ec"
+      },
+      "interpretation": "The five paths that were filesystem extras at scan time are now present in the working generation ledger as blocked records. This observation is included for reconciliation and does not retroactively expand the scan-state canonical set."
+    }
+  },
+  "inventory": {
+    "scan_input_root": "brand/sources/generated",
+    "canonical_at_scan": {
+      "source_path_list": {
+        "path": "/tmp/ignored/c2pa-review/canonical-source-paths.txt",
+        "sha256": "d1e4f716ff89db120b806c2547ef0a189d9437bf8502696b61aadfbb9bef2118",
+        "count": 117
+      },
+      "root_generation_record_count": 117,
+      "status_counts": {
+        "verified": 84,
+        "blocked": 33
+      },
+      "raw_output_paths_exist": true
+    },
+    "filesystem_at_scan": {
+      "source_path_list": {
+        "path": "/tmp/ignored/c2pa-review/filesystem-source-paths.txt",
+        "sha256": "162d28979e26754abb332d8f56f28f3d31bbaf6c3f0401714f1a3c973cbbe5cb",
+        "count": 122
+      },
+      "png_count": 122,
+      "all_files_have_exactly_one_caBX_chunk": true,
+      "caBX_chunk_count_distribution": {
+        "one": 122,
+        "zero": 0,
+        "more_than_one": 0
+      }
+    },
+    "c2pa_report_index": {
+      "path": "/tmp/ignored/c2pa-review/index.tsv",
+      "sha256": "efbf5b5cfaf6daf2e790a754630cfd5f65787e118fd0b2a90295e58a660afd99",
+      "count": 122,
+      "mapping": "zero-padded index to the sorted filesystem PNG path"
+    },
+    "c2pa_path_bytes": {
+      "path": "/tmp/ignored/c2pa-review/paths.bin",
+      "sha256": "525fb93e4d8f45e4586b26edea092426aa04b7bdf07c6fbd313ead698448190b",
+      "encoding": "NUL-delimited sorted filesystem paths"
+    },
+    "filesystem_extras_relative_to_canonical_at_scan": [
+      {
+        "path": "brand/sources/generated/MKT-03/generation-003.png",
+        "sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca"
+      },
+      {
+        "path": "brand/sources/generated/MKT-03/generation-004.png",
+        "sha256": "14ade5e06f04a12e000715d181f99caf331581ee7f4f823167dfc53ee5b6aa5d"
+      },
+      {
+        "path": "brand/sources/generated/MKT-05/generation-002.png",
+        "sha256": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9"
+      },
+      {
+        "path": "brand/sources/generated/MKT-06/generation-003.png",
+        "sha256": "c239754685c0e59ed52f2bc5eb66e5eee8cf194c83e61c27614503835b1053d5"
+      },
+      {
+        "path": "brand/sources/generated/MKT-06/generation-004.png",
+        "sha256": "2094b9573c10282e5344cefae1efed830d550752be17f9bb262fcb828a037e73"
+      }
+    ],
+    "current_reconciliation": {
+      "ledger_paths_after_integration": 122,
+      "filesystem_paths_after_integration": 122,
+      "ledger_paths_missing_from_filesystem": 0,
+      "filesystem_paths_missing_from_ledger": 0
+    }
+  },
+  "verification_tool": {
+    "name": "c2patool",
+    "version": "0.27.20",
+    "binary_path": "/tmp/ignored/c2pa-review/c2patool/c2patool",
+    "binary_sha256": "de4ec63051e436a32d4963275ecd6df3bf299d6480ca07ff19d345a29f93d696",
+    "release_archive_path": "/tmp/ignored/c2pa-review/c2patool-v0.27.20-x86_64-unknown-linux-gnu.tar.gz",
+    "release_archive_sha256": "97bc90690e61c1cef21a56dd7cd40582c07c83181c69bec36e2cb2c37dfebf50",
+    "trust_anchors": {
+      "path": "/tmp/ignored/c2pa-review/c2pa-trust-list.pem",
+      "source_url": "https://raw.githubusercontent.com/c2pa-org/conformance-public/refs/heads/main/trust-list/C2PA-TRUST-LIST.pem",
+      "sha256": "75cacc98b79ecac33713c7ecfb58d4a0ef383f3c1f886e7409f9e37e8664aea5",
+      "bytes": 37911
+    },
+    "runner_scripts": [
+      {
+        "path": "/tmp/ignored/c2pa-review/run-bulk.sh",
+        "sha256": "6d55d0b6b225e18303aecf096a4eb5dc388440215b6546e254d03b3613f79086",
+        "operation": "c2patool <png> trust --trust_anchors=<trust-list>"
+      },
+      {
+        "path": "/tmp/ignored/c2pa-review/run-bulk-detailed.sh",
+        "sha256": "d5ecef22bb445f82fc3b30f8663897ddc8a2f448a29604e3785d2ac2d21d2819",
+        "operation": "c2patool --detailed <png> trust --trust_anchors=<trust-list>"
+      }
+    ]
+  },
+  "method": {
+    "file_selection": "find brand/sources/generated -type f -name '*.png' -print0 | sort -z",
+    "bulk_report_directory": "/tmp/ignored/c2pa-review/bulk",
+    "detailed_report_directory": "/tmp/ignored/c2pa-review/detailed",
+    "parallelism": 8,
+    "bulk_json_reports": 122,
+    "detailed_json_reports": 122,
+    "bulk_nonempty_stderr_files": 0,
+    "detailed_nonempty_stderr_files": 0,
+    "source_hash_check": "SHA-256 of each preserved PNG was compared with the path inventory and the corresponding registered raw output where present.",
+    "png_chunk_check": "Parsed PNG chunk framing and counted the embedded caBX manifest-store chunk.",
+    "report_check": "Parsed every JSON report and counted active-manifest state, success codes, informational codes, failures, manifest count, claim metadata, action metadata, and signature metadata.",
+    "ledger_edit_check": "No generation record, policy, schema, artwork, export, or requirement file was written by this review."
+  },
+  "aggregate_results": {
+    "reports_with_validation_state_trusted": 122,
+    "reports_with_other_validation_state": 0,
+    "reports_with_one_manifest": 122,
+    "reports_with_other_manifest_count": 0,
+    "active_manifest_failures": 0,
+    "active_manifest_informational_counts": {
+      "timeStamp.untrusted": 122
+    },
+    "active_manifest_success_counts": {
+      "timeStamp.validated": 122,
+      "signingCredential.trusted": 122,
+      "claimSignature.insideValidity": 122,
+      "claimSignature.validated": 122,
+      "assertion.hashedURI.match": 366,
+      "assertion.dataHash.match": 122
+    },
+    "claim_metadata_counts": {
+      "claim_version_2": 122,
+      "claim_hash_algorithm_sha256": 122,
+      "title_image.png": 122,
+      "spec_version_2.2.0": 122,
+      "claim_generator_OpenAI_Media_Service_API": 122,
+      "c2pa_rs_0.79.2": 122
+    },
+    "actions_counts": {
+      "one_c2pa.actions.v2_assertion": 122,
+      "c2pa.created": 122,
+      "c2pa.converted": 122,
+      "c2pa.watermarked.unbound": 122,
+      "allActionsIncluded_false": 122
+    },
+    "software_agent_counts": {
+      "gpt-image_2.0": 122
+    },
+    "digital_source_type_counts": {
+      "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia": 122
+    },
+    "signature_counts": {
+      "Ps256": 70,
+      "Es256": 52
+    },
+    "signature_issuer_counts": {
+      "OpenAI OpCo, LLC": 122
+    },
+    "signature_common_name_counts": {
+      "OpenAI Media Service": 122
+    },
+    "c2pa_created_when_counts": {
+      "2026-09-07T00:00:00Z": 57,
+      "2026-09-08T00:00:00Z": 65
+    },
+    "interpretation": "These counts establish a consistent signed C2PA profile across the scanned files. They do not turn the softwareAgent label into an API model ID or prove that every claimed action is listed."
+  },
+  "representative_evidence": [
+    {
+      "asset_id": "BG-01-generation-001",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "source_sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+      "dimensions": "1536x1024",
+      "detailed_report": {
+        "path": "/tmp/ignored/c2pa-review/detailed/000.json",
+        "sha256": "106138f28d1d9ecacad31591050341c438771f00f2ea54b21a17a57e03f663bf"
+      },
+      "active_manifest": "urn:c2pa:f5fa89f7-4999-42cd-a588-4f55a0a83529",
+      "claim_generator": "OpenAI Media Service API",
+      "software_agent": {
+        "name": "gpt-image",
+        "version": "2.0"
+      },
+      "signature": {
+        "algorithm": "ps256",
+        "issuer": "OpenAI OpCo, LLC",
+        "common_name": "OpenAI Media Service",
+        "time": "2026-09-07T19:30:54.425913+00:00"
+      },
+      "certificate_chain": {
+        "path": "/tmp/ignored/c2pa-review/BG-01-generation-001-certs.pem",
+        "sha256": "ad0c79daec07b707a158c61756b4d1ee8e14bfdc6068c93eafc8b3f197b882ec",
+        "leaf_subject": "C=US, O=OpenAI OpCo, LLC, CN=OpenAI Media Service",
+        "leaf_issuer": "CN=SSL.com C2PA ICA R1 2025, O=SSL Corporation, C=US"
+      },
+      "validation_state": "Trusted",
+      "failure_count": 0,
+      "success_codes": [
+        "timeStamp.validated",
+        "signingCredential.trusted",
+        "claimSignature.insideValidity",
+        "claimSignature.validated",
+        "assertion.hashedURI.match",
+        "assertion.dataHash.match"
+      ],
+      "informational_codes": [
+        "timeStamp.untrusted"
+      ]
+    },
+    {
+      "asset_id": "BG-03-generation-001",
+      "source_path": "brand/sources/generated/BG-03/generation-001.png",
+      "source_sha256": "0ff4f0492163d0e95ac0a0055aef38991ec1096a3a2f9cd58b26634b77395c66",
+      "dimensions": "1536x1024",
+      "detailed_report": {
+        "path": "/tmp/ignored/c2pa-review/detailed/002.json",
+        "sha256": "0314865d6587422c327debf5bd2bf7069e2c02c99cc4b604a6fe24188ecf9770"
+      },
+      "active_manifest": "urn:c2pa:38390b74-4e2f-417f-a6b4-59b699b07375",
+      "claim_generator": "OpenAI Media Service API",
+      "software_agent": {
+        "name": "gpt-image",
+        "version": "2.0"
+      },
+      "signature": {
+        "algorithm": "es256",
+        "issuer": "OpenAI OpCo, LLC",
+        "common_name": "OpenAI Media Service",
+        "time": "2026-09-07T19:31:47.137177+00:00"
+      },
+      "certificate_chain": {
+        "path": "/tmp/ignored/c2pa-review/BG-03-generation-001-certs.pem",
+        "sha256": "59c1d809a19b43fa54def5849c01ba164e963a01619e50a655ada0a142aa8720",
+        "leaf_subject": "C=US, O=OpenAI OpCo, LLC, CN=OpenAI Media Service",
+        "leaf_issuer": "C=US, ST=New York, L=New York, O=Trufo Inc., OU=CA Division/emailAddress=ca@trufo.ai, CN=Trufo C2PA Claim Signing CA (2025)"
+      },
+      "validation_state": "Trusted",
+      "failure_count": 0,
+      "success_codes": [
+        "timeStamp.validated",
+        "signingCredential.trusted",
+        "claimSignature.insideValidity",
+        "claimSignature.validated",
+        "assertion.hashedURI.match",
+        "assertion.dataHash.match"
+      ],
+      "informational_codes": [
+        "timeStamp.untrusted"
+      ]
+    },
+    {
+      "asset_id": "MKT-03-generation-003",
+      "source_path": "brand/sources/generated/MKT-03/generation-003.png",
+      "source_sha256": "04ceb42e6eb24ed817af29dc2ca7ee2fcfd327e000ce3f9745072e3549899cca",
+      "dimensions": "1672x941",
+      "record_state_at_scan": "filesystem extra relative to the 117-record ledger; now present as a blocked record in the post-scan working ledger",
+      "detailed_report": {
+        "path": "/tmp/ignored/c2pa-review/detailed/088.json",
+        "sha256": "a6884743b27568a78f7e0a9285d95bcf90922aabd4f3235c1b5bbe5193e61ef2"
+      },
+      "active_manifest": "urn:c2pa:062626df-fe2e-474b-b23b-543d1d4f63d0",
+      "claim_generator": "OpenAI Media Service API",
+      "software_agent": {
+        "name": "gpt-image",
+        "version": "2.0"
+      },
+      "signature": {
+        "algorithm": "es256",
+        "issuer": "OpenAI OpCo, LLC",
+        "common_name": "OpenAI Media Service",
+        "time": "2026-09-08T03:31:20.292930+00:00"
+      },
+      "certificate_chain": {
+        "path": "/tmp/ignored/c2pa-review/MKT-03-generation-003-certs.pem",
+        "sha256": "59c1d809a19b43fa54def5849c01ba164e963a01619e50a655ada0a142aa8720",
+        "leaf_subject": "C=US, O=OpenAI OpCo, LLC, CN=OpenAI Media Service",
+        "leaf_issuer": "C=US, ST=New York, L=New York, O=Trufo Inc., OU=CA Division/emailAddress=ca@trufo.ai, CN=Trufo C2PA Claim Signing CA (2025)"
+      },
+      "validation_state": "Trusted",
+      "failure_count": 0,
+      "success_codes": [
+        "timeStamp.validated",
+        "signingCredential.trusted",
+        "claimSignature.insideValidity",
+        "claimSignature.validated",
+        "assertion.hashedURI.match",
+        "assertion.dataHash.match"
+      ],
+      "informational_codes": [
+        "timeStamp.untrusted"
+      ]
+    }
+  ],
+  "model_mapping_review": {
+    "registered_req_062_text": "Every artwork generation requests gpt-image-2; actual model evidence resolves to gpt-image-2 or a documented verified snapshot, never an unknown or alternate backend.",
+    "registered_root_route": {
+      "route": "user_authorized_root_image_tool",
+      "tool_name": "image_gen__imagegen",
+      "image_model_requested": "unknown",
+      "image_model_observed": "unknown",
+      "backend": "unspecified",
+      "authorization": "art/root-generation-authorization.json#root-image-tool-route-20260907"
+    },
+    "signed_c2pa_observation": {
+      "claim_generator": "OpenAI Media Service API",
+      "software_agent_name": "gpt-image",
+      "software_agent_version": "2.0",
+      "provider_signer": "OpenAI OpCo, LLC / OpenAI Media Service",
+      "exact_api_model_id_field_present": false,
+      "request_id_or_api_trace_field_present": false
+    },
+    "authoritative_model_catalog": {
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2",
+      "observed_listing": [
+        "gpt-image-2",
+        "gpt-image-2-2026-04-21"
+      ],
+      "mapping_found_from_c2pa_to_catalog_id": false,
+      "mapping_result": "The catalog documents the alias and dated snapshot names but does not state that C2PA softwareAgent name gpt-image version 2.0 is an alias for either name."
+    },
+    "result": "unknown",
+    "why_c2pa_is_insufficient_for_req_062": "The signed manifest authenticates a claim generator and binds the manifest to the bytes. It does not carry the registered root request model, an API request/response record, a documented alias-resolution envelope, or a provider statement mapping gpt-image version 2.0 to the exact API model IDs accepted by REQ-062."
+  },
+  "authoritative_references": [
+    {
+      "title": "GPT-Image-2 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2",
+      "accessed_at": "2026-09-08",
+      "use": "Confirms the exact documented alias gpt-image-2 and listed dated snapshot gpt-image-2-2026-04-21."
+    },
+    {
+      "title": "Provenance signals in OpenAI-generated content",
+      "url": "https://help.openai.com/en/articles/8912793-c2pa-in-dall-e-3",
+      "accessed_at": "2026-09-08",
+      "use": "Explains that a trusted C2PA signal can indicate content generated or exported by OpenAI tools, while the verification result does not identify who created the content or establish accuracy, ownership, or context."
+    },
+    {
+      "title": "C2PA Technical Specification 2.2",
+      "url": "https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification",
+      "accessed_at": "2026-09-08",
+      "sections": [
+        "14.2 Identity of Signers",
+        "14.3.5 Valid Manifest",
+        "14.3.6 Trusted Manifest",
+        "18.14.4.4 SoftwareAgent",
+        "18.14.4.5 Digital Source Type"
+      ],
+      "use": "Defines signer identity and Trusted state, and defines softwareAgent as the software or hardware used for an action. It does not define softwareAgent as an API model-ID resolution mechanism."
+    },
+    {
+      "title": "C2PA official trust list used by the verifier",
+      "url": "https://raw.githubusercontent.com/c2pa-org/conformance-public/refs/heads/main/trust-list/C2PA-TRUST-LIST.pem",
+      "accessed_at": "2026-09-08",
+      "local_sha256": "75cacc98b79ecac33713c7ecfb58d4a0ef383f3c1f886e7409f9e37e8664aea5",
+      "use": "Trust anchors supplied to c2patool for this run."
+    }
+  ],
+  "limitations": [
+    "A Trusted C2PA manifest attributes the signed claim to the claim generator and signer under the supplied trust model; it does not bind the image to the root image_gen__imagegen session, its user authorization, or an API request trace.",
+    "The signed claim says gpt-image version 2.0, not gpt-image-2 or gpt-image-2-2026-04-21. A textual resemblance or version number is not accepted as a model-ID mapping.",
+    "All manifests have allActionsIncluded=false, so a consumer cannot infer that the listed action set is complete.",
+    "The c2pa.created when values are simple action timestamps; the verifier also reports timeStamp.untrusted for all 122 files because the TSA certificate was not trusted by the supplied list. This does not negate the separately successful claim signature and content-hash checks.",
+    "C2PA does not prove prompt fidelity, visual acceptance, source rights, factual correctness, native author identity, or legal clearance.",
+    "OpenAI's verification guidance says provenance signals can be removed by editing, conversion, or sharing. This run establishes the state of the preserved local PNG bytes only."
+  ],
+  "recommendation": {
+    "record_action": "Keep image_model_requested, image_model_observed, image_backend, and alias-evidence fields at their registered root-route values. Do not rewrite the generation ledger from the C2PA softwareAgent label.",
+    "req_062_action": "Keep REQ-062 blocked until a provider request/response or trustworthy provider mapping resolves each required generation to gpt-image-2 or the documented accepted snapshot. C2PA may be attached as supplemental OpenAI-signed provenance evidence.",
+    "future_evidence": [
+      "Preserve the exact provider request or tool trace with model ID and output binding.",
+      "If the provider documents a mapping for gpt-image version 2.0, capture that documentation and a policy-approved alias-resolution envelope.",
+      "Re-run this scan after any byte-changing export and keep each new C2PA report bound to the resulting file hash."
+    ],
+    "no_status_promotion": true
+  },
+  "validation": {
+    "json_artifact_validation": "performed after creation with jq",
+    "source_sha256_recheck": "performed for representative sources and all five scan-state extras",
+    "c2pa_report_reparse": "performed for all 122 bulk and 122 detailed reports",
+    "working_tree_write_scope": "only this new review file was created by this review"
+  }
+}

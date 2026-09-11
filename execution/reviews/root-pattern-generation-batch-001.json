@@ -1,0 +1,20 @@
+[
+  {
+    "asset_id": "BG-04",
+    "generation_id": "BG-04-generation-002",
+    "prompt_path": "brand/prompts/root/BG-04/generation-002.txt",
+    "prompt_sha256": "f8c5346267ea853ff5733980866dfdb4d9bbb3dfb6aa3d537792ef73ce0508db",
+    "source_path": "brand/sources/generated/BG-04/generation-002.png",
+    "source_sha256": "ee0d4cb2a4adfb085c129f3e2bfd37185dd8e9ef2ae71a261868fc0649ed3579",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T01:03:59.940638+00:00"
+  }
+]

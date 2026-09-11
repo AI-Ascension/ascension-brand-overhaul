@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Ascension — functional design specimen</title>
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+body{margin:0;background:var(--aa-color-surface-page);color:var(--aa-color-text-primary);font-family:var(--aa-font-body);line-height:1.55}
+main{max-width:70rem;margin:auto;padding:clamp(1rem,4vw,4rem)}
+section{border-top:1px solid var(--aa-color-border-default);padding-block:2rem}
+h1,h2{font-family:var(--aa-font-display);line-height:1.05}h1{font-size:clamp(2.5rem,8vw,6rem);margin-block:1rem}
+p{max-width:66ch}code{font-family:var(--aa-font-mono);overflow-wrap:anywhere}
+.row{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}.palette{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:1rem}
+.swatch{height:5rem;border:1px solid var(--aa-color-border-strong)}figure{margin:0}figcaption{padding-block:.5rem}
+img{max-width:100%;height:auto}a{color:var(--aa-color-accent-text)}
+</style>
+<main>
+<header><div class="row"><img src="mark.png" width="64" height="64" alt=""><span>AI Ascension / Ascent Ledger</span></div>
+<h1>Watch. Inspect. Build.</h1>
+<p>A functional specimen of the canonical tokens. The accompanying <a href="specimen.png">generated illustration</a> is a visual reference; CSS values below govern product interfaces.</p>
+<button id="theme" class="aa-button aa-button--secondary" type="button" aria-pressed="false">Use dark theme</button></header>
+<section aria-labelledby="type"><h2 id="type">Type references</h2>
+<p class="aa-display">A path worth inspecting.</p>
+<p>Display: Fraunces. Body: Bricolage Grotesque. Identifiers and evidence labels: <code>JetBrains Mono</code>.</p>
+<p>This standalone file bundles no fonts and makes no network requests. It uses installed fonts when available and the canonical system fallbacks otherwise. Generated lettering is not proof of a particular typeface.</p></section>
+<section aria-labelledby="colors"><h2 id="colors">Semantic color</h2><div class="palette">
+<figure><div class="swatch" style="background:var(--aa-color-surface-page)"></div><figcaption>Page surface<br><code>--aa-color-surface-page</code></figcaption></figure>
+<figure><div class="swatch" style="background:var(--aa-color-text-primary)"></div><figcaption>Primary text<br><code>--aa-color-text-primary</code></figcaption></figure>
+<figure><div class="swatch" style="background:var(--aa-color-accent)"></div><figcaption>Accent<br><code>--aa-color-accent</code></figcaption></figure>
+<figure><div class="swatch" style="background:var(--aa-color-surface-inverse)"></div><figcaption>Inverse surface<br><code>--aa-color-surface-inverse</code></figcaption></figure>
+</div><p>Use semantic pairs from <a href="../../tokens.css">tokens.css</a>; do not sample generated pixels to replace the tested color contract.</p></section>
+<section aria-labelledby="controls"><h2 id="controls">Controls and focus</h2><div class="row">
+<button class="aa-button aa-button--primary" id="example" type="button">Try this control</button>
+<a class="aa-button aa-button--secondary" href="../../BRAND_GUIDE.md">Brand guide</a>
+<button class="aa-button aa-button--primary" disabled>Unavailable</button>
+</div><p id="feedback" role="status">Use Tab to inspect keyboard focus. This example changes only the message here.</p></section>
+<section aria-labelledby="evidence"><h2 id="evidence">Evidence labels</h2><div class="row">
+<span class="aa-status aa-status--confirmed">Confirmed</span><span class="aa-status aa-status--source-derived">Source-derived</span><span class="aa-status aa-status--proposed">Proposed</span><span class="aa-status aa-status--inferred">Inferred</span><span class="aa-status aa-status--unverified">Unverified</span>
+</div><p>These are label examples, not claims about a run. Meaning must remain visible in text, independently of color.</p></section>
+<footer><p><a href="../../../art/root-generation-authorization.json">Artwork authorization</a> · <a href="../../provenance/root-export-receipts.json">Export receipts</a></p><p>Generated artwork is not gameplay evidence. Publication approval remains separate from this local specimen.</p></footer>
+</main>
+<script>
+document.getElementById('theme').addEventListener('click',function(){const dark=document.documentElement.dataset.theme!=='dark';document.documentElement.dataset.theme=dark?'dark':'light';this.setAttribute('aria-pressed',String(dark));this.textContent=dark?'Use light theme':'Use dark theme';});
+document.getElementById('example').addEventListener('click',function(){document.getElementById('feedback').textContent='Control activated. No account, network request, or publication action was involved.';});
+</script>
+</html>

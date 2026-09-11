@@ -1,0 +1,25 @@
+[
+  {
+    "asset_id": "GH-02-S",
+    "generation_id": "GH-02-S-generation-002",
+    "prompt_path": "brand/prompts/root/GH-02-S/generation-002.txt",
+    "prompt_sha256": "ddb5899e61422cf02117600663f8e25ffda82ff0df7e859dedbf2fdf61b40d5e",
+    "source_path": "brand/sources/generated/GH-02-S/generation-002.png",
+    "source_sha256": "b1f199aa55da55caefe4125a201cc01744535ff8ca316ec3e7b3113bf7fe9500",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [
+      {
+        "path": "brand/sources/generated/GH-02-S/generation-001.png",
+        "sha256": "8c78f697119e8440c97115725cb13847470a7a009787d9aec8072f057673d06f"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T01:17:59.654784+00:00"
+  }
+]

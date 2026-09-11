@@ -1,0 +1,141 @@
+{
+  "schema_version": "ai-ascension.subscription-http-review.v1",
+  "scope": "Synthetic loopback HTTP and TLS SMTP sink; no live host, real inbox delivery, or deployment proof",
+  "checks": [
+    {
+      "name": "GET subscription rejects method",
+      "pass": true
+    },
+    {
+      "name": "foreign origin denied",
+      "pass": true
+    },
+    {
+      "name": "malformed JSON rejected",
+      "pass": true
+    },
+    {
+      "name": "oversized request rejected",
+      "pass": true
+    },
+    {
+      "name": "missing consent rejected",
+      "pass": true
+    },
+    {
+      "name": "invalid address rejected",
+      "pass": true
+    },
+    {
+      "name": "honeypot has no storage or mail",
+      "pass": true
+    },
+    {
+      "name": "subscription gives generic no-store response",
+      "pass": true
+    },
+    {
+      "name": "TLS mail and operator notice received locally",
+      "pass": true
+    },
+    {
+      "name": "mail has no injected headers or recipients",
+      "pass": true
+    },
+    {
+      "name": "successful delivery remains pending until confirmation",
+      "pass": true
+    },
+    {
+      "name": "duplicate suppresses mail and matches generic response",
+      "pass": true
+    },
+    {
+      "name": "confirmation returns readable HTML without token",
+      "pass": true
+    },
+    {
+      "name": "confirmed state active",
+      "pass": true
+    },
+    {
+      "name": "confirmation replay rejected",
+      "pass": true
+    },
+    {
+      "name": "active duplicate suppresses mail",
+      "pass": true
+    },
+    {
+      "name": "unsubscribe HTML removes active state",
+      "pass": true
+    },
+    {
+      "name": "unsubscribe replay remains generic",
+      "pass": true
+    },
+    {
+      "name": "invalid HTML link has readable error",
+      "pass": true
+    },
+    {
+      "name": "mail failure gives non-enumerating response",
+      "pass": true
+    },
+    {
+      "name": "failed delivery is recorded without activation",
+      "pass": true
+    },
+    {
+      "name": "immediate failed-delivery retry is bounded",
+      "pass": true
+    },
+    {
+      "name": "sixth valid request is rate limited",
+      "pass": true
+    },
+    {
+      "name": "retry after cooldown delivers a rotated token",
+      "pass": true
+    },
+    {
+      "name": "raw confirmation token absent from persisted state",
+      "pass": true
+    },
+    {
+      "name": "expired confirmation cannot activate",
+      "pass": true
+    },
+    {
+      "name": "storage failure returns sanitized 503",
+      "pass": true
+    },
+    {
+      "name": "confirmation storage failure returns 503",
+      "pass": true
+    },
+    {
+      "name": "unsubscribe storage failure returns 503",
+      "pass": true
+    },
+    {
+      "name": "API source unchanged throughout HTTP review",
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "source_files_sha256": {
+    "api/_functions.php": "48d488016c5d1e3ffd4ec809600a2ceec874dc2f053abe8d9662be50bea73883",
+    "api/confirm.php": "b2f65dde5d996ca780a563ec1010e0fe78fe1480527fe48c0c9820a0b21a6c25",
+    "api/subscribe.php": "8f5cd32d7995775f06d6271e1ccc8c79765db31ad096fdea97e850ffd388dc14",
+    "api/unsubscribe.php": "71185406ce37e5bd39af96582222fe7dcba5a46557666eea8c7238ef2927d954"
+  },
+  "script_sha256": "522bcf0f1d979a5f12e31e1f98d7755645e51811631213c8fe4ccf0b32c33858",
+  "website_revision": "d3d09be",
+  "independent_reviewer": "root",
+  "notes": [
+    "Test clock advances are confined to disposable synthetic stored records.",
+    "The initial recovery probe used 61 seconds; it correctly failed under the real 300-second cooldown. The completed run used a 301-second synthetic offset.",
+    "No real recipient or SMTP service was used."
+  ]
+}

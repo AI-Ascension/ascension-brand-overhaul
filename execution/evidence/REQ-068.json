@@ -1,0 +1,92 @@
+{
+  "schema_version": "ai-ascension.requirement-evidence.v1",
+  "requirement_id": "REQ-068",
+  "binding_requirement": "Approved art is precomputed and content-addressed; page load, rebuild, and serving make no implicit Astra/image calls. New creative variants are explicit jobs.",
+  "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+  "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+  "status": "verified",
+  "reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+  "actual_review_records": [
+    "execution/reviews/asset-gate-001.json",
+    "docs/W07-L-W02-helper-rereview.md",
+    "execution/reviews/W07-private-delivery-scope-review.md",
+    "execution/reviews/W03-root-art-final-acceptance.json"
+  ],
+  "procedures": [
+    "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root . --ledger PRIVATE_NATIVE_LEDGER.json (expected blocked result)",
+    "python3 -m unittest tests.test_content_sync -v"
+  ],
+  "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+  "artifacts": [
+    {
+      "path": "brand/tokens.json",
+      "sha256": "222bf6fd2806532ebedb2f748a9ab89b870b4da6d3aa4bbf4e614dd72194e2d8",
+      "bytes": 13973
+    },
+    {
+      "path": "brand/tokens.css",
+      "sha256": "e180a8c3c816d3c225632ae5cf1fe71540322eef024ffa2933f44849b4d7eb9f",
+      "bytes": 15597
+    },
+    {
+      "path": "brand/asset-manifest.json",
+      "sha256": "eae9daf31d586692930a35ca7538ea08e0bef6bf979b1fe2b757fe7ad6f7bd4d",
+      "bytes": 324021
+    },
+    {
+      "path": "brand/ART_ACCESS.md",
+      "sha256": "fa9036575b883e5d36bd47670cf7a20c38dfba7a1760450dd8351264cf0d3ed6",
+      "bytes": 9496
+    },
+    {
+      "path": "art/asset-registry.json",
+      "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3",
+      "bytes": 183884
+    },
+    {
+      "path": "art/evidence-media-registry.json",
+      "sha256": "2c30ce4f41f063b3e592088ac82c1d4a7183d2aa91069b06db25956279924c2b",
+      "bytes": 4721
+    },
+    {
+      "path": "art/reference-registry.json",
+      "sha256": "262219e47db5c0a6615906dcafe0a5deade10a8da58d3d0e26bd4abeaabee316",
+      "bytes": 5369
+    },
+    {
+      "path": "art/generation-policy.json",
+      "sha256": "dabc08e924fd6c24c2277ca1ee8eea7c5ea041dc00367300f3c92e4b90f16f10",
+      "bytes": 3134
+    },
+    {
+      "path": "execution/art-model-attestation.json",
+      "sha256": "ee5fdfab2878ceb0e3e223c446a22b2d49d6512310f0448a1726e265a2a522d5",
+      "bytes": 44969
+    },
+    {
+      "path": "execution/reviews/asset-gate-001.json",
+      "sha256": "a81c8df685fef9eddd898b7fe2c650e4bc535d0cda6242d2a2c90945b5bf5442",
+      "bytes": 777
+    },
+    {
+      "path": "docs/W07-L-W02-helper-rereview.md",
+      "sha256": "7f938978b3c48d08a897df265215ed4cdf6a4cb6e776e15d83106ac51479ea0f",
+      "bytes": 5368
+    },
+    {
+      "path": "execution/reviews/W07-private-delivery-scope-review.md",
+      "sha256": "e74c5c794f8bc8a7a05ff689da982cc5c0504c56b2aedba09dc7b4f1585a498c",
+      "bytes": 6223
+    },
+    {
+      "path": "execution/reviews/W03-root-art-final-acceptance.json",
+      "sha256": "857ec9bb30e7fffba97fe5c6ce5caf8061abb9b0b85eac52bcecdf5bf04c0ed2",
+      "bytes": 16783
+    }
+  ],
+  "blocker": null,
+  "notes": "Offline publisher and served sources have no implicit model/image calls. Artifact acceptance binds precomputed digests; no approved new art currently exists.",
+  "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations."
+}

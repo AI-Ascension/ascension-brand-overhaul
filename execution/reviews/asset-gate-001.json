@@ -1,0 +1,17 @@
+{
+  "schema_version": "ai-ascension.art-gate-result.v1",
+  "command": "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root . --ledger PRIVATE_NATIVE_LEDGER.json",
+  "result": "blocked_expected_failure",
+  "observed_at": "2026-09-07T17:28:15.919366+00:00",
+  "asset_families": 72,
+  "required_exports": 115,
+  "recorded_exports": 0,
+  "diagnostic_lines": 72,
+  "diagnostics_sha256": "cc0b9c6fc1c25d59d7dbb0ed6778b4f3a4e1795e8b27f29d540d1245132b89a1",
+  "artifact_status": "No final prompts, generations, masters, or exports exist.",
+  "blockers": [
+    "Mandatory native depth3 Astra authorship absent",
+    "Exact gpt-image-2 route has no available selection or backend attestation"
+  ],
+  "authority": "No art policy exception requested or used."
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "Local website homepage artwork smoke only; no public release or full route approval.",
+  "results": [
+    {
+      "width": 390,
+      "theme": "light",
+      "overflow": false,
+      "heroBottom": 889,
+      "broken": [],
+      "primary": "run.html#linux-defeat-20260906",
+      "h1": [
+        "Ascension"
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "overflow": false,
+      "heroBottom": 889,
+      "broken": [],
+      "primary": "run.html#linux-defeat-20260906",
+      "h1": [
+        "Ascension"
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "overflow": false,
+      "heroBottom": 881,
+      "broken": [],
+      "primary": "run.html#linux-defeat-20260906",
+      "h1": [
+        "Ascension"
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "overflow": false,
+      "heroBottom": 881,
+      "broken": [],
+      "primary": "run.html#linux-defeat-20260906",
+      "h1": [
+        "Ascension"
+      ],
+      "errors": []
+    }
+  ]
+}

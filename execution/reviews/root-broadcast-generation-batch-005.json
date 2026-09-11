@@ -1,0 +1,19 @@
+[
+  {
+    "asset_id": "CAST-06",
+    "generation_id": "CAST-06-generation-001",
+    "prompt_path": "brand/prompts/root/CAST-06/generation-001.txt",
+    "prompt_sha256": "82aeee5fae3687da39b894f17e2f3c23ec5ef6d19f04d81e1c80529d78a92ff5",
+    "source_path": "brand/sources/generated/CAST-06/generation-001.png",
+    "source_sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-07T23:42:05.160222+00:00"
+  }
+]

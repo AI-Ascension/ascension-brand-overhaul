@@ -1,0 +1,26 @@
+[
+  {
+    "asset_id": "DOC-03",
+    "generation_id": "DOC-03-generation-001",
+    "prompt_path": "brand/prompts/root/DOC-03/generation-001.txt",
+    "prompt_sha256": "6981f1478e7626da09915cbe1c93c2fd4aee4809f787641f9098d3e9ca1f5c7b",
+    "source_path": "brand/sources/generated/DOC-03/generation-001.png",
+    "source_sha256": "94700818b4c6e5f6c94c2fa05ec61bb0f12fc135e997ab8c6d0c06b2663e1541",
+    "dimensions": [
+      1448,
+      1086
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [],
+    "factual_source_documents": [
+      {
+        "path": "migration/repository-plan.json",
+        "sha256": "735b578229627d2c10b0e419969a42c24c86550635a2e42117bfddaffff20591"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:31:22.467279+00:00"
+  }
+]

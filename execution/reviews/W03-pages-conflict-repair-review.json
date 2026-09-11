@@ -1,0 +1,231 @@
+{
+  "schema_version": "ai-ascension.w03-pages-conflict-repair-review.v1",
+  "observed_at": "2026-09-08T03:13:03Z",
+  "reviewer": "w03-pages-conflict-repair-independent-review",
+  "task": "Independent non-author review of the Pages PR #12 conflict repair",
+  "scope": "Reviewed merge commit e5153d6628843bbc734686ae926e143a1cf90526 against both parents, checked the historical/current evidence copy selection and conflict resolution, and reran the repository node suite plus both documented Rust recipe byte comparisons. Generated artwork and the brand-root-art source tree were excluded from this review.",
+  "working_tree": {
+    "path": "<workstation>/sts2-project/sts2-project-worktrees/pages-conflict-repair",
+    "branch": "repair/pr12-main-merge",
+    "commit": "e5153d6628843bbc734686ae926e143a1cf90526",
+    "dirty_before_review": false,
+    "worktree_clean_after_review": true,
+    "exclusive_write": "execution/reviews/W03-pages-conflict-repair-review.json",
+    "source_or_page_edits_by_reviewer": false,
+    "commit_or_push_by_reviewer": false,
+    "generated_art_excluded": true
+  },
+  "agent_receipt": {
+    "path": ".execution-private/pages-conflict-repair.json",
+    "bytes": 5150,
+    "sha256": "cfc54d6ab01e8812b4bfbdabe1783e22190bc48b2e7642637622b0b20c853844",
+    "status_before_review": "needs_independent_review",
+    "initial_command_note": "An initial recipe comparison used a repository-root-relative fixture path from inside each recipe directory and exited 2; after correcting to the recipe-local fixture.json path, both declared recipe checks passed."
+  },
+  "heads": {
+    "merge_commit": "e5153d6628843bbc734686ae926e143a1cf90526",
+    "merge_tree": "bae5e68f72a6cfd87c7f9c88cf11ee6d19c48694",
+    "first_parent_pr_head": "b50f7d725c8d6abb6306963d059fbb7fa067402c",
+    "second_parent_current_main": "79269774bd6d0b7dbf2792607b39da0764adfede",
+    "merge_base": "e81dd4e9ff2f8e5f8ffafc8b1a489d1e1cc7ef9f"
+  },
+  "remote_snapshot_from_agent_receipt": {
+    "pull_request": 12,
+    "state": "open",
+    "draft": true,
+    "mergeable_observed": false,
+    "mergeable_state_observed": "dirty",
+    "main_ref_observed": "79269774bd6d0b7dbf2792607b39da0764adfede",
+    "pull_request_head_ref_observed": "b50f7d725c8d6abb6306963d059fbb7fa067402c",
+    "pull_request_merge_ref_observed": "41b32e32b6045080d2e0b5d8197a1868e3438c4a",
+    "api_base_sha_observed": "e81dd4e9ff2f8e5f8ffafc8b1a489d1e1cc7ef9f",
+    "api_updated_at": "2026-09-07T17:23:29Z",
+    "head_rechecked_after_commit": true,
+    "head_unchanged_after_commit": true,
+    "fresh_remote_recheck_by_this_review": false
+  },
+  "merge_audit": {
+    "conflict_paths_from_agent_receipt": [
+      "index.html"
+    ],
+    "auto_merged_paths_from_agent_receipt": [
+      "README.md",
+      "evidence.html",
+      "repositories.html"
+    ],
+    "resolved_paths": [
+      "README.md",
+      "evidence.html",
+      "index.html",
+      "repositories.html"
+    ],
+    "first_parent_to_merge_diff": [
+      {
+        "path": "README.md",
+        "added": 3,
+        "deleted": 1
+      },
+      {
+        "path": "evidence.html",
+        "added": 8,
+        "deleted": 0
+      },
+      {
+        "path": "index.html",
+        "added": 1,
+        "deleted": 1
+      },
+      {
+        "path": "repositories.html",
+        "added": 1,
+        "deleted": 1
+      }
+    ],
+    "second_parent_to_merge_diff": [
+      {
+        "path": "README.md",
+        "added": 6,
+        "deleted": 0
+      },
+      {
+        "path": "index.html",
+        "added": 2,
+        "deleted": 2
+      }
+    ],
+    "changed_paths_union": [
+      "README.md",
+      "evidence.html",
+      "index.html",
+      "repositories.html"
+    ],
+    "no_generated_art_paths_changed": true,
+    "unmerged_index_entries": 0,
+    "conflict_markers_in_changed_files": {
+      "README.md": true,
+      "evidence.html": true,
+      "index.html": true,
+      "repositories.html": true
+    },
+    "first_parent_diff_tree_check": "pass",
+    "second_parent_diff_tree_check": "pass"
+  },
+  "file_hashes_at_merge_commit": {
+    "README.md": {
+      "path": "README.md",
+      "bytes": 3841,
+      "sha256": "546500a8e05559d2ad90250b38e4e5ec07ccdf7c3cad8c1199b6299c4faa2d4d"
+    },
+    "index.html": {
+      "path": "index.html",
+      "bytes": 33881,
+      "sha256": "1427fc30bfb28f0b3f8eab3f734dc1d1eccaaaf3f5ca88c548d3e1dacf9f2146"
+    },
+    "evidence.html": {
+      "path": "evidence.html",
+      "bytes": 45128,
+      "sha256": "2a82b5ca709dc0b25a39d230e490d92277d91659d85129122ed312d2cc5cd8cf"
+    },
+    "repositories.html": {
+      "path": "repositories.html",
+      "bytes": 30445,
+      "sha256": "e63bca81a7ecf0d1ff14bc616fb33e0136e44c0c8e33b55e5dbd4c5d06287375"
+    }
+  },
+  "historical_evidence_copy": {
+    "evidence_html": {
+      "equals_current_main_parent_blob": true,
+      "merge_sha256": "2a82b5ca709dc0b25a39d230e490d92277d91659d85129122ed312d2cc5cd8cf",
+      "merge_bytes": 45128,
+      "interpretation": "Current-main candidate evidence section and historical limits were preserved byte-for-byte."
+    },
+    "repositories_html": {
+      "equals_current_main_parent_blob": true,
+      "merge_sha256": "e63bca81a7ecf0d1ff14bc616fb33e0136e44c0c8e33b55e5dbd4c5d06287375",
+      "merge_bytes": 30445,
+      "interpretation": "Current-main reviewed scope and evidence limits were preserved byte-for-byte."
+    },
+    "readme_and_index_resolution": {
+      "readme_combines_pr_presentation_and_current_candidate_status": true,
+      "index_retains_pr_presentation_title_and_opener": true,
+      "index_includes_current_main_candidate_links_and_source_only_boundary": true,
+      "index_retains_unverified_model_played_and_native_limits": true
+    },
+    "semantic_copy_checks": {
+      "readme_historical_entry_copy": true,
+      "readme_current_candidate_review_status": true,
+      "readme_candidate_source_only_limit": true,
+      "index_presentation_title": true,
+      "index_presentation_opener": true,
+      "index_gateway_pr22": true,
+      "index_mcp_pr27": true,
+      "index_harness_pr36": true,
+      "index_unverified_boundary": true,
+      "evidence_current_candidate_section": true,
+      "evidence_source_only_boundary": true,
+      "repositories_current_scope_heading": true,
+      "repositories_source_only_boundary": true
+    }
+  },
+  "checks": {
+    "node_tests": {
+      "command": "node --test tests/*.test.cjs",
+      "working_directory": ".",
+      "exit_code": 0,
+      "result": "5 passed, 0 failed; embedded fixture, local links/fragments, and replay controls passed",
+      "node_version": "v24.15.0"
+    },
+    "gateway_lease_fence_recipe": {
+      "command": "cargo +1.97.1 run --locked --release | cmp - fixture.json",
+      "working_directory": "recipes/gateway-lease-fence",
+      "exit_code": 0,
+      "result": "generated output matched fixture.json byte-for-byte",
+      "fixture": {
+        "path": "recipes/gateway-lease-fence/fixture.json",
+        "bytes": 5461,
+        "sha256": "68f8180b2110b92bdcc283bcbbaf4461bda4ba66e9a7bce78151b6409dcdc769"
+      },
+      "rust_version": "rustc 1.97.1 (8bab26f4f 2026-07-14)"
+    },
+    "mcp_seam_recipe": {
+      "command": "cargo +1.97.1 run --locked --release | cmp - fixture.json",
+      "working_directory": "recipes/mcp-seam",
+      "exit_code": 0,
+      "result": "generated output matched fixture.json byte-for-byte",
+      "fixture": {
+        "path": "recipes/mcp-seam/fixture.json",
+        "bytes": 3670,
+        "sha256": "158b964ec7c3647e96283b660ed5d0e6285f7c94314d0d1911a0c37998ecc5cd"
+      },
+      "rust_version": "rustc 1.97.1 (8bab26f4f 2026-07-14)"
+    },
+    "merge_whitespace_and_conflict_checks": {
+      "commands": [
+        "git diff-tree --check HEAD^1 HEAD",
+        "git diff-tree --check HEAD^2 HEAD",
+        "git ls-files -u",
+        "conflict-marker scan of README.md, evidence.html, index.html, repositories.html"
+      ],
+      "first_parent_exit_code": 0,
+      "second_parent_exit_code": 0,
+      "unmerged_entries": 0,
+      "result": "pass"
+    },
+    "worktree_clean": {
+      "command": "git status --porcelain=v1",
+      "result": "pass: empty output"
+    }
+  },
+  "assessment": {
+    "result": "pass_local_merge_resolution_and_copy_integrity",
+    "ready_for_root_authorized_draft_push": true,
+    "push_performed": false,
+    "root_push_condition": "Before any push, root must freshly recheck the exact remote main ref and PR #12 head, confirm the branch still starts at b50f7d725c8d6abb6306963d059fbb7fa067402c, and then obtain/act under the existing root authorization.",
+    "publication_or_release_approval": false
+  },
+  "limitations": [
+    "This is an independent local merge and source/test review; no fresh remote API or git ls-remote check was performed here.",
+    "The agent receipt observed PR #12 open, draft, and conflicting before the local repair; root must refresh that state immediately before a push.",
+    "Node and Rust checks validate static site behavior and deterministic fixtures; they do not establish browser layout, screen-reader behavior, deployment, host execution, gameplay, or publication."
+  ]
+}

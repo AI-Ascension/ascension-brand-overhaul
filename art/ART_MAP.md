@@ -1,5 +1,8 @@
 # Complete visual-resource map — version 2.0.0
 
+> **Recorded user amendment (2026-09-07):** The user authorized root image generation: "you can of course generate them images instead." For current artwork, use `user_authorized_root_image_tool` as recorded in [art/root-generation-authorization.json](root-generation-authorization.json). The available tool does not attest its backend or the root model, so these remain unknown. This amends the artwork author/backend route only; independent review, original sources, mechanical-export limits, evidence boundaries, all 72 asset families and the remaining project requirements still apply. Historical Astra-specific wording below describes the original route.
+
+
 **All 72 new-artwork families:** actual Astra-authored prompts → gpt-image-2 outputs → reviewed mechanical exports. The three authentic-media families and five legacy/reference records are separately indexed below, not substitute art-generation methods. The original 80-family coverage is preserved across 16 surfaces.
 
 Every artwork row must record the actual author, model evidence, exact prompt hash, original image output/hash, export lineage, independent review, rights, and placement. Names and dimensions are production specifications, not completed assets. Read ASTRA_GPT_IMAGE_2_POLICY.md. PNG/WebP outputs replace prior editable-vector promises; functional HTML and captions remain ordinary content.

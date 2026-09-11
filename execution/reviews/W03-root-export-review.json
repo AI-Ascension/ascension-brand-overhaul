@@ -1,0 +1,506 @@
+{
+  "schema_version": "ai-ascension.root-export-review.v1",
+  "observed_at": "2026-09-07T21:03:16Z",
+  "reviewer": "w03-root-export-independent-review",
+  "task": "W03 bounded review of the current root-authored artwork export package",
+  "scope": "Independent review of the current root-route provenance records, 40 raster exports, mechanical export recipe and receipts, route-conditional asset schema, delivered asset manifest, specimen and asset-board pages, parent-generation reuse validation, and the press index publication gate. No source, master, export, manifest, registry, script, or page was edited by this reviewer.",
+  "working_tree": {
+    "git_head": "e3e12039a4ed4d390a1d0ff53cbaa500039c6e44",
+    "branch": "work/root-authored-art",
+    "dirty_before_review": true,
+    "exclusive_write": "execution/reviews/W03-root-export-review.json"
+  },
+  "source_pins": {
+    "authorization": {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de"
+    },
+    "policy": {
+      "path": "art/ASTRA_GPT_IMAGE_2_POLICY.md",
+      "sha256": "1138bb03d9e5ae84737ba41f00b33929de517dfd990c114859f5dd2b40e2d436"
+    },
+    "asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "8cc84b2dc6db68bc3fa1c5da797e774ccbf5c182d318ed86b77920e5b11992be",
+      "asset_count": 72,
+      "registry_status": "planned for all 72 rows by package design"
+    },
+    "asset_manifest": {
+      "path": "brand/asset-manifest.json",
+      "sha256": "17d1641e8291c5af7855c9e82a2bef940357e0c0760feaddb3ec801137f1b07e",
+      "asset_count": 72,
+      "status_counts": {
+        "in_progress": 26,
+        "blocked": 46
+      },
+      "declared_export_count": 42
+    },
+    "generation_index": {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "91200a1334a849ef3f54eb7471bb3a05d060c18fac84e198d1519bdfd4cb2fd3",
+      "record_count": 32
+    },
+    "generation_records": {
+      "path": "brand/provenance/root-generation-records.json",
+      "sha256": "a4b9cfe54b84361f68e7fd2b61342cab50c723b823909f8f31867f37c23bd9a1",
+      "record_count": 32,
+      "status_counts": {
+        "in_progress": 28,
+        "blocked": 4,
+        "verified": 0
+      }
+    },
+    "tool_observations": {
+      "path": "brand/provenance/root-tool-observations.json",
+      "sha256": "8cd540218de79cf701bc251f7c9dd99da9fbadad00059b8696bb01d2180114fe",
+      "observation_count": 32
+    },
+    "export_recipe": {
+      "path": "brand/provenance/root-export-recipe.json",
+      "sha256": "9729af2c899c9438ab3816b8e5e9f6ab628fd93878469920f0f022fe6188d168",
+      "raster_export_count": 40
+    },
+    "export_receipts": {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "f1e1ba935da37c2a1a7b7cda8a769d4a81d774d6ae4664ff5f656028a9cd564f",
+      "receipt_count": 40
+    },
+    "schema": {
+      "path": "schemas/asset.schema.json",
+      "sha256": "c57696c34b4bd0657fcc4cd256507b9eace4dd24ef2f5b9206e41333bcd900f1"
+    },
+    "scripts": {
+      "export_root_art.py": "9d53f22f00ee65a24bed6687a521477f5ccb11fe2cdd16f930aa8f42e5ee0ce2",
+      "build_press_index.py": "fb5cbac89dbd312b12085a5b2781563c6fcf218ecfecfcdb72af7e24eadec7e4",
+      "validate_assets.py": "350bc36cfc1f57f97534600903e7b7cda48411f2f0a89965f2280814155182f3"
+    }
+  },
+  "route_authorization": {
+    "route": "user_authorized_root_image_tool",
+    "tool": "image_gen__imagegen",
+    "author_role_id": "ROOT",
+    "author_agent_id": "root",
+    "author_parent_id": null,
+    "author_depth": 0,
+    "author_model": "unknown",
+    "image_model": "unknown",
+    "backend": "unspecified",
+    "native_agent_attestation": false,
+    "authorization_hash_verified": true,
+    "review_boundary": "The user authorization permits the registered root image-tool route. It does not attest a named model or backend, create a native child agent, clear rights, approve publication, or turn generated artwork into product or gameplay evidence."
+  },
+  "method": {
+    "mechanical_integrity": {
+      "procedure": "Parse the current index, generation records, tool observations, recipe, receipts, manifest, and authorization; hash every indexed source and prompt; decode every source and raster export with Pillow; check declared source bytes, dimensions, mode, alpha, crop bounds, crop aspect tolerance, output dimensions, output format, receipt hashes and bytes, manifest export hashes and lineage IDs, and exact inline generation-record bodies.",
+      "result": "pass",
+      "counts": {
+        "indexed_sources_checked": 32,
+        "prompts_checked": 32,
+        "generation_records_checked": 32,
+        "tool_observations_checked": 32,
+        "recipe_rows_checked": 40,
+        "receipt_rows_checked": 40,
+        "raster_outputs_checked": 40,
+        "manifest_assets_checked": 72,
+        "manifest_exports_checked": 42,
+        "failures": 0
+      }
+    },
+    "targeted_reproducibility": {
+      "procedure": "Copy the current exporter, its art_policy dependency and generation policy into a temporary root; filter a temporary recipe and index to the four changed WEB-01 and WEB-03 rows; replay the exporter; compare temporary receipts, output hashes, output bytes, and dimensions to the current worktree.",
+      "result": "pass",
+      "rows": 4,
+      "reproducibility_failures": 0,
+      "outputs": [
+        {
+          "path": "brand/assets/web/home-desktop.webp",
+          "sha256": "58b2dde67a37aa71292acc306ad43f9aeea80cd9ff557b275a631990fd3cad19",
+          "bytes": 111128,
+          "dimensions": "1600x1000",
+          "encoding": {
+            "lossless": false,
+            "quality": 86,
+            "method": 6
+          }
+        },
+        {
+          "path": "brand/assets/web/home-mobile.webp",
+          "sha256": "9f5c58f090c29eb235acc66fce55ae5888eaff99b16e5636e8e261e97c65efb9",
+          "bytes": 47376,
+          "dimensions": "800x1000",
+          "encoding": {
+            "lossless": false,
+            "quality": 86,
+            "method": 6
+          }
+        },
+        {
+          "path": "brand/assets/web/path-watch.png",
+          "sha256": "cbfdd6b79a0cfca7f43c741d5fb962a95476389cd9fa9deae388667d00b125fa",
+          "bytes": 266136,
+          "dimensions": "800x500"
+        },
+        {
+          "path": "brand/assets/web/path-build.png",
+          "sha256": "082a5514431c9c4f89c04517ee3f12c8050e61e3a82e8a58ec8c8934b87fab24",
+          "bytes": 256831,
+          "dimensions": "800x500"
+        }
+      ]
+    },
+    "exporter_negative_cases": {
+      "procedure": "Replay temporary recipes with parent traversal in source and output paths and with invalid WebP settings.",
+      "result": "pass",
+      "cases_rejected": [
+        "unsafe source path",
+        "unsafe output path",
+        "invalid WebP lossless/quality/method settings"
+      ],
+      "observed_error": "ValueError: Unsafe provenance path. / ValueError: Invalid WebP encoding settings"
+    },
+    "schema_route": {
+      "procedure": "Validate all 72 manifest entries with Draft202012Validator and the local art-generation schema reference; mutate a valid root entry to use the legacy origin, omit its root route while retaining root origin, and use the Astra route with root origin.",
+      "result": "pass",
+      "valid_entries": 72,
+      "schema_errors": 0,
+      "negative_cases_rejected": 3,
+      "legacy_origin_without_route_accepted_for_compatibility": true,
+      "locations": [
+        "schemas/asset.schema.json:231-255"
+      ]
+    },
+    "parent_lineage": {
+      "procedure": "Run the 42 art-policy, press-gate, and asset-status tests; additionally copy current BG-01 and WEB-01 entries into an isolated two-asset fixture, mark only that fixture verified, and run validate_assets.verify so WEB-01 must reuse the exact BG-01 generation record.",
+      "result": "pass",
+      "test_count": 42,
+      "materialized_BG01_WEB01_errors": 0,
+      "locations": [
+        "scripts/validate_assets.py:183-199",
+        "tests/test_art_policy.py:188-217"
+      ]
+    },
+    "visual_review": {
+      "procedure": "View four temporary 5-by-2 contact sheets covering all 40 raster exports, then inspect the current WEB-01 desktop/mobile WebPs, WEB-03 path-watch/path-build PNGs, ID-08 specimen PNG, and representative identity, background, poster, conceptual-map, and run-template exports with view_image.",
+      "result": "candidate_visual_pass_with_conditions",
+      "observations": [
+        "The current WEB-01 desktop and mobile crops retain a broad quiet left field and the abstract composition without visible lossy damage that affects the intended layout.",
+        "The current WEB-03 crops are clean 800x500 panels with complete icons, arrows, and lower labels. The source headings Watch and Build are outside the revised crops and must be supplied as adjacent visible and accessible surface text.",
+        "The identity, background, poster, conceptual-map, and blank run-template exports show no obvious clipping or accidental evidence claim in the sweep.",
+        "Generated report/poster and conceptual route artwork retain report-only, synthetic, or template boundaries where applicable; no generated visual was treated as gameplay evidence."
+      ],
+      "limits": [
+        "A contact-sheet sweep is a bounded visual check, not a complete legal, rights, accessibility, or consuming-surface approval.",
+        "The WEB-03 exports are conditional on adjacent Watch and Build headings and equivalent accessible text."
+      ]
+    },
+    "browser_review": {
+      "base_url": "http://127.0.0.1:8943",
+      "server_root": "brand-root-art worktree",
+      "viewports": [
+        390,
+        1440
+      ],
+      "routes": [
+        {
+          "path": "/brand/assets/identity/specimen.html",
+          "status": 200,
+          "overflow": false,
+          "images_checked": 1,
+          "broken_images": [],
+          "console_errors": [],
+          "request_failures": [],
+          "interaction": {
+            "theme_before": "light",
+            "theme_after": "dark",
+            "aria_pressed_after": "true",
+            "button_text_after": "Use light theme",
+            "example_feedback": "Control activated. No account, network request, or publication action was involved."
+          }
+        },
+        {
+          "path": "/art/asset-board.html",
+          "status": 200,
+          "overflow": false,
+          "images_checked": 24,
+          "broken_images": [],
+          "console_errors": [],
+          "request_failures": [],
+          "interaction": {
+            "initial_count": "80 of 80 resources shown",
+            "artwork_filter_count": "72 of 80 resources shown",
+            "search_ID_01_count": "8 of 80 resources shown",
+            "search_card_count": 8
+          }
+        },
+        {
+          "path": "/brand/assets/press/index.html",
+          "status": 200,
+          "overflow": false,
+          "images_checked": 0,
+          "broken_images": [],
+          "console_errors": [],
+          "request_failures": [],
+          "interaction": {
+            "no_download_text": true,
+            "download_links": 0
+          }
+        }
+      ],
+      "result": "pass at both 390px and 1440px"
+    },
+    "press_gate": {
+      "procedure": "Run the four press-index unit tests, build the current index in a temporary root from the current manifest and registry, compare its bytes to the current page, and inspect the served page at both review widths.",
+      "result": "pass_safe_empty_catalog",
+      "unit_tests": "4/4 pass",
+      "synthetic_gate_cases": [
+        "matching future-dated or revoked approval, wrong target, wrong digest, wrong operation, and wrong surface produce no download",
+        "changed export bytes raise a hash mismatch",
+        "a matching digest-bound press approval produces a local download link in the isolated fixture"
+      ],
+      "current_generated_approved_downloads": 0,
+      "current_page_sha256": "40f8f65e29b2d2b0f1318222f46327e68174571c5821ddcd6551451c7ca786bf",
+      "temporary_build_byte_identical": true
+    },
+    "expected_release_gate": {
+      "command": "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root .",
+      "exit_code": 1,
+      "result": "expected incomplete gate",
+      "not_verified_lines": 72,
+      "interpretation": "No asset is falsely marked verified. The command stops at the explicit in_progress or blocked status for every mandatory row before deeper release validation."
+    },
+    "package_gate": {
+      "command": "python3 scripts/validate_package.py",
+      "exit_code": 1,
+      "result": "current package inventory/checksum gate is not green",
+      "observed_errors": [
+        "Unlisted package files include brand/assets/press/index.html, brand/provenance/root-generation-records.json, brand/provenance/root-tool-observations.json, scripts/build_press_index.py, and tests/test_press_index.py.",
+        "CHECKSUMS/MANIFEST byte entries are stale for current root-art and related changed files."
+      ],
+      "interpretation": "This is a package-ledger integration blocker, separate from the 40-raster byte-integrity result."
+    },
+    "code_quality": {
+      "command": "python3 -m py_compile scripts/validate_assets.py scripts/export_root_art.py scripts/build_press_index.py tests/test_art_policy.py tests/test_press_index.py tests/test_asset_status_schema.py && git diff --check",
+      "result": "pass"
+    }
+  },
+  "coverage": {
+    "available_raster_exports": 40,
+    "available_raster_families": 24,
+    "functional_html_exports": [
+      "brand/assets/identity/specimen.html",
+      "brand/assets/press/index.html"
+    ],
+    "missing_required_exports": [
+      {
+        "asset_id": "RUN-01",
+        "path": "brand/assets/run/summary-template-square.png",
+        "reason": "No authored square reflow; a center crop would cut required labels and field structure."
+      },
+      {
+        "asset_id": "RUN-02",
+        "path": "brand/assets/run/decision-square.png",
+        "reason": "No authored square reflow; a center crop would cut required state, options, and analysis areas."
+      },
+      {
+        "asset_id": "RUN-03",
+        "path": "brand/assets/run/timeline-template.png",
+        "reason": "The available approximately 2:1 source cannot be mechanically cropped to the required approximately 3.2:1 layout while retaining all required content."
+      },
+      {
+        "asset_id": "MKT-09",
+        "path": "brand/assets/press/cover.png",
+        "reason": "The functional index exists, but the required authored press cover is absent."
+      }
+    ],
+    "available_export_lineage": "All 40 raster rows have current source hashes, receipt hashes, dimensions, crop boxes, allowed derivation operations, and manifest generation record IDs. WEB-01 correctly reuses BG-01-generation-001 as its declared parent generation."
+  },
+  "findings": [
+    {
+      "id": "W03-ROOT-EXPORT-001",
+      "severity": "blocking",
+      "status": "open",
+      "category": "provenance_contract",
+      "locations": [
+        "art/ASTRA_GPT_IMAGE_2_POLICY.md:39",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-tool-observations.json"
+      ],
+      "finding": "The policy requires exact root prompt bytes under brand/prompts/root/<asset-id>/<job-id>.md, but all 32 current root prompt paths use .txt, for example brand/prompts/root/WEB-03/generation-001.txt.",
+      "evidence": {
+        "root_index_prompt_paths": "32/32 .txt and 0/32 .md",
+        "prompt_hashes": "All 32 actual .txt bytes match the current index and records"
+      },
+      "impact": "The prompt contents and hashes are internally reproducible, but the canonical path contract is not met, so full policy-compliant provenance cannot be claimed.",
+      "required_follow_up": "Rename the prompt files to the required .md paths and update every index, observation, generation record, manifest reference, and hash, or make a deliberate policy amendment that explicitly accepts .txt and rerun the route checks. Keep the release gate closed until one choice is consistently recorded.",
+      "release_blocking": true
+    },
+    {
+      "id": "W03-ROOT-EXPORT-002",
+      "severity": "high",
+      "status": "open",
+      "category": "lineage_metadata",
+      "locations": [
+        "art/asset-registry.json:918-920",
+        "art/asset-registry.json",
+        "brand/prompts/root/",
+        "brand/provenance/root-generation-records.json"
+      ],
+      "finding": "All 72 root-route registry rows retain prompt_directory values under brand/prompts/astra/<asset-id>/ and generation_record_directory values under brand/provenance/generations/<asset-id>/, while current root files are under brand/prompts/root/ and the consolidated root-generation-records.json.",
+      "evidence": {
+        "root_registry_rows": 72,
+        "prompt_directory_mismatches": 72,
+        "generation_record_directory_mismatches": 72
+      },
+      "impact": "A consumer resolving lineage from the registry can look in paths that do not exist and miss the actual root records. The manifest and export receipts are internally bound, but the planning registry metadata remains misleading.",
+      "required_follow_up": "Update the root-route directory fields to the actual canonical layout, or add an explicit documented indirection and make every consumer follow it. Re-run package and provenance checks after the update.",
+      "release_blocking": true
+    },
+    {
+      "id": "W03-ROOT-EXPORT-003",
+      "severity": "blocking",
+      "status": "expected_open_gate",
+      "category": "asset_completion",
+      "locations": [
+        "brand/asset-manifest.json",
+        "brand/provenance/root-generation-records.json",
+        "scripts/validate_assets.py:119-247"
+      ],
+      "finding": "The available export package is mechanically complete for its 40 raster rows, but no generation record or asset is verified: the manifest has 26 in_progress and 46 blocked rows, while generation records have 28 in_progress, 4 blocked, and 0 verified records.",
+      "evidence": {
+        "validator": "exit 1 with 72 Not verified lines",
+        "rights": "Current generated-art rows remain rights_status unreviewed",
+        "review_refs": "Current manifest reviewer_reference values remain null and generation-record reviewer references remain pending"
+      },
+      "impact": "The current package cannot pass the release or rights gate and must not be presented as publication-ready. This is an accurately closed gate rather than a false validator pass.",
+      "required_follow_up": "Complete independent source/design review, rights review, and final generation-record status updates for the available families; obtain missing authored variants and preserve blocked status for unavailable work.",
+      "release_blocking": true
+    },
+    {
+      "id": "W03-ROOT-EXPORT-004",
+      "severity": "blocking",
+      "status": "open",
+      "category": "missing_required_exports",
+      "locations": [
+        "art/asset-registry.json:1236-1384",
+        "art/ART_MAP.md:121",
+        "brand/asset-manifest.json:3018-3053"
+      ],
+      "finding": "Four registry-required exports are absent: RUN-01 summary-template-square.png, RUN-02 decision-square.png, RUN-03 timeline-template.png, and MKT-09 press/cover.png.",
+      "evidence": {
+        "functional_press_index": "brand/assets/press/index.html exists and serves a safe empty catalog",
+        "unsafe_crop_rejected": "The reviewed RUN-01, RUN-02, and RUN-03 sources cannot preserve their required content in the missing target ratios"
+      },
+      "impact": "The affected asset families cannot be treated as complete. The missing press cover also means the press kit is not complete even though its functional index is usable.",
+      "required_follow_up": "Obtain the bounded root-route authored reflows when the authorized image route is available, then independently review and receipt each new export. Do not force-crop or draw substitutes.",
+      "release_blocking": true
+    },
+    {
+      "id": "W03-ROOT-EXPORT-005",
+      "severity": "medium",
+      "status": "open_hardening",
+      "category": "publication_boundary",
+      "locations": [
+        "scripts/build_press_index.py:21-55",
+        "tests/test_press_index.py:28-48"
+      ],
+      "finding": "The press builder checks verified status, rights status, local approval records, target, digest, scope, time bounds, and current export bytes, but it does not invoke the full asset validator or require a non-null generation_record_id and original-source lineage before emitting a download.",
+      "evidence": {
+        "isolated_positive_fixture": "The matching approval test intentionally has no generation record and still produces a local download link",
+        "current_state": "No current approval references exist, so the served catalog has zero download links"
+      },
+      "impact": "A future manifest entry marked verified with a valid publication approval but incomplete generation lineage could pass this narrower boundary. The current catalog is safe because no approval exists.",
+      "required_follow_up": "Add a full provenance/asset-validation check or an equivalent required verification receipt to the press build path, and retain a positive fixture that supplies complete lineage.",
+      "release_blocking": false
+    },
+    {
+      "id": "W03-ROOT-EXPORT-006",
+      "severity": "medium",
+      "status": "open",
+      "category": "status_ledger_drift",
+      "locations": [
+        "brand/ART_ACCESS.md:3-7",
+        "brand/ART_ACCESS.md:53",
+        "brand/asset-manifest.json:3018-3053"
+      ],
+      "finding": "The operator status page is older than the current root records and export updates: it is timestamped 20:35Z and describes MKT-09 as blocked with zero exports, while the current manifest is timestamped by its content as in_progress and includes the functional press index export.",
+      "impact": "Readers can get contradictory completion state from the human-readable status page and machine manifest. The discrepancy does not expose a download because the current press gate remains empty.",
+      "required_follow_up": "Regenerate or reconcile ART_ACCESS.md from the current manifest after the final artwork state is fixed, and make the source-of-truth relationship explicit.",
+      "release_blocking": false
+    },
+    {
+      "id": "W03-ROOT-EXPORT-007",
+      "severity": "medium",
+      "status": "open",
+      "category": "package_integration",
+      "locations": [
+        "scripts/validate_package.py",
+        "MANIFEST.json",
+        "CHECKSUMS.sha256"
+      ],
+      "finding": "The current package validator rejects the root-art additions as unlisted files and reports stale checksum or byte-size entries.",
+      "evidence": {
+        "command": "python3 scripts/validate_package.py",
+        "exit_code": 1,
+        "examples": [
+          "brand/assets/press/index.html",
+          "brand/provenance/root-generation-records.json",
+          "brand/provenance/root-tool-observations.json",
+          "scripts/build_press_index.py",
+          "tests/test_press_index.py"
+        ]
+      },
+      "impact": "The repository package cannot be called inventory-clean or release-ready, even though the scoped raster hashes and receipts pass.",
+      "required_follow_up": "Refresh MANIFEST.json and CHECKSUMS.sha256 from the final intended package contents, then rerun validate_package.py without weakening its unlisted-file or digest checks.",
+      "release_blocking": true
+    },
+    {
+      "id": "W03-ROOT-EXPORT-008",
+      "severity": "low",
+      "status": "conditional",
+      "category": "surface_semantics",
+      "locations": [
+        "brand/assets/web/path-watch.png",
+        "brand/assets/web/path-build.png",
+        "execution/reviews/W02-root-art-second-batch-review.json"
+      ],
+      "finding": "The revised WEB-03 export crops intentionally exclude the native Watch and Build headings.",
+      "impact": "The panels remain visually legible, but a consuming page must provide adjacent visible headings and equivalent accessible text to preserve the distinction and meaning.",
+      "required_follow_up": "Keep the adjacent headings in every consuming surface and include equivalent text in its accessible structure.",
+      "release_blocking": false
+    }
+  ],
+  "summary": {
+    "decision": "conditional_export_integrity_pass_release_blocked",
+    "mechanical_export_integrity": "40/40 receipt rows and raster outputs pass current source, crop, dimension, format, hash, byte, and manifest-lineage checks.",
+    "changed_export_reproducibility": "WEB-01 and WEB-03 changed rows replay 4/4 with zero mismatches.",
+    "visual_candidate_result": "The 40 available raster exports pass the bounded visual sweep, with WEB-03 requiring adjacent headings and all normal independent, rights, and publication gates still pending.",
+    "schema_and_tests": "All 72 manifest entries pass the route-conditional asset schema; 42 scoped tests pass.",
+    "publication_result": "The press index is available and safe with zero approved downloads; no public asset approval is recorded.",
+    "smallest_exact_release_blocker": "Final verification is unavailable while prompt-path policy and registry metadata are inconsistent, required exports are missing, all records remain unverified, and the package inventory/checksum gate is stale."
+  },
+  "native_collaboration_surface": {
+    "checked_expression": "ALL_TOOLS.filter(x => /spawn_agent|send_message|followup_task|wait_agent|list_agents|collaboration/i.test(x.name + ' ' + x.description))",
+    "result": "no callable matches",
+    "missing_controls": [
+      "collaboration.spawn_agent",
+      "collaboration.send_message",
+      "collaboration.wait_agent",
+      "followup_task",
+      "collaboration.list_agents"
+    ],
+    "available_review_context": [
+      "functions.exec",
+      "functions.wait",
+      "functions.request_user_input",
+      "functions.new_context"
+    ],
+    "interpretation": "This child session could not create or attest native nested delegation. The absence is a tool-surface limitation, not evidence of a different model or a completed native agent tree."
+  },
+  "limitations": [
+    "The root image-tool observations explicitly state that backend identity and provider-signed attestation are unavailable; this review preserves unknown or unspecified values.",
+    "The review does not grant rights, trademark clearance, publication approval, deployment authority, or permission to treat generated artwork as gameplay or product evidence.",
+    "The working tree contained unrelated dirty changes; this reviewer wrote only the authorized review receipt.",
+    "The package validator failure is reported as an integration gate and is not counted as a failure of the scoped 40-raster hash and crop checks."
+  ]
+}

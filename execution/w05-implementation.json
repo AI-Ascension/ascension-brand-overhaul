@@ -1,0 +1,120 @@
+{
+  "task_id": "W05-L-publication-measurement",
+  "role_id": "W05-L",
+  "actual_agent_id": "01a07a5f-43ad-7d93-b681-0716317e7d4a",
+  "parent_agent_id": "01a07a4b-38ad-7673-b653-dad49eed9dbd",
+  "depth": 1,
+  "objective": "Implement the offline approval-aware public-run publisher, versioned action/event/comparison contracts, capability adapter, privacy-minimal measurement checks, deterministic rendering, and an explicitly synthetic local vertical slice.",
+  "source_pins": [
+    "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+    "W01 integrated baseline f376e6914ce6a89804dc24d0f76801c699841b88 (adapter input only; no source facts copied)",
+    "orchestration/CONTRACT.md",
+    "specs/PUBLICATION.md",
+    "specs/MEASUREMENT.md",
+    "W01 working-tree envelope execution/capabilities.json (source IDs preserved; not copied)"
+  ],
+  "allowed_read_paths": [
+    "AGENTS.md",
+    "MASTER_PROMPT.md",
+    "orchestration/CONTRACT.md",
+    "orchestration/roles/W05-L.md",
+    "orchestration/roles/W05-C1.md",
+    "orchestration/roles/W05-C2.md",
+    "specs/PUBLICATION.md",
+    "specs/MEASUREMENT.md",
+    "schemas/public-run.schema.json",
+    "schemas/approval.schema.json",
+    "schemas/capability.schema.json",
+    "data/requirements.json",
+    "execution/capabilities.json (W01 working tree, if available)"
+  ],
+  "exclusive_write_paths": [
+    "publisher/",
+    "schemas/publication*.json",
+    "schemas/action*.json",
+    "schemas/event*.json",
+    "schemas/comparison*.json",
+    "tests/test_publication*.py",
+    "tests/test_measurement*.py",
+    "docs/PUBLISHING.md",
+    "docs/MEASUREMENT.md",
+    "analytics/",
+    "public/run-manifests/README.md",
+    "execution/w05-implementation.json",
+    "tests/fixtures/publication/"
+  ],
+  "forbidden_paths": [
+    "schemas/public-run.schema.json",
+    "execution/capabilities.json",
+    "execution/source-snapshot.json",
+    "scripts/runtime_snapshot.py",
+    "scripts/sync_content.py",
+    "scripts/build_delivery.py",
+    "art/",
+    "brand/",
+    "website implementation",
+    "existing runtime repositories"
+  ],
+  "dependencies": [
+    "W01 source baseline is an integration input; no current product/source claims are created by this task.",
+    "Real public export requires a source-owner digest and a separate authority record.",
+    "Native descendant/spawn capability is unavailable in this session."
+  ],
+  "outputs": [
+    "publisher/",
+    "schemas/publication-manifest.schema.json",
+    "schemas/publication-approval.schema.json",
+    "schemas/action-record.schema.json",
+    "schemas/action-timeline.schema.json",
+    "schemas/event.schema.json",
+    "schemas/event-contract.schema.json",
+    "schemas/comparison.schema.json",
+    "analytics/event-contract.json",
+    "analytics/dashboard-spec.md",
+    "docs/PUBLISHING.md",
+    "docs/MEASUREMENT.md",
+    "tests/test_publication.py",
+    "tests/test_measurement.py",
+    "tests/fixtures/publication/run.synthetic.json",
+    "tests/fixtures/publication/events.synthetic.json",
+    "tests/fixtures/publication/capabilities.synthetic.json",
+    "tests/fixtures/publication/comparison.synthetic.json",
+    "public/run-manifests/README.md"
+  ],
+  "acceptance_criteria": [
+    "The original public-run-v1 schema remains unchanged.",
+    "Strict schemas reject unknown fields and the approval contract has no user-controlled approval boolean.",
+    "Production publication fails closed for missing/stale/revoked/mismatched approvals, private/synthetic/forced fixtures, missing rights, unsafe URLs, and incomplete artifact lineage.",
+    "Digest changes invalidate prior approval before output is written.",
+    "Rendering is deterministic, escapes record text, keeps report/video/replay states distinct, and performs no network/provider/runtime calls.",
+    "Events allow only documented privacy-minimal fields, enforce consent and server confirmation, and represent absent metrics as no_observations.",
+    "W01 ai-ascension.capabilities.v1 envelopes are accepted without renaming exact capability IDs or inventing source claims.",
+    "Comparison records declare matching context and cannot enable intelligence ranking.",
+    "Native collaboration/spawn declarations are unavailable; no hidden client or alternate ancestry was used, and native orchestration remains unverified for root review."
+  ],
+  "test_commands_or_procedures": [
+    "python3 -m py_compile publisher/*.py",
+    "python3 -m unittest tests/test_publication.py tests/test_measurement.py -v",
+    "python3 -m publisher verify tests/fixtures/publication/run.synthetic.json",
+    "python3 -m publisher render tests/fixtures/publication/run.synthetic.json <separate-local-output>",
+    "Inspect git diff --check and verify source fixture bytes are unchanged after render."
+  ],
+  "evidence_destination": "execution/w05-implementation.json",
+  "requested_model": "gpt-5.6-luna",
+  "requested_effort": "max",
+  "resource_budget": {
+    "collaboration_tool_available": false,
+    "native_descendant_spawn_attempted": false,
+    "schema_library": "jsonschema 4.26.0",
+    "python": "3.12.3",
+    "local_test_count": 26,
+    "local_test_result": "pass: root rerun, 18 publication and 8 measurement tests",
+    "w01_adapter_check": "17 records accepted from ai-ascension.capabilities.v1; exact CAP-* IDs and claim_policy/review_boundary retained as metadata; independent review status remains blocked_native_delegation_unavailable",
+    "independent_native_review": "unavailable; root/W07 review required"
+  },
+  "status": "implemented",
+  "root_integration_repairs": [
+    "Reject symlink output before resolving path",
+    "Bound input JSON to 4 MiB and reject duplicate object keys"
+  ]
+}

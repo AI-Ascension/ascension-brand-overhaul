@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-ascension.example/schemas/event-v1.json",
+  "title": "Privacy-minimal public engagement event",
+  "description": "Only coarse, consent-aware event metadata is accepted. Public content IDs are not private runtime IDs.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "event-v1" },
+    "event_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,119}$" },
+    "event_name": {
+      "enum": [
+        "run_page_view", "media_start", "meaningful_watch_or_read", "decision_presented", "decision_guess",
+        "decision_reveal", "evidence_open", "replay_download", "build_start", "quickstart_success",
+        "docs_error", "subscribe_confirmed", "unsubscribe_completed"
+      ]
+    },
+    "surface": { "enum": ["watch", "run", "evidence", "build", "docs", "subscription"] },
+    "occurred_at": { "type": "string", "format": "date-time" },
+    "timestamp_precision": { "enum": ["day", "minute"] },
+    "content_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,119}$" },
+    "campaign_tag": {
+      "anyOf": [{ "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,79}$" }, { "type": "null" }]
+    },
+    "consent_state": { "enum": ["not_collected", "granted", "denied"] },
+    "coarse_cohort": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": { "enum": ["none", "anonymous", "consented_cohort"] },
+            "value": { "anyOf": [{ "type": "string", "pattern": "^[a-z0-9-]{1,40}$" }, { "type": "null" }] }
+          },
+          "required": ["kind", "value"]
+        },
+        { "type": "null" }
+      ]
+    },
+    "server_observation": { "enum": ["none", "confirmed"] },
+    "environment": { "enum": ["production", "synthetic"] },
+    "properties": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "media_kind": { "enum": ["video", "audio", "report", "replay", "none"] },
+        "decision_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{2,119}$" },
+        "option_position": { "type": "integer", "minimum": 0, "maximum": 99 },
+        "result_state": { "enum": ["hidden", "revealed", "available", "unavailable", "success", "failure"] },
+        "error_class": { "enum": ["validation", "content_unavailable", "server", "client", "unknown"] },
+        "workflow": { "enum": ["quickstart", "install", "contribution", "docs"] },
+        "status": { "enum": ["started", "completed", "failed"] }
+      }
+    }
+  },
+  "required": [
+    "schema_version", "event_id", "event_name", "surface", "occurred_at", "timestamp_precision",
+    "content_id", "campaign_tag", "consent_state", "coarse_cohort", "server_observation", "environment", "properties"
+  ]
+}

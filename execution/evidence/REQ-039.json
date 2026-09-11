@@ -1,0 +1,127 @@
+{
+  "schema_version": "ai-ascension.requirement-evidence.v1",
+  "requirement_id": "REQ-039",
+  "binding_requirement": "Reviewer independence and a genuine depth-three chain are evidenced.",
+  "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+  "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+  "status": "blocked",
+  "reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+  "actual_review_records": [
+    "execution/reviews/W07-final-acceptance-source-review.md",
+    "execution/reviews/W03-handoff-final-rereview.md",
+    "execution/reviews/brand-remote-checks-001.json",
+    "execution/reviews/final-local-checks.json",
+    "execution/reviews/native-ledger-check-001.json",
+    "execution/reviews/W07-private-delivery-scope-review.md",
+    "execution/reviews/companion-remote-checks-001.json",
+    "execution/reviews/root-native-capability-recheck.json"
+  ],
+  "procedures": [
+    "python3 scripts/validate_package.py (pass at5d1c26ecee9ce753eae89c525c4a8764d29a18e5)",
+    "python3 -m unittest discover -s tests -v (195pass at same exact archive)",
+    "python3 scripts/agent_ledger.py PRIVATE_NATIVE_LEDGER.json (record consistency only; depth3false)"
+  ],
+  "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+  "artifacts": [
+    {
+      "path": "scripts/render_handoff.py",
+      "sha256": "f4d77c03a5a31836489f42f9379e8e279555de34d238215bbc2a1bcb229c2386",
+      "bytes": 9870
+    },
+    {
+      "path": "tests/test_handoff.py",
+      "sha256": "402b95b2d8c20cd5a29e0858a9145a5d79adf3bc7588e78a13709c1e8d7771cf",
+      "bytes": 6944
+    },
+    {
+      "path": "execution/release-status.json",
+      "sha256": "8a474668741c40dd711a2d5b988193066b4e85ddc8540b6b81f2f5f6eaada431",
+      "bytes": 9486
+    },
+    {
+      "path": "execution/findings.json",
+      "sha256": "d05fe37febdbd7ffdae778e9178658c1156e6abef22ffe16780b6fc13b6c3fee",
+      "bytes": 28635
+    },
+    {
+      "path": "execution/QUALITY_REPORT.md",
+      "sha256": "d59ae40192582bde54549ce30175d4bd1ab7ec57ef87e01f6127e385516b634d",
+      "bytes": 4040
+    },
+    {
+      "path": "execution/ROOT_STATUS.md",
+      "sha256": "60159cd943311d51c6fc4f37b4cc9bda332901c282ea0d1fee3efffd6dfc60cf",
+      "bytes": 3821
+    },
+    {
+      "path": "execution/runtime-observation.json",
+      "sha256": "3d4b7317d96adf1dbe888353d22491c2db3abedd959e276a1b027e7957f57368",
+      "bytes": 2960
+    },
+    {
+      "path": "execution/operations.json",
+      "sha256": "b208ef90eb7a2487c1c85925dcb7e60dbfd9031121b178ac60b4441cb8532c0c",
+      "bytes": 10484
+    },
+    {
+      "path": "delivery/MANIFEST.json",
+      "sha256": "25b7b81d30dbdd16247a018025a3d6b4c3795e0e642935480e761939f9f13ab0",
+      "bytes": 6980
+    },
+    {
+      "path": "delivery/RUNBOOK.md",
+      "sha256": "0129dd653d730b113bff48528e10ba75d8d7057038cb135e2bc28c3a19b4144f",
+      "bytes": 7958
+    },
+    {
+      "path": "delivery/PRIVACY_SCOPE.md",
+      "sha256": "e505612a33a94667a9cb4ffc602ff7403d1bc03dec14701035602013fc81579a",
+      "bytes": 1524
+    },
+    {
+      "path": "execution/reviews/W07-final-acceptance-source-review.md",
+      "sha256": "31a6a4c9941f72fb69ed3d04ccb1f678bdb72f8511658e329cca295ab1391e9c",
+      "bytes": 8769
+    },
+    {
+      "path": "execution/reviews/W03-handoff-final-rereview.md",
+      "sha256": "5a74da40d62d7304adfef092b2d304b1cf82c7c25be1b684c56993257b9878a9",
+      "bytes": 2682
+    },
+    {
+      "path": "execution/reviews/brand-remote-checks-001.json",
+      "sha256": "ec39e8f1c0538defa4c3d8e67355c95927da334c515529ec357c6622b0a7cdaf",
+      "bytes": 1293
+    },
+    {
+      "path": "execution/reviews/final-local-checks.json",
+      "sha256": "7b3c5dd2dd1360f6da21131da8c22b836e443cf9c1b5571a19d60f486e2be6a6",
+      "bytes": 1279
+    },
+    {
+      "path": "execution/reviews/native-ledger-check-001.json",
+      "sha256": "9660b7ba70d4b8a15f051022a0bb1c8faa195de422a27a3c1e61f4e8c6afdb8d",
+      "bytes": 676
+    },
+    {
+      "path": "execution/reviews/W07-private-delivery-scope-review.md",
+      "sha256": "e74c5c794f8bc8a7a05ff689da982cc5c0504c56b2aedba09dc7b4f1585a498c",
+      "bytes": 6223
+    },
+    {
+      "path": "execution/reviews/companion-remote-checks-001.json",
+      "sha256": "853a25815ed4758d622902f5f9c06c657aaac3d95355a2151052b672ee924cde",
+      "bytes": 10141
+    },
+    {
+      "path": "execution/reviews/root-native-capability-recheck.json",
+      "sha256": "69da2001f9ff2870835845ec94d5d462a5bc610b36c74f763455ab866c05a709",
+      "bytes": 816
+    }
+  ],
+  "blocker": "No genuine root-to-lead-to-coordinator-to-leaf chain exists; independent source reviews do not replace requested native ancestry.",
+  "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
+  "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations."
+}

@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-09-07T05:50:58.566368+00:00",
+  "php": {
+    "version": "8.3.6",
+    "source": "Ubuntu24.04 apt signed package metadata, extracted locally without system install",
+    "wrapper": "${ASCENSION_TOOL_BIN}/php",
+    "packages": {
+      "libonig5_6.9.9-1build1_amd64.deb": "605f42287d2bcb6c84f5a02377c7cd777090c5e857259a4030a571989f19dde2",
+      "libzip4t64_1.7.3-1.1ubuntu2_amd64.deb": "d7484efd8d9968ecab9e488fde59980fc633e0eb2bbf7f1ea8e33bf71c9ff1fb",
+      "php8.3-cli_8.3.6-0ubuntu0.24.04.10_amd64.deb": "94a357cab0065add7755696ebe3b586138df0fc29bc1fc9d52afde62fed6ef4e",
+      "php8.3-common_8.3.6-0ubuntu0.24.04.10_amd64.deb": "ca45be05e500aa1197f64805aa53c4ee06de3ff7713db20a0ef1117318267939",
+      "php8.3-curl_8.3.6-0ubuntu0.24.04.10_amd64.deb": "4a9f96d7fbbba837a1da05ff3da4986eebc5072cdfee0594614b9f14df3ed3b1",
+      "php8.3-mbstring_8.3.6-0ubuntu0.24.04.10_amd64.deb": "39434da47528c89f0c34280fb65ea00f454b418be1c07fa02a6c4402bf1712ab",
+      "php8.3-xml_8.3.6-0ubuntu0.24.04.10_amd64.deb": "0c410f79503e8ee3cbb255787678d6917e4b22fcd96a0a0eb76e24c92ac33fc3",
+      "php8.3-zip_8.3.6-0ubuntu0.24.04.10_amd64.deb": "6d85e059e537c355e640fbe17f538653786a78e506ac39344f948b902c01623a"
+    }
+  },
+  "composer": {
+    "version": "2.10.3",
+    "installer_sha384": "c8b085408188070d5f52bcfe4ecfbee5f727afa458b2573b8eaaf77b3419b0bf2768dc67c86944da1544f06fa544fd47",
+    "published_installer_signature_matched": true,
+    "signature_source": "https://composer.github.io/installer.sig",
+    "installer_source": "https://getcomposer.org/installer",
+    "phar_sha256": "7a2d379d5b8ffdaa028580ef26494c36d2feef4b178d3dd1473a4dbc5e17c8d6"
+  },
+  "website_baseline_tests": {
+    "source_revision": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+    "command": "PATH=${ASCENSION_TOOL_BIN}:$PATH php vendor/bin/phpunit",
+    "phpunit": "11.5.55",
+    "result": "pass",
+    "tests": 16,
+    "assertions": 26,
+    "composer_lock_unchanged": true,
+    "mail": "existing suite uses mock mailer; no production mail"
+  },
+  "limits": [
+    "Local PHP8.3.6 differs from current served host8.3.33.",
+    "Local tests are not production subscription/deployment verification.",
+    "No system PHP/Composer install or global configuration change was made."
+  ]
+}

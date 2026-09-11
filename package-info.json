@@ -1,18 +1,18 @@
 {
-  "package": "AI Ascension — Complete Brand Overhaul Execution Package",
+  "package": "AI Ascension \u2014 Complete Brand Overhaul Execution Package",
   "version": "2.0.0",
   "brief_date": "2026-09-06",
   "brief_timezone": "America/New_York",
   "target_repository": "AI-Ascension/ascension-brand-overhaul",
-  "delivery_kind": "implementation meta-prompts and specifications, not an implemented rebrand",
+  "delivery_kind": "locally implemented and reviewed engineering/text handoff; mandatory artwork and orchestration incomplete",
   "root_depth": 0,
   "max_descendant_depth": 3,
   "requested_descendant_model": "role_specific: Luna/max except designated Astra art authors",
   "requested_reasoning_effort": "max",
-  "global_open_descendant_budget": 12,
+  "global_open_descendant_budget": 250,
   "runtime_verified": false,
   "art_generated": false,
-  "github_mutations_performed": false,
+  "github_mutations_performed": true,
   "revision_date": "2026-09-07",
   "default_descendant_model": "gpt-5.6-luna",
   "art_prompt_author_model": "gpt-6-astra",
@@ -23,5 +23,7 @@
   ],
   "image_generation_model": "gpt-image-2",
   "image_generation_model_verified": false,
-  "art_prompt_authorship_verified": false
+  "art_prompt_authorship_verified": false,
+  "archive_classification": "private_audit_source; no public-export or release authorization",
+  "runtime_verification_scope": "Installed-client metadata observed for root and seven depth-1 leads only; requested depth-2/depth-3 and provider execution not verified."
 }

@@ -1,0 +1,1353 @@
+{
+  "observedAt": "2026-09-07T21:54:08.163Z",
+  "kind": "focused_legacy_shell_followup_browser_review",
+  "sourceWorktree": "brand-website-art",
+  "sourcePath": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-website-art",
+  "sourceCommit": "56e532b21922f39480cd15dcbb465676770408f5",
+  "browser": {
+    "runner": "Playwright Chromium",
+    "version": "153.0.8010.12",
+    "baseUrl": "http://127.0.0.1:8944/",
+    "reducedMotion": true
+  },
+  "staticScan": {
+    "htmlFiles": 12,
+    "htmlRows": [
+      {
+        "file": "404.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "build.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "contributors.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "decision.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "docs.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "home.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "index.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "press.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "privacy.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "run.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "runs.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      },
+      {
+        "file": "watch.html",
+        "mark": true,
+        "favicon": true,
+        "appleTouch": true,
+        "header": true,
+        "menu": true,
+        "theme": true,
+        "footer": true,
+        "script": true
+      }
+    ],
+    "fallbackShtml": {
+      "file": "404.shtml",
+      "mark": true,
+      "favicon": true,
+      "appleTouch": true,
+      "header": true,
+      "menu": true,
+      "theme": true,
+      "footer": true,
+      "script": true
+    },
+    "homeRedirectContract": {
+      "refreshMeta": true,
+      "refreshToIndex": true,
+      "canonical": true
+    },
+    "missingShellFields": [],
+    "pass": true
+  },
+  "results": [
+    {
+      "route": "/404.shtml",
+      "width": 390,
+      "theme": "light",
+      "responseStatus": 200,
+      "initial": {
+        "url": "http://127.0.0.1:8944/404.shtml",
+        "h1": "That page is not on the map.",
+        "status": "404 / unavailable",
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "light",
+        "dataTheme": null,
+        "ariaPressed": "false",
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/404.png",
+            "complete": true,
+            "naturalWidth": 800,
+            "naturalHeight": 600,
+            "className": "empty-state-art"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          },
+          {
+            "selector": "img.empty-state-art",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "themeCheck": {
+        "before": {
+          "effective": "light",
+          "dataTheme": null,
+          "label": "Dark",
+          "background": "rgb(244, 238, 226)"
+        },
+        "after": {
+          "effective": "dark",
+          "dataTheme": "dark",
+          "ariaPressed": "true",
+          "label": "Light",
+          "background": "rgb(11, 10, 8)"
+        },
+        "pass": true
+      },
+      "menuCheck": {
+        "applicable": true,
+        "visible": true,
+        "open": {
+          "expanded": "true",
+          "open": true,
+          "locked": true
+        },
+        "closed": {
+          "expanded": "false",
+          "open": false,
+          "locked": false,
+          "focusRestored": true
+        },
+        "pass": true
+      },
+      "focusRestored": true,
+      "after": {
+        "url": "http://127.0.0.1:8944/404.shtml",
+        "h1": "That page is not on the map.",
+        "status": "404 / unavailable",
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "dark",
+        "dataTheme": "dark",
+        "ariaPressed": "true",
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/404.png",
+            "complete": true,
+            "naturalWidth": 800,
+            "naturalHeight": 600,
+            "className": "empty-state-art"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          },
+          {
+            "selector": "img.empty-state-art",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "diagnostics": {
+        "requestFailures": [],
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "screenshot": {
+        "file": ".execution-private/root-art-browser/followup/not-found-shtml-followup-390-light.png",
+        "sha256": "ab5cb959f39e032a4eb0e8199b52ed33e0f3ff476a16e1c14e92672df32b08c8"
+      },
+      "pass": true
+    },
+    {
+      "route": "/404.shtml",
+      "width": 1440,
+      "theme": "light",
+      "responseStatus": 200,
+      "initial": {
+        "url": "http://127.0.0.1:8944/404.shtml",
+        "h1": "That page is not on the map.",
+        "status": "404 / unavailable",
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "light",
+        "dataTheme": null,
+        "ariaPressed": "false",
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/404.png",
+            "complete": true,
+            "naturalWidth": 800,
+            "naturalHeight": 600,
+            "className": "empty-state-art"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          },
+          {
+            "selector": "img.empty-state-art",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "themeCheck": {
+        "before": {
+          "effective": "light",
+          "dataTheme": null,
+          "label": "Dark",
+          "background": "rgb(244, 238, 226)"
+        },
+        "after": {
+          "effective": "dark",
+          "dataTheme": "dark",
+          "ariaPressed": "true",
+          "label": "Light",
+          "background": "rgb(11, 10, 8)"
+        },
+        "pass": true
+      },
+      "menuCheck": {
+        "applicable": false,
+        "visible": false,
+        "expanded": "false",
+        "open": false,
+        "pass": true
+      },
+      "focusRestored": true,
+      "after": {
+        "url": "http://127.0.0.1:8944/404.shtml",
+        "h1": "That page is not on the map.",
+        "status": "404 / unavailable",
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "dark",
+        "dataTheme": "dark",
+        "ariaPressed": "true",
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/404.png",
+            "complete": true,
+            "naturalWidth": 800,
+            "naturalHeight": 600,
+            "className": "empty-state-art"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          },
+          {
+            "selector": "img.empty-state-art",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "diagnostics": {
+        "requestFailures": [],
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "screenshot": {
+        "file": ".execution-private/root-art-browser/followup/not-found-shtml-followup-1440-light.png",
+        "sha256": "af407982dc6b4ef72fe95440cc20c3dfea9b62356d133af9a61547a1a9a6fded"
+      },
+      "pass": true
+    },
+    {
+      "route": "/404.shtml",
+      "width": 390,
+      "theme": "dark",
+      "responseStatus": 200,
+      "initial": {
+        "url": "http://127.0.0.1:8944/404.shtml",
+        "h1": "That page is not on the map.",
+        "status": "404 / unavailable",
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "dark",
+        "dataTheme": null,
+        "ariaPressed": "true",
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/404.png",
+            "complete": true,
+            "naturalWidth": 800,
+            "naturalHeight": 600,
+            "className": "empty-state-art"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          },
+          {
+            "selector": "img.empty-state-art",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "themeCheck": {
+        "before": {
+          "effective": "dark",
+          "dataTheme": null,
+          "label": "Light",
+          "background": "rgb(11, 10, 8)"
+        },
+        "after": {
+          "effective": "light",
+          "dataTheme": "light",
+          "ariaPressed": "false",
+          "label": "Dark",
+          "background": "rgb(244, 238, 226)"
+        },
+        "pass": true
+      },
+      "menuCheck": {
+        "applicable": true,
+        "visible": true,
+        "open": {
+          "expanded": "true",
+          "open": true,
+          "locked": true
+        },
+        "closed": {
+          "expanded": "false",
+          "open": false,
+          "locked": false,
+          "focusRestored": true
+        },
+        "pass": true
+      },
+      "focusRestored": true,
+      "after": {
+        "url": "http://127.0.0.1:8944/404.shtml",
+        "h1": "That page is not on the map.",
+        "status": "404 / unavailable",
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "light",
+        "dataTheme": "light",
+        "ariaPressed": "false",
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/404.png",
+            "complete": true,
+            "naturalWidth": 800,
+            "naturalHeight": 600,
+            "className": "empty-state-art"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          },
+          {
+            "selector": "img.empty-state-art",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "diagnostics": {
+        "requestFailures": [],
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "screenshot": {
+        "file": ".execution-private/root-art-browser/followup/not-found-shtml-followup-390-dark.png",
+        "sha256": "1d1f353c52c3b58a479df17d41da293baeeba59e529bce65d134ff2bfdb2d60b"
+      },
+      "pass": true
+    },
+    {
+      "route": "/404.shtml",
+      "width": 1440,
+      "theme": "dark",
+      "responseStatus": 200,
+      "initial": {
+        "url": "http://127.0.0.1:8944/404.shtml",
+        "h1": "That page is not on the map.",
+        "status": "404 / unavailable",
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "dark",
+        "dataTheme": null,
+        "ariaPressed": "true",
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/404.png",
+            "complete": true,
+            "naturalWidth": 800,
+            "naturalHeight": 600,
+            "className": "empty-state-art"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          },
+          {
+            "selector": "img.empty-state-art",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "themeCheck": {
+        "before": {
+          "effective": "dark",
+          "dataTheme": null,
+          "label": "Light",
+          "background": "rgb(11, 10, 8)"
+        },
+        "after": {
+          "effective": "light",
+          "dataTheme": "light",
+          "ariaPressed": "false",
+          "label": "Dark",
+          "background": "rgb(244, 238, 226)"
+        },
+        "pass": true
+      },
+      "menuCheck": {
+        "applicable": false,
+        "visible": false,
+        "expanded": "false",
+        "open": false,
+        "pass": true
+      },
+      "focusRestored": true,
+      "after": {
+        "url": "http://127.0.0.1:8944/404.shtml",
+        "h1": "That page is not on the map.",
+        "status": "404 / unavailable",
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "light",
+        "dataTheme": "light",
+        "ariaPressed": "false",
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/404.png",
+            "complete": true,
+            "naturalWidth": 800,
+            "naturalHeight": 600,
+            "className": "empty-state-art"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          },
+          {
+            "selector": "img.empty-state-art",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "diagnostics": {
+        "requestFailures": [],
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "screenshot": {
+        "file": ".execution-private/root-art-browser/followup/not-found-shtml-followup-1440-dark.png",
+        "sha256": "a2400c2e388f0741bf69db2c50355c79c6f62ebe80ed3f36d82235f1f7841ca2"
+      },
+      "pass": true
+    },
+    {
+      "route": "/home.html",
+      "mode": "native_meta_refresh",
+      "responseStatus": 200,
+      "initialResponseUrl": "http://127.0.0.1:8944/home.html",
+      "finalUrl": "http://127.0.0.1:8944/index.html",
+      "finalPath": "/index.html",
+      "redirectedToCanonicalIndex": true,
+      "metrics": {
+        "url": "http://127.0.0.1:8944/index.html",
+        "h1": "Ascension",
+        "status": "Report only",
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "index.html#main",
+        "effectiveTheme": "light",
+        "dataTheme": null,
+        "ariaPressed": "false",
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/home-mobile.webp",
+            "complete": true,
+            "naturalWidth": 800,
+            "naturalHeight": 1000,
+            "className": ""
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/latest-run-poster-mobile.webp",
+            "complete": false,
+            "naturalWidth": 900,
+            "naturalHeight": 1200,
+            "className": ""
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/path-watch.png",
+            "complete": false,
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "className": ""
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/path-build.png",
+            "complete": false,
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "className": ""
+          }
+        ],
+        "brokenImages": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/latest-run-poster-mobile.webp",
+            "complete": false,
+            "naturalWidth": 900,
+            "naturalHeight": 1200,
+            "className": ""
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/path-watch.png",
+            "complete": false,
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "className": ""
+          },
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/path-build.png",
+            "complete": false,
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "className": ""
+          }
+        ],
+        "expectedImages": []
+      },
+      "diagnostics": {
+        "requestFailures": [],
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "pass": true
+    },
+    {
+      "route": "/home.html",
+      "mode": "refresh_suppressed_shell_inspection",
+      "width": 390,
+      "theme": "light",
+      "responseStatus": 200,
+      "intercepted": true,
+      "sourceRefreshPresent": true,
+      "servedRefreshSuppressed": true,
+      "urlRemainedHome": true,
+      "initial": {
+        "url": "http://127.0.0.1:8944/home.html",
+        "h1": "AI Ascension home",
+        "status": null,
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "light",
+        "dataTheme": null,
+        "ariaPressed": "false",
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "themeCheck": {
+        "before": {
+          "effective": "light",
+          "dataTheme": null,
+          "label": "Dark",
+          "background": "rgb(244, 238, 226)"
+        },
+        "after": {
+          "effective": "dark",
+          "dataTheme": "dark",
+          "ariaPressed": "true",
+          "label": "Light",
+          "background": "rgb(11, 10, 8)"
+        },
+        "pass": true
+      },
+      "menuCheck": {
+        "applicable": true,
+        "visible": true,
+        "open": {
+          "expanded": "true",
+          "open": true,
+          "locked": true
+        },
+        "closed": {
+          "expanded": "false",
+          "open": false,
+          "locked": false,
+          "focusRestored": true
+        },
+        "pass": true
+      },
+      "focusRestored": true,
+      "after": {
+        "url": "http://127.0.0.1:8944/home.html",
+        "h1": "AI Ascension home",
+        "status": null,
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "dark",
+        "dataTheme": "dark",
+        "ariaPressed": "true",
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "diagnostics": {
+        "requestFailures": [],
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "screenshot": {
+        "file": ".execution-private/root-art-browser/followup/home-fallback-followup-390-light.png",
+        "sha256": "831aadeaa0886ea76d7aa435b4b50516f5d40412f4ebb7432c24276d87579c68"
+      },
+      "pass": true
+    },
+    {
+      "route": "/home.html",
+      "mode": "refresh_suppressed_shell_inspection",
+      "width": 1440,
+      "theme": "light",
+      "responseStatus": 200,
+      "intercepted": true,
+      "sourceRefreshPresent": true,
+      "servedRefreshSuppressed": true,
+      "urlRemainedHome": true,
+      "initial": {
+        "url": "http://127.0.0.1:8944/home.html",
+        "h1": "AI Ascension home",
+        "status": null,
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "light",
+        "dataTheme": null,
+        "ariaPressed": "false",
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "themeCheck": {
+        "before": {
+          "effective": "light",
+          "dataTheme": null,
+          "label": "Dark",
+          "background": "rgb(244, 238, 226)"
+        },
+        "after": {
+          "effective": "dark",
+          "dataTheme": "dark",
+          "ariaPressed": "true",
+          "label": "Light",
+          "background": "rgb(11, 10, 8)"
+        },
+        "pass": true
+      },
+      "menuCheck": {
+        "applicable": false,
+        "visible": false,
+        "expanded": "false",
+        "open": false,
+        "pass": true
+      },
+      "focusRestored": true,
+      "after": {
+        "url": "http://127.0.0.1:8944/home.html",
+        "h1": "AI Ascension home",
+        "status": null,
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "dark",
+        "dataTheme": "dark",
+        "ariaPressed": "true",
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "diagnostics": {
+        "requestFailures": [],
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "screenshot": {
+        "file": ".execution-private/root-art-browser/followup/home-fallback-followup-1440-light.png",
+        "sha256": "34493b2ebabb7cf67a3b2c16099274aba6ec8a1d0625ac0bbcc6287ea678b065"
+      },
+      "pass": true
+    },
+    {
+      "route": "/home.html",
+      "mode": "refresh_suppressed_shell_inspection",
+      "width": 390,
+      "theme": "dark",
+      "responseStatus": 200,
+      "intercepted": true,
+      "sourceRefreshPresent": true,
+      "servedRefreshSuppressed": true,
+      "urlRemainedHome": true,
+      "initial": {
+        "url": "http://127.0.0.1:8944/home.html",
+        "h1": "AI Ascension home",
+        "status": null,
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "dark",
+        "dataTheme": null,
+        "ariaPressed": "true",
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "themeCheck": {
+        "before": {
+          "effective": "dark",
+          "dataTheme": null,
+          "label": "Light",
+          "background": "rgb(11, 10, 8)"
+        },
+        "after": {
+          "effective": "light",
+          "dataTheme": "light",
+          "ariaPressed": "false",
+          "label": "Dark",
+          "background": "rgb(244, 238, 226)"
+        },
+        "pass": true
+      },
+      "menuCheck": {
+        "applicable": true,
+        "visible": true,
+        "open": {
+          "expanded": "true",
+          "open": true,
+          "locked": true
+        },
+        "closed": {
+          "expanded": "false",
+          "open": false,
+          "locked": false,
+          "focusRestored": true
+        },
+        "pass": true
+      },
+      "focusRestored": true,
+      "after": {
+        "url": "http://127.0.0.1:8944/home.html",
+        "h1": "AI Ascension home",
+        "status": null,
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "light",
+        "dataTheme": "light",
+        "ariaPressed": "false",
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "diagnostics": {
+        "requestFailures": [],
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "screenshot": {
+        "file": ".execution-private/root-art-browser/followup/home-fallback-followup-390-dark.png",
+        "sha256": "c41179c1c878e888bcee6c053f88887bb1f3bf45d90eb64ceeca3dd5f20d66d0"
+      },
+      "pass": true
+    },
+    {
+      "route": "/home.html",
+      "mode": "refresh_suppressed_shell_inspection",
+      "width": 1440,
+      "theme": "dark",
+      "responseStatus": 200,
+      "intercepted": true,
+      "sourceRefreshPresent": true,
+      "servedRefreshSuppressed": true,
+      "urlRemainedHome": true,
+      "initial": {
+        "url": "http://127.0.0.1:8944/home.html",
+        "h1": "AI Ascension home",
+        "status": null,
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "dark",
+        "dataTheme": null,
+        "ariaPressed": "true",
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "themeCheck": {
+        "before": {
+          "effective": "dark",
+          "dataTheme": null,
+          "label": "Light",
+          "background": "rgb(11, 10, 8)"
+        },
+        "after": {
+          "effective": "light",
+          "dataTheme": "light",
+          "ariaPressed": "false",
+          "label": "Dark",
+          "background": "rgb(244, 238, 226)"
+        },
+        "pass": true
+      },
+      "menuCheck": {
+        "applicable": false,
+        "visible": false,
+        "expanded": "false",
+        "open": false,
+        "pass": true
+      },
+      "focusRestored": true,
+      "after": {
+        "url": "http://127.0.0.1:8944/home.html",
+        "h1": "AI Ascension home",
+        "status": null,
+        "hasHeader": true,
+        "hasMark": true,
+        "hasMain": true,
+        "hasFooter": true,
+        "hasMenu": true,
+        "hasTheme": true,
+        "hasSkip": true,
+        "skipHref": "#main",
+        "effectiveTheme": "light",
+        "dataTheme": "light",
+        "ariaPressed": "false",
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "documentOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:8944/assets/brand/mark.png",
+            "complete": true,
+            "naturalWidth": 64,
+            "naturalHeight": 64,
+            "className": "brand-mark"
+          }
+        ],
+        "brokenImages": [],
+        "expectedImages": [
+          {
+            "selector": "img.brand-mark",
+            "found": true,
+            "loaded": true
+          }
+        ]
+      },
+      "diagnostics": {
+        "requestFailures": [],
+        "consoleErrors": [],
+        "pageErrors": []
+      },
+      "screenshot": {
+        "file": ".execution-private/root-art-browser/followup/home-fallback-followup-1440-dark.png",
+        "sha256": "1bf354cddfbe064b2f45a420ce34923fedebd9f968f53bf88b73fc4748197c4f"
+      },
+      "pass": true
+    }
+  ],
+  "counts": {
+    "states": 9,
+    "passed": 9,
+    "failed": 0
+  },
+  "pass": true,
+  "scope": [
+    "Static shell completeness for all 12 HTML routes and 404.shtml",
+    "Direct 404.shtml at 390 and 1440 widths in light and dark color schemes",
+    "404.shtml header, mark, controls, artwork, image loading, keyboard focus, menu Escape restore, theme toggle, and document overflow",
+    "Native home.html meta refresh to index.html",
+    "Refresh-suppressed home.html fallback shell inspection at 390 and 1440 widths in light and dark color schemes"
+  ],
+  "limitations": [
+    "Loopback static server only; no deployment, host fallback injection, or public availability claim.",
+    "Refresh-suppressed home shell is an inspection response with the source meta refresh removed; native redirect is separately exercised.",
+    "No PHP/API request or production form submission was made."
+  ],
+  "workingTreeState": {
+    "currentWorkingDiffCommand": "git diff --binary -- . | sha256sum",
+    "currentWorkingDiffSha256": "f942eceb44e990c5b4d45c53177361313e0379eb7257e27a6add3070212970db",
+    "scopedLegacyDiffCommand": "git diff --binary -- home.html 404.shtml | sha256sum",
+    "scopedLegacyDiffSha256": "599acdc7798f922f281acd1c007db0d09f994e4e41825e3365e85234b93d4c61",
+    "reviewedSourceFiles": [
+      "home.html",
+      "404.shtml",
+      "404.html",
+      "script.js",
+      "styles.css",
+      "assets/brand/mark.png",
+      "assets/brand/404.png"
+    ],
+    "sourceEditsByReviewer": false
+  },
+  "priorReview": {
+    "path": "execution/reviews/W03-root-website-art-review.json",
+    "historicalFinding": "W03-F01",
+    "followupDisposition": "resolved_in_scoped_review"
+  },
+  "disposition": "W03-F01 is resolved in the repaired legacy shells: static completeness passes for all 12 HTML routes and 404.shtml; direct 404.shtml and refresh-suppressed home shell checks pass at 390 and 1440 in light and dark; native home.html meta refresh reaches index.html. This remains local browser evidence and does not establish deployment or publication."
+}

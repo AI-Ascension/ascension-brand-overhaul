@@ -1,0 +1,25 @@
+{
+  "schema_version": "ai-ascension.migration-preflight-review.v1",
+  "tool_revision": "eb32e7efcf362f395cf44c7c020f2e1ebfc58a3d",
+  "command": "python3 migration/tooling/github_migration.py plan --map migration/input-map.json --output migration/plan.json",
+  "command_output_path_note": "Fresh output from privacy-normalizing collector copied byte-for-byte from ignored private staging.",
+  "mode": "read_only",
+  "observed_at": "2026-09-07T17:20:20Z",
+  "input_map_sha256": "868e6c719b7a3947ebe0f39f209eed08699631897140498d6608175f27ad666b",
+  "plan_sha256": "676b32ebbd9a9fcde6e19926f2d83b2c265785c0e38b7a1a32a95e21626fcea5",
+  "remote_mutations": [],
+  "findings": [
+    "Open runtime/map/watchdog work remains active and untouched.",
+    "Pages configuration is unavailable for planned renames; this is not treated as proven absence.",
+    "Explicit rename authority is absent.",
+    "Organization profile and historical Pages default heads advanced independently; companion branches are reconciling their evidence updates.",
+    "An existing brand work-branch sync PR was created by another session; observed state is recorded separately from operations performed here."
+  ],
+  "historical_observation": {
+    "observed_at": "2026-09-07T16:41:19Z",
+    "plan_sha256": "874883e236336291a4d0ea003b3612565369d68e37b3116c5fde6cbf2e03c096",
+    "raw_prior_plan_sha256": "afef3fa110743ff13fe262d6f448af2820b0bffa4f80fa95ac3a891d7b839656",
+    "raw_receipts_location": "ignored private evidence only; excluded from delivery"
+  },
+  "collector_privacy_repair": "_status_error retains only rate_limit_exceeded or HTTP status; no raw provider diagnostics."
+}

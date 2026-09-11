@@ -1,0 +1,562 @@
+{
+  "schema_version": "ai-ascension.root-art-identity-source-use-review.v1",
+  "observed_at": "2026-09-07T21:30:37Z",
+  "reviewer": "w02-root-art-independent-source-use-review",
+  "task": "W02 first-batch root identity and background source-use review",
+  "scope": "Independent bounded source-use review of ID-01 through ID-07, BG-01 through BG-04, and the BG-01-derived WEB-01 crop set. The corrected ID-08 and the second-batch WEB/RUN families are out of scope because they are covered by W02-root-art-second-batch-review.json. No source, master, or export was edited.",
+  "inputs_read": [
+    "AGENTS.md",
+    "MASTER_PROMPT.md",
+    "orchestration/CONTRACT.md",
+    "execution/reviews/W02-root-art-identity-review.json",
+    "execution/reviews/W02-root-art-second-batch-review.json",
+    "art/root-generation-authorization.json",
+    "art/asset-registry.json",
+    "art/reference-registry.json",
+    "brand/provenance/root-generation-index.json",
+    "brand/provenance/root-generation-records.json",
+    "brand/provenance/root-export-recipe.json",
+    "brand/provenance/root-export-receipts.json",
+    "brand/provenance/root-tool-observations.json"
+  ],
+  "route_authorization": {
+    "basis": "The user-authorized root image-tool route recorded in art/root-generation-authorization.json.",
+    "authorization_path": "art/root-generation-authorization.json",
+    "authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+    "route": "user_authorized_root_image_tool",
+    "tool_recorded": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "author_model_attestation": "unknown",
+    "image_model_attestation": "unknown",
+    "generation_backend_attestation": "unknown",
+    "native_agent_attestation": false,
+    "astra_proof": false,
+    "publication_approved": false,
+    "review_boundary": "The recorded route is authorized by the user, but these records do not attest the root model, image model, image backend, Astra authorship, or native-agent chain. This receipt records observed source use and family readiness only; it is not a rights, trademark, legal, or public-release approval."
+  },
+  "source_pins": {
+    "generation_index": {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "91200a1334a849ef3f54eb7471bb3a05d060c18fac84e198d1519bdfd4cb2fd3",
+      "selected_records": {
+        "ID-01": "generation-004",
+        "ID-02": "generation-001",
+        "ID-03": "generation-001",
+        "ID-04": "generation-001",
+        "ID-05": "generation-001",
+        "ID-06": "generation-001",
+        "ID-07": "generation-001",
+        "BG-01": "generation-001",
+        "BG-02": "generation-001",
+        "BG-03": "generation-001",
+        "BG-04": "generation-001",
+        "WEB-01": "BG-01/generation-001 parent source"
+      }
+    },
+    "generation_records": {
+      "path": "brand/provenance/root-generation-records.json",
+      "sha256": "a4b9cfe54b84361f68e7fd2b61342cab50c723b823909f8f31867f37c23bd9a1",
+      "selected_record_ids": [
+        "ID-01-generation-004",
+        "ID-02-generation-001",
+        "ID-03-generation-001",
+        "ID-04-generation-001",
+        "ID-05-generation-001",
+        "ID-06-generation-001",
+        "ID-07-generation-001",
+        "BG-01-generation-001",
+        "BG-02-generation-001",
+        "BG-03-generation-001",
+        "BG-04-generation-001"
+      ]
+    },
+    "export_recipe": {
+      "path": "brand/provenance/root-export-recipe.json",
+      "sha256": "9729af2c899c9438ab3816b8e5e9f6ab628fd93878469920f0f022fe6188d168",
+      "total_entry_count": 40,
+      "in_scope_entry_count": 22
+    },
+    "export_receipts": {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "f1e1ba935da37c2a1a7b7cda8a769d4a81d774d6ae4664ff5f656028a9cd564f",
+      "total_entry_count": 40,
+      "in_scope_entry_count": 22
+    },
+    "tool_observations": {
+      "path": "brand/provenance/root-tool-observations.json",
+      "sha256": "8cd540218de79cf701bc251f7c9dd99da9fbadad00059b8696bb01d2180114fe"
+    },
+    "reference_registry": {
+      "path": "art/reference-registry.json",
+      "sha256": "262219e47db5c0a6615906dcafe0a5deade10a8da58d3d0e26bd4abeaabee316",
+      "selected_records_use": "No selected generation record points to an OLD-* legacy/reference-registry source."
+    }
+  },
+  "method": {
+    "native_sources_viewed": [
+      "brand/sources/generated/ID-01/generation-004.png",
+      "brand/sources/generated/ID-02/generation-001.png",
+      "brand/sources/generated/ID-03/generation-001.png",
+      "brand/sources/generated/ID-04/generation-001.png",
+      "brand/sources/generated/ID-05/generation-001.png",
+      "brand/sources/generated/ID-06/generation-001.png",
+      "brand/sources/generated/ID-07/generation-001.png",
+      "brand/sources/generated/BG-01/generation-001.png",
+      "brand/sources/generated/BG-02/generation-001.png",
+      "brand/sources/generated/BG-03/generation-001.png",
+      "brand/sources/generated/BG-04/generation-001.png"
+    ],
+    "reference_sources_viewed": [
+      "brand/sources/generated/ID-01/generation-001.png"
+    ],
+    "derived_exports_viewed": [
+      "brand/assets/web/home-desktop.webp",
+      "brand/assets/web/home-mobile.webp"
+    ],
+    "checks": [
+      {
+        "check": "Selected source hashes and declared dimensions/modes",
+        "result": "pass",
+        "evidence": "11/11 selected source files match root-generation-index.json; the ID-01 generation-001 reference hash and dimensions also match."
+      },
+      {
+        "check": "Selected root generation records and reference graph",
+        "result": "pass",
+        "evidence": "The selected records use the user-authorized root route and image_gen__imagegen; six selected records reference only the local generated ID-01 generation-001 PNG. No selected reference path is external, a legacy reference-registry item, or evidence media. Rejected ID-01 generations 002 and 003 are excluded from the selected output."
+      },
+      {
+        "check": "In-scope export receipt source/output hashes",
+        "result": "pass",
+        "evidence": "22/22 in-scope receipt source hashes and output hashes match the files."
+      },
+      {
+        "check": "In-scope export recipe dimensions",
+        "result": "pass",
+        "evidence": "22/22 in-scope outputs have the dimensions declared by root-export-recipe.json."
+      },
+      {
+        "check": "Visible source and derived-export content",
+        "result": "pass_for_source_use_observation",
+        "evidence": "Viewed the selected native masters, the actual ID-01 reference, and both WEB-01 exports. The identity sheets contain the requested AI Ascension, Ascension, The Climb, and functional icon labels; the BG and WEB-01 files are abstract decorative path/paper compositions. No identifiable third-party mark, provider/publisher logo, game UI, gameplay capture, score/result graphic, or font binary was observed."
+      },
+      {
+        "check": "Font binary inventory",
+        "result": "pass_for_observed_repository_scope",
+        "evidence": "A repository file-extension and file-signature scan found no TTF, OTF, WOFF, WOFF2, EOT, PFB, FON, TrueType, OpenType, WOFF, or embedded-font file. Raster lettering in the generated sheets is not a bundled font binary."
+      },
+      {
+        "check": "BG-04 mandatory seamless repeat requirement",
+        "result": "incomplete",
+        "evidence": "The existing visual review found subtle 2x2 repeat seams: approximately 3.7 immediate-join RGB difference on the light tile and 24.1 on the dark tile. The brief requires uniform edge strips and a seamless repeat, so the requirement is unmet and is not waived."
+      }
+    ],
+    "negative_cases": [
+      "No source-use conclusion was inferred from prompt prohibitions alone; the selected masters and WEB-01 outputs were viewed.",
+      "The six selected local ID-01 references are generated PNGs, not proof of legal ownership or permission.",
+      "No gameplay/evidence classification was granted to any generated source or derivative."
+    ]
+  },
+  "reference_lineage": {
+    "selected_internal_generated_reference_count": 6,
+    "selected_internal_generated_reference_paths": [
+      {
+        "path": "brand/sources/generated/ID-01/generation-001.png",
+        "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+        "used_by_selected_records": [
+          "ID-01-generation-004",
+          "ID-02-generation-001",
+          "ID-03-generation-001",
+          "ID-04-generation-001",
+          "ID-05-generation-001",
+          "ID-06-generation-001"
+        ],
+        "observation": "Local generated identity reference; viewed."
+      }
+    ],
+    "derived_family_links": [
+      {
+        "family_id": "WEB-01",
+        "parent_asset_id": "BG-01",
+        "parent_source": "brand/sources/generated/BG-01/generation-001.png",
+        "parent_source_sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+        "operation_boundary": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "observation": "Mechanical crop set; no separate creative generation record is expected."
+      }
+    ],
+    "external_or_legacy_reference_inputs": [],
+    "evidence_media_inputs": []
+  },
+  "summary": {
+    "families_reviewed": 12,
+    "selected_native_source_records_reviewed": 11,
+    "distinct_reference_sources_viewed": 1,
+    "derived_export_families_reviewed": 1,
+    "generated_original_reviewed_family_ids": [
+      "ID-01",
+      "ID-02",
+      "ID-03",
+      "ID-04",
+      "ID-05",
+      "ID-06",
+      "ID-07",
+      "BG-01",
+      "BG-02",
+      "BG-03",
+      "BG-04",
+      "WEB-01"
+    ],
+    "source_use_observation_pass_family_ids": [
+      "ID-01",
+      "ID-02",
+      "ID-03",
+      "ID-04",
+      "ID-05",
+      "ID-06",
+      "ID-07",
+      "BG-01",
+      "BG-02",
+      "BG-03",
+      "BG-04",
+      "WEB-01"
+    ],
+    "ready_for_root_status_finalize_family_ids": [
+      "ID-01",
+      "ID-02",
+      "ID-03",
+      "ID-04",
+      "ID-05",
+      "ID-06",
+      "ID-07",
+      "BG-01",
+      "BG-02",
+      "BG-03",
+      "WEB-01"
+    ],
+    "incomplete_family_ids": [
+      "BG-04"
+    ],
+    "decision": "The 12 families have a bounded generated-original source-use observation: their selected inputs are local root-route generated raster files, with only local generated ID-01 references and the mechanical WEB-01 parent link observed. Eleven families are ready for the root to finalize their source-use-related status, subject to the separate visual/export, provenance, rights, and publication gates. BG-04 remains incomplete because its mandatory seamless-repeat brief is unmet; its existing conditional visual-use caveat is not a waiver."
+  },
+  "assets": [
+    {
+      "asset_id": "ID-01",
+      "title": "Branching-A mark",
+      "selected_source": {
+        "generation": 4,
+        "record_id": "ID-01-generation-004",
+        "path": "brand/sources/generated/ID-01/generation-004.png",
+        "sha256": "f2179261ad9b0b17a679838fd6ba4cb521966bf61816be4d9ca8c4e53be036f9",
+        "dimensions": "1774x887",
+        "mode": "RGB"
+      },
+      "reference_inputs": [
+        {
+          "path": "brand/sources/generated/ID-01/generation-001.png",
+          "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+          "basis": "local generated identity reference"
+        }
+      ],
+      "exports": [
+        "brand/assets/identity/mark.png",
+        "brand/assets/identity/mark-mono.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "Two flat branching-A variants on a uniform paper field; no third-party mark, game capture, or font binary observed."
+    },
+    {
+      "asset_id": "ID-02",
+      "title": "Organization wordmark",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "ID-02-generation-001",
+        "path": "brand/sources/generated/ID-02/generation-001.png",
+        "sha256": "3a71c24c0dd6d26e5bcb35fdc00edbd76e16f9d9827754a6f7f099852bb76a5b",
+        "dimensions": "1774x887",
+        "mode": "RGB"
+      },
+      "reference_inputs": [
+        {
+          "path": "brand/sources/generated/ID-01/generation-001.png",
+          "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+          "basis": "local generated identity reference"
+        }
+      ],
+      "exports": [
+        "brand/assets/identity/ai-ascension-light.png",
+        "brand/assets/identity/ai-ascension-dark.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "Two flat light/dark AI Ascension lockup bands; the lettering is raster content and no font binary or third-party mark was observed."
+    },
+    {
+      "asset_id": "ID-03",
+      "title": "Flagship product lockup",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "ID-03-generation-001",
+        "path": "brand/sources/generated/ID-03/generation-001.png",
+        "sha256": "44277b3a0ec36dc112720aae4c1b8195378deb4aee4951c3e9acc2bb6d3b3500",
+        "dimensions": "2172x724",
+        "mode": "RGB"
+      },
+      "reference_inputs": [
+        {
+          "path": "brand/sources/generated/ID-01/generation-001.png",
+          "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+          "basis": "local generated identity reference"
+        }
+      ],
+      "exports": [
+        "brand/assets/identity/ascension-light.png",
+        "brand/assets/identity/ascension-dark.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "Two flat Ascension lockups with by AI Ascension attribution; no game imagery, publisher affiliation, third-party mark, or font binary observed."
+    },
+    {
+      "asset_id": "ID-04",
+      "title": "The Climb title lockup",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "ID-04-generation-001",
+        "path": "brand/sources/generated/ID-04/generation-001.png",
+        "sha256": "a09ba42d43372ad1c0461e4feb9b75bf604f76cadda2e5dbcb2ee4670028d80c",
+        "dimensions": "1942x809",
+        "mode": "RGB"
+      },
+      "reference_inputs": [
+        {
+          "path": "brand/sources/generated/ID-01/generation-001.png",
+          "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+          "basis": "local generated identity reference"
+        }
+      ],
+      "exports": [
+        "brand/assets/identity/the-climb-master.png",
+        "brand/assets/identity/the-climb.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "The Climb title and by AI Ascension endorsement are rendered as raster lettering with an abstract identity accent; no game capture, publisher mark, or font binary observed."
+    },
+    {
+      "asset_id": "ID-05",
+      "title": "Organization avatar set",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "ID-05-generation-001",
+        "path": "brand/sources/generated/ID-05/generation-001.png",
+        "sha256": "355c6f50d4263e7a6b04ad2e6ddaf6b5d33ec346e2e4b8e98c69548053632445",
+        "dimensions": "1254x1254",
+        "mode": "RGB"
+      },
+      "reference_inputs": [
+        {
+          "path": "brand/sources/generated/ID-01/generation-001.png",
+          "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+          "basis": "local generated identity reference"
+        }
+      ],
+      "exports": [
+        "brand/assets/identity/avatar-1024.png",
+        "brand/assets/identity/avatar-256.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "Single flat branching-A avatar on a dark field; no third-party mark, game capture, or font binary observed."
+    },
+    {
+      "asset_id": "ID-06",
+      "title": "Browser and app icon set",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "ID-06-generation-001",
+        "path": "brand/sources/generated/ID-06/generation-001.png",
+        "sha256": "80c3fbf97731d2b36e8229cd5b970c73360a709fd2fbe532ee1099ab93942b4c",
+        "dimensions": "1254x1254",
+        "mode": "RGB"
+      },
+      "reference_inputs": [
+        {
+          "path": "brand/sources/generated/ID-01/generation-001.png",
+          "sha256": "ae3c87c74f9468c5aa775eb43c7f9601e9ed2b8f024338022fd99ea3458dd313",
+          "basis": "local generated identity reference"
+        }
+      ],
+      "exports": [
+        "brand/assets/identity/favicon.png",
+        "brand/assets/identity/favicon-32.png",
+        "brand/assets/identity/favicon-16.png",
+        "brand/assets/identity/apple-touch-icon.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "Simplified flat branching-A favicon master on uniform ivory; no third-party mark, game capture, or font binary observed."
+    },
+    {
+      "asset_id": "ID-07",
+      "title": "Product and evidence icon sprite",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "ID-07-generation-001",
+        "path": "brand/sources/generated/ID-07/generation-001.png",
+        "sha256": "0fcc0b9f244470de56c70d04be1fc6dcb3e976b5aaf19a695026d952aa3524ab",
+        "dimensions": "1254x1254",
+        "mode": "RGB"
+      },
+      "reference_inputs": [],
+      "exports": [
+        "brand/assets/identity/icons.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "A regular generated 2x5 sheet of the ten requested generic functional icons and labels; no stock logo, universal verification badge, game capture, or font binary observed."
+    },
+    {
+      "asset_id": "BG-01",
+      "title": "Editorial ascent environment master",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "BG-01-generation-001",
+        "path": "brand/sources/generated/BG-01/generation-001.png",
+        "sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+        "dimensions": "1536x1024",
+        "mode": "RGB"
+      },
+      "reference_inputs": [],
+      "exports": [
+        "brand/assets/illustration/ascent-master.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "Abstract paper, ink, amber, and branching ribbon environment with no text, logo, UI, map, game scene, result, or publisher mark."
+    },
+    {
+      "asset_id": "BG-02",
+      "title": "Dark broadcast atmosphere master",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "BG-02-generation-001",
+        "path": "brand/sources/generated/BG-02/generation-001.png",
+        "sha256": "5be7e3b68f65d6ec31860984521390091d7cc0496d1f2280ed04cc524add5ead",
+        "dimensions": "1672x941",
+        "mode": "RGB"
+      },
+      "reference_inputs": [],
+      "exports": [
+        "brand/assets/illustration/broadcast-master.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "Abstract dark and amber atmosphere with a right-edge branching form; no text, scoreboard, UI, game art, provider logo, or fabricated result."
+    },
+    {
+      "asset_id": "BG-03",
+      "title": "Series interstitial texture",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "BG-03-generation-001",
+        "path": "brand/sources/generated/BG-03/generation-001.png",
+        "sha256": "0ff4f0492163d0e95ac0a0055aef38991ec1096a3a2f9cd58b26634b77395c66",
+        "dimensions": "1254x1254",
+        "mode": "RGB"
+      },
+      "reference_inputs": [],
+      "exports": [
+        "brand/assets/illustration/series-master.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "Abstract square paper field with bottom branching contours; no text, logo, map, game UI, evidence graphic, or publisher mark."
+    },
+    {
+      "asset_id": "BG-04",
+      "title": "Light/dark route pattern",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "BG-04-generation-001",
+        "path": "brand/sources/generated/BG-04/generation-001.png",
+        "sha256": "8f9fd2025a5897559a89ce83cc16ab6ea1a3779fdee0e54c4fcde82efcec072e",
+        "dimensions": "1774x887",
+        "mode": "RGB"
+      },
+      "reference_inputs": [],
+      "exports": [
+        "brand/assets/illustration/route-pattern-light.png",
+        "brand/assets/illustration/route-pattern-dark.png"
+      ],
+      "source_use_observation": "generated_original_reviewed",
+      "readiness": "incomplete",
+      "blockers": [
+        "The brief requires a mathematically seamless repeat with uniform edge strips; the viewed 2x2 repeat retains visible tonal seams, including the documented dark-tile join.",
+        "Do not waive this requirement based on the existing subtle-repeat caveat. Obtain a new authored source and repeat the independent review; no code-drawn or recolored repair is accepted."
+      ],
+      "visible_observation": "Sparse abstract branching paths on light and dark panels with no third-party mark, game map, UI, or evidence claim."
+    },
+    {
+      "asset_id": "WEB-01",
+      "title": "Homepage illustration crop set",
+      "parent_asset_id": "BG-01",
+      "selected_source": {
+        "generation": 1,
+        "record_id": "BG-01-generation-001 parent source",
+        "path": "brand/sources/generated/BG-01/generation-001.png",
+        "sha256": "8d2ee83b040135fa4eb5a08fdc3f77629d2fbcd321ae5a6f3efb18c43421a6e3",
+        "dimensions": "1536x1024",
+        "mode": "RGB"
+      },
+      "reference_inputs": [],
+      "exports": [
+        "brand/assets/web/home-desktop.webp",
+        "brand/assets/web/home-mobile.webp"
+      ],
+      "source_use_observation": "generated_original_reviewed_derived",
+      "readiness": "generated_original_reviewed",
+      "visible_observation": "Both viewed WEB-01 crops retain only the abstract BG-01 paper/path artwork; no HTML claim, game capture, third-party mark, publisher logo, or font binary is baked into either export.",
+      "limits": [
+        "This is a mechanical derivative of BG-01, not a new creative generation.",
+        "The export receipts remain publication_approved=false and the consuming website/live placement has separate downstream checks."
+      ]
+    }
+  ],
+  "source_use_and_rights_observation": {
+    "result": "generated_original_reviewed_observation",
+    "classification": "generated_original_reviewed",
+    "observed_inputs": "The selected native sources are local PNG outputs recorded under brand/sources/generated and tied to local prompt, generation, and hash records. The selected reference inputs are six links to the local generated ID-01 generation-001 PNG. WEB-01 derives mechanically from the local generated BG-01 master. No external or legacy reference-registry input is recorded for these families.",
+    "visual_observation": "The viewed selected masters and WEB-01 derivatives contain abstract identity/background artwork, requested organization/product/series text, or generic functional icon labels. No identifiable third-party mark, provider/publisher logo, proprietary game screenshot, gameplay capture, score/result graphic, or font binary was observed.",
+    "no_identifiable_third_party_marks_observed": true,
+    "no_game_captures_observed": true,
+    "no_font_binaries_observed": true,
+    "generated_art_not_product_evidence": true,
+    "approval_boundary": {
+      "legal_clearance": "none",
+      "copyright_clearance": "none",
+      "trademark_clearance": "none",
+      "license_or_permission_determination": "none",
+      "public_release_approval": false,
+      "publication_approved_in_receipts": false,
+      "manifest_rights_status": "unreviewed",
+      "meaning": "The generated_original_reviewed classification is an observed source-use statement only. It grants no legal, copyright, trademark, license, permission, or public-release approval."
+    },
+    "root_route_limits": [
+      "User authorization for the available root image tool is recorded, but the root model, requested/accepted/observed image model, backend identity, and native Astra chain remain unknown or unattested.",
+      "The existing generation records retain image_model_requested=unknown, image_model_observed=unknown, and image_backend=unspecified; this review does not upgrade those fields.",
+      "Generated artwork is not gameplay, product, model-result, deployment, or release evidence."
+    ],
+    "incomplete_family_override": "BG-04 remains incomplete for the mandatory seamless-repeat requirement even though its source-use classification is generated_original_reviewed."
+  },
+  "unverified_or_deferred": [
+    "Legal rights, copyright, trademark, license, and permission clearance remain unreviewed.",
+    "No Astra authorship or gpt-image-2/image-backend attestation is established for the user-authorized root route.",
+    "BG-04 needs a new authored seamless source and fresh independent review before strict repeat use can be finalized.",
+    "Visual/export acceptance, website placement, accessibility in every consumer, deployment, and public release remain separate gates."
+  ]
+}

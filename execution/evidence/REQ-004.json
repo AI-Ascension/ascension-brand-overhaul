@@ -1,0 +1,74 @@
+{
+  "schema_version": "ai-ascension.requirement-evidence.v1",
+  "requirement_id": "REQ-004",
+  "binding_requirement": "Naming matches the approved map except documented execution-time conflicts.",
+  "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+  "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+  "status": "verified",
+  "reviewer": "W03-L",
+  "actual_review_records": [
+    "execution/reviews/W03-W01-provenance-rereview.md",
+    "execution/reviews/W03-handoff-inventory-review.md"
+  ],
+  "procedures": [
+    "Pinned Git blob/tree comparison and source/copy provenance review; see W03 records."
+  ],
+  "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+  "artifacts": [
+    {
+      "path": "execution/source-snapshot.json",
+      "sha256": "3e453ee6e11f544e911fa1c33df1e2b1335007d6a47f1e082f9b0bdf2e3ceed9",
+      "bytes": 31516
+    },
+    {
+      "path": "execution/source-tree-inventory.json",
+      "sha256": "ae8b2fafe387df38645d7f779b862f5e9246f0c5ef153c6e11efcaf6ffef5453",
+      "bytes": 485449
+    },
+    {
+      "path": "execution/capabilities.json",
+      "sha256": "4d988a1a8482a4e61ce67795b9c0babe6a1f1710182fe0a677cd259be4957eff",
+      "bytes": 20747
+    },
+    {
+      "path": "docs/BASELINE_AUDIT.md",
+      "sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690",
+      "bytes": 16093
+    },
+    {
+      "path": "brand/copy.json",
+      "sha256": "3c29a653129fbd8ce217caa7d323f34a0f9b2d45b56f20dc900207833138269c",
+      "bytes": 38878
+    },
+    {
+      "path": "brand/BRAND_GUIDE.md",
+      "sha256": "a0f6c4608285d9ca61d31556236ca8746ca8ba6bbc39e10cb5d37bddaba50dc7",
+      "bytes": 16993
+    },
+    {
+      "path": "docs/NAME_COLLISION_REVIEW.md",
+      "sha256": "e56fae92e922920347361a08afcac5f2f9e717d4f010d76342e62364454fbf73",
+      "bytes": 4448
+    },
+    {
+      "path": "migration/repository-plan.json",
+      "sha256": "735b578229627d2c10b0e419969a42c24c86550635a2e42117bfddaffff20591",
+      "bytes": 32989
+    },
+    {
+      "path": "execution/reviews/W03-W01-provenance-rereview.md",
+      "sha256": "160fef654ef918db6be15c518b8023f07d8d94214c1c3fc14deb9fca5a0d6d89",
+      "bytes": 8098
+    },
+    {
+      "path": "execution/reviews/W03-handoff-inventory-review.md",
+      "sha256": "2710058c316b68d1538205238e01b28917d6bfa8fbea16014f35ab732e7e799b",
+      "bytes": 6211
+    }
+  ],
+  "blocker": null,
+  "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
+  "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations."
+}

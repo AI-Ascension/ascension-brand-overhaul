@@ -1,0 +1,18 @@
+{
+  "schema_version": "ai-ascension.ci-action-review.v1",
+  "action": "actions/checkout",
+  "revision": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+  "source": "https://github.com/actions/checkout/commit/3d3c42e5aac5ba805825da76410c181273ba90b1",
+  "verification": "GitHub commit API returned the exact SHA and verified commit signature; action.yml at that SHA was inspected. The same immutable revision is used by the historical Pages source workflow.",
+  "runtime": "node24",
+  "scope": "Source and local synthetic contract checks on ubuntu-24.04. No browser, native game, provider, artwork or deployment claim.",
+  "permissions": {
+    "contents": "read"
+  },
+  "persist_credentials": false,
+  "publishing_secrets": false,
+  "fork_execution": "pull_request only; no pull_request_target or workflow_run trigger",
+  "remote_result": "passed at5d1c26ecee9ce753eae89c525c4a8764d29a18e5",
+  "historical_remote_result": "not_run_yet",
+  "remote_review": "execution/reviews/brand-remote-checks-001.json"
+}

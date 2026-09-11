@@ -1,0 +1,91 @@
+{
+  "schema_version": "ai-ascension.website-review.v1",
+  "status": "local_checks_passed_content_and_http_review_pending",
+  "source_files_sha256": {
+    "index.html": "f814a5247d4a570a773bcbc0de1525d6287a4da5b0d4a605b2b827974fd14a6e",
+    "watch.html": "e7fda2a12e9dde38e9c21aa7266fa245224dc0a76d0cc8aa6e0ebfc394f92e90",
+    "runs.html": "85117b5a86b92b928b927cbef90dd7bb9697258bd0a7d6a1dc2f37a9e047b8d3",
+    "run.html": "bfcfb1d5ab6577135257ed43d9b13de57ace601d7649afe0d8daeeb62b0975ef",
+    "decision.html": "dc403258493c2a5b1d379ab28849560ec8d400364712e160748770ac1f97576b",
+    "build.html": "4e955012ca08a1a1747836b9ca3bfafd36705ad3d77564c6c96a36cad36b2e5b",
+    "docs.html": "0eb444fdde053af1fd762db97c327b953d35e32e02ff8f841fe4ee6dbdaf3ab7",
+    "press.html": "384b1f4d0500ecf1f247ec90e4350a061e7dccab7967bd659835e3b2d35680f4",
+    "privacy.html": "82d02fcea8f4d1ee54edd44e10313abb11cfef4e9609518e4272cbbab58b3a6d",
+    "contributors.html": "8e886356cd0c914d12a4374ef237d767851e39f0f4319568587c771cb603017a",
+    "404.html": "1b6152ae85f6f7ce300a755892a328bf3abebf3578f73a068586a572ecdd8cba",
+    "styles.css": "309eb4423f44ed2e5e128959664888298d7b3927e09215f5e20ec8a7fa2dac5e",
+    "script.js": "7e7d4d94e37f8e9f7a80093525dbbf6ec636fdb83353814bb14cbd1e0c45754e",
+    "api/_functions.php": "e86972b80c985b9e1b80d20f30817f01083251d295ae23c53a41c2cfc83d0bdc",
+    "api/subscribe.php": "8f5cd32d7995775f06d6271e1ccc8c79765db31ad096fdea97e850ffd388dc14",
+    "api/confirm.php": "b698f06935d3260641b7357cda8f18236a03947fbdc3064cc497213bbb6e338e",
+    "api/unsubscribe.php": "66da22cbea8f6c76c61599478b7fcb8fff547b5bb9499bf18f431e6078511435",
+    "tests/SubscriptionFlowTest.php": "dac53eff42f8207d53989de1c9556c4ec9b1671f01dce41214d6f9bedaac0d97"
+  },
+  "browser": {
+    "states": 110,
+    "pass": 110,
+    "source_files_unchanged_through_matrix": true,
+    "viewports": [
+      360,
+      390,
+      768,
+      1280,
+      1440
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "motion": "reduced",
+    "browser_version": "153.0.8010.12",
+    "matrix_manifest_sha256": "3442d74a6907cf36eaf91cfe5fcbc7450e3924887cbc306315f881c4db5d99d9"
+  },
+  "normal_motion_and_zoom": {
+    "routes": 11,
+    "pass": 11,
+    "method": "Chrome extension tabs.setZoom/getZoom; genuine tab zoom, not CSS or viewport emulation",
+    "actual_zoom": 2,
+    "physical_viewport": 1280,
+    "verified_css_viewport": 640,
+    "reference": "https://developer.chrome.com/docs/extensions/reference/api/tabs#method-setZoom"
+  },
+  "interaction_checks": {
+    "systemDarkFirstClick": true,
+    "menuOpened": true,
+    "escapeClosedAndRestoredFocus": true,
+    "resizeClosed": true,
+    "emptyStateInitiallyHidden": true,
+    "linuxFilter": true,
+    "noMatches": true,
+    "keyboardTableScroll": true
+  },
+  "phpunit": {
+    "version": "11.5.55",
+    "php": "8.3.6",
+    "tests": 29,
+    "assertions": 111,
+    "result": "pass",
+    "mail_scope": "synthetic injected mailer; no production mail"
+  },
+  "manual_screenshot_inspection": {
+    "desktop_light_routes": 11,
+    "mobile_dark_routes": [
+      "home",
+      "runs",
+      "build"
+    ],
+    "classification": "functional UI verification captures, not new brand artwork"
+  },
+  "not_verified": [
+    "screen-reader application interaction",
+    "field performance metrics",
+    "production Apache routing or deployment",
+    "production subscription or SMTP",
+    "new visitor-copy revisions after this source snapshot"
+  ],
+  "remaining_local_review": [
+    "human confirmation/unsubscribe response pages",
+    "HTTP input/error/full subscription journey through isolated SMTP sink",
+    "visitor-facing copy cleanup and latest Linux report selection"
+  ]
+}

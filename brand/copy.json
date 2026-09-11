@@ -1,0 +1,793 @@
+{
+  "schema_version": "ai-ascension.copy.v1",
+  "version": "1.0.0",
+  "updated_at": "2026-09-07",
+  "canonical_identity": {
+    "organization": "AI Ascension",
+    "github_handle": "AI-Ascension",
+    "flagship": "Ascension",
+    "series": "The Climb \u2014 by AI Ascension",
+    "website": "https://aiascension.tech/",
+    "historical_site": "https://ai-ascension.github.io/",
+    "source_id": "STRATEGY",
+    "source_path": "specs/STRATEGY.md",
+    "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+    "evidence_kind": "planned",
+    "verification_actor": "none",
+    "public_artifact_availability": "none",
+    "supported_configuration": "Approved brand hierarchy in the pinned implementation brief",
+    "review_status": "unreviewed",
+    "public_notes": "Identity is fixed by the assignment. It does not rename runtime packages or claim trademark clearance."
+  },
+  "promise": {
+    "primary": "Watch AI play. Inspect the run. Help it climb.",
+    "developer_descriptor": "Open tooling for game-playing agents, starting with Slay the Spire 2.",
+    "positioning": "AI Ascension is an independent project making open tooling for game-playing agents, starting with Slay the Spire 2. It makes a run inspectable through recorded actions, controlled execution, and replay evidence.",
+    "source_id": "STRATEGY",
+    "source_path": "specs/STRATEGY.md",
+    "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+    "evidence_kind": "planned",
+    "verification_actor": "none",
+    "public_artifact_availability": "report_only",
+    "supported_configuration": "Current source baseline with dated report-only run evidence",
+    "review_status": "unreviewed",
+    "public_notes": "Use the evidence-specific supporting line at each surface; the promise does not assert a verified win or live autonomous service."
+  },
+  "season": {
+    "title": "Road to the First Verified Win",
+    "status": "active_goal",
+    "current_evidence": "The current dated model-controlled Windows and Linux reports reach Defeat; the Victory record is a forced terminal-observation fixture.",
+    "source_ids": [
+      "CAP-HARNESS-WINDOWS-DEFEAT",
+      "CAP-HARNESS-LINUX-DEFEAT",
+      "CAP-MOD-FORCED-VICTORY"
+    ],
+    "observed_at": "2026-09-06",
+    "evidence_kind": "mixed",
+    "verification_actor": "maintainer_reported",
+    "public_artifact_availability": "report_only",
+    "supported_configuration": "STS2 v0.107.1, seed AIASCENSIONV3FULL1, dated report records",
+    "review_status": "unreviewed",
+    "public_notes": "No model-played campaign Victory was found in the current source records. Retain the season framing and do not say the first verified win has happened.",
+    "source_records": [
+      {
+        "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+        "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+        "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+        "evidence_kind": "native_run"
+      },
+      {
+        "source_id": "CAP-HARNESS-LINUX-DEFEAT",
+        "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+        "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+        "evidence_kind": "native_run"
+      },
+      {
+        "source_id": "CAP-MOD-FORCED-VICTORY",
+        "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+        "source_url": "https://github.com/AI-Ascension/sts2-game-mod/blob/8b71150895ea95c0625afc1389bb08e4034d9350/docs/evidence/native-victory-observation-20260906.md",
+        "evidence_kind": "forced_fixture"
+      }
+    ],
+    "source_revision_semantics": "Each source_records revision identifies its cited source/report document; it does not identify all runtime build bytes."
+  },
+  "message_records": [
+    {
+      "id": "MSG-SPECTATOR",
+      "audience": "spectator",
+      "surfaces": [
+        "HOME",
+        "WATCH",
+        "RUN"
+      ],
+      "headline": "See what the agent saw.",
+      "body": "Read a dated run report: what the agent observed, which action it chose, what settled, and where the run ended.",
+      "next_action": "Read the run report",
+      "source_ids": [
+        "CAP-HARNESS-WINDOWS-DEFEAT",
+        "CAP-HARNESS-LINUX-DEFEAT",
+        "HIST-PUBLIC-PROOF"
+      ],
+      "observed_at": "2026-09-06",
+      "evidence_kind": "mixed",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Dated STS2 v0.107.1 report records and historical browser replay",
+      "review_status": "unreviewed",
+      "public_notes": "Use Watch the run only after an approved public video exists.",
+      "source_records": [
+        {
+          "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "evidence_kind": "native_run"
+        },
+        {
+          "source_id": "CAP-HARNESS-LINUX-DEFEAT",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "evidence_kind": "native_run"
+        },
+        {
+          "source_id": "HIST-PUBLIC-PROOF",
+          "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+          "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+          "evidence_kind": "public_report"
+        }
+      ],
+      "source_revision_semantics": "Each source_records revision identifies its cited source/report document; it does not identify all runtime build bytes."
+    },
+    {
+      "id": "MSG-DEVELOPER",
+      "audience": "developer",
+      "surfaces": [
+        "HOME",
+        "BUILD",
+        "DOCS"
+      ],
+      "headline": "Build the path. Keep the boundary visible.",
+      "body": "Ascension is an open toolkit for game-playing agents, starting with Slay the Spire 2. Start with the tested source boundary that fits your task; the host, gateway, MCP adapter, harness, and protocol each keep a separate responsibility.",
+      "next_action": "Open the Build guide",
+      "source_ids": [
+        "CAP-CORE-SEMANTICS",
+        "CAP-MOD-BOUNDARY",
+        "CAP-GATEWAY-CONTRACT",
+        "CAP-MCP-ADAPTER",
+        "CAP-HARNESS-WINDOWS-DEFEAT",
+        "CAP-PROTOCOL-CONTRACTS"
+      ],
+      "observed_at": "2026-09-07",
+      "evidence_kind": "mixed",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Current default-branch source heads listed in execution/source-snapshot.json",
+      "review_status": "unreviewed",
+      "public_notes": "Describe prerequisites and exact source revisions in the Build guide. Do not imply all providers or components are maintained or deployed.",
+      "source_records": [
+        {
+          "source_id": "CAP-CORE-SEMANTICS",
+          "source_revision": "87e0f3d9355c0827e989d9fbc31804440852519b",
+          "source_url": "https://github.com/AI-Ascension/sts2-game-core/blob/87e0f3d9355c0827e989d9fbc31804440852519b/README.md",
+          "evidence_kind": "offline_test"
+        },
+        {
+          "source_id": "CAP-MOD-BOUNDARY",
+          "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+          "source_url": "https://github.com/AI-Ascension/sts2-game-mod/blob/8b71150895ea95c0625afc1389bb08e4034d9350/README.md",
+          "evidence_kind": "source_derived"
+        },
+        {
+          "source_id": "CAP-GATEWAY-CONTRACT",
+          "source_revision": "33ea48f3b549f08e19db80d8c68c1438fa12a60a",
+          "source_url": "https://github.com/AI-Ascension/sts2-gateway/blob/33ea48f3b549f08e19db80d8c68c1438fa12a60a/README.md",
+          "evidence_kind": "replay"
+        },
+        {
+          "source_id": "CAP-MCP-ADAPTER",
+          "source_revision": "eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+          "source_url": "https://github.com/AI-Ascension/sts2-mcp-server/blob/eb89ab251665f263c2fe3e6b735eeae3d3e40c83/README.md",
+          "evidence_kind": "source_derived"
+        },
+        {
+          "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "evidence_kind": "native_run"
+        },
+        {
+          "source_id": "CAP-PROTOCOL-CONTRACTS",
+          "source_revision": "8874b0951289fd943c7e14dea36557fa24c401d1",
+          "source_url": "https://github.com/AI-Ascension/sts2-protocol/blob/8874b0951289fd943c7e14dea36557fa24c401d1/README.md",
+          "evidence_kind": "offline_test"
+        }
+      ],
+      "source_revision_semantics": "Each source_records revision identifies its cited source/report document; it does not identify all runtime build bytes."
+    },
+    {
+      "id": "MSG-RESEARCHER",
+      "audience": "researcher",
+      "surfaces": [
+        "RUN",
+        "DOCS",
+        "PRESS"
+      ],
+      "headline": "Every action leaves a trail.",
+      "body": "Follow the source revision, game/build/seed, observation and action rules, model budget, intervention or restart history, settled result, and artifact availability for each published run.",
+      "next_action": "Inspect the evidence record",
+      "source_ids": [
+        "CAP-HARNESS-WINDOWS-DEFEAT",
+        "CAP-HARNESS-LINUX-DEFEAT",
+        "CAP-MCP-COOP-READONLY"
+      ],
+      "observed_at": "2026-09-06",
+      "evidence_kind": "mixed",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Dated report records with private raw trajectories excluded",
+      "review_status": "unreviewed",
+      "public_notes": "A public report is not a public replay package. Keep hidden reasoning, credentials, saves, and private host artifacts out of exports.",
+      "source_records": [
+        {
+          "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "evidence_kind": "native_run"
+        },
+        {
+          "source_id": "CAP-HARNESS-LINUX-DEFEAT",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "evidence_kind": "native_run"
+        },
+        {
+          "source_id": "CAP-MCP-COOP-READONLY",
+          "source_revision": "eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+          "source_url": "https://github.com/AI-Ascension/sts2-mcp-server/blob/eb89ab251665f263c2fe3e6b735eeae3d3e40c83/docs/evidence/coop-synchronization-20260906.md",
+          "evidence_kind": "offline_test"
+        }
+      ],
+      "source_revision_semantics": "Each source_records revision identifies its cited source/report document; it does not identify all runtime build bytes."
+    },
+    {
+      "id": "MSG-CONTRIBUTOR",
+      "audience": "contributor",
+      "surfaces": [
+        "HOME",
+        "BUILD",
+        "DOCS",
+        "GITHUB"
+      ],
+      "headline": "Choose one boundary and make it clearer.",
+      "body": "Pick a bounded first task, read that repository's policy, and preserve the interfaces owned by its neighbors. The organization guide maps each component to its owner.",
+      "next_action": "Find a first task",
+      "source_ids": [
+        "CAP-ORG-POLICY",
+        "CAP-CORE-SEMANTICS",
+        "CAP-MOD-BOUNDARY",
+        "CAP-GATEWAY-CONTRACT",
+        "CAP-MCP-ADAPTER",
+        "CAP-PROTOCOL-CONTRACTS"
+      ],
+      "observed_at": "2026-09-07",
+      "evidence_kind": "mixed",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "AI-Ascension organization policy and current target boundaries",
+      "review_status": "unreviewed",
+      "public_notes": "Do not ask contributors to treat the brand repository as a replacement for runtime source repositories.",
+      "source_records": [
+        {
+          "source_id": "CAP-ORG-POLICY",
+          "source_revision": "0cbdf744d515b16c042eb6e16b1537d8ccf11771",
+          "source_url": "https://github.com/AI-Ascension/.github/blob/0cbdf744d515b16c042eb6e16b1537d8ccf11771/STATUS.md",
+          "evidence_kind": "source_derived"
+        },
+        {
+          "source_id": "CAP-CORE-SEMANTICS",
+          "source_revision": "87e0f3d9355c0827e989d9fbc31804440852519b",
+          "source_url": "https://github.com/AI-Ascension/sts2-game-core/blob/87e0f3d9355c0827e989d9fbc31804440852519b/README.md",
+          "evidence_kind": "offline_test"
+        },
+        {
+          "source_id": "CAP-MOD-BOUNDARY",
+          "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+          "source_url": "https://github.com/AI-Ascension/sts2-game-mod/blob/8b71150895ea95c0625afc1389bb08e4034d9350/README.md",
+          "evidence_kind": "source_derived"
+        },
+        {
+          "source_id": "CAP-GATEWAY-CONTRACT",
+          "source_revision": "33ea48f3b549f08e19db80d8c68c1438fa12a60a",
+          "source_url": "https://github.com/AI-Ascension/sts2-gateway/blob/33ea48f3b549f08e19db80d8c68c1438fa12a60a/README.md",
+          "evidence_kind": "replay"
+        },
+        {
+          "source_id": "CAP-MCP-ADAPTER",
+          "source_revision": "eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+          "source_url": "https://github.com/AI-Ascension/sts2-mcp-server/blob/eb89ab251665f263c2fe3e6b735eeae3d3e40c83/README.md",
+          "evidence_kind": "source_derived"
+        },
+        {
+          "source_id": "CAP-PROTOCOL-CONTRACTS",
+          "source_revision": "8874b0951289fd943c7e14dea36557fa24c401d1",
+          "source_url": "https://github.com/AI-Ascension/sts2-protocol/blob/8874b0951289fd943c7e14dea36557fa24c401d1/README.md",
+          "evidence_kind": "offline_test"
+        }
+      ],
+      "source_revision_semantics": "Each source_records revision identifies its cited source/report document; it does not identify all runtime build bytes."
+    },
+    {
+      "id": "MSG-WIN-STATUS",
+      "audience": "all",
+      "surfaces": [
+        "HOME",
+        "WATCH",
+        "RUN",
+        "PRESS"
+      ],
+      "headline": "A run reached Defeat. The climb continues.",
+      "body": "The current dated reports describe model-controlled practice campaigns that reached Defeat. Read the source-linked report for the exact host, seed, actions, and replay scope.",
+      "next_action": "Read the run report",
+      "source_ids": [
+        "CAP-HARNESS-WINDOWS-DEFEAT",
+        "CAP-HARNESS-LINUX-DEFEAT"
+      ],
+      "observed_at": "2026-09-06",
+      "evidence_kind": "native_run",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "STS2 v0.107.1 seed AIASCENSIONV3FULL1; Windows and Linux reports",
+      "review_status": "unreviewed",
+      "public_notes": "Do not compress this into the claim that AI won. The records end in Defeat.",
+      "source_records": [
+        {
+          "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "evidence_kind": "native_run"
+        },
+        {
+          "source_id": "CAP-HARNESS-LINUX-DEFEAT",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "evidence_kind": "native_run"
+        }
+      ],
+      "source_revision_semantics": "Each source_records revision identifies its cited source/report document; it does not identify all runtime build bytes."
+    },
+    {
+      "id": "MSG-UNAVAILABLE",
+      "audience": "all",
+      "surfaces": [
+        "WATCH",
+        "RUN",
+        "EMPTY"
+      ],
+      "headline": "The next run has not been published.",
+      "body": "There is a dated report to read, but no approved public video or replay package for this surface yet.",
+      "next_action": "Read the run report",
+      "source_ids": [
+        "CAP-HARNESS-WINDOWS-DEFEAT",
+        "CAP-HARNESS-LINUX-DEFEAT"
+      ],
+      "observed_at": "2026-09-07",
+      "evidence_kind": "native_run",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Current public artifact inventory",
+      "review_status": "unreviewed",
+      "public_notes": "A report-only state must not render a video player or a replay download.",
+      "source_records": [
+        {
+          "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "evidence_kind": "native_run"
+        },
+        {
+          "source_id": "CAP-HARNESS-LINUX-DEFEAT",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "evidence_kind": "native_run"
+        }
+      ],
+      "source_revision_semantics": "Each source_records revision identifies its cited source/report document; it does not identify all runtime build bytes."
+    }
+  ],
+  "headline_variants": [
+    {
+      "id": "HEAD-HOME",
+      "surface": "HOME",
+      "headline": "How far can an AI climb?",
+      "supporting_line": "Watch AI play. Inspect the run. Help it climb.",
+      "state": "approved_copy",
+      "source_id": "STRATEGY",
+      "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+    },
+    {
+      "id": "HEAD-WATCH",
+      "surface": "WATCH",
+      "headline": "See what the agent saw.",
+      "supporting_line": "Read the latest dated run report while public video is unavailable.",
+      "state": "report_only",
+      "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445"
+    },
+    {
+      "id": "HEAD-BUILD",
+      "surface": "BUILD",
+      "headline": "Build the path. Keep the boundary visible.",
+      "supporting_line": "Open tooling for game-playing agents, starting with Slay the Spire 2.",
+      "state": "source_derived",
+      "source_id": "CAP-MOD-BOUNDARY",
+      "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350"
+    },
+    {
+      "id": "HEAD-DOCS",
+      "surface": "DOCS",
+      "headline": "Every action leaves a trail.",
+      "supporting_line": "Follow the source revision, observation, decision, and settled result.",
+      "state": "source_derived",
+      "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445"
+    },
+    {
+      "id": "HEAD-SERIES",
+      "surface": "CAMPAIGN",
+      "headline": "The Climb \u2014 by AI Ascension",
+      "supporting_line": "Road to the First Verified Win",
+      "state": "active_goal",
+      "source_id": "STRATEGY",
+      "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+    },
+    {
+      "id": "HEAD-EMPTY",
+      "surface": "EMPTY",
+      "headline": "The next run has not been published.",
+      "supporting_line": "Check back when a reviewed report or video is ready.",
+      "state": "unavailable",
+      "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445"
+    }
+  ],
+  "cta_rules": [
+    {
+      "id": "CTA-REPORT",
+      "label": "Read the run report",
+      "when": "public_artifact_availability == report_only",
+      "destination_kind": "report",
+      "source_id": "CAP-HARNESS-WINDOWS-DEFEAT"
+    },
+    {
+      "id": "CTA-VIDEO",
+      "label": "Watch the run",
+      "when": "public_artifact_availability == video or video_and_replay",
+      "destination_kind": "video",
+      "source_id": "CAP-HARNESS-WINDOWS-DEFEAT"
+    },
+    {
+      "id": "CTA-REPLAY",
+      "label": "Inspect the replay",
+      "when": "public_artifact_availability == replay_package or video_and_replay",
+      "destination_kind": "replay_package",
+      "source_id": "CAP-HARNESS-WINDOWS-DEFEAT"
+    }
+  ],
+  "repository_descriptions": [
+    {
+      "source_name": "sts2-harness",
+      "target_name": "ascension",
+      "display_label": "Ascension",
+      "action": "rename",
+      "proposed_description": "Agent-run coordination, structured records, and replay; starting with Slay the Spire 2.",
+      "current_description": "Experiment coordinator for AI runs: episodes, a pluggable model-provider interface, replay of recorded records, and artifact lineage.",
+      "source_url": "https://github.com/AI-Ascension/sts2-harness/tree/cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Current sts2-harness main",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Preserve package/binary/schema/environment identifiers. Model-played Victory and broad compatibility remain unverified."
+    },
+    {
+      "source_name": "sts2-mcp-server",
+      "target_name": "sts2-mcp",
+      "display_label": "Slay the Spire 2 MCP",
+      "action": "rename",
+      "proposed_description": "MCP tools for the controlled STS2 gateway interface.",
+      "current_description": "Thin MCP tool adapter that maps approved calls to the authenticated gateway API without bypassing it.",
+      "source_url": "https://github.com/AI-Ascension/sts2-mcp-server/tree/eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+      "source_revision": "eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Current sts2-mcp-server main",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Preserve MCP methods, routes, package identity, and x-mcp-session-id."
+    },
+    {
+      "source_name": "sts2-game-mod",
+      "target_name": "sts2-mod",
+      "display_label": "Slay the Spire 2 Mod",
+      "action": "rename",
+      "proposed_description": "Native game integration for controlled observation and actions.",
+      "current_description": "Game-process adapter: a bounded main-thread work queue, versioned ABI check, and HTTP request admission limits.",
+      "source_url": "https://github.com/AI-Ascension/sts2-game-mod/tree/8b71150895ea95c0625afc1389bb08e4034d9350",
+      "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Current sts2-game-mod main and exact v0.107.1 reports",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Retain host-version compatibility, package names, managed manifest ID, ABI exports, and third-party attribution."
+    },
+    {
+      "source_name": "sts2-game-core",
+      "target_name": "sts2-core",
+      "display_label": "STS2 Domain Core",
+      "action": "rename",
+      "proposed_description": "Typed STS2 state and validation primitives.",
+      "current_description": "Host-independent Rust domain core: typed game-state values, pure validation, and policy rules with no I/O.",
+      "source_url": "https://github.com/AI-Ascension/sts2-game-core/tree/87e0f3d9355c0827e989d9fbc31804440852519b",
+      "source_revision": "87e0f3d9355c0827e989d9fbc31804440852519b",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Current sts2-game-core main",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Do not describe the core as a complete simulator."
+    },
+    {
+      "source_name": "sts2-gateway",
+      "target_name": "sts2-gateway",
+      "display_label": "STS2 Gateway",
+      "action": "keep",
+      "proposed_description": "Game-instance routing, lifecycle boundaries, and request authority.",
+      "current_description": "In-memory control plane for game-host instances: lifecycle, one lease per instance with epoch fencing, and fixed routes.",
+      "source_url": "https://github.com/AI-Ascension/sts2-gateway/tree/33ea48f3b549f08e19db80d8c68c1438fa12a60a",
+      "source_revision": "33ea48f3b549f08e19db80d8c68c1438fa12a60a",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Current sts2-gateway main",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Do not add a public marketing API or claim a deployed gateway."
+    },
+    {
+      "source_name": "sts2-protocol",
+      "target_name": "sts2-protocol",
+      "display_label": "STS2 Protocol",
+      "action": "keep",
+      "proposed_description": "Shared metadata contracts and conformance artifacts.",
+      "current_description": "Shared metadata contracts (identity, versions, error envelopes) in language-neutral schemas with golden test vectors.",
+      "source_url": "https://github.com/AI-Ascension/sts2-protocol/tree/8874b0951289fd943c7e14dea36557fa24c401d1",
+      "source_revision": "8874b0951289fd943c7e14dea36557fa24c401d1",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Current sts2-protocol main",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Do not call this a universal agent protocol or implementation common crate."
+    },
+    {
+      "source_name": "ascension-map-visualizer",
+      "target_name": "sts2-map",
+      "display_label": "STS2 Map Viewer",
+      "action": "deferred-rename",
+      "proposed_description": "Player-visible map topology and route inspection.",
+      "current_description": "",
+      "source_url": "https://github.com/AI-Ascension/ascension-map-visualizer/tree/18915e5571829e582f460bf14b674cc2db39d9c5",
+      "source_revision": "18915e5571829e582f460bf14b674cc2db39d9c5",
+      "evidence_kind": "planned",
+      "verification_actor": "none",
+      "public_artifact_availability": "none",
+      "supported_configuration": "Bootstrap default plus separate dirty local implementation checkout",
+      "review_status": "blocked",
+      "runtime_identity_change": false,
+      "notes": "Coordinate the active implementation before any rename; no public map capability is credited to bootstrap."
+    },
+    {
+      "source_name": "ascension-watchdog",
+      "target_name": "ascension-watchdog",
+      "display_label": "Ascension Watchdog",
+      "action": "keep",
+      "proposed_description": "Deterministic deployment supervision and recovery for Ascension.",
+      "current_description": "Deterministic deployment supervision and crash recovery for AI-Ascension",
+      "source_url": "https://github.com/AI-Ascension/ascension-watchdog/tree/dc2d20badb9e86c12067316b92d6c8289b2e6995",
+      "source_revision": "dc2d20badb9e86c12067316b92d6c8289b2e6995",
+      "evidence_kind": "planned",
+      "verification_actor": "none",
+      "public_artifact_availability": "none",
+      "supported_configuration": "Bootstrap default; open draft PR #2 has failed platform checks",
+      "review_status": "blocked",
+      "runtime_identity_change": false,
+      "notes": "Preserve the required operations name; do not imply 24/7 or recovery proof."
+    },
+    {
+      "source_name": "ai-agent-observability",
+      "target_name": "ascension-observability",
+      "display_label": "Ascension Observability",
+      "action": "rename",
+      "proposed_description": "Self-hosted observability integrations for AI Ascension experiments.",
+      "current_description": "Self-hosted AI-agent observability and experiment tracking with OpenTelemetry, MLflow, and Laminar.",
+      "source_url": "https://github.com/AI-Ascension/ai-agent-observability/tree/b25880376d3a3334c77f58637267db93581c4c77",
+      "source_revision": "b25880376d3a3334c77f58637267db93581c4c77",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "none",
+      "supported_configuration": "Current main source topology; open draft durability PR excluded",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Credit upstream services; live gameplay telemetry remains unverified."
+    },
+    {
+      "source_name": "aiascension.tech",
+      "target_name": "website",
+      "display_label": "AI Ascension Website",
+      "action": "rename",
+      "proposed_description": "The canonical Watch and Build experience for AI Ascension.",
+      "current_description": "AI Ascension \u2013 aiascension.tech | Unofficial Slay the Spire 2 AI race streaming site",
+      "source_url": "https://github.com/AI-Ascension/aiascension.tech/tree/4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+      "source_revision": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "none",
+      "supported_configuration": "Live host evidence in execution/site-baseline.json; PHP 8.3.33",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Preserve PHP subscription paths, confirm production branch/host control, and account for hosting-injected monitoring."
+    },
+    {
+      "source_name": "AI-Ascension.github.io",
+      "target_name": "AI-Ascension.github.io",
+      "display_label": "AI Ascension Historical Evidence",
+      "action": "keep",
+      "proposed_description": "Historical evidence, stable proof URLs, and the legacy entry point.",
+      "current_description": "Public site for AI-Ascension: what is tested today, what is only proposed, and a browser replay of one gateway contract test.",
+      "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/tree/bbe475998b0cd279309666f5cec3dc433d90a4a4",
+      "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "GitHub Pages deployment id 6298437311 from main",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Keep proof pages and anchors; do not turn historical reports into current wins."
+    },
+    {
+      "source_name": ".github",
+      "target_name": ".github",
+      "display_label": "AI Ascension Community",
+      "action": "keep",
+      "proposed_description": "Organization profile, contributor guidance, governance, and shared presentation.",
+      "current_description": "Contributor guide, issue forms, security policy, and shared standards for the AI-Ascension organization.",
+      "source_url": "https://github.com/AI-Ascension/.github/tree/0cbdf744d515b16c042eb6e16b1537d8ccf11771",
+      "source_revision": "0cbdf744d515b16c042eb6e16b1537d8ccf11771",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "report_only",
+      "supported_configuration": "Current .github main and STATUS.md",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Retain governance and evidence context while improving presentation."
+    },
+    {
+      "source_name": "ascension-brand-overhaul",
+      "target_name": "ascension-brand-overhaul",
+      "display_label": "AI Ascension Brand System",
+      "action": "create-or-reuse",
+      "proposed_description": "Canonical brand sources, publication tooling, campaign kit, and rollout evidence.",
+      "current_description": "Canonical AI Ascension brand sources, publication tooling, campaign kit, and rollout evidence.",
+      "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+      "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+      "evidence_kind": "source_derived",
+      "verification_actor": "maintainer_reported",
+      "public_artifact_availability": "none",
+      "supported_configuration": "Private brand repository at the pinned baseline",
+      "review_status": "unreviewed",
+      "runtime_identity_change": false,
+      "notes": "Keep private approvals and raw runtime artifacts out of public exports."
+    }
+  ],
+  "alias_rules": {
+    "public_display_names_may_lead_slugs": true,
+    "preserve_github_handle": "AI-Ascension",
+    "runtime_identifiers_preserved_initially": [
+      "Cargo package names",
+      "binary names",
+      "JSON schema IDs",
+      "HTTP routes",
+      "MCP methods",
+      "x-mcp-session-id",
+      "ABI exports",
+      "loader and manifest IDs",
+      "environment variables",
+      "historical evidence IDs"
+    ],
+    "old_name_redirects": "Only after stable-ID, Actions-caller, redirect, and rollback checks pass under a separately authorized migration operation."
+  },
+  "disclosures": [
+    {
+      "id": "DISC-INDEPENDENT",
+      "text": "AI Ascension is an independent project. It is not affiliated with or endorsed by Mega Crit or Valve and grants no rights to game files, assets, or marks.",
+      "placement": [
+        "footer",
+        "beside game-specific claims"
+      ],
+      "source_id": "STRATEGY",
+      "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+    },
+    {
+      "id": "DISC-REPORT",
+      "text": "Evidence: report-only. The linked record describes a dated source or host result; the underlying private capture or trajectory is not a public replay package.",
+      "placement": [
+        "run cards",
+        "watch page"
+      ],
+      "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445"
+    },
+    {
+      "id": "DISC-FIXTURE",
+      "text": "Forced fixture: terminal observation only. This record does not show model gameplay or a campaign victory.",
+      "placement": [
+        "Victory fixture references"
+      ],
+      "source_id": "CAP-MOD-FORCED-VICTORY",
+      "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350"
+    },
+    {
+      "id": "DISC-COOP",
+      "text": "Read-only coordinator report: not native multiplayer gameplay or a shared game authority.",
+      "placement": [
+        "co-op references"
+      ],
+      "source_id": "CAP-MCP-COOP-READONLY",
+      "source_revision": "eb89ab251665f263c2fe3e6b735eeae3d3e40c83"
+    },
+    {
+      "id": "DISC-MODEL",
+      "text": "Name the exact model, source revision, host/build, date, and action budget whenever a model result is shown. No provider partnership is implied.",
+      "placement": [
+        "model result cards",
+        "reports"
+      ],
+      "source_id": "CAP-HARNESS-WINDOWS-DEFEAT",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445"
+    }
+  ],
+  "collision_check": {
+    "status": "bounded_external_preflight",
+    "checked_on": "2026-09-07",
+    "review_document": "docs/NAME_COLLISION_REVIEW.md",
+    "scope": [
+      "AI-Ascension organization repository list and exact target slugs",
+      "current aiascension.tech representation",
+      "existing historical wordmark/glyph references",
+      "ordinary web search for AI Ascension, Ascension AI/game tooling, and The Climb series"
+    ],
+    "queries": [
+      "\"AI Ascension\" organization project",
+      "\"Ascension\" AI game tooling",
+      "\"The Climb\" AI series",
+      "site:github.com \"AI Ascension\""
+    ],
+    "sources": [
+      "gh api orgs/AI-Ascension/repos?per_page=100",
+      "https://github.com/AI-Ascension",
+      "https://aiascension.tech/",
+      "https://github.com/AI-Ascension/AI-Ascension.github.io/tree/bbe475998b0cd279309666f5cec3dc433d90a4a4/assets/identity/",
+      "https://github.com/JustinoChan/AscensionAI",
+      "https://github.com/TowerfallAi/towerfall-ai",
+      "https://ascension.gg/en",
+      "https://ascension.gg/en/terms-of-service",
+      "https://www.hulu.com/series/the-climb-ff145894-a001-49aa-ad51-a9ae9a4654bf"
+    ],
+    "result": "No exact independent organization using the full AI Ascension phrase surfaced in the bounded first-party results. Clear external collisions exist for the shorter Ascension name in AI/game tooling and for The Climb as an established series; qualify the flagship and series names in external metadata.",
+    "symbol_review": "blocked_until_generated_identity_art_exists",
+    "unresolved": [
+      "This is not trademark, corporate-name, domain, or legal clearance",
+      "The search was not an exhaustive external-world collision search",
+      "No registrations or domain purchases are authorized",
+      "Generated replacement identity still requires the W02 Astra/gpt-image-2 pipeline and independent review"
+    ]
+  },
+  "forbidden_claims": [
+    "AI has already achieved the first verified win",
+    "24/7 autonomous operation or recovery",
+    "universal model/provider integration",
+    "native multiplayer gameplay",
+    "all characters, seeds, branches, or host versions are supported",
+    "the historical Victory fixture is a model-played win",
+    "the public report contains the private replay package",
+    "Mega Crit or Valve endorsement",
+    "trademark or legal clearance",
+    "all repositories are deployed"
+  ]
+}

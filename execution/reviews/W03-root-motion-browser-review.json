@@ -1,0 +1,208 @@
+{
+  "schema_version": "ai-ascension.root-motion-browser-review.v1",
+  "observed_at": "2026-09-08T01:27:28.131Z",
+  "reviewer": "w03-root-motion-browser-independent-review",
+  "task": "Bounded consumer playback verification of the root-authored CAST-06 title-transition WebM and reduced-motion still fallback",
+  "scope": "Headless Chromium playback on an ephemeral 127.0.0.1 loopback harness. The actual repository WebM was loaded into a video element, played to ended, and checked for intrinsic metadata, time advancement, presented frames, and media/page/request errors. A separate reduced-motion context loaded the actual still and verified that the video was not played or requested.",
+  "working_tree": {
+    "git_head": "4ef7063536efb61903316270c661bf82dc45c4c5",
+    "branch": "work/root-authored-art",
+    "dirty_before_review": true,
+    "exclusive_write": "execution/reviews/W03-root-motion-browser-review.json",
+    "source_manifest_motion_code_written": false
+  },
+  "source_pins": {
+    "motion_recipe": {
+      "path": "brand/provenance/root-motion-recipe.json",
+      "sha256": "f035817e25d74bc68ea2331d0fa9d416169f11de630ac938184537c1804e6213",
+      "bytes": 1198
+    },
+    "motion_exporter": {
+      "path": "scripts/export_root_motion.py",
+      "sha256": "acbb6c45876b50e92f6667b9af844e2a07cd30ec6fa64a3b1d38b55081c73136",
+      "bytes": 4616
+    },
+    "existing_motion_export_receipt": {
+      "path": "execution/reviews/root-motion-export.json",
+      "sha256": "e41c590e7910b3ef67fbdfb6a9cdb6acfdcf72951477a739f5c391913ed62638",
+      "bytes": 2436
+    },
+    "existing_static_motion_review": {
+      "path": "execution/reviews/W03-root-motion-review.json",
+      "sha256": "4f8e09988f8b51d37b4fc9002626d0d0c633b9ac1b037e5fcfb5864f605931a7",
+      "bytes": 10708
+    },
+    "CAST06_generation_receipt": {
+      "path": "execution/reviews/root-broadcast-generation-batch-005.json",
+      "sha256": "7bd8aedaebb5e56f0c989c82df2bdb18537a33a989ac42ccb44ebcb9e39eb832",
+      "bytes": 654
+    },
+    "CAST06_visual_source_review": {
+      "path": "execution/reviews/W02-broadcast-source-review-003.json",
+      "sha256": "4c8157f45cb8361b525e91dec7849e290d7edce573ee44414da6b4b5377c8f12",
+      "bytes": 26696
+    },
+    "CAST06_raw_source": {
+      "path": "brand/sources/generated/CAST-06/generation-001.png",
+      "sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
+      "bytes": 1805508
+    },
+    "webm": {
+      "path": "brand/assets/broadcast/title-transition.webm",
+      "sha256": "5983f7c4f822b286a70f71bfbdd5281c1cd57962ca3c16d3e7675a592292aefd",
+      "bytes": 8487674
+    },
+    "reduced_motion_still": {
+      "path": "brand/assets/broadcast/title-transition-still.png",
+      "sha256": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
+      "bytes": 2101919
+    }
+  },
+  "browser": {
+    "engine": "chromium",
+    "headless": true,
+    "version": "153.0.8010.12",
+    "executable_path": "/home/timot/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+    "executable_sha256": "8c599d43aec53f2460a31ae2f4af6bd863f8258b34ff519564bc5d4726bfaa1e",
+    "playwright_package_path": "/mnt/c/Users/timot/Documents/projects/sts2-project/ascension-brand-overhaul/node_modules/playwright/package.json",
+    "playwright_package_version": "1.63.0",
+    "playwright_package_sha256": "8bc2ddebe8d9b051b9ecb87d62c6c63877e59d08617f32c3215681ca8bb70998"
+  },
+  "harness": {
+    "script_path": "/tmp/root_motion_browser_check.cjs",
+    "script_sha256": "30bc5a84ccd9781caf5cd2d50734384448d2d78d9878443bc2bfe0f76c9cba8d",
+    "evidence_path": "/tmp/root-motion-browser-evidence.json",
+    "evidence_sha256": "acda1d7edb05d3a32e94217442d01db8ed60b85e9bb382b40d3b519253246649",
+    "origin": "http://127.0.0.1:44947",
+    "bind": "127.0.0.1",
+    "public_server": false,
+    "network_dependency_install": false,
+    "motion_html_sha256": "b714396d7bd1e70ee7a3f24d1e808913fbc3b610a0fbceb487610e7bdbfb2c70",
+    "fallback_html_sha256": "e39c0b3ec14dafdcd58b4dff091f56e339707f0fbe4d7616b905d6fb10394e5b"
+  },
+  "motion_playback": {
+    "artifact_path": "brand/assets/broadcast/title-transition.webm",
+    "artifact_sha256": "5983f7c4f822b286a70f71bfbdd5281c1cd57962ca3c16d3e7675a592292aefd",
+    "artifact_bytes": 8487674,
+    "video_width": 1920,
+    "video_height": 1080,
+    "duration_seconds": 1.5,
+    "expected_duration_seconds": 1.5,
+    "initial_current_time_seconds": 0,
+    "final_current_time_seconds": 1.5,
+    "current_time_advanced": true,
+    "ended": true,
+    "paused_after_ended": true,
+    "ready_state": 4,
+    "frame_api_available": true,
+    "presented_frame_callback_count": 44,
+    "last_frame": {
+      "now": 2816.4,
+      "mediaTime": 1.467,
+      "presentedFrames": 44
+    },
+    "playback_quality": {
+      "creationTime": 2879.2000000029802,
+      "totalVideoFrames": 45,
+      "droppedVideoFrames": 4,
+      "corruptedVideoFrames": 0,
+      "presentedFrames": 41
+    },
+    "media_errors": [],
+    "media_error": null,
+    "page_errors": [],
+    "console_errors": [],
+    "request_failures": [],
+    "external_requests": [],
+    "requests": [
+      {
+        "method": "GET",
+        "pathname": "/motion.html",
+        "range": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "pathname": "/title-transition.webm",
+        "range": "bytes=0-",
+        "status": 206,
+        "responseRange": [
+          0,
+          8487673
+        ]
+      }
+    ],
+    "result": "pass"
+  },
+  "reduced_motion_fallback": {
+    "context_reduced_motion": "reduce",
+    "media_query_matches": true,
+    "still_path": "brand/assets/broadcast/title-transition-still.png",
+    "still_sha256": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
+    "still_bytes": 2101919,
+    "still_loaded": true,
+    "still_intrinsic_dimensions": [
+      1920,
+      1080
+    ],
+    "video_hidden": true,
+    "video_paused": true,
+    "video_current_time_seconds": 0,
+    "video_played_time_ranges": 0,
+    "video_play_events": 0,
+    "video_request_observed": false,
+    "media_errors": [],
+    "media_error": null,
+    "page_errors": [],
+    "console_errors": [],
+    "request_failures": [],
+    "external_requests": [],
+    "requests": [
+      {
+        "method": "GET",
+        "pathname": "/fallback.html",
+        "range": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "pathname": "/title-transition-still.png",
+        "range": null,
+        "status": 200
+      }
+    ],
+    "result": "pass"
+  },
+  "preservation_check": {
+    "webm_hash_before_from_existing_receipt": "5983f7c4f822b286a70f71bfbdd5281c1cd57962ca3c16d3e7675a592292aefd",
+    "webm_hash_after_browser_check": "5983f7c4f822b286a70f71bfbdd5281c1cd57962ca3c16d3e7675a592292aefd",
+    "webm_bytes_before_from_existing_receipt": 8487674,
+    "webm_bytes_after_browser_check": 8487674,
+    "webm_unchanged": true,
+    "still_sha256_after_browser_check": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
+    "motion_recipe_sha256_after_browser_check": "f035817e25d74bc68ea2331d0fa9d416169f11de630ac938184537c1804e6213",
+    "motion_exporter_sha256_after_browser_check": "acbb6c45876b50e92f6667b9af844e2a07cd30ec6fa64a3b1d38b55081c73136",
+    "source_manifest_motion_code_written": false
+  },
+  "checks": {
+    "webm_intrinsic_metadata": "pass: videoWidth=1920, videoHeight=1080, duration=1.5 seconds",
+    "play_to_ended": "pass: play() resolved, currentTime advanced from 0 to 1.5, ended=true",
+    "presented_frames": "pass: requestVideoFrameCallback available with 44 callbacks; Chromium playback quality reported 45 total frames and 41 presented frames",
+    "no_media_or_browser_errors": "pass: no media error, page error, console error, request failure, or external request",
+    "reduced_motion_still": "pass: reduced-motion media query matched; actual 1920x1080 still loaded",
+    "reduced_motion_video_not_played": "pass: video play events=0, played ranges=0, currentTime=0, and no WebM request",
+    "artifact_hashes": "pass: WebM and still hashes/bytes match the existing motion receipt and remain unchanged",
+    "source_manifest_motion_code": "pass: no source, manifest, or motion-code file edited",
+    "consumer_playback": "pass",
+    "publication_approval": false
+  },
+  "decision": "consumer_playback_pass_reduced_motion_fallback_pass",
+  "publication_approved": false,
+  "limitations": [
+    "This is one headless Chromium 153.0.8010.12 run on Linux; it does not establish playback on other browsers, operating systems, GPUs, or display paths.",
+    "The harness bound only to an ephemeral 127.0.0.1 loopback origin, blocked external requests, installed no dependencies, and does not establish a public, deployed, OBS, or live-broadcast result.",
+    "The check verifies media consumer behavior and reduced-motion selection. It does not approve artwork design, rights, image-tool backend identity, native model attestation, publication, or live broadcast use.",
+    "Chromium reported 4 dropped video frames, 0 corrupted frames, and successful completion; frame presentation is proved for this run, while smoothness across consumers remains untested.",
+    "The temporary harness and evidence are under /tmp and are hash-pinned here; this review receipt is the only repository write for the check."
+  ]
+}

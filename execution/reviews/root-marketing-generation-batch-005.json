@@ -1,0 +1,20 @@
+[
+  {
+    "asset_id": "MKT-07",
+    "generation_id": "MKT-07-generation-001",
+    "prompt_path": "brand/prompts/root/MKT-07/generation-001.txt",
+    "prompt_sha256": "807ac43159f48d0920febbb3a4f9d4d959cefa02aceb0dba15a45cd848e2f452",
+    "source_path": "brand/sources/generated/MKT-07/generation-001.png",
+    "source_sha256": "58d6cd96a6b10877f3d97cb4d6c9d12a2d0d2b4cff5d2694eda00846902b15a3",
+    "dimensions": [
+      1983,
+      793
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T01:12:58.764252+00:00"
+  }
+]

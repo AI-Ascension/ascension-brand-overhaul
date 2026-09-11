@@ -1,0 +1,13 @@
+Create a polished AI Ascension editorial artwork, continuing the warm Ascent Ledger visual language of the supplied root-generated reference. Paper ivory, deep ink, restrained amber, elegant editorial serif headline, clear small supporting text, ample negative space. This is original generated presentation art, NOT a screenshot or gameplay evidence. Do not depict a game screen, game character, game card, proprietary logo, photograph, trophy, fake chart, invented metric, QR code, testimonial, badge of verification, or extra text. Keep all essential copy comfortably inside the central 80 percent safe area. All text must be correctly spelled, crisp, and exactly as specified. Reflow creatively to fit the requested aspect ratio; do not preserve any old blank-field labels, form boxes, or template copy from the reference. Use only a very restrained abstract branching-path ornament. The art is a private draft, not permission to publish.
+
+Square 1:1 aspect ratio, intended final export 1080x1080. A complete PRIVATE PROPOSED challenge card with actual proposed rules, not a blank form. The only visible text is:
+Headline: "Check one reported result"
+Conspicuous status: "PROPOSED — NOT SCHEDULED"
+Four short rules, each on its own readable line:
+"Read the public report."
+"Cite the exact source revision."
+"Identify one claim needing evidence."
+"Share no private data."
+Small readable source line: "github.com/AI-Ascension/sts2-harness"
+Footer: "AI Ascension"
+Do not invent or add a deadline, date, prize, vote, participant, response total, result, sponsor, approved status, or announced event. This is a concrete proposed challenge awaiting approval; it is not scheduled or published. Keep the exact source URL legible within the safe area; use plain text only, no fabricated QR code. The accompanying source-copy JSON links the exact public Windows report revision. The precise draft rules, source context and proposed/unscheduled boundary passed independent review in W02-marketing-concrete-copy-review.json.

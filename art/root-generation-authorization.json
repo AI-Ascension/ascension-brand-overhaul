@@ -1,0 +1,16 @@
+{
+  "schema_version": "ai-ascension.root-generation-authorization.v1",
+  "authorization_id": "root-image-tool-route-20260907",
+  "authorized_by": "user",
+  "authorized_at": "2026-09-07",
+  "authorization_text": "you can of course generate them images instead.",
+  "scope": "all_requested_new_artwork",
+  "author_role_id": "ROOT",
+  "tool_name": "image_gen__imagegen",
+  "image_model_policy": "unknown_unless_observed",
+  "backend_policy": "unspecified",
+  "native_agent_attestation": false,
+  "independent_design_review_required": true,
+  "exact_prompt_and_output_hashes_required": true,
+  "evidence_media_generation_prohibited": true
+}

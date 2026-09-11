@@ -1,0 +1,25 @@
+{
+  "scope": "Historical Pages intro at actual viewport size; existing archival art is preserved, not credited as new generated art.",
+  "revision": "b50f7d725c8d6abb6306963d059fbb7fa067402c",
+  "reviewer": "root",
+  "observed_at": "2026-09-07T17:35:43.644320+00:00",
+  "result": "pass",
+  "screenshots": [
+    {
+      "file": "home-1280-light.png",
+      "sha256": "3c0122b7446455e2db6caa57a112c3a05f21c69eb3280a54b6efdce25af995c5"
+    },
+    {
+      "file": "home-360-dark.png",
+      "sha256": "d621a194d99649648392a45cc8fcb6188e6b7771ceb09c27dd054ccef1b7624c"
+    }
+  ],
+  "observations": [
+    "360 dark: navigation wraps cleanly, readable intro and source links, no horizontal overflow; primary CTA follows the full evidence-qualified paragraph on scroll.",
+    "1280 light: headline, report links, contract-proof CTA, independence disclosure, and source/test limits legible with no overlap."
+  ],
+  "limitations": [
+    "Local rendered historical site, not deployment or acceptance of missing new-art assets.",
+    "Only source presentation changed; historical proof routes and assets retain their own evidence class."
+  ]
+}

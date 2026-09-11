@@ -1,0 +1,315 @@
+{
+  "schema_version": "ai-ascension.w02-broadcast-source-review.v2",
+  "observed_at": "2026-09-07T23:53:33Z",
+  "reviewer": "w02-broadcast-source-independent-review-002",
+  "task": "W02 broadcast source review 002",
+  "scope": "Independent visual and source-use review of CAST-01 generation-002, CAST-02 generation-002, CAST-03 generation-002, and CAST-04 generations-001 through -003. The six declared source PNGs were opened with view_image. CAST-01 alpha geometry, CAST-02 two-view composition, CAST-03 phone layout, CAST-04 operating-state copy, text legibility, unwanted values or logos, and brand consistency were reviewed. No source, prompt, registry, or generated image was edited.",
+  "inputs_read": [
+    "AGENTS.md",
+    "MASTER_PROMPT.md",
+    "orchestration/CONTRACT.md",
+    "art/asset-registry.json",
+    "brand/BRAND_GUIDE.md",
+    "art/root-generation-authorization.json",
+    "execution/reviews/root-image-access-restored.json",
+    "execution/reviews/root-broadcast-generation-batch-002.json",
+    "execution/reviews/root-broadcast-generation-batch-003.json",
+    "brand/prompts/root/CAST-01/generation-002.txt",
+    "brand/prompts/root/CAST-02/generation-002.txt",
+    "brand/prompts/root/CAST-03/generation-002.txt",
+    "brand/prompts/root/CAST-04/generation-001.txt",
+    "brand/prompts/root/CAST-04/generation-002.txt",
+    "brand/prompts/root/CAST-04/generation-003.txt"
+  ],
+  "source_pins": {
+    "asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "0e71cf13afba70da828b384da8ea3b36021796b044f1c5e53c3d1c6cd6656032",
+      "selected_entries": ["CAST-01", "CAST-02", "CAST-03", "CAST-04"]
+    },
+    "brand_guide": {
+      "path": "brand/BRAND_GUIDE.md",
+      "sha256": "b1551f9c49572b0f1a8034fbdd7de89446bf119e2ad84bd5bea714575c4a8a23",
+      "relevant_rules": [
+        "The Climb — by AI Ascension is the series identity.",
+        "The visual language is paper, ink, amber, clear charts, branching paths, and restrained editorial typography.",
+        "Generated artwork is a visual companion and not product or gameplay evidence.",
+        "Use approved generated identity exports when available; generated lettering or an unverified embedded mark is not a runtime brand authorization."
+      ]
+    },
+    "authorization": {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+      "route": "user_authorized_root_image_tool",
+      "tool": "image_gen__imagegen",
+      "backend_attestation": "unknown",
+      "author_model_attestation": "unknown",
+      "native_agent_attestation": false
+    },
+    "generation_receipts": [
+      {
+        "path": "execution/reviews/root-image-access-restored.json",
+        "sha256": "8d4f85179e01ebd779ba11c627cf8cb4d10487f1b10dbabc0e16b353b5111a76",
+        "records": ["CAST-01-generation-002"]
+      },
+      {
+        "path": "execution/reviews/root-broadcast-generation-batch-002.json",
+        "sha256": "a83a178a06c2d49af85ad1b35fcb12001aefd1f3c0b8d92cbe97b9252ae44c13",
+        "records": ["CAST-02-generation-002", "CAST-03-generation-002"]
+      },
+      {
+        "path": "execution/reviews/root-broadcast-generation-batch-003.json",
+        "sha256": "ab807f82b23ce8f939c99eb60833cee53f4859ebc0b401c93bba6c00589fbbaa",
+        "records": ["CAST-04-generation-001", "CAST-04-generation-002", "CAST-04-generation-003"]
+      }
+    ]
+  },
+  "method": {
+    "actual_source_files_viewed_with_view_image": [
+      "brand/sources/generated/CAST-01/generation-002.png",
+      "brand/sources/generated/CAST-02/generation-002.png",
+      "brand/sources/generated/CAST-03/generation-002.png",
+      "brand/sources/generated/CAST-04/generation-001.png",
+      "brand/sources/generated/CAST-04/generation-002.png",
+      "brand/sources/generated/CAST-04/generation-003.png"
+    ],
+    "checks": [
+      "Compared each viewed source with its exact root prompt and the matching CAST registry brief.",
+      "Verified all six source hashes, dimensions, and modes against the three supplied generation receipts.",
+      "Inspected CAST-01 alpha values by region. The principal left gameplay opening has no alpha at compositing strength; only sub-128 antialiasing occurs at the panel and lower rule boundaries.",
+      "Inspected text at the native source dimensions and the intended aspect composition. No OCR or functional broadcast-host test was substituted for visual inspection.",
+      "Compared palette, path treatment, typography hierarchy, attribution, and embedded marks with the final brand guide and approved identity references.",
+      "Looked for game screenshots, real footage, fabricated metrics, provider or publisher logos, dates, timers, live badges, and other invented values."
+    ],
+    "not_tested": [
+      "No live or recorded broadcast host was run.",
+      "No dynamic field population was tested.",
+      "CAST-03 was not composited with actual game footage; its footage crop and safe area remain untested.",
+      "No mechanical export or final consumer integration was approved by this review."
+    ]
+  },
+  "coverage": {
+    "families_reviewed": 4,
+    "family_ids": ["CAST-01", "CAST-02", "CAST-03", "CAST-04"],
+    "source_pngs_viewed": 6,
+    "source_hash_and_dimension_result": "6/6 pass",
+    "source_mode_result": "6/6 match receipts",
+    "operating_state_variants_viewed": 3
+  },
+  "summary": {
+    "source_ready_for_bounded_mechanical_export": [
+      "CAST-01-generation-002",
+      "CAST-04-generation-001"
+    ],
+    "source_conditionally_ready": [
+      "CAST-02-generation-002",
+      "CAST-03-generation-002",
+      "CAST-04-generation-002",
+      "CAST-04-generation-003"
+    ],
+    "source_blockers_or_conditions": [
+      "CAST-02 and CAST-04 generations-002/-003 contain unverified A-like embedded monograms that do not match the approved ID-01/ID-04 identity exports; root must decide whether to regenerate without them or establish an exact approved-mark route.",
+      "CAST-03 needs a real-footage crop/composite check before approval, and its eight empty Human intervention cells introduce unspecified meter-like semantics.",
+      "CAST-04 generation-001 is clean; the generation-002/-003 footer mark treatment is inconsistent with that clean variant and with the approved identity export."
+    ],
+    "overall_visual_result": "The six sources share a strong near-black, warm-ivory, amber-path editorial language. Text and state copy are legible at source dimensions, and no fabricated run values or gameplay evidence are visible. The marked conditions prevent a blanket source approval for every variant.",
+    "decision": "Bounded source review complete. CAST-01 and CAST-04 generation-001 are source-ready for a separate mechanical-export check. CAST-02, CAST-03, and CAST-04 generations-002/-003 remain conditional as recorded. This is not a broadcast-host, deployment, publication, legal, trademark, or public-release approval."
+  },
+  "assets": [
+    {
+      "asset_id": "CAST-01",
+      "title": "Single-agent broadcast overlay",
+      "selected_generation": 2,
+      "source_record": {
+        "generation_id": "CAST-01-generation-002",
+        "prompt_path": "brand/prompts/root/CAST-01/generation-002.txt",
+        "prompt_sha256": "8d23628ad785b32606e99d3b9b5fab828561b9b844e21bf84fa52bac81778253",
+        "source_path": "brand/sources/generated/CAST-01/generation-002.png",
+        "source_sha256": "48073d0090c2a19b6bd16c2754b6f4c93c87b89b8d00615e54cffe3f9b01fa60",
+        "source_dimensions": "1672x941",
+        "source_mode": "RGBA",
+        "source_bytes": 474486,
+        "receipt_path": "execution/reviews/root-image-access-restored.json"
+      },
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The large left gameplay opening is genuinely transparent in the source. At alpha >= 128, the opening above the lower bar is empty; the only faint nonzero pixels there are sub-128 antialiasing at the panel and lower rule boundaries.",
+        "The right status panel is opaque and contains The Climb, TEMPLATE · NO LIVE DATA, and blank Model config, Floor, Health, Status, Action, Public explanation, and Human intervention fields. No values, game scene, provider logo, controller icon, or result are embedded.",
+        "The source visually divides at approximately 74% opening and 26% panel, close to the requested 76%/24% relationship while preserving game-dominant space. The panel labels are readable at source size; long live values remain an untested consumer concern.",
+        "The footer reads AI Ascension and has no separate invented monogram. The near-black, warm-ivory, amber, path-line, and restrained editorial treatment is consistent with the brand guide."
+      ],
+      "issues": [],
+      "source_use_observation": "No declared external reference is present in the supplied receipt. No third-party mark, provider or publisher logo, proprietary game image, gameplay capture, or fabricated value was observed.",
+      "broadcast_host_boundary": "The transparent opening is a source-design observation only. It does not prove that a browser source, OBS scene, stream-status signal, dynamic field renderer, or real game feed works end to end.",
+      "limits": [
+        "The exact target export dimensions and transparent compositing behavior require a separate mechanical-export and consumer check.",
+        "The bottom bar is intentionally opaque across the opening and must remain separate from the alpha-opening claim."
+      ]
+    },
+    {
+      "asset_id": "CAST-02",
+      "title": "Comparison broadcast overlay",
+      "selected_generation": 2,
+      "source_record": {
+        "generation_id": "CAST-02-generation-002",
+        "prompt_path": "brand/prompts/root/CAST-02/generation-002.txt",
+        "prompt_sha256": "e256862b44cd98202acd33b5b231387210c7e5f5eade6ff61d4456b9f3ef9c68",
+        "source_path": "brand/sources/generated/CAST-02/generation-002.png",
+        "source_sha256": "6048383ebb62576535b3592182bd1fe43d0b77f353a033575ffa652e085e45e8",
+        "source_dimensions": "1672x941",
+        "source_mode": "RGB",
+        "source_bytes": 1023163,
+        "receipt_path": "execution/reviews/root-broadcast-generation-batch-002.json"
+      },
+      "verdict": "conditional_hold_creative_mark_review",
+      "observations": [
+        "The source has exactly two equally large, empty outlined footage panels, labeled View A and View B, with a readable blank Model config line beneath each. It does not invent a third or fourth stream.",
+        "The bottom fields Conditions, Human intervention, and Public commentary are separated and blank. The title Comparison view and TEMPLATE · NO LIVE DATA are legible, with no scores, names, model values, game imagery, or claims.",
+        "The path ornament and amber/ivory/charcoal treatment fit the Ascent Ledger language."
+      ],
+      "issues": [
+        {
+          "severity": "creative_mark_boundary",
+          "finding": "The far-left path ornament contains a clear A-like monogram inside a ring, and the footer repeats a separate outlined A-like mark beside AI ASCENSION. These marks are not the approved ID-01 branching-A export and were not requested as a logo in the prompt.",
+          "required_follow_up": "Root should regenerate with the ornament-only treatment or use a separately verified approved identity export through the permitted route. Do not paint, trace, or mechanically redraw the mark in this review."
+        }
+      ],
+      "source_use_observation": "No declared external reference is present in the supplied receipt. No third-party or provider mark, gameplay capture, or fabricated value was observed; the concern is the unverified generated monogram as a first-party brand-boundary issue.",
+      "broadcast_host_boundary": "The two-panel composition does not establish synchronized feeds, matching comparison conditions, model configuration population, or actual broadcast operation."
+    },
+    {
+      "asset_id": "CAST-03",
+      "title": "Mobile broadcast layout",
+      "selected_generation": 2,
+      "source_record": {
+        "generation_id": "CAST-03-generation-002",
+        "prompt_path": "brand/prompts/root/CAST-03/generation-002.txt",
+        "prompt_sha256": "542e4f69de1f9e850d07844c74928535fff21de1ba1af332fe4ee32074f8af9d",
+        "source_path": "brand/sources/generated/CAST-03/generation-002.png",
+        "source_sha256": "bf71fe357606b3fb9c95b1b8df1acc2c425913ace576c4ebee9524d4bef3fb40",
+        "source_dimensions": "941x1672",
+        "source_mode": "RGB",
+        "source_bytes": 1289654,
+        "receipt_path": "execution/reviews/root-broadcast-generation-batch-002.json"
+      },
+      "verdict": "partial_ready_actual_footage_crop_unverified",
+      "observations": [
+        "The portrait source has a large empty outlined Game view, a separate empty Subtitle area, a bottom Model/Floor/Status strip, and a Human intervention row. The dark interior is a reserved blank area, not a fabricated game scene.",
+        "The title The Climb, TEMPLATE · NO LIVE DATA, Game view, Subtitle area, Model, Floor, Status, and Human intervention are readable at the native source dimensions. No values, logos, gameplay capture, or performance claim is visible.",
+        "The eight empty cells in the Human intervention row carry no values, but they can read as an eight-step indicator rather than a free-form empty field. This is a source-design ambiguity to resolve before using that row for arbitrary intervention text.",
+        "The source uses the dark/ivory/amber path language consistently, but it has no visible by AI Ascension or AI Ascension attribution. The consuming surface must supply the series attribution or root must add it through a new creative generation if the image is expected to stand alone."
+      ],
+      "issues": [
+        {
+          "severity": "integration_condition",
+          "finding": "The requested actual-footage crop/composite was not performed. Safe areas, aspect fit, letterboxing, subtitle collision, and readability with a real game frame remain unverified.",
+          "required_follow_up": "Composite an approved real footage frame through the intended 1080x1920 consumer path and inspect the crop before marking the mobile export ready."
+        },
+        {
+          "severity": "source_design_ambiguity",
+          "finding": "Eight empty Human intervention cells are an unrequested meter-like affordance and may imply a fixed count or control.",
+          "required_follow_up": "Confirm that the consumer intentionally uses eight slots, or obtain a new creative revision with one unambiguous empty row."
+        },
+        {
+          "severity": "brand_attribution_condition",
+          "finding": "The standalone source names The Climb but does not visibly identify AI Ascension.",
+          "required_follow_up": "Keep an adjacent full series attribution in the consuming surface, or regenerate a self-identifying title treatment."
+        }
+      ],
+      "source_use_observation": "No declared external reference is present in the supplied receipt. No third-party mark, provider logo, proprietary game content, gameplay capture, or fabricated value was observed.",
+      "broadcast_host_boundary": "The blank game panel and labels are a template design only. They do not prove phone capture, real footage, stream state, subtitle rendering, or dynamic status updates."
+    },
+    {
+      "asset_id": "CAST-04",
+      "title": "Starting, intermission, and ended scenes",
+      "selected_generations": [1, 2, 3],
+      "source_records": [
+        {
+          "generation_id": "CAST-04-generation-001",
+          "prompt_path": "brand/prompts/root/CAST-04/generation-001.txt",
+          "prompt_sha256": "e4236650ef6390aa4754e075ce0b5b77541120a81af2d8e94396f151ced9957f",
+          "source_path": "brand/sources/generated/CAST-04/generation-001.png",
+          "source_sha256": "54b3608cb8f18a2900408c6a167cb86d447988fa186801c92489a27156b115f5",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1668903,
+          "receipt_path": "execution/reviews/root-broadcast-generation-batch-003.json"
+        },
+        {
+          "generation_id": "CAST-04-generation-002",
+          "prompt_path": "brand/prompts/root/CAST-04/generation-002.txt",
+          "prompt_sha256": "abd7a0aa95dd29b15ecc7bc38a76dc637d7eea893123da33f93588623ed10576",
+          "source_path": "brand/sources/generated/CAST-04/generation-002.png",
+          "source_sha256": "4829dc232e03d65dd402d2fd483383834643327b4efdbf7072a0592772005136",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1747943,
+          "receipt_path": "execution/reviews/root-broadcast-generation-batch-003.json"
+        },
+        {
+          "generation_id": "CAST-04-generation-003",
+          "prompt_path": "brand/prompts/root/CAST-04/generation-003.txt",
+          "prompt_sha256": "0c1d4817533898fe647a03864f6bfdd26f6caf5f9e5b059047c503fa38bccc2d",
+          "source_path": "brand/sources/generated/CAST-04/generation-003.png",
+          "source_sha256": "a98caf6a642a06f39e541f7989cf9b953ae858874ed2e1e955a5cd44701f19f6",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1690401,
+          "receipt_path": "execution/reviews/root-broadcast-generation-batch-003.json"
+        }
+      ],
+      "verdict": "partial_ready_generation_001_only",
+      "variant_observations": [
+        {
+          "generation": 1,
+          "state": "preparing",
+          "copy_result": "Pass: The Climb; Preparing the broadcast.; The feed has not started.; AI Ascension are visibly correct and legible.",
+          "composition_result": "Pass: generous dark negative space, restrained right-edge ascent path, no timer, date, schedule, live badge, gameplay scene, metric, or outcome claim.",
+          "brand_result": "Pass: no embedded monogram; dark/ivory/amber treatment is consistent with the approved dark broadcast language."
+        },
+        {
+          "generation": 2,
+          "state": "intermission",
+          "copy_result": "Pass: The Climb; Intermission.; Broadcast paused.; AI Ascension are visibly correct and legible.",
+          "composition_result": "Pass: resting waypoint and quiet right-edge path communicate a pause; no timer, date, schedule, live badge, gameplay scene, model metric, or promise of return is visible.",
+          "brand_result": "Conditional: footer includes an outlined A-like monogram and separator beside AI ASCENSION; it does not match the approved identity export and is not separately verified."
+        },
+        {
+          "generation": 3,
+          "state": "ended",
+          "copy_result": "Pass: The Climb; Broadcast ended.; Thank you for watching.; AI Ascension are visibly correct and legible.",
+          "composition_result": "Pass: terminating right-edge waypoint communicates a completed scene; no schedule, replay link, live badge, gameplay scene, score, or model metric is visible.",
+          "brand_result": "Conditional: footer includes an outlined A-like monogram and separator beside AI ASCENSION; it does not match the approved identity export and is not separately verified."
+        }
+      ],
+      "issues": [
+        {
+          "severity": "creative_mark_boundary",
+          "finding": "Generations-002 and -003 add a clear A-like footer monogram that is absent from generation-001 and does not match the approved ID-01/ID-04 mark export. This makes the three state scenes inconsistent as one family and introduces an unverified generated logo.",
+          "required_follow_up": "Use a new root image generation that keeps the approved text and path state while omitting the monogram, or resolve a separately verified approved-mark use. Do not mechanically redraw or erase it."
+        }
+      ],
+      "source_use_observation": "No declared external reference is present in the supplied receipt. No third-party mark, provider logo, game image, gameplay capture, metrics, schedule, or fabricated outcome was observed.",
+      "broadcast_host_boundary": "The three messages correctly describe intended preparation, paused, and ended copy in the artwork. They do not prove that a broadcast state machine, stream-status source, intermission control, or ended-scene transition selects the right scene at runtime."
+    }
+  ],
+  "source_use_and_rights_observation": {
+    "result": "bounded_generated_original_input_observation",
+    "observed_inputs": "The six reviewed records are local root-route generated PNG sources. The supplied receipts declare no external reference inputs for these generations.",
+    "visual_observation": "No recognizable third-party mark, provider or publisher logo, proprietary game screenshot, gameplay capture, real metric, timer, date, schedule, live badge, or fabricated run value was observed. CAST-02 and CAST-04 generations-002/-003 do contain generated A-like monograms, which are treated as unverified first-party brand additions rather than as approved identity assets.",
+    "limits": [
+      "This is not a copyright, trademark, license, permission, or legal clearance determination.",
+      "Generated artwork is not gameplay, product, host, deployment, or public-run evidence.",
+      "The root author model, native agent chain, image model, and image backend remain unverified in the supplied records.",
+      "Any publication or public download still requires the separate exact-digest approval and distribution gates."
+    ]
+  },
+  "unverified_or_deferred": [
+    "Root model, image backend, image model resolution, and native-agent ancestry are not attested by this visual review.",
+    "No functioning broadcast host or stream-status integration was exercised.",
+    "No real gameplay footage was composited into CAST-03.",
+    "No mechanical export was reviewed or approved by this record.",
+    "No legal, trademark, license, permission, deployment, publication, or public-release decision is made here."
+  ],
+  "approval_grant": false
+}

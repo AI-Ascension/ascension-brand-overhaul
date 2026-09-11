@@ -1,0 +1,133 @@
+{
+  "observed_at": "2026-09-08T02:39:35.155Z",
+  "scope": "Six local Chromium catalog filter states; mobile/desktop. Screenshots are verification evidence, not artwork. No publication or full surface acceptance.",
+  "results": [
+    {
+      "width": 390,
+      "id": "GH-04-B",
+      "count": "1 of 80 resources shown",
+      "notice": "72 artwork families \u00b7 3 authentic evidence-media families \u00b7 5 historical/reference records. 117 preserved generated sources; 115 planned export files exist. 67 families verified; 5 still require approved content or integration. Root generation is user-authorized. Model/backend identity remains unknown.",
+      "overflow": false,
+      "broken": [],
+      "cards": [
+        {
+          "id": "GH-04-B",
+          "status": [
+            "Root-authorized image tool",
+            "verified"
+          ]
+        }
+      ],
+      "screenshot": ".execution-private/catalog-GH-04-B-390.png",
+      "screenshot_sha256": "48ff43a014e9fbff4c75844850a02c246b3f17cfd2e5b9c937127925d5ec1cab",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "id": "MKT-03",
+      "count": "1 of 80 resources shown",
+      "notice": "72 artwork families \u00b7 3 authentic evidence-media families \u00b7 5 historical/reference records. 117 preserved generated sources; 115 planned export files exist. 67 families verified; 5 still require approved content or integration. Root generation is user-authorized. Model/backend identity remains unknown.",
+      "overflow": false,
+      "broken": [],
+      "cards": [
+        {
+          "id": "MKT-03",
+          "status": [
+            "Root-authorized image tool",
+            "blocked"
+          ]
+        }
+      ],
+      "screenshot": ".execution-private/catalog-MKT-03-390.png",
+      "screenshot_sha256": "bc47f558f2230fbb6f7b643e70cf91fd619d2a82738c31c112cdb429bdde4b4e",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "id": "CAST-06",
+      "count": "1 of 80 resources shown",
+      "notice": "72 artwork families \u00b7 3 authentic evidence-media families \u00b7 5 historical/reference records. 117 preserved generated sources; 115 planned export files exist. 67 families verified; 5 still require approved content or integration. Root generation is user-authorized. Model/backend identity remains unknown.",
+      "overflow": false,
+      "broken": [],
+      "cards": [
+        {
+          "id": "CAST-06",
+          "status": [
+            "Root-authorized image tool",
+            "verified"
+          ]
+        }
+      ],
+      "screenshot": ".execution-private/catalog-CAST-06-390.png",
+      "screenshot_sha256": "0cd711c9c3f7064d84c98edf41e2ead9d357da012f83de1df9565f1e1be927dd",
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "id": "GH-04-B",
+      "count": "1 of 80 resources shown",
+      "notice": "72 artwork families \u00b7 3 authentic evidence-media families \u00b7 5 historical/reference records. 117 preserved generated sources; 115 planned export files exist. 67 families verified; 5 still require approved content or integration. Root generation is user-authorized. Model/backend identity remains unknown.",
+      "overflow": false,
+      "broken": [],
+      "cards": [
+        {
+          "id": "GH-04-B",
+          "status": [
+            "Root-authorized image tool",
+            "verified"
+          ]
+        }
+      ],
+      "screenshot": ".execution-private/catalog-GH-04-B-1440.png",
+      "screenshot_sha256": "2ccec7beefaf0bff644f3c1711573e4af6654a3d2043e994cb9f1d843f72960d",
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "id": "MKT-03",
+      "count": "1 of 80 resources shown",
+      "notice": "72 artwork families \u00b7 3 authentic evidence-media families \u00b7 5 historical/reference records. 117 preserved generated sources; 115 planned export files exist. 67 families verified; 5 still require approved content or integration. Root generation is user-authorized. Model/backend identity remains unknown.",
+      "overflow": false,
+      "broken": [],
+      "cards": [
+        {
+          "id": "MKT-03",
+          "status": [
+            "Root-authorized image tool",
+            "blocked"
+          ]
+        }
+      ],
+      "screenshot": ".execution-private/catalog-MKT-03-1440.png",
+      "screenshot_sha256": "6cdfcb77d8fecd38b874756fda01874202042b25671baebde42439a22885775c",
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "id": "CAST-06",
+      "count": "1 of 80 resources shown",
+      "notice": "72 artwork families \u00b7 3 authentic evidence-media families \u00b7 5 historical/reference records. 117 preserved generated sources; 115 planned export files exist. 67 families verified; 5 still require approved content or integration. Root generation is user-authorized. Model/backend identity remains unknown.",
+      "overflow": false,
+      "broken": [],
+      "cards": [
+        {
+          "id": "CAST-06",
+          "status": [
+            "Root-authorized image tool",
+            "verified"
+          ]
+        }
+      ],
+      "screenshot": ".execution-private/catalog-CAST-06-1440.png",
+      "screenshot_sha256": "01358f62a273856a7f3d0efaf8c87504b3d4aa93565bcd0065d164595ce088d1",
+      "errors": []
+    }
+  ],
+  "root_visual_review": {
+    "screenshots_viewed": [
+      ".execution-private/catalog-MKT-03-390.png",
+      ".execution-private/catalog-GH-04-B-1440.png"
+    ],
+    "result": "Readable headings, accurate current counts, visible verified/blocked labels, complete previews and export links; no observed clipping in these two representative screenshots. All six states passed automated overflow, broken-image and page-error checks."
+  }
+}

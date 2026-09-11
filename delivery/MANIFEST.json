@@ -1,0 +1,144 @@
+{
+  "schema_version": "ai-ascension.delivery-index.v1",
+  "classification": "local_private_audit",
+  "canonical_file_inventory": "../MANIFEST.json",
+  "canonical_checksums": "../CHECKSUMS.sha256",
+  "integrity_note": "The root inventory binds every delivered source file except its own manifest/checksum indices. Final archive hashes and the external independent review receipt are stored beside the archive to avoid self-reference.",
+  "components": [
+    {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "pull_request": "https://github.com/AI-Ascension/ascension-brand-overhaul/pull/1",
+      "final_revision_locator": "External RECEIPT.json beside the ZIP; excluded here to avoid self-reference.",
+      "tested_implementation_and_test_hashes": "../execution/reviews/root-final-expanded-art-local-tests.json"
+    },
+    {
+      "repository": "AI-Ascension/aiascension.tech",
+      "revision": "56e532b21922f39480cd15dcbb465676770408f5",
+      "pull_request": "https://github.com/AI-Ascension/aiascension.tech/pull/1",
+      "private_artwork_candidate_manifest": "../github/website-art-candidate.json",
+      "private_artwork_candidate_revision": "7e63ff4a5317de5305602f5d407a93246e66d248"
+    },
+    {
+      "repository": "AI-Ascension/.github",
+      "revision": "d84523795a64556b82d29f6da1dab62eb9b8b4c8",
+      "pull_request": "https://github.com/AI-Ascension/.github/pull/10",
+      "changed_file_sha256": {
+        "README.md": "052da96de5fd729d7d40c9c9aba85a90faebbe6cac61ad691b81a42d61edf27a",
+        "profile/README.md": "d4cb629b57b6860e6dc0156ee6f9f5876de633c89d4b28182f0b961197cdba95"
+      }
+    },
+    {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "revision": "e5153d6628843bbc734686ae926e143a1cf90526",
+      "pull_request": "https://github.com/AI-Ascension/AI-Ascension.github.io/pull/12",
+      "changed_file_sha256": {
+        "README.md": "546500a8e05559d2ad90250b38e4e5ec07ccdf7c3cad8c1199b6299c4faa2d4d",
+        "index.html": "1427fc30bfb28f0b3f8eab3f734dc1d1eccaaaf3f5ca88c548d3e1dacf9f2146"
+      }
+    },
+    {
+      "repository": "AI-Ascension/sts2-harness",
+      "revision": "d2105005ebdb6a5f7dd5e266e80b139e294cf89e",
+      "pull_request": "https://github.com/AI-Ascension/sts2-harness/pull/34",
+      "changed_file_sha256": {
+        "README.md": "e71fc571b24c05f46c7ffaa096c5d8a371624d7bb60506134cf41b0e56518150"
+      }
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-core",
+      "revision": "9a27a80c32dcadd8030cf42c861e9e5da4daed1c",
+      "pull_request": "https://github.com/AI-Ascension/sts2-game-core/pull/9",
+      "changed_file_sha256": {
+        "README.md": "12550880ea7b974f419ba425f9730737bb83a09ae74b982b8f099538a8b73d22"
+      }
+    },
+    {
+      "repository": "AI-Ascension/sts2-game-mod",
+      "revision": "7cc0af3c64da639b191060251e667782d535bb0c",
+      "pull_request": "https://github.com/AI-Ascension/sts2-game-mod/pull/55",
+      "changed_file_sha256": {
+        "README.md": "300a659688335637da320f74c7f82e11c7efd4bd3191d12aa110c34570523396"
+      }
+    },
+    {
+      "repository": "AI-Ascension/sts2-gateway",
+      "revision": "22d780c12c60d8a2e5e1310f57deeea172decbd6",
+      "pull_request": "https://github.com/AI-Ascension/sts2-gateway/pull/21",
+      "changed_file_sha256": {
+        "README.md": "0b7ca6db86a62c1472546a382afbc4144b81b38d66b8a5f8719d3097f9a8be73"
+      }
+    },
+    {
+      "repository": "AI-Ascension/sts2-mcp-server",
+      "revision": "6ad97aeead88cdb2097675ddff076bc4bb97529d",
+      "pull_request": "https://github.com/AI-Ascension/sts2-mcp-server/pull/26",
+      "changed_file_sha256": {
+        "README.md": "813b5d3b0ae2ee2ca67bc735c54f404b51abfa8d9d1c7b7d2437f5d516f451f0"
+      }
+    },
+    {
+      "repository": "AI-Ascension/sts2-protocol",
+      "revision": "0c39c5a53b005d94df59f14f0962255d0962203a",
+      "pull_request": "https://github.com/AI-Ascension/sts2-protocol/pull/20",
+      "changed_file_sha256": {
+        "README.md": "f7a5bbe1295cad4d68dbc22488ae66520355b1f16ca3ac13b68263e8fafed54d"
+      }
+    },
+    {
+      "repository": "AI-Ascension/ascension-watchdog",
+      "revision": "9e240e916726b367dbae2cfd0eea64c3afeb35fa",
+      "pull_request": "https://github.com/AI-Ascension/ascension-watchdog/pull/3",
+      "changed_file_sha256": {
+        "README.md": "3cc62f0e37c42c6a541c97fcb71610e08aa7412668caaad9c9f96ea033665a5c"
+      }
+    },
+    {
+      "repository": "AI-Ascension/ai-agent-observability",
+      "revision": "f872902ed987f5946bf843824063d10884a1bd29",
+      "pull_request": "https://github.com/AI-Ascension/ai-agent-observability/pull/13",
+      "changed_file_sha256": {
+        "README.md": "1900fb339cff931bd687f1a7cbce3f9a65d46c370ce1e6fe9d06706c92ed019b"
+      }
+    }
+  ],
+  "artwork": {
+    "families": 72,
+    "required_exports": 115,
+    "delivered_exports": 115,
+    "status": "all_exports_exist_two_content_integration_briefs_blocked",
+    "registry": "../art/asset-registry.json",
+    "execution_manifest": "../brand/asset-manifest.json",
+    "attestation": "../execution/art-model-attestation.json",
+    "verified_families": 70,
+    "source_masters": 123,
+    "remaining_work": "../brand/remaining-artwork.json",
+    "acceptance": "../execution/root-art-acceptance.json"
+  },
+  "content_kit": {
+    "episodes": 12,
+    "clips": 24,
+    "articles": 6,
+    "gates": 72,
+    "status": "drafts; not operated",
+    "path": "../marketing/"
+  },
+  "evidence_classes": {
+    "source_and_review_ledgers": "included; internal audit metadata retained",
+    "synthetic_fixtures": "included under tests/fixtures/publication, rejected by production gate",
+    "local_visual_test_captures": "excluded from archive; hash-bound local review receipts included",
+    "private_game_trajectories_and_captures": "not included",
+    "font_binaries": "not included",
+    "raw_provider_diagnostics": "not included",
+    "generated_art_masters_and_prompts": "123 generated source PNGs including superseded attempts and exact prompt files included; all 115 planned exports exist, 70 of 72 families accepted; no public distribution approvals",
+    "website_artwork_candidate": "Included as a private prerequisite Git bundle with exact revision, changed-file hashes and restoration instructions; not present in the public website PR."
+  },
+  "operation_ledger": "../execution/operations.json",
+  "requirement_ledger": "../execution/requirements-status.json",
+  "final_report": "FINAL_REPORT.md",
+  "runbook": "RUNBOOK.md",
+  "privacy_scope": "PRIVACY_SCOPE.md",
+  "remote_review_snapshot": "../execution/reviews/root-final-art-remote-snapshot-preintegration.json",
+  "remote_review_snapshot_sha256": "c202f2dd86b48cc9b5fcfa19d1de7c9dd2e8415e78b4bad4ba15ccb264579b37",
+  "source_tree_inventory": "../execution/source-tree-inventory.json",
+  "archive_acceptance_locator": "External final-review.json binds the exact source manifest and candidate ZIP; external RECEIPT.json binds the final reviewed ZIP and remote heads."
+}

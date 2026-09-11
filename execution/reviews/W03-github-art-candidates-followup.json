@@ -1,0 +1,394 @@
+{
+  "schema_version": "ai-ascension.w03.github-art-candidates-followup.v1",
+  "status": "followup_pass",
+  "reviewer": "w03-github-art-candidates-independent-followup",
+  "observed_at": "2026-09-08T04:25:33.468656Z",
+  "task": "Bounded follow-up verification of the repaired GH-11 private GitHub-art candidate bundle and its explicit integration-base/direct-parent contract.",
+  "scope": "Re-validated the updated GH-11 map/result metadata, current public PR#12 prerequisite, stable repository ID, bundle SHA-256 and bundle verification, independent bare-repository restoration, exact direct parent and direct-parent receipt delta, exact five-file integration-base delta, receipt metadata and hash, README picture links and alt text, and all three canonical byte-identical PNGs. No global manifest, source file, commit, push, generation, merge, rename, or GitHub Settings mutation was performed; this receipt is the only authorized workspace write for the follow-up.",
+  "working_tree": {
+    "path": "/mnt/c/users/timot/documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "git_head": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+    "branch": "work/root-authored-art",
+    "dirty_before_review": true,
+    "source_or_manifest_edits_by_reviewer": false,
+    "exclusive_write": "execution/reviews/W03-github-art-candidates-followup.json",
+    "private_scratch_only": "/tmp/ai-ascension-github-art-gh11-followup.meHcC1"
+  },
+  "source_pins": {
+    "canonical_source": {
+      "repository": "AI-Ascension/ascension-brand-overhaul",
+      "revision": "40b0c07796b24e029fbee3bf913b5869cb61fe35",
+      "manifest": "brand/asset-manifest.json"
+    },
+    "public_prerequisite": {
+      "repository": "AI-Ascension/AI-Ascension.github.io",
+      "pull_request": 12,
+      "ref": "refs/pull/12/head",
+      "revision": "e5153d6628843bbc734686ae926e143a1cf90526"
+    },
+    "direct_parent": "d6b70237ec7e20b4dac6fc8d03ea1467772d17c1",
+    "candidate_head": "054294ebdbc760f132053753f801aed078369e3e",
+    "bundle": {
+      "path": "delivery/github-art-candidates/GH11-AI-Ascension.github.io.bundle",
+      "sha256": "261a868e406fcd241a831d9f51c6f63284f1f72a37444b4be742213d89276620"
+    },
+    "receipt": {
+      "path": ".ai-ascension-art-sync.json",
+      "sha256": "f7ae982d426d7c92a4735dc98f9e611da849724c326808424844e458720f0bdc"
+    },
+    "updated_candidate_map": {
+      "path": "delivery/github-art-candidates/github-art-candidates-map.json",
+      "bytes": 61372,
+      "sha256": "1f490f086df47db86aabe959eb3ee94ff04097e1cd3dc819a6df6bd237d52ba8"
+    },
+    "updated_candidate_result": {
+      "path": ".execution-private/github-art-candidates-result.json",
+      "bytes": 63698,
+      "sha256": "ac78d8644e3398646894d1e07734a0b5023ede5cac9c4ee5b1c6788c2405d7d1"
+    },
+    "prior_review": {
+      "path": "execution/reviews/W03-github-art-candidates-review.json",
+      "bytes": 141299,
+      "sha256": "cb9e985f120962cf9d22f0688a30c79ce2fec84a07d517be28ed0a67f1a44431"
+    }
+  },
+  "original_finding": {
+    "review": "execution/reviews/W03-github-art-candidates-review.json",
+    "finding_id": "GH-11-IMMEDIATE-PARENT",
+    "prior_disposition": "GH-11 needed repair because the authored map treated e5153d6 as immediate_parent while the bundle head direct parent was d6b7023.",
+    "repair_boundary": "The updated contract records e5153d6 as integration_base/public prerequisite, d6b7023 as direct_parent, the receipt-only direct-parent delta, and the five-file integration delta."
+  },
+  "methodology": {
+    "audit_script": {
+      "path": "/tmp/ai-ascension-github-art-gh11-followup.meHcC1/audit.py",
+      "sha256": "7843ada1863dde963b633dc06684b2a7834016be4b6bf9460c49479cff93f70c"
+    },
+    "audit_evidence": {
+      "path": "/tmp/ai-ascension-github-art-gh11-followup.meHcC1/gh11-followup-audit.json",
+      "sha256": "9a75c1a0cb405edd7328d486b12575ff140ed3d43d6daadafb3e4b601464880f",
+      "bytes": 14636
+    },
+    "fresh_bare_restore": {
+      "repository_root": "/tmp/ai-ascension-github-art-gh11-followup.meHcC1/repo.git",
+      "commands": [
+        "git ls-remote git@github.com:AI-Ascension/AI-Ascension.github.io.git refs/pull/12/head",
+        "git fetch --no-tags origin refs/pull/12/head:refs/integration-base",
+        "git bundle verify delivery/github-art-candidates/GH11-AI-Ascension.github.io.bundle",
+        "git fetch <bundle> HEAD:refs/candidates/GH-11",
+        "git diff --name-only refs/candidates/GH-11^1 refs/candidates/GH-11",
+        "git diff --name-only refs/integration-base refs/candidates/GH-11"
+      ],
+      "distinct_bare_repository": true
+    },
+    "stable_id": "gh api repos/AI-Ascension/AI-Ascension.github.io --jq .id",
+    "png_method": "git show <candidate-head>:<target-path> and git show 40b0c07796b24e029fbee3bf913b5869cb61fe35:<source-path>; SHA-256 and PNG IHDR dimensions were compared."
+  },
+  "repair": {
+    "integration_base_revision": "e5153d6628843bbc734686ae926e143a1cf90526",
+    "direct_parent_revision": "d6b70237ec7e20b4dac6fc8d03ea1467772d17c1",
+    "head_revision": "054294ebdbc760f132053753f801aed078369e3e",
+    "history": {
+      "integration_base_to_direct_parent": "d6b70237ec7e20b4dac6fc8d03ea1467772d17c1 is the art candidate commit whose parent is e5153d6628843bbc734686ae926e143a1cf90526.",
+      "direct_parent_to_head": "054294ebdbc760f132053753f801aed078369e3e records final receipt metadata and changes only .ai-ascension-art-sync.json."
+    },
+    "direct_parent_delta": {
+      "declared_paths": [
+        ".ai-ascension-art-sync.json"
+      ],
+      "actual_paths": [
+        ".ai-ascension-art-sync.json"
+      ],
+      "sha256": "f7ae982d426d7c92a4735dc98f9e611da849724c326808424844e458720f0bdc",
+      "match": true
+    },
+    "integration_delta": {
+      "declared_paths": [
+        ".ai-ascension-art-sync.json",
+        "README.md",
+        "assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+        "assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+        "assets/github/ai-ascensiondot-githubdot-io-social.png"
+      ],
+      "actual_paths": [
+        ".ai-ascension-art-sync.json",
+        "README.md",
+        "assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+        "assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+        "assets/github/ai-ascensiondot-githubdot-io-social.png"
+      ],
+      "match": true,
+      "exact_five_file_scope": true,
+      "runtime_or_site_behavior_files": []
+    }
+  },
+  "checks": {
+    "public_prerequisite_remote_head": true,
+    "stable_repository_id": true,
+    "bundle_sha256": true,
+    "bundle_verify": true,
+    "restored_head": true,
+    "public_prerequisite_ancestor": true,
+    "direct_parent": true,
+    "direct_parent_delta": true,
+    "integration_delta": true,
+    "exact_five_file_integration_scope": true,
+    "receipt_sha_and_metadata": true,
+    "README_picture_light_dark_alt_and_old_shared_absence": true,
+    "PNG_SHA_and_byte_identity": true,
+    "PNG_dimensions": true
+  },
+  "receipt": {
+    "path": ".ai-ascension-art-sync.json",
+    "declared_sha256": "f7ae982d426d7c92a4735dc98f9e611da849724c326808424844e458720f0bdc",
+    "actual_sha256": "f7ae982d426d7c92a4735dc98f9e611da849724c326808424844e458720f0bdc",
+    "field_checks": {
+      "schema_version": true,
+      "status": true,
+      "target_repository": true,
+      "stable_repository_id": true,
+      "target_branch": true,
+      "target_base_revision": true,
+      "canonical_source_repository": true,
+      "canonical_source_revision": true,
+      "source_manifest": true,
+      "sync_mode": true,
+      "banner_asset_id": true,
+      "social_preview_asset_id": true,
+      "approval_publication": true,
+      "approval_settings": true,
+      "approval_independent_review": true,
+      "files_count": true,
+      "bundle_base_revision_is_integration_base": true,
+      "bundle_base_public_prerequisite": true,
+      "receipt_sha256": true
+    },
+    "file_checks": [
+      {
+        "path": "assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+        "declared_sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+        "target_sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+        "canonical_sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+        "target_equals_canonical": true,
+        "target_dimensions": [
+          1600,
+          400
+        ],
+        "expected_dimensions": [
+          1600,
+          400
+        ],
+        "dimensions_match": true,
+        "receipt_entry": {
+          "asset_id": "GH-11-B",
+          "kind": "github_banner",
+          "source_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+          "target_path": "assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+          "sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+          "format": "png",
+          "width": 1600,
+          "height": 400
+        },
+        "receipt_entry_exact": true
+      },
+      {
+        "path": "assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+        "declared_sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+        "target_sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+        "canonical_sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+        "target_equals_canonical": true,
+        "target_dimensions": [
+          1600,
+          400
+        ],
+        "expected_dimensions": [
+          1600,
+          400
+        ],
+        "dimensions_match": true,
+        "receipt_entry": {
+          "asset_id": "GH-11-B",
+          "kind": "github_banner",
+          "source_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+          "target_path": "assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+          "sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+          "format": "png",
+          "width": 1600,
+          "height": 400
+        },
+        "receipt_entry_exact": true
+      },
+      {
+        "path": "assets/github/ai-ascensiondot-githubdot-io-social.png",
+        "declared_sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+        "target_sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+        "canonical_sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+        "target_equals_canonical": true,
+        "target_dimensions": [
+          1280,
+          640
+        ],
+        "expected_dimensions": [
+          1280,
+          640
+        ],
+        "dimensions_match": true,
+        "receipt_entry": {
+          "asset_id": "GH-11-S",
+          "kind": "github_social_preview",
+          "source_path": "brand/assets/github/ai-ascensiondot-githubdot-io-social.png",
+          "target_path": "assets/github/ai-ascensiondot-githubdot-io-social.png",
+          "sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+          "format": "png",
+          "width": 1280,
+          "height": 640
+        },
+        "receipt_entry_exact": true
+      }
+    ],
+    "ok": true,
+    "target_base_is_integration_base": true,
+    "direct_parent_is_recorded_separately": true
+  },
+  "readme": {
+    "path": "README.md",
+    "picture_block": "<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/github/ai-ascensiondot-githubdot-io-banner-dark.png\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/github/ai-ascensiondot-githubdot-io-banner-light.png\">\n  <img src=\"assets/github/ai-ascensiondot-githubdot-io-banner-light.png\" alt=\"AI Ascension Historical Evidence repository banner; generated artwork, not gameplay evidence.\" width=\"100%\">\n</picture>",
+    "checks": {
+      "path_exists": true,
+      "picture_block": true,
+      "light_source": true,
+      "dark_source": true,
+      "light_media_source": true,
+      "dark_media_source": true,
+      "img_light_source": true,
+      "alt_text": true,
+      "old_shared_banner_reference_absent": true
+    },
+    "ok": true
+  },
+  "pngs": {
+    "checks": [
+      {
+        "path": "assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+        "declared_sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+        "target_sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+        "canonical_sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+        "target_equals_canonical": true,
+        "target_dimensions": [
+          1600,
+          400
+        ],
+        "expected_dimensions": [
+          1600,
+          400
+        ],
+        "dimensions_match": true,
+        "receipt_entry": {
+          "asset_id": "GH-11-B",
+          "kind": "github_banner",
+          "source_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+          "target_path": "assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+          "sha256": "e84a6cb4ea7dd807c19df1002d8efb663a39c931afb20dbf6ec633e9cf71ef7c",
+          "format": "png",
+          "width": 1600,
+          "height": 400
+        },
+        "receipt_entry_exact": true
+      },
+      {
+        "path": "assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+        "declared_sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+        "target_sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+        "canonical_sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+        "target_equals_canonical": true,
+        "target_dimensions": [
+          1600,
+          400
+        ],
+        "expected_dimensions": [
+          1600,
+          400
+        ],
+        "dimensions_match": true,
+        "receipt_entry": {
+          "asset_id": "GH-11-B",
+          "kind": "github_banner",
+          "source_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+          "target_path": "assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+          "sha256": "1a9b938be24c4cdd6df7aa5b3e1eb43a3149408a1c7f6a4af6a588748168714c",
+          "format": "png",
+          "width": 1600,
+          "height": 400
+        },
+        "receipt_entry_exact": true
+      },
+      {
+        "path": "assets/github/ai-ascensiondot-githubdot-io-social.png",
+        "declared_sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+        "target_sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+        "canonical_sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+        "target_equals_canonical": true,
+        "target_dimensions": [
+          1280,
+          640
+        ],
+        "expected_dimensions": [
+          1280,
+          640
+        ],
+        "dimensions_match": true,
+        "receipt_entry": {
+          "asset_id": "GH-11-S",
+          "kind": "github_social_preview",
+          "source_path": "brand/assets/github/ai-ascensiondot-githubdot-io-social.png",
+          "target_path": "assets/github/ai-ascensiondot-githubdot-io-social.png",
+          "sha256": "8f1f2851e1d2816e979196bce8021954f1797b7d1e481400a0b7aa5e780f5e4b",
+          "format": "png",
+          "width": 1280,
+          "height": 640
+        },
+        "receipt_entry_exact": true
+      }
+    ],
+    "count": 3,
+    "sha_and_byte_identity_ok": true,
+    "dimensions_ok": true
+  },
+  "candidate": {
+    "github_art_id": "GH-11",
+    "repository": "AI-Ascension/AI-Ascension.github.io",
+    "pull_request": 12,
+    "review_status": "pass",
+    "map_result_candidate_equal": true,
+    "updated_map_and_result_explicitly_record": {
+      "integration_base": "e5153d6628843bbc734686ae926e143a1cf90526",
+      "direct_parent": "d6b70237ec7e20b4dac6fc8d03ea1467772d17c1",
+      "direct_parent_delta_receipt_only": true,
+      "integration_delta_five_files": true
+    }
+  },
+  "authored_result_validation": {
+    "json_receipts": "passed",
+    "source_revision_presence": "passed",
+    "public_prerequisite_remote_rechecks": "passed",
+    "bundle_verify": "12/12 passed",
+    "bundle_restoration": "12/12 exact head passed",
+    "byte_identical_png_copies": "36/36 passed",
+    "readme_picture_link_checks": "12/12 passed",
+    "old_shared_banner_absence": "12/12 passed",
+    "scoped_immediate_deltas": "11/12 direct-parent deltas are exactly five files; GH-11 records its receipt-only direct-parent delta explicitly.",
+    "website_existing_sync_receipt": "preserved unchanged",
+    "runtime_or_site_behavior_edits": "none observed",
+    "failures": 0,
+    "scoped_integration_deltas": "12/12 integration-base deltas are exactly five files; GH-11 uses e5153d6 as integration base and d6b7023 as direct parent."
+  },
+  "decision": "github_art_candidate_followup_pass",
+  "finding_disposition": "GH-11-IMMEDIATE-PARENT is reconciled by the updated explicit two-level integration-base/direct-parent metadata. The direct parent now matches the restored bundle head parent, its receipt-only delta matches the declared record and digest, and the five-file art integration delta is exactly the e5153d6 integration-base-to-head tree delta.",
+  "publication_approved": false,
+  "settings_mutation": false,
+  "public_push": false,
+  "merge_to_default": false,
+  "limitations": [
+    "This follow-up verifies the repaired private bundle and metadata locally; it does not upload social previews, merge PR #12, deploy Pages, or inspect a live GitHub preview crop.",
+    "The canonical artwork revision remains local and unpushed, so publication and settings changes remain separately gated."
+  ]
+}

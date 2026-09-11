@@ -1,0 +1,1258 @@
+{
+  "schema_version": "ai-ascension.w02-final-art-acceptance-review.v1",
+  "observed_at": "2026-09-08T03:13:48.309051+00:00",
+  "reviewer": "w02-broadcast-visual-independent-final-acceptance",
+  "task": "Final independent reconciliation of the current root artwork registry, acceptance ledger, remaining queue, provenance chain, W02 review chain, and selected requirement rows.",
+  "scope": "Current worktree only. This review adjudicates scoped generated-art/source-use/export/lineage readiness and records the boundary between blank or decorative design and factual content, runtime, native-agent, publication, legal, or public-release evidence.",
+  "working_tree": {
+    "path": "/mnt/c/Users/timot/Documents/projects/sts2-project/sts2-project-worktrees/brand-root-art",
+    "exclusive_write": "execution/reviews/W02-final-art-acceptance-review.json",
+    "source_prompt_manifest_ledger_edits_by_reviewer": false,
+    "pre_existing_dirty_changes_preserved": true
+  },
+  "source_pins": {
+    "data_requirements": {
+      "path": "data/requirements.json",
+      "sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3"
+    },
+    "requirements_status": {
+      "path": "execution/requirements-status.json",
+      "sha256": "4f64d627dfae1e26fe0305fdd58161f705be281c879b42b490117e7c9620bca2"
+    },
+    "asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3"
+    },
+    "brand_guide": {
+      "path": "brand/BRAND_GUIDE.md",
+      "sha256": "b1551f9c49572b0f1a8034fbdd7de89446bf119e2ad84bd5bea714575c4a8a23"
+    },
+    "art_map": {
+      "path": "art/ART_MAP.md",
+      "sha256": "f1337e07c81f40a24cd66edb97465af0c8a9514cedcad930bf94c73a2c52732b"
+    },
+    "promptbook": {
+      "path": "art/PROMPTBOOK.md",
+      "sha256": "a9581d8aa648897ba6e23bd9a9b41497d77f47158e14c511ed7959b330c2eb2e"
+    },
+    "generation_policy": {
+      "path": "art/generation-policy.json",
+      "sha256": "dabc08e924fd6c24c2277ca1ee8eea7c5ea041dc00367300f3c92e4b90f16f10"
+    },
+    "root_authorization": {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de"
+    },
+    "asset_manifest": {
+      "path": "brand/asset-manifest.json",
+      "sha256": "49f55d7f731fb47df9dff6a2c36891c9c5c5729a39bdea48838ff013a87d9112"
+    },
+    "root_art_acceptance": {
+      "path": "execution/root-art-acceptance.json",
+      "sha256": "50ce0e6ada864ae9b7953cdc55b222cfa605677b37ec6471c5d38c539ca7f919"
+    },
+    "remaining_artwork": {
+      "path": "brand/remaining-artwork.json",
+      "sha256": "3890819331a48e3937d55f0350f59c4551d75715ad0797bd1caa770c7e558cd0"
+    },
+    "generation_index": {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "5acb8f14ee0bc846456b007f884f7e897ff2991e5b85359cae5cdeda495a136e"
+    },
+    "generation_records": {
+      "path": "brand/provenance/root-generation-records.json",
+      "sha256": "74311575b0486deb03e914496c452d6e944244115e3061252bdb88c497f09b82"
+    },
+    "export_recipe": {
+      "path": "brand/provenance/root-export-recipe.json",
+      "sha256": "7380210a8654f0342485a22d116591d95865e368fc237c290a433fb106ff8b27"
+    },
+    "export_receipts": {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a"
+    },
+    "tool_observations": {
+      "path": "brand/provenance/root-tool-observations.json",
+      "sha256": "eb4964c854e0c799dcb43acf0eae296280c7dd67e9dbe200e83329c4249996ca"
+    },
+    "art_model_attestation": {
+      "path": "execution/art-model-attestation.json",
+      "sha256": "738de46bf3a994ec48244ee103837122316553920326b086725d0be4580094db"
+    },
+    "native_capability_recheck": {
+      "path": "execution/reviews/root-native-capability-recheck-002.json",
+      "sha256": "d575aa191797e2ac1073beecf58fce11238c2b7a0e9ac031c2cdf66bbfd12751"
+    },
+    "season_evidence_refresh": {
+      "path": "execution/reviews/root-season-evidence-refresh.json",
+      "sha256": "876bfec908d283ed9a67024b0d995a3f2efd48b1c54d93873ef2fada18856bf6"
+    },
+    "email_fallback_browser": {
+      "path": "execution/reviews/root-email-fallback-browser.json",
+      "sha256": "27b9ddaff02a69b8be21e4add8efb9fe4e70047df99e6a01c51970ab262f832b"
+    },
+    "email_html": {
+      "path": "marketing/launch/email-run-card.html",
+      "sha256": "bf4745bc605dd3d97dd694412ffc9127cf9474522862fc53161d569c92da1ac2"
+    },
+    "email_plain_text": {
+      "path": "marketing/launch/email-run-card.txt",
+      "sha256": "22f75a63f44a19fc1f9fb54991f9d52cd09c83fa87ff5648d3db399ead9828e5"
+    },
+    "email_digest": {
+      "path": "marketing/launch/email-digest.md",
+      "sha256": "5fdc2d57b0dd25d12d385afe87b1b50de80fd594466960a23a92ef3718c3bc4a"
+    },
+    "review_chain": {
+      "execution/reviews/W02-broadcast-source-review-002.json": "e8869811f6242bc1131d5b2f9bda0036cb1b294566b3a634122723d655f3e063",
+      "execution/reviews/W02-broadcast-source-review-003.json": "4c8157f45cb8361b525e91dec7849e290d7edce573ee44414da6b4b5377c8f12",
+      "execution/reviews/W02-broadcast-source-review-004.json": "a68a30c6f82368efc9ac98c0cbc18ffcd7b80ef93760f27eee6d859202ce49e5",
+      "execution/reviews/W02-broadcast-source-review-005.json": "9f98c2311908c6fccf5574c245511f5577f04b800bdb01542d5443891ff5e0d9",
+      "execution/reviews/W02-broadcast-source-review-006.json": "651eacd148862bc585b6a778b0e1010cfed5d9768075daa654d70ccb13ef972d",
+      "execution/reviews/W02-broadcast-source-review-007.json": "0cd8b2cc46e8f314256b208544abd9fc263c57492576ef48edb0638e0b8b7a1b",
+      "execution/reviews/W02-root-identity-source-use-review.json": "1a0a5f749de6f244be4bded45e541e55b0a60c305674624d1bbe97742ebc180e",
+      "execution/reviews/W02-root-art-identity-review.json": "90eb2ba6e624f0c12791f188507f77ae673b3dcbbc403f56508f6778dce0730a",
+      "execution/reviews/W02-root-art-second-batch-review.json": "e301020b4fed32221930ffd344d07c90b23703a251088cc5b1ed579854e48e35",
+      "execution/reviews/W03-root-export-review.json": "59b02d5ccef77c47ea69b5f3109248bdc477c96654262644eebbbadb7fe3ea3c",
+      "execution/reviews/W03-root-export-followup.json": "033708c5ca2bc7cbf5ec54d350a1b64f23b5672506e283b6154bbef779f65c41",
+      "execution/reviews/W03-root-art-final-acceptance.json": "857ec9bb30e7fffba97fe5c6ce5caf8061abb9b0b85eac52bcecdf5bf04c0ed2",
+      "execution/reviews/W03-final-art-manifest-review.json": "6322ab79b71bbcc8e7fbd3ec482568881679f0e86b03233f115071e07b648ba2",
+      "execution/reviews/W03-final-art-manifest-followup.json": "aa0e0087fe3f1aa469edab1de39ef78d9d0962a650f7f944702f153e43b51ba7",
+      "execution/reviews/root-native-capability-recheck-002.json": "d575aa191797e2ac1073beecf58fce11238c2b7a0e9ac031c2cdf66bbfd12751",
+      "execution/reviews/root-season-evidence-refresh.json": "876bfec908d283ed9a67024b0d995a3f2efd48b1c54d93873ef2fada18856bf6",
+      "execution/reviews/root-email-fallback-browser.json": "27b9ddaff02a69b8be21e4add8efb9fe4e70047df99e6a01c51970ab262f832b"
+    },
+    "requirement_evidence": {
+      "REQ-007": {
+        "path": "execution/evidence/REQ-007.json",
+        "sha256": "f33d693a855a18c56099db0c55da1cb902ba47b3177dfc65285e84c7027b05cc",
+        "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+        "current_status": "blocked",
+        "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+        "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+      },
+      "REQ-008": {
+        "path": "execution/evidence/REQ-008.json",
+        "sha256": "eddac4833d2fd3a0e5a4712fdd2be1d2b9d96300739fcc9fa4f70c34c5a991c4",
+        "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+        "current_status": "blocked",
+        "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+        "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+      },
+      "REQ-009": {
+        "path": "execution/evidence/REQ-009.json",
+        "sha256": "3ea47b1e7ecc13b6cd4f001b742622ce78f6a864582d14e0de5eb6a966384f3c",
+        "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+        "current_status": "blocked",
+        "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+        "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+      },
+      "REQ-010": {
+        "path": "execution/evidence/REQ-010.json",
+        "sha256": "cdf190fa66260f55fd3414b6de146bbc30eb9d0213d114a074557c8575149253",
+        "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+        "current_status": "blocked",
+        "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+        "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+      },
+      "REQ-011": {
+        "path": "execution/evidence/REQ-011.json",
+        "sha256": "19c5de95130a6274cf90f0c337a1917d576104a0e368f2cead9ed1aa453f7983",
+        "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+        "current_status": "blocked",
+        "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+        "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+      },
+      "REQ-061": {
+        "path": "execution/evidence/REQ-061.json",
+        "sha256": "88a51aea565a2abc0650ff6d81327b14feef8752f83a8ff167df7bfed1aa068d",
+        "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+        "current_status": "blocked",
+        "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+        "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+      },
+      "REQ-062": {
+        "path": "execution/evidence/REQ-062.json",
+        "sha256": "004dd435fc97a0c1614438b5830732dec79a9ff92ce5b2753396b30d50d78e2d",
+        "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+        "current_status": "blocked",
+        "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+        "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+      },
+      "REQ-065": {
+        "path": "execution/evidence/REQ-065.json",
+        "sha256": "10408d6127e9578c5999d1618ab7140a5720ed986bc82f0752e57c3e32dcdd8b",
+        "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+        "current_status": "blocked",
+        "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+        "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+      },
+      "REQ-066": {
+        "path": "execution/evidence/REQ-066.json",
+        "sha256": "11ea95d0a0d639fc8588363252a80da58dda5807284aca31f6057c8ba74ab9b7",
+        "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+        "current_status": "blocked",
+        "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+        "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b"
+      }
+    }
+  },
+  "authoritative_route": {
+    "policy_version": "2.0.0",
+    "policy_sha256": "dabc08e924fd6c24c2277ca1ee8eea7c5ea041dc00367300f3c92e4b90f16f10",
+    "route": "image_gen__imagegen",
+    "route_id": "root-image-tool-route-20260907",
+    "authorized_by": "user",
+    "authorization_sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+    "route_recorded_as": "user_authorized_root_image_tool",
+    "amendment_boundary": "The recorded user authorization permits the root image-tool route and policy 2.0.0 accepts that route for scoped work. It does not create gpt-6-astra/native-agent, gpt-image-2, backend, rights, or publication evidence.",
+    "current_record_route_facts": {
+      "record_count": 117,
+      "author_role_ids": [
+        "ROOT"
+      ],
+      "author_depths": [
+        0
+      ],
+      "image_model_requested": [
+        "unknown"
+      ],
+      "image_model_observed": [
+        "unknown"
+      ],
+      "image_backends": [
+        "unspecified"
+      ],
+      "native_agent_attestation": false,
+      "art_model_attestation": {
+        "actual_backend": null,
+        "backend_attested": false,
+        "author_model_attested": false
+      }
+    }
+  },
+  "current_state": {
+    "manifest": {
+      "family_count": 72,
+      "status_counts": {
+        "verified": 67,
+        "blocked": 5
+      },
+      "export_count": 115,
+      "existing_export_hash_matches": 115,
+      "verified_family_ids": [
+        "BG-01",
+        "BG-02",
+        "BG-03",
+        "BG-04",
+        "CAST-01",
+        "CAST-02",
+        "CAST-04",
+        "CAST-05",
+        "CAST-06",
+        "CAST-07",
+        "DOC-01",
+        "DOC-02",
+        "DOC-03",
+        "DOC-04",
+        "DOC-05",
+        "GH-01-B",
+        "GH-01-S",
+        "GH-02-B",
+        "GH-02-S",
+        "GH-03-B",
+        "GH-03-S",
+        "GH-04-B",
+        "GH-04-S",
+        "GH-05-B",
+        "GH-05-S",
+        "GH-06-B",
+        "GH-06-S",
+        "GH-07-B",
+        "GH-07-S",
+        "GH-08-B",
+        "GH-08-S",
+        "GH-09-B",
+        "GH-09-S",
+        "GH-10-B",
+        "GH-10-S",
+        "GH-11-B",
+        "GH-11-S",
+        "GH-12-B",
+        "GH-12-S",
+        "GH-13-B",
+        "GH-13-S",
+        "ID-01",
+        "ID-02",
+        "ID-03",
+        "ID-04",
+        "ID-05",
+        "ID-06",
+        "ID-07",
+        "ID-08",
+        "MKT-01",
+        "MKT-02",
+        "MKT-04",
+        "MKT-08",
+        "MKT-09",
+        "RUN-01",
+        "RUN-02",
+        "RUN-03",
+        "RUN-04",
+        "RUN-05",
+        "WEB-01",
+        "WEB-02",
+        "WEB-03",
+        "WEB-04",
+        "WEB-05",
+        "WEB-06",
+        "WEB-07",
+        "WEB-08"
+      ],
+      "blocked_family_ids": [
+        "CAST-03",
+        "MKT-03",
+        "MKT-05",
+        "MKT-06",
+        "MKT-07"
+      ],
+      "exports_in_blocked_families": {
+        "CAST-03": 1,
+        "MKT-03": 2,
+        "MKT-05": 1,
+        "MKT-06": 2,
+        "MKT-07": 2
+      }
+    },
+    "root_acceptance": {
+      "observed_at": "2026-09-08T02:34:43.522932+00:00",
+      "verified_family_count": 67,
+      "all_family_count": 72,
+      "existing_exports": 115,
+      "exports_in_verified_families": 107,
+      "generation_records_verified": 84,
+      "full_release_status": "incomplete",
+      "publication_approvals": 0,
+      "schema_result": "72/72 pass after W03-FAM-001 repair: explicit nullable metadata for functional MKT09 HTML; see W03-final-art-manifest-followup.json.",
+      "native_hierarchy": "unfulfilled; see execution/reviews/root-native-capability-recheck-002.json"
+    },
+    "remaining_queue": {
+      "recorded_at": "2026-09-08T02:34:43.522932+00:00",
+      "required_families": 72,
+      "required_exports": 115,
+      "existing_exports": 115,
+      "missing_exports": 0,
+      "verified_families": 67,
+      "family_ids": [
+        "CAST-03",
+        "MKT-03",
+        "MKT-05",
+        "MKT-06",
+        "MKT-07"
+      ]
+    },
+    "generation_records": {
+      "canonical_record_count": 117,
+      "status_counts": {
+        "blocked": 33,
+        "verified": 84
+      },
+      "prompt_files_hash_match": 117,
+      "raw_outputs_hash_match": 117,
+      "non_pending_reviewer_reference_count": 84,
+      "pending_reviewer_reference_count": 33
+    },
+    "export_receipts": {
+      "raster_or_motion_rows": 112,
+      "recipe_rows": 112,
+      "review_state_counts": {
+        "ready_for_mechanical_export": 18,
+        "pending_independent_review": 94
+      },
+      "publication_approved_count": 0,
+      "allowed_operation_rows": 112
+    },
+    "validator": {
+      "command": "python3 scripts/validate_assets.py --manifest brand/asset-manifest.json --root .",
+      "exit_code": 1,
+      "result": "Only Not verified: CAST-03, MKT-03, MKT-05, MKT-06, MKT-07."
+    }
+  },
+  "coverage_reconciliation": {
+    "manifest_verified_set_equals_acceptance_verified_set": true,
+    "manifest_blocked_set_equals_remaining_queue": true,
+    "manifest_export_paths_unique": true,
+    "all_115_manifest_exports_present_and_hash_matching": true,
+    "manifest_linked_exports": {
+      "entries_with_generation_record_id": 113,
+      "unique_current_generation_record_ids": 84,
+      "all_linked_records_status_verified": true,
+      "functional_nullable_exports": [
+        {
+          "asset_id": "ID-08",
+          "path": "brand/assets/identity/specimen.html",
+          "format": "html"
+        },
+        {
+          "asset_id": "MKT-09",
+          "path": "brand/assets/press/index.html",
+          "format": "html"
+        }
+      ]
+    },
+    "manifest_nested_generation_records": {
+      "entries": 85,
+      "unique_ids": 84,
+      "parent_duplicate": "BG-01-generation-001 is embedded again by the WEB-01 derived family."
+    },
+    "canonical_record_hashes": {
+      "117_prompt_files_and_hashes": true,
+      "117_raw_outputs_and_hashes": true,
+      "56_reference_inputs_and_hashes": true
+    },
+    "raster_receipt_recipe": {
+      "112_rows_pair_and_file_hashes": true,
+      "all_operations_policy_allowed": true,
+      "receipt_review_state_is_current_independent_review_approval": false,
+      "review_state_observation": "94/112 receipt rows remain pending_independent_review even though the current W02 review chain and root acceptance provide scoped source/use review; metadata reconciliation is required before treating receipt state as an export-review approval field."
+    },
+    "strict_manifest_schema": {
+      "result": "72/72 pass after MKT-09 functional HTML nullable-metadata repair",
+      "followup_sha256": "aa0e0087fe3f1aa469edab1de39ef78d9d0962a650f7f944702f153e43b51ba7"
+    }
+  },
+  "selected_adjudications": {
+    "MKT-01": {
+      "family_status": "verified",
+      "selected_generation": "MKT-01-generation-001",
+      "source": {
+        "path": "brand/sources/generated/MKT-01/generation-001.png",
+        "sha256": "09a3d51821fae5e547d28b38d5dd76ca732b16339d4a3957961134d3d56851f2",
+        "bytes": 1730305,
+        "dimensions": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "output": {
+        "path": "brand/assets/marketing/channel-cover.png",
+        "sha256": "023491553c11d7a0818078cea54792624759d8304ca09615202f6655f76e50ad",
+        "format": "png",
+        "width": 2560,
+        "height": 1440,
+        "generation_record_id": "MKT-01-generation-001",
+        "raw_source_path": "brand/sources/generated/MKT-01/generation-001.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "actual_sha256": "023491553c11d7a0818078cea54792624759d8304ca09615202f6655f76e50ad",
+        "actual_bytes": 3196417,
+        "actual_dimensions": [
+          2560,
+          1440
+        ],
+        "actual_mode": "RGB"
+      },
+      "review_reference": "execution/reviews/W02-broadcast-source-review-003.json",
+      "verdict": "accepted_for_bounded_banner_brief",
+      "observations": [
+        "Current source and channel-cover output visibly retain exact readable The Climb and by AI Ascension copy.",
+        "The reviewed proportional central platform crop keeps the title/byline complete and readable.",
+        "The mountain and amber route remain decorative; the route enters and exits the shallow crop."
+      ],
+      "boundary": "If full route continuity is an essential platform requirement, obtain a creative reflow. Under the bounded banner brief, the crop-safe copy is sufficient."
+    },
+    "BG-04": {
+      "family_status": "verified",
+      "selected_generations": [
+        "BG-04-generation-003",
+        "BG-04-generation-007"
+      ],
+      "source_light": {
+        "path": "brand/sources/generated/BG-04/generation-003.png",
+        "sha256": "cc9ed221dc45860d95c834d30149b599fa096b251033b365a8c16d207f888edd",
+        "bytes": 67787,
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA"
+      },
+      "source_dark": {
+        "path": "brand/sources/generated/BG-04/generation-007.png",
+        "sha256": "befa470557a3abb70fd1dd3bf5745cdba7076f33b9437ae3a119fddaf63c8039",
+        "bytes": 740483,
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "mode": "RGB"
+      },
+      "output_light": {
+        "path": "brand/assets/illustration/route-pattern-light.png",
+        "sha256": "a53db565da2872984b547f8c0bd6b3a721774aa0de9470a7692dbd18c0c5497d",
+        "format": "png",
+        "width": 800,
+        "height": 800,
+        "generation_record_id": "BG-04-generation-003",
+        "raw_source_path": "brand/sources/generated/BG-04/generation-003.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "actual_sha256": "a53db565da2872984b547f8c0bd6b3a721774aa0de9470a7692dbd18c0c5497d",
+        "actual_bytes": 22767,
+        "actual_dimensions": [
+          800,
+          800
+        ],
+        "actual_mode": "RGBA"
+      },
+      "output_dark": {
+        "path": "brand/assets/illustration/route-pattern-dark.png",
+        "sha256": "91b5b230f3658ad034b94e0e60272a9b3308b5501714603d19991b5945f2fbd9",
+        "format": "png",
+        "width": 800,
+        "height": 800,
+        "generation_record_id": "BG-04-generation-007",
+        "raw_source_path": "brand/sources/generated/BG-04/generation-007.png",
+        "derivation_operations": [
+          "crop",
+          "resize",
+          "encode",
+          "metadata_strip"
+        ],
+        "actual_sha256": "91b5b230f3658ad034b94e0e60272a9b3308b5501714603d19991b5945f2fbd9",
+        "actual_bytes": 346674,
+        "actual_dimensions": [
+          800,
+          800
+        ],
+        "actual_mode": "RGB"
+      },
+      "authoritative_brief": {
+        "art_map": "art/ART_MAP.md#BG-04 (row 43; sparse repeatable decorative branching motif; light/dark 800x800)",
+        "promptbook": "art/PROMPTBOOK.md#BG-04 (lines 273-294; sparse repeatable branching motif and review gate)",
+        "art_map_sha256": "f1337e07c81f40a24cd66edb97465af0c8a9514cedcad930bf94c73a2c52732b",
+        "promptbook_sha256": "a9581d8aa648897ba6e23bd9a9b41497d77f47158e14c511ed7959b330c2eb2e"
+      },
+      "repeat_observation": "The light output composited on warm paper and the dark output viewed as a 3x3 repeat are visually clean with no visible rectangular boundary or seam.",
+      "verdict": "conditional_visual_repeat_acceptance_recommended",
+      "strict_root_prompt_observations": {
+        "light_generation_003": {
+          "source_mode": "RGBA",
+          "source_nonzero_alpha_pixels_in_nominal_outer_25_percent_margin": 6,
+          "output_nonzero_alpha_pixels_in_corresponding_margin": 3,
+          "source_alpha_bbox": [
+            212,
+            315,
+            868,
+            945
+          ]
+        },
+        "dark_generation_007": {
+          "source_bright_content_bbox_threshold_luminance_gt_100": [
+            369,
+            304,
+            885,
+            951
+          ],
+          "nominal_central_40_percent_bounds": [
+            376.2,
+            376.2,
+            877.8,
+            877.8
+          ],
+          "outer_edge_rgb_min": [
+            0,
+            0,
+            0
+          ],
+          "outer_edge_rgb_max": [
+            2,
+            1,
+            1
+          ]
+        },
+        "interpretation": "These are retained prompt-direction deviations. The ART_MAP/PROMPTBOOK brief requires a sparse visually repeatable motif; it does not state exact alpha-margin, central-bbox, or byte-level RGB invariants. No visible repeat defect was found. BG-04-generation-006 and earlier invalid attempts are provenance-only and are not selected."
+      },
+      "boundary": "This conditional visual recommendation does not grant rights, publication, native-agent, model/backend, or full-release approval."
+    },
+    "MKT-07": {
+      "family_status": "blocked",
+      "selected_generations": [
+        "MKT-07-generation-001",
+        "MKT-07-generation-002"
+      ],
+      "artwork": {
+        "email_header": {
+          "path": "brand/assets/marketing/email-header.png",
+          "sha256": "fb92e1b60b83f6645c0df5fec2e868fd1d57c0c1a7a306478cbd24bd54e76763",
+          "format": "png",
+          "width": 1200,
+          "height": 320,
+          "generation_record_id": "MKT-07-generation-001",
+          "raw_source_path": "brand/sources/generated/MKT-07/generation-001.png",
+          "derivation_operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "actual_sha256": "fb92e1b60b83f6645c0df5fec2e868fd1d57c0c1a7a306478cbd24bd54e76763",
+          "actual_bytes": 251951,
+          "actual_dimensions": [
+            1200,
+            320
+          ],
+          "actual_mode": "RGB"
+        },
+        "email_run_card": {
+          "path": "brand/assets/marketing/email-run-card.png",
+          "sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
+          "format": "png",
+          "width": 1200,
+          "height": 630,
+          "generation_record_id": "MKT-07-generation-002",
+          "raw_source_path": "brand/sources/generated/MKT-07/generation-002.png",
+          "derivation_operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "actual_sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
+          "actual_bytes": 521834,
+          "actual_dimensions": [
+            1200,
+            630
+          ],
+          "actual_mode": "RGB"
+        }
+      },
+      "artwork_review_reference": "execution/reviews/W02-broadcast-source-review-007.json",
+      "template_verdict": "design_and_blank_template_ready",
+      "functional_fallback": {
+        "html": {
+          "path": "marketing/launch/email-run-card.html",
+          "sha256": "bf4745bc605dd3d97dd694412ffc9127cf9474522862fc53161d569c92da1ac2",
+          "bytes": 1539
+        },
+        "plain_text": {
+          "path": "marketing/launch/email-run-card.txt",
+          "sha256": "22f75a63f44a19fc1f9fb54991f9d52cd09c83fa87ff5648d3db399ead9828e5",
+          "bytes": 621
+        },
+        "browser_receipt": {
+          "path": "execution/reviews/root-email-fallback-browser.json",
+          "sha256": "27b9ddaff02a69b8be21e4add8efb9fe4e70047df99e6a01c51970ab262f832b",
+          "states": 4,
+          "widths": [
+            390,
+            1200
+          ],
+          "images_enabled_and_blocked_checked": true,
+          "all_no_overflow": true,
+          "all_no_errors": true,
+          "all_no_external_resources": true,
+          "all_six_labels_present": true,
+          "all_values_not_supplied": true,
+          "scripts_total": 0,
+          "forms_total": 0,
+          "decorative_image": true
+        },
+        "copy_fields": [
+          "Run ID",
+          "Outcome",
+          "Model configuration",
+          "Interventions",
+          "Evidence",
+          "Source URL"
+        ],
+        "current_values": "All six fields are intentionally Not supplied.",
+        "boundary": "Local Chromium assembly/browser evidence only; no email-client delivery, recipient, consent, unsubscribe, populated run data, or send approval is established."
+      },
+      "full_family_verdict": "blocked_for_approved_values_and_send_gates",
+      "current_blockers": [
+        "No approved run-manifest values or populated factual digest content are present.",
+        "The email-digest send gate still requires consent/unsubscribe, source/revision recheck, rights/consent where applicable, independent subject/body/link/disclosure review, privacy review, and operator authorization."
+      ],
+      "stale_queue_wording": "Reviewed blank run-card artwork exists; approved run-manifest values and completed HTML/text run-report assembly remain outstanding.",
+      "stale_queue_interpretation": "The completed HTML/plain-text blank assembly is now present and browser-checked; the queue wording should be narrowed to approved values, send authorization, and remaining publication gates."
+    },
+    "MKT-04": {
+      "family_status": "verified",
+      "review_reference": "execution/reviews/W02-broadcast-source-review-007.json",
+      "season_evidence_refresh": {
+        "repository_revision": "05398376e660e39a2dbc000e8debd33da8718e63",
+        "documents": [
+          {
+            "path": "docs/evidence/seeded-astra-campaign-20260906.md",
+            "sha256": "46350653deba0f8712b3adff484a712ec725120f2d41cba309f0575dc419fa9e",
+            "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md"
+          },
+          {
+            "path": "docs/evidence/linux-seeded-campaign-20260906.md",
+            "sha256": "5837a161bd90d6e68d506375562844c0b268430908f82edd56274b4795ff3a15",
+            "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/linux-seeded-campaign-20260906.md"
+          },
+          {
+            "path": "docs/evidence/live-episode-stability-20260906.md",
+            "sha256": "b66173e4550d31462f2f75814550091d7285127c2ad0c5027165176bea22d02d",
+            "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/live-episode-stability-20260906.md"
+          },
+          {
+            "path": "docs/evidence/bounded-astra-plans-20260906.md",
+            "sha256": "8cefac7a5bedf06141c6ad0aa90636bd894e4319fc52f9f9de38f4cd93c82e9b",
+            "url": "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/bounded-astra-plans-20260906.md"
+          }
+        ],
+        "decision": "No verified campaign win was found in the inspected published reports, so the initial Road to the First Verified Win framing remains supported within this dated source scope. This does not establish absence of other unpublished or uninspected outcomes.",
+        "publication_approved": false
+      },
+      "verdict": "season_framing_accepted_with_dated_evidence_boundary",
+      "boundary": "The artwork and four inspected published reports support Road to the First Verified Win framing within the dated source scope. They do not prove a verified campaign win or prove absence of uninspected outcomes."
+    },
+    "blank_and_content_dependent_families": {
+      "CAST-03": "Portrait design is reviewed; actual-footage crop and host integration remain absent.",
+      "MKT-03": "Outcome/question exports are clean blank templates; approved episode outcome/question facts remain absent.",
+      "MKT-05": "Challenge export is a clean blank template; approved challenge, rules, dates, and source content remain absent.",
+      "MKT-06": "Release/contributor exports are clean blank templates; release content, attribution, permission, and consent remain absent.",
+      "MKT-07": "Email artwork and fallback design are ready as blank templates; approved run values, send authorization, and publication gates remain absent."
+    }
+  },
+  "superseded_generation_review_gap": {
+    "requirement": "REQ-061 requires every initial or creative-edit prompt to have exact prompt bytes, a native-agent/model record, and independent review.",
+    "canonical_record_count": 117,
+    "verified_selected_record_count": 84,
+    "blocked_or_superseded_record_count": 33,
+    "prompt_and_raw_hash_result": "117/117 prompt files and 117/117 raw outputs hash-match their canonical records.",
+    "review_counting_rule": "Only W02 independent review asset records or an explicitly recorded viewed reference are counted. Root-authored generation/batch receipts and W03 ledger cross-checks do not count as independent creative review.",
+    "record_level_direct_review_count": 26,
+    "reference_only_count": 1,
+    "no_specific_independent_source_or_prompt_review_count": 6,
+    "directly_reviewed_blocked_or_superseded_ids": [
+      {
+        "record_id": "BG-04-generation-001",
+        "review_references": [
+          "execution/reviews/W02-root-art-identity-review.json",
+          "execution/reviews/W02-root-identity-source-use-review.json"
+        ]
+      },
+      {
+        "record_id": "CAST-02-generation-002",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-002.json"
+        ]
+      },
+      {
+        "record_id": "CAST-03-generation-002",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-002.json"
+        ]
+      },
+      {
+        "record_id": "CAST-04-generation-002",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-002.json"
+        ]
+      },
+      {
+        "record_id": "CAST-04-generation-003",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-002.json"
+        ]
+      },
+      {
+        "record_id": "CAST-05-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-003.json"
+        ]
+      },
+      {
+        "record_id": "CAST-05-generation-002",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-003.json"
+        ]
+      },
+      {
+        "record_id": "DOC-02-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json"
+        ]
+      },
+      {
+        "record_id": "GH-01-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-02-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-03-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-04-B-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-04-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-05-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-06-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-07-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-08-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-10-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-11-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-12-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "GH-13-S-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-004.json",
+          "execution/reviews/W02-broadcast-source-review-005.json"
+        ]
+      },
+      {
+        "record_id": "ID-08-generation-001",
+        "review_references": [
+          "execution/reviews/W02-root-art-identity-review.json"
+        ]
+      },
+      {
+        "record_id": "MKT-02-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-003.json"
+        ]
+      },
+      {
+        "record_id": "MKT-08-generation-001",
+        "review_references": [
+          "execution/reviews/W02-broadcast-source-review-003.json"
+        ]
+      },
+      {
+        "record_id": "RUN-03-generation-001",
+        "review_references": [
+          "execution/reviews/W02-root-art-second-batch-review.json"
+        ]
+      },
+      {
+        "record_id": "WEB-07-generation-001",
+        "review_references": [
+          "execution/reviews/W02-root-art-second-batch-review.json"
+        ]
+      }
+    ],
+    "reference_only_ids": [
+      {
+        "record_id": "ID-01-generation-001",
+        "review_references": [
+          "execution/reviews/W02-root-identity-source-use-review.json"
+        ],
+        "reason": "The source was explicitly viewed as a local generated reference, but no record-level prompt/source review is claimed for this superseded attempt."
+      }
+    ],
+    "no_specific_independent_source_or_prompt_review_ids": [
+      {
+        "record_id": "BG-04-generation-002",
+        "source_path": "brand/sources/generated/BG-04/generation-002.png",
+        "prompt_path": "brand/prompts/root/BG-04/generation-002.txt",
+        "source_sha256": "ee0d4cb2a4adfb085c129f3e2bfd37185dd8e9ef2ae71a261868fc0649ed3579",
+        "prompt_sha256": "f8c5346267ea853ff5733980866dfdb4d9bbb3dfb6aa3d537792ef73ce0508db",
+        "record_status": "blocked",
+        "reviewer_reference_in_record": "pending:independent-source-and-export-review",
+        "reason": "Only root-authored generation/batch provenance is present; no independent W02 source/prompt review record names this attempt."
+      },
+      {
+        "record_id": "BG-04-generation-004",
+        "source_path": "brand/sources/generated/BG-04/generation-004.png",
+        "prompt_path": "brand/prompts/root/BG-04/generation-004.txt",
+        "source_sha256": "66ed229bc9be9d8f69fa41f4369666072d1d59eb7609abdf42608ec238be0342",
+        "prompt_sha256": "0f133c351b2869f5c9fbd71c2b590a688638b7affcc64b73548ed6bc4cc31b6b",
+        "record_status": "blocked",
+        "reviewer_reference_in_record": "pending:independent-source-and-export-review",
+        "reason": "Only root-authored generation/batch provenance is present; no independent W02 source/prompt review record names this attempt."
+      },
+      {
+        "record_id": "BG-04-generation-005",
+        "source_path": "brand/sources/generated/BG-04/generation-005.png",
+        "prompt_path": "brand/prompts/root/BG-04/generation-005.txt",
+        "source_sha256": "faa71b3c25539e789e1b7b3971588c5efa16a6dad7f194cbaab685dc751dca2f",
+        "prompt_sha256": "d810022dec4cbeba57664e8c7e64c231f7f3ef017a8e6dd8dd54fbc6a0088b61",
+        "record_status": "blocked",
+        "reviewer_reference_in_record": "pending:independent-source-and-export-review",
+        "reason": "Only root-authored generation/batch provenance is present; no independent W02 source/prompt review record names this attempt."
+      },
+      {
+        "record_id": "BG-04-generation-006",
+        "source_path": "brand/sources/generated/BG-04/generation-006.png",
+        "prompt_path": "brand/prompts/root/BG-04/generation-006.txt",
+        "source_sha256": "bee4196b1763d65baf8eb4bcea7933ae4c881bbbfcd38bab3b2cb36d4dac7b6b",
+        "prompt_sha256": "ea25e02314840085372015a6fb342e56dec00b05172b4ccd286252bfe1f09d15",
+        "record_status": "blocked",
+        "reviewer_reference_in_record": "pending:independent-source-and-export-review",
+        "reason": "Only root-authored generation/batch provenance is present; no independent W02 source/prompt review record names this attempt."
+      },
+      {
+        "record_id": "ID-01-generation-002",
+        "source_path": "brand/sources/generated/ID-01/generation-002.png",
+        "prompt_path": "brand/prompts/root/ID-01/generation-002.txt",
+        "source_sha256": "e3903d0efdca519c309caa82a60c2d41af443349cf6da22f4935a37a526b4e65",
+        "prompt_sha256": "25b6c3e78019ceb3c7605373c5b94e5d9cd3455af6798b56811ca9a13e86535a",
+        "record_status": "blocked",
+        "reviewer_reference_in_record": "pending:independent-source-and-export-review",
+        "reason": "Only root-authored generation/batch provenance is present; no independent W02 source/prompt review record names this attempt."
+      },
+      {
+        "record_id": "ID-01-generation-003",
+        "source_path": "brand/sources/generated/ID-01/generation-003.png",
+        "prompt_path": "brand/prompts/root/ID-01/generation-003.txt",
+        "source_sha256": "1cd7d505256ee6bd7b18b7a5ae84ba15041b957b5649377f9c6d41012f4669d9",
+        "prompt_sha256": "1cb69cb2ac05f7d348d42bb58c5edc6036f19a78f9828c9a3240f49be4483fa3",
+        "record_status": "blocked",
+        "reviewer_reference_in_record": "pending:independent-source-and-export-review",
+        "reason": "Only root-authored generation/batch provenance is present; no independent W02 source/prompt review record names this attempt."
+      }
+    ],
+    "action": "Queue independent source/prompt review for the six listed attempts and rebind their record reviewer_reference fields if accepted. Keep REQ-061 blocked regardless until the separate native-agent/gpt-6-astra/max attestation exists.",
+    "do_not_infer_all_117_reviewed": true
+  },
+  "requirements_matrix": [
+    {
+      "id": "REQ-007",
+      "current_status": "blocked",
+      "recommended_status": "verified",
+      "strict_original_text_without_policy_amendment": "blocked",
+      "scope": "scoped identity functional checks under policy 2.0.0 and the user-authorized root route",
+      "basis": "Identity marks were independently checked at the required small sizes and in monochrome; the complete art release and native/model claims remain separate.",
+      "evidence": [
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-final-art-manifest-followup.json"
+      ],
+      "evidence_rebind_required": true
+    },
+    {
+      "id": "REQ-008",
+      "current_status": "blocked",
+      "recommended_status": "verified",
+      "strict_original_text_without_policy_amendment": "blocked",
+      "scope": "scoped identity text/accessibility truth; full release remains blocked",
+      "basis": "Independent identity/source reviews found deterministic requested copy and readable identity outputs; generated-art route attestation is handled by the recorded policy amendment.",
+      "evidence": [
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-007.json"
+      ],
+      "evidence_rebind_required": true
+    },
+    {
+      "id": "REQ-009",
+      "current_status": "blocked",
+      "recommended_status": "verified",
+      "strict_original_text_without_policy_amendment": "blocked",
+      "scope": "scoped integration check for raster lettering, font-binary absence, and identity consistency",
+      "basis": "The source-use review recorded no font binaries and no ambiguous third-party/copy marks in the observed generated art; this is not a legal or publication clearance.",
+      "evidence": [
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/root-art-acceptance.json"
+      ],
+      "evidence_rebind_required": true
+    },
+    {
+      "id": "REQ-010",
+      "current_status": "blocked",
+      "recommended_status": "verified",
+      "strict_original_text_without_policy_amendment": "blocked",
+      "scope": "scoped per-export source/digest/placement/alt/decorative/lineage contract",
+      "basis": "All 115 declared output files exist and match manifest hashes; all linked current records are among 84 verified selected records, with functional HTML rows explicitly nullable after W03 repair. Five families remain blocked for content or integration.",
+      "evidence": [
+        "brand/asset-manifest.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "execution/reviews/W03-final-art-manifest-followup.json",
+        "execution/root-art-acceptance.json"
+      ],
+      "evidence_rebind_required": true
+    },
+    {
+      "id": "REQ-011",
+      "current_status": "blocked",
+      "recommended_status": "verified",
+      "strict_original_text_without_policy_amendment": "blocked",
+      "scope": "scoped truth check separating generated artwork/templates from gameplay and product evidence",
+      "basis": "The W02 review chain found no fabricated gameplay values, screenshots, or result claims in the reviewed art; blank templates and season framing retain explicit content boundaries.",
+      "evidence": [
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-003.json",
+        "execution/reviews/W02-broadcast-source-review-004.json",
+        "execution/reviews/W02-broadcast-source-review-005.json",
+        "execution/reviews/W02-broadcast-source-review-006.json",
+        "execution/reviews/W02-broadcast-source-review-007.json",
+        "execution/reviews/root-season-evidence-refresh.json"
+      ],
+      "evidence_rebind_required": true
+    },
+    {
+      "id": "REQ-061",
+      "current_status": "blocked",
+      "recommended_status": "blocked",
+      "scope": "literal authorship/native-agent requirement",
+      "basis": "All 117 prompt and raw-output hashes pass, but every current record retains unknown requested/observed image model, unspecified backend, ROOT depth 0, and no gpt-6-astra/max native-agent record. Six blocked attempts lack a specific independent source or prompt review, and one was only a reference view.",
+      "evidence": [
+        "brand/provenance/root-generation-records.json",
+        "execution/art-model-attestation.json",
+        "execution/reviews/root-native-capability-recheck-002.json",
+        "execution/reviews/W02-final-art-acceptance-review.json"
+      ],
+      "evidence_rebind_required": true
+    },
+    {
+      "id": "REQ-062",
+      "current_status": "blocked",
+      "recommended_status": "blocked",
+      "scope": "literal observed image-model/backend requirement",
+      "basis": "All 117 records say image_model_requested=unknown, image_model_observed=unknown, and image_backend=unspecified; the attestation reports backend_attested=false and author_model_attested=false.",
+      "evidence": [
+        "art/generation-policy.json",
+        "brand/provenance/root-generation-records.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json"
+      ],
+      "evidence_rebind_required": true
+    },
+    {
+      "id": "REQ-065",
+      "current_status": "blocked",
+      "recommended_status": "verified",
+      "strict_original_text_without_policy_amendment": "blocked",
+      "scope": "scoped per-export lineage under the accepted root route",
+      "basis": "All 115 manifest exports exist and hash-match; 113 exports link to 84 unique verified current records (one parent duplicate is expected), every prompt/raw hash matches, all 56 reference links match, and operations are policy-allowed. Receipt review_state metadata remains pending for 94/112 raster rows and needs reconciliation.",
+      "evidence": [
+        "brand/asset-manifest.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "execution/reviews/W03-final-art-manifest-followup.json",
+        "execution/root-art-acceptance.json"
+      ],
+      "evidence_rebind_required": true
+    },
+    {
+      "id": "REQ-066",
+      "current_status": "blocked",
+      "recommended_status": "verified",
+      "strict_original_text_without_policy_amendment": "blocked",
+      "scope": "scoped copy/source-fact and generated-art truth check",
+      "basis": "The W02 visual/source reviews checked exact labels, diagrams, titles, route motifs, blank fields, and source facts; corrections are tied to root generation records and no factual runtime result was invented.",
+      "evidence": [
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-003.json",
+        "execution/reviews/W02-broadcast-source-review-004.json",
+        "execution/reviews/W02-broadcast-source-review-005.json",
+        "execution/reviews/W02-broadcast-source-review-006.json",
+        "execution/reviews/W02-broadcast-source-review-007.json",
+        "execution/reviews/root-season-evidence-refresh.json"
+      ],
+      "evidence_rebind_required": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "W02-FINAL-001",
+      "severity": "blocking",
+      "status": "open",
+      "finding": "The full artwork release remains incomplete even though all 115 planned output paths exist: CAST-03, MKT-03, MKT-05, MKT-06, and MKT-07 remain content or integration blocked.",
+      "evidence": [
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json",
+        "brand/asset-manifest.json"
+      ],
+      "required_follow_up": "Supply the missing authentic content/integration evidence and preserve the blank-template boundaries before any full-release claim."
+    },
+    {
+      "id": "W02-FINAL-002",
+      "severity": "conditional",
+      "status": "open",
+      "finding": "BG-04 is visually repeatable under the authoritative sparse motif brief, while strict root prompt alpha-margin, centering, and byte-level edge-color directions remain deviations.",
+      "evidence": [
+        "art/ART_MAP.md",
+        "art/PROMPTBOOK.md",
+        "execution/reviews/W02-broadcast-source-review-006.json",
+        "brand/assets/illustration/route-pattern-light.png",
+        "brand/assets/illustration/route-pattern-dark.png"
+      ],
+      "required_follow_up": "Retain the deviations as observations. Perform exact pixel-invariant repair only if root later makes those prompt directions mandatory."
+    },
+    {
+      "id": "W02-FINAL-003",
+      "severity": "advisory",
+      "status": "open",
+      "finding": "MKT-07's remaining-artwork blocker still says completed HTML/text assembly is outstanding, but the blank HTML and plain-text fallbacks now exist and pass the recorded local browser matrix.",
+      "evidence": [
+        "brand/remaining-artwork.json",
+        "marketing/launch/email-run-card.html",
+        "marketing/launch/email-run-card.txt",
+        "execution/reviews/root-email-fallback-browser.json"
+      ],
+      "required_follow_up": "Refine the queue wording to approved values, source/revision checks, consent/unsubscribe, independent content review, and operator send authorization."
+    },
+    {
+      "id": "W02-FINAL-004",
+      "severity": "blocking",
+      "status": "open",
+      "finding": "REQ-061 has both an external attestation blocker and an actionable independent-review gap: six blocked/superseded attempts have no specific independent source/prompt review, and ID-01-generation-001 is reference-only.",
+      "evidence": [
+        "brand/provenance/root-generation-records.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-native-capability-recheck-002.json"
+      ],
+      "required_follow_up": "Review and rebind the exact listed attempts; separately retain the native-agent/model blocker."
+    },
+    {
+      "id": "W02-FINAL-005",
+      "severity": "blocking",
+      "status": "open",
+      "finding": "REQ-062 remains blocked because all 117 current generation records retain unknown image-model fields and unspecified backend, with no observed gpt-image-2 or verified snapshot attestation.",
+      "evidence": [
+        "brand/provenance/root-generation-records.json",
+        "execution/art-model-attestation.json",
+        "art/generation-policy.json"
+      ],
+      "required_follow_up": "Obtain an observed model/backend attestation or preserve the blocked status."
+    },
+    {
+      "id": "W02-FINAL-006",
+      "severity": "conditional",
+      "status": "open",
+      "finding": "The raster export receipt metadata remains internally stale relative to the current W02 review chain: 94 of 112 receipt rows are pending_independent_review, while all current family manifest reviewer references exist and scoped acceptance is recorded.",
+      "evidence": [
+        "brand/provenance/root-export-receipts.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-007.json"
+      ],
+      "required_follow_up": "Reconcile receipt review_state values or explicitly retain them as pending and avoid treating them as publication approval."
+    },
+    {
+      "id": "W02-FINAL-007",
+      "severity": "advisory",
+      "status": "open",
+      "finding": "The nine selected REQ evidence files and requirements-status rows were recorded before the current 67/72 acceptance and 115-export state; their old 32-master/42-export blocker text and hashes require evidence rebind.",
+      "evidence": [
+        "execution/requirements-status.json",
+        "execution/evidence/REQ-007.json",
+        "execution/evidence/REQ-066.json",
+        "execution/root-art-acceptance.json",
+        "brand/asset-manifest.json"
+      ],
+      "required_follow_up": "Apply the matrix recommendation by rebinding each selected requirement evidence record to the current pins; this review does not edit those files."
+    },
+    {
+      "id": "W02-FINAL-008",
+      "severity": "blocking",
+      "status": "open",
+      "finding": "Native coordinator/leaf hierarchy proof remains unfulfilled, independent of the root-authorized artwork route.",
+      "evidence": [
+        "execution/root-art-acceptance.json",
+        "execution/reviews/root-native-capability-recheck-002.json"
+      ],
+      "required_follow_up": "Preserve REQ-061 and any native-depth gate as blocked until actual native descendants and inspectable records exist."
+    }
+  ],
+  "readiness": {
+    "scoped_art_source_use": "pass_for_current_67_manifest_verified_families",
+    "scoped_export_lineage": "pass_for_115_existing_exports_and_84_unique_current_verified_records",
+    "blank_template_and_fallback_design": "pass_as_design_and_local_assembly_preview",
+    "bg04": "conditional_visual_repeat_acceptance_recommended",
+    "full_release": "blocked",
+    "public_distribution": "none",
+    "publication_approvals": 0,
+    "legal_rights_clearance": "none",
+    "native_hierarchy": "unfulfilled",
+    "model_backend_attestation": "unknown_or_unattested",
+    "requirement_status_recommendation": "See requirements_matrix; apply only after evidence rebind, without changing the separate full-release/native/model gates."
+  },
+  "decision": "scoped_art_and_lineage_acceptance_supported_under_user_authorized_root_route_full_release_blocked",
+  "limitations": [
+    "The user-authorized root route does not attest gpt-6-astra authorship, native-agent ancestry, gpt-image-2, or backend identity.",
+    "Generated artwork is not gameplay, product, model-result, deployment, or live-host evidence.",
+    "No legal, copyright, trademark, license, permission, public-distribution, or publication approval is granted.",
+    "MKT-01 central crop review is a proportional visual check, not a live platform rendering or channel placement test.",
+    "MKT-07 browser evidence is local Chromium preview only, not email-client rendering, delivery, consent, unsubscribe, or send evidence.",
+    "BG-04 strict prompt pixel directions are recorded as observations and were not promoted to brief invariants.",
+    "The four MKT-04 source reports are dated maintainer-published documents inspected read-only; they were not independently rerun and do not establish absence of uninspected outcomes.",
+    "The six listed superseded attempts and the ID-01-generation-001 reference-only case must not be treated as independently reviewed solely because current exports or family entries exist.",
+    "The selected requirement evidence files are stale relative to the current root acceptance and need rebind."
+  ]
+}

@@ -1,16 +1,75 @@
 #!/usr/bin/env python3
 """Validate this prompt package. No network, agents, GitHub writes, or deployment."""
 from pathlib import Path, PurePosixPath
-import hashlib, json, re, sys
+import hashlib, json, re, sys, os
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from package_inventory import load_json, manifest_errors, source_files
+from art_policy import ART_ROLES, LEGACY_ROUTE, ROOT_ROUTE, ROUTES, validate_root_authorization
+
+LOCAL_ONLY_DIRECTORIES={'.git','.execution','.execution-private','.codex','.agents','private','node_modules','.venv','venv','vendor','target','__pycache__','.pytest_cache'}
 
 FONT_EXTENSIONS={'.ttf','.otf','.woff','.woff2','.ttc','.eot'}
+
+# Workstation-specific filesystem paths identify a contributor's machine and never belong in
+# delivery or review evidence. Records must use a neutral placeholder such as
+# <workstation>/sts2-project/... or a repository-relative path. Case-insensitive forms cover
+# absolute Linux home directories, WSL mounts, macOS homes, Windows profiles (both slash
+# directions), and UNC WSL shares; relative "home" or "users" segments (site/home/, api/users/) are not.
+PERSONAL_PATH_PATTERN=re.compile(r'(?<![a-z0-9._/-])/(?:home|mnt/[a-z]/users|users)/[a-z]|[a-z]:[\\/]+users[\\/]|\\\\wsl(\$|\.localhost)\\',re.I)
+PERSONAL_PATH_TEXT_SUFFIXES={'.json','.md','.txt','.py','.mjs','.js','.html','.css','.yml','.yaml','.toml','.mmd','.svg','.csv','.sha256','.gitignore'}
+# The pattern's own self-test must spell out the forbidden forms with synthetic user names.
+PERSONAL_PATH_PATTERN_SOURCES={'tests/test_package_personal_paths.py'}
+# Frozen review records whose SHA-256 is pinned inside other evidence receipts
+# (execution/evidence/REQ-*.json and review-chain records). Rewriting them would silently
+# invalidate reviewer attestations, so they stay exempt until the owner re-issues those receipts.
+# An exemption that no longer matches is reported so the list only shrinks.
+PERSONAL_PATH_EXEMPTIONS={
+    'delivery/github-art-candidates/github-art-candidates-map.json',
+    'execution/reviews/W02-broadcast-source-review-008.json',
+    'execution/reviews/W02-broadcast-source-review-009.json',
+    'execution/reviews/W02-email-art-context-review.json',
+    'execution/reviews/W02-final-art-acceptance-review.json',
+    'execution/reviews/W02-marketing-concrete-copy-review.json',
+    'execution/reviews/W03-github-art-candidates-followup.json',
+    'execution/reviews/W03-github-art-candidates-review.json',
+    'execution/reviews/W03-image-c2pa-provenance-review.json',
+    'execution/reviews/W03-requirements-refresh-recommendations.json',
+    'execution/reviews/W03-root-motion-browser-review.json',
+    'execution/reviews/W03-root-motion-metadata-review.json',
+    'execution/reviews/W03-root-motion-review.json',
+    'execution/reviews/W03-root-website-art-followup.json',
+    'execution/reviews/W03-root-website-art-review.json',
+}
 def load(path):
-    return json.loads(path.read_text(encoding='utf-8'))
+    return load_json(path)
 def safe_relative(value):
     if not isinstance(value,str) or '\\' in value or '\x00' in value:
         return False
     p=PurePosixPath(value)
     return bool(value) and not p.is_absolute() and '..' not in p.parts and ':' not in value
+
+def personal_path_errors(root, exemptions=None):
+    """Report workstation-specific paths in package text without echoing the path itself."""
+    root=Path(root)
+    exemptions=PERSONAL_PATH_EXEMPTIONS if exemptions is None else set(exemptions)
+    errors=[]
+    seen=set()
+    try: files=source_files(root)
+    except ValueError as exc: return [str(exc)]
+    for path in files:
+        if path.suffix.casefold() not in PERSONAL_PATH_TEXT_SUFFIXES and path.suffix!='': continue
+        relative=path.relative_to(root).as_posix()
+        if relative in PERSONAL_PATH_PATTERN_SOURCES: continue
+        try: text=path.read_text(encoding='utf-8')
+        except UnicodeError: continue
+        lines=[number for number,line in enumerate(text.splitlines(),1) if PERSONAL_PATH_PATTERN.search(line)]
+        if not lines: continue
+        seen.add(relative)
+        if relative in exemptions: continue
+        errors.append(f'Personal filesystem path in {relative}: line(s) {", ".join(str(n) for n in lines)}')
+    for relative in sorted(set(exemptions)-seen):
+        errors.append(f'Stale personal-path exemption (no longer matches, remove it): {relative}')
+    return errors
 
 def validate(root):
     errors=[]
@@ -26,12 +85,16 @@ def validate(root):
               'specs/PUBLICATION.md','specs/MARKETING.md','specs/MEASUREMENT.md','specs/QA_RELEASE.md']
     for f in required: check((root/f).is_file(),f'Missing required file: {f}')
     if errors: return errors
-    for p in root.rglob('*'):
-        check(not p.is_symlink(),f'Symlink is not permitted: {p.relative_to(root)}')
-        check(p.suffix.lower() not in FONT_EXTENSIONS,f'Font binary found: {p.relative_to(root)}')
-        if p.is_file() and p.suffix=='.json':
-            try: load(p)
-            except (ValueError,UnicodeError) as exc: errors.append(f'Invalid JSON {p}: {exc}')
+    for directory, subdirectories, filenames in os.walk(root, followlinks=False):
+        subdirectories[:]=[name for name in subdirectories if name.casefold() not in LOCAL_ONLY_DIRECTORIES]
+        for name in subdirectories+filenames:
+            if name.casefold() in LOCAL_ONLY_DIRECTORIES: continue
+            p=Path(directory)/name
+            check(not p.is_symlink(),f'Symlink is not permitted: {p.relative_to(root)}')
+            check(p.suffix.lower() not in FONT_EXTENSIONS,f'Font binary found: {p.relative_to(root)}')
+            if p.is_file() and p.suffix=='.json':
+                try: load(p)
+                except (ValueError,UnicodeError) as exc: errors.append(f'Invalid JSON {p}: {exc}')
     if errors: return errors
     info=load(root/'package-info.json')
     check(info['runtime_verified'] is False,'Prompt package must not claim runtime verification.')
@@ -61,10 +124,39 @@ def validate(root):
     evidence=load(root/'art/evidence-media-registry.json'); references=load(root/'art/reference-registry.json')
     check(len(artwork)==72 and len(evidence)==3 and len(references)==5,'Unexpected visual-resource classification counts.')
     assets=artwork+evidence+references; amap={a['id']:a for a in assets}
+    root_origin=ROUTES.get(ROOT_ROUTE,{}).get('origin')
+    artwork_routes=[]
     for a in artwork:
-        check(a['method']=='generate' and a['generation_model']=='gpt-image-2' and a['prompt_author_model']=='gpt-6-astra',f'Wrong art pipeline: {a["id"]}')
-        check(a['prompt_author_role_id'] in ['W02-C1-BUILD','W02-C2-BUILD'],f'Wrong art author role: {a["id"]}')
+        route=a.get('generation_route')
+        if route is None and a.get('origin')==root_origin:
+            route=ROOT_ROUTE
+        if route is None:
+            route=LEGACY_ROUTE
+        artwork_routes.append(route)
+        spec=ROUTES.get(route) if isinstance(route, str) else None
+        check(spec is not None,f'Unknown art generation route: {a["id"]}')
+        if spec is not None:
+            check(a.get('origin')==spec.get('origin'),f'Wrong art origin for route: {a["id"]}')
+        if route==ROOT_ROUTE:
+            check(a.get('method')=='generate' and a.get('generation_model')=='unknown' and a.get('prompt_author_model')=='unknown',f'Wrong root art pipeline: {a["id"]}')
+            if 'prompt_author_effort' in a: check(a.get('prompt_author_effort')=='unknown',f'Wrong root prompt effort: {a["id"]}')
+            check(a.get('prompt_author_role_id')=='ROOT',f'Wrong root art author role: {a["id"]}')
+        else:
+            check(a.get('method')=='generate' and a.get('generation_model')=='gpt-image-2' and a.get('prompt_author_model')=='gpt-6-astra',f'Wrong art pipeline: {a["id"]}')
+            check(a.get('prompt_author_role_id') in ART_ROLES,f'Wrong art author role: {a["id"]}')
         check(all(e['format']!='svg' for e in a['exports']),f'Native vector art promise: {a["id"]}')
+    if ROOT_ROUTE in artwork_routes:
+        auth_path=root/'art/root-generation-authorization.json'
+        schema_path=root/'schemas/art-generation-authorization.schema.json'
+        check(auth_path.is_file(),'Missing root generation authorization record.')
+        check(schema_path.is_file(),'Missing root generation authorization schema.')
+        if auth_path.is_file():
+            auth_spec=ROUTES[ROOT_ROUTE].get('authorization',{})
+            digest=auth_spec.get('sha256')
+            try:
+                validate_root_authorization(auth_spec.get('path'), digest)
+            except (OSError, KeyError, TypeError, ValueError, UnicodeError) as exc:
+                errors.append('Invalid root generation authorization: '+str(exc))
     for a in evidence:
         check(a['method']=='authentic_capture' and a['generation_prohibited'] is True,f'Unsafe evidence handling: {a["id"]}')
     for a in references:
@@ -105,13 +197,8 @@ def validate(root):
     check(sum(r['requested_model']=='gpt-5.6-luna' for r in roles)==47,'Expected forty-seven Luna roles.')
     config=(root/'orchestration/runtime-config.example.toml').read_text()
     check(not re.search(r'^\s*max_depth\s*=',config,re.M),'An unsupported depth config was assumed.')
-    manifest=root/'MANIFEST.json'
-    if manifest.exists():
-        for entry in load(manifest)['files']:
-            check(safe_relative(entry['path']),f'Unsafe manifest path: {entry["path"]}')
-            p=root/entry['path']
-            check(p.is_file(),f'Manifest file missing: {entry["path"]}')
-            if p.is_file(): check(hashlib.sha256(p.read_bytes()).hexdigest()==entry['sha256'],f'Checksum mismatch: {entry["path"]}')
+    errors.extend(manifest_errors(root))
+    errors.extend(personal_path_errors(root))
     return errors
 
 def main():

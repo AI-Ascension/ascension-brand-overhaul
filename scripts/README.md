@@ -1,8 +1,8 @@
 # Included local helpers
 
-All helpers use Python 3.10+ standard library only. They do not call models, generate images, connect to accounts, or mutate remote systems.
+Python helpers use Python 3.10+ standard library; schema tests additionally use the pinned development requirement. The JavaScript browser runner uses the pinned Playwright and axe development dependencies. These helpers do not call models, generate artwork, or mutate remote systems. Runtime observation reads local client metadata; browser review connects only to the supplied loopback site and blocks external requests.
 
-`validate_package.py` verifies this kit's required files, role ancestry, dependency graph, art/surface references, planned state, path safety, and existing manifest hashes. It parses JSON but is not a general-purpose JSON Schema implementation.
+`validate_package.py` verifies this kit's required files, role ancestry, dependency graph, art/surface references, planned state, path safety, existing manifest hashes, and the absence of workstation-specific filesystem paths (`/home/...`, `/mnt/<drive>/users/...`, `<drive>:/Users/...`, `<drive>:\Users\...`) outside the frozen receipts listed in `PERSONAL_PATH_EXEMPTIONS`; records use `<workstation>/...` or repository-relative paths instead. It parses JSON but is not a general-purpose JSON Schema implementation.
 
 `agent_ledger.py PATH` validates recorded native thread relationships, required requested model/effort, model-verification evidence fields, parent lifetimes, and global open-count intervals. The helper does not observe native threads itself and is not an enforcement hook. The root must compare the ledger with trustworthy runtime metadata and use available native limits.
 
@@ -13,3 +13,17 @@ All helpers use Python 3.10+ standard library only. They do not call models, gen
 Run `python -m unittest discover -s tests -v` for positive and negative tests of these helpers. The synthetic runtime and publication examples are only helper-test data; they do not prove the requested agents actually ran or a product was deployed.
 
 `art_policy.py` supplies the role-specific model resolver and generation-record consistency checks. JSON declarations do not prove native execution; inspect trustworthy runtime/image-call records and decoded images separately. Missing required generation evidence fails acceptance.
+
+`runtime_snapshot.py --database PATH --root-id ID` reads only the installed client metadata needed to observe native ancestry and model settings. Store its output privately. Thread existence is not current liveness, native closure or independent provider attestation.
+
+`sync_content.py --source-repo PATH --consumer-root PATH --plan PATH` previews canonical functional content exports from a full Git commit. `--apply` changes local managed copies and their receipt only after digest checks. It rejects unrelated edits, path collisions, symlinks and plans omitting previously managed files. Artwork has a separate approval gate.
+
+`node scripts/browser_review.mjs --base-url URL --routes FILE --output NEW_DIRECTORY` captures actual local website states at five widths and two themes, with reduced motion and automated accessibility checks. The route manifest supplies `id`, `path`, and expected `status` (200 or 404). Open the captured images and separately test keyboard interaction, forms, ordinary motion and zoom. Captures are test evidence, not new brand art or proof of a production deployment.
+
+`render_handoff.py --output NEW_FILE` renders the curated requirement, art and operation ledgers. It refuses missing inventory entries, changed binding requirements and unsupported verified states. It is deterministic for unchanged inputs and refuses overwriting its output. A rendered ledger remains a report, not independent acceptance; final evidence and companion revisions must be reconciled before delivery.
+
+The handoff release ledger has an exact schema marker/field set, nonempty summary and dimensions, and bounded nonempty string arrays. Duplicate JSON keys and non-regular paths fail. Legacy reports may omit the ledger; `FINAL_REPORT.md` and `--require-release` require it. Source-snapshot and complete-tree inventory hashes are included when present.
+
+`build_press_index.py` renders the local static press catalog. A download requires a complete verified asset family and shared-source lineage, unchanged source/prompt/export bytes, completed source-use review, and an unexpired digest-bound `publish_asset` approval for the `press_kit` surface and `asset` field. The operator-controlled `config/press-authorities.json` must independently enroll the approval ID, authority reference and SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators, no NaN). The checked-in registry is empty; content cannot enroll its own approval. Protect this registry and the installed builder as code. This local renderer neither issues approvals nor publishes files.
+
+`build_art_catalog.py` refreshes the embedded browser catalog and artwork-access summary from `brand/asset-manifest.json`. The source registry remains the planning inventory; actual execution states are overlaid only in the generated views. It does not grant approval or change asset verification states.

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Verified Astra-authored gpt-image-2 generation provenance",
-  "description": "Completed provenance record. The unfilled execution template is intentionally not a verified record. Runtime attestation must be independently inspected.",
+  "title": "Verified artwork generation provenance",
+  "description": "Completed provenance record for either the legacy Astra to gpt-image-2 route or the explicitly user-authorized root image-tool route. The unfilled execution template is intentionally not a verified record. Runtime/tool evidence must be independently inspected.",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -13,10 +13,17 @@
       "type": "string",
       "minLength": 1
     },
+    "generation_route": {
+      "enum": [
+        "astra_gpt_image_2",
+        "user_authorized_root_image_tool"
+      ]
+    },
     "author_role_id": {
       "enum": [
         "W02-C1-BUILD",
-        "W02-C2-BUILD"
+        "W02-C2-BUILD",
+        "ROOT"
       ]
     },
     "author_agent_id": {
@@ -24,7 +31,10 @@
       "minLength": 1
     },
     "author_parent_id": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "minLength": 1
     },
     "author_runtime_evidence_reference": {
@@ -67,16 +77,21 @@
       "type": "boolean"
     },
     "author_depth": {
-      "const": 3
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
     },
     "image_model_requested": {
-      "const": "gpt-image-2"
+      "type": "string",
+      "minLength": 1
     },
     "image_model_observed": {
-      "enum": [
-        "gpt-image-2",
-        "gpt-image-2-2026-04-21"
-      ]
+      "type": "string",
+      "minLength": 1
+    },
+    "image_backend": {
+      "type": "string",
+      "minLength": 1
     },
     "snapshot_alias_evidence_reference": {
       "type": [
@@ -175,22 +190,43 @@
       }
     },
     "requested_author_model": {
-      "const": "gpt-6-astra"
+      "type": "string",
+      "minLength": 1
     },
     "requested_author_effort": {
-      "const": "max"
+      "type": "string",
+      "minLength": 1
     },
     "accepted_author_model": {
-      "const": "gpt-6-astra"
+      "type": "string",
+      "minLength": 1
     },
     "accepted_author_effort": {
-      "const": "max"
+      "type": "string",
+      "minLength": 1
     },
     "observed_author_model": {
-      "const": "gpt-6-astra"
+      "type": "string",
+      "minLength": 1
     },
     "observed_author_effort": {
-      "const": "max"
+      "type": "string",
+      "minLength": 1
+    },
+    "snapshot_alias_evidence_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "user_authorization_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "user_authorization_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
     }
   },
   "required": [
@@ -225,6 +261,85 @@
     {
       "if": {
         "properties": {
+          "generation_route": {
+            "const": "user_authorized_root_image_tool"
+          }
+        },
+        "required": [
+          "generation_route"
+        ]
+      },
+      "then": {
+        "properties": {
+          "author_role_id": {"const": "ROOT"},
+          "author_agent_id": {"const": "root"},
+          "author_parent_id": {"type": "null"},
+          "author_depth": {"const": 0},
+          "requested_author_model": {"const": "unknown"},
+          "requested_author_effort": {"const": "unknown"},
+          "accepted_author_model": {"const": "unknown"},
+          "accepted_author_effort": {"const": "unknown"},
+          "observed_author_model": {"const": "unknown"},
+          "observed_author_effort": {"const": "unknown"},
+          "image_model_requested": {"const": "unknown"},
+          "image_model_observed": {"const": "unknown"},
+          "image_backend": {"const": "unspecified"},
+          "tool_name": {"const": "image_gen__imagegen"},
+          "user_authorization_reference": {"const": "art/root-generation-authorization.json"}
+        },
+        "required": [
+          "generation_route",
+          "image_backend",
+          "user_authorization_reference",
+          "user_authorization_sha256"
+        ]
+      }
+    },
+    {
+      "if": {
+        "not": {
+          "properties": {
+            "generation_route": {
+              "const": "user_authorized_root_image_tool"
+            }
+          },
+          "required": [
+            "generation_route"
+          ]
+        }
+      },
+      "then": {
+        "properties": {
+          "author_parent_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "author_role_id": {
+            "enum": [
+              "W02-C1-BUILD",
+              "W02-C2-BUILD"
+            ]
+          },
+          "author_depth": {"const": 3},
+          "image_model_requested": {"const": "gpt-image-2"},
+          "image_model_observed": {
+            "enum": [
+              "gpt-image-2",
+              "gpt-image-2-2026-04-21"
+            ]
+          },
+          "requested_author_model": {"const": "gpt-6-astra"},
+          "requested_author_effort": {"const": "max"},
+          "accepted_author_model": {"const": "gpt-6-astra"},
+          "accepted_author_effort": {"const": "max"},
+          "observed_author_model": {"const": "gpt-6-astra"},
+          "observed_author_effort": {"const": "max"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
           "status": {
             "const": "verified"
           }
@@ -254,10 +369,15 @@
           "snapshot_alias_evidence_reference": {
             "type": "string",
             "minLength": 1
+          },
+          "snapshot_alias_evidence_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
           }
         },
         "required": [
-          "snapshot_alias_evidence_reference"
+          "snapshot_alias_evidence_reference",
+          "snapshot_alias_evidence_sha256"
         ]
       }
     }

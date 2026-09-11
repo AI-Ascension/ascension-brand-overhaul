@@ -1,0 +1,4269 @@
+{
+  "schema_version": "ai-ascension.marketing-calendar.v1",
+  "package_source_revision": "4d09cd40fb077cc3364197a1cb1056950b980361",
+  "source_baseline": {
+    "source_snapshot_path": "../brand-w01/execution/source-snapshot.json",
+    "source_snapshot_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+    "refreshed_at": "2026-09-07",
+    "season": "Road to the First Verified Win",
+    "season_basis": "W01 refreshed baseline found no model-played campaign Victory; current public evidence is report-only.",
+    "evidence_policy": "Use observable facts with source revision and evidence kind; separate source-derived, owner-reported native run, public replay, forced fixture and future artifact."
+  },
+  "schedule": {
+    "type": "relative_weeks_until_approved_launch_date",
+    "launch_date": null,
+    "operation_state": "planning_only",
+    "cadence": "one episode weekly; two clips per episode week; one article per two-week pair",
+    "dependency_rule": "A blocked evidence or asset gate becomes an honest report/build note; it never creates a result."
+  },
+  "asset_policy": {
+    "registry_path": "art/asset-registry.json",
+    "registry_count": 72,
+    "all_referenced_assets_status": "blocked",
+    "blockers": [
+      "ORCH-NATIVE-SPAWN-UNAVAILABLE",
+      "IMAGE-BACKEND-UNVERIFIED",
+      "ART-PROVENANCE-ABSENT"
+    ],
+    "fallback_used": false,
+    "alt_text_rule": "Use accessible text, transcript or source links while art is blocked; never substitute code-drawn, legacy, stock or generated evidence visuals."
+  },
+  "source_pins": [
+    {
+      "source_id": "HIST-WINDOWS-CAMPAIGN",
+      "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "evidence_kind": "maintainer_reported_native_run",
+      "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only."
+    },
+    {
+      "source_id": "HIST-LINUX-CAMPAIGN",
+      "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+      "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+      "evidence_kind": "maintainer_reported_native_run",
+      "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only."
+    },
+    {
+      "source_id": "HIST-PUBLIC-PROOF",
+      "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+      "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+      "evidence_kind": "public_report",
+      "use": "Historical public browser replay of a stale-epoch gateway contract test; not game or model-play evidence."
+    },
+    {
+      "source_id": "HIST-TERMINAL-VICTORY",
+      "source_url": "https://github.com/AI-Ascension/sts2-game-mod/blob/8b71150895ea95c0625afc1389bb08e4034d9350/docs/evidence/native-victory-observation-20260906.md",
+      "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+      "evidence_kind": "maintainer_reported_forced_fixture",
+      "use": "Forced native terminal observation with disabled input; ordinary play bypassed, not a model-played win."
+    },
+    {
+      "source_id": "CAP-CANONICAL-DOMAIN",
+      "source_url": "https://github.com/AI-Ascension/aiascension.tech/blob/4e2d99c95d89ce3d18981d331faad10c9f1f7376/README.md",
+      "source_revision": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+      "evidence_kind": "source_derived",
+      "use": "Canonical host home returned HTTP 200; GET /api/subscribe.php returned 405 and no successful POST or mail was recorded in the audit."
+    },
+    {
+      "source_id": "CAP-MAP-DEFERRED",
+      "source_url": "https://github.com/AI-Ascension/ascension-map-visualizer/tree/18915e5571829e582f460bf14b674cc2db39d9c5",
+      "source_revision": "18915e5571829e582f460bf14b674cc2db39d9c5",
+      "evidence_kind": "planned",
+      "use": "Public bootstrap is minimal while a separate local implementation is active; publishing a map viewer is gated."
+    },
+    {
+      "source_id": "W01-SNAPSHOT",
+      "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+      "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+      "evidence_kind": "source_snapshot",
+      "use": "W01 current source and capability baseline collected 2026-09-07."
+    },
+    {
+      "source_id": "APPROVED-RUN-MANIFEST",
+      "source_url": null,
+      "source_revision": null,
+      "evidence_kind": "required_future_public_artifact",
+      "use": "A sanitized reviewed run manifest must exist before future run copy publishes."
+    },
+    {
+      "source_id": "COMPARISON-PROTOCOL",
+      "source_url": null,
+      "source_revision": null,
+      "evidence_kind": "required_future_protocol",
+      "use": "A reviewed same-start protocol must declare build, seed, interface, budgets, interventions and exclusions."
+    },
+    {
+      "source_id": "CONTRIBUTOR-ARTIFACT",
+      "source_url": null,
+      "source_revision": null,
+      "evidence_kind": "required_future_public_artifact",
+      "use": "A reviewed public contribution diff or reproducible report must exist before contributor outcome copy publishes."
+    },
+    {
+      "source_id": "CAP-CORE-SEMANTICS",
+      "source_url": "https://github.com/AI-Ascension/sts2-game-core/blob/87e0f3d9355c0827e989d9fbc31804440852519b/README.md",
+      "source_revision": "87e0f3d9355c0827e989d9fbc31804440852519b",
+      "evidence_kind": "offline_test",
+      "use": "Host-independent typed state/action values, pure validation and in-memory tests; not a simulator or gameplay proof."
+    }
+  ],
+  "launch_basis": {
+    "public_promise": "Watch AI play. Inspect the run. Help it climb.",
+    "developer_descriptor": "Open tooling for game-playing agents, starting with Slay the Spire 2.",
+    "current_evidence": "Windows v0.107.1 report: floor 17 Defeat and 333 settled operations; Linux v0.107.1 report: floor 24 Defeat after one controller restart and 431 settled operations; both report-only and not a matched benchmark.",
+    "unavailable_claims": [
+      "verified model-played win",
+      "public gameplay video",
+      "public replay package",
+      "24/7 autonomy",
+      "native multiplayer",
+      "broad compatibility",
+      "live campaign operation"
+    ]
+  },
+  "episodes": [
+    {
+      "episode_id": "EP-01",
+      "week": 1,
+      "title": "What actually happened",
+      "audience": "Curious spectators",
+      "objective": "Introduce The Climb through a dated bounded attempt and make its evidence easy to inspect.",
+      "truthful_hook": "A useful first episode can end in Defeat: the question is what was observed, replayed and kept private.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "MKT-04",
+        "MKT-03",
+        "WEB-02",
+        "RUN-01"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "MKT-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Open on the season question",
+        "state no model-played verified win in the baseline",
+        "compare Windows floor 17/333 settled operations with Linux floor 24/431 after one restart",
+        "label both report-only",
+        "end at the exact sources."
+      ],
+      "cta": "Read the dated run reports and subscribe only through the approved host flow.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "status": "real_public_report",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Viewers reaching the evidence boundary or opening a source report",
+        "denominator": "Eligible episode starts",
+        "window": "14 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if any claim is misread as a win.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-02",
+      "week": 2,
+      "title": "Your move: one consequential choice",
+      "audience": "Spectators who enjoy reasoning about a single decision",
+      "objective": "Invite an anonymous local guess-and-reveal only after the exact observation and legal options are reviewed.",
+      "truthful_hook": "One choice is enough to ask a fair question when the observation, legal options and reveal are reviewed first.",
+      "source_requirements": [
+        {
+          "source_id": "APPROVED-RUN-MANIFEST",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A sanitized reviewed run manifest must exist before future run copy publishes.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "RUN-02",
+        "WEB-02",
+        "MKT-05"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Present one reviewed decision",
+        "allow local selection",
+        "state it is not a vote or game command",
+        "reveal recorded action only with a valid manifest",
+        "disclose intervention."
+      ],
+      "cta": "Make a local guess, inspect the reveal and read its manifest.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "decision_reveal",
+        "numerator": "Visitors completing a local guess and reveal",
+        "denominator": "Decision presentations with a valid manifest",
+        "window": "14 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if readers call it a community vote.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-03",
+      "week": 3,
+      "title": "Replay receipts",
+      "audience": "Developers and researchers",
+      "objective": "Explain how a bounded replay and source pointer support inspection while remaining distinct from fresh control.",
+      "truthful_hook": "A replay receipt can tell you what record was inspected without claiming that the provider was called again.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-PUBLIC-PROOF",
+          "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+          "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+          "evidence_kind": "public_report",
+          "use": "Historical public browser replay of a stale-epoch gateway contract test; not game or model-play evidence.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "RUN-03",
+        "RUN-04",
+        "DOC-02",
+        "WEB-02"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Label the gateway browser replay as a contract test",
+        "show fresh-complete-replay wording in reports",
+        "list immutable pointer/hash requirements",
+        "separate report, video and replay-package states."
+      ],
+      "cta": "Inspect the bounded browser proof and compare its scope with campaign reports.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Visitors opening a source pointer or evidence panel",
+        "denominator": "Meaningful episode reads",
+        "window": "21 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a mutable head is used as a source pointer.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-04",
+      "week": 4,
+      "title": "One change, next attempt",
+      "audience": "Builders",
+      "objective": "Frame a future intervention as a pre-registered hypothesis with unobserved result.",
+      "truthful_hook": "A changed controller or prompt is a hypothesis until a compatible attempt records its conditions and outcome.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "COMPARISON-PROTOCOL",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_protocol",
+          "use": "A reviewed same-start protocol must declare build, seed, interface, budgets, interventions and exclusions.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "APPROVED-RUN-MANIFEST",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A sanitized reviewed run manifest must exist before future run copy publishes.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "RUN-05",
+        "MKT-04",
+        "WEB-07"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Recap baseline conditions",
+        "state proposed change and invariants",
+        "show outcome=unobserved",
+        "state infrastructure stop rule",
+        "promise to publish failed attempt too."
+      ],
+      "cta": "Read the proposed protocol and return when a compatible report is approved.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Readers opening protocol and failure handling",
+        "denominator": "Eligible episode reads",
+        "window": "21 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if five reviewers repeat the hypothesis as a result.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-05",
+      "week": 5,
+      "title": "Routing through the map",
+      "audience": "Spectators and map developers",
+      "objective": "Explain route choices only when map data and run source are ready; otherwise publish a build note.",
+      "truthful_hook": "A route is worth discussing when map data, game build and recorded choice line up.",
+      "source_requirements": [
+        {
+          "source_id": "CAP-MAP-DEFERRED",
+          "source_url": "https://github.com/AI-Ascension/ascension-map-visualizer/tree/18915e5571829e582f460bf14b674cc2db39d9c5",
+          "source_revision": "18915e5571829e582f460bf14b674cc2db39d9c5",
+          "evidence_kind": "planned",
+          "use": "Public bootstrap is minimal while a separate local implementation is active; publishing a map viewer is gated.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "APPROVED-RUN-MANIFEST",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A sanitized reviewed run manifest must exist before future run copy publishes.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "WEB-08",
+        "RUN-02",
+        "MKT-05",
+        "BG-04"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "WEB-08",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "BG-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "State map owner/integration status",
+        "if ready align node, observation, legal actions and path",
+        "otherwise show text-only build note",
+        "never call bootstrap a live viewer."
+      ],
+      "cta": "Inspect map integration status and use the approved run route when it exists.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/runs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Visitors opening map source or approved run evidence",
+        "denominator": "Eligible episode reads",
+        "window": "21 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a route screenshot is mistaken for gameplay evidence.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-06",
+      "week": 6,
+      "title": "Game failure or infrastructure failure?",
+      "audience": "Developers and technically curious spectators",
+      "objective": "Teach a taxonomy separating outcome, restart, transport boundary and missing evidence.",
+      "truthful_hook": "Defeat and a controller restart are different observations; neither alone identifies the cause of the outcome.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-PUBLIC-PROOF",
+          "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+          "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+          "evidence_kind": "public_report",
+          "use": "Historical public browser replay of a stale-epoch gateway contract test; not game or model-play evidence.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "RUN-03",
+        "DOC-01",
+        "WEB-07",
+        "MKT-03"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Define game outcome, settled action, replay, restart and transport failure",
+        "use Linux one-restart fact without causal claim",
+        "contrast Windows and Linux without benchmark language."
+      ],
+      "cta": "Use the failure checklist and open the exact source report.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "status": "real_public_report",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Readers opening glossary and source report",
+        "denominator": "Eligible episode reads",
+        "window": "21 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if readers attribute restart to outcome without evidence.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-07",
+      "week": 7,
+      "title": "An expert annotates a real run",
+      "audience": "Players, researchers and maintainers",
+      "objective": "Create a consented annotation format that separates commentary from recorded fact.",
+      "truthful_hook": "An annotation adds a human question to a recorded decision; it does not rewrite what the agent observed or did.",
+      "source_requirements": [
+        {
+          "source_id": "APPROVED-RUN-MANIFEST",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A sanitized reviewed run manifest must exist before future run copy publishes.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "RUN-02",
+        "RUN-03",
+        "MKT-06",
+        "CAST-05"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-06",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "CAST-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Introduce commentator and access scope",
+        "show unedited record",
+        "place commentary in separate layer with timestamps",
+        "ask for alternative and missing fact",
+        "link correction path."
+      ],
+      "cta": "Read the source record first, then compare its annotation and stated limits.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Readers reaching recorded and commentary sections",
+        "denominator": "Eligible annotation reads",
+        "window": "21 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if facts and commentary cannot be separated.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-08",
+      "week": 8,
+      "title": "A fair matched-condition comparison",
+      "audience": "Researchers and advanced developers",
+      "objective": "Explain comparison protocol and publish only after matched fields and exclusions are reviewed.",
+      "truthful_hook": "A comparison is informative only when build, seed, observation, budgets, interventions and exclusions are declared.",
+      "source_requirements": [
+        {
+          "source_id": "COMPARISON-PROTOCOL",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_protocol",
+          "use": "A reviewed same-start protocol must declare build, seed, interface, budgets, interventions and exclusions.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "APPROVED-RUN-MANIFEST",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A sanitized reviewed run manifest must exist before future run copy publishes.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "RUN-05",
+        "WEB-07",
+        "DOC-02",
+        "MKT-03"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Read protocol before configurations",
+        "show attempts/exclusions/failures",
+        "date model labels",
+        "publish only after review, otherwise release protocol build note."
+      ],
+      "cta": "Review protocol fields and wait for an approved comparison record.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Readers opening protocol and exclusions",
+        "denominator": "Eligible comparison reads",
+        "window": "28 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if reviewers cannot identify denominator.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-09",
+      "week": 9,
+      "title": "A community challenge under stated rules",
+      "audience": "Contributors and spectators",
+      "objective": "Offer a transparent challenge path with no engagement gate.",
+      "truthful_hook": "A challenge is useful when its inputs, budget, evidence rule and maintainer decision are visible before submission.",
+      "source_requirements": [
+        {
+          "source_id": "APPROVED-RUN-MANIFEST",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A sanitized reviewed run manifest must exist before future run copy publishes.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "CONTRIBUTOR-ARTIFACT",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A reviewed public contribution diff or reproducible report must exist before contributor outcome copy publishes.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "MKT-05",
+        "MKT-06",
+        "RUN-02",
+        "WEB-05"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "MKT-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-06",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Read form",
+        "prohibit private saves and credentials",
+        "show anonymized structure only",
+        "explain triage and attribution",
+        "feature only reviewed records."
+      ],
+      "cta": "Submit a reproducible challenge proposal through the contributor path when open.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Proposals containing all fields and no private material",
+        "denominator": "Eligible challenge starts",
+        "window": "28 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop intake after three malformed/privacy-risk submissions.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-10",
+      "week": 10,
+      "title": "Cost and latency, measured carefully",
+      "audience": "Developers deciding whether an experiment is reproducible",
+      "objective": "Describe cost and latency only with compatible configuration, window and failure rule.",
+      "truthful_hook": "Latency and cost are measurements with a configuration, window and failure rule; a report without those fields cannot answer.",
+      "source_requirements": [
+        {
+          "source_id": "APPROVED-RUN-MANIFEST",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A sanitized reviewed run manifest must exist before future run copy publishes.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "COMPARISON-PROTOCOL",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_protocol",
+          "use": "A reviewed same-start protocol must declare build, seed, interface, budgets, interventions and exclusions.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "RUN-05",
+        "DOC-02",
+        "WEB-07",
+        "MKT-03"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Define request, settled-action, wall-clock and provider cost separately",
+        "show empty state for missing fields",
+        "include failures",
+        "require privacy review."
+      ],
+      "cta": "Read metric definitions and inspect fields before comparing a run.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Readers opening metric definitions and failure policy",
+        "denominator": "Eligible measurement reads",
+        "window": "28 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if any table lacks compatible config or budget.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-11",
+      "week": 11,
+      "title": "A contributor makes evidence easier to reproduce",
+      "audience": "Developers seeking a first contribution",
+      "objective": "Show a reviewed contribution when available; otherwise publish text-only onboarding.",
+      "truthful_hook": "A reproducible improvement is a checked diff plus bounded result; a draft is not a contributor success story.",
+      "source_requirements": [
+        {
+          "source_id": "CONTRIBUTOR-ARTIFACT",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A reviewed public contribution diff or reproducible report must exist before contributor outcome copy publishes.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "MKT-06",
+        "DOC-05",
+        "GH-13-B",
+        "WEB-07"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "MKT-06",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "GH-13-B",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Start with task contract and expected output",
+        "show diff only with consent/review",
+        "separate static from host/game evidence",
+        "publish next task and correction link."
+      ],
+      "cta": "Choose a bounded good-first task and attach its exact command result.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "build_start",
+        "numerator": "Visitors opening a task and starting documented quickstart",
+        "denominator": "Eligible contributor-guide visits",
+        "window": "28 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if task needs undocumented credentials or private artifacts.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "episode_id": "EP-12",
+      "week": 12,
+      "title": "Season review: every attempt accounted for",
+      "audience": "Returning viewers and researchers",
+      "objective": "Review attempts, measurements, failures and unverified boundaries without manufacturing a win.",
+      "truthful_hook": "A trustworthy season review can end with an open milestone when evidence still shows defeats and report-only artifacts.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-TERMINAL-VICTORY",
+          "source_url": "https://github.com/AI-Ascension/sts2-game-mod/blob/8b71150895ea95c0625afc1389bb08e4034d9350/docs/evidence/native-victory-observation-20260906.md",
+          "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+          "evidence_kind": "maintainer_reported_forced_fixture",
+          "use": "Forced native terminal observation with disabled input; ordinary play bypassed, not a model-played win.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "HIST-PUBLIC-PROOF",
+          "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+          "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+          "evidence_kind": "public_report",
+          "use": "Historical public browser replay of a stale-epoch gateway contract test; not game or model-play evidence.",
+          "required_before_publish": "Required source and evidence review before publication."
+        },
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source and evidence review before publication."
+        }
+      ],
+      "asset_ids": [
+        "MKT-04",
+        "RUN-01",
+        "RUN-04",
+        "WEB-02",
+        "MKT-03"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "MKT-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Read attempt ledger",
+        "summarize exact floors/counts",
+        "label forced Victory fixture as terminal-only",
+        "separate source, owner report, public replay and independent reproduction",
+        "close with correction path."
+      ],
+      "cta": "Read the season ledger, inspect sources and submit a correction when the route is live.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Planned route remains gated until deployed and required artifact/review exists."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Use source context; do not infer a public run result."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; evidence owner, rights owner, asset provenance and destination review are required.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Readers opening a source pointer and correction guidance",
+        "denominator": "Eligible season-review reads",
+        "window": "35 days",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if any fixture or defeat is summarized as verified win.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    }
+  ],
+  "clips": [
+    {
+      "clip_id": "CL-01",
+      "week": 1,
+      "title": "The season question",
+      "audience": "Spectators",
+      "objective": "Name the open milestone.",
+      "truthful_hook": "The first verified win remains a goal because the baseline records defeats, not a model-played Victory.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "MKT-04",
+        "WEB-02"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "MKT-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "State season title",
+        "show evidence boundary",
+        "end on next question."
+      ],
+      "cta": "Read the report-only season page when approved.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_public_source",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-02",
+      "week": 1,
+      "title": "Floor 17 in one frame",
+      "audience": "Spectators",
+      "objective": "Give the Windows report's narrow scope.",
+      "truthful_hook": "A dated Windows report reaches Defeat on floor 17 after 333 settled operations.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "MKT-03",
+        "RUN-01"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "MKT-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show date/config",
+        "separate outcome from replay",
+        "link report."
+      ],
+      "cta": "Open the pinned Windows report.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_public_source",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-03",
+      "week": 2,
+      "title": "Guess locally, reveal honestly",
+      "audience": "Spectators",
+      "objective": "Explain local guess-and-reveal semantics.",
+      "truthful_hook": "A local selection is not a community vote or game command.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-02",
+        "MKT-05"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show reviewed options",
+        "local choice",
+        "recorded reveal",
+        "disclosure."
+      ],
+      "cta": "Try the surface when a reviewed manifest exists.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "decision_presented",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-04",
+      "week": 2,
+      "title": "What the card must show",
+      "audience": "Developers",
+      "objective": "List decision-card fields.",
+      "truthful_hook": "A decision card needs observation, legal options, source pointer and outcome state before decoration.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-02",
+        "WEB-07"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Call out required fields",
+        "show unavailable state",
+        "point to schema."
+      ],
+      "cta": "Read the decision schema when deployed.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "decision_presented",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-05",
+      "week": 3,
+      "title": "Replay is a receipt",
+      "audience": "Researchers",
+      "objective": "Distinguish replay from fresh provider call.",
+      "truthful_hook": "A complete replay can be inspected without calling a provider again.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-PUBLIC-PROOF",
+          "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+          "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+          "evidence_kind": "public_report",
+          "use": "Historical public browser replay of a stale-epoch gateway contract test; not game or model-play evidence.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-04",
+        "DOC-02"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show source hash/version",
+        "mark replay",
+        "state no fresh-provider claim."
+      ],
+      "cta": "Inspect the historical browser proof.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_public_source",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-06",
+      "week": 3,
+      "title": "The stale epoch lesson",
+      "audience": "Developers",
+      "objective": "Explain stale lease denial.",
+      "truthful_hook": "The public proof demonstrates bounded contract behavior, not a live service.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-PUBLIC-PROOF",
+          "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+          "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+          "evidence_kind": "public_report",
+          "use": "Historical public browser replay of a stale-epoch gateway contract test; not game or model-play evidence.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "DOC-01",
+        "RUN-03"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "DOC-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Sequence old epoch, denial and current lease in text",
+        "cite source."
+      ],
+      "cta": "Open proof.html and source.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_public_source",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-07",
+      "week": 4,
+      "title": "Hypothesis, not result",
+      "audience": "Builders",
+      "objective": "Teach preregistration language.",
+      "truthful_hook": "A proposed change is unobserved until a compatible attempt records its outcome.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-05",
+        "WEB-07"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show baseline, change, invariant and outcome=unobserved."
+      ],
+      "cta": "Read protocol draft.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-08",
+      "week": 4,
+      "title": "Keep the denominator",
+      "audience": "Researchers",
+      "objective": "Make failures visible.",
+      "truthful_hook": "A comparison without exclusions can hide the question it claims to answer.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-05",
+        "DOC-02"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "List attempted, excluded, infrastructure-failed and completed rows."
+      ],
+      "cta": "Inspect comparison protocol.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-09",
+      "week": 5,
+      "title": "Map route, gated",
+      "audience": "Spectators",
+      "objective": "Avoid marketing bootstrap as shipped.",
+      "truthful_hook": "Route discussion waits for reviewed map/run integration.",
+      "source_requirements": [
+        {
+          "source_id": "CAP-MAP-DEFERRED",
+          "source_url": "https://github.com/AI-Ascension/ascension-map-visualizer/tree/18915e5571829e582f460bf14b674cc2db39d9c5",
+          "source_revision": "18915e5571829e582f460bf14b674cc2db39d9c5",
+          "evidence_kind": "planned",
+          "use": "Public bootstrap is minimal while a separate local implementation is active; publishing a map viewer is gated.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "WEB-08",
+        "MKT-05"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "WEB-08",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show gated badge",
+        "link bootstrap",
+        "offer build note."
+      ],
+      "cta": "Inspect map repository.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "decision_presented",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-10",
+      "week": 5,
+      "title": "Node to choice",
+      "audience": "Players",
+      "objective": "Explain map-observation alignment.",
+      "truthful_hook": "A node label becomes a run fact only when observed state, legal actions and manifest agree.",
+      "source_requirements": [
+        {
+          "source_id": "CAP-MAP-DEFERRED",
+          "source_url": "https://github.com/AI-Ascension/ascension-map-visualizer/tree/18915e5571829e582f460bf14b674cc2db39d9c5",
+          "source_revision": "18915e5571829e582f460bf14b674cc2db39d9c5",
+          "evidence_kind": "planned",
+          "use": "Public bootstrap is minimal while a separate local implementation is active; publishing a map viewer is gated.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "WEB-08",
+        "RUN-02"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "WEB-08",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Use text placeholders",
+        "show alignment requirements",
+        "no invented node."
+      ],
+      "cta": "Read manifest when approved.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "decision_presented",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-11",
+      "week": 6,
+      "title": "Restart is an intervention",
+      "audience": "Developers",
+      "objective": "Label Linux restart correctly.",
+      "truthful_hook": "The Linux report records one restart; it does not establish that restart caused Defeat.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-03",
+        "MKT-03"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "State dated fact",
+        "show intervention column",
+        "state causal uncertainty."
+      ],
+      "cta": "Read Linux report.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_public_source",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-12",
+      "week": 6,
+      "title": "Defeat is not transport error",
+      "audience": "Spectators",
+      "objective": "Separate game outcome and infrastructure state.",
+      "truthful_hook": "A Defeat label and controller restart answer different questions.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-01",
+        "DOC-01"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Split labels",
+        "link reports",
+        "avoid causal inference."
+      ],
+      "cta": "Open both reports.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_public_source",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-13",
+      "week": 7,
+      "title": "Annotation has an owner",
+      "audience": "Players",
+      "objective": "Set commentary expectations.",
+      "truthful_hook": "A commentator can explain a choice without changing the recorded action.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-02",
+        "MKT-06"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-06",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show record layer, commentary layer, consent and corrections."
+      ],
+      "cta": "Read annotation when approved.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-14",
+      "week": 7,
+      "title": "Facts before opinions",
+      "audience": "Researchers",
+      "objective": "Model annotation reading order.",
+      "truthful_hook": "Read what happened first, then what someone thinks it meant.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-03",
+        "CAST-05"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "CAST-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Sequence record, source, commentary and uncertainty."
+      ],
+      "cta": "Inspect source record first.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-15",
+      "week": 8,
+      "title": "Fair comparison checklist",
+      "audience": "Researchers",
+      "objective": "List matched-condition fields.",
+      "truthful_hook": "Build, seed, interface, budget, intervention and failure handling belong in the contract.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-05",
+        "WEB-07"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Reveal checklist",
+        "finish unobserved state."
+      ],
+      "cta": "Read protocol before results.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "decision_presented",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-16",
+      "week": 8,
+      "title": "Configuration is dated",
+      "audience": "Developers",
+      "objective": "Prevent roster copy becoming timeless.",
+      "truthful_hook": "A model label belongs to a tested configuration and date, not permanent ranking.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "DOC-02",
+        "MKT-03"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "DOC-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show config line",
+        "pin revision",
+        "mark stale copy invalid."
+      ],
+      "cta": "Open pinned revision.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "decision_presented",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-17",
+      "week": 9,
+      "title": "Challenge without a gate",
+      "audience": "Contributors",
+      "objective": "Invite proposals without engagement demand.",
+      "truthful_hook": "A challenge asks for reproducible inputs, not stars, follows or a paid boost.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "MKT-05",
+        "DOC-05"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "MKT-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show fields",
+        "reject private save/credential",
+        "explain triage."
+      ],
+      "cta": "Read contributor guidance.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-18",
+      "week": 9,
+      "title": "No invented challenge result",
+      "audience": "Spectators",
+      "objective": "Demonstrate honest empty state.",
+      "truthful_hook": "Until a reviewed submission exists, the challenge card says no observation yet.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "WEB-05",
+        "MKT-06"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "WEB-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-06",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Open empty state",
+        "show required artifact fields",
+        "link corrections."
+      ],
+      "cta": "Check challenge status when deployed.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-19",
+      "week": 10,
+      "title": "Latency has units",
+      "audience": "Developers",
+      "objective": "Clarify latency fields.",
+      "truthful_hook": "Request, settled-action and wall-clock latency are different measurements.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-05",
+        "WEB-07"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Name units",
+        "show missing state",
+        "cite contract."
+      ],
+      "cta": "Read measurement definitions.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-20",
+      "week": 10,
+      "title": "Cost is a source field",
+      "audience": "Researchers",
+      "objective": "Prevent guessed provider costs.",
+      "truthful_hook": "A cost number needs compatible provider, model, window and accounting source.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-05",
+        "DOC-02"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show blank field",
+        "list provenance",
+        "state unobserved."
+      ],
+      "cta": "Inspect future approved manifest.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-21",
+      "week": 11,
+      "title": "Good-first means bounded",
+      "audience": "Contributors",
+      "objective": "Make first tasks actionable.",
+      "truthful_hook": "A good-first task names files, command, expected output and reviewer path.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "DOC-05",
+        "GH-13-B"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "DOC-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "GH-13-B",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show task template",
+        "contribution guide",
+        "no-secret rule."
+      ],
+      "cta": "Open contribution guidance.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "decision_presented",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-22",
+      "week": 11,
+      "title": "Static check is not host proof",
+      "audience": "Developers",
+      "objective": "Separate test classes.",
+      "truthful_hook": "A static check does not prove native game run or deployment.",
+      "source_requirements": [
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "DOC-01",
+        "MKT-06"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "DOC-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-06",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Stack source, test, host and public labels",
+        "cite baseline."
+      ],
+      "cta": "Read evidence labels.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/watch",
+          "status": "planned_local_destination",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "decision_presented",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-23",
+      "week": 12,
+      "title": "Forced fixture boundary",
+      "audience": "Researchers",
+      "objective": "Correct Victory misunderstanding.",
+      "truthful_hook": "A forced native Victory observation is terminal UI evidence with input disabled, not campaign win.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-TERMINAL-VICTORY",
+          "source_url": "https://github.com/AI-Ascension/sts2-game-mod/blob/8b71150895ea95c0625afc1389bb08e4034d9350/docs/evidence/native-victory-observation-20260906.md",
+          "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+          "evidence_kind": "maintainer_reported_forced_fixture",
+          "use": "Forced native terminal observation with disabled input; ordinary play bypassed, not a model-played win.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "RUN-01",
+        "RUN-03"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "State fixture setup and bypass",
+        "link report."
+      ],
+      "cta": "Read terminal observation report.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_public_source",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "clip_id": "CL-24",
+      "week": 12,
+      "title": "Corrections stay open",
+      "audience": "Everyone",
+      "objective": "Provide a correction path.",
+      "truthful_hook": "A dated source can change; corrections preserve what was updated.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-TERMINAL-VICTORY",
+          "source_url": "https://github.com/AI-Ascension/sts2-game-mod/blob/8b71150895ea95c0625afc1389bb08e4034d9350/docs/evidence/native-victory-observation-20260906.md",
+          "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+          "evidence_kind": "maintainer_reported_forced_fixture",
+          "use": "Forced native terminal observation with disabled input; ordinary play bypassed, not a model-played win.",
+          "required_before_publish": "Required source/evidence review; keep result unobserved when no approved artifact exists."
+        }
+      ],
+      "asset_ids": [
+        "MKT-06",
+        "WEB-05"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "MKT-06",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "storyboard": [
+        "Show revision, owner, update date and correction template."
+      ],
+      "cta": "Submit correction when route is live.",
+      "destinations": [
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_public_source",
+          "gate": "Draft destination; verify route deployment before publication."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Draft only; source, rights, moderation and blocked-asset gates remain.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "evidence_open",
+        "numerator": "Completed clip views meeting the stated action",
+        "denominator": "Eligible clip starts",
+        "window": "14 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if a reviewer misreads the clip as live gameplay, verified win or completed campaign.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    }
+  ],
+  "articles": [
+    {
+      "article_id": "ART-01",
+      "week_pair": "weeks 1-2",
+      "weeks": [
+        1,
+        2
+      ],
+      "title": "From host boundary to inspectable report",
+      "audience": "Developers and researchers",
+      "objective": "Explain the path from host-independent source to report-only evidence without collapsing interfaces.",
+      "truthful_hook": "An inspectable report names its source boundary and evidence class before describing an outcome.",
+      "source_requirements": [
+        {
+          "source_id": "CAP-CORE-SEMANTICS",
+          "source_url": "https://github.com/AI-Ascension/sts2-game-core/blob/87e0f3d9355c0827e989d9fbc31804440852519b/README.md",
+          "source_revision": "87e0f3d9355c0827e989d9fbc31804440852519b",
+          "evidence_kind": "offline_test",
+          "use": "Host-independent typed state/action values, pure validation and in-memory tests; not a simulator or gameplay proof.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "HIST-PUBLIC-PROOF",
+          "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+          "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+          "evidence_kind": "public_report",
+          "use": "Historical public browser replay of a stale-epoch gateway contract test; not game or model-play evidence.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        }
+      ],
+      "asset_ids": [
+        "DOC-01",
+        "DOC-02",
+        "WEB-07"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "DOC-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "outline": [
+        "Architecture boundaries",
+        "source versus host evidence",
+        "Windows/Linux report scope",
+        "publication checklist."
+      ],
+      "storyboard": [
+        "Architecture boundaries",
+        "source versus host evidence",
+        "Windows/Linux report scope",
+        "publication checklist."
+      ],
+      "cta": "Read pinned source files and evidence reports.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Docs route is a local implementation destination until deployed."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Source repository is implementation context."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Every architecture claim needs its exact source revision.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Readers reaching source table and opening a source pointer",
+        "denominator": "Eligible article starts",
+        "window": "35 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if five reviewers cannot state the evidence class.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "article_id": "ART-02",
+      "week_pair": "weeks 3-4",
+      "weeks": [
+        3,
+        4
+      ],
+      "title": "Replay receipts and the trust boundary",
+      "audience": "Researchers and careful spectators",
+      "objective": "Show how replay records, hashes and public pointers support inspection while fresh execution stays distinct.",
+      "truthful_hook": "A replay receipt documents a record's identity; it does not become a new provider run.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-PUBLIC-PROOF",
+          "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+          "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+          "evidence_kind": "public_report",
+          "use": "Historical public browser replay of a stale-epoch gateway contract test; not game or model-play evidence.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "APPROVED-RUN-MANIFEST",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A sanitized reviewed run manifest must exist before future run copy publishes.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        }
+      ],
+      "asset_ids": [
+        "RUN-03",
+        "RUN-04",
+        "DOC-02"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "DOC-02",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "outline": [
+        "Report/video/replay states",
+        "historical proof",
+        "campaign replay wording",
+        "private-artifact exclusions",
+        "manifest design."
+      ],
+      "storyboard": [
+        "Report/video/replay states",
+        "historical proof",
+        "campaign replay wording",
+        "private-artifact exclusions",
+        "manifest design."
+      ],
+      "cta": "Inspect public proof and source-linked reports.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Docs route is a local implementation destination until deployed."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Source repository is implementation context."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "No private trajectories or captures.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Readers reaching source table and opening a source pointer",
+        "denominator": "Eligible article starts",
+        "window": "35 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if five reviewers cannot state the evidence class.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "article_id": "ART-03",
+      "week_pair": "weeks 5-6",
+      "weeks": [
+        5,
+        6
+      ],
+      "title": "Model, control and replay are separate claims",
+      "audience": "Developers and evaluation readers",
+      "objective": "Explain why model identifier, settled action and replay result require different evidence.",
+      "truthful_hook": "A model name in configuration is not a ranking, and a settled action is not a verified win.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-WINDOWS-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/seeded-astra-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Windows v0.107.1 practice campaign report: floor-17 Defeat, 333 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        }
+      ],
+      "asset_ids": [
+        "RUN-01",
+        "RUN-05",
+        "MKT-03"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "outline": [
+        "Configuration/date",
+        "provider port",
+        "settled/requested actions",
+        "intervention",
+        "season evidence check."
+      ],
+      "storyboard": [
+        "Configuration/date",
+        "provider port",
+        "settled/requested actions",
+        "intervention",
+        "season evidence check."
+      ],
+      "cta": "Use evidence vocabulary in pinned baseline.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Docs route is a local implementation destination until deployed."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Source repository is implementation context."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Refresh revisions before model-specific copy.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Readers reaching source table and opening a source pointer",
+        "denominator": "Eligible article starts",
+        "window": "35 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if five reviewers cannot state the evidence class.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "article_id": "ART-04",
+      "week_pair": "weeks 7-8",
+      "weeks": [
+        7,
+        8
+      ],
+      "title": "Designing an intervention-aware comparison",
+      "audience": "Researchers and maintainers",
+      "objective": "Provide preregistration outline for compatible attempts and honest exclusions.",
+      "truthful_hook": "A comparison earns meaning from declared conditions, failure handling and uncertainty.",
+      "source_requirements": [
+        {
+          "source_id": "COMPARISON-PROTOCOL",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_protocol",
+          "use": "A reviewed same-start protocol must declare build, seed, interface, budgets, interventions and exclusions.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "APPROVED-RUN-MANIFEST",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A sanitized reviewed run manifest must exist before future run copy publishes.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        }
+      ],
+      "asset_ids": [
+        "RUN-05",
+        "WEB-07",
+        "MKT-04"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "RUN-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-07",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-04",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "outline": [
+        "Build/seed/interface/budgets",
+        "interventions",
+        "resource limits",
+        "attempted/excluded rows",
+        "result placeholder."
+      ],
+      "storyboard": [
+        "Build/seed/interface/budgets",
+        "interventions",
+        "resource limits",
+        "attempted/excluded rows",
+        "result placeholder."
+      ],
+      "cta": "Review protocol before any result.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Docs route is a local implementation destination until deployed."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Source repository is implementation context."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "No significance or ranking before data.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Readers reaching source table and opening a source pointer",
+        "denominator": "Eligible article starts",
+        "window": "35 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if five reviewers cannot state the evidence class.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "article_id": "ART-05",
+      "week_pair": "weeks 9-10",
+      "weeks": [
+        9,
+        10
+      ],
+      "title": "Failure taxonomy for a climbing agent",
+      "audience": "Developers troubleshooting runs",
+      "objective": "Give vocabulary for terminal outcomes, restarts, stale epochs and missing artifacts.",
+      "truthful_hook": "Failure labels help when they preserve boundaries between game, controller, transport and publication.",
+      "source_requirements": [
+        {
+          "source_id": "HIST-LINUX-CAMPAIGN",
+          "source_url": "https://github.com/AI-Ascension/sts2-harness/blob/cb17b6c15262ce9356f1e85fd475af997aedc445/docs/evidence/linux-seeded-campaign-20260906.md",
+          "source_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+          "evidence_kind": "maintainer_reported_native_run",
+          "use": "Dated visible Linux v0.107.1 practice campaign report: one controller restart, floor-24 Defeat, 431 settled operations, fresh complete replay; report-only.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "HIST-TERMINAL-VICTORY",
+          "source_url": "https://github.com/AI-Ascension/sts2-game-mod/blob/8b71150895ea95c0625afc1389bb08e4034d9350/docs/evidence/native-victory-observation-20260906.md",
+          "source_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+          "evidence_kind": "maintainer_reported_forced_fixture",
+          "use": "Forced native terminal observation with disabled input; ordinary play bypassed, not a model-played win.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "HIST-PUBLIC-PROOF",
+          "source_url": "https://github.com/AI-Ascension/AI-Ascension.github.io/blob/bbe475998b0cd279309666f5cec3dc433d90a4a4/proof.html",
+          "source_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+          "evidence_kind": "public_report",
+          "use": "Historical public browser replay of a stale-epoch gateway contract test; not game or model-play evidence.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        }
+      ],
+      "asset_ids": [
+        "DOC-01",
+        "RUN-03",
+        "WEB-05"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "DOC-01",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "RUN-03",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "WEB-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "outline": [
+        "Defeat versus Victory",
+        "forced fixture",
+        "Linux restart",
+        "stale-epoch proof",
+        "missing footage",
+        "correction path."
+      ],
+      "storyboard": [
+        "Defeat versus Victory",
+        "forced fixture",
+        "Linux restart",
+        "stale-epoch proof",
+        "missing footage",
+        "correction path."
+      ],
+      "cta": "Open exact evidence for each class.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Docs route is a local implementation destination until deployed."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Source repository is implementation context."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "Never use fixture or replay as gameplay success.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Readers reaching source table and opening a source pointer",
+        "denominator": "Eligible article starts",
+        "window": "35 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if five reviewers cannot state the evidence class.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    },
+    {
+      "article_id": "ART-06",
+      "week_pair": "weeks 11-12",
+      "weeks": [
+        11,
+        12
+      ],
+      "title": "A contributor's path to reproducible evidence",
+      "audience": "Contributors and maintainers",
+      "objective": "Turn good-first issue into checked, reviewable contribution without engagement gates.",
+      "truthful_hook": "A useful contribution leaves a reproducible command, expected output, reviewer and honest evidence class.",
+      "source_requirements": [
+        {
+          "source_id": "CONTRIBUTOR-ARTIFACT",
+          "source_url": null,
+          "source_revision": null,
+          "evidence_kind": "required_future_public_artifact",
+          "use": "A reviewed public contribution diff or reproducible report must exist before contributor outcome copy publishes.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        },
+        {
+          "source_id": "W01-SNAPSHOT",
+          "source_url": "https://github.com/AI-Ascension/ascension-brand-overhaul/tree/5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "source_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+          "evidence_kind": "source_snapshot",
+          "use": "W01 current source and capability baseline collected 2026-09-07.",
+          "required_before_publish": "Required source/evidence review; future artifact rows remain unobserved."
+        }
+      ],
+      "asset_ids": [
+        "DOC-05",
+        "MKT-06",
+        "GH-13-B"
+      ],
+      "asset_records": [
+        {
+          "asset_id": "DOC-05",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "MKT-06",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        },
+        {
+          "asset_id": "GH-13-B",
+          "availability": "blocked",
+          "registry_path": "art/asset-registry.json",
+          "status": "planned",
+          "blocker": "ORCH-NATIVE-SPAWN-UNAVAILABLE; IMAGE-BACKEND-UNVERIFIED; ART-PROVENANCE-ABSENT",
+          "fallback_used": false
+        }
+      ],
+      "outline": [
+        "Task selection",
+        "privacy/secret exclusions",
+        "source/test/host/public distinctions",
+        "code-owner review",
+        "consent",
+        "corrections."
+      ],
+      "storyboard": [
+        "Task selection",
+        "privacy/secret exclusions",
+        "source/test/host/public distinctions",
+        "code-owner review",
+        "consent",
+        "corrections."
+      ],
+      "cta": "Open contribution guidance and choose bounded task.",
+      "destinations": [
+        {
+          "url": "https://aiascension.tech/docs",
+          "status": "planned_local_destination",
+          "gate": "Docs route is a local implementation destination until deployed."
+        },
+        {
+          "url": "https://github.com/AI-Ascension/sts2-harness",
+          "status": "real_source_repository",
+          "gate": "Source repository is implementation context."
+        }
+      ],
+      "rights_approval": {
+        "status": "draft_only",
+        "send_or_publish_authorized": false,
+        "required_reviewers": [
+          "W06-L content review",
+          "evidence owner",
+          "rights/publication owner"
+        ],
+        "publication_gate": "No contributor result before reviewed public artifact.",
+        "checks": [
+          "source revision and claim scope",
+          "asset provenance and rights",
+          "privacy review",
+          "destination availability"
+        ]
+      },
+      "owner": "W06-C1",
+      "measurement": {
+        "primary_event": "meaningful_watch_or_read",
+        "numerator": "Readers reaching source table and opening a source pointer",
+        "denominator": "Eligible article starts",
+        "window": "35 days after approval",
+        "bot_and_test_filter": "Exclude known previews, maintainer test traffic, bots and duplicate reloads where the platform supplies a coarse aggregate.",
+        "attribution_limit": "Directional attribution only; no person-level identity or causal claim.",
+        "stop_rule": "Stop if five reviewers cannot state the evidence class.",
+        "result_status": "unobserved",
+        "privacy": "Aggregate counts only; no email, raw runtime telemetry, prompts, saves, private run IDs or fingerprints."
+      }
+    }
+  ],
+  "integrity": {
+    "item_counts": {
+      "episodes": 12,
+      "clips": 24,
+      "articles": 6
+    },
+    "expected_counts": {
+      "episodes": 12,
+      "clips": 24,
+      "articles": 6
+    },
+    "results": "unobserved_until_campaign_operation",
+    "publication": "All copy is draft until evidence, rights, asset, destination and independent review gates pass."
+  }
+}

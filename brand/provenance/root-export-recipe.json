@@ -1,0 +1,1920 @@
+{
+  "schema_version": "root-mechanical-export-recipe-v1",
+  "exports": [
+    {
+      "asset_id": "ID-01",
+      "source_path": "brand/sources/generated/ID-01/generation-004.png",
+      "crop_box": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "output_path": "brand/assets/identity/mark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-01",
+      "source_path": "brand/sources/generated/ID-01/generation-004.png",
+      "crop_box": [
+        887,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "output_path": "brand/assets/identity/mark-mono.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-02",
+      "source_path": "brand/sources/generated/ID-02/generation-001.png",
+      "crop_box": [
+        0,
+        59,
+        1774,
+        384
+      ],
+      "size": [
+        1200,
+        220
+      ],
+      "output_path": "brand/assets/identity/ai-ascension-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-02",
+      "source_path": "brand/sources/generated/ID-02/generation-001.png",
+      "crop_box": [
+        0,
+        502,
+        1774,
+        827
+      ],
+      "size": [
+        1200,
+        220
+      ],
+      "output_path": "brand/assets/identity/ai-ascension-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-03",
+      "source_path": "brand/sources/generated/ID-03/generation-001.png",
+      "crop_box": [
+        263,
+        0,
+        1908,
+        362
+      ],
+      "size": [
+        1000,
+        220
+      ],
+      "output_path": "brand/assets/identity/ascension-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-03",
+      "source_path": "brand/sources/generated/ID-03/generation-001.png",
+      "crop_box": [
+        263,
+        362,
+        1908,
+        724
+      ],
+      "size": [
+        1000,
+        220
+      ],
+      "output_path": "brand/assets/identity/ascension-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-04",
+      "source_path": "brand/sources/generated/ID-04/generation-001.png",
+      "crop_box": [
+        0,
+        127,
+        1942,
+        682
+      ],
+      "size": [
+        1400,
+        400
+      ],
+      "output_path": "brand/assets/identity/the-climb-master.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-04",
+      "source_path": "brand/sources/generated/ID-04/generation-001.png",
+      "crop_box": [
+        0,
+        127,
+        1942,
+        682
+      ],
+      "size": [
+        1400,
+        400
+      ],
+      "output_path": "brand/assets/identity/the-climb.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-05",
+      "source_path": "brand/sources/generated/ID-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "output_path": "brand/assets/identity/avatar-1024.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-05",
+      "source_path": "brand/sources/generated/ID-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "output_path": "brand/assets/identity/avatar-256.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "output_path": "brand/assets/identity/favicon.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "output_path": "brand/assets/identity/favicon-32.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "output_path": "brand/assets/identity/favicon-16.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-06",
+      "source_path": "brand/sources/generated/ID-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        180,
+        180
+      ],
+      "output_path": "brand/assets/identity/apple-touch-icon.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-07",
+      "source_path": "brand/sources/generated/ID-07/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "output_path": "brand/assets/identity/icons.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "ID-08",
+      "source_path": "brand/sources/generated/ID-08/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1122,
+        1402
+      ],
+      "size": [
+        1600,
+        2000
+      ],
+      "output_path": "brand/assets/identity/specimen.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "BG-01",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "size": [
+        2400,
+        1600
+      ],
+      "output_path": "brand/assets/illustration/ascent-master.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "BG-02",
+      "source_path": "brand/sources/generated/BG-02/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "size": [
+        2560,
+        1440
+      ],
+      "output_path": "brand/assets/illustration/broadcast-master.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "BG-03",
+      "source_path": "brand/sources/generated/BG-03/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        2160,
+        2160
+      ],
+      "output_path": "brand/assets/illustration/series-master.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-identity-review.json"
+    },
+    {
+      "asset_id": "BG-04",
+      "source_path": "brand/sources/generated/BG-04/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        800,
+        800
+      ],
+      "output_path": "brand/assets/illustration/route-pattern-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "BG-04",
+      "source_path": "brand/sources/generated/BG-04/generation-007.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        800,
+        800
+      ],
+      "output_path": "brand/assets/illustration/route-pattern-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "WEB-01",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "crop_box": [
+        0,
+        32,
+        1536,
+        992
+      ],
+      "size": [
+        1600,
+        1000
+      ],
+      "output_path": "brand/assets/web/home-desktop.webp",
+      "review_state": "independently_reviewed_source_and_export",
+      "encoding": {
+        "lossless": false,
+        "quality": 86,
+        "method": 6
+      },
+      "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+    },
+    {
+      "asset_id": "WEB-01",
+      "source_path": "brand/sources/generated/BG-01/generation-001.png",
+      "crop_box": [
+        358,
+        0,
+        1177,
+        1024
+      ],
+      "size": [
+        800,
+        1000
+      ],
+      "output_path": "brand/assets/web/home-mobile.webp",
+      "review_state": "independently_reviewed_source_and_export",
+      "encoding": {
+        "lossless": false,
+        "quality": 86,
+        "method": 6
+      },
+      "reviewer_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+    },
+    {
+      "asset_id": "WEB-02",
+      "source_path": "brand/sources/generated/WEB-02/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/web/latest-run-poster.webp",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-02",
+      "source_path": "brand/sources/generated/WEB-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "size": [
+        900,
+        1200
+      ],
+      "output_path": "brand/assets/web/latest-run-poster-mobile.webp",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-03",
+      "source_path": "brand/sources/generated/WEB-03/generation-001.png",
+      "crop_box": [
+        0,
+        235,
+        887,
+        789
+      ],
+      "size": [
+        800,
+        500
+      ],
+      "output_path": "brand/assets/web/path-watch.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-03",
+      "source_path": "brand/sources/generated/WEB-03/generation-001.png",
+      "crop_box": [
+        887,
+        235,
+        1774,
+        789
+      ],
+      "size": [
+        800,
+        500
+      ],
+      "output_path": "brand/assets/web/path-build.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-04",
+      "source_path": "brand/sources/generated/WEB-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        908
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/web/site-og.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-05",
+      "source_path": "brand/sources/generated/WEB-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1024,
+        768
+      ],
+      "size": [
+        800,
+        600
+      ],
+      "output_path": "brand/assets/web/404.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-05",
+      "source_path": "brand/sources/generated/WEB-05/generation-001.png",
+      "crop_box": [
+        1024,
+        0,
+        2048,
+        768
+      ],
+      "size": [
+        800,
+        600
+      ],
+      "output_path": "brand/assets/web/unavailable.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-06",
+      "source_path": "brand/sources/generated/WEB-06/generation-001.png",
+      "crop_box": [
+        0,
+        157,
+        836,
+        784
+      ],
+      "size": [
+        400,
+        300
+      ],
+      "output_path": "brand/assets/web/subscribe-confirm.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-06",
+      "source_path": "brand/sources/generated/WEB-06/generation-001.png",
+      "crop_box": [
+        836,
+        157,
+        1672,
+        784
+      ],
+      "size": [
+        400,
+        300
+      ],
+      "output_path": "brand/assets/web/subscribe-success.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-07",
+      "source_path": "brand/sources/generated/WEB-07/generation-002.png",
+      "crop_box": [
+        2,
+        0,
+        1564,
+        1004
+      ],
+      "size": [
+        1400,
+        900
+      ],
+      "output_path": "brand/assets/web/capabilities.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-08",
+      "source_path": "brand/sources/generated/WEB-08/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "size": [
+        1440,
+        960
+      ],
+      "output_path": "brand/assets/web/map-preview.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "WEB-08",
+      "source_path": "brand/sources/generated/WEB-08/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "size": [
+        900,
+        1200
+      ],
+      "output_path": "brand/assets/web/map-preview-mobile.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "RUN-01",
+      "source_path": "brand/sources/generated/RUN-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        908
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/run/summary-template.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "RUN-02",
+      "source_path": "brand/sources/generated/RUN-02/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1731,
+        909
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/run/decision-landscape.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "RUN-02",
+      "source_path": "brand/sources/generated/RUN-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        940,
+        1672
+      ],
+      "size": [
+        1080,
+        1920
+      ],
+      "output_path": "brand/assets/run/decision-vertical.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "RUN-04",
+      "source_path": "brand/sources/generated/RUN-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1730,
+        908
+      ],
+      "size": [
+        1200,
+        630
+      ],
+      "output_path": "brand/assets/run/replay-receipt.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "RUN-05",
+      "source_path": "brand/sources/generated/RUN-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        940
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/run/comparison-template.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-root-art-second-batch-review.json"
+    },
+    {
+      "asset_id": "CAST-01",
+      "source_path": "brand/sources/generated/CAST-01/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/single-agent-master.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-002.json"
+    },
+    {
+      "asset_id": "CAST-01",
+      "source_path": "brand/sources/generated/CAST-01/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/single-agent.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-002.json"
+    },
+    {
+      "asset_id": "CAST-02",
+      "source_path": "brand/sources/generated/CAST-02/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/comparison.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "CAST-03",
+      "source_path": "brand/sources/generated/CAST-03/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        941,
+        1672
+      ],
+      "size": [
+        1080,
+        1920
+      ],
+      "output_path": "brand/assets/broadcast/vertical.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "CAST-04",
+      "source_path": "brand/sources/generated/CAST-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/starting.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "CAST-04",
+      "source_path": "brand/sources/generated/CAST-04/generation-004.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/intermission.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "CAST-04",
+      "source_path": "brand/sources/generated/CAST-04/generation-005.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/ended.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "CAST-05",
+      "source_path": "brand/sources/generated/CAST-05/generation-003.png",
+      "crop_box": [
+        0,
+        273,
+        1983,
+        521
+      ],
+      "size": [
+        1920,
+        240
+      ],
+      "output_path": "brand/assets/broadcast/lower-third.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "CAST-05",
+      "source_path": "brand/sources/generated/CAST-05/generation-004.png",
+      "crop_box": [
+        0,
+        480,
+        1374,
+        595
+      ],
+      "size": [
+        1920,
+        160
+      ],
+      "output_path": "brand/assets/broadcast/disclosure.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "CAST-06",
+      "source_path": "brand/sources/generated/CAST-06/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "output_path": "brand/assets/broadcast/title-transition-still.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W03-root-motion-browser-review.json"
+    },
+    {
+      "asset_id": "CAST-07",
+      "source_path": "brand/sources/generated/CAST-07/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1586,
+        992
+      ],
+      "size": [
+        1600,
+        1000
+      ],
+      "output_path": "brand/assets/broadcast/scene-map.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-003.json"
+    },
+    {
+      "asset_id": "MKT-01",
+      "source_path": "brand/sources/generated/MKT-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        2560,
+        1440
+      ],
+      "output_path": "brand/assets/marketing/channel-cover.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-003.json"
+    },
+    {
+      "asset_id": "MKT-02",
+      "source_path": "brand/sources/generated/MKT-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "size": [
+        1500,
+        500
+      ],
+      "output_path": "brand/assets/marketing/social-header.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "MKT-08",
+      "source_path": "brand/sources/generated/MKT-08/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "size": [
+        1200,
+        400
+      ],
+      "output_path": "brand/assets/marketing/sponsor-disclosure.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+    },
+    {
+      "asset_id": "MKT-09",
+      "source_path": "brand/sources/generated/MKT-09/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/press/cover.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-01-B",
+      "source_path": "brand/sources/generated/GH-01-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-01-B",
+      "source_path": "brand/sources/generated/GH-01-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-02-B",
+      "source_path": "brand/sources/generated/GH-02-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-mcp-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-02-B",
+      "source_path": "brand/sources/generated/GH-02-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-mcp-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-03-B",
+      "source_path": "brand/sources/generated/GH-03-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-mod-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-03-B",
+      "source_path": "brand/sources/generated/GH-03-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-mod-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-04-B",
+      "source_path": "brand/sources/generated/GH-04-B/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-core-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+    },
+    {
+      "asset_id": "GH-04-B",
+      "source_path": "brand/sources/generated/GH-04-B/generation-002.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-core-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+    },
+    {
+      "asset_id": "GH-05-B",
+      "source_path": "brand/sources/generated/GH-05-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-gateway-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-05-B",
+      "source_path": "brand/sources/generated/GH-05-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-gateway-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-06-B",
+      "source_path": "brand/sources/generated/GH-06-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-protocol-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-06-B",
+      "source_path": "brand/sources/generated/GH-06-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-protocol-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-07-B",
+      "source_path": "brand/sources/generated/GH-07-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-map-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-07-B",
+      "source_path": "brand/sources/generated/GH-07-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/sts2-map-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-08-B",
+      "source_path": "brand/sources/generated/GH-08-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-watchdog-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-08-B",
+      "source_path": "brand/sources/generated/GH-08-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-watchdog-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-09-B",
+      "source_path": "brand/sources/generated/GH-09-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-observability-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-09-B",
+      "source_path": "brand/sources/generated/GH-09-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-observability-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-10-B",
+      "source_path": "brand/sources/generated/GH-10-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/website-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-10-B",
+      "source_path": "brand/sources/generated/GH-10-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/website-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-11-B",
+      "source_path": "brand/sources/generated/GH-11-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-11-B",
+      "source_path": "brand/sources/generated/GH-11-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-12-B",
+      "source_path": "brand/sources/generated/GH-12-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/dot-github-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-12-B",
+      "source_path": "brand/sources/generated/GH-12-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/dot-github-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-13-B",
+      "source_path": "brand/sources/generated/GH-13-B/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        443
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-brand-overhaul-banner-light.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-13-B",
+      "source_path": "brand/sources/generated/GH-13-B/generation-001.png",
+      "crop_box": [
+        0,
+        444,
+        1774,
+        887
+      ],
+      "size": [
+        1600,
+        400
+      ],
+      "output_path": "brand/assets/github/ascension-brand-overhaul-banner-dark.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "GH-01-S",
+      "source_path": "brand/sources/generated/GH-01-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ascension-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-02-S",
+      "source_path": "brand/sources/generated/GH-02-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-mcp-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-03-S",
+      "source_path": "brand/sources/generated/GH-03-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-mod-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-04-S",
+      "source_path": "brand/sources/generated/GH-04-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-core-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-05-S",
+      "source_path": "brand/sources/generated/GH-05-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-gateway-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-06-S",
+      "source_path": "brand/sources/generated/GH-06-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-protocol-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-07-S",
+      "source_path": "brand/sources/generated/GH-07-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/sts2-map-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-08-S",
+      "source_path": "brand/sources/generated/GH-08-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ascension-watchdog-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-09-S",
+      "source_path": "brand/sources/generated/GH-09-S/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ascension-observability-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-10-S",
+      "source_path": "brand/sources/generated/GH-10-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/website-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-11-S",
+      "source_path": "brand/sources/generated/GH-11-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ai-ascensiondot-githubdot-io-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-12-S",
+      "source_path": "brand/sources/generated/GH-12-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/dot-github-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "GH-13-S",
+      "source_path": "brand/sources/generated/GH-13-S/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "size": [
+        1280,
+        640
+      ],
+      "output_path": "brand/assets/github/ascension-brand-overhaul-social.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-006.json"
+    },
+    {
+      "asset_id": "DOC-01",
+      "source_path": "brand/sources/generated/DOC-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        1600,
+        900
+      ],
+      "output_path": "brand/assets/docs/runtime-architecture-master.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "DOC-01",
+      "source_path": "brand/sources/generated/DOC-01/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        2400,
+        1350
+      ],
+      "output_path": "brand/assets/docs/runtime-architecture.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "DOC-02",
+      "source_path": "brand/sources/generated/DOC-02/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1586,
+        992
+      ],
+      "size": [
+        1600,
+        1000
+      ],
+      "output_path": "brand/assets/docs/publication-flow.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "DOC-03",
+      "source_path": "brand/sources/generated/DOC-03/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "size": [
+        1600,
+        1200
+      ],
+      "output_path": "brand/assets/docs/repository-map.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "DOC-04",
+      "source_path": "brand/sources/generated/DOC-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1422,
+        1106
+      ],
+      "size": [
+        1800,
+        1400
+      ],
+      "output_path": "brand/assets/docs/agent-tree.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "DOC-05",
+      "source_path": "brand/sources/generated/DOC-05/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1448,
+        1086
+      ],
+      "size": [
+        1200,
+        900
+      ],
+      "output_path": "brand/assets/docs/contributor-path.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "RUN-01",
+      "source_path": "brand/sources/generated/RUN-01/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1080,
+        1080
+      ],
+      "output_path": "brand/assets/run/summary-template-square.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "RUN-02",
+      "source_path": "brand/sources/generated/RUN-02/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "size": [
+        1080,
+        1080
+      ],
+      "output_path": "brand/assets/run/decision-square.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "RUN-03",
+      "source_path": "brand/sources/generated/RUN-03/generation-002.png",
+      "crop_box": [
+        0,
+        87,
+        1983,
+        707
+      ],
+      "size": [
+        1600,
+        500
+      ],
+      "output_path": "brand/assets/run/timeline-template.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-005.json"
+    },
+    {
+      "asset_id": "MKT-07",
+      "source_path": "brand/sources/generated/MKT-07/generation-001.png",
+      "crop_box": [
+        0,
+        132,
+        1983,
+        661
+      ],
+      "size": [
+        1200,
+        320
+      ],
+      "output_path": "brand/assets/marketing/email-header.png",
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-009.json"
+    },
+    {
+      "asset_id": "MKT-04",
+      "source_path": "brand/sources/generated/MKT-04/generation-001.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "output_path": "brand/assets/marketing/season-key-visual.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+    },
+    {
+      "asset_id": "MKT-04",
+      "source_path": "brand/sources/generated/MKT-04/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        941,
+        1672
+      ],
+      "output_path": "brand/assets/marketing/season-key-visual-vertical.png",
+      "size": [
+        1080,
+        1920
+      ],
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-007.json"
+    },
+    {
+      "asset_id": "MKT-07",
+      "source_path": "brand/sources/generated/MKT-07/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        1731,
+        909
+      ],
+      "output_path": "brand/assets/marketing/email-run-card.png",
+      "size": [
+        1200,
+        630
+      ],
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-009.json"
+    },
+    {
+      "asset_id": "MKT-06",
+      "source_path": "brand/sources/generated/MKT-06/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        1731,
+        909
+      ],
+      "output_path": "brand/assets/marketing/release-template.png",
+      "size": [
+        1200,
+        630
+      ],
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
+    },
+    {
+      "asset_id": "MKT-06",
+      "source_path": "brand/sources/generated/MKT-06/generation-004.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "output_path": "brand/assets/marketing/contributor-template.png",
+      "size": [
+        1080,
+        1080
+      ],
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
+    },
+    {
+      "asset_id": "MKT-05",
+      "source_path": "brand/sources/generated/MKT-05/generation-002.png",
+      "crop_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "output_path": "brand/assets/marketing/challenge-template.png",
+      "size": [
+        1080,
+        1080
+      ],
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
+    },
+    {
+      "asset_id": "MKT-03",
+      "source_path": "brand/sources/generated/MKT-03/generation-003.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "output_path": "brand/assets/marketing/thumbnail-outcome.png",
+      "size": [
+        1280,
+        720
+      ],
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
+    },
+    {
+      "asset_id": "MKT-03",
+      "source_path": "brand/sources/generated/MKT-03/generation-004.png",
+      "crop_box": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "output_path": "brand/assets/marketing/thumbnail-question.png",
+      "size": [
+        1280,
+        720
+      ],
+      "review_state": "independently_reviewed_source_and_export",
+      "reviewer_reference": "execution/reviews/W02-broadcast-source-review-008.json"
+    }
+  ],
+  "deferred": []
+}

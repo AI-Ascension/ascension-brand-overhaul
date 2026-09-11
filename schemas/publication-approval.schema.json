@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-ascension.example/schemas/publication-approval-v1.json",
+  "title": "Digest-bound public run publication approval",
+  "description": "Exact record must be enrolled by the deployment owner in the installed trusted approval registry. A caller-supplied record alone is not authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "publication-approval-v1"
+    },
+    "approval_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{2,159}$"
+    },
+    "authority_reference": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "approved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "operation": {
+      "const": "publish_run"
+    },
+    "target": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{2,79}$"
+    },
+    "source_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "allowed_surfaces": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "run_manifest",
+          "run_page",
+          "decision_timeline",
+          "evidence_panel",
+          "case_study"
+        ]
+      }
+    },
+    "allowed_fields": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^(\\*|[a-z][a-z0-9_]*(?:\\.[a-z][a-z0-9_]*)*(?:\\.\\*)?)$"
+      }
+    },
+    "approved_assets": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "artifact_digest": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "artifact_path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "provenance_reference": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "mime_type": {
+            "enum": [
+              "image/png",
+              "image/jpeg",
+              "image/webp"
+            ]
+          },
+          "byte_size": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 16777216
+          }
+        },
+        "required": [
+          "asset_id",
+          "artifact_digest",
+          "artifact_path",
+          "provenance_reference",
+          "mime_type",
+          "byte_size"
+        ]
+      },
+      "maxItems": 256
+    },
+    "scope_notes": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "revoked": {
+      "type": "boolean"
+    },
+    "renderer_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "approved_public_uris": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 1000,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 2000
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "approval_id",
+    "authority_reference",
+    "approved_at",
+    "expires_at",
+    "operation",
+    "target",
+    "source_digest",
+    "allowed_surfaces",
+    "allowed_fields",
+    "approved_assets",
+    "scope_notes",
+    "revoked",
+    "renderer_digest",
+    "approved_public_uris"
+  ]
+}

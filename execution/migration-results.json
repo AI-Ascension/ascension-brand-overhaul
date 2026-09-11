@@ -1,0 +1,12 @@
+{
+  "mode": "read_only_dry_run",
+  "plan": "migration/plan.json",
+  "plan_sha256": "676b32ebbd9a9fcde6e19926f2d83b2c265785c0e38b7a1a32a95e21626fcea5",
+  "review": "execution/reviews/migration-preflight-002.json",
+  "operations_observed": 13,
+  "apply_performed": false,
+  "renames": [],
+  "rollback_performed": false,
+  "authority_present": false,
+  "limits": "Fresh gates and exact actor/operation/plan approval required before apply. Unknown Pages configuration and active work remain blockers."
+}

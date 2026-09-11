@@ -1,0 +1,382 @@
+{
+  "schema_version": "ai-ascension.w02-broadcast-source-review.v2",
+  "observed_at": "2026-09-07T23:53:33Z",
+  "reviewer": "w02-broadcast-source-independent-review-003",
+  "task": "W02 broadcast and marketing source follow-up review",
+  "scope": "Independent visual and source-use review of CAST-05 generations-001/-002, CAST-06 generation-001, CAST-07 generation-001, MKT-01 generation-001, MKT-02 generation-001, and MKT-08 generation-001. The seven declared source PNGs were opened with view_image. The review covers text legibility, alpha and strip geometry, diagram correctness, central crop safety, exact state/copy treatment, unwanted invented values or logos, and consistency with the final brand guide. No source, prompt, registry, or generated image was edited.",
+  "inputs_read": [
+    "AGENTS.md",
+    "MASTER_PROMPT.md",
+    "orchestration/CONTRACT.md",
+    "art/asset-registry.json",
+    "brand/BRAND_GUIDE.md",
+    "art/root-generation-authorization.json",
+    "execution/reviews/root-broadcast-generation-batch-004.json",
+    "execution/reviews/root-broadcast-generation-batch-005.json",
+    "execution/reviews/root-broadcast-generation-batch-006.json",
+    "execution/reviews/root-marketing-generation-batch-001.json",
+    "execution/reviews/root-marketing-generation-batch-002.json",
+    "execution/reviews/root-marketing-generation-batch-003.json",
+    "brand/prompts/root/CAST-05/generation-001.txt",
+    "brand/prompts/root/CAST-05/generation-002.txt",
+    "brand/prompts/root/CAST-06/generation-001.txt",
+    "brand/prompts/root/CAST-07/generation-001.txt",
+    "brand/prompts/root/MKT-01/generation-001.txt",
+    "brand/prompts/root/MKT-02/generation-001.txt",
+    "brand/prompts/root/MKT-08/generation-001.txt"
+  ],
+  "source_pins": {
+    "asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "0e71cf13afba70da828b384da8ea3b36021796b044f1c5e53c3d1c6cd6656032",
+      "selected_entries": ["CAST-05", "CAST-06", "CAST-07", "MKT-01", "MKT-02", "MKT-08"]
+    },
+    "brand_guide": {
+      "path": "brand/BRAND_GUIDE.md",
+      "sha256": "b1551f9c49572b0f1a8034fbdd7de89446bf119e2ad84bd5bea714575c4a8a23",
+      "relevant_rules": [
+        "The Climb — by AI Ascension is the series identity.",
+        "Use the warm Ascent Ledger language of paper, ink, amber, branching paths, and restrained editorial typography.",
+        "Use visible evidence labels and do not present generated art as gameplay or product evidence.",
+        "Use approved generated identity exports when available; do not silently introduce an unverified logo or monogram."
+      ]
+    },
+    "authorization": {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+      "route": "user_authorized_root_image_tool",
+      "tool": "image_gen__imagegen",
+      "backend_attestation": "unknown",
+      "author_model_attestation": "unknown",
+      "native_agent_attestation": false
+    },
+    "generation_receipts": [
+      {
+        "path": "execution/reviews/root-broadcast-generation-batch-004.json",
+        "sha256": "85521ce7970aa4a5ac2765bf09ef8b7f23b23c03e47306910ccc1f56ce48d329",
+        "records": ["CAST-05-generation-001", "CAST-05-generation-002"]
+      },
+      {
+        "path": "execution/reviews/root-broadcast-generation-batch-005.json",
+        "sha256": "7bd8aedaebb5e56f0c989c82df2bdb18537a33a989ac42ccb44ebcb9e39eb832",
+        "records": ["CAST-06-generation-001"]
+      },
+      {
+        "path": "execution/reviews/root-broadcast-generation-batch-006.json",
+        "sha256": "7eadcc320cf525a8b6e347a4318a4143ad74e76949520d8522328aead86f1baf",
+        "records": ["CAST-07-generation-001"]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-001.json",
+        "sha256": "1e2929da072b7442355edee5389c4e45ed17f61ed9f1a8cb2af23382e166b4ac",
+        "records": ["MKT-01-generation-001"]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-002.json",
+        "sha256": "8956a773e7e662745fb07d005a1caf9600b64c73a056a4567d630ec1ef96661f",
+        "records": ["MKT-02-generation-001"]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-003.json",
+        "sha256": "a8375f6477abf848dec8360360db5667979224784fa9a9f23f56ffa200ecf3c8",
+        "records": ["MKT-08-generation-001"]
+      }
+    ]
+  },
+  "method": {
+    "actual_source_files_viewed_with_view_image": [
+      "brand/sources/generated/CAST-05/generation-001.png",
+      "brand/sources/generated/CAST-05/generation-002.png",
+      "brand/sources/generated/CAST-06/generation-001.png",
+      "brand/sources/generated/CAST-07/generation-001.png",
+      "brand/sources/generated/MKT-01/generation-001.png",
+      "brand/sources/generated/MKT-02/generation-001.png",
+      "brand/sources/generated/MKT-08/generation-001.png"
+    ],
+    "checks": [
+      "Compared each source with its exact root prompt and matching asset-registry brief.",
+      "Verified all seven source hashes, dimensions, and modes against the six supplied generation receipts.",
+      "Inspected CAST-05 alpha geometry and the visible strip at native dimensions. Main visible bands were measured at approximately 138 px and 132 px high in 2172 px wide sources, with low-alpha colored speckles outside the bands.",
+      "Inspected the proportional central safe crops for MKT-01, MKT-02, and MKT-08 in temporary review derivatives. MKT-01/MKT-02 retain complete text; MKT-08 clips the left side of the heading in the central-80-percent crop.",
+      "Inspected CAST-07 connector direction, labels, box count, and the explicit not-a-live-status note.",
+      "Compared palette, path treatment, title punctuation, attribution, logos, and invented values with the final brand guide and approved identity references."
+    ],
+    "not_tested": [
+      "No final mechanical export was approved.",
+      "No CAST-06 title-transition WebM or frame sequencing was run.",
+      "No live or recorded broadcast host, stream-status source, or platform publication was run.",
+      "No MKT-01 final 2560x1440 export or 6 MB export-cap check was run; only the 1,730,305-byte source was inspected."
+    ]
+  },
+  "crop_reference": {
+    "basis": "The supplied YouTube Help guidance identifies 1235x338 at the 2048x1152 minimum and a proportional 1544x422.5 safe region at 2560x1440. The review mapped that central region to the 1672x941 MKT-01 source as approximately x=332..1340 and y=332..609. MKT-02 used its prompt's central 75-percent width and 60-percent height; MKT-08 used its prompt's central 80-percent width and 65-percent height.",
+    "external_reference": "https://support.google.com/youtube/answer/10456525",
+    "note": "This review records source crop observations; it does not attest a platform's current runtime crop behavior or authorize publication."
+  },
+  "coverage": {
+    "families_reviewed": 6,
+    "family_ids": ["CAST-05", "CAST-06", "CAST-07", "MKT-01", "MKT-02", "MKT-08"],
+    "source_pngs_viewed": 7,
+    "source_hash_and_dimension_result": "7/7 pass",
+    "source_mode_result": "7/7 match receipts",
+    "central_crop_checks": ["MKT-01", "MKT-02", "MKT-08"]
+  },
+  "summary": {
+    "source_ready_for_bounded_mechanical_export": [
+      "CAST-06-generation-001",
+      "CAST-07-generation-001"
+    ],
+    "source_conditionally_ready": [
+      "MKT-01-generation-001",
+      "MKT-02-generation-001"
+    ],
+    "source_blocked_or_requires_creative_reflow": [
+      "CAST-05-generation-001",
+      "CAST-05-generation-002",
+      "MKT-08-generation-001"
+    ],
+    "source_blockers_or_conditions": [
+      "CAST-05 generation-001 and -002 are visually legible but their main strips are approximately 15.7:1 and 16.3:1, rather than the required 8:1 and 12:1, and both have low-alpha red or green speckle contamination above the top rule.",
+      "MKT-01 text is safe in the proportional central crop, but the bright route enters and exits that shallow band. Treat the outer route as decorative in the platform-safe crop or obtain a reflow if the entire route is required to survive.",
+      "MKT-02 has a trailing period in The Climb. Existing title lockups and the final brand guide use The Climb without terminal punctuation, so this is a material title-style exactness issue even though it is not a factual claim.",
+      "MKT-08 places the heading left of the required central 80-percent crop; a direct central crop visibly clips the leading S. Its status period is grammatical and low-risk, but the literal copy token should still be confirmed before publication."
+    ],
+    "overall_visual_result": "CAST-06 and CAST-07 are clean, readable, and aligned with the brand. MKT-01/MKT-02 have strong source compositions with the stated crop or copy conditions. CAST-05 and MKT-08 need creative correction before their required outputs can be treated as source-ready.",
+    "decision": "Bounded follow-up source review complete. CAST-06 and CAST-07 may proceed to separate export checks. MKT-01 and MKT-02 remain conditional as recorded. CAST-05 and MKT-08 remain blocked for creative geometry/crop correction. No broadcast-host, deployment, publication, legal, trademark, or public-release approval is made."
+  },
+  "assets": [
+    {
+      "asset_id": "CAST-05",
+      "title": "Lower thirds and disclosure bars",
+      "selected_generations": [1, 2],
+      "source_records": [
+        {
+          "generation_id": "CAST-05-generation-001",
+          "prompt_path": "brand/prompts/root/CAST-05/generation-001.txt",
+          "prompt_sha256": "77e055cf6d6620e2996c6592ef87a9b7b820fb58bcbfda4118512a4e43374313",
+          "source_path": "brand/sources/generated/CAST-05/generation-001.png",
+          "source_sha256": "494f6fff1b787d93f31d898d7ab0e300612d8633488fc4d842c5cc68b961a558",
+          "source_dimensions": "2172x724",
+          "source_mode": "RGBA",
+          "source_bytes": 355878,
+          "receipt_path": "execution/reviews/root-broadcast-generation-batch-004.json"
+        },
+        {
+          "generation_id": "CAST-05-generation-002",
+          "prompt_path": "brand/prompts/root/CAST-05/generation-002.txt",
+          "prompt_sha256": "f569d73a70a8af2123fccbc21b6d71c02a57e1b9ecd0d4206ca65ae24f67559d",
+          "source_path": "brand/sources/generated/CAST-05/generation-002.png",
+          "source_sha256": "2afd0425f880f67015cee04219daf8bf40de8600eca9832c4b2d4eab7e8554c4",
+          "source_dimensions": "2172x724",
+          "source_mode": "RGBA",
+          "source_bytes": 284304,
+          "receipt_path": "execution/reviews/root-broadcast-generation-batch-004.json"
+        }
+      ],
+      "verdict": "blocked_requires_creative_reflow",
+      "variant_observations": [
+        {
+          "generation": 1,
+          "target": "lower-third 1920x240, 8:1",
+          "copy_result": "Pass: AI ASCENSION, Name, Role, Model config, and Human intervention are legible; value areas are blank.",
+          "geometry_result": "Fail: the strong-alpha strip is about 2152x138 in the 2172x724 source, approximately 15.6:1, not an 8:1 strip. It is also offset slightly above the canvas midpoint.",
+          "artifact_result": "Fail: green and amber one-alpha speckles appear above the top rule and additional tiny nonzero pixels occur outside the strip.",
+          "source_use_result": "Pass: no game image, provider logo, monogram, invented value, or metric is visible."
+        },
+        {
+          "generation": 2,
+          "target": "disclosure 1920x160, 12:1",
+          "copy_result": "Pass: Retrospective analysis, Human intervention, and Sponsor disclosure are legible; no sponsor or disclosure value is filled.",
+          "geometry_result": "Fail: the strong-alpha strip is about 2151x132 in the 2172x724 source, approximately 16.3:1, not a 12:1 strip. It is also offset slightly above the canvas midpoint.",
+          "artifact_result": "Fail: red and amber one-alpha speckles appear above the top rule and additional tiny nonzero pixels occur outside the strip.",
+          "source_use_result": "Pass: no company name, sponsor mark, logo, checkbox, money, claim, or footage is visible."
+        }
+      ],
+      "issues": [
+        {
+          "severity": "blocking_geometry",
+          "finding": "Both required strip families are materially shallower than their declared target ratios. A mechanical resize or crop cannot turn the visual strip into the requested 8:1 or 12:1 composition without changing its geometry.",
+          "required_follow_up": "Obtain new root-route creative reflows with the intended strip height and centered transparent margins. Do not paint, stretch, or redraw the strip in this review."
+        },
+        {
+          "severity": "blocking_source_artifact",
+          "finding": "Low-alpha green/red speckle pixels sit outside the main bands and violate the clean transparent-canvas brief, even though they are near-transparent in normal compositing.",
+          "required_follow_up": "Regenerate clean masters, then inspect alpha and RGB contamination before export."
+        }
+      ],
+      "source_use_observation": "No declared external reference is present in the supplied receipts. No third-party mark, provider logo, game image, or fabricated value was observed.",
+      "broadcast_host_boundary": "The labels and blank value areas do not prove lower-third attachment, disclosure population, sponsor review, or a functioning broadcast scene."
+    },
+    {
+      "asset_id": "CAST-06",
+      "title": "Short title transition",
+      "selected_generation": 1,
+      "source_record": {
+        "generation_id": "CAST-06-generation-001",
+        "prompt_path": "brand/prompts/root/CAST-06/generation-001.txt",
+        "prompt_sha256": "82aeee5fae3687da39b894f17e2f3c23ec5ef6d19f04d81e1c80529d78a92ff5",
+        "source_path": "brand/sources/generated/CAST-06/generation-001.png",
+        "source_sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
+        "source_dimensions": "1672x941",
+        "source_mode": "RGB",
+        "source_bytes": 1805508,
+        "receipt_path": "execution/reviews/root-broadcast-generation-batch-005.json"
+      },
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The source visibly contains only the exact The Climb title and by AI Ascension line. Both are centered, high contrast, and legible with generous safe margins.",
+        "The single amber route rises behind and to the right through subdued mountain contours. No extra text, logo, monogram, flare, starburst, gameplay scene, metric, or result is visible.",
+        "The near-black, warm-ivory, amber-path editorial treatment is consistent with the brand guide and suitable as a reduced-motion still."
+      ],
+      "issues": [],
+      "source_use_observation": "No declared external reference is present in the supplied receipt. No third-party mark, provider logo, gameplay capture, or fabricated value was observed.",
+      "broadcast_host_boundary": "The still is source-ready for an export check; it does not prove the 1–2 second WebM sequence, no-flash behavior, reduced-motion selection, or broadcast transition at runtime.",
+      "limits": ["The registry's WebM and still exports require separate mechanical checks."]
+    },
+    {
+      "asset_id": "CAST-07",
+      "title": "Operator scene map",
+      "selected_generation": 1,
+      "source_record": {
+        "generation_id": "CAST-07-generation-001",
+        "prompt_path": "brand/prompts/root/CAST-07/generation-001.txt",
+        "prompt_sha256": "5d9f640b15f1ddace97e335551eea231bd78e36caa047bf2f98b178013e8797f",
+        "source_path": "brand/sources/generated/CAST-07/generation-001.png",
+        "source_sha256": "c8ff0614acccd038616c3366d4aa00b0b0fb5b0248c49b6c277cc08521c01aad",
+        "source_dimensions": "1586x992",
+        "source_mode": "RGB",
+        "source_bytes": 1813475,
+        "receipt_path": "execution/reviews/root-broadcast-generation-batch-006.json"
+      },
+      "verdict": "ready_for_mechanical_export",
+      "observations": [
+        "The source has six clear boxes: Preparing, Single view, Comparison, Intermission, Ended, and Feed unavailable. The arrows and labels visibly implement Feed ready, Operator selects view, Pause / Resume, End broadcast, Feed missing, and Retry without crossed lines.",
+        "The exact footer note Operator guide · not a live status display. is legible and keeps the diagram in the documentation/operator category.",
+        "The warm paper, charcoal, and amber palette is consistent with the brand guide. No logo, monogram, telemetry value, game capture, or promotional outcome is embedded."
+      ],
+      "issues": [],
+      "source_use_observation": "No declared external reference is present in the supplied receipt. No third-party mark, provider logo, gameplay capture, or fabricated value was observed.",
+      "broadcast_host_boundary": "This is a source diagram only. It does not prove that the named scene transitions, retry behavior, pause/resume path, or live status source exists or works at runtime.",
+      "limits": ["The near-target 1586x992 source still requires the separate 1600x1000 export check."]
+    },
+    {
+      "asset_id": "MKT-01",
+      "title": "Channel cover",
+      "selected_generation": 1,
+      "source_record": {
+        "generation_id": "MKT-01-generation-001",
+        "prompt_path": "brand/prompts/root/MKT-01/generation-001.txt",
+        "prompt_sha256": "9f2ffd5899c35ff9c978bbd3793e2904eaa091994bf7718cc043a1413d992c31",
+        "source_path": "brand/sources/generated/MKT-01/generation-001.png",
+        "source_sha256": "09a3d51821fae5e547d28b38d5dd76ca732b16339d4a3957961134d3d56851f2",
+        "source_dimensions": "1672x941",
+        "source_mode": "RGB",
+        "source_bytes": 1730305,
+        "receipt_path": "execution/reviews/root-marketing-generation-batch-001.json"
+      },
+      "verdict": "conditional_ready_text_crop_pass_route_condition",
+      "observations": [
+        "The source contains the exact The Climb title and by AI Ascension byline, both centered inside the proportional central safe crop mapped from the supplied YouTube guidance. The temporary central crop retains complete, readable text.",
+        "The muted mountain contours and amber route are cohesive with the brand and contain no logo, monogram, game scene, metric, date, trophy, or victory implication.",
+        "The path enters from the top and exits at the bottom of the shallow central crop. The text remains safe, but the whole route is not contained in that crop; treat outer path detail as decorative for a platform-safe banner unless the composition is creatively reflowed."
+      ],
+      "issues": [
+        {
+          "severity": "crop_condition",
+          "finding": "Text passes the central YouTube safe crop. The prompt also calls for essential route detail to fit inside the central band, while the visible path continues beyond both crop edges.",
+          "required_follow_up": "Keep the full source when route continuity matters, and classify the shallow crop as text-safe with decorative clipped route detail; obtain a creative reflow if the full route is an essential requirement."
+        }
+      ],
+      "source_use_observation": "No declared external reference is present in the supplied receipt. No third-party mark, provider logo, gameplay capture, or fabricated value was observed.",
+      "campaign_boundary": "The generated cover is editorial campaign art only. It does not prove a channel, audience, episode, sponsorship, live broadcast, or verified game outcome.",
+      "limits": ["Final 2560x1440 output dimensions, platform crop behavior, and the 6 MB cap were not tested in this source review."]
+    },
+    {
+      "asset_id": "MKT-02",
+      "title": "Social header",
+      "selected_generation": 1,
+      "source_record": {
+        "generation_id": "MKT-02-generation-001",
+        "prompt_path": "brand/prompts/root/MKT-02/generation-001.txt",
+        "prompt_sha256": "b77292102c802582c4ffb04f305ce25ca6a167be6feddb5e8e4b08b57715efdb",
+        "source_path": "brand/sources/generated/MKT-02/generation-001.png",
+        "source_sha256": "5da22c2084eec9cc2ee4388956f127f28637242f82ce13e659fe71a6ef012671",
+        "source_dimensions": "2172x724",
+        "source_mode": "RGB",
+        "source_bytes": 1688665,
+        "receipt_path": "execution/reviews/root-marketing-generation-batch-002.json"
+      },
+      "verdict": "conditional_hold_copy_revision",
+      "observations": [
+        "The source keeps AI Ascension, The Climb., and Follow the decisions. Inspect the evidence. legible in the prompt's central 75-percent width and 60-percent height. The temporary central crop retains the complete lettering and the lower-left avatar-clear area remains dark.",
+        "The right-side amber route and subdued terrain are cohesive with the brand. No logo, monogram, date, metric, game image, interface, victory claim, or invented value is visible.",
+        "The title line is rendered as The Climb. with a terminal period. The identity lockup, MKT-01, CAST-06, and the canonical series name use The Climb without a terminal period."
+      ],
+      "issues": [
+        {
+          "severity": "copy_exactness",
+          "finding": "The terminal period is material to canonical title styling even though it is not a factual or sponsorship claim. It makes the social header inconsistent with the approved title treatment.",
+          "required_follow_up": "Confirm the intended literal copy and obtain a new creative generation without the period if The Climb is the required title token. Do not erase or redraw the punctuation mechanically."
+        }
+      ],
+      "source_use_observation": "No declared external reference is present in the supplied receipt. No third-party mark, provider logo, gameplay capture, or fabricated value was observed.",
+      "campaign_boundary": "The header is campaign artwork only. It does not prove an active channel, audience, episode performance, live broadcast, or verified win."
+    },
+    {
+      "asset_id": "MKT-08",
+      "title": "Sponsorship disclosure tile",
+      "selected_generation": 1,
+      "source_record": {
+        "generation_id": "MKT-08-generation-001",
+        "prompt_path": "brand/prompts/root/MKT-08/generation-001.txt",
+        "prompt_sha256": "ef8bee8b0491d201b640dedd83fd5ea8519401e775eab91a427c5fbe1a7b02db",
+        "source_path": "brand/sources/generated/MKT-08/generation-001.png",
+        "source_sha256": "123251d919168e5e7ab86d933ba11d28798f65c99dcd0320c0b9938b9c1e83c5",
+        "source_dimensions": "2172x724",
+        "source_mode": "RGB",
+        "source_bytes": 941768,
+        "receipt_path": "execution/reviews/root-marketing-generation-batch-003.json"
+      },
+      "verdict": "blocked_requires_creative_crop_reflow",
+      "observations": [
+        "The source visibly contains Sponsorship disclosure, Template — no sponsor named., and Complete the disclosure before publication. All three lines are readable on the full source, and the warm paper, charcoal, and amber treatment is consistent with the brand.",
+        "There is no sponsor name, company logo, money, statistic, deal claim, icon, or fabricated disclosure value. The message is an honest unfilled template.",
+        "The left amber accent is intentionally outside the copy-safe region, but the heading begins around x=172 in the 2172 px source while the required central 80-percent crop begins around x=217. A direct central crop clips the leading S of Sponsorship and the corresponding left edge of the other copy lines."
+      ],
+      "issues": [
+        {
+          "severity": "blocking_crop_safety",
+          "finding": "The source fails its own central-80-percent copy-safe requirement. The full frame is readable, but the required crop loses the beginning of each line.",
+          "required_follow_up": "Obtain a creative reflow with the copy moved inside the central 80-percent width. Do not rely on a mechanical crop that clips the text."
+        },
+        {
+          "severity": "low_copy_exactness_note",
+          "finding": "The status is rendered as Template — no sponsor named. with a terminal period. The period is grammatically appropriate for a sentence-like status and does not imply a sponsor, but the literal punctuation token should be confirmed before publication if the prompt is treated as exact copy.",
+          "required_follow_up": "Confirm the copy token during the creative reflow; preserve the no-sponsor state visibly."
+        }
+      ],
+      "source_use_observation": "No declared external reference is present in the supplied receipt. No third-party mark, sponsor identity, provider logo, or fabricated value was observed.",
+      "campaign_boundary": "The disclosure template is source artwork only. It does not attest a sponsorship relationship, legal disclosure sufficiency, publication approval, or campaign operation."
+    }
+  ],
+  "source_use_and_rights_observation": {
+    "result": "bounded_generated_original_input_observation",
+    "observed_inputs": "The seven reviewed records are local root-route generated PNG sources. The supplied receipts declare no external reference inputs for these generations.",
+    "visual_observation": "No recognizable third-party mark, provider or publisher logo, proprietary game screenshot, gameplay capture, real metric, date, timer, sponsor identity, or fabricated value was observed. CAST-05's colored one-alpha speckles are generation artifacts, not third-party content. No unrequested monogram was observed in this follow-up set.",
+    "limits": [
+      "This is not a copyright, trademark, license, permission, sponsorship, or legal clearance determination.",
+      "Generated artwork is not gameplay, product, audience, campaign-performance, host, deployment, or public-run evidence.",
+      "The root author model, native agent chain, image model, and image backend remain unverified in the supplied records.",
+      "Any publication or public download still requires separate exact-digest approval and distribution gates."
+    ]
+  },
+  "unverified_or_deferred": [
+    "No functioning broadcast host or stream-status integration was exercised.",
+    "No final export was viewed for this follow-up set.",
+    "CAST-05 creative strip geometry and artifact issues remain unresolved.",
+    "MKT-01 route handling in the shallow crop remains a declared condition.",
+    "MKT-08 central crop safety remains blocked.",
+    "No legal, sponsorship, trademark, license, permission, deployment, publication, or public-release decision is made here."
+  ],
+  "approval_grant": false
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "asset_id": "GH-13-S",
+    "generation_id": "GH-13-S-generation-001",
+    "prompt_path": "brand/prompts/root/GH-13-S/generation-001.txt",
+    "prompt_sha256": "9b9f291ea070fca219f3a41ec6e95fe5d9ead11ea19e3226e0a7169911588452",
+    "source_path": "brand/sources/generated/GH-13-S/generation-001.png",
+    "source_sha256": "4ae9e462781b40d5f38002324b6e6c3092999bb4e8e50ace9b9aad24e03e02d4",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [
+      {
+        "path": "brand/assets/identity/avatar-1024.png",
+        "sha256": "deaa0ea841f4c40f6e2611ff697cdbd48f3959189797b538cc32376835822f06",
+        "purpose": "approved_generated_identity_reference",
+        "content_class": "generated_art_not_product_evidence",
+        "parent_asset_id": "ID-05"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T00:24:25.476985+00:00"
+  }
+]

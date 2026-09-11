@@ -1,0 +1,410 @@
+{
+  "schema_version": "ai-ascension.root-art-final-acceptance.v1",
+  "observed_at": "2026-09-07T21:49:03Z",
+  "reviewer": "w03-root-art-final-acceptance-independent",
+  "task": "Final bounded source acceptance check for the root-authored artwork state after root metadata finalization.",
+  "scope": "Cross-check the finalized manifest, provenance records, source-use receipts, export receipts, schemas, hashes, planning registry state, and remaining-artwork queue against the actual worktree. This review records source and lineage acceptance for the selected families; it does not grant legal clearance, publication approval, native hierarchy proof, or full package release.",
+  "working_tree": {
+    "git_head": "e3e12039a4ed4d390a1d0ff53cbaa500039c6e44",
+    "branch": "work/root-authored-art",
+    "dirty_before_review": true,
+    "exclusive_write": "execution/reviews/W03-root-art-final-acceptance.json",
+    "source_changes_by_reviewer": false
+  },
+  "source_pins": {
+    "asset_manifest": {
+      "path": "brand/asset-manifest.json",
+      "sha256": "8bf2a863735706a8fdd10ece04ef70549ecd1221f29ee0b6de266dc154409af0"
+    },
+    "planned_asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "0e71cf13afba70da828b384da8ea3b36021796b044f1c5e53c3d1c6cd6656032"
+    },
+    "generation_index": {
+      "path": "brand/provenance/root-generation-index.json",
+      "sha256": "91200a1334a849ef3f54eb7471bb3a05d060c18fac84e198d1519bdfd4cb2fd3"
+    },
+    "generation_records": {
+      "path": "brand/provenance/root-generation-records.json",
+      "sha256": "d810ea1f590c969ddefd982ddb7692d2a867187ca3594bdd4516df00f3007e5e"
+    },
+    "export_recipe": {
+      "path": "brand/provenance/root-export-recipe.json",
+      "sha256": "9729af2c899c9438ab3816b8e5e9f6ab628fd93878469920f0f022fe6188d168"
+    },
+    "export_receipts": {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "f1e1ba935da37c2a1a7b7cda8a769d4a81d774d6ae4664ff5f656028a9cd564f"
+    },
+    "tool_observations": {
+      "path": "brand/provenance/root-tool-observations.json",
+      "sha256": "8cd540218de79cf701bc251f7c9dd99da9fbadad00059b8696bb01d2180114fe"
+    },
+    "upstream_root_acceptance": {
+      "path": "execution/root-art-acceptance.json",
+      "sha256": "cc59aea2df370b4d313c9344c3a26fc4c3190592ee6adcb4e385fce2d9b025e5"
+    },
+    "remaining_queue": {
+      "path": "brand/remaining-artwork.json",
+      "sha256": "aae9d70a0229e97e06fd66ba535131945bbad58e972d12c7395a0f7b5784d55a"
+    },
+    "w02_first_source_use": {
+      "path": "execution/reviews/W02-root-identity-source-use-review.json",
+      "sha256": "1a0a5f749de6f244be4bded45e541e55b0a60c305674624d1bbe97742ebc180e"
+    },
+    "w02_first_visual": {
+      "path": "execution/reviews/W02-root-art-identity-review.json",
+      "sha256": "90eb2ba6e624f0c12791f188507f77ae673b3dcbbc403f56508f6778dce0730a"
+    },
+    "w02_second_batch": {
+      "path": "execution/reviews/W02-root-art-second-batch-review.json",
+      "sha256": "e301020b4fed32221930ffd344d07c90b23703a251088cc5b1ed579854e48e35"
+    },
+    "w03_export_review": {
+      "path": "execution/reviews/W03-root-export-review.json",
+      "sha256": "59b02d5ccef77c47ea69b5f3109248bdc477c96654262644eebbbadb7fe3ea3c"
+    },
+    "w03_export_followup": {
+      "path": "execution/reviews/W03-root-export-followup.json",
+      "sha256": "033708c5ca2bc7cbf5ec54d350a1b64f23b5672506e283b6154bbef779f65c41"
+    },
+    "native_capability_recheck": {
+      "path": "execution/reviews/root-native-capability-recheck.json",
+      "sha256": "69da2001f9ff2870835845ec94d5d462a5bc610b36c74f763455ab866c05a709"
+    },
+    "full_gate_receipt": {
+      "path": "execution/reviews/root-art-full-gate.json",
+      "sha256": "be7f338d3d58367a3c6d70b201d86961e2cdcb9b228b7266d40bc871408a6586"
+    },
+    "service_limit_receipt": {
+      "path": "execution/reviews/root-image-service-limit.json",
+      "sha256": "92727d8df105f53a4acd58bf8778fb8386977999a32f5a936a73c300127e4d86"
+    }
+  },
+  "checks": {
+    "inventory_state": {
+      "result": "pass",
+      "required_families": 72,
+      "required_exports": 115,
+      "manifest_records": 72,
+      "manifest_statuses": {
+        "verified": 21,
+        "blocked": 51
+      },
+      "manifest_exports": 42,
+      "manifest_export_formats": {
+        "png": 36,
+        "webp": 4,
+        "html": 2
+      },
+      "actual_export_files": 42,
+      "actual_export_hash_and_dimension_matches": 42,
+      "missing_exports": 73,
+      "missing_exports_match_remaining_queue": true,
+      "duplicate_output_paths": 0
+    },
+    "acceptance_ledger": {
+      "result": "pass",
+      "verified_family_ids": [
+        "BG-01",
+        "BG-02",
+        "BG-03",
+        "ID-01",
+        "ID-02",
+        "ID-03",
+        "ID-04",
+        "ID-05",
+        "ID-06",
+        "ID-07",
+        "ID-08",
+        "RUN-04",
+        "RUN-05",
+        "WEB-01",
+        "WEB-02",
+        "WEB-03",
+        "WEB-04",
+        "WEB-05",
+        "WEB-06",
+        "WEB-07",
+        "WEB-08"
+      ],
+      "verified_family_count": 21,
+      "exports_in_verified_families": 36,
+      "manifest_verified_ids_match_upstream_root_acceptance": true,
+      "source_use_receipt_union": {
+        "w02_first_ready_family_count": 11,
+        "w02_second_ready_family_count": 10,
+        "overlap_count": 0,
+        "union_matches_verified_family_ids": true
+      }
+    },
+    "scoped_lineage": {
+      "result": "pass",
+      "command": "validate_assets.verify on the 21 selected mandatory family plans with mandatory=True",
+      "family_plans_checked": 21,
+      "family_deliveries_checked": 21,
+      "exports_checked": 36,
+      "errors": 0,
+      "parent_reuse": {
+        "WEB-01": "BG-01-generation-001"
+      },
+      "interpretation": "Every selected plan and delivery passed the source, generation-record, export, and manifest bindings; WEB-01 uses the reviewed BG-01 parent generation."
+    },
+    "schema_validation": {
+      "result": "pass",
+      "asset_manifest_records": 72,
+      "asset_manifest_errors": 0,
+      "generation_records": 32,
+      "generation_record_errors": 0,
+      "asset_schema_resolution": "Draft 2020-12 with local RefResolver",
+      "generation_schema_resolution": "Draft 2020-12 with local RefResolver",
+      "status_schema_test": {
+        "command": "python3 tests/test_asset_status_schema.py",
+        "exit_code": 0
+      }
+    },
+    "material_hashes": {
+      "result": "pass",
+      "export_recipe_rows": 40,
+      "export_receipt_rows": 40,
+      "recipe_receipt_row_bindings": 40,
+      "recipe_source_files_present": 40,
+      "receipt_source_hash_matches": 40,
+      "receipt_output_files_present": 40,
+      "receipt_output_hash_matches": 40,
+      "receipt_output_byte_counts_match": 40,
+      "receipt_output_dimensions_match": 40,
+      "manifest_export_hash_and_dimensions_match": 40,
+      "generation_index_records": 32,
+      "generation_index_prompt_files_present_and_hash_matched": 32,
+      "generation_index_source_files_present_and_hash_matched": 32,
+      "generation_record_prompt_files_present_and_hash_matched": 32,
+      "generation_record_raw_outputs_present_and_hash_matched": 32,
+      "generation_record_reference_inputs": 17,
+      "generation_record_reference_hash_matches": 17,
+      "failures": 0
+    },
+    "generation_record_state": {
+      "result": "pass",
+      "canonical_record_count": 32,
+      "verified_record_count": 25,
+      "blocked_record_count": 7,
+      "verified_record_ids": [
+        "BG-01-generation-001",
+        "BG-02-generation-001",
+        "BG-03-generation-001",
+        "ID-02-generation-001",
+        "ID-03-generation-001",
+        "ID-04-generation-001",
+        "ID-05-generation-001",
+        "ID-06-generation-001",
+        "ID-01-generation-004",
+        "ID-07-generation-001",
+        "WEB-02-generation-001",
+        "WEB-03-generation-001",
+        "WEB-04-generation-001",
+        "WEB-05-generation-001",
+        "WEB-06-generation-001",
+        "WEB-08-generation-001",
+        "WEB-02-generation-002",
+        "WEB-07-generation-002",
+        "WEB-08-generation-002",
+        "RUN-01-generation-001",
+        "RUN-02-generation-001",
+        "RUN-02-generation-002",
+        "RUN-04-generation-001",
+        "RUN-05-generation-001",
+        "ID-08-generation-002"
+      ],
+      "blocked_record_ids": [
+        "ID-01-generation-001",
+        "ID-01-generation-002",
+        "ID-01-generation-003",
+        "ID-08-generation-001",
+        "BG-04-generation-001",
+        "WEB-07-generation-001",
+        "RUN-03-generation-001"
+      ],
+      "manifest_inline_record_entries": 28,
+      "manifest_inline_verified_entries": 26,
+      "manifest_inline_parent_duplicate": "WEB-01 embeds BG-01-generation-001 as its parent source; canonical root records remain 32 with 25 unique verified records.",
+      "partial_source_calls": [
+        {
+          "family_id": "RUN-01",
+          "record_id": "RUN-01-generation-001",
+          "accepted_available_variant": "brand/assets/run/summary-template.png",
+          "blocked_required_variant": "brand/assets/run/summary-template-square.png"
+        },
+        {
+          "family_id": "RUN-02",
+          "record_id": "RUN-02-generation-001",
+          "accepted_available_variant": "brand/assets/run/decision-landscape.png",
+          "blocked_required_variant": "brand/assets/run/decision-square.png"
+        },
+        {
+          "family_id": "RUN-02",
+          "record_id": "RUN-02-generation-002",
+          "accepted_available_variant": "brand/assets/run/decision-vertical.png",
+          "blocked_required_variant": "brand/assets/run/decision-square.png"
+        }
+      ],
+      "interpretation": "The three RUN-01/RUN-02 source calls are verified for their available aspect variants. Their families remain blocked because required square exports are absent."
+    },
+    "registry_state": {
+      "result": "pass",
+      "canonical_registry_path": "art/asset-registry.json",
+      "canonical_registry_records": 72,
+      "canonical_status_counts": {
+        "planned": 72
+      },
+      "canonical_rights_status_counts": {
+        "unreviewed": 72
+      },
+      "canonical_review_status_counts": {
+        "not_started": 72
+      },
+      "catalog_builder": {
+        "path": "scripts/build_art_catalog.py",
+        "overlay_target": [
+          "art/asset-board.html",
+          "brand/ART_ACCESS.md"
+        ],
+        "overlay_rows": 80,
+        "expected_rows": 80,
+        "overlay_mismatches": 0,
+        "canonical_registry_write": false,
+        "verification": "Current board/catalog overlays match the manifest while the planning registry retains canonical planned/unreviewed/not_started state."
+      }
+    },
+    "source_use_and_rights_boundary": {
+      "result": "pass_for_scoped_source_use",
+      "w02_first_ready_families": 11,
+      "w02_second_ready_families": 10,
+      "root_record_reference_inputs": 17,
+      "root_record_reference_hash_matches": 17,
+      "references_with_completed_w02_rights_review": 14,
+      "references_with_pending_rights_reference": 3,
+      "external_legacy_or_evidence_inputs_observed_in_scoped_w02_sources": 0,
+      "legal_rights_clearance": "not established by this receipt",
+      "publication_approval": "separate gate; none recorded"
+    },
+    "remaining_queue": {
+      "result": "pass_as_current_incomplete_queue",
+      "path": "brand/remaining-artwork.json",
+      "families": 51,
+      "required_exports": 115,
+      "existing_exports": 42,
+      "missing_exports": 73,
+      "replacement_exports": 2,
+      "replacement_family_ids": [
+        "BG-04"
+      ],
+      "missing_export_paths": [
+        "brand/assets/run/summary-template-square.png",
+        "brand/assets/run/decision-square.png",
+        "brand/assets/run/timeline-template.png",
+        "brand/assets/press/cover.png"
+      ],
+      "creative_generation_blocked_by_quota": {
+        "observed_completed_quota_blocked_calls": [
+          "CAST-01",
+          "CAST-02",
+          "CAST-03"
+        ],
+        "service_result": "HTTP 429 usage_limit_reached on 2026-09-07",
+        "no_output_from_those_calls": true,
+        "other_queued_families": "No completed image invocation is inferred from the absence of their outputs or records."
+      },
+      "specific_remaining_gates": {
+        "BG-04": "Replace the two existing route-pattern tile exports with a newly generated seamless master; the reviewed exports have visible repeat seams.",
+        "RUN-01": "Author the required square reflow.",
+        "RUN-02": "Author the required square reflow.",
+        "RUN-03": "Author the required wide timeline reflow and export.",
+        "MKT-09": "Generate the required press cover; the functional press catalog currently exposes zero downloads.",
+        "other_queued_families": "Required authored masters and exports remain absent and independently unreviewed."
+      }
+    }
+  },
+  "findings": {
+    "new_findings": [],
+    "open_release_gates": [
+      {
+        "id": "W03-ROOT-ART-FINAL-001",
+        "severity": "blocking",
+        "status": "open",
+        "finding": "The full artwork release remains incomplete: 51 families are blocked and 73 required exports are missing; BG-04 additionally requires replacement of two seam-bearing exports.",
+        "evidence": [
+          "brand/asset-manifest.json",
+          "brand/remaining-artwork.json",
+          "execution/reviews/root-art-full-gate.json"
+        ]
+      },
+      {
+        "id": "W03-ROOT-ART-FINAL-002",
+        "severity": "blocking",
+        "status": "open",
+        "finding": "Fifty manifest families retain rights_status unreviewed. The 25 verified canonical generation records are source and review state evidence, not legal rights or publication clearance.",
+        "evidence": [
+          "brand/asset-manifest.json",
+          "brand/provenance/root-generation-records.json",
+          "execution/reviews/W02-root-identity-source-use-review.json",
+          "execution/reviews/W02-root-art-second-batch-review.json"
+        ]
+      },
+      {
+        "id": "W03-ROOT-ART-FINAL-003",
+        "severity": "blocking",
+        "status": "open",
+        "finding": "Seven superseded or incomplete generation records remain blocked for traceability, and the native coordinator/leaf hierarchy requirement remains unfulfilled.",
+        "evidence": [
+          "brand/provenance/root-generation-records.json",
+          "execution/reviews/root-native-capability-recheck.json"
+        ]
+      },
+      {
+        "id": "W03-ROOT-ART-FINAL-004",
+        "severity": "blocking",
+        "status": "root_pending",
+        "finding": "Package ledgers remain a separate root-owned integration gate and were not run by this bounded acceptance check.",
+        "evidence": [
+          "execution/reviews/W03-root-export-followup.json"
+        ]
+      },
+      {
+        "id": "W03-ROOT-ART-FINAL-005",
+        "severity": "conditional",
+        "status": "open",
+        "finding": "WEB-03 path-watch.png and path-build.png require adjacent visible headings and equivalent accessible text from every consuming surface.",
+        "evidence": [
+          "execution/reviews/W03-root-export-followup.json"
+        ]
+      }
+    ],
+    "non_findings": [
+      "No new source, export-byte, schema, duplicate-path, or selected-lineage error was found.",
+      "No public approval, archive approval, or model/backend attestation is inferred."
+    ]
+  },
+  "readiness": {
+    "scoped_source_acceptance": "pass_for_21_families",
+    "root_status_finalization": "supported for the 21 selected families and 36 selected-family exports",
+    "full_release": "blocked",
+    "public_authority": "none",
+    "publication_approvals": 0,
+    "native_hierarchy": "unfulfilled",
+    "package_validation": {
+      "status": "deferred_to_root_after_metadata_freeze",
+      "command": "python3 scripts/validate_package.py",
+      "run_by_this_review": false
+    },
+    "remaining_work": "Use brand/remaining-artwork.json and preserve the blocked or unreviewed states until each authored output, source-use review, rights decision, export receipt, and package ledger update is independently complete."
+  },
+  "decision": "scoped_source_acceptance_pass_full_release_blocked",
+  "limitations": [
+    "This is a bounded source, data, schema, hash, and lineage acceptance check; it does not repeat the W02 visual review.",
+    "Generated artwork remains content classified as generated_art_not_product_evidence.",
+    "The root image backend, actual image model, and author model remain unknown or unattested.",
+    "The working tree contained pre-existing dirty changes; the only write made by this reviewer is this receipt.",
+    "No archive or public distribution approval is claimed."
+  ]
+}

@@ -1,0 +1,346 @@
+[
+  {
+    "repository": "AI-Ascension/.github",
+    "base_revision": "d8fb867dede3ec1cde424d7f6f6f56e49dc21227",
+    "branch": "work/w04-presentation",
+    "revision": "d84523795a64556b82d29f6da1dab62eb9b8b4c8",
+    "paths": [
+      "README.md",
+      "profile/README.md"
+    ],
+    "file_sha256": {
+      "README.md": "052da96de5fd729d7d40c9c9aba85a90faebbe6cac61ad691b81a42d61edf27a",
+      "profile/README.md": "d4cb629b57b6860e6dc0156ee6f9f5876de633c89d4b28182f0b961197cdba95"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "main",
+      "headRefOid": "d84523795a64556b82d29f6da1dab62eb9b8b4c8",
+      "isDraft": true,
+      "number": 10,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/.github/pull/10"
+    },
+    "original_presentation_revision": "1e5c3ccdfb9557c1ba751081ed7d1d07f56e7293",
+    "original_base_revision": "0cbdf744d515b16c042eb6e16b1537d8ccf11771",
+    "integration": "Merged fresh default-branch evidence changes; source-only presentation diff remains narrow.",
+    "verified_at": "2026-09-07T17:23:19.618952+00:00",
+    "review": "execution/reviews/W01-companion-presentation-review.md"
+  },
+  {
+    "repository": "AI-Ascension/AI-Ascension.github.io",
+    "base_revision": "79269774bd6d0b7dbf2792607b39da0764adfede",
+    "branch": "work/w04-presentation",
+    "revision": "e5153d6628843bbc734686ae926e143a1cf90526",
+    "paths": [
+      "README.md",
+      "index.html"
+    ],
+    "file_sha256": {
+      "README.md": "546500a8e05559d2ad90250b38e4e5ec07ccdf7c3cad8c1199b6299c4faa2d4d",
+      "index.html": "1427fc30bfb28f0b3f8eab3f734dc1d1eccaaaf3f5ca88c548d3e1dacf9f2146"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "main",
+      "headRefOid": "e5153d6628843bbc734686ae926e143a1cf90526",
+      "isDraft": true,
+      "number": 12,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/AI-Ascension.github.io/pull/12",
+      "headRefName": "work/w04-presentation",
+      "mergeable": "MERGEABLE",
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-09-08T03:18:03Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/AI-Ascension/AI-Ascension.github.io/actions/runs/34183010304/job/101925721945",
+          "name": "static-and-proof",
+          "startedAt": "2026-09-08T03:17:44Z",
+          "status": "COMPLETED",
+          "workflowName": "Validate site source"
+        }
+      ]
+    },
+    "original_presentation_revision": "fdc78f6d80bb8d19791d5a4f2091e4719043cc43",
+    "original_base_revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+    "integration": "Merged the advanced main branch after a single index.html conflict; preserved current candidate evidence, historical proof paths and source-only presentation boundaries.",
+    "verified_at": "2026-09-08T03:21:54.791562+00:00",
+    "review": "execution/reviews/W03-pages-conflict-repair-review.json"
+  },
+  {
+    "repository": "AI-Ascension/sts2-harness",
+    "base_revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+    "branch": "work/w04-presentation",
+    "revision": "d2105005ebdb6a5f7dd5e266e80b139e294cf89e",
+    "paths": [
+      "README.md"
+    ],
+    "file_sha256": {
+      "README.md": "e71fc571b24c05f46c7ffaa096c5d8a371624d7bb60506134cf41b0e56518150"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "main",
+      "headRefOid": "d2105005ebdb6a5f7dd5e266e80b139e294cf89e",
+      "isDraft": true,
+      "number": 34,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/sts2-harness/pull/34"
+    },
+    "verified_at": "2026-09-07T17:23:44.219988+00:00",
+    "review": "execution/reviews/W01-companion-presentation-review.md"
+  },
+  {
+    "repository": "AI-Ascension/sts2-game-core",
+    "base_revision": "87e0f3d9355c0827e989d9fbc31804440852519b",
+    "branch": "work/w04-presentation",
+    "revision": "9a27a80c32dcadd8030cf42c861e9e5da4daed1c",
+    "paths": [
+      "README.md"
+    ],
+    "file_sha256": {
+      "README.md": "12550880ea7b974f419ba425f9730737bb83a09ae74b982b8f099538a8b73d22"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "main",
+      "headRefOid": "9a27a80c32dcadd8030cf42c861e9e5da4daed1c",
+      "isDraft": true,
+      "number": 9,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/sts2-game-core/pull/9"
+    },
+    "verified_at": "2026-09-07T17:23:55.397780+00:00",
+    "review": "execution/reviews/W01-companion-presentation-review.md"
+  },
+  {
+    "repository": "AI-Ascension/sts2-game-mod",
+    "base_revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+    "branch": "work/w04-presentation",
+    "revision": "7cc0af3c64da639b191060251e667782d535bb0c",
+    "paths": [
+      "README.md"
+    ],
+    "file_sha256": {
+      "README.md": "300a659688335637da320f74c7f82e11c7efd4bd3191d12aa110c34570523396"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "main",
+      "headRefOid": "7cc0af3c64da639b191060251e667782d535bb0c",
+      "isDraft": true,
+      "number": 55,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/sts2-game-mod/pull/55"
+    },
+    "verified_at": "2026-09-07T17:24:07.013595+00:00",
+    "review": "execution/reviews/W01-companion-presentation-review.md"
+  },
+  {
+    "repository": "AI-Ascension/sts2-gateway",
+    "base_revision": "33ea48f3b549f08e19db80d8c68c1438fa12a60a",
+    "branch": "work/w04-presentation",
+    "revision": "22d780c12c60d8a2e5e1310f57deeea172decbd6",
+    "paths": [
+      "README.md"
+    ],
+    "file_sha256": {
+      "README.md": "0b7ca6db86a62c1472546a382afbc4144b81b38d66b8a5f8719d3097f9a8be73"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "main",
+      "headRefOid": "22d780c12c60d8a2e5e1310f57deeea172decbd6",
+      "isDraft": true,
+      "number": 21,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/sts2-gateway/pull/21"
+    },
+    "verified_at": "2026-09-07T17:24:14.076781+00:00",
+    "review": "execution/reviews/W01-companion-presentation-review.md"
+  },
+  {
+    "repository": "AI-Ascension/sts2-mcp-server",
+    "base_revision": "eb89ab251665f263c2fe3e6b735eeae3d3e40c83",
+    "branch": "work/w04-presentation",
+    "revision": "6ad97aeead88cdb2097675ddff076bc4bb97529d",
+    "paths": [
+      "README.md"
+    ],
+    "file_sha256": {
+      "README.md": "813b5d3b0ae2ee2ca67bc735c54f404b51abfa8d9d1c7b7d2437f5d516f451f0"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "main",
+      "headRefOid": "6ad97aeead88cdb2097675ddff076bc4bb97529d",
+      "isDraft": true,
+      "number": 26,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/sts2-mcp-server/pull/26"
+    },
+    "verified_at": "2026-09-07T17:24:23.491177+00:00",
+    "review": "execution/reviews/W01-companion-presentation-review.md"
+  },
+  {
+    "repository": "AI-Ascension/sts2-protocol",
+    "base_revision": "8874b0951289fd943c7e14dea36557fa24c401d1",
+    "branch": "work/w04-presentation",
+    "revision": "0c39c5a53b005d94df59f14f0962255d0962203a",
+    "paths": [
+      "README.md"
+    ],
+    "file_sha256": {
+      "README.md": "f7a5bbe1295cad4d68dbc22488ae66520355b1f16ca3ac13b68263e8fafed54d"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "main",
+      "headRefOid": "0c39c5a53b005d94df59f14f0962255d0962203a",
+      "isDraft": true,
+      "number": 20,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/sts2-protocol/pull/20"
+    },
+    "verified_at": "2026-09-07T17:24:32.811676+00:00",
+    "review": "execution/reviews/W01-companion-presentation-review.md"
+  },
+  {
+    "repository": "AI-Ascension/ascension-watchdog",
+    "base_revision": "dc2d20badb9e86c12067316b92d6c8289b2e6995",
+    "branch": "work/w04-presentation",
+    "revision": "9e240e916726b367dbae2cfd0eea64c3afeb35fa",
+    "paths": [
+      "README.md"
+    ],
+    "file_sha256": {
+      "README.md": "3cc62f0e37c42c6a541c97fcb71610e08aa7412668caaad9c9f96ea033665a5c"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "bootstrap",
+      "headRefOid": "9e240e916726b367dbae2cfd0eea64c3afeb35fa",
+      "isDraft": true,
+      "number": 3,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/ascension-watchdog/pull/3"
+    },
+    "verified_at": "2026-09-07T17:24:40.087597+00:00",
+    "review": "execution/reviews/W01-companion-presentation-review.md"
+  },
+  {
+    "repository": "AI-Ascension/ai-agent-observability",
+    "base_revision": "b25880376d3a3334c77f58637267db93581c4c77",
+    "branch": "work/w04-presentation",
+    "revision": "f872902ed987f5946bf843824063d10884a1bd29",
+    "paths": [
+      "README.md"
+    ],
+    "file_sha256": {
+      "README.md": "1900fb339cff931bd687f1a7cbce3f9a65d46c370ce1e6fe9d06706c92ed019b"
+    },
+    "status": "independently_reviewed_open_draft",
+    "pushed": true,
+    "pull_request": {
+      "assignees": [
+        {
+          "id": "MDQ6VXNlcjU4NjExNjY=",
+          "login": "CompleteDotTech",
+          "name": "Timothy Wayne Gregg",
+          "databaseId": 5861166
+        }
+      ],
+      "baseRefName": "main",
+      "headRefOid": "f872902ed987f5946bf843824063d10884a1bd29",
+      "isDraft": true,
+      "number": 13,
+      "state": "OPEN",
+      "url": "https://github.com/AI-Ascension/ai-agent-observability/pull/13"
+    },
+    "verified_at": "2026-09-07T17:24:46.295040+00:00",
+    "review": "execution/reviews/W01-companion-presentation-review.md"
+  }
+]

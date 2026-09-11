@@ -1,0 +1,1242 @@
+{
+  "schema_version": "ai-ascension.w02-broadcast-source-review.v4",
+  "observed_at": "2026-09-08T02:19:40Z",
+  "reviewer": "w02-broadcast-source-independent-review-007",
+  "task": "W02 independent review of MKT04 season artwork, blank marketing templates, MKT08 copy-safe repair, and GH04-B serif banner repair",
+  "scope": "Independent visual and source-use review of 10 selected generated sources and 11 selected exports: MKT-04 generation-001/002 season landscape and portrait, MKT-07 generation-002 blank email run card, MKT-06 generation-001/002 blank release and contributor cards, MKT-05 generation-001 blank challenge card, MKT-03 generation-001/002 blank outcome and decision-question thumbnails, MKT-08 generation-002 repaired sponsorship disclosure, and GH-04-B generation-002 repaired serif light/dark banner crops. Covers exact labels and copy, blank-field integrity, season-claim boundaries, serif-family repair, crop/size/mode/hash records, and the distinction between clean reusable design and actual approved challenge, episode outcome, release, attribution, sponsor, permission, runtime, or publication evidence. No source, prompt, registry, manifest, ledger, or generated image was edited.",
+  "assets": [
+    {
+      "asset_id": "MKT-04",
+      "title": "Season key visual",
+      "selected_generations": [
+        "MKT-04-generation-001",
+        "MKT-04-generation-002"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-04-generation-001",
+          "prompt_path": "brand/prompts/root/MKT-04/generation-001.txt",
+          "prompt_sha256": "b21d881f688960251db4b562900add655b73016755d3a255124c802c850bb7b4",
+          "source_path": "brand/sources/generated/MKT-04/generation-001.png",
+          "source_sha256": "b575a9aef61c14638464e6c228b7a917ca5273a74c506688c0c69cedc9534f0e",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1999679,
+          "receipt_path": "execution/reviews/root-marketing-generation-batch-006.json",
+          "receipt_sha256": "35caf55e4293baebabbbb5784815cf970ed32fd14b253e7d195b780fde3cf6ed",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-011.json",
+          "integration_receipt_sha256": "2ad5630a0cdd9efc054bda3a8dac8f86df3b5158b3425554c6ecac4b72857674",
+          "record_id": "MKT-04-generation-001",
+          "references": [
+            {
+              "path": "brand/assets/identity/the-climb-master.png",
+              "sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156"
+            },
+            {
+              "path": "brand/assets/illustration/series-master.png",
+              "sha256": "e41579d621bea4eb6e1c1abbd47cd7ebbaa72544481eb6b69f33f64cb90aefbb"
+            }
+          ],
+          "reference_inputs": [
+            {
+              "reference": "brand/assets/identity/the-climb-master.png",
+              "sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156",
+              "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+            },
+            {
+              "reference": "brand/assets/illustration/series-master.png",
+              "sha256": "e41579d621bea4eb6e1c1abbd47cd7ebbaa72544481eb6b69f33f64cb90aefbb",
+              "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+            }
+          ],
+          "factual_source_documents": [
+            {
+              "path": "docs/BASELINE_AUDIT.md",
+              "sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690"
+            },
+            {
+              "path": "marketing/community-playbook.md",
+              "sha256": "4e376b92a0506b15984a83d513357aec3536636ad44c123d382dff08c924c4af"
+            }
+          ]
+        },
+        {
+          "generation_id": "MKT-04-generation-002",
+          "prompt_path": "brand/prompts/root/MKT-04/generation-002.txt",
+          "prompt_sha256": "77bc2b076ec9bb36cffca19fd28c6d1e06e9dacf08dd3bdb4a6ed90eae68d786",
+          "source_path": "brand/sources/generated/MKT-04/generation-002.png",
+          "source_sha256": "c0db6e0010ef72d28c593164fc2d7af5894343649b9f5a6870f67ea6be2e8c31",
+          "source_dimensions": "941x1672",
+          "source_mode": "RGB",
+          "source_bytes": 1962578,
+          "receipt_path": "execution/reviews/root-marketing-generation-batch-007.json",
+          "receipt_sha256": "6af7c63238b9d66dbe7a2f14fe861a810ce6b2eaa88bd8b8bd7cce21811bde89",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-011.json",
+          "integration_receipt_sha256": "2ad5630a0cdd9efc054bda3a8dac8f86df3b5158b3425554c6ecac4b72857674",
+          "record_id": "MKT-04-generation-002",
+          "references": [
+            {
+              "path": "brand/sources/generated/MKT-04/generation-001.png",
+              "sha256": "b575a9aef61c14638464e6c228b7a917ca5273a74c506688c0c69cedc9534f0e"
+            }
+          ],
+          "reference_inputs": [
+            {
+              "reference": "brand/sources/generated/MKT-04/generation-001.png",
+              "sha256": "b575a9aef61c14638464e6c228b7a917ca5273a74c506688c0c69cedc9534f0e",
+              "rights_reference": "pending:generated-original-reference-review"
+            }
+          ],
+          "factual_source_documents": []
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/marketing/season-key-visual.png",
+          "output_sha256": "896f151a88d5201e00f845fbb0a29ee2778fe8b9add5842d2475d6a556a77f68",
+          "output_dimensions": "1920x1080",
+          "output_mode": "RGB",
+          "output_bytes": 2452876,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-011.json",
+          "integration_receipt_sha256": "2ad5630a0cdd9efc054bda3a8dac8f86df3b5158b3425554c6ecac4b72857674"
+        },
+        {
+          "output_path": "brand/assets/marketing/season-key-visual-vertical.png",
+          "output_sha256": "9b1062798c3fe8010755aafa63a10de0ef596e7ad6bff1537a4f1261f680c516",
+          "output_dimensions": "1080x1920",
+          "output_mode": "RGB",
+          "output_bytes": 2395048,
+          "crop_box": [
+            0,
+            0,
+            941,
+            1672
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-011.json",
+          "integration_receipt_sha256": "2ad5630a0cdd9efc054bda3a8dac8f86df3b5158b3425554c6ecac4b72857674"
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Landscape and portrait sources and exports preserve the exact series identity “The Climb”, “by AI Ascension”, and the season title “Road to the First Verified Win”; the landscape hierarchy is readable in two title lines and the portrait hierarchy in three.",
+        "The branching-A mark remains modest, and the dark/amber paths lead toward an open unfinished horizon. No trophy, celebration, victory badge, game screenshot, character, actual map, score, date, schedule, or live claim is present.",
+        "Both outputs are clean full-frame RGB exports at the required 1920x1080 and 1080x1920 sizes with no visible crop loss or extra wording."
+      ],
+      "issues": [
+        {
+          "severity": "season_framing_boundary",
+          "finding": "“Road to the First Verified Win” is a season framing title, not a claim that a first verified win has occurred.",
+          "required_follow_up": "Retain the title as framing until a separate approved evidence and per-episode source/copy review supports any outcome claim."
+        }
+      ],
+      "source_use_observation": "Generation-001 records the referenced local The Climb and series masters; generation-002 records the generation-001 source lineage. The references are provenance inputs, not a legal, trademark, or publication clearance.",
+      "evidence_boundary": "Campaign and press illustration only; it does not prove a verified win, episode outcome, gameplay, runtime, deployment, publication, or current live status.",
+      "source_record": {
+        "generation_id": "MKT-04-generation-001",
+        "prompt_path": "brand/prompts/root/MKT-04/generation-001.txt",
+        "prompt_sha256": "b21d881f688960251db4b562900add655b73016755d3a255124c802c850bb7b4",
+        "source_path": "brand/sources/generated/MKT-04/generation-001.png",
+        "source_sha256": "b575a9aef61c14638464e6c228b7a917ca5273a74c506688c0c69cedc9534f0e",
+        "source_dimensions": "1672x941",
+        "source_mode": "RGB",
+        "source_bytes": 1999679,
+        "receipt_path": "execution/reviews/root-marketing-generation-batch-006.json",
+        "receipt_sha256": "35caf55e4293baebabbbb5784815cf970ed32fd14b253e7d195b780fde3cf6ed",
+        "integration_receipt_path": ".execution-private/broadcast-records-result-011.json",
+        "integration_receipt_sha256": "2ad5630a0cdd9efc054bda3a8dac8f86df3b5158b3425554c6ecac4b72857674",
+        "record_id": "MKT-04-generation-001",
+        "references": [
+          {
+            "path": "brand/assets/identity/the-climb-master.png",
+            "sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156"
+          },
+          {
+            "path": "brand/assets/illustration/series-master.png",
+            "sha256": "e41579d621bea4eb6e1c1abbd47cd7ebbaa72544481eb6b69f33f64cb90aefbb"
+          }
+        ],
+        "reference_inputs": [
+          {
+            "reference": "brand/assets/identity/the-climb-master.png",
+            "sha256": "0b394c661006e69d6d3263efdf64cd142b2458f8f0402fa7a56836448ba97156",
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+          },
+          {
+            "reference": "brand/assets/illustration/series-master.png",
+            "sha256": "e41579d621bea4eb6e1c1abbd47cd7ebbaa72544481eb6b69f33f64cb90aefbb",
+            "rights_reference": "execution/reviews/W02-root-identity-source-use-review.json"
+          }
+        ],
+        "factual_source_documents": [
+          {
+            "path": "docs/BASELINE_AUDIT.md",
+            "sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690"
+          },
+          {
+            "path": "marketing/community-playbook.md",
+            "sha256": "4e376b92a0506b15984a83d513357aec3536636ad44c123d382dff08c924c4af"
+          }
+        ]
+      },
+      "limits": [
+        "No approved model-played campaign Victory or current episode outcome is established by this artwork review.",
+        "Rights, trademark, sponsorship, and public publication gates remain separate."
+      ],
+      "campaign_framing_boundary": {
+        "baseline_path": "docs/BASELINE_AUDIT.md",
+        "baseline_sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690",
+        "baseline_reference": "Line 117 keeps Road to the First Verified Win as season framing because the evidence check did not find a model-played campaign Victory.",
+        "result": "Artwork respects the unfinished-road framing and contains no achieved-victory visual claim."
+      }
+    },
+    {
+      "asset_id": "MKT-07",
+      "title": "Email digest run-card template",
+      "selected_generations": [
+        "MKT-07-generation-002"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-07-generation-002",
+          "prompt_path": "brand/prompts/root/MKT-07/generation-002.txt",
+          "prompt_sha256": "2c3fb2855af2f30faa0331b3328dfaef3b02de07a42cfac550b0b63ba5f65e0e",
+          "source_path": "brand/sources/generated/MKT-07/generation-002.png",
+          "source_sha256": "1f64439f5c04ca142048bca7c7044b4b5c613d0911ea62b0af174cd152e04430",
+          "source_dimensions": "1731x909",
+          "source_mode": "RGB",
+          "source_bytes": 985517,
+          "receipt_path": "execution/reviews/root-marketing-generation-batch-008.json",
+          "receipt_sha256": "3c7e2d0e8b32bbba3fd5a0887c5631c7c4f31ad31383eb715bda60db3a394ef9",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+          "record_id": "MKT-07-generation-002",
+          "references": [],
+          "reference_inputs": []
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/marketing/email-run-card.png",
+          "output_sha256": "22ee260d9e3c0f8910131f28343863b81b6d9c7c8b109e06c5011fde9f69c45d",
+          "output_dimensions": "1200x630",
+          "output_mode": "RGB",
+          "output_bytes": 521834,
+          "crop_box": [
+            0,
+            0,
+            1731,
+            909
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194"
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Exact title “Run digest”, status “TEMPLATE — NO RUN DATA”, labels “Run ID”, “Outcome”, “Model configuration”, “Interventions”, “Evidence”, and “Source URL”, and “AI Ascension” footer are readable.",
+        "All six value spaces are visibly blank; no run ID, outcome, model value, intervention, evidence value, URL, date, statistic, live label, result, or badge appears.",
+        "The 1200x630 RGB output retains the complete lightweight card, broad margins, and a clean email-ready composition; the image does not attempt to carry the email body or accessible text fallback."
+      ],
+      "issues": [],
+      "source_use_observation": "No external reference input is declared; this is local generated blank template artwork.",
+      "evidence_boundary": "Blank email artwork only; it is not an approved digest, run, episode result, or public evidence record.",
+      "source_record": {
+        "generation_id": "MKT-07-generation-002",
+        "prompt_path": "brand/prompts/root/MKT-07/generation-002.txt",
+        "prompt_sha256": "2c3fb2855af2f30faa0331b3328dfaef3b02de07a42cfac550b0b63ba5f65e0e",
+        "source_path": "brand/sources/generated/MKT-07/generation-002.png",
+        "source_sha256": "1f64439f5c04ca142048bca7c7044b4b5c613d0911ea62b0af174cd152e04430",
+        "source_dimensions": "1731x909",
+        "source_mode": "RGB",
+        "source_bytes": 985517,
+        "receipt_path": "execution/reviews/root-marketing-generation-batch-008.json",
+        "receipt_sha256": "3c7e2d0e8b32bbba3fd5a0887c5631c7c4f31ad31383eb715bda60db3a394ef9",
+        "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+        "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+        "record_id": "MKT-07-generation-002",
+        "references": [],
+        "reference_inputs": []
+      },
+      "limits": [
+        "Populate only from an approved manifest and provide HTML/text fallback outside the image before treating this as an email run report."
+      ],
+      "template_boundary": "A blank reusable layout is visually complete while the run-data and episode-result requirements remain uncompleted."
+    },
+    {
+      "asset_id": "MKT-06",
+      "title": "Release and contributor card templates",
+      "selected_generations": [
+        "MKT-06-generation-001",
+        "MKT-06-generation-002"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-06-generation-001",
+          "prompt_path": "brand/prompts/root/MKT-06/generation-001.txt",
+          "prompt_sha256": "8877368dc7a010488cb0a02d0499c2e6f8ba037473ca78440f813f5f0ea185db",
+          "source_path": "brand/sources/generated/MKT-06/generation-001.png",
+          "source_sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+          "source_dimensions": "1730x909",
+          "source_mode": "RGB",
+          "source_bytes": 931634,
+          "receipt_path": "execution/reviews/root-marketing-generation-batch-009.json",
+          "receipt_sha256": "2ecd02e416d0f0ba2b39e312f08ad8377ba737527e154ffa0c83fda11b8c4128",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+          "record_id": "MKT-06-generation-001",
+          "references": [],
+          "reference_inputs": []
+        },
+        {
+          "generation_id": "MKT-06-generation-002",
+          "prompt_path": "brand/prompts/root/MKT-06/generation-002.txt",
+          "prompt_sha256": "3aedc82d4babb0da2970369177040633c31b768495f5e586a2b9744f052e7a5e",
+          "source_path": "brand/sources/generated/MKT-06/generation-002.png",
+          "source_sha256": "809f57cf283c2c98e54ec04f4a6ec17b38f2313f578de18768f797d48d834759",
+          "source_dimensions": "1254x1254",
+          "source_mode": "RGB",
+          "source_bytes": 973115,
+          "receipt_path": "execution/reviews/root-marketing-generation-batch-010.json",
+          "receipt_sha256": "e95250995ffd260cc5e184d3cba8a56e7d6cdb1da5f8b8db6eb9a7aba9d207e4",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+          "record_id": "MKT-06-generation-002",
+          "references": [],
+          "reference_inputs": []
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/marketing/release-template.png",
+          "output_sha256": "d563bd1f1450f607d6ca44a0896075aa889e7a29d74414121749d01935dc754f",
+          "output_dimensions": "1200x630",
+          "output_mode": "RGB",
+          "output_bytes": 491181,
+          "crop_box": [
+            0,
+            0,
+            1730,
+            909
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194"
+        },
+        {
+          "output_path": "brand/assets/marketing/contributor-template.png",
+          "output_sha256": "0c526b21d26f4875c695497eeeb820107fa538b31951edf8acf554c7aa7ddae1",
+          "output_dimensions": "1080x1080",
+          "output_mode": "RGB",
+          "output_bytes": 726373,
+          "crop_box": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194"
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Release source/output preserve exact title “Release”, status “TEMPLATE — NO RELEASE DATA”, blank labels “Version”, “Release state”, and “Source URL”, plus the “AI Ascension” footer.",
+        "Contributor source/output preserve exact title “Contributor”, status “TEMPLATE — NO ATTRIBUTION”, blank labels “Name”, “Contribution”, and “Source URL”, plus the “AI Ascension” footer.",
+        "Both designs are clean RGB exports with readable serif lettering, broad margins, and no filled release value, status badge, announcement date, face, portrait, photo placeholder, fake name, quote, testimonial, logo, or extra copy."
+      ],
+      "issues": [],
+      "source_use_observation": "No external reference input is declared; these are local generated blank template layouts.",
+      "evidence_boundary": "Blank release/contributor artwork only; it does not prove a release state, version, contributor identity, attribution, permission, or episode statement.",
+      "source_record": {
+        "generation_id": "MKT-06-generation-001",
+        "prompt_path": "brand/prompts/root/MKT-06/generation-001.txt",
+        "prompt_sha256": "8877368dc7a010488cb0a02d0499c2e6f8ba037473ca78440f813f5f0ea185db",
+        "source_path": "brand/sources/generated/MKT-06/generation-001.png",
+        "source_sha256": "5956822c396cb7e301fc32fc48662522b938be20d87bd1a8306795de28d1818f",
+        "source_dimensions": "1730x909",
+        "source_mode": "RGB",
+        "source_bytes": 931634,
+        "receipt_path": "execution/reviews/root-marketing-generation-batch-009.json",
+        "receipt_sha256": "2ecd02e416d0f0ba2b39e312f08ad8377ba737527e154ffa0c83fda11b8c4128",
+        "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+        "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+        "record_id": "MKT-06-generation-001",
+        "references": [],
+        "reference_inputs": []
+      },
+      "limits": [
+        "Release fields require exact current version/release-state source data before use.",
+        "Contributor name, image, attribution, and any quoted material require real source information and permission before publication."
+      ],
+      "template_boundary": "Clean blank design is complete; release and contributor source, permission, and publication gates remain uncompleted."
+    },
+    {
+      "asset_id": "MKT-05",
+      "title": "Community challenge card template",
+      "selected_generations": [
+        "MKT-05-generation-001"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-05-generation-001",
+          "prompt_path": "brand/prompts/root/MKT-05/generation-001.txt",
+          "prompt_sha256": "711d0be7a914a31dae1f6f38dd2f909c5d73f69553e559945b10ea6acfa27ee7",
+          "source_path": "brand/sources/generated/MKT-05/generation-001.png",
+          "source_sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+          "source_dimensions": "1254x1254",
+          "source_mode": "RGB",
+          "source_bytes": 998569,
+          "receipt_path": "execution/reviews/root-marketing-generation-batch-011.json",
+          "receipt_sha256": "7e11d9d374f92b74ab14eb890d3a638143068cdca552ad8d4e529fce410cd651",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+          "record_id": "MKT-05-generation-001",
+          "references": [],
+          "reference_inputs": []
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/marketing/challenge-template.png",
+          "output_sha256": "499685f65dea3fb225be02eff64583235f9d98f6a9a16076d42e1c0585a4cad4",
+          "output_dimensions": "1080x1080",
+          "output_mode": "RGB",
+          "output_bytes": 749979,
+          "crop_box": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194"
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Exact title “Community challenge”, status “TEMPLATE — NO CHALLENGE”, labels “Challenge”, “Rules”, “Deadline (if scheduled)”, and “Source URL”, and “AI Ascension” footer are all readable.",
+        "Every value space is blank, with Rules receiving the largest blank area; no date, vote, count, participant, game state, screenshot, badge, logo, or extra text appears.",
+        "The 1080x1080 RGB output is clean and spacious with complete borders, readable lettering, and no visible crop defect."
+      ],
+      "issues": [],
+      "source_use_observation": "No external reference input is declared; this is local generated blank template artwork.",
+      "evidence_boundary": "Blank community artwork only; it is not an approved or active challenge, ruleset, schedule, vote, or community result.",
+      "source_record": {
+        "generation_id": "MKT-05-generation-001",
+        "prompt_path": "brand/prompts/root/MKT-05/generation-001.txt",
+        "prompt_sha256": "711d0be7a914a31dae1f6f38dd2f909c5d73f69553e559945b10ea6acfa27ee7",
+        "source_path": "brand/sources/generated/MKT-05/generation-001.png",
+        "source_sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64",
+        "source_dimensions": "1254x1254",
+        "source_mode": "RGB",
+        "source_bytes": 998569,
+        "receipt_path": "execution/reviews/root-marketing-generation-batch-011.json",
+        "receipt_sha256": "7e11d9d374f92b74ab14eb890d3a638143068cdca552ad8d4e529fce410cd651",
+        "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+        "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+        "record_id": "MKT-05-generation-001",
+        "references": [],
+        "reference_inputs": []
+      },
+      "limits": [
+        "An actual card requires a real approved challenge, actual rules, an input deadline only if scheduled, and a source link before publication."
+      ],
+      "template_boundary": "Clean blank design is complete; the approved challenge, rules, scheduling, and source gates remain uncompleted."
+    },
+    {
+      "asset_id": "MKT-03",
+      "title": "Outcome and decision-question thumbnail templates",
+      "selected_generations": [
+        "MKT-03-generation-001",
+        "MKT-03-generation-002"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-03-generation-001",
+          "prompt_path": "brand/prompts/root/MKT-03/generation-001.txt",
+          "prompt_sha256": "fcccd01179e1cec20d2982d67e401f8c66391b4425084d3159d95fa4d53cb12a",
+          "source_path": "brand/sources/generated/MKT-03/generation-001.png",
+          "source_sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1418328,
+          "receipt_path": "execution/reviews/root-marketing-generation-batch-012.json",
+          "receipt_sha256": "6f1f68bfcb5ef01476fd2763eee63b12bfc566a4ffcc3898f970135e3184a20a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+          "record_id": "MKT-03-generation-001",
+          "references": [],
+          "reference_inputs": []
+        },
+        {
+          "generation_id": "MKT-03-generation-002",
+          "prompt_path": "brand/prompts/root/MKT-03/generation-002.txt",
+          "prompt_sha256": "986d07c7b85e0e4ced429e7a4edff7a639ccdd93bc66d88f279c97a3dbc466c8",
+          "source_path": "brand/sources/generated/MKT-03/generation-002.png",
+          "source_sha256": "998dca2ca2c30edd855608640177c3511f59fe04cf97732598065ed321c09d93",
+          "source_dimensions": "1672x941",
+          "source_mode": "RGB",
+          "source_bytes": 1073298,
+          "receipt_path": "execution/reviews/root-marketing-generation-batch-013.json",
+          "receipt_sha256": "1705c38bd91b2891fc1d038e42e598e40d242282d291c26432152ec0d00f50b0",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+          "record_id": "MKT-03-generation-002",
+          "references": [],
+          "reference_inputs": []
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/marketing/thumbnail-outcome.png",
+          "output_sha256": "d6aec732aca7b367363398e582c6e3a7a52b0af620bdb8dfa5f385c907c8a132",
+          "output_dimensions": "1280x720",
+          "output_mode": "RGB",
+          "output_bytes": 848591,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194"
+        },
+        {
+          "output_path": "brand/assets/marketing/thumbnail-question.png",
+          "output_sha256": "908f81c489a9465fc6b513ceadd03ced8d2222802113d21752cd573c860f3abc",
+          "output_dimensions": "1280x720",
+          "output_mode": "RGB",
+          "output_bytes": 661785,
+          "crop_box": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+          "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194"
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Outcome source/output preserve exact title “Outcome”, status “TEMPLATE — NO RUN DATA”, blank labels “Outcome headline” and “Source URL”, and “AI Ascension” footer.",
+        "Decision-question source/output preserve exact title “Decision question”, status “TEMPLATE — NO DECISION DATA”, blank labels “Question” and “Source URL”, and “AI Ascension” footer.",
+        "The two 1280x720 RGB outputs retain readable editorial typography, spacious blank fields, and small restrained route ornaments; neither contains a filled result, question, choice, game state, number, score, date, badge, face, screenshot, character, logo, or extra text."
+      ],
+      "issues": [],
+      "source_use_observation": "No external reference input is declared; these are local generated blank template layouts.",
+      "evidence_boundary": "Blank thumbnail artwork only; it is not an episode outcome, sourced decision, model choice, or public evidence artifact.",
+      "source_record": {
+        "generation_id": "MKT-03-generation-001",
+        "prompt_path": "brand/prompts/root/MKT-03/generation-001.txt",
+        "prompt_sha256": "fcccd01179e1cec20d2982d67e401f8c66391b4425084d3159d95fa4d53cb12a",
+        "source_path": "brand/sources/generated/MKT-03/generation-001.png",
+        "source_sha256": "f24054fce9deb8142bacb0caf69ca7ff209631e1e16248280fdc02e6b146fd12",
+        "source_dimensions": "1672x941",
+        "source_mode": "RGB",
+        "source_bytes": 1418328,
+        "receipt_path": "execution/reviews/root-marketing-generation-batch-012.json",
+        "receipt_sha256": "6f1f68bfcb5ef01476fd2763eee63b12bfc566a4ffcc3898f970135e3184a20a",
+        "integration_receipt_path": ".execution-private/broadcast-records-result-012.json",
+        "integration_receipt_sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+        "record_id": "MKT-03-generation-001",
+        "references": [],
+        "reference_inputs": []
+      },
+      "limits": [
+        "Outcome card requires a reviewed per-episode source, exact outcome copy, and approved evidence before use as an outcome graphic.",
+        "Decision-question card requires a reviewed sourced decision before presenting an actual episode question or choice."
+      ],
+      "template_boundary": "Clean blank design is complete; the episode outcome, decision source, and evidence/copy gates remain uncompleted."
+    },
+    {
+      "asset_id": "MKT-08",
+      "title": "Sponsorship disclosure template",
+      "selected_generations": [
+        "MKT-08-generation-002"
+      ],
+      "source_records": [
+        {
+          "generation_id": "MKT-08-generation-002",
+          "prompt_path": "brand/prompts/root/MKT-08/generation-002.txt",
+          "prompt_sha256": "b6d0f8888116c4aaeea9b4c2430a35890ce56e9ac0080b15b658e6bd400cdd91",
+          "source_path": "brand/sources/generated/MKT-08/generation-002.png",
+          "source_sha256": "0db5aab96b0f1fb3b280d4844a6bbcad32f219ed29064b9827e430d45eb5c172",
+          "source_dimensions": "2172x724",
+          "source_mode": "RGB",
+          "source_bytes": 910604,
+          "receipt_path": "execution/reviews/root-marketing-generation-repair-002.json",
+          "receipt_sha256": "9d659b2babc1959b7ecec6988dfcbf5a5c4aece92f1e1b2b469ca6151bd72d42",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-013.json",
+          "integration_receipt_sha256": "e5caf3c3e835d67c0bb6fffd1b0a6d9b0a933536adbf0e3ece37a3223dc293c3",
+          "record_id": "MKT-08-generation-002",
+          "references": [
+            {
+              "path": "brand/sources/generated/MKT-08/generation-001.png",
+              "sha256": "123251d919168e5e7ab86d933ba11d28798f65c99dcd0320c0b9938b9c1e83c5"
+            }
+          ],
+          "reference_inputs": [
+            {
+              "reference": "brand/sources/generated/MKT-08/generation-001.png",
+              "sha256": "123251d919168e5e7ab86d933ba11d28798f65c99dcd0320c0b9938b9c1e83c5",
+              "rights_reference": "pending:generated-original-reference-review"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/marketing/sponsor-disclosure.png",
+          "output_sha256": "2e0fc88e4537c06e1ced719db635b3ba59a3c545020760220c712ba67178d593",
+          "output_dimensions": "1200x400",
+          "output_mode": "RGB",
+          "output_bytes": 323213,
+          "crop_box": [
+            0,
+            0,
+            2172,
+            724
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-013.json",
+          "integration_receipt_sha256": "e5caf3c3e835d67c0bb6fffd1b0a6d9b0a933536adbf0e3ece37a3223dc293c3"
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "Exact copy is readable: “Sponsorship disclosure”, “Template — no sponsor named.”, and “Complete the disclosure before publication.”",
+        "The repaired source/output place all three lines in a compact centered group inside generous side and vertical margins, with a restrained amber edge accent and no visible clipping.",
+        "No sponsor name, company logo, deal, money, statistic, date, icon, frame, mockup, or implied sponsorship appears; the 1200x400 output is RGB."
+      ],
+      "issues": [],
+      "source_use_observation": "Generation-002 records generation-001 as its only reference; the source remains local generated template artwork and carries no sponsor input.",
+      "evidence_boundary": "Neutral disclosure artwork only; it is not evidence of sponsorship, a commercial agreement, or publication completion.",
+      "source_record": {
+        "generation_id": "MKT-08-generation-002",
+        "prompt_path": "brand/prompts/root/MKT-08/generation-002.txt",
+        "prompt_sha256": "b6d0f8888116c4aaeea9b4c2430a35890ce56e9ac0080b15b658e6bd400cdd91",
+        "source_path": "brand/sources/generated/MKT-08/generation-002.png",
+        "source_sha256": "0db5aab96b0f1fb3b280d4844a6bbcad32f219ed29064b9827e430d45eb5c172",
+        "source_dimensions": "2172x724",
+        "source_mode": "RGB",
+        "source_bytes": 910604,
+        "receipt_path": "execution/reviews/root-marketing-generation-repair-002.json",
+        "receipt_sha256": "9d659b2babc1959b7ecec6988dfcbf5a5c4aece92f1e1b2b469ca6151bd72d42",
+        "integration_receipt_path": ".execution-private/broadcast-records-result-013.json",
+        "integration_receipt_sha256": "e5caf3c3e835d67c0bb6fffd1b0a6d9b0a933536adbf0e3ece37a3223dc293c3",
+        "record_id": "MKT-08-generation-002",
+        "references": [
+          {
+            "path": "brand/sources/generated/MKT-08/generation-001.png",
+            "sha256": "123251d919168e5e7ab86d933ba11d28798f65c99dcd0320c0b9938b9c1e83c5"
+          }
+        ],
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/MKT-08/generation-001.png",
+            "sha256": "123251d919168e5e7ab86d933ba11d28798f65c99dcd0320c0b9938b9c1e83c5",
+            "rights_reference": "pending:generated-original-reference-review"
+          }
+        ]
+      },
+      "limits": [
+        "Complete and independently verify any real sponsorship disclosure before publication; no sponsor or permission is established here."
+      ],
+      "template_boundary": "Clean blank design is complete; sponsor documentation, disclosure completion, rights, and publication gates remain uncompleted."
+    },
+    {
+      "asset_id": "GH-04-B",
+      "title": "STS2 Domain Core repository banner",
+      "selected_generations": [
+        "GH-04-B-generation-002"
+      ],
+      "source_records": [
+        {
+          "generation_id": "GH-04-B-generation-002",
+          "prompt_path": "brand/prompts/root/GH-04-B/generation-002.txt",
+          "prompt_sha256": "391ffea8a68efa60111f971ef6267d4f54b2b5863c4bd3508a9eb4f6bf983a5f",
+          "source_path": "brand/sources/generated/GH-04-B/generation-002.png",
+          "source_sha256": "30464a2745bce742136dd1dacb7820c6bbbf973f8c389bdf6af0cd89a0192b0d",
+          "source_dimensions": "1774x887",
+          "source_mode": "RGB",
+          "source_bytes": 1279268,
+          "receipt_path": "execution/reviews/root-github-banner-generation-repair-001.json",
+          "receipt_sha256": "617e0131241b112b843c23d80e5eb8a2c4c80e373483cab669dba0c915e2c1e7",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-013.json",
+          "integration_receipt_sha256": "e5caf3c3e835d67c0bb6fffd1b0a6d9b0a933536adbf0e3ece37a3223dc293c3",
+          "record_id": "GH-04-B-generation-002",
+          "references": [
+            {
+              "path": "brand/sources/generated/GH-04-B/generation-001.png",
+              "sha256": "fed40915f984608ec22489794078ded7b6074dc078145726529a7858d4ca3236"
+            }
+          ],
+          "reference_inputs": [
+            {
+              "reference": "brand/sources/generated/GH-04-B/generation-001.png",
+              "sha256": "fed40915f984608ec22489794078ded7b6074dc078145726529a7858d4ca3236",
+              "rights_reference": "pending:generated-original-reference-review"
+            }
+          ]
+        }
+      ],
+      "export_records": [
+        {
+          "output_path": "brand/assets/github/sts2-core-banner-light.png",
+          "output_sha256": "291ffca0cb7cd52f633996c2dba36ee666701bbd84b9ff452c6db2b82d376711",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 532711,
+          "crop_box": [
+            0,
+            0,
+            1774,
+            443
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-013.json",
+          "integration_receipt_sha256": "e5caf3c3e835d67c0bb6fffd1b0a6d9b0a933536adbf0e3ece37a3223dc293c3"
+        },
+        {
+          "output_path": "brand/assets/github/sts2-core-banner-dark.png",
+          "output_sha256": "b00139bf53bdc944080a4ccb411cf93d7324eefc4d04735e085d93cca4f5cd7b",
+          "output_dimensions": "1600x400",
+          "output_mode": "RGB",
+          "output_bytes": 504923,
+          "crop_box": [
+            0,
+            444,
+            1774,
+            887
+          ],
+          "operations": [
+            "crop",
+            "resize",
+            "encode",
+            "metadata_strip"
+          ],
+          "receipt_review_state": "pending_independent_review",
+          "publication_approved": false,
+          "export_receipt_path": "brand/provenance/root-export-receipts.json",
+          "export_receipt_sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+          "integration_receipt_path": ".execution-private/broadcast-records-result-013.json",
+          "integration_receipt_sha256": "e5caf3c3e835d67c0bb6fffd1b0a6d9b0a933536adbf0e3ece37a3223dc293c3"
+        }
+      ],
+      "verdict": "ready_for_bounded_mechanical_export",
+      "observations": [
+        "The repaired two-panel source and both 1600x400 exports preserve exact title “STS2 Domain Core” and role “Typed STS2 state and validation primitives.” in both panels.",
+        "Both light and dark panels visibly use the intended serif family with readable thick/thin contrast; the quiet amber angular route motif remains subordinate and has no large arrowhead or chart claim.",
+        "The light and dark crops are clean RGB banners with broad inset margins and no logo, icon, metric, screenshot, extra text, or stale capability value."
+      ],
+      "issues": [],
+      "source_use_observation": "Generation-002 records generation-001 as its only reference; no separate third-party mark or product image was observed.",
+      "evidence_boundary": "Repository campaign artwork only; it does not prove repository existence, code behavior, release state, runtime, deployment, or current capability.",
+      "source_record": {
+        "generation_id": "GH-04-B-generation-002",
+        "prompt_path": "brand/prompts/root/GH-04-B/generation-002.txt",
+        "prompt_sha256": "391ffea8a68efa60111f971ef6267d4f54b2b5863c4bd3508a9eb4f6bf983a5f",
+        "source_path": "brand/sources/generated/GH-04-B/generation-002.png",
+        "source_sha256": "30464a2745bce742136dd1dacb7820c6bbbf973f8c389bdf6af0cd89a0192b0d",
+        "source_dimensions": "1774x887",
+        "source_mode": "RGB",
+        "source_bytes": 1279268,
+        "receipt_path": "execution/reviews/root-github-banner-generation-repair-001.json",
+        "receipt_sha256": "617e0131241b112b843c23d80e5eb8a2c4c80e373483cab669dba0c915e2c1e7",
+        "integration_receipt_path": ".execution-private/broadcast-records-result-013.json",
+        "integration_receipt_sha256": "e5caf3c3e835d67c0bb6fffd1b0a6d9b0a933536adbf0e3ece37a3223dc293c3",
+        "record_id": "GH-04-B-generation-002",
+        "references": [
+          {
+            "path": "brand/sources/generated/GH-04-B/generation-001.png",
+            "sha256": "fed40915f984608ec22489794078ded7b6074dc078145726529a7858d4ca3236"
+          }
+        ],
+        "reference_inputs": [
+          {
+            "reference": "brand/sources/generated/GH-04-B/generation-001.png",
+            "sha256": "fed40915f984608ec22489794078ded7b6074dc078145726529a7858d4ca3236",
+            "rights_reference": "pending:generated-original-reference-review"
+          }
+        ]
+      },
+      "limits": [
+        "GitHub presentation, repository metadata, and publication remain separate gates."
+      ]
+    }
+  ],
+  "inputs_read": [
+    "art/asset-registry.json",
+    "art/ART_MAP.md",
+    "art/PROMPTBOOK.md",
+    "brand/BRAND_GUIDE.md",
+    "art/root-generation-authorization.json",
+    "docs/BASELINE_AUDIT.md",
+    "marketing/community-playbook.md",
+    "docs/PUBLISHING.md",
+    "execution/reviews/W02-root-identity-source-use-review.json",
+    "brand/assets/identity/the-climb-master.png",
+    "brand/assets/illustration/series-master.png",
+    ".execution-private/broadcast-records-result-011.json",
+    ".execution-private/broadcast-records-result-012.json",
+    ".execution-private/broadcast-records-result-013.json",
+    "brand/provenance/root-export-receipts.json",
+    "brand/prompts/root/MKT-03/generation-001.txt",
+    "brand/prompts/root/MKT-03/generation-002.txt",
+    "brand/prompts/root/MKT-04/generation-001.txt",
+    "brand/prompts/root/MKT-04/generation-002.txt",
+    "brand/prompts/root/MKT-05/generation-001.txt",
+    "brand/prompts/root/MKT-06/generation-001.txt",
+    "brand/prompts/root/MKT-06/generation-002.txt",
+    "brand/prompts/root/MKT-07/generation-002.txt",
+    "brand/prompts/root/MKT-08/generation-002.txt",
+    "brand/prompts/root/GH-04-B/generation-002.txt",
+    "brand/sources/generated/MKT-04/generation-001.png",
+    "brand/sources/generated/MKT-04/generation-002.png",
+    "brand/sources/generated/MKT-07/generation-002.png",
+    "brand/sources/generated/MKT-06/generation-001.png",
+    "brand/sources/generated/MKT-06/generation-002.png",
+    "brand/sources/generated/MKT-05/generation-001.png",
+    "brand/sources/generated/MKT-03/generation-001.png",
+    "brand/sources/generated/MKT-03/generation-002.png",
+    "brand/sources/generated/MKT-08/generation-002.png",
+    "brand/sources/generated/GH-04-B/generation-002.png",
+    "brand/assets/marketing/season-key-visual.png",
+    "brand/assets/marketing/season-key-visual-vertical.png",
+    "brand/assets/marketing/email-run-card.png",
+    "brand/assets/marketing/release-template.png",
+    "brand/assets/marketing/contributor-template.png",
+    "brand/assets/marketing/challenge-template.png",
+    "brand/assets/marketing/thumbnail-outcome.png",
+    "brand/assets/marketing/thumbnail-question.png",
+    "brand/assets/marketing/sponsor-disclosure.png",
+    "brand/assets/github/sts2-core-banner-light.png",
+    "brand/assets/github/sts2-core-banner-dark.png"
+  ],
+  "source_pins": {
+    "asset_registry": {
+      "path": "art/asset-registry.json",
+      "sha256": "9f4417833c6c972ad6272a309b363a3c179d8199f65dd643c8fd064b95253ff3",
+      "selected_entries": [
+        "MKT-04",
+        "MKT-07",
+        "MKT-06",
+        "MKT-05",
+        "MKT-03",
+        "MKT-08",
+        "GH-04-B"
+      ]
+    },
+    "art_map": {
+      "path": "art/ART_MAP.md",
+      "sha256": "f1337e07c81f40a24cd66edb97465af0c8a9514cedcad930bf94c73a2c52732b",
+      "relevant_rows": [
+        "MKT-03 line 109",
+        "MKT-04 line 111",
+        "MKT-05 line 113",
+        "MKT-06 line 115",
+        "MKT-07 line 117",
+        "MKT-08 line 119",
+        "GH-04-B line 155"
+      ]
+    },
+    "promptbook": {
+      "path": "art/PROMPTBOOK.md",
+      "sha256": "a9581d8aa648897ba6e23bd9a9b41497d77f47158e14c511ed7959b330c2eb2e",
+      "relevant_sections": [
+        "MKT-03 lines 817-838",
+        "MKT-04 lines 841-862",
+        "MKT-05 lines 865-885",
+        "MKT-06 lines 888-909",
+        "MKT-07 lines 912-933",
+        "MKT-08 lines 936-956",
+        "GH-04-B lines 1240-1261"
+      ]
+    },
+    "brand_guide": {
+      "path": "brand/BRAND_GUIDE.md",
+      "sha256": "b1551f9c49572b0f1a8034fbdd7de89446bf119e2ad84bd5bea714575c4a8a23",
+      "relevant_rules": [
+        "The Climb — by AI Ascension is the series identity.",
+        "Use warm paper, ink, amber, branching paths, and restrained editorial typography.",
+        "Use visible evidence labels and do not present generated art as gameplay or product evidence.",
+        "Use approved generated identity exports when available; do not silently introduce an unverified logo or monogram."
+      ]
+    },
+    "authorization": {
+      "path": "art/root-generation-authorization.json",
+      "sha256": "230445ea910b47ae3f45af282a58f119872738e6659faa0761ea8065c7b6d9de",
+      "route": "user_authorized_root_image_tool",
+      "tool": "image_gen__imagegen",
+      "backend_attestation": "unknown",
+      "author_model_attestation": "unknown",
+      "native_agent_attestation": false
+    },
+    "baseline_facts": {
+      "path": "docs/BASELINE_AUDIT.md",
+      "sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690",
+      "relevant_reference": "Line 117 retains Road to the First Verified Win as season framing and says the evidence check did not find a model-played campaign Victory."
+    },
+    "community_playbook": {
+      "path": "marketing/community-playbook.md",
+      "sha256": "4e376b92a0506b15984a83d513357aec3536636ad44c123d382dff08c924c4af",
+      "relevant_boundary": "The playbook describes journeys and moderation; no community post, poll, contributor result, or creator agreement has occurred."
+    },
+    "generation_receipts": [
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-006.json",
+        "sha256": "35caf55e4293baebabbbb5784815cf970ed32fd14b253e7d195b780fde3cf6ed",
+        "records": [
+          "MKT-04-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-007.json",
+        "sha256": "6af7c63238b9d66dbe7a2f14fe861a810ce6b2eaa88bd8b8bd7cce21811bde89",
+        "records": [
+          "MKT-04-generation-002"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-008.json",
+        "sha256": "3c7e2d0e8b32bbba3fd5a0887c5631c7c4f31ad31383eb715bda60db3a394ef9",
+        "records": [
+          "MKT-07-generation-002"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-009.json",
+        "sha256": "2ecd02e416d0f0ba2b39e312f08ad8377ba737527e154ffa0c83fda11b8c4128",
+        "records": [
+          "MKT-06-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-010.json",
+        "sha256": "e95250995ffd260cc5e184d3cba8a56e7d6cdb1da5f8b8db6eb9a7aba9d207e4",
+        "records": [
+          "MKT-06-generation-002"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-011.json",
+        "sha256": "7e11d9d374f92b74ab14eb890d3a638143068cdca552ad8d4e529fce410cd651",
+        "records": [
+          "MKT-05-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-012.json",
+        "sha256": "6f1f68bfcb5ef01476fd2763eee63b12bfc566a4ffcc3898f970135e3184a20a",
+        "records": [
+          "MKT-03-generation-001"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-batch-013.json",
+        "sha256": "1705c38bd91b2891fc1d038e42e598e40d242282d291c26432152ec0d00f50b0",
+        "records": [
+          "MKT-03-generation-002"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-marketing-generation-repair-002.json",
+        "sha256": "9d659b2babc1959b7ecec6988dfcbf5a5c4aece92f1e1b2b469ca6151bd72d42",
+        "records": [
+          "MKT-08-generation-002"
+        ]
+      },
+      {
+        "path": "execution/reviews/root-github-banner-generation-repair-001.json",
+        "sha256": "617e0131241b112b843c23d80e5eb8a2c4c80e373483cab669dba0c915e2c1e7",
+        "records": [
+          "GH-04-B-generation-002"
+        ]
+      }
+    ],
+    "integration_receipts": [
+      {
+        "path": ".execution-private/broadcast-records-result-011.json",
+        "sha256": "2ad5630a0cdd9efc054bda3a8dac8f86df3b5158b3425554c6ecac4b72857674",
+        "recorded_at": "2026-09-08T01:58:25Z",
+        "records": [
+          "MKT-04-generation-001",
+          "MKT-04-generation-002"
+        ]
+      },
+      {
+        "path": ".execution-private/broadcast-records-result-012.json",
+        "sha256": "f20f8c1576b23a851d2b1ea2fe5b76c9a5121bd72f1723610f48f31f6cbb7194",
+        "recorded_at": "2026-09-08T02:03:12Z",
+        "records": [
+          "MKT-07-generation-002",
+          "MKT-06-generation-001",
+          "MKT-06-generation-002",
+          "MKT-05-generation-001",
+          "MKT-03-generation-001",
+          "MKT-03-generation-002"
+        ]
+      },
+      {
+        "path": ".execution-private/broadcast-records-result-013.json",
+        "sha256": "e5caf3c3e835d67c0bb6fffd1b0a6d9b0a933536adbf0e3ece37a3223dc293c3",
+        "recorded_at": "2026-09-08T02:15:36Z",
+        "records": [
+          "MKT-08-generation-002",
+          "GH-04-B-generation-002"
+        ]
+      }
+    ],
+    "export_receipts": {
+      "path": "brand/provenance/root-export-receipts.json",
+      "sha256": "2a2d85435e4075da51a68fef4369f489cb91c022f7935066e02e6982c4b0a88a",
+      "selected_output_count": 11,
+      "all_selected_outputs_found": true
+    },
+    "identity_reference_review": {
+      "path": "execution/reviews/W02-root-identity-source-use-review.json",
+      "sha256": "1a0a5f749de6f244be4bded45e541e55b0a60c305674624d1bbe97742ebc180e",
+      "use": "Referenced by the MKT-04 generation-001 source receipt for The Climb and series masters; this review does not extend its legal or publication scope."
+    }
+  },
+  "coverage": {
+    "families_reviewed": 3,
+    "family_groups": [
+      "marketing_campaign",
+      "marketing_blank_templates",
+      "github_banners"
+    ],
+    "source_pngs_viewed": 10,
+    "output_files_viewed": 11,
+    "source_hash_dimension_mode_result": "10/10 pass",
+    "output_hash_dimension_mode_result": "11/11 pass",
+    "source_mode_result": "10/10 RGB opaque",
+    "output_mode_result": "11/11 RGB opaque",
+    "template_copy_checks": [
+      "MKT-03",
+      "MKT-05",
+      "MKT-06",
+      "MKT-07",
+      "MKT-08"
+    ],
+    "season_framing_checks": [
+      "MKT-04"
+    ],
+    "banner_family_checks": [
+      "GH-04-B"
+    ]
+  },
+  "method": {
+    "image_inspection_tool": "view_image",
+    "actual_source_files_viewed_with_view_image": [
+      "brand/sources/generated/MKT-04/generation-001.png",
+      "brand/sources/generated/MKT-04/generation-002.png",
+      "brand/sources/generated/MKT-07/generation-002.png",
+      "brand/sources/generated/MKT-06/generation-001.png",
+      "brand/sources/generated/MKT-06/generation-002.png",
+      "brand/sources/generated/MKT-05/generation-001.png",
+      "brand/sources/generated/MKT-03/generation-001.png",
+      "brand/sources/generated/MKT-03/generation-002.png",
+      "brand/sources/generated/MKT-08/generation-002.png",
+      "brand/sources/generated/GH-04-B/generation-002.png"
+    ],
+    "actual_output_files_viewed_with_view_image": [
+      "brand/assets/marketing/season-key-visual.png",
+      "brand/assets/marketing/season-key-visual-vertical.png",
+      "brand/assets/marketing/email-run-card.png",
+      "brand/assets/marketing/release-template.png",
+      "brand/assets/marketing/contributor-template.png",
+      "brand/assets/marketing/challenge-template.png",
+      "brand/assets/marketing/thumbnail-outcome.png",
+      "brand/assets/marketing/thumbnail-question.png",
+      "brand/assets/marketing/sponsor-disclosure.png",
+      "brand/assets/github/sts2-core-banner-light.png",
+      "brand/assets/github/sts2-core-banner-dark.png"
+    ],
+    "checks": [
+      "Compared every selected source with its exact root prompt, generation receipt, asset-registry brief, and relevant ART_MAP/PROMPTBOOK section.",
+      "Verified all selected source and output hashes, dimensions, modes, and bytes against local files, the three integration receipts, and the current root export receipt.",
+      "Viewed all season title/identity labels and both landscape/portrait crops; confirmed the composition points toward an unfinished horizon without an achieved-victory visual claim.",
+      "Viewed every blank template source/output and checked exact titles, template statuses, labels, footer copy, empty value fields, and absence of fabricated content.",
+      "Viewed repaired GH-04-B source and both panel outputs; confirmed serif typography is coherent across light/dark panels and wording is complete."
+    ],
+    "not_tested": [
+      "No source, prompt, registry, manifest, ledger, or generated image was edited.",
+      "No approved challenge, per-episode outcome, release state, contributor attribution, sponsor agreement, consent, permission, publication, deployment, runtime, or live status was created or verified.",
+      "No copyright, trademark, license, sponsorship, rights, or legal clearance determination was made.",
+      "No platform-specific GitHub crop, email client rendering, or public distribution was exercised."
+    ]
+  },
+  "template_boundaries": {
+    "classification": "clean_blank_template_design_not_approved_content",
+    "families": [
+      "MKT-03",
+      "MKT-05",
+      "MKT-06",
+      "MKT-07",
+      "MKT-08"
+    ],
+    "explicit_limits": [
+      "MKT-03 thumbnail-outcome and thumbnail-question remain blank layouts; neither is an episode outcome, decision, choice, or sourced question until populated and reviewed.",
+      "MKT-05 challenge-template is not an approved or active community challenge; real challenge, rules, optional scheduled deadline, and source are still required.",
+      "MKT-06 release-template is not a release announcement; version and release state require exact current source data.",
+      "MKT-06 contributor-template is not an attribution; contributor identity, contribution, image/quote if any, and permission are still required.",
+      "MKT-07 email-run-card is not a digest, run, or episode result; values require an approved manifest and accessible text fallback outside the image.",
+      "MKT-08 sponsor-disclosure is a neutral unfilled disclosure template; sponsor documentation and completion remain required before publication."
+    ],
+    "family_completion": "not_marked_complete"
+  },
+  "campaign_framing_boundary": {
+    "asset_id": "MKT-04",
+    "source_path": "docs/BASELINE_AUDIT.md",
+    "source_sha256": "37c49a8eb6b7ade87457d6354e167a599ea4ac419997ad567e99cc934fff7690",
+    "reference": "The evidence check did not find a model-played campaign Victory; Road to the First Verified Win remains season framing.",
+    "art_result": "MKT-04 source and exports use the unfinished-road composition and do not depict or state an achieved win."
+  },
+  "summary": {
+    "source_ready_for_bounded_mechanical_export": [
+      "MKT-04-generation-001",
+      "MKT-04-generation-002",
+      "MKT-07-generation-002",
+      "MKT-06-generation-001",
+      "MKT-06-generation-002",
+      "MKT-05-generation-001",
+      "MKT-03-generation-001",
+      "MKT-03-generation-002",
+      "MKT-08-generation-002",
+      "GH-04-B-generation-002"
+    ],
+    "source_conditionally_ready": [],
+    "source_blocked_or_requires_creative_reflow": [],
+    "source_blockers_or_conditions": [
+      "MKT-04 is visually ready as season framing; it must not be presented as proof of a first verified win.",
+      "MKT-03, MKT-05, MKT-06, MKT-07, and MKT-08 are clean blank designs; actual approved challenge, episode outcome, release, contributor permission, sponsor documentation, and publication gates remain open.",
+      "GH-04-B serif repair is visually coherent; repository metadata, capability, and publication remain separate gates."
+    ],
+    "overall_visual_result": "All 10 selected sources and 11 outputs are clean, readable, correctly paired, and RGB opaque. The six template generations preserve honest blank states, MKT-04 preserves the Road to the First Verified Win season framing without a victory claim, MKT-08 has safe copy margins, and GH-04-B now matches the serif banner family.",
+    "decision": "Independent W02-007 visual/source review complete. Selected artwork is ready for bounded mechanical export handling. Blank designs remain templates, MKT-04 remains season framing, and no actual challenge, episode outcome, release, contributor permission, sponsor agreement, runtime, deployment, or publication approval is granted."
+  },
+  "approval_grant": false,
+  "source_use_and_rights_observation": {
+    "result": "bounded_generated_original_input_observation",
+    "observed_inputs": "Selected records are local root-route generated PNG sources; MKT-04 records preserve the named local identity/illustration references and factual document hashes; all other selected records declare no external generation references or preserve only their prior generated source lineage.",
+    "visual_observation": "No recognizable third-party mark, provider/publisher logo, proprietary game screenshot, gameplay capture, real metric, date, timer, sponsor identity, fabricated value, fake release state, fake contributor, or episode result was observed.",
+    "limits": [
+      "Not a copyright, trademark, license, permission, sponsorship, or legal clearance determination.",
+      "Generated artwork and blank templates are not gameplay, product, audience, campaign-performance, host, deployment, publication, or public-run evidence.",
+      "Root author model, native agent chain, image model, and image backend remain unverified.",
+      "Public publication/download still requires exact-digest, rights, source, and distribution gates."
+    ]
+  },
+  "unverified_or_deferred": [
+    "Actual approved challenge, episode outcome, sourced decision, release/version state, contributor identity/permission, sponsor documentation, and public publication remain unverified.",
+    "MKT-04 season title remains framing under docs/BASELINE_AUDIT.md line 117; no first verified win is established.",
+    "No GitHub/social/email client rendering, repository metadata, runtime, deployment, or live status was exercised.",
+    "No legal, trademark, license, sponsorship, permission, deployment, publication, or public-release decision is made here."
+  ]
+}

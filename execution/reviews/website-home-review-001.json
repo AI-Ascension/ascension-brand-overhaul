@@ -1,0 +1,24 @@
+{
+  "schema_version": "ai-ascension.website-home-review.v1",
+  "website_revision": "56e532b21922f39480cd15dcbb465676770408f5",
+  "reviewer": "root",
+  "scope": "Homepage report selection and copy change since full 110-state website review",
+  "automated_states": 10,
+  "automated_pass": true,
+  "manual_screenshots": [
+    {
+      "file": "home-360-dark.png",
+      "sha256": "264249248640133d469c4824bf6229632a911f2edfe3edf0d666d0a276f6902d"
+    },
+    {
+      "file": "home-1280-light.png",
+      "sha256": "f6ef6cafc4cfbe1512f87e63b463a5ea4e91bcbc459986d744203840c7e98dc2"
+    }
+  ],
+  "manual_result": "Both inspected renders show the latest Linux floor-24 report with 431 settled operations and one restart, clear report-only media status, visible working report/build routes, readable text, and no overlapping controls.",
+  "limits": [
+    "Local screenshot and browser checks; no deployment.",
+    "Existing website fonts remain in the website and are excluded from brand archives."
+  ],
+  "report_sha256": "ba504570bca76e268da2a4cdc706a4e36e55590179c06a5571c6bf3cca113fee"
+}

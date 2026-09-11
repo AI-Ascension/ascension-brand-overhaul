@@ -1,0 +1,31 @@
+{
+  "schema_version": "root-mechanical-motion-recipe-v1",
+  "asset_id": "CAST-06",
+  "generation_record_id": "CAST-06-generation-001",
+  "raw_source_path": "brand/sources/generated/CAST-06/generation-001.png",
+  "raw_source_sha256": "5c36822a7e7ae1b1105d27eaa2ff4d30034aa0ec9bce8af327eec3ff60373612",
+  "still_path": "brand/assets/broadcast/title-transition-still.png",
+  "still_sha256": "7a7ddf63595ead5d05bef6b314c6d0acc757ba1679a5ff0cc66213612c688962",
+  "output_path": "brand/assets/broadcast/title-transition.webm",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "frames": 45,
+  "duration_seconds": 1.5,
+  "fade_in_seconds": 0.3,
+  "fade_out_start_seconds": 1.2,
+  "fade_out_seconds": 0.3,
+  "codec": "libvpx-vp9",
+  "pixel_format": "yuv420p",
+  "audio": false,
+  "operations": [
+    "assemble_unchanged_frames",
+    "fade_generated_frames",
+    "encode",
+    "metadata_strip"
+  ],
+  "assembly_description": "Repeat the reviewed generated still for 45 frames, with one fade from black and one fade to black. No new shapes, labels, interpolation, audio or gameplay imagery.",
+  "reduced_motion_path": "brand/assets/broadcast/title-transition-still.png",
+  "review_state": "pending_independent_review",
+  "publication_approved": false
+}

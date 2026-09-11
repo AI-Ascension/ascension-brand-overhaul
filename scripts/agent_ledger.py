@@ -15,8 +15,8 @@ def stamp(value):
 
 def validate_ledger(data):
     root=data['root_id']; budget=data['budget']; nodes=data['agents']
-    if not isinstance(budget,int) or isinstance(budget,bool) or not 1<=budget<=12:
-        raise ValueError('Project descendant budget must be 1–12.')
+    if not isinstance(budget,int) or isinstance(budget,bool) or not 1<=budget<=250:
+        raise ValueError('Project descendant budget must be 1–250.')
     catalog={r['id']:r for r in json.loads((Path(__file__).resolve().parents[1]/'orchestration/roles.json').read_text())}
     mapping={n['id']:n for n in nodes}
     if len(mapping)!=len(nodes) or root in mapping: raise ValueError('Duplicate or root-colliding native IDs.')
@@ -39,7 +39,9 @@ def validate_ledger(data):
             po=stamp(p['opened_at']); pc=stamp(p['closed_at']) if p.get('closed_at') else None
             if opened<po or (pc and opened>=pc): raise ValueError('Child opened outside parent lifetime.')
             if pc and (closed is None or closed>pc): raise ValueError('Parent closed while child remained open.')
-        if n.get('model_verified'):
+        if not isinstance(n.get('model_verified', False), bool):
+            raise ValueError('model_verified must be a boolean, not a truthy value.')
+        if n.get('model_verified') is True:
             if (n.get('accepted_model'),n.get('accepted_effort'),n.get('observed_model'),n.get('observed_effort'))!=(MODEL,EFFORT,MODEL,EFFORT):
                 raise ValueError('Verified flag contradicts accepted/observed settings.')
             if not n.get('runtime_evidence_reference'): raise ValueError('Verified settings need runtime evidence, not self-report.')
@@ -49,7 +51,7 @@ def validate_ledger(data):
     for _,delta in sorted(events,key=lambda x:(x[0],x[1])):
         active+=delta; peak=max(peak,active)
     if peak>budget: raise ValueError(f'Peak {peak} exceeds global project budget {budget}.')
-    return {'recorded_descendants':len(nodes),'peak_open_descendants':peak,'currently_open_descendants':active,'has_depth_three_chain':any(n['depth']==3 for n in nodes),'astra_author_nodes':sum(n.get('requested_model')=='gpt-6-astra' for n in nodes),'all_models_verified':bool(nodes) and all(n.get('model_verified',False) for n in nodes)}
+    return {'recorded_descendants':len(nodes),'peak_open_descendants':peak,'currently_open_descendants':active,'has_depth_three_chain':any(n['depth']==3 for n in nodes),'astra_author_nodes':sum(n.get('requested_model')=='gpt-6-astra' for n in nodes),'all_models_verified':bool(nodes) and all(n.get('model_verified') is True for n in nodes)}
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__); parser.add_argument('ledger',type=Path); args=parser.parse_args()

@@ -1,0 +1,267 @@
+{
+  "schema_version": "ai-ascension.w06-implementation.v1",
+  "task_id": "W06-L",
+  "workstream": "W06",
+  "role_id": "W06-L",
+  "role_depth": 1,
+  "package_source_revision": "4d09cd40fb077cc3364197a1cb1056950b980361",
+  "worktree": "sts2-project-worktrees/brand-w06",
+  "write_lease": [
+    "marketing/",
+    "tests/test_marketing*.py",
+    "execution/w06-implementation.json"
+  ],
+  "forbidden_write_paths": [
+    "art/",
+    "brand/",
+    "orchestration/",
+    "website/",
+    "execution/source-snapshot.json",
+    "execution/capabilities.json"
+  ],
+  "parent": {
+    "role_id": "ROOT",
+    "parent_thread_id": null,
+    "note": "Native collaboration metadata is unavailable in this child session; no parent ID is invented."
+  },
+  "native_delegation": {
+    "required_chains": [
+      "ROOT -> W06-L -> W06-C1 -> W06-C1-BUILD",
+      "ROOT -> W06-L -> W06-C2 -> W06-C2-BUILD"
+    ],
+    "status": "blocked_native_spawn_unavailable",
+    "callable_surface_checked": [
+      "functions.exec",
+      "functions.wait",
+      "functions.request_user_input",
+      "functions.new_context"
+    ],
+    "missing_controls": [
+      "collaboration.spawn_agent",
+      "collaboration.send_message",
+      "collaboration.wait_agent",
+      "followup_task"
+    ],
+    "child_nodes": [
+      {
+        "role_id": "W06-C1",
+        "depth": 2,
+        "parent_role_id": "W06-L",
+        "requested_model": "gpt-5.6-luna",
+        "requested_effort": "max",
+        "accepted_model": null,
+        "observed_model": null,
+        "thread_id": null,
+        "status": "blocked"
+      },
+      {
+        "role_id": "W06-C1-BUILD",
+        "depth": 3,
+        "parent_role_id": "W06-C1",
+        "requested_model": "gpt-5.6-luna",
+        "requested_effort": "max",
+        "accepted_model": null,
+        "observed_model": null,
+        "thread_id": null,
+        "status": "blocked"
+      },
+      {
+        "role_id": "W06-C1-REVIEW",
+        "depth": 3,
+        "parent_role_id": "W06-C1",
+        "requested_model": "gpt-5.6-luna",
+        "requested_effort": "max",
+        "accepted_model": null,
+        "observed_model": null,
+        "thread_id": null,
+        "status": "blocked"
+      },
+      {
+        "role_id": "W06-C2",
+        "depth": 2,
+        "parent_role_id": "W06-L",
+        "requested_model": "gpt-5.6-luna",
+        "requested_effort": "max",
+        "accepted_model": null,
+        "observed_model": null,
+        "thread_id": null,
+        "status": "blocked"
+      },
+      {
+        "role_id": "W06-C2-BUILD",
+        "depth": 3,
+        "parent_role_id": "W06-C2",
+        "requested_model": "gpt-5.6-luna",
+        "requested_effort": "max",
+        "accepted_model": null,
+        "observed_model": null,
+        "thread_id": null,
+        "status": "blocked"
+      },
+      {
+        "role_id": "W06-C2-REVIEW",
+        "depth": 3,
+        "parent_role_id": "W06-C2",
+        "requested_model": "gpt-5.6-luna",
+        "requested_effort": "max",
+        "accepted_model": null,
+        "observed_model": null,
+        "thread_id": null,
+        "status": "blocked"
+      }
+    ],
+    "interpretation": "This lead completed the bounded W06 deliverables directly as an independent fallback. No C1/C2/coordinator/leaf ancestry or child result is claimed."
+  },
+  "source_baseline": {
+    "source_snapshot_path": "../brand-w01/execution/source-snapshot.json",
+    "source_snapshot_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+    "capabilities_path": "../brand-w01/execution/capabilities.json",
+    "refreshed_at": "2026-09-07",
+    "source_refs": [
+      {
+        "id": "HIST-WINDOWS-CAMPAIGN",
+        "revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+        "evidence_kind": "maintainer_reported_native_run",
+        "public_artifact": "report_only",
+        "interpretation": "Floor-17 Defeat, 333 settled operations, fresh complete replay; not a verified win or matched benchmark."
+      },
+      {
+        "id": "HIST-LINUX-CAMPAIGN",
+        "revision": "cb17b6c15262ce9356f1e85fd475af997aedc445",
+        "evidence_kind": "maintainer_reported_native_run",
+        "public_artifact": "report_only",
+        "interpretation": "Floor-24 Defeat after one controller restart, 431 settled operations, fresh complete replay; not uninterrupted control or matched benchmark."
+      },
+      {
+        "id": "HIST-TERMINAL-VICTORY",
+        "revision": "8b71150895ea95c0625afc1389bb08e4034d9350",
+        "evidence_kind": "forced_fixture",
+        "public_artifact": "report_only",
+        "interpretation": "Terminal observation with disabled input; not model-played campaign success."
+      },
+      {
+        "id": "HIST-PUBLIC-PROOF",
+        "revision": "bbe475998b0cd279309666f5cec3dc433d90a4a4",
+        "evidence_kind": "public_report",
+        "public_artifact": "replay",
+        "interpretation": "Historical stale-epoch gateway contract replay; not gameplay/provider evidence."
+      },
+      {
+        "id": "CAP-CANONICAL-DOMAIN",
+        "revision": "4e2d99c95d89ce3d18981d331faad10c9f1f7376",
+        "evidence_kind": "source_derived",
+        "public_artifact": "host_observed",
+        "interpretation": "Home HTTP 200; GET subscription 405; no successful POST or mail recorded."
+      }
+    ],
+    "model_rankings": "not_used; no inference from old rankings"
+  },
+  "deliverables": {
+    "launch": [
+      "marketing/launch/README.md",
+      "marketing/launch/first-episode.md",
+      "marketing/launch/launch-posts.md",
+      "marketing/launch/email-digest.md",
+      "marketing/launch/profile-and-press.md"
+    ],
+    "calendar": "marketing/calendar.json",
+    "episode_count": 12,
+    "clip_count": 24,
+    "article_count": 6,
+    "creator_kit": [
+      "marketing/creator-kit/README.md",
+      "marketing/creator-kit/outreach-drafts.md",
+      "marketing/creator-kit/creator-brief.md",
+      "marketing/creator-kit/request-template.md",
+      "marketing/creator-kit/attribution.md"
+    ],
+    "community": "marketing/community-playbook.md",
+    "experiments": "marketing/experiments.json",
+    "sponsorship": "marketing/sponsorship.md",
+    "source_map": "marketing/source-map.json",
+    "art_dependency": "marketing/asset-dependency.json",
+    "tests": [
+      "tests/test_marketing_package.py",
+      "tests/test_marketing_experiments.py",
+      "tests/test_marketing_files.py"
+    ]
+  },
+  "asset_gate": {
+    "registry_path": "art/asset-registry.json",
+    "registry_count": 72,
+    "blocked_count": 72,
+    "status": "blocked",
+    "blockers": [
+      "ORCH-NATIVE-SPAWN-UNAVAILABLE",
+      "IMAGE-BACKEND-UNVERIFIED",
+      "ART-PROVENANCE-ABSENT"
+    ],
+    "fallback_used": false,
+    "statement": "All visual references resolve to registry IDs and are explicitly blocked; no final creative prompt, image, SVG/CSS substitute, stock image, or generated evidence was created."
+  },
+  "checks": {
+    "command": "python3 -m unittest tests.test_marketing_package tests.test_marketing_experiments tests.test_marketing_files",
+    "status": "passed",
+    "result": "9 tests passed after cross-file experiment-contract repairs.",
+    "full_package_command": "python3 -m unittest discover -s tests -v",
+    "full_package_result": "170 tests passed at the independent frozen review revision; this count is not asserted for later integration commits.",
+    "full_package_revision": "0e03d97bc6af6b7622d33d830bdde1eef1c2b1d8",
+    "independent_review": "execution/reviews/W01-W06-review.md",
+    "repair_review_status": "pending_independent_recheck",
+    "negative_cases": [
+      "unsupported primary events cannot pass the event schema/contract cross-check",
+      "secondary metrics must resolve to real events or a declared metric mapping",
+      "derived metric definitions must match the canonical metric registry",
+      "all results and operations remain unobserved/draft"
+    ]
+  },
+  "file_hashes": {
+    "marketing/calendar.json": "7e35a12fd1333c0756aa98bd7ce60f9deeaceea3285b88b978f35385832236df",
+    "marketing/asset-dependency.json": "e75b24e9b6490f9049d70a13e2014f53bafb9d9897eb9ee29e2b4855164904f1",
+    "marketing/source-map.json": "b5cabfabd4343791d32c780be300efa2c6399716118b6457d49a578bbd6311d2",
+    "marketing/experiments.json": "886335672e211a7355a22e40fc6bcc17e246622ffa7e9a445556636f7d136289",
+    "marketing/launch/first-episode.md": "e2832e6098550e7d37a563f0271ed29d4d57e1038e25e7058e279ebb8ba6b9ab",
+    "marketing/launch/launch-posts.md": "192599a3fb1c1b3f2282b4909326d0b204257a1d71c60eb4e31eea68f3480568",
+    "marketing/launch/email-digest.md": "6fa523054254867d8582fe085a57464ff49f5fcab46a515a8cd071908636d63f",
+    "marketing/launch/profile-and-press.md": "12cfd711a475c4a4f13b8654a92a987bde04e724e05643563276faaf9eafd7ce",
+    "marketing/community-playbook.md": "4e376b92a0506b15984a83d513357aec3536636ad44c123d382dff08c924c4af",
+    "marketing/sponsorship.md": "8a7b51045675903035c9a8890d9e5b158bce2bde47b2e0f3b5c5f2562083eed5",
+    "tests/test_marketing_package.py": "178931802abfa0d90033d11df1ae5521ffb50450fb7cca94f0b9a8c7cbe7b472",
+    "tests/test_marketing_experiments.py": "77e8e57f8b215f39637e5785f49fceb413016caa3cded6f16324d6a89f3672fd",
+    "tests/test_marketing_files.py": "ca969ac0af5fdc3d918a42af5277572c66cebfe7ea78511e0aa083a9a77634ad"
+  },
+  "release_dimensions": {
+    "locally_verified": true,
+    "merged": false,
+    "deployed": false,
+    "campaign_operated": false
+  },
+  "remaining_gates": [
+    "Independent recheck of the experiment-contract repairs; the original W06 copy/source review is complete.",
+    "Native nested delegation evidence if the collaboration interface becomes available.",
+    "Astra depth-3 lineage and trustworthy gpt-image-2 backend attestation for all 72 art IDs.",
+    "Approved capture/manifest/rights before any video claim.",
+    "Approved launch date, destination deployment, subscription POST/mail verification, and operator authorization before sending or posting.",
+    "Observed campaign metrics; all experiment results remain unobserved."
+  ],
+  "decision_summary": "The complete authored campaign kit remains draft and unoperated. Independent W01 review confirmed the source, counts, report-only alternatives and privacy boundaries; root repaired experiment-contract gaps and is awaiting recheck. Artwork, native nested delegation, production destinations and operation authority remain gated.",
+  "historical_builder_checks": {
+    "command": "python3 -m unittest tests/test_marketing_package.py tests/test_marketing_experiments.py tests/test_marketing_files.py -v",
+    "status": "passed",
+    "result": "9 tests passed; full package discovery also passed 60 tests.",
+    "full_package_command": "python3 -m unittest discover -s tests -v",
+    "full_package_result": "60 tests passed",
+    "independent_review": "blocked_native_reviewer_unavailable",
+    "negative_cases": [
+      "blocked assets remain not delivered",
+      "future destinations remain gated",
+      "result placeholders remain unobserved",
+      "private data and contacts are excluded"
+    ]
+  },
+  "measurement_repairs": {
+    "MKT-01": "EXP-07 now measures evidence_open against eligible run_page_view, with no correction-submission claim or unsupported event.",
+    "MKT-02": "Secondary proxies reference repeat-engagement-proxy with explicit event sources, consent, calendar-month scope, exclusions, absence behavior and non-person/non-return interpretation.",
+    "MKT-03": "Original builder count retained as historical; exact 170-test independent integration revision is now explicit."
+  }
+}

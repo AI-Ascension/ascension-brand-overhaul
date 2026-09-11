@@ -9,7 +9,14 @@ import struct
 import sys
 import xml.etree.ElementTree as ET
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from art_policy import POLICY, validate_generation_record
+from art_policy import (
+    ART_ROLES,
+    LEGACY_ROUTE,
+    ROOT_ROUTE,
+    POLICY,
+    ROUTES,
+    validate_generation_record,
+)
 from agent_ledger import validate_ledger
 
 FONTS = {'.ttf', '.otf', '.woff', '.woff2', '.ttc', '.eot'}
@@ -49,13 +56,69 @@ def inspect_svg(raw):
     return el
 
 
+def asset_route(planned, delivered, records):
+    """Resolve one route for an asset and report contradictory declarations."""
+    hints = []
+    for label, row in (('planned asset', planned), ('delivered asset', delivered)):
+        route = row.get('generation_route')
+        if route is not None:
+            hints.append((label, route))
+    for record in records:
+        if isinstance(record, dict):
+            route = record.get('generation_route', LEGACY_ROUTE)
+            if not isinstance(route, str):
+                return None, ['Invalid artwork generation route in generation record.']
+            hints.append(('generation record', route))
+    if not hints:
+        # Preserve the pre-route manifest format for historical legacy records.
+        return LEGACY_ROUTE, []
+    invalid = [str(route) for _, route in hints if not isinstance(route, str)]
+    if invalid:
+        return None, ['Invalid artwork generation route: ' + ', '.join(invalid)]
+    routes = {route for _, route in hints}
+    if len(routes) > 1:
+        return None, ['Conflicting artwork generation routes: ' + ', '.join(sorted(map(str, routes)))]
+    return next(iter(routes)), []
+
+
+def validate_route_metadata(route, planned, delivered, aid):
+    """Check optional registry metadata without weakening record-level checks."""
+    errors = []
+    if not isinstance(route, str):
+        return ['Unknown artwork generation route: ' + str(route)]
+    spec = ROUTES.get(route)
+    if spec is None:
+        return ['Unknown artwork generation route: ' + str(route)]
+    expected_origin = spec.get('origin')
+    for label, row in (('planned', planned), ('delivered', delivered)):
+        if 'origin' in row and row.get('origin') != expected_origin:
+            errors.append(f'Wrong {label} artwork origin for {aid}: {row.get("origin")}')
+        if route == ROOT_ROUTE:
+            expected = {
+                'prompt_author_role_id': 'ROOT',
+                'prompt_author_model': 'unknown',
+                'prompt_author_effort': 'unknown',
+                'generation_model': 'unknown',
+            }
+        else:
+            expected_role = planned.get('prompt_author_role_id')
+            expected = {
+                'prompt_author_role_id': expected_role,
+                'prompt_author_model': 'gpt-6-astra',
+                'prompt_author_effort': 'max',
+                'generation_model': 'gpt-image-2',
+            }
+            if expected_role not in ART_ROLES:
+                errors.append(f'Wrong planned Astra author role for {aid}: {expected_role}')
+        for field, value in expected.items():
+            if field in row and row.get(field) != value:
+                errors.append(f'Wrong {label} {field} for {aid}: {row.get(field)}')
+    return errors
+
+
 def verify(registry, manifest, root, ledger=None):
     errors = []
-    if ledger is not None:
-        try:
-            validate_ledger(ledger)
-        except (ValueError, KeyError, TypeError) as exc:
-            errors.append('Native ledger rejected: ' + str(exc))
+    ledger_checked = False
     entries = {a['asset_id']: a for a in manifest}
     if len(entries) != len(manifest):
         errors.append('Duplicate delivered asset IDs.')
@@ -74,25 +137,74 @@ def verify(registry, manifest, root, ledger=None):
             continue
         if planned.get('method') != 'generate' or got.get('method') != 'generate':
             errors.append('All new artwork must use generation: ' + aid)
-        if got.get('origin') != 'astra_authored_gpt_image_2':
-            errors.append('Wrong artwork origin: ' + aid)
+        records = got.get('generation_records', [])
+        if not isinstance(records, list):
+            errors.append('Generation records must be an array: ' + aid)
+            records = []
+        route, route_errors = asset_route(planned, got, records)
+        errors.extend(aid + ': ' + message for message in route_errors)
+        if route is not None:
+            errors.extend(validate_route_metadata(route, planned, got, aid))
+            spec = ROUTES.get(route, {})
+            if got.get('origin') != spec.get('origin'):
+                errors.append('Wrong artwork origin for route: ' + aid)
+            if route == LEGACY_ROUTE and ledger is not None and not ledger_checked:
+                try:
+                    validate_ledger(ledger)
+                except (ValueError, KeyError, TypeError) as exc:
+                    errors.append('Native ledger rejected: ' + str(exc))
+                ledger_checked = True
         if not got.get('reviewer_reference'):
             errors.append('Missing independent reviewer: ' + aid)
         if got.get('rights_status') in {None, 'unreviewed', 'unknown', 'blocked'}:
             errors.append('Uncleared use: ' + aid)
         if not got.get('source_references'):
             errors.append('Missing source lineage: ' + aid)
-        records = got.get('generation_records', [])
         if not records:
-            errors.append('Missing Astra/gpt-image-2 generation records: ' + aid)
-        record_map = {r['record_id']: r for r in records}
-        if len(record_map) != len(records):
-            errors.append('Duplicate generation record ID: ' + aid)
+            errors.append('Missing artwork generation records: ' + aid)
+        record_map = {}
         for record in records:
-            errors.extend(aid + ': ' + message for message in validate_generation_record(record, planned, root, ledger))
+            if not isinstance(record, dict):
+                errors.append('Malformed generation record: ' + aid)
+                continue
+            record_id = record.get('record_id')
+            if not isinstance(record_id, str) or not record_id:
+                errors.append('Generation record lacks an ID: ' + aid)
+                continue
+            if record_id in record_map:
+                errors.append('Duplicate generation record ID: ' + aid)
+            record_map[record_id] = record
+        for record in records:
+            if not isinstance(record, dict):
+                continue
+            if route is not None and record.get('generation_route', LEGACY_ROUTE) != route:
+                errors.append(aid + ': Generation record route does not match the asset route.')
+            generation_plan = planned
+            source_asset = record.get('asset_id')
+            if source_asset != aid:
+                # A crop of a declared parent reuses that actual generation call.
+                # Never invent a second image invocation for a mechanical derivative.
+                parent_plan = expected.get(source_asset) if isinstance(source_asset, str) else None
+                parent_delivery = entries.get(source_asset, {}) if isinstance(source_asset, str) else {}
+                parent_records = parent_delivery.get('generation_records', [])
+                if (route != ROOT_ROUTE
+                        or source_asset not in planned.get('parent_asset_ids', [])
+                        or parent_plan is None
+                        or parent_delivery.get('status') != 'verified'
+                        or not isinstance(parent_records, list)
+                        or record not in parent_records):
+                    errors.append(aid + ': Shared generation requires an exact record from a verified declared parent.')
+                    continue
+                generation_plan = parent_plan
+            errors.extend(aid + ': ' + message for message in validate_generation_record(record, generation_plan, root, ledger))
         export_map = {e['path']: e for e in got.get('exports', [])}
         if len(export_map) != len(got.get('exports', [])):
             errors.append('Duplicate export path: ' + aid)
+        expected_paths = {e['path'] for e in planned['exports']}
+        if set(export_map) != expected_paths:
+            errors.append('Delivered exports must exactly match the planned export set: ' + aid)
+        if len({path.casefold() for path in export_map}) != len(export_map):
+            errors.append('Export paths collide on a case-insensitive filesystem: ' + aid)
         for e in planned['exports']:
             actual = export_map.get(e['path'])
             if not actual:
@@ -136,17 +248,17 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--manifest', required=True, type=Path)
     p.add_argument('--root', required=True, type=Path)
-    p.add_argument('--ledger', required=True, type=Path, help='Actual native agent ledger, not a fabricated test fixture.')
+    p.add_argument('--ledger', type=Path, help='Actual native agent ledger for legacy Astra records; omit for root-authorized records.')
     p.add_argument('--registry', type=Path, default=Path(__file__).resolve().parents[1] / 'art/asset-registry.json')
     a = p.parse_args()
     try:
-        errors = verify(json.loads(a.registry.read_text()), json.loads(a.manifest.read_text()), a.root,
-                        json.loads(a.ledger.read_text()))
+        ledger = json.loads(a.ledger.read_text()) if a.ledger else None
+        errors = verify(json.loads(a.registry.read_text()), json.loads(a.manifest.read_text()), a.root, ledger)
     except (OSError, ValueError, KeyError, TypeError) as exc:
         p.exit(1, str(exc) + '\n')
     if errors:
         p.exit(1, '\n'.join(errors) + '\n')
-    print('PASS: declared Astra/gpt-image-2 policy, native-ledger consistency, hashes and supported file checks.')
+    print('PASS: declared artwork routes, provenance, hashes and supported file checks.')
     print('Inspect referenced actual runtime/image-call evidence and all exports independently; this is not provider attestation.')
 
 if __name__ == '__main__':

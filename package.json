@@ -1,0 +1,13 @@
+{
+  "name": "ai-ascension-brand-verification",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local browser verification for the AI Ascension presentation overhaul",
+  "scripts": {
+    "test:python": "python3 -m unittest discover -s tests -v"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "playwright": "1.63.0"
+  }
+}

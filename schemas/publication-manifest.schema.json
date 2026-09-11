@@ -1,0 +1,914 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-ascension.example/schemas/publication-manifest-v2.json",
+  "title": "AI Ascension public run publication manifest v2",
+  "description": "A sanitized, versioned public projection. Schema conformance does not grant publication authority; the offline publisher independently checks the digest-bound approval.",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{2,79}$"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "safe_uri": {
+      "type": "string",
+      "pattern": "^(https://[A-Za-z0-9.-]+(?::[0-9]{1,5})?(?:/[A-Za-z0-9._~!$&'()*+,;=:@%/-]*)?|/[A-Za-z0-9._~!$&'()*+,;=:@%/-]+)$"
+    },
+    "source_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "uri": {
+          "$ref": "#/$defs/safe_uri"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "digest": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/digest"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "label",
+        "uri",
+        "revision",
+        "digest"
+      ]
+    },
+    "model_configuration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "identifier": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "provider": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "calls_measured": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "identifier",
+        "provider",
+        "revision",
+        "calls_measured"
+      ]
+    },
+    "game_configuration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "game": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "platform": {
+          "enum": [
+            "windows",
+            "linux",
+            "macos",
+            "other",
+            "unknown"
+          ]
+        },
+        "build": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "mod_revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "harness_revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "game",
+        "build",
+        "mod_revision",
+        "harness_revision"
+      ]
+    },
+    "resource_budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "provider_calls": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "wall_time_seconds": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "token_budget": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "description",
+        "provider_calls",
+        "wall_time_seconds",
+        "token_budget"
+      ]
+    },
+    "intervention": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "occurred": {
+          "type": "boolean"
+        },
+        "kind": {
+          "enum": [
+            "none",
+            "human",
+            "operator",
+            "retry",
+            "unknown"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        }
+      },
+      "required": [
+        "occurred",
+        "kind",
+        "summary"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "content_digest": {
+          "$ref": "#/$defs/digest"
+        },
+        "references": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source_reference"
+          },
+          "maxItems": 50
+        }
+      },
+      "required": [
+        "record_id",
+        "revision",
+        "content_digest",
+        "references"
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "availability": {
+          "enum": [
+            "none",
+            "report_only",
+            "video",
+            "replay_package",
+            "video_and_replay"
+          ]
+        },
+        "video_url": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/safe_uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "replay_url": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/safe_uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/safe_uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rights_status": {
+          "enum": [
+            "unknown",
+            "blocked",
+            "approved"
+          ]
+        },
+        "caption_support": {
+          "enum": [
+            "exact",
+            "partial",
+            "none"
+          ]
+        }
+      },
+      "required": [
+        "availability",
+        "video_url",
+        "replay_url",
+        "evidence_reference",
+        "rights_status",
+        "caption_support"
+      ]
+    },
+    "explanation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "model_published",
+            "human_analysis",
+            "retrospective_summary"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 120
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "text",
+        "source_reference"
+      ]
+    },
+    "action_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "action-v1"
+        },
+        "public_run_id": {
+          "$ref": "#/$defs/id"
+        },
+        "decision_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]{2,119}$"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "turn": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "floor": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "state_visibility": {
+          "enum": [
+            "approved",
+            "redacted"
+          ]
+        },
+        "state_summary": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 4000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "legal_choices": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "maxItems": 100
+        },
+        "chosen_action": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_consequence": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_ref": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/safe_uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "explanation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/explanation"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timing": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "media_offset_ms": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "captured": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "media_offset_ms",
+                "captured"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "decision_card": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "status": {
+                  "enum": [
+                    "unavailable",
+                    "available"
+                  ]
+                },
+                "asset_id": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 160
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "artifact_digest": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/$defs/digest"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "provenance_reference": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/$defs/safe_uri"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "status",
+                "asset_id",
+                "artifact_digest",
+                "provenance_reference"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "public_run_id",
+        "decision_id",
+        "sequence",
+        "turn",
+        "floor",
+        "state_visibility",
+        "state_summary",
+        "legal_choices",
+        "chosen_action",
+        "observed_consequence",
+        "evidence_ref",
+        "explanation",
+        "timing",
+        "decision_card"
+      ]
+    },
+    "action_timeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "action-timeline-v1"
+        },
+        "public_run_id": {
+          "$ref": "#/$defs/id"
+        },
+        "status": {
+          "enum": [
+            "unavailable",
+            "available"
+          ]
+        },
+        "decisions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/action_record"
+          },
+          "maxItems": 10000
+        }
+      },
+      "required": [
+        "schema_version",
+        "public_run_id",
+        "status",
+        "decisions"
+      ]
+    },
+    "evidence_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "capture_scope": {
+          "enum": [
+            "report_only",
+            "state_only",
+            "state_and_media"
+          ]
+        },
+        "observed_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "maxItems": 100
+        },
+        "redacted_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "maxItems": 100
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 120
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "capture_scope",
+        "observed_fields",
+        "redacted_fields",
+        "source_reference"
+      ]
+    },
+    "decision_card": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "unavailable",
+            "available"
+          ]
+        },
+        "asset_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifact_digest": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/digest"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "provenance_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/safe_uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "provenance_status": {
+          "enum": [
+            "unverified",
+            "approved"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "asset_id",
+        "artifact_digest",
+        "provenance_reference",
+        "provenance_status"
+      ]
+    },
+    "case_study": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "unavailable",
+            "published"
+          ]
+        },
+        "summary": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 120
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "summary",
+        "source_reference"
+      ]
+    },
+    "local_guess_reveal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "unavailable",
+            "available"
+          ]
+        },
+        "mode": {
+          "const": "local_only"
+        },
+        "legal_option_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "status",
+        "mode",
+        "legal_option_count"
+      ]
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "const": "public-run-v2"
+    },
+    "public_run_id": {
+      "$ref": "#/$defs/id"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "recorded_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "publication_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "classification": {
+      "enum": [
+        "synthetic",
+        "private",
+        "approved_public"
+      ]
+    },
+    "evidence_kind": {
+      "enum": [
+        "report_only",
+        "native_run",
+        "replay",
+        "forced_fixture"
+      ]
+    },
+    "outcome": {
+      "enum": [
+        "victory",
+        "defeat",
+        "interrupted",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "model_configuration": {
+      "$ref": "#/$defs/model_configuration"
+    },
+    "game_configuration": {
+      "$ref": "#/$defs/game_configuration"
+    },
+    "observation_policy": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "seed_policy": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "resource_budget": {
+      "$ref": "#/$defs/resource_budget"
+    },
+    "intervention": {
+      "$ref": "#/$defs/intervention"
+    },
+    "source": {
+      "$ref": "#/$defs/source"
+    },
+    "evidence": {
+      "$ref": "#/$defs/evidence"
+    },
+    "action_timeline": {
+      "$ref": "#/$defs/action_timeline"
+    },
+    "evidence_context": {
+      "$ref": "#/$defs/evidence_context"
+    },
+    "decision_card": {
+      "$ref": "#/$defs/decision_card"
+    },
+    "case_study": {
+      "$ref": "#/$defs/case_study"
+    },
+    "local_guess_reveal": {
+      "$ref": "#/$defs/local_guess_reveal"
+    },
+    "approval_reference": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:-]{1,159}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "disclosures": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 1000
+      },
+      "maxItems": 100
+    },
+    "test_fixture": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "public_run_id",
+    "title",
+    "recorded_at",
+    "publication_version",
+    "classification",
+    "evidence_kind",
+    "outcome",
+    "model_configuration",
+    "game_configuration",
+    "observation_policy",
+    "seed_policy",
+    "resource_budget",
+    "intervention",
+    "source",
+    "evidence",
+    "action_timeline",
+    "evidence_context",
+    "decision_card",
+    "case_study",
+    "local_guess_reveal",
+    "approval_reference",
+    "disclosures",
+    "test_fixture"
+  ]
+}

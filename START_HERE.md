@@ -1,5 +1,10 @@
 # Start the implementation
 
+> **Product model choice (2026-09-08):** Individuals choose their own model and provider. Ascension must support extension through compatible provider adapters without a fixed model/vendor requirement. See [docs/MODEL_CHOICE.md](docs/MODEL_CHOICE.md). Model-specific test reports describe observed configurations, not restrictions on user choice.
+
+> **Recorded user amendment (2026-09-07):** The user authorized root image generation: "you can of course generate them images instead." For current artwork, use `user_authorized_root_image_tool` as recorded in [art/root-generation-authorization.json](art/root-generation-authorization.json). The available tool does not attest its backend or the root model, so these remain unknown. This amends the artwork author/backend route only; independent review, original sources, mechanical-export limits, evidence boundaries, all 72 asset families and the remaining project requirements still apply. Historical Astra-specific wording below describes the original route.
+
+
 The repository name omitted from the request is resolved to **AI-Ascension/ascension-brand-overhaul**. This is the new canonical home for brand sources, publishing tools, campaign materials, integration manifests, and rollout evidence; it does not absorb runtime implementation code from other repositories.
 
 Give an execution-capable agent the extracted directory and this instruction:
@@ -14,4 +19,4 @@ Use `art/asset-board.html` in a browser for the art map, or read `art/ART_MAP.md
 
 After an interruption, use `prompts/CONTINUE.md`. After integration, use `prompts/AUDIT_AND_REPAIR.md`. Use `prompts/RELEASE.md` only within already authorized operational scope. The release prompt cannot grant permission on the user's behalf.
 
-The art policy replaces the older deterministic/vector/reuse lanes. Read `REVISION_NOTES.md` and `art/ASTRA_GPT_IMAGE_2_POLICY.md` before executing any art task. Keep the 49-role topology and twelve-open-descendant budget; do not change every implementation agent to Astra.
+The art policy replaces the older deterministic/vector/reuse lanes. Read `REVISION_NOTES.md` and `art/ASTRA_GPT_IMAGE_2_POLICY.md` before executing any art task. Keep the 49-role topology and 250-open-descendant budget; do not change every implementation agent to Astra.

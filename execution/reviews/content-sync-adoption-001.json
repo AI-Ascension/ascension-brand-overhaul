@@ -1,0 +1,44 @@
+{
+  "schema_version": "ai-ascension.content-sync-adoption.v1",
+  "observed_at": "2026-09-07T16:50:56.631919+00:00",
+  "reviewer": "root",
+  "consumer_repository": "AI-Ascension/aiascension.tech",
+  "consumer_revision": "56e532b21922f39480cd15dcbb465676770408f5",
+  "canonical_revision": "c09a9da28ff4ee2264139353ba2313804ab55104",
+  "receipt_sha256": "2756ff950584de4df0406970b7294307d76e609a65ac420267d07e5a0c3c7817",
+  "review_procedure": "Validated strict receipt schema, immutable canonical Git blobs, and identical existing destination bytes for both managed token files before establishing protected canonical authority. No consumer file changed.",
+  "managed_files": [
+    {
+      "destination": "assets/brand/tokens.css",
+      "sha256": "68922303e31051e522704061d3bd72d4735e3eea1f072ec2a10a104557e31ba2",
+      "source": "brand/tokens.css"
+    },
+    {
+      "destination": "assets/brand/tokens.json",
+      "sha256": "222bf6fd2806532ebedb2f748a9ab89b870b4da6d3aa4bbf4e614dd72194e2d8",
+      "source": "brand/tokens.json"
+    }
+  ],
+  "subsequent_dry_run": {
+    "mode": "dry_run",
+    "source_revision": "c09a9da28ff4ee2264139353ba2313804ab55104",
+    "changed_files": [],
+    "receipt": {
+      "schema_version": "brand-content-sync-v1",
+      "source_revision": "c09a9da28ff4ee2264139353ba2313804ab55104",
+      "files": [
+        {
+          "source": "brand/tokens.css",
+          "destination": "assets/brand/tokens.css",
+          "sha256": "68922303e31051e522704061d3bd72d4735e3eea1f072ec2a10a104557e31ba2"
+        },
+        {
+          "source": "brand/tokens.json",
+          "destination": "assets/brand/tokens.json",
+          "sha256": "222bf6fd2806532ebedb2f748a9ab89b870b4da6d3aa4bbf4e614dd72194e2d8"
+        }
+      ]
+    }
+  },
+  "scope": "Local reviewed migration of an earlier receipt; not remote publication or artwork approval."
+}

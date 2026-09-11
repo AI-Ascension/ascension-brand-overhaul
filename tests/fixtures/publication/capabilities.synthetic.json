@@ -1,0 +1,18 @@
+[
+  {
+    "capability_id": "synthetic-renderer",
+    "display_label": "Synthetic renderer",
+    "claim": "Renders a local fixture for contract tests.",
+    "source_url": "https://example.invalid/fixtures/synthetic-renderer",
+    "source_revision": "fixture-v1",
+    "evidence_kind": "offline_test",
+    "verification_actor": "none",
+    "public_artifact_availability": "report_only",
+    "release_support": "none",
+    "tested_configuration": "Python local fixture",
+    "observed_at": null,
+    "last_reviewed_at": null,
+    "review_status": "unreviewed",
+    "public_notes": "Synthetic fixture; no current product capability claim."
+  }
+]

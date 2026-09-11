@@ -1,0 +1,91 @@
+{
+  "schema_version": "ai-ascension.requirement-evidence.v1",
+  "requirement_id": "REQ-016",
+  "binding_requirement": "Tests cover successful, duplicate, throttled, malformed, failed-mail, and concurrent requests.",
+  "binding_input_revision": "5a2acfd6690d2533af046a7afcf3a7782b29042b",
+  "binding_requirements_sha256": "0840569555e0f9ec206a92285d19adc1c6071129a0529c74fe3f929a15de60f3",
+  "recorded_at": "2026-09-07T21:50:56.086668+00:00",
+  "status": "verified",
+  "reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
+  "actual_review_records": [
+    "execution/reviews/W07-final-acceptance-source-review.md",
+    "execution/reviews/W03-repair-review-002.json",
+    "execution/reviews/subscription-http-review-002.json",
+    "execution/reviews/website-home-review-001.json",
+    "execution/reviews/W03-root-website-art-review.json",
+    "execution/reviews/root-art-subscription-http.json",
+    "execution/reviews/W03-root-website-art-followup.json"
+  ],
+  "procedures": [
+    "php vendor/bin/phpunit (website checkout;29tests/111assertions)",
+    "python3 scripts/review_subscription_http.py (exact isolated options and30checks in receipt)",
+    "node scripts/browser_review.mjs (earlier source-bound110-state receipt; final homepage10states/two renders separately reviewed)"
+  ],
+  "result_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+  "artifacts": [
+    {
+      "path": "github/website-pull-request.json",
+      "sha256": "770fdf6d23af98ac6203eac186f015afffd7cacc8d6b68dde4bc0b00d245a54a",
+      "bytes": 880
+    },
+    {
+      "path": "execution/output-locations.json",
+      "sha256": "0736e3cae78789002ead27a8b256f0e1ba9412fa77a48f240f3e594a59fd6ab8",
+      "bytes": 1651
+    },
+    {
+      "path": "execution/reviews/W03-repair-review-002.json",
+      "sha256": "3824f715a4a89e1e80a4fdf6e155a2f2eb91bd1a544d9c513e7ff8011f306083",
+      "bytes": 3702
+    },
+    {
+      "path": "execution/reviews/subscription-http-review-002.json",
+      "sha256": "4d35a5f0d6d3bd8326271724462d2861fd63f0268b830e41c2d5d57815b95f2a",
+      "bytes": 3602
+    },
+    {
+      "path": "execution/reviews/website-home-review-001.json",
+      "sha256": "99b990749389058311192234176ca1fc68d731c217f9644be248bebfd6206dac",
+      "bytes": 1083
+    },
+    {
+      "path": "execution/reviews/W07-final-acceptance-source-review.md",
+      "sha256": "31a6a4c9941f72fb69ed3d04ccb1f678bdb72f8511658e329cca295ab1391e9c",
+      "bytes": 8769
+    },
+    {
+      "path": "execution/reviews/W03-root-website-art-review.json",
+      "sha256": "fb766513c829f081ba8260ff7989324edcd90487ee9ce33bfb3828bb2ec380a5",
+      "bytes": 11916
+    },
+    {
+      "path": "execution/reviews/root-art-subscription-http.json",
+      "sha256": "8fd056fd257f15a551eb59eaa8153ddf00e5ae881a0fc8b258d56e7788f3859d",
+      "bytes": 3229
+    },
+    {
+      "path": "execution/reviews/W03-root-website-art-followup.json",
+      "sha256": "bce7c7f5f7a15abd5e054396d7a525d2034db2513e3d64473ef558817d0b0833",
+      "bytes": 37634
+    },
+    {
+      "path": "github/website-art-candidate.json",
+      "sha256": "899915176772943a8b190652207e7ccd5dedd95ad8b721ff51070350b09a67b7",
+      "bytes": 8145
+    }
+  ],
+  "blocker": null,
+  "notes": "Read the exact source/review scope; actual operations and unavailable evidence remain separate.",
+  "environment_reference": "execution/toolchain.json and execution/reviews/final-local-checks.json; source-specific environments in linked reviews",
+  "source_binding": "Current artifact bytes are listed here. Historical review/test dates and revisions remain those named inside each review. The root artwork amendment and current acceptance records describe the new partial-art scope; this binding refresh does not repeat historical host or provider observations.",
+  "companion_source": {
+    "repository": "AI-Ascension/aiascension.tech",
+    "revision": "56e532b21922f39480cd15dcbb465676770408f5",
+    "manifest": "github/website-pull-request.json"
+  },
+  "private_website_art_candidate": {
+    "revision": "7e63ff4a5317de5305602f5d407a93246e66d248",
+    "manifest": "github/website-art-candidate.json",
+    "publicly_uploaded": false
+  }
+}

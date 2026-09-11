@@ -1,0 +1,25 @@
+[
+  {
+    "asset_id": "MKT-05",
+    "generation_id": "MKT-05-generation-002",
+    "prompt_path": "brand/prompts/root/MKT-05/generation-002.txt",
+    "prompt_sha256": "b895fd6e95f677a2f6ab6d8c673b8bc701782b10e55c5bf86802b50c46e70f74",
+    "source_path": "brand/sources/generated/MKT-05/generation-002.png",
+    "source_sha256": "19abefb87c181f2f0a39258f8c0481df1340f471aa92e8f8de29f310b04914d9",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "tool": "image_gen__imagegen",
+    "author_role": "ROOT",
+    "references": [
+      {
+        "path": "brand/sources/generated/MKT-05/generation-001.png",
+        "sha256": "2bae2ee03e40519af7968766d4613a2c7c360082b9c6adea797472068a11eb64"
+      }
+    ],
+    "status": "generated_pending_export_and_independent_review",
+    "observed_at": "2026-09-08T03:39:22.519488+00:00"
+  }
+]

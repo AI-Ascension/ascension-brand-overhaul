@@ -1,0 +1,2772 @@
+{
+  "updated_at": "2026-09-08T04:58:19.926094+00:00",
+  "scope": "Full MASTER_PROMPT.md and binding data/requirements.json; status is execution evidence, not package validation",
+  "acceptance_boundary": "Per-row local/source/control status. The full overhaul is incomplete while any mandatory asset or native-depth requirement is blocked.",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "workstream": "W01",
+      "coordinator": "W01-C1",
+      "title": "Source baseline and capability truth \u2014 functional",
+      "requirement": "Every capability has a dated source and an evidence type.",
+      "outputs": [
+        "execution/source-snapshot.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-001.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-001.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-002",
+      "workstream": "W01",
+      "coordinator": "W01-C1",
+      "title": "Source baseline and capability truth \u2014 truth",
+      "requirement": "Partial/historical source reads do not become current verdicts.",
+      "outputs": [
+        "execution/source-snapshot.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-002.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-002.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-003",
+      "workstream": "W01",
+      "coordinator": "W01-C1",
+      "title": "Source baseline and capability truth \u2014 integration",
+      "requirement": "Private evidence remains private; report-only and public artifact states differ.",
+      "outputs": [
+        "execution/source-snapshot.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-003.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-003.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-004",
+      "workstream": "W01",
+      "coordinator": "W01-C2",
+      "title": "Brand language and naming system \u2014 functional",
+      "requirement": "Naming matches the approved map except documented execution-time conflicts.",
+      "outputs": [
+        "brand/BRAND_GUIDE.md",
+        "brand/copy.json",
+        "migration/repository-plan.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-004.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-004.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-005",
+      "workstream": "W01",
+      "coordinator": "W01-C2",
+      "title": "Brand language and naming system \u2014 truth",
+      "requirement": "No unsupported win, 24/7 autonomy, universal integration, or legal-clearance claims.",
+      "outputs": [
+        "brand/BRAND_GUIDE.md",
+        "brand/copy.json",
+        "migration/repository-plan.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-005.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-005.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-006",
+      "workstream": "W01",
+      "coordinator": "W01-C2",
+      "title": "Brand language and naming system \u2014 integration",
+      "requirement": "Audience and developer copy each identify what is actually available.",
+      "outputs": [
+        "brand/BRAND_GUIDE.md",
+        "brand/copy.json",
+        "migration/repository-plan.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-006.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-006.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-007",
+      "workstream": "W02",
+      "coordinator": "W02-C1",
+      "title": "Design tokens and Astra-generated identity \u2014 functional",
+      "requirement": "Mark reads at 16, 24, and 48 px and in monochrome. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+      "outputs": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/sources/identity/",
+        "brand/identity-review.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-007.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-007.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W03-final-art-manifest-followup.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
+      ],
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped identity functional checks under policy 2.0.0 and the user-authorized root route",
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
+    },
+    {
+      "id": "REQ-008",
+      "workstream": "W02",
+      "coordinator": "W02-C1",
+      "title": "Design tokens and Astra-generated identity \u2014 truth",
+      "requirement": "Text is deterministic, accurate, and accessible. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+      "outputs": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/sources/identity/",
+        "brand/identity-review.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-008.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-008.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-007.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
+      ],
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped identity text/accessibility truth; full release remains blocked",
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
+    },
+    {
+      "id": "REQ-009",
+      "workstream": "W02",
+      "coordinator": "W02-C1",
+      "title": "Design tokens and Astra-generated identity \u2014 integration",
+      "requirement": "No bundled font binaries or ambiguous copied marks. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+      "outputs": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/sources/identity/",
+        "brand/identity-review.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-009.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-009.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
+      ],
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped integration check for raster lettering, font-binary absence, and identity consistency",
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
+    },
+    {
+      "id": "REQ-010",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "Artwork masters, exports, and provenance \u2014 functional",
+      "requirement": "Every required export has source, digest, placement, alt/decorative treatment, and review. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+      "outputs": [
+        "brand/sources/",
+        "brand/assets/",
+        "brand/asset-manifest.json",
+        "brand/ART_REVIEW.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-010.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-010.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "brand/asset-manifest.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "execution/reviews/W03-final-art-manifest-followup.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
+      ],
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped per-export source/digest/placement/alt/decorative/lineage contract",
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
+    },
+    {
+      "id": "REQ-011",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "Artwork masters, exports, and provenance \u2014 truth",
+      "requirement": "Captured evidence is not replaced by generated fake screenshots. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+      "outputs": [
+        "brand/sources/",
+        "brand/assets/",
+        "brand/asset-manifest.json",
+        "brand/ART_REVIEW.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-011.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-011.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-003.json",
+        "execution/reviews/W02-broadcast-source-review-004.json",
+        "execution/reviews/W02-broadcast-source-review-005.json",
+        "execution/reviews/W02-broadcast-source-review-006.json",
+        "execution/reviews/W02-broadcast-source-review-007.json",
+        "execution/reviews/root-season-evidence-refresh.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
+      ],
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped truth check separating generated artwork/templates from gameplay and product evidence",
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
+    },
+    {
+      "id": "REQ-012",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "Artwork masters, exports, and provenance \u2014 integration",
+      "requirement": "Missing access blocks exact asset IDs rather than being called delivered. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+      "outputs": [
+        "brand/sources/",
+        "brand/assets/",
+        "brand/asset-manifest.json",
+        "brand/ART_REVIEW.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-012.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-012.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": null,
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Verified blocking behavior only: all72IDs are individually blocked with zero exports; no artwork is accepted."
+    },
+    {
+      "id": "REQ-013",
+      "workstream": "W03",
+      "coordinator": "W03-C1",
+      "title": "Watch, Runs, Build, and Docs experience \u2014 functional",
+      "requirement": "No placeholder or unavailable primary destinations.",
+      "outputs": [
+        "website implementation changes",
+        "site/route-manifest.json",
+        "site/visual-regression-baselines/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-013.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-013.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
+      ],
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-014",
+      "workstream": "W03",
+      "coordinator": "W03-C1",
+      "title": "Watch, Runs, Build, and Docs experience \u2014 truth",
+      "requirement": "Keyboard/mobile/light/dark/reduced-motion states are inspected.",
+      "outputs": [
+        "website implementation changes",
+        "site/route-manifest.json",
+        "site/visual-regression-baselines/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-014.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-014.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
+      ],
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-015",
+      "workstream": "W03",
+      "coordinator": "W03-C1",
+      "title": "Watch, Runs, Build, and Docs experience \u2014 integration",
+      "requirement": "Synthetic fixtures cannot enter the production export.",
+      "outputs": [
+        "website implementation changes",
+        "site/route-manifest.json",
+        "site/visual-regression-baselines/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-015.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-015.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
+      ],
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-016",
+      "workstream": "W03",
+      "coordinator": "W03-C2",
+      "title": "Subscription, deployment compatibility, and privacy \u2014 functional",
+      "requirement": "Tests cover successful, duplicate, throttled, malformed, failed-mail, and concurrent requests.",
+      "outputs": [
+        "website API and test changes",
+        "docs/SUBSCRIPTION_OPERATIONS.md",
+        "execution/subscription-review.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-016.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-016.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
+      ],
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-017",
+      "workstream": "W03",
+      "coordinator": "W03-C2",
+      "title": "Subscription, deployment compatibility, and privacy \u2014 truth",
+      "requirement": "No emails, tokens, paths, or raw IPs leak into public logs or client responses.",
+      "outputs": [
+        "website API and test changes",
+        "docs/SUBSCRIPTION_OPERATIONS.md",
+        "execution/subscription-review.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-017.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-017.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
+      ],
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-018",
+      "workstream": "W03",
+      "coordinator": "W03-C2",
+      "title": "Subscription, deployment compatibility, and privacy \u2014 integration",
+      "requirement": "No production mail is sent without scoped permission.",
+      "outputs": [
+        "website API and test changes",
+        "docs/SUBSCRIPTION_OPERATIONS.md",
+        "execution/subscription-review.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-018.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "github/website-art-candidate.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-018.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json",
+        "execution/reviews/W03-root-website-art-review.json",
+        "execution/reviews/root-art-subscription-http.json",
+        "execution/reviews/W03-root-website-art-followup.json"
+      ],
+      "independent_reviewer": "Original W03/W07 source reviews plus independent root-art website browser reviewer",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-019",
+      "workstream": "W04",
+      "coordinator": "W04-C1",
+      "title": "Organization and component presentation \u2014 functional",
+      "requirement": "Flagship is obvious and commands actually work in the stated test environment.",
+      "outputs": [
+        "companion README/profile changes",
+        "github/presentation-manifest.json",
+        "tools/brand-sync/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-019.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-019.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-020",
+      "workstream": "W04",
+      "coordinator": "W04-C1",
+      "title": "Organization and component presentation \u2014 truth",
+      "requirement": "Old historical evidence and upstream attribution are preserved.",
+      "outputs": [
+        "companion README/profile changes",
+        "github/presentation-manifest.json",
+        "tools/brand-sync/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-020.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-020.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-021",
+      "workstream": "W04",
+      "coordinator": "W04-C1",
+      "title": "Organization and component presentation \u2014 integration",
+      "requirement": "Settings actions are separated from source edits and performed only with authority.",
+      "outputs": [
+        "companion README/profile changes",
+        "github/presentation-manifest.json",
+        "tools/brand-sync/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-021.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-021.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-022",
+      "workstream": "W04",
+      "coordinator": "W04-C2",
+      "title": "Idempotent rename and legacy-route operations \u2014 functional",
+      "requirement": "Dry run detects collision, stale ID/head, hosted Actions consumers, and unauthorized operation.",
+      "outputs": [
+        "migration/plan.json",
+        "migration/tooling/",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-022.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-022.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-023",
+      "workstream": "W04",
+      "coordinator": "W04-C2",
+      "title": "Idempotent rename and legacy-route operations \u2014 truth",
+      "requirement": "Old names are not recreated; Pages history survives.",
+      "outputs": [
+        "migration/plan.json",
+        "migration/tooling/",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-023.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-023.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-024",
+      "workstream": "W04",
+      "coordinator": "W04-C2",
+      "title": "Idempotent rename and legacy-route operations \u2014 integration",
+      "requirement": "Repeated apply does not duplicate or undo completed operations.",
+      "outputs": [
+        "migration/plan.json",
+        "migration/tooling/",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-024.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-024.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-025",
+      "workstream": "W05",
+      "coordinator": "W05-C1",
+      "title": "Sanitized run publication and deterministic exports \u2014 functional",
+      "requirement": "Unapproved/private/synthetic/forced-fixture inputs fail production publication.",
+      "outputs": [
+        "tools/publisher/",
+        "schemas/",
+        "tests/publication/",
+        "public/run-manifests/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-025.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-025.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-026",
+      "workstream": "W05",
+      "coordinator": "W05-C1",
+      "title": "Sanitized run publication and deterministic exports \u2014 truth",
+      "requirement": "Mutation authority never crosses into the public publisher.",
+      "outputs": [
+        "tools/publisher/",
+        "schemas/",
+        "tests/publication/",
+        "public/run-manifests/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-026.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-026.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-027",
+      "workstream": "W05",
+      "coordinator": "W05-C1",
+      "title": "Sanitized run publication and deterministic exports \u2014 integration",
+      "requirement": "Changed source digest invalidates prior approval.",
+      "outputs": [
+        "tools/publisher/",
+        "schemas/",
+        "tests/publication/",
+        "public/run-manifests/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-027.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-027.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-028",
+      "workstream": "W05",
+      "coordinator": "W05-C2",
+      "title": "Capabilities, event contracts, and comparison context \u2014 functional",
+      "requirement": "No raw email, private prompts, game secrets, or fingerprinting in events.",
+      "outputs": [
+        "tools/capability-renderer/",
+        "analytics/event-contract.json",
+        "analytics/dashboard-spec.md",
+        "tests/analytics/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-028.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-028.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-029",
+      "workstream": "W05",
+      "coordinator": "W05-C2",
+      "title": "Capabilities, event contracts, and comparison context \u2014 truth",
+      "requirement": "Source report, independent reproduction, and release support are distinct.",
+      "outputs": [
+        "tools/capability-renderer/",
+        "analytics/event-contract.json",
+        "analytics/dashboard-spec.md",
+        "tests/analytics/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-029.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-029.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-030",
+      "workstream": "W05",
+      "coordinator": "W05-C2",
+      "title": "Capabilities, event contracts, and comparison context \u2014 integration",
+      "requirement": "Game failure and infrastructure failure never silently share a denominator.",
+      "outputs": [
+        "tools/capability-renderer/",
+        "analytics/event-contract.json",
+        "analytics/dashboard-spec.md",
+        "tests/analytics/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-030.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-030.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-031",
+      "workstream": "W06",
+      "coordinator": "W06-C1",
+      "title": "Launch kit and twelve-week production calendar \u2014 functional",
+      "requirement": "Every factual claim maps to approved sources; unavailable material is explicitly gated.",
+      "outputs": [
+        "marketing/launch/",
+        "marketing/calendar.json",
+        "marketing/episodes/",
+        "marketing/clips/",
+        "marketing/articles/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-031.json",
+      "status": "blocked",
+      "mandatory": true,
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-031.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": "Draft factual copy is source-linked and independently reviewed, but the actual publication/source approvals and rights required for campaign release are not enrolled.",
+      "note": "All content remains draft; no publication/send is authorized."
+    },
+    {
+      "id": "REQ-032",
+      "workstream": "W06",
+      "coordinator": "W06-C1",
+      "title": "Launch kit and twelve-week production calendar \u2014 truth",
+      "requirement": "Series depicts actual attempts, interventions, and outcomes without invented evidence.",
+      "outputs": [
+        "marketing/launch/",
+        "marketing/calendar.json",
+        "marketing/episodes/",
+        "marketing/clips/",
+        "marketing/articles/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-032.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-032.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-033",
+      "workstream": "W06",
+      "coordinator": "W06-C1",
+      "title": "Launch kit and twelve-week production calendar \u2014 integration",
+      "requirement": "A content calendar is not reported as an operated campaign.",
+      "outputs": [
+        "marketing/launch/",
+        "marketing/calendar.json",
+        "marketing/episodes/",
+        "marketing/clips/",
+        "marketing/articles/"
+      ],
+      "evidence_expected": "execution/evidence/REQ-033.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-033.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-034",
+      "workstream": "W06",
+      "coordinator": "W06-C2",
+      "title": "Creator partnerships, distribution experiments, and contributions \u2014 functional",
+      "requirement": "No fabricated partners, testimonials, followers, paid votes, or undisclosed influence.",
+      "outputs": [
+        "marketing/creator-kit/",
+        "marketing/community-playbook.md",
+        "marketing/experiments.json",
+        "marketing/sponsorship.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-034.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-034.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-035",
+      "workstream": "W06",
+      "coordinator": "W06-C2",
+      "title": "Creator partnerships, distribution experiments, and contributions \u2014 truth",
+      "requirement": "Each experiment has hypothesis, denominator, stop criteria, and result placeholders labeled unobserved.",
+      "outputs": [
+        "marketing/creator-kit/",
+        "marketing/community-playbook.md",
+        "marketing/experiments.json",
+        "marketing/sponsorship.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-035.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-035.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-036",
+      "workstream": "W06",
+      "coordinator": "W06-C2",
+      "title": "Creator partnerships, distribution experiments, and contributions \u2014 integration",
+      "requirement": "Messages remain drafts unless publication/sending is actually authorized.",
+      "outputs": [
+        "marketing/creator-kit/",
+        "marketing/community-playbook.md",
+        "marketing/experiments.json",
+        "marketing/sponsorship.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-036.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-036.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-037",
+      "workstream": "W07",
+      "coordinator": "W07-C1",
+      "title": "Cross-surface test suite and adversarial review \u2014 functional",
+      "requirement": "Actual commands, versions, revisions, rendered outputs, and failures are recorded.",
+      "outputs": [
+        "tests/integration/",
+        "tests/visual/",
+        "execution/QUALITY_REPORT.md",
+        "execution/findings.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-037.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-037.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-038",
+      "workstream": "W07",
+      "coordinator": "W07-C1",
+      "title": "Cross-surface test suite and adversarial review \u2014 truth",
+      "requirement": "No skipped host/browser/model checks become a pass.",
+      "outputs": [
+        "tests/integration/",
+        "tests/visual/",
+        "execution/QUALITY_REPORT.md",
+        "execution/findings.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-038.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-038.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-039",
+      "workstream": "W07",
+      "coordinator": "W07-C1",
+      "title": "Cross-surface test suite and adversarial review \u2014 integration",
+      "requirement": "Reviewer independence and a genuine depth-three chain are evidenced.",
+      "outputs": [
+        "tests/integration/",
+        "tests/visual/",
+        "execution/QUALITY_REPORT.md",
+        "execution/findings.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-039.json",
+      "status": "blocked",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-039.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json",
+        "execution/reviews/root-native-capability-recheck.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": "No genuine root-to-lead-to-coordinator-to-leaf chain exists; independent source reviews do not replace requested native ancestry.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-040",
+      "workstream": "W07",
+      "coordinator": "W07-C2",
+      "title": "Release engineering and operator handoff \u2014 functional",
+      "requirement": "Local, merged, deployed, and campaign-operated states are separate.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md",
+        "delivery/MANIFEST.json",
+        "docs/OPERATIONS.md",
+        "docs/ROLLBACK.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-040.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-040.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-041",
+      "workstream": "W07",
+      "coordinator": "W07-C2",
+      "title": "Release engineering and operator handoff \u2014 truth",
+      "requirement": "Every mandatory requirement and asset is verified or specifically blocked.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md",
+        "delivery/MANIFEST.json",
+        "docs/OPERATIONS.md",
+        "docs/ROLLBACK.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-041.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-041.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-042",
+      "workstream": "W07",
+      "coordinator": "W07-C2",
+      "title": "Release engineering and operator handoff \u2014 integration",
+      "requirement": "No remote action or success is claimed without returned evidence.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md",
+        "delivery/MANIFEST.json",
+        "docs/OPERATIONS.md",
+        "docs/ROLLBACK.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-042.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-042.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-043",
+      "workstream": "W01",
+      "coordinator": null,
+      "title": "Preserve fixed identity",
+      "requirement": "Organization remains AI Ascension, flagship Ascension, series The Climb; refresh first-win season only with new evidence.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-043.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-043.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-044",
+      "workstream": "W01",
+      "coordinator": null,
+      "title": "Read current heads",
+      "requirement": "Capture complete current source inventory, stable repository IDs, default branches, open PRs, and deployment branches before edits.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-044.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "execution/source-snapshot.json",
+        "execution/source-tree-inventory.json",
+        "execution/capabilities.json",
+        "docs/BASELINE_AUDIT.md",
+        "brand/copy.json",
+        "brand/BRAND_GUIDE.md",
+        "docs/NAME_COLLISION_REVIEW.md",
+        "migration/repository-plan.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-044.json",
+        "execution/reviews/W03-W01-provenance-rereview.md",
+        "execution/reviews/W03-handoff-inventory-review.md"
+      ],
+      "independent_reviewer": "W03-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Initial immutable baseline pins, stable IDs, default branches, PR/deployment observations are retained. Complete2045-entry tracked-tree metadata was reconstructed later from those same13pins, not falsely claimed as a new full-content inspection."
+    },
+    {
+      "id": "REQ-045",
+      "workstream": "W02",
+      "coordinator": null,
+      "title": "All assets",
+      "requirement": "Every mandatory registry asset and export is actually produced or specifically blocked, with source, review, and license information. All artwork is generated exclusively by gpt-image-2 from an actual Astra-authored prompt; no code-drawn or legacy-art substitute.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-045.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-045.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": null,
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Verified inventory/control only: produced-or-specifically-blocked accounting covers72families/115exports. It does not mean art is produced."
+    },
+    {
+      "id": "REQ-046",
+      "workstream": "W02",
+      "coordinator": null,
+      "title": "No font binaries",
+      "requirement": "The prompt handoff and final asset delivery archives contain no font binaries; use existing licensed website assets or reference-only notices.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-046.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-046.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "No font binaries in the source candidate; existing licensed website assets remain in the website. Final archive content is separately reviewed."
+    },
+    {
+      "id": "REQ-047",
+      "workstream": "W02",
+      "coordinator": null,
+      "title": "Genuine capture",
+      "requirement": "No synthetic screenshots, generated gameplay results, or fabricated endorsement marks are used as real evidence.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-047.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-047.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-048",
+      "workstream": "W03",
+      "coordinator": null,
+      "title": "Working primary journey",
+      "requirement": "A visitor can reach actual available run content and a tested developer starting point without dead primary CTAs.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-048.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-048.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Actual report-only content and tested developer recipes are available. No approved video/replay/timeline is inferred."
+    },
+    {
+      "id": "REQ-049",
+      "workstream": "W03",
+      "coordinator": null,
+      "title": "Legacy proof preservation",
+      "requirement": "Old GitHub Pages proof paths, named fixtures, hashes, and historical anchors remain available or explicitly preserved.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-049.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-049.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-050",
+      "workstream": "W03",
+      "coordinator": null,
+      "title": "Mail safety",
+      "requirement": "Subscription confirmation, unsubscribe, failure behavior, and concurrent persistence are tested without unauthorized production messages.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-050.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/website-pull-request.json",
+        "execution/output-locations.json",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-050.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-repair-review-002.json",
+        "execution/reviews/subscription-http-review-002.json",
+        "execution/reviews/website-home-review-001.json"
+      ],
+      "independent_reviewer": "root (independent of W03-L implementation) and W07-L (final root-authored homepage delta)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-051",
+      "workstream": "W04",
+      "coordinator": null,
+      "title": "Compatibility preservation",
+      "requirement": "Initial presentation rename does not change runtime binary/package/environment/schema identities.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-051.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-051.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-052",
+      "workstream": "W04",
+      "coordinator": null,
+      "title": "Active work compatibility",
+      "requirement": "The map visualizer rename does not break active instructions requiring its current name; coordinate before authorized cutover.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-052.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "github/companion-commits.json",
+        "github/presentation-manifest.json",
+        "github/settings-manifest.json",
+        "migration/tooling/github_migration.py",
+        "migration/plan.json",
+        "migration/ROLLBACK.md",
+        "execution/migration-results.json",
+        "docs/TESTED_QUICKSTART.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-052.json",
+        "execution/reviews/W01-companion-presentation-review.md",
+        "execution/reviews/W07-L-W04-migration-residual-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Map rename is deferred and active instructions/current repository identity remain untouched."
+    },
+    {
+      "id": "REQ-053",
+      "workstream": "W05",
+      "coordinator": null,
+      "title": "Private record boundary",
+      "requirement": "Publication reads approved sanitized copies; no game mutation interface or private observability UI is exposed.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-053.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-053.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-054",
+      "workstream": "W05",
+      "coordinator": null,
+      "title": "Approval invalidation",
+      "requirement": "Source content changes invalidate approval by digest; synthetic or forced-fixture results fail normal production publication.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-054.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "publisher/__init__.py",
+        "publisher/capabilities.py",
+        "publisher/authority.py",
+        "docs/PUBLISHING.md",
+        "docs/MEASUREMENT.md",
+        "config/publication-authorities.json",
+        "config/measurement-authorities.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-054.json",
+        "execution/reviews/W07-L-final-publication-measurement-capability-rereview.md",
+        "execution/reviews/publisher-repair-status.json"
+      ],
+      "independent_reviewer": "W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-055",
+      "workstream": "W06",
+      "coordinator": null,
+      "title": "Complete calendar",
+      "requirement": "Deliver 12 episode briefs, 24 short-clip briefs, 6 technical article outlines, first launch copy, report-only alternatives, and outreach/email templates.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-055.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-055.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-056",
+      "workstream": "W06",
+      "coordinator": null,
+      "title": "Honest measurement",
+      "requirement": "Audience and developer metrics have denominators and distinct real/synthetic/infrastructure-failure accounting; no fabricated results.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-056.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "marketing/README.md",
+        "marketing/calendar.json",
+        "marketing/source-map.json",
+        "marketing/experiments.json",
+        "marketing/asset-dependency.json",
+        "marketing/community-playbook.md",
+        "marketing/sponsorship.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-056.json",
+        "execution/reviews/W01-W06-review.md",
+        "execution/reviews/W07-L-source-archive-privacy-rereview.md"
+      ],
+      "independent_reviewer": "W01-L and W07-L",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-057",
+      "workstream": "W07",
+      "coordinator": null,
+      "title": "Role-specific Luna/Astra runtime evidence",
+      "requirement": "All descendants have role-correct requested/accepted/observed model and effort records: 47 Luna/max roles and two Astra/max art-author roles; no substitutions or self-report verification.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-057.json",
+      "status": "blocked",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-057.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json",
+        "execution/reviews/root-native-capability-recheck.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "blocker": "Seven depth1 Luna/max leads are observed in client metadata. The47ordinary/twoAstra role catalog is not executed or fully attested.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Client metadata is not provider-side attestation; uncreated roles have no accepted/observed execution record."
+    },
+    {
+      "id": "REQ-058",
+      "workstream": "W07",
+      "coordinator": null,
+      "title": "Native depth evidence",
+      "requirement": "At least one substantive real root\u2192lead\u2192coordinator\u2192leaf chain is evidenced, no leaf children exist, and the global open ceiling holds.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-058.json",
+      "status": "blocked",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-058.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json",
+        "execution/reviews/root-native-capability-recheck.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "blocker": "No depth2/depth3 nodes exist. The user raised the concurrent-descendant limit to250; capacity does not supply missing native child-spawn tools. Historical seven-lead observations remain scoped to their recorded time.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-059",
+      "workstream": "W07",
+      "coordinator": null,
+      "title": "Release authorization",
+      "requirement": "Every external rename, merge, deployment, publication, and send is performed only within actual scope and has a verifiable receipt.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-059.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-059.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-060",
+      "workstream": "W07",
+      "coordinator": null,
+      "title": "Final states",
+      "requirement": "Implemented, verified, merged, deployed, and campaign-operated states remain distinct in the final report.",
+      "outputs": [
+        "delivery/FINAL_REPORT.md"
+      ],
+      "evidence_expected": "execution/evidence/REQ-060.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-060.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-061",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "Astra authorship",
+      "requirement": "Every initial generation prompt and creative edit prompt has an actual gpt-6-astra/max native-agent record, exact prompt bytes, SHA-256, and independent review.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-061.json",
+      "status": "blocked",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-061.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "brand/provenance/root-generation-records.json",
+        "execution/art-model-attestation.json",
+        "execution/reviews/root-native-capability-recheck-002.json",
+        "execution/reviews/W02-final-art-acceptance-review.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json",
+        "execution/reviews/root-native-direct-capability-recheck.json"
+      ],
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": "All 123 source generations are root-authored under the user amendment; required native Astra/max depth-three author records remain absent. Independent prompt/source reviews and original-byte preservation do not establish that native chain.",
+      "verification_scope": "literal authorship/native-agent requirement",
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
+    },
+    {
+      "id": "REQ-062",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "Exact image model",
+      "requirement": "Every artwork generation requests gpt-image-2; actual model evidence resolves to gpt-image-2 or a documented verified snapshot, never an unknown or alternate backend.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-062.json",
+      "status": "blocked",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-062.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "art/generation-policy.json",
+        "brand/provenance/root-generation-records.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json",
+        "execution/reviews/W03-image-c2pa-provenance-review.json"
+      ],
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": "All 123 generation records retain unknown image model and unspecified backend. The 122-file trusted OpenAI C2PA scan supplies signed provenance but no documented mapping to the exact required API model. No backend identity is inferred.",
+      "verification_scope": "literal observed image-model/backend requirement",
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
+    },
+    {
+      "id": "REQ-063",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "No creative fallback",
+      "requirement": "SVG/Canvas/CSS/Python drawing, stock art, tracing, unmodified legacy artwork, alternate image models, and silent substitution fail artwork acceptance.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-063.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-063.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Rejection/policy behavior verified; no code-drawn, stock, traced, alternate-backend, or legacy-art substitute was accepted."
+    },
+    {
+      "id": "REQ-064",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "Complete art inventory",
+      "requirement": "All 72 new-artwork families use the generation-only registry; the three evidence-media families and five historical/reference records remain separately classified.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-064.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-064.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "blocker": null,
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "72new-art families,3authentic evidence-media families,5historical records remain separately classified."
+    },
+    {
+      "id": "REQ-065",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "Per-export lineage",
+      "requirement": "Every artwork export links to a reviewed original gpt-image-2 output and its Astra prompt; only enumerated noncreative transformations are allowed.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-065.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-065.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "brand/asset-manifest.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "execution/reviews/W03-final-art-manifest-followup.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
+      ],
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped per-export lineage under the accepted root route",
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
+    },
+    {
+      "id": "REQ-066",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "Text and data verification",
+      "requirement": "Logos, typography, diagrams and charts are generated with gpt-image-2, checked against exact copy/source facts, and corrected only by an Astra-authored generation/edit.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-066.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json",
+        "art/root-generation-authorization.json",
+        "brand/provenance/root-generation-index.json",
+        "brand/provenance/root-tool-observations.json",
+        "brand/provenance/root-generation-records.json",
+        "brand/provenance/root-export-recipe.json",
+        "brand/provenance/root-export-receipts.json",
+        "brand/identity-review.md",
+        "execution/root-art-acceptance.json",
+        "brand/remaining-artwork.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-066.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W02-root-art-identity-review.json",
+        "execution/reviews/root-art-browser-smoke.json",
+        "execution/reviews/root-image-service-limit.json",
+        "execution/reviews/W02-root-art-second-batch-review.json",
+        "execution/reviews/W02-root-identity-source-use-review.json",
+        "execution/reviews/W03-root-export-review.json",
+        "execution/reviews/W03-root-export-followup.json",
+        "execution/root-art-acceptance.json",
+        "execution/reviews/W03-root-art-final-acceptance.json",
+        "execution/reviews/W02-broadcast-source-review-002.json",
+        "execution/reviews/W02-broadcast-source-review-003.json",
+        "execution/reviews/W02-broadcast-source-review-004.json",
+        "execution/reviews/W02-broadcast-source-review-005.json",
+        "execution/reviews/W02-broadcast-source-review-006.json",
+        "execution/reviews/W02-broadcast-source-review-007.json",
+        "execution/reviews/root-season-evidence-refresh.json",
+        "execution/reviews/W02-broadcast-source-review-008.json",
+        "execution/reviews/W02-broadcast-source-review-009.json",
+        "execution/reviews/W03-requirements-refresh-recommendations.json",
+        "execution/reviews/root-original-output-preservation.json"
+      ],
+      "independent_reviewer": "W02 independent source/visual reviewers and W03 independent requirements/export reviewers",
+      "blocker": null,
+      "verification_scope": "scoped copy/source-fact and generated-art truth check",
+      "note": "Original requirement wording is retained above for traceability; the user amendment in art/root-generation-authorization.json replaces the artwork author/backend route. It does not waive the full asset set, evidence boundaries or independent review."
+    },
+    {
+      "id": "REQ-067",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "Evidence isolation",
+      "requirement": "No generated or generatively retouched image/video is accepted as genuine gameplay evidence. Generated posters and diagrams remain labeled presentation art.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-067.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-067.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Synthetic local fixtures remain unmistakably synthetic and fail normal production publication."
+    },
+    {
+      "id": "REQ-068",
+      "workstream": "W02",
+      "coordinator": "W02-C2",
+      "title": "No render-time image calls",
+      "requirement": "Approved art is precomputed and content-addressed; page load, rebuild, and serving make no implicit Astra/image calls. New creative variants are explicit jobs.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-068.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "brand/tokens.json",
+        "brand/tokens.css",
+        "brand/asset-manifest.json",
+        "brand/ART_ACCESS.md",
+        "art/asset-registry.json",
+        "art/evidence-media-registry.json",
+        "art/reference-registry.json",
+        "art/generation-policy.json",
+        "execution/art-model-attestation.json"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-068.json",
+        "execution/reviews/asset-gate-001.json",
+        "docs/W07-L-W02-helper-rereview.md",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/W03-root-art-final-acceptance.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (tokens/helpers and blocking policy only)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Offline publisher and served sources have no implicit model/image calls. Artifact acceptance binds precomputed digests; no approved new art currently exists."
+    },
+    {
+      "id": "REQ-069",
+      "workstream": "W07",
+      "coordinator": "W07-C1",
+      "title": "No fourth agent layer",
+      "requirement": "The two Astra art authors are depth-3 leaves under W02; image generation is a tool invocation, and no leaf spawns another agent.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-069.json",
+      "status": "blocked",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-069.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json",
+        "execution/reviews/root-native-capability-recheck.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "blocker": "The two required native Astra/max depth3 art-author leaves do not exist.",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "note": "Read the exact source/review scope; actual operations and unavailable evidence remain separate."
+    },
+    {
+      "id": "REQ-070",
+      "workstream": "W07",
+      "coordinator": "W07-C1",
+      "title": "Block missing models precisely",
+      "requirement": "Unavailable Astra/gpt-image-2 or missing native attestation blocks exact asset IDs; unrelated engineering continues and no fallback receives a verified flag.",
+      "outputs": [
+        "brand/asset-manifest.json",
+        "brand/provenance/generations/",
+        "execution/art-model-attestation.json"
+      ],
+      "evidence_expected": "execution/evidence/REQ-070.json",
+      "status": "verified",
+      "mandatory": true,
+      "implementation_paths": [
+        "scripts/render_handoff.py",
+        "tests/test_handoff.py",
+        "execution/release-status.json",
+        "execution/findings.json",
+        "execution/QUALITY_REPORT.md",
+        "execution/ROOT_STATUS.md",
+        "execution/runtime-observation.json",
+        "execution/operations.json",
+        "delivery/MANIFEST.json",
+        "delivery/RUNBOOK.md",
+        "delivery/PRIVACY_SCOPE.md"
+      ],
+      "verification_records": [
+        "execution/evidence/REQ-070.json",
+        "execution/reviews/W07-final-acceptance-source-review.md",
+        "execution/reviews/W03-handoff-final-rereview.md",
+        "execution/reviews/brand-remote-checks-001.json",
+        "execution/reviews/final-local-checks.json",
+        "execution/reviews/native-ledger-check-001.json",
+        "execution/reviews/W07-private-delivery-scope-review.md",
+        "execution/reviews/companion-remote-checks-001.json"
+      ],
+      "independent_reviewer": "W03-L and W07-L (scoped reviews; requested native-depth acceptance absent)",
+      "verification_scope": "Local/source contract or documented control only; not production or full native/art acceptance.",
+      "blocker": null,
+      "note": "Exact missing art jobs are blocked while engineering/text work continues. No unavailable model or source evidence is simulated."
+    }
+  ]
+}

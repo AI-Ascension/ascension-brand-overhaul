@@ -1,0 +1,118 @@
+{
+  "observed_at": "2026-09-08T04:23:55.687Z",
+  "scope": "Local Chromium populated report-only HTML preview at two widths with images enabled/blocked. Exact six fields compared with independently reviewed private art context. Not an email-client delivery test or approved send.",
+  "hashes": {
+    "marketing/launch/email-run-card.html": "da9c32aa1ac5b203d7d482de378afc78c8a4e2eaeb7f4c92399f1d25f3dfbba3",
+    "marketing/launch/email-run-card.txt": "6ae40e95f1a20a10a7ac71b06d204cf0607e04c7fb2bc27b1abed7cc629200df"
+  },
+  "results": [
+    {
+      "width": 390,
+      "images": true,
+      "overflow": false,
+      "labels": [
+        "Run ID",
+        "Outcome",
+        "Model configuration",
+        "Interventions",
+        "Evidence",
+        "Source URL"
+      ],
+      "values": [
+        "windows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)",
+        "Reported Defeat at zero HP on floor 17; not a victory",
+        "Reported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.",
+        "Report states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.",
+        "Public report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.",
+        "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md"
+      ],
+      "decorativeImage": true,
+      "scripts": 0,
+      "forms": 0,
+      "text": "Run digest\n\nReport-only draft. This is a local assembly preview. No digest has been approved or sent.\n\nRun details\n\nThese values were independently checked against the pinned public report for this private artwork preview. The run ID is an editorial public alias. Private trajectories and captures were not inspected for this preview. The plain-text message carries the same information.\n\nRun ID\nwindows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)\nOutcome\nReported Defeat at zero HP on floor 17; not a victory\nModel configuration\nReported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.\nInterventions\nReport states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.\nEvidence\nPublic report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.\nSource URL\nhttps://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md\n\nAI Ascension\n\nThe sending system must add its approved unsubscribe route and consent information. This preview contains no tracking pixel, remote font, script, form, or recipient identifier.",
+      "external": [],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "images": false,
+      "overflow": false,
+      "labels": [
+        "Run ID",
+        "Outcome",
+        "Model configuration",
+        "Interventions",
+        "Evidence",
+        "Source URL"
+      ],
+      "values": [
+        "windows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)",
+        "Reported Defeat at zero HP on floor 17; not a victory",
+        "Reported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.",
+        "Report states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.",
+        "Public report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.",
+        "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md"
+      ],
+      "decorativeImage": true,
+      "scripts": 0,
+      "forms": 0,
+      "text": "Run digest\n\nReport-only draft. This is a local assembly preview. No digest has been approved or sent.\n\nRun details\n\nThese values were independently checked against the pinned public report for this private artwork preview. The run ID is an editorial public alias. Private trajectories and captures were not inspected for this preview. The plain-text message carries the same information.\n\nRun ID\nwindows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)\nOutcome\nReported Defeat at zero HP on floor 17; not a victory\nModel configuration\nReported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.\nInterventions\nReport states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.\nEvidence\nPublic report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.\nSource URL\nhttps://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md\n\nAI Ascension\n\nThe sending system must add its approved unsubscribe route and consent information. This preview contains no tracking pixel, remote font, script, form, or recipient identifier.",
+      "external": [],
+      "errors": []
+    },
+    {
+      "width": 1200,
+      "images": true,
+      "overflow": false,
+      "labels": [
+        "Run ID",
+        "Outcome",
+        "Model configuration",
+        "Interventions",
+        "Evidence",
+        "Source URL"
+      ],
+      "values": [
+        "windows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)",
+        "Reported Defeat at zero HP on floor 17; not a victory",
+        "Reported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.",
+        "Report states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.",
+        "Public report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.",
+        "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md"
+      ],
+      "decorativeImage": true,
+      "scripts": 0,
+      "forms": 0,
+      "text": "Run digest\n\nReport-only draft. This is a local assembly preview. No digest has been approved or sent.\n\nRun details\n\nThese values were independently checked against the pinned public report for this private artwork preview. The run ID is an editorial public alias. Private trajectories and captures were not inspected for this preview. The plain-text message carries the same information.\n\nRun ID\nwindows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)\nOutcome\nReported Defeat at zero HP on floor 17; not a victory\nModel configuration\nReported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.\nInterventions\nReport states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.\nEvidence\nPublic report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.\nSource URL\nhttps://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md\n\nAI Ascension\n\nThe sending system must add its approved unsubscribe route and consent information. This preview contains no tracking pixel, remote font, script, form, or recipient identifier.",
+      "external": [],
+      "errors": []
+    },
+    {
+      "width": 1200,
+      "images": false,
+      "overflow": false,
+      "labels": [
+        "Run ID",
+        "Outcome",
+        "Model configuration",
+        "Interventions",
+        "Evidence",
+        "Source URL"
+      ],
+      "values": [
+        "windows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)",
+        "Reported Defeat at zero HP on floor 17; not a victory",
+        "Reported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.",
+        "Report states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.",
+        "Public report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.",
+        "https://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md"
+      ],
+      "decorativeImage": true,
+      "scripts": 0,
+      "forms": 0,
+      "text": "Run digest\n\nReport-only draft. This is a local assembly preview. No digest has been approved or sent.\n\nRun details\n\nThese values were independently checked against the pinned public report for this private artwork preview. The run ID is an editorial public alias. Private trajectories and captures were not inspected for this preview. The plain-text message carries the same information.\n\nRun ID\nwindows-seeded-astra-20260906 (editorial public alias; native run ID not supplied)\nOutcome\nReported Defeat at zero HP on floor 17; not a victory\nModel configuration\nReported gpt-6-astra; Windows v0.107.1 practice campaign; seed AIASCENSIONV3FULL1. Other model settings not specified in the report.\nInterventions\nReport states no OS input automation or save restoration drove the episode. A complete human-intervention inventory is not supplied.\nEvidence\nPublic report: 333 settled operations in 399 episode steps. Underlying private trajectory and capture not inspected here.\nSource URL\nhttps://github.com/AI-Ascension/sts2-harness/blob/05398376e660e39a2dbc000e8debd33da8718e63/docs/evidence/seeded-astra-campaign-20260906.md\n\nAI Ascension\n\nThe sending system must add its approved unsubscribe route and consent information. This preview contains no tracking pixel, remote font, script, form, or recipient identifier.",
+      "external": [],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Complete W01 capability collection envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "ai-ascension.capabilities.v1"
+    },
+    "collected_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "string",
+          "format": "date-time"
+        }
+      ]
+    },
+    "source_snapshot": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "baseline_package_revision": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "review_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "collector_role": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "collector_thread_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "independent_review_status": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "interpretation": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "independent_reviewer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "collector_role",
+        "collector_thread_id",
+        "independent_review_status",
+        "interpretation",
+        "independent_reviewer"
+      ]
+    },
+    "claim_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "verified_win": {
+          "type": "boolean"
+        },
+        "current_public_video": {
+          "type": "boolean"
+        },
+        "current_public_replay_package": {
+          "type": "boolean"
+        },
+        "live_autonomous_service": {
+          "type": "boolean"
+        },
+        "native_multiplayer": {
+          "type": "boolean"
+        },
+        "trademark_clearance": {
+          "type": "boolean"
+        },
+        "unsupported_claims_to_avoid": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "maxItems": 100,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "verified_win",
+        "current_public_video",
+        "current_public_replay_package",
+        "live_autonomous_service",
+        "native_multiplayer",
+        "trademark_clearance",
+        "unsupported_claims_to_avoid"
+      ]
+    },
+    "capabilities": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "$ref": "capability.schema.json"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "collected_at",
+    "source_snapshot",
+    "baseline_package_revision",
+    "review_boundary",
+    "claim_policy",
+    "capabilities"
+  ]
+}
