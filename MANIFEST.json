@@ -8,8 +8,8 @@
   "files": [
     {
       "path": ".github/workflows/validate.yml",
-      "bytes": 784,
-      "sha256": "f6d8529420e7685e4bd440d0555f919d4b088932e54433bbae972fff22b006da"
+      "bytes": 1074,
+      "sha256": "03d6211c7c5d6aa20236a9f77c2ca471f4d1f5401e06a4c5e20856164cca6630"
     },
     {
       "path": ".gitignore",
@@ -4258,8 +4258,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 354,
-      "sha256": "3e3bfc085d49410a6d24752c802c42026371051f629fe2c7214e866502946692"
+      "bytes": 414,
+      "sha256": "100c6c220af675e449b14c0f8480dd490bad8191710d9198720a5d045e236857"
     },
     {
       "path": "prompts/AUDIT_AND_REPAIR.md",
@@ -4557,6 +4557,11 @@
       "sha256": "998b770e803bf399091fccba81194764976224e1e3c708eca02a12a27c8e22ee"
     },
     {
+      "path": "scripts/test_browser_review.mjs",
+      "bytes": 2455,
+      "sha256": "345d9717537c78c0a9f2b57f97722df0ca97965353a3b10cb045f6c1ab6a3972"
+    },
+    {
       "path": "scripts/update_manifest.py",
       "bytes": 1474,
       "sha256": "b25ba2a38e3588f8a5e593af47dfba02a055e56ec3d4b2873257d40196c65da7"
@@ -4650,6 +4655,16 @@
       "path": "templates/RUN_PUBLICATION.md",
       "bytes": 726,
       "sha256": "db84e737a7b5bfb93d65b2c57c19c30024ca503191eed42a0bfed5b9eeea9bf0"
+    },
+    {
+      "path": "tests/browser-audit-fixture.html",
+      "bytes": 591,
+      "sha256": "8885317f3bc4363dc9231343eb2ed94418376c86db76e3c2de165fca725bf5c2"
+    },
+    {
+      "path": "tests/browser-routes.json",
+      "bytes": 98,
+      "sha256": "9a81c77c822523ab91e8b9fa8be5165349e1ecd7730c8c4c3db2a690b0664f86"
     },
     {
       "path": "tests/capability_envelope_helper.py",
