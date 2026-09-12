@@ -4,7 +4,8 @@
   "private": true,
   "description": "Local browser verification for the AI Ascension presentation overhaul",
   "scripts": {
-    "test:python": "python3 -m unittest discover -s tests -v"
+    "test:python": "python3 -m unittest discover -s tests -v",
+    "test:browser": "node scripts/test_browser_review.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.13.0",
